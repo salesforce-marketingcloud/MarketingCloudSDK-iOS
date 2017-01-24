@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
                             :tag => "v#{s.version}"}
     s.preserve_paths    = "*.md"
     s.requires_arc      = true
-    ss.vendored_frameworks = 'MarketingCloudSDK.framework'
+    s.vendored_frameworks = 'MarketingCloudSDK.framework'
     s.frameworks        = 'WebKit', 'CoreLocation', 'UserNotifications', 'UIKit'
 end
