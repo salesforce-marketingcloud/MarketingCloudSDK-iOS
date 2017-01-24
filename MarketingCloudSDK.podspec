@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
     s.vendored_frameworks = 'MarketingCloudSDK.framework'
     s.frameworks        = 'WebKit', 'CoreLocation', 'UserNotifications', 'UIKit'
     s.public_header_files = "MarketingCloudSDK.framework/Headers/*.h"
+    s.source_files = 'MarketingCloudSDK.framework/Headers/*.h'
 end
