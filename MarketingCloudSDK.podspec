@@ -9,9 +9,8 @@ Pod::Spec.new do |s|
     s.platform          = :ios, "9.0"
     s.source            = { :git => "https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS.git",
                             :tag => "v#{s.version}"}
-    s.source_files      = "MarketingCloudSDK/*.framework"
     s.preserve_paths    = "*.md"
     s.requires_arc      = true
-    ss.vendored_frameworks = 'MarketingCloudSDK/MarketingCloudSDK.framework'
+    ss.vendored_frameworks = 'MarketingCloudSDK.framework'
     s.frameworks        = 'WebKit', 'CoreLocation', 'UserNotifications', 'UIKit'
 end
