@@ -1,11 +1,12 @@
 //
-//  MarketingCloudSDK+Helpers.h
-//  JB4A-SDK-iOS
+//  MarketingCloudSDK+Location.h
+//  MarketingCloudSDK
 //
-//  Copyright © 2017 Salesforce. All rights reserved.
+//  https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/
+//  Copyright © 2017 Salesforce, Inc. All rights reserved.
 //
 
-#import "MarketingCloudSDK.h"
+#import <MarketingCloudSDK/MarketingCloudSDK.h>
 
 @interface MarketingCloudSDK (Location)
 
@@ -19,12 +20,19 @@
 /**
  Use this method to initiate Location Services through the MobilePush SDK.
  */
--(void)sfmc_startWatchingLocation;
+-(void) sfmc_startWatchingLocation;
 
 /**
  Use this method to disable Location Services through the MobilePush SDK.
  */
--(void)sfmc_stopWatchingLocation;
+-(void) sfmc_stopWatchingLocation;
+
+/**
+ Use this method to determine if the SDK is actively monitoring location.
+
+ @return A boolean value reflecting if the SDK has called startWatchingLocation.
+ */
+-(BOOL)sfmc_watchingLocation;
 
 /**
  A dictionary version of the last known Location. The dictionary will contain two keys, latitude and longitude, which are NSNumber wrappers around doubles. Use doubleValue to retrieve.
