@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Journey Builder for Apps SDK Reference</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="index.html">Journey Builder for Apps SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="index.html">Salesforce Marketing Cloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="hierarchy.html">Hierarchy</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview-contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">Journey Builder for Apps SDK Reference</h1>
+
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>A Note on Usage</h2>
+
+<p>All functionality should move through <a href="Classes/ETPush.html">ETPush</a> and it&rsquo;s methods. <a href="Classes/ETPush.html">ETPush</a> is a singleton for your convenience, and will handle communication with Salesforce automatically. There are a few internal use methods exposed, but should not be used and are documented as such.</p>
+
+<p>Version 3.0 of the Journey Builder for Apps SDK brings new features offered by Salesforce, most notably the introduction of location services, starting with Geofenced messages. Location Services are enabled through the combination of two settings - first, the SDK must be set up for Location at configuration time <a href="Classes/ETPush.html">ETPush</a>&rsquo;s configuration method, along with explicitly instructing the LocationManager to start watching location . By having a two-key system like this, your app can (and should strongly consider) allowing the user to turn on these features in the app itself, and provide a switch or button to control that. Note that <em>both are required</em> for Location services to work. Finally, the user has ultimate control over Location Services through the Settings app provided by iOS. The LocationManager will check for permissions on startWatchingLocation (and subsequent relevant times), and must respect what iOS tells it through those methods.</p>
+
+<p>More information is available at <a href="http://code.exacttarget.com">Code@ExactTarget</a>.</p>
+						
+						
+					</div>
+					
+
+					<div class="index-container">
+						
+
+						
+						<div class="index-column">
+							<h2 class="index-title">Class References</h2>
+							<ul>
+								
+								<li><a href="Classes/ETAnalytics.html">ETAnalytics</a></li>
+								
+								<li><a href="Classes/ETCloudPage.html">ETCloudPage</a></li>
+								
+								<li><a href="Classes/ETCloudPageDataSource.html">ETCloudPageDataSource</a></li>
+								
+								<li><a href="Classes/ETEventMessage.html">ETEventMessage</a></li>
+								
+								<li><a href="Classes/ETEventRegion.html">ETEventRegion</a></li>
+								
+								<li><a href="Classes/ETGenericUpdate.html">ETGenericUpdate</a></li>
+								
+								<li><a href="Classes/ETLandingPagePresenter.html">ETLandingPagePresenter</a></li>
+								
+								<li><a href="Classes/ETLocationManager.html">ETLocationManager</a></li>
+								
+								<li><a href="Classes/ETMessage.html">ETMessage</a></li>
+								
+								<li><a href="Classes/ETPush.html">ETPush</a></li>
+								
+								<li><a href="Classes/ETRegion.html">ETRegion</a></li>
+								
+								<li><a href="Classes/ETWKLandingPagePresenter.html">ETWKLandingPagePresenter</a></li>
+								
+								<li><a href="Classes/ExactTargetEnhancedPushDataSource.html">ExactTargetEnhancedPushDataSource</a></li>
+								
+								<li><a href="Classes/PICart.html">PICart</a></li>
+								
+								<li><a href="Classes/PICartItem.html">PICartItem</a></li>
+								
+								<li><a href="Classes/PIOrder.html">PIOrder</a></li>
+								
+							</ul>
+						</div>
+						
+
+						
+						<div class="index-column">
+							
+							<h2 class="index-title">Protocol References</h2>
+							<ul>
+								
+								<li><a href="Protocols/ETGenericUpdateObjectProtocol.html">ETGenericUpdateObjectProtocol</a></li>
+								
+								<li><a href="Protocols/ExactTargetCloudPageWithAlertDelegate.html">ExactTargetCloudPageWithAlertDelegate</a></li>
+								
+								<li><a href="Protocols/ExactTargetOpenDirectDelegate.html">ExactTargetOpenDirectDelegate</a></li>
+								
+							</ul>
+							
+
+							
+							<h2 class="index-title">Constant References</h2>
+							<ul>
+								
+									<li><a href="Constants/ETRegionRequestType.html">ETRegionRequestType</a></li>
+								
+									<li><a href="Constants/GenericUpdateSendMethod.html">GenericUpdateSendMethod</a></li>
+								
+									<li><a href="Constants/LocationUpdateAppState.html">LocationUpdateAppState</a></li>
+								
+									<li><a href="Constants/MobilePushContentType.html">MobilePushContentType</a></li>
+								
+									<li><a href="Constants/MobilePushGeofenceType.html">MobilePushGeofenceType</a></li>
+								
+									<li><a href="Constants/MobilePushMessageFrequencyUnit.html">MobilePushMessageFrequencyUnit</a></li>
+								
+									<li><a href="Constants/MobilePushMessageType.html">MobilePushMessageType</a></li>
+								
+									<li><a href="Constants/configureSDKWithAppIDError.html">configureSDKWithAppIDError</a></li>
+								
+									<li><a href="Constants/pushOriginationState.html">pushOriginationState</a></li>
+								
+									<li><a href="Constants/requestPIRecommendationsError.html">requestPIRecommendationsError</a></li>
+								
+							</ul>
+							
+
+							
+						</div>
+						
+					</div>
+
+					<footer>
+						<div class="footer-copyright">
+							
+							<p class="copyright">Copyright &copy; 2017 Salesforce Marketing Cloud. All rights reserved. Updated: 2017-10-30</p>
+							
+							
+							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+							
+						</div>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</article>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

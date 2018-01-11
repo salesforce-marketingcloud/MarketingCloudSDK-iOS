@@ -1,0 +1,66 @@
+# Site title and subtitle. This is used in _includes/header.html
+title: 'Journey Builder for Apps iOS SDK (v4.9.6)'
+
+# if you wish to integrate disqus on pages set your shortname here
+disqus_shortname: ''
+
+# if you use google analytics, add your tracking id here
+google_analytics_id: 'UA-82902574-4' #PROD
+#google_analytics_id: 'UA-82902574-1' #DocPreview
+#google_analytics_id: 'UA-82902574-3' #PROD
+#google_analytics_id: 'UA-82902574-2' #DocPreview
+
+# Enable/show navigation. There are there options:
+#   0 - always hide
+#   1 - always show
+#   2 - show only if posts are present
+navigation: 1
+
+# URL to source code, used in _includes/footer.html
+codeurl: 'https://github.com/ExactTarget/JB4A-SDK-iOS'
+
+# Default categories (in order) to appear in the navigation
+sections: [
+    ['overview', 'Overview'],
+    ['get-started', 'Get Started'],
+    ['provisioning', 'Provisioning'],
+    ['create-apps', 'Create Cloud Apps'],
+    ['sdk-implementation', 'SDK Implementation'],
+    ['push-notifications', 'Push Notifications'],
+    ['user-data', 'User Data'],
+    ['opendirect', 'OpenDirect'],
+    ['location', 'Location Services'],
+    ['inbox', 'Inbox'],
+    ['analytics', 'Analytics'],
+    ['features', 'Feature Implementation'],
+    ['trouble', 'Troubleshooting'],
+    ['upgrading', 'Upgrading'],
+    ['resources', 'Additional Resources']
+]
+
+# Keep as an empty string if served up at the root. If served up at a specific
+# path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
+#baseurl: "/JB4A-SDK-iOS" # the subpath of your site, e.g. /blog/
+url: "http://salesforce-marketingcloud.github.io" # the base hostname & protocol for your site
+
+# Dates are not included in permalinks
+permalink: none
+
+# Syntax highlighting
+highlighter: rouge
+
+# Since these are pages, it doesn't really matter
+future: true
+
+# Exclude non-site files
+exclude: ['bin', 'README.md']
+
+# Use the kramdown Markdown renderer
+markdown: kramdown
+
+# Current SDK version, use for all mentions
+currentVersion: "4.9.6"
+
+# Retry and REST delay message
+retryAndRESTdelayMessage: "The SDK will send changes to Tags to the Marketing Cloud with a REST call one minute after the first change to any Marketing Cloud data.  If the REST call fails (no network for example), then it will retry in one minute intervals until the app is suspended.  If the send is unsuccessful before the app is suspended, the data will be sent the next time the app is opened.  It will take up to 5 minutes for this value to be recorded in the Contact record once the REST call is made by the SDK.
+"

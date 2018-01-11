@@ -1,0 +1,1756 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>ETRegion Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">Journey Builder for Apps SDK </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Salesforce Marketing Cloud</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/entryCount">entryCount</option>
+		
+		<option value="//api/name/exitCount">exitCount</option>
+		
+		<option value="//api/name/fenceIdentifier">fenceIdentifier</option>
+		
+		<option value="//api/name/latitude">latitude</option>
+		
+		<option value="//api/name/locationType">locationType</option>
+		
+		<option value="//api/name/longitude">longitude</option>
+		
+		<option value="//api/name/majorNumber">majorNumber</option>
+		
+		<option value="//api/name/messages">messages</option>
+		
+		<option value="//api/name/minorNumber">minorNumber</option>
+		
+		<option value="//api/name/proximityUUID">proximityUUID</option>
+		
+		<option value="//api/name/radius">radius</option>
+		
+		<option value="//api/name/regionName">regionName</option>
+		
+		<option value="//api/name/requestType">requestType</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/generatePersistentDataSchemaInDatabase">+ generatePersistentDataSchemaInDatabase</option>
+		
+		<option value="//api/name/getBeaconRegionForRegionWithProximityUUID:">+ getBeaconRegionForRegionWithProximityUUID:</option>
+		
+		<option value="//api/name/getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:">+ getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:</option>
+		
+		<option value="//api/name/getFencesFromCache">+ getFencesFromCache</option>
+		
+		<option value="//api/name/getFencesFromCacheIncludingInactive:">+ getFencesFromCacheIncludingInactive:</option>
+		
+		<option value="//api/name/getRegionByIdentifier:">+ getRegionByIdentifier:</option>
+		
+		<option value="//api/name/invalidateAllRegions">+ invalidateAllRegions</option>
+		
+		<option value="//api/name/invalidateAllRegionsForRequestType:">+ invalidateAllRegionsForRequestType:</option>
+		
+		<option value="//api/name/retrieveGeofencesFromET">+ retrieveGeofencesFromET</option>
+		
+		<option value="//api/name/retrieveProximityFromET">+ retrieveProximityFromET</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/initFromDictionary:">- initFromDictionary:</option>
+		
+		<option value="//api/name/isBeaconRegion">- isBeaconRegion</option>
+		
+		<option value="//api/name/isEqualToRegion:">- isEqualToRegion:</option>
+		
+		<option value="//api/name/isGeofenceRegion">- isGeofenceRegion</option>
+		
+		<option value="//api/name/regionAsBeaconRegion">- regionAsBeaconRegion</option>
+		
+		<option value="//api/name/regionAsCLRegion">- regionAsCLRegion</option>
+		
+		<option value="//api/name/regionAsLocation">- regionAsLocation</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">ETRegion Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td><a href="../Classes/ETGenericUpdate.html">ETGenericUpdate</a> : NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>ETRegion.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>ETRegion is a representation of a physical region that should trigger a message to be presented to the user. This could be either macro, a geofence, or micro, an iBeacon (marketing name: Proximity), but both go through iOS' Location Manager, and are reported back to the SDK through the CLLocationManagerDelegate (which is currently always <a href="../Classes/ETLocationManager.html">ETLocationManager</a>).</p>
+
+<p>Geofences will have a <a href="#//api/name/latitude">latitude</a> and <a href="#//api/name/longitude">longitude</a> and <a href="#//api/name/radius">radius</a>, but will be notably absent of a proximity UUID, major and minor number. Beacons also have <a href="#//api/name/latitude">latitude</a> and <a href="#//api/name/longitude">longitude</a> (but no <a href="#//api/name/radius">radius</a>) because of a decision to track their physical location in the world, but it is inconsequential to functionality. A beacon is functional because of the Proximity UUID. Major and Minor number. The three of these uniquely identify a physical beacon. Per Apple&rsquo;s best practices (WWDC 2013), a single UUID should be used commonly amongst an entire Enterprise (example: All Motes Coffee Shop locations share a UUID). Major numbers should designate a single location within the UUID (Starbucks #1234, 15th and College, Indianapolis), and a Minor number can indicate the beacon within the location designated in the Major (Point of Sale). Salesforce suggests following this pattern when configuring beacons.</p>
+
+<p>ETRegions will has a zero-to-many relationship with <a href="../Classes/ETMessage.html">ETMessage</a>, which in turn, has a zero-to-many relationship with ETRegion. In plain English, one region can have many <a href="#//api/name/messages">messages</a>, and one message can belong to many regions. This is handled through ETFenceMessage.</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/fenceIdentifier" title="fenceIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fenceIdentifier">&nbsp;&nbsp;fenceIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ET-generated identifier for the ETRegion in question. This should be treated as a primary key, and is stored on the device as the encoded version sent via the routes.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *fenceIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>ET-generated identifier for the ETRegion in question. This should be treated as a primary key, and is stored on the device as the encoded version sent via the routes.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/latitude" title="latitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/latitude">&nbsp;&nbsp;latitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The latitude of this region. Saved in an NSNumber as a double for easy passing. Be sure to call doubleValue on this property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSNumber *latitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The latitude of this region. Saved in an NSNumber as a double for easy passing. Be sure to call doubleValue on this property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/longitude" title="longitude"></a>
+	<h3 class="method-title"><code><a href="#//api/name/longitude">&nbsp;&nbsp;longitude</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The longitude of this region. Saved in an NSNumber as a double for easy passing. Be sure to call doubleValue on this property.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSNumber *longitude</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The longitude of this region. Saved in an NSNumber as a double for easy passing. Be sure to call doubleValue on this property.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/radius" title="radius"></a>
+	<h3 class="method-title"><code><a href="#//api/name/radius">&nbsp;&nbsp;radius</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For geofences only, the radius of the fence. This number, an integer, is in meters.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSNumber *radius</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For geofences only, the radius of the fence. This number, an integer, is in meters.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/messages" title="messages"></a>
+	<h3 class="method-title"><code><a href="#//api/name/messages">&nbsp;&nbsp;messages</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>An array of related messages. It is not proper to pull a message out of this array, though. It&rsquo;s used for initialization and data passing.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy, nullable) NSArray *messages</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>An array of related messages. It is not proper to pull a message out of this array, though. It&rsquo;s used for initialization and data passing.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/proximityUUID" title="proximityUUID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/proximityUUID">&nbsp;&nbsp;proximityUUID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For beacons, the Proximity UUID of the beacon.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *proximityUUID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For beacons, the Proximity UUID of the beacon.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/majorNumber" title="majorNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/majorNumber">&nbsp;&nbsp;majorNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For beacons, the Major number. This is a uint32 per the CLBeaconRegion spec.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSNumber *majorNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For beacons, the Major number. This is a uint32 per the CLBeaconRegion spec.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/minorNumber" title="minorNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/minorNumber">&nbsp;&nbsp;minorNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For beacons, the Minor number. This is a uint32 per the CLBeaconRegion spec.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSNumber *minorNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For beacons, the Minor number. This is a uint32 per the CLBeaconRegion spec.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/entryCount" title="entryCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/entryCount">&nbsp;&nbsp;entryCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the number of times a region is entered as counted by the <a href="../Classes/ETLocationManager.html">ETLocationManager</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy, nullable) NSNumber *entryCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the number of times a region is entered as counted by the <a href="../Classes/ETLocationManager.html">ETLocationManager</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exitCount" title="exitCount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exitCount">&nbsp;&nbsp;exitCount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the number of times a region is exited as counted by the <a href="../Classes/ETLocationManager.html">ETLocationManager</a>. Ideally, it matches enter count.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, copy, nullable) NSNumber *exitCount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the number of times a region is exited as counted by the <a href="../Classes/ETLocationManager.html">ETLocationManager</a>. Ideally, it matches enter count.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/regionName" title="regionName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regionName">&nbsp;&nbsp;regionName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the name which is set on SalesforceMarketingCloud, while setting the ETRegion</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, copy, nullable) NSString *regionName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the name which is set on SalesforceMarketingCloud, while setting the ETRegion</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/locationType" title="locationType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/locationType">&nbsp;&nbsp;locationType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The type of region this ETRegion represents. This is sent from the server, so we trust it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) MobilePushGeofenceType locationType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>The type of region this ETRegion represents. This is sent from the server, so we trust it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestType" title="requestType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestType">&nbsp;&nbsp;requestType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>For <a href="../Classes/ETGenericUpdate.html">ETGenericUpdate</a>, this is the type of request that is being initiated. It will soon be deprecated.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) ETRegionRequestType requestType</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>For <a href="../Classes/ETGenericUpdate.html">ETGenericUpdate</a>, this is the type of request that is being initiated. It will soon be deprecated.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/initFromDictionary:" title="initFromDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initFromDictionary:">&ndash;&nbsp;initFromDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the designated initializer. Pass it in a dictionary, get out an ETRegion.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable instancetype)initFromDictionary:(NSDictionary&lt;__kindofNSString*,id&gt; *)<em>dict</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dict</code></th>
+						<td><p>NSDictionary of values of which to apply to this ETRegion.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A newly minted ETRegion.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the designated initializer. Pass it in a dictionary, get out an ETRegion.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEqualToRegion:" title="isEqualToRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEqualToRegion:">&ndash;&nbsp;isEqualToRegion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Region equality. Based on the kind of ETRegion, it will compare values and determine equality.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEqualToRegion:(ETRegion *)<em>region</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>region</code></th>
+						<td><p>a ETRegion value. The other ETRegion to which the comparison should be made.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>BOOL T/F of equality.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Region equality. Based on the kind of ETRegion, it will compare values and determine equality.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/regionAsLocation" title="regionAsLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regionAsLocation">&ndash;&nbsp;regionAsLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This returns a CLLocation representation of the current ETRegion, or nil if a beacon.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable CLLocation *)regionAsLocation</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The region as a CLLocation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This returns a CLLocation representation of the current ETRegion, or nil if a beacon.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/regionAsCLRegion" title="regionAsCLRegion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regionAsCLRegion">&ndash;&nbsp;regionAsCLRegion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the ETRegion as a CLRegion for use in Beacon code, or nil if a Geofence.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable CLRegion *)regionAsCLRegion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A CLRegion representation of self.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns the ETRegion as a CLRegion for use in Beacon code, or nil if a Geofence.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/regionAsBeaconRegion" title="regionAsBeaconRegion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/regionAsBeaconRegion">&ndash;&nbsp;regionAsBeaconRegion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns self as a CLBeaconRegion, or nil if a Geofence.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable CLBeaconRegion *)regionAsBeaconRegion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>CLBeaconRegion representation of self.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns self as a CLBeaconRegion, or nil if a Geofence.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isGeofenceRegion" title="isGeofenceRegion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isGeofenceRegion">&ndash;&nbsp;isGeofenceRegion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper to quickly determine if this is a Geofence region.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isGeofenceRegion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>T/F if a geofence.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Helper to quickly determine if this is a Geofence region.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isBeaconRegion" title="isBeaconRegion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isBeaconRegion">&ndash;&nbsp;isBeaconRegion</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Helper to quickly determine if this is a Beacon/Proximity region.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isBeaconRegion</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>T/F if a beacon.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Helper to quickly determine if this is a Beacon/Proximity region.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRegionByIdentifier:" title="getRegionByIdentifier:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRegionByIdentifier:">+&nbsp;getRegionByIdentifier:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a specific ETRegion by the ET-provided identifier, or nil if it doesn&rsquo;t exist.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable ETRegion *)getRegionByIdentifier:(NSString *)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>The region ID to retrieve.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The region, or nil if it doesn&rsquo;t exist.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a specific ETRegion by the ET-provided identifier, or nil if it doesn&rsquo;t exist.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:" title="getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:">+&nbsp;getBeaconRegionForRegionWithProximityUUID:andMajorNumber:andMinorNumber:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a specific Beacon Region from the database. This is more useful for ranging, since at that time we don&rsquo;t know the ET identifier yet, but we know UUID, Major and Minor.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable ETRegion *)getBeaconRegionForRegionWithProximityUUID:(NSString *)<em>proximityUUID</em> andMajorNumber:(NSNumber *)<em>majorNumber</em> andMinorNumber:(NSNumber *)<em>minorNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>proximityUUID</code></th>
+						<td><p>The ranged beacon UUID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>majorNumber</code></th>
+						<td><p>An NSNumber-wrapped uint32 of the beacon&rsquo;s major number</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>minorNumber</code></th>
+						<td><p>An NSNumber-wrapped uint32 of the beacon&rsquo;s minor number</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The region, or nil if it doesn&rsquo;t exist.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a specific Beacon Region from the database. This is more useful for ranging, since at that time we don&rsquo;t know the ET identifier yet, but we know UUID, Major and Minor.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBeaconRegionForRegionWithProximityUUID:" title="getBeaconRegionForRegionWithProximityUUID:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconRegionForRegionWithProximityUUID:">+&nbsp;getBeaconRegionForRegionWithProximityUUID:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a specific Beacon Region from the database.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable ETRegion *)getBeaconRegionForRegionWithProximityUUID:(NSString *)<em>proximityUUID</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>proximityUUID</code></th>
+						<td><p>The ranged beacon region UUID</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The region, or nil if it doesn&rsquo;t exist.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a specific Beacon Region from the database.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFencesFromCache" title="getFencesFromCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFencesFromCache">+&nbsp;getFencesFromCache</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Pulls all active regions out of the local database.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable NSSet&lt;__kindofETRegion*&gt; *)getFencesFromCache</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSSet of ETRegions.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Pulls all active regions out of the local database.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getFencesFromCacheIncludingInactive:" title="getFencesFromCacheIncludingInactive:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getFencesFromCacheIncludingInactive:">+&nbsp;getFencesFromCacheIncludingInactive:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Pulls all (both active and inactive) regions out of the local database.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (nullable NSSet&lt;__kindofETRegion*&gt; *)getFencesFromCacheIncludingInactive:(BOOL)<em>getInactive</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>getInactive</code></th>
+						<td><p>a BOOL value.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An NSSet of <em>all</em> ETRegions.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Pulls all (both active and inactive) regions out of the local database.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invalidateAllRegionsForRequestType:" title="invalidateAllRegionsForRequestType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invalidateAllRegionsForRequestType:">+&nbsp;invalidateAllRegionsForRequestType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Marks all regions in the database for a specific type as inactive. This is done after successfully retrieving fences from Salesforce.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)invalidateAllRegionsForRequestType:(ETRegionRequestType)<em>requestType</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestType</code></th>
+						<td><p>Filter to only invalidate certain types of region based on ET Request.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>T/F if the process was successful.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Marks all regions in the database for a specific type as inactive. This is done after successfully retrieving fences from Salesforce.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/invalidateAllRegions" title="invalidateAllRegions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invalidateAllRegions">+&nbsp;invalidateAllRegions</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invalidates all reason. Full stop.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)invalidateAllRegions</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>T/F of the success of the operation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Invalidates all reason. Full stop.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/retrieveGeofencesFromET" title="retrieveGeofencesFromET"></a>
+	<h3 class="method-title"><code><a href="#//api/name/retrieveGeofencesFromET">+&nbsp;retrieveGeofencesFromET</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Begins fence retrieval from ET of Geofences.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)retrieveGeofencesFromET</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Begins fence retrieval from ET of Geofences.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/retrieveProximityFromET" title="retrieveProximityFromET"></a>
+	<h3 class="method-title"><code><a href="#//api/name/retrieveProximityFromET">+&nbsp;retrieveProximityFromET</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Begins fence retrieval from ET of Beacons.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (void)retrieveProximityFromET</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Begins fence retrieval from ET of Beacons.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETRegion.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/generatePersistentDataSchemaInDatabase" title="generatePersistentDataSchemaInDatabase"></a>
+	<h3 class="method-title"><code><a href="#//api/name/generatePersistentDataSchemaInDatabase">+&nbsp;generatePersistentDataSchemaInDatabase</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Passes a call to the Static method of the same name, with the correct object named in the instance variable. It needed an instance counterpart because we are dealing with a specific update at the point where this is called, and that&rsquo;s the perfect place to reference back to the static version.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)generatePersistentDataSchemaInDatabase</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Passes a call to the Static method of the same name, with the correct object named in the instance variable. It needed an instance counterpart because we are dealing with a specific update at the point where this is called, and that&rsquo;s the perfect place to reference back to the static version.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">ETGenericUpdate.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Salesforce Marketing Cloud. All rights reserved. Updated: 2017-10-30</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
