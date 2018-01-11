@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Journey Builder for Apps iOS SDK (v4.9.6) : README</title>
+        <title>Journey Builder for Apps iOS SDK (v5.0.0) : README</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">Journey Builder for Apps iOS SDK (v4.9.6)</a>
+                    <h4><a class=brand href="/">Journey Builder for Apps iOS SDK (v5.0.0)</a>
     
     
 </h4>
@@ -232,240 +232,17 @@
 <ul>
   <li>The <a href="http://help.exacttarget.com/en/documentation/mobilepush/" target="_blank">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.</li>
   <li>The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos" target="_blank">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the Journey Builder for Apps SDK.</li>
-  <li><a href="http://pub.s1.exacttarget.com/2ujjacpet3t">Sign up for email updates about the JB4A iOS SDK</a>.<br /><br /></li>
+  <li><a href="http://pub.s1.exacttarget.com/2ujjacpet3t">Sign up for email updates about the iOS MarketingCloudSDK</a>.<br /><br /></li>
 </ul>
-
-<h2 id="ios-version">iOS Version</h2>
-
-<p><strong>SDK version 4.6.0 and higher:</strong> Build your app for iOS version 8.1 or higher.</p>
-
-<p><strong>SDK version 4.5.1:</strong> Build your app for iOS version 7 or higher.<br /><br /></p>
 
 <h2 id="release-history">Release History</h2>
 
-<p>For releases prior to 4.5.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS-v4.5.0/" target="_blank">Prior Release Documentation</a></p>
+<p>For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a></p>
 
-<h4 id="version-496">Version 4.9.6</h4>
-<p><em>Released October 30, 2017, correlating with the Marketing Cloud October 2017 release</em></p>
+<h4 id="version-500">Version 5.0.0</h4>
+<p><em>Released January 26, 2017, correlating with the Marketing Cloud January 2018 release</em></p>
 
-<ul>
-  <li>
-    <p>This release adds support for rich notifications. Rich notifications include images, audio, video, and titles and subtitles from MobilePush. Host your files with a public URL and use that address to include rich media in your notifications.</p>
-  </li>
-  <li>
-    <p>Marketing Cloud now offers a plug-in to enable Cordova functionality in our Android and iOS SDKs. Review our <a href="https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin">GitHub repo</a> for plug-in files and more information.</p>
-  </li>
-</ul>
-
-<h4 id="version-495">Version 4.9.5</h4>
-<p><em>Released August 28, 2017, correlating with the Marketing Cloud August 2017 release.</em></p>
-
-<ul>
-  <li><strong>App Inbox Enhancements</strong> – Send a push message to the Inbox at the same time. On iOS, this feature comes with support of unread message count badging on the app icon. The new enhancements also come with additional analytics so you can track the engagement on opened and downloaded messages.</li>
-  <li><strong>Predictive Intelligence Cart Tracking</strong> – Interested in tracking shopping carts from within your app? Track unique SKUs, which makes it possible to track all of your products through to conversion. Tracking cart events can be used to drive abandoned cart journeys to drive sales.</li>
-  <li>We fully tested the JB4A version 4.9.5 SDK with Xcode 8 and Xcode 9 using all supported base SDK and deployment target versions, including iOS 11 as both base SDK and minimum deployment versions in Xcode 9. If you build your application with Xcode 9 and target the iOS 11 SDK, note that SDK 4.9.5/209 and earlier versions display at least one static analyzer warning at debug time in Xcode. These versions also display at least one application log message at app runtime indicating that requestAlwaysAuthorization and registerForRemoteNotifications need to be called on the main thread:
-    <ul>
-      <li>Use [UIApplication registerForRemoteNotifications] from the main thread only.</li>
-      <li>This error is <em>not</em> fatal.</li>
-      <li>Our October 2017 release corrects this error.</li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="version-490">Version 4.9.0</h4>
-<p><em>Released June 19, 2017, correlating with the Marketing Cloud 208 release.</em></p>
-
-<ul>
-  <li><strong>Added ability to get inbox messages and counts</strong> – We added new convenience methods to get all CloudPage inbox messages and the count of read, unread and all inbox messages.</li>
-</ul>
-
-<h4 id="version-480">Version 4.8.0</h4>
-<p><em>Released April 3, 2017, correlating with the Marketing Cloud 207 release.</em></p>
-
-<ul>
-  <li><strong>Updated CloudPage inbox data source</strong> – We now ensure that the CloudPage inbox refreshes for the entire lifecycle of the data source object.</li>
-  <li><strong>Corrected nullability annotation warning</strong> – We corrected an annotation that generated a warning in Swift projects.</li>
-  <li><strong>Updated push tokens</strong> – We now ensure that apps send new or refreshed push tokens back to Marketing Cloud.</li>
-  <li><strong>Improved thread safety</strong> – We improved the SDK’s behavior with multiple concurrent network connections, which makes the SDK more thread safe.</li>
-</ul>
-
-<h4 id="version-470">Version 4.7.0</h4>
-<p><em>Released January 30, 2017, correlating with the Marketing Cloud 206 release.</em></p>
-
-<ul>
-  <li><strong>Improved internal database</strong> – We resolved a potential error in our internal database to ensure proper app function.</li>
-  <li><strong>Improved network error handling</strong> – We improved network error handling to prevent CloudPage inbox messages from being incorrectly deleted.</li>
-</ul>
-
-<h4 id="version-460">Version 4.6.0</h4>
-<p><em>Released November 2, 2016, corresponding to the Marketing Cloud 2016-06 release</em></p>
-
-<ul>
-  <li>
-    <p><strong>iOS 10 Support</strong> – Users can now use the SDK with iOS 10. This update changes the handling of push notifications on iOS devices running version 10 or greater. The SDK remains compatible with previous versions of iOS. On devices running version 10, the SDK now uses the new user notification framework. View details here: <a href="/features/iOS10-notifications.html">Use iOS 10 Notifications</a>.</p>
-  </li>
-  <li>
-    <p><strong>Collect API Update</strong> – If SubscriberKey contains a value, the Collect API payload includes that value whether or not it’s in the format of an email address.</p>
-  </li>
-  <li>
-    <p><strong>New Minimum Deployment Target Version: iOS 8.1</strong> – Build your app for iOS 8.1 or higher to be compatible with the SDK.</p>
-  </li>
-  <li>
-    <p><strong>Upgrade SDK to have ATS supported</strong> – The JB4A SDK version 4.4.0 or higher supports App Transport Security (ATS). Apple announced that ATS will be required for all apps by January 2017. Upgrade the JB4A SDK and build your app for iOS 9 or higher. See <a href="/upgrading/ats-considerations.html">ATS Considerations</a>.</p>
-  </li>
-  <li>
-    <p><strong>Improved error handling</strong> – We improved the error handling in the ETPush class method <code class="highlighter-rouge">-(void)applicationLaunchedWithOptions:(nullable NSDictionary *)launchOptions</code>.</p>
-  </li>
-</ul>
-
-<h4 id="version-451">Version 4.5.1</h4>
-<p><em>Released October 6, 2016</em></p>
-
-<ul>
-  <li><strong>Keychain error handling improvements</strong> - We made improvements to keychain error handling.</li>
-</ul>
-
-<h4 id="version-450">Version 4.5.0</h4>
-<p><em>Released September 12, 2016, correlating with the Marketing Cloud 2016-05 release.</em></p>
-
-<ul>
-  <li><strong>MobilePush Beacons Support</strong> - The SDK supports <a href="/location/add-beacons.html">MobilePush Beacons</a>.</li>
-  <li><strong>Use Multiple Push Providers Cautiously</strong> - If you use multiple push providers, there are several things you should be aware of: <a href="/trouble/multiple-push-sdks.html">Troubleshooting</a>.</li>
-</ul>
-
-<h4 id="version-440">Version 4.4.0</h4>
-<p><em>Released July 18 2016, correlating to the Marketing Cloud 2016-04 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-854 - <a href="/JB4A-SDK-iOS/rich-push/inbox.html#CPDelegate">iOS - Created CloudPage+Alert Delegate</a>.</li>
-  <li>MOBILESDK-904 - iOS SDK to use NSURLSession for networking. As of release 2016-04 of the JB4A SDK, we are 100% compliant with Apple NSURLSession standards.</li>
-  <li>MOBILESDK-907 - <a href="/JB4A-SDK-iOS/features/analytics.html#TrackCartAnalytics">Implemented Predictive Intelligence integration methods for tracking eCommerce cart contents and cart conversions.</a></li>
-  <li>MOBILESDK-909 - Fixed getSDKState() to correctly report data.</li>
-  <li>MOBILESDK-910 - Improved Deprecation warnings in SDK.</li>
-</ul>
-
-<h4 id="version-430">Version 4.3.0</h4>
-<p><em>Released May 23 2016, correlating to the Marketing Cloud 2016-03 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-371 - Remove deprecated functions from public interfaces.</li>
-  <li>MOBILESDK-379 - Adjust iOS to be Swift compatible.</li>
-  <li>MOBILESDK-604 - Create Event Bus.</li>
-  <li>MOBILESDK-779 - Include Appledocs docset file with release code and documentation.</li>
-  <li>MOBILESDK-790 - Inaccurate horizontal accuracy may prevent location downloads from occuring.</li>
-  <li>MOBILESDK-821 - Reusing a beacon with the same UUID/Major/Minor will result in lookup errors in the SDK.</li>
-  <li>MOBILESDK-822 - Do not display geofence or beacon message with an empty alert.</li>
-  <li>MOBILESDK-829 - Implement retry logic for beacons, cloudpages and geofences.</li>
-  <li>MOBILESDK-830 - Getting OpenDirect delegate crashes app unless has been set.</li>
-  <li>MOBILESDK-832 - Add missing fields to PiWama Analytics.</li>
-  <li>MOBILESDK-848 - Implement bitcode enabled.</li>
-  <li>MOBILESDK-851 - Once a day updates should renew the location fix before getting data.</li>
-</ul>
-
-<h4 id="version-421">Version 4.2.1</h4>
-<p><em>Released April 06 2016, correlating to the Marketing Cloud 2016-02.1 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-760 - Remove expired Mobile Inbox Cloud Pages from the SDK.</li>
-  <li>MOBILESDK-711 - Cloud Page sync for iOS. Cloud pages removed from web app are also removed from SDK.</li>
-</ul>
-
-<h4 id="version-420">Version 4.2.0</h4>
-<p><em>Released March 21 2016, correlating to the Marketing Cloud 2016-02 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-063 - Fix Geofence and Beacon analytics for region entry, exit, and message displayed.</li>
-  <li>MOBILESDK-258 - Improvements to beacon detection and message display.</li>
-  <li>MOBILESDK-268 - Package registration data updates with each update method (such as setTag(), addAttribute()) by
-                issuing REST call 1 minute after first call.  If REST call fails, retry in background until REST
-                call succeeds or app is suspended.</li>
-  <li>MOBILESDK-375 - Update the default landing page used to display OpenDirect and CloudPage+Alert URLs when these notifications are tapped, to use WKWebView rather than UIWebview.</li>
-  <li>MOBILESDK-376 - Set CLLocationManager allowsBackgroundLocationUpdates to YES for iOS9 builds (required for Beacons support).</li>
-  <li>MOBILESDK-387 - Improve downloading of new Geofences and Beacons.  New <a href="/location/geolocation.html#plist">plist entry</a> if you would like a daily refresh of regions and messages.</li>
-  <li>MOBILESDK-389 - Ensure SQL DB is constrained to at most 1000 rows of Marketing Cloud Analytics.</li>
-  <li>MOBILESDK-413 - Make sure device ranges for locations after device reboot.</li>
-  <li>MOBILESDK-417 - Add boolean in <a href="/sdk-implementation/implement-sdk.html">configureSDK()</a> to turn on Beacon ranging (if you are part of the Beacon Beta Test).</li>
-  <li>MOBILESDK-481 - Attribute names that conflict with Contact record attribute names will be rejected.  Check returned boolean if attribute is accepted.</li>
-  <li>MOBILESDK-509 - Reject subscriberKey, Tags and attributes that are null.  Trim leading and trailing blanks before sending.  Blank subscriberKey and Tags will also be rejected.
-                Check returned boolean to determine if the values were accepted.</li>
-  <li>MOBILESDK-550 - Fix open and time in app sent for Marketing Cloud analytics.</li>
-  <li>MOBILESDK-580 - Implement <a href="/trouble/ios-debugging.html">getSDKState()</a> method to return a JSON string with key SDK values for debugging purposes.</li>
-  <li>MOBILESDK-616 - Make the device id persistent across app installs.</li>
-  <li>MOBILESDK-634 - Add custom <a href="/features/features-logging.html">logging handler</a>.</li>
-  <li>MOBILESDK-674 - Add getTags() and getAttributes() and deprecate allTags() and allAttributes().</li>
-  <li>MOBILESDK-727 - Change <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/appledoc/Classes/ETPush.html#//api/name/updateET">updateET()</a> so that it sends Registration data immediately on the first call (after app enters
-                foreground state) and in 1 minute intervals for subsequent calls.</li>
-</ul>
-
-<h4 id="version-410">Version 4.1.0</h4>
-<p><em>Released February 2, 2016, correlating to the Marketing Cloud 2016-01 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-502 - Create an ETAnalytics class to have parity with Android.</li>
-  <li>MOBILESDK-493 - Swift unable to resolve LocationManager.</li>
-  <li>MOBILESDK-492 - Library has possible issues with debug symbols.</li>
-  <li>MOBILESDK-474 - Registration Opt-In Process incorrectly sends TRUE.</li>
-  <li>MOBILESDK-444 - Add Retry logic - iOS.</li>
-  <li>MOBILESDK-269 - Make end point configurable for WAMA in SDK.</li>
-  <li>MOBILESDK-231 - Add constraints to WAMA Analytics.</li>
-  <li>MOBILESDK-217 - Update Analytics</li>
-</ul>
-
-<h4 id="version-403">Version 4.0.3</h4>
-<p><em>Released November 4, 2015, correlating to the Marketing Cloud 2015-06.HF Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-439 - iOS SDK returning latitude/longitude with commas instead of decimal points for certain locales.</li>
-  <li>MOBILESDK-428 - Database corruption following VACUUM</li>
-  <li>MOBILESDK-427 - Fix for ETEvent analytics to handle Array of dictionaries.</li>
-</ul>
-
-<h4 id="version-402">Version 4.0.2</h4>
-<p><em>Released October 2, 2015, correlating to the Marketing Cloud 2015-06 Release</em><br /></p>
-
-<ul>
-  <li>MOBILESDK-327 - Fix for missing keychain item when applications are restored from an unencrypted backup.</li>
-  <li>MOBILESDK-326 - Only send registration data if different from the last one sent</li>
-  <li>MOBILESDK-311 - Application crashing in iOS SDK</li>
-  <li>MOBILESDK-310 - Reduce Location REST call traffic to Marketing Cloud</li>
-  <li>MOBILESDK-300 - Application crashing in iOS SDK</li>
-</ul>
-
-<blockquote>
-  <p>This version of the JB4A SDK introduces iOS Keychain usage. To ensure that your app retains any relevant data across user backups and restores, encourage your app users to implement encrypted backups for their devices. Otherwise, information (such as tags, attributes, and subscriber keys) will not persist.</p>
-</blockquote>
-
-<h4 id="version-401">Version 4.0.1</h4>
-<p><em>Released July 23rd, 2015</em><br /></p>
-
-<ul>
-  <li>MPUSH-3856 - SUPPORT - Upgrade to MobilePush iOS SDK 4.0.0 from SDK 3.4.2 Causes App to Freeze<br /></li>
-</ul>
-
-<h4 id="version-400">Version 4.0.0</h4>
-<p><em>Released June 24th, 2015, correlating to the Marketing Cloud 2015-04 Release</em><br /></p>
-
-<ul>
-  <li>MPUSH-3605 - SDK iOS: Modify payload to always send english datetime<br /></li>
-  <li>MPUSH-3472 - Change iOS location_enabled registration field to user location opt-in status<br /></li>
-  <li>MPUSH-3442 - Remove Access Token from REST Route Body - iOS<br /></li>
-  <li>MPUSH-3885 - iOS app crashes after viewing Cloud Page Inbox<br /></li>
-  <li>MPUSH-3341 - SDK Updates &amp; Changes<br /></li>
-  <li>MPUSH-3259 - iOS: Encrypt data on device<br /></li>
-  <li>MPUSH-3717 - Timing issue with ExactTargetEnhancedPushDataSource<br /></li>
-  <li>MPUSH-3713 - Added ability to utilize unicode characters in Rich Push subject lines<br /></li>
-</ul>
-
-<p><strong>Required Coding Changes</strong></p>
-
-<p>The following are changes that must be made in order to upgrade from previous releases of the SDK:<br /><br />
-The latest configureSDKWithAppID has some additional parameters and can be found at <a href="/sdk-implementation/implement-sdk.html">Implement the SDK</a>.</p>
-
-<p>You will need to update your configSDK registration call to now read:</p>
-
-<script src="https://gist.github.com/sfmc-mobilepushsdk/71cf71032cfe92c06d76bf5f894cb115.js"></script>
-
-<!--**Recommended Coding Changes** -->
+<p>TBD</p>
 
                     </div>
                 
@@ -475,7 +252,7 @@ The latest configureSDKWithAppID has some additional parameters and can be found
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/ExactTarget/JB4A-SDK-iOS" target="_blank">Journey Builder for Apps iOS SDK (v4.9.6)</a>
+                    Documentation for <a href="https://github.com/ExactTarget/JB4A-SDK-iOS" target="_blank">Journey Builder for Apps iOS SDK (v5.0.0)</a>
 
                 </div>
             </div>
