@@ -2,7 +2,7 @@
 layout: page
 title: "Custom Keys"
 subtitle: "Handling Custom Keys Sent with Message Payload"
-category: features
+category: push-notifications
 date: 2015-05-14 12:00:00
 order: 5
 ---

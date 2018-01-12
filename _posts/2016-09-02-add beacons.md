@@ -5,6 +5,7 @@ subtitle: "Add Beacons"
 category: location
 date: 2016-09-02 08:43:35
 order: 3
+published: false
 ---
 We enable beacon support when you implement the location requirements above.
 
