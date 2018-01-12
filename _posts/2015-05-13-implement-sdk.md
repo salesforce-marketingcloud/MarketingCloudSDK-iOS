@@ -45,81 +45,15 @@ MarketingCloudSDK framework via a JSON file added to your application. This file
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure7.png" /><br/>
 > When implementing the MarketingCloudSDK framework, note that all method names contain the prefix *sfmc_*. This convention allows the application implementing the SDK to protect against the possibility of namespace collisions between external libraries it may use. We've taken every precaution to ensure that MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application may implement. Review Apple's [documentation on customizing existing classes](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4) for further information.
 1. In your application delegate, import the framework header to enable MarketingCloudSDK functionality.
-```
-#import <MarketingCloudSDK/MarketingCloudSDK.h>
-```
-```
-import MarketingCloudSDK
-```
+<script src="https://gist.github.com/1fd881bd6bd0b81fc53fac4763d758ba.js"></script>
+<script src="https://gist.github.com/e98010d99755e03fa470b7f6bea2522e.js"></script>
 1. In your application delegate class, add these sections of code to ensure that your application registers for and handles push notifications. Set your AppDelegate class to adhere to the UNUserNotificationCenterDelegate protocol.
-```
-AppDelegate ()<UNUserNotificationCenterDelegate>
-...
-```
-```
-class AppDelegate: UNUserNotificationCenterDelegate
-...
-```
+<script src="https://gist.github.com/de3ba047a63c27ec8d88fc8e6eaa4f5d.js"></script>
+<script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script>
+
 1. In your application delegate method *-application:didFinishLaunchingWithOptions:*, create an instance of the MarketingCloudSDK and configure it for use, setting the push delegate and requesting push authorization. Only init or configure in didFinishingLaunching.
-```
--(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-    // weak reference to avoid retain cycle within block
-    __weak __typeof__(self) weakSelf = self;
-
-    NSError *configureError = nil;
-        BOOL configured = [[MarketingCloudSDK sharedInstance] sfmc_configure:&configureError
-                         completionHandler:^(BOOL success, NSString *appId, NSError *error) {
-            // The SDK has been fully configured and is ready for use!
-
-            // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-            [UNUserNotificationCenter currentNotificationCenter].delegate = weakSelf;
-
-            dispatch_async(dispatch_get_main_queue(), ^{
-            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge
-                                                                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                                                                            if (error == nil) {
-                                                                                if (granted == YES) {
-                                                                                            dispatch_async(dispatch_get_main_queue(), ^{
-                                                                                    // we are authorized to use notifications, request a device token for remote notifications
-                                                                                    [[UIApplication sharedApplication] registerForRemoteNotifications];
-                                                                                    });
-                                                                                }
-                                                                            }
-                                                                        }];
-                                                                        });        
-        }];
-        if (configured == YES) {
-            // The configuation process is underway.
-        }
-    }
-    ...  
-  ```
-  ```
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    // weak reference to avoid retain cycle within block
-    weak var weakSelf = self
-    do {
-        try MarketingCloudSDK.sharedInstance().sfmc_configure(completionHandler: {(_ success: Bool, _ appId: String, _ error: Error?) -> Void in
-            // The SDK has been fully configured and is ready for use!
-            // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-            UNUserNotificationCenter.current().delegate = weakSelf
-            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {(_ granted: Bool, _ error: Error?) -> Void in
-                if error == nil {
-                    if granted == true {
-                         // we are authorized to use notifications, request a device token for remote notifications
-                        UIApplication.shared.registerForRemoteNotifications()
-                    }
-                }
-            })
-        })
-        return true
-    } catch let error as NSError {
-        print("Error: \(error)")
-    }
-    return false
-}
-```
+<script src="https://gist.github.com/1770c3d15eff943946ba254203d9ae87.js"></script>
+<script src="https://gist.github.com/9cdc6399bd6adf576371d5a5cc512b71.js"></script>
 
 Configuration of the MarketingCloudSDK includes a synchronous return of the BOOL return value and asynchronous process to complete configuration. We recommend your application rely on the *success* and *error* values returned in the *completionHandler* to verify successful configuration. The *MarketingCloudSDK+Base.h* header file details additional methods for configuration.
 
@@ -129,65 +63,5 @@ These methods use  MarketingCloudSDK methods to enable the framework's functiona
 
 If the methods below are implemented *without* using the MarketingCloudSDK methods as shown, MobilePush functionality does not work as expected. If the methods below are not implemented, MobilePush functionality **will not** work as expected.
 
-```
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    [[MarketingCloudSDK sharedInstance] sfmc_setDeviceToken:deviceToken];
-}
-
-- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-    os_log_debug(OS_LOG_DEFAULT, "didFailToRegisterForRemoteNotificationsWithError = %@", error);
-}
-
-// The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
-
-    // tell the MarketingCloudSDK about the notification
-     [[MarketingCloudSDK sharedInstance] sfmc_setNotificationRequest:response.notification.request];
-
-    if (completionHandler != nil) {
-        completionHandler();
-    }
-}
-
-// This method is REQUIRED for correct functionality of the SDK.
-// This method will be called on the delegate when the application receives a silent push
-
--(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler
-{
-    UNMutableNotificationContent *theSilentPushContent = [[UNMutableNotificationContent alloc] init];
-    theSilentPushContent.userInfo = userInfo;
-    UNNotificationRequest *theSilentPushRequest = [UNNotificationRequest requestWithIdentifier:[NSUUID UUID].UUIDString content:theSilentPushContent trigger:nil];
-
-    [[MarketingCloudSDK sharedInstance] sfmc_setNotificationRequest:theSilentPushRequest];
-
-    completionHandler(UIBackgroundFetchResultNewData);
-}
-```
-```
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        MarketingCloudSDK.sharedInstance().sfmc_setDeviceToken(deviceToken)
-    }
-
-
-    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-    }
-
-    // The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        // tell the MarketingCloudSDK about the notification
-        MarketingCloudSDK.sharedInstance().sfmc_setNotificationRequest(response.notification.request)
-        completionHandler()
-        }
-    }
-
-    // This method is REQUIRED for correct functionality of the SDK.
-    // This method will be called on the delegate when the application receives a silent push
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        let theSilentPushContent = UNMutableNotificationContent()
-        theSilentPushContent.userInfo = userInfo
-        let theSilentPushRequest = UNNotificationRequest(identifier:UUID().uuidString, content: theSilentPushContent, trigger: nil)
-        MarketingCloudSDK.sharedInstance().sfmc_setNotificationRequest(theSilentPushRequest)
-
-        completionHandler(.newData)
-    }
-```
+<script src="https://gist.github.com/948f26f2acf00add2655885e3ec5d1aa.js"></script>
+<script src="https://gist.github.com/14a82bd3208be864e0ace803e7d6632f.js"></script>

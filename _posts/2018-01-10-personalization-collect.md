@@ -12,40 +12,18 @@ These methods integrate your mobile app with Personalization Builder. Your Marke
 ## Track Cart
 
 Use to track the contents of an in-app shopping cart. For more information about this method’s general use with Personalization Builder, see Track Items in Shopping Cart (http://help.marketingcloud.com/en/documentation/collect_code/install_collect_code/track_cart/). Review this sample code for use in your mobile app.
-```
-NSDictionary *cartItem = [[MarketingCloudSDK sharedInstance] sfmc_cartItemDictionaryWithPrice:@(1.10) quantity:@(1) item:@"123456" uniqueId:@"uniqueId_123456"];
-NSDictionary *cart = [[MarketingCloudSDK sharedInstance] sfmc_cartDictionaryWithCartItemDictionaryArray:@[cartItem]];
-[[MarketingCloudSDK sharedInstance] sfmc_trackCartContents:cart];
-```
-```
-let cartItem = MarketingCloudSDK.sharedInstance().sfmc_cartItemDictionary(withPrice: 1.10, quantity: 1, item: "123456", uniqueId: "uniqueId_123456")
-let cart = MarketingCloudSDK.sharedInstance().sfmc_cartDictionary(withCartItemDictionaryArray: [cartItem])
-MarketingCloudSDK.sharedInstance().sfmc_trackCartContents(cart!)
-```
+<script src="https://gist.github.com/55cb5aca932689cf9e2935c6980beabe.js"></script>
+<script src="https://gist.github.com/0f6d9da815f4799dccdeb4fce13bf77c.js"></script>
 
 ## Track Conversion
 
 Use to track a purchase made through your mobile application. For more information about this method’s general use with Personalization Builder, see [Track Purchase Details](http://help.marketingcloud.com/en/documentation/collect_code/install_collect_code/track_conversion/). Review this sample code for use in your mobile app.
-```
-NSDictionary *cartItem = [[MarketingCloudSDK sharedInstance] sfmc_cartItemDictionaryWithPrice:@(1.10) quantity:@(1) item:@"123456" uniqueId:@"uniqueId_123456"];
-NSDictionary *cart = [[MarketingCloudSDK sharedInstance] sfmc_cartDictionaryWithCartItemDictionaryArray:@[cartItem]];
-NSDictionary *order = [[MarketingCloudSDK sharedInstance] sfmc_orderDictionaryWithOrderNumber:@"123456" shipping:@(2.11) discount:@(4.99) cart:cart];
-[[MarketingCloudSDK sharedInstance] sfmc_trackCartConversion:order];
-```
-```
-        let cartItem = MarketingCloudSDK.sharedInstance().sfmc_cartItemDictionary(withPrice: 1.10, quantity: 1, item: "123456", uniqueId: "uniqueId_123456")
-        let cart = MarketingCloudSDK.sharedInstance().sfmc_cartDictionary(withCartItemDictionaryArray: [cartItem])
-        let order = MarketingCloudSDK.sharedInstance().sfmc_orderDictionary(withOrderNumber: "123456", shipping: 2.11, discount: 4.99, cart: cart!)
-        MarketingCloudSDK.sharedInstance().sfmc_trackCartConversion(order!)
-```
+<script src="https://gist.github.com/6e9ed834a2645463f267ac1c497bb611.js"></script>
+<script src="https://gist.github.com/2e0a5c806024da20f4b0abfc77d05957.js"></script>
 
 ## Track Page View
 
 Call this method to implement page view analytics in your app. For more information about this method’s general use with Personalization Builder, see [Track Items Viewed](http://help.marketingcloud.com/en/documentation/collect_code/install_collect_code/track_page_view/). Sample code for use in your mobile app is below.
-```
-[[MarketingCloudSDK sharedInstance] sfmc_trackPageViewWithURL:@"http://my.company.com" title:@"page title" item:@"item name" search:@"search term"];
-```
-```
-MarketingCloudSDK.sharedInstance().sfmc_trackPageView(withURL: "http://my.company.com", title: "page title", item: "item name", search: "search term")
-```
+<script src="https://gist.github.com/e605564bd235b85255b9c1460f84a8b7.js"></script>
+<script src="https://gist.github.com/63511dd483bd521dbeb3b46fbece001a.js"></script>
 See MarketingCloudSDK+Intelligence.h for more information.

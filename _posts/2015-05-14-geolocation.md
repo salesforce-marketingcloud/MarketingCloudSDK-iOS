@@ -15,47 +15,12 @@ In your Info.plist, implement this key to enable this function. We require “Ap
 <img class="img-responsive" src="{{ site.baseurl }}/assets/background_modes_plist_entry.png" /><br/>
 
 In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:
-```
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-
-    if ( [[UIApplication sharedApplication] backgroundRefreshStatus] == UIBackgroundRefreshStatusAvailable )
-    {
-        // setting this will enable iOS to call the app delegate method performFetchWithCompletionHandler periodically. The implementation of that method (see below)
-        // will call the MarketingCloudSDK at most once per day to update location and proximity messages in the background - if those services have been enabled.
-        // Only call this method if you have enabled location in your MarketingCloudConfiguration.json file
-        // Note that you will require "App downloads content from the network" in your plist for this background app refresh to work
-        [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
-    }
-}
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-    ...
-    if UIApplication.shared.backgroundRefreshStatus == .available {
-        // setting this will enable iOS to call the app delegate method performFetchWithCompletionHandler periodically. The implementation of that method (see below)
-        // will call the MarketingCloudSDK at most once per day to update location and proximity messages in the background - if those services have been enabled.
-        // Only call this method if you have enabled location in your MarketingCloudConfiguration.json file
-        // Note that you will require "App downloads content from the network" in your plist for this background app refresh to work
-        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
-}
-```
+<script src="https://gist.github.com/afa07fda599677c7c0a026a984bfa6b7.js"></script>
+<script src="https://gist.github.com/afaa7fda97d7a03bbe7e05eb6efb49de.js"></script>
 
 Implement the handler for this functionality in your application delegate class:
 
-```
-// this method will be called by iOS to tell the MarketingCloudSDK to update location and proximity messages. This will only be called if [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:
-// has been set to a value other than UIApplicationBackgroundFetchIntervalNever and Background App Refresh is enabled.
--(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult) completionHandler
-{
-    [[MarketingCloudSDK sharedInstance] sfmc_refreshWithFetchCompletionHandler:completionHandler];
-}
-```
-```
-// this method will be called by iOS to tell the MarketingCloudSDK to update location and proximity messages. This will only be called if [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:
-// has been set to a value other than UIApplicationBackgroundFetchIntervalNever and Background App Refresh is enabled.
-func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-    MarketingCloudSDK.sharedInstance().sfmc_refresh(fetchCompletionHandler: completionHandler)
-}
-```
+<script src="https://gist.github.com/cf0b183c9b4a4159f2b9da3c86192b13.js"></script>
+<script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
 
 See MarketingCloudSDK+Base.h for more information regarding this method.

@@ -9,7 +9,7 @@ published: false
 ---
 Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for JB4A iOS SDK v{{ site.currentVersion }}.
 
-Download a <a href="https://github.com/salesforce-marketingcloud/JB4A-SDK-iOS/tree/master/docset">docset</a> file of the Appledocs to include in your Xcode implementation. Unzip the file and place the folder in this location:
+Download a <a href="MarketingCloudSDK-AppleDocs.zip">docset</a> file of the Appledocs to include in your Xcode implementation. Unzip the file and place the folder in this location:
 <br />
 <br />
 ```

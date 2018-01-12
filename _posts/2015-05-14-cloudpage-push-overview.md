@@ -17,36 +17,13 @@ Override the built-in web view handling of the OpenDirect URL by implementing th
 
 In the class that handles the override, make sure to adhere to the protocol. Use this AppDelegate sample as an example.
 
-```
-AppDelegate ()<UNUserNotificationCenterDelegate, MarketingCloudSDKInboxMessagesNotificationHandlerDelegate>
-```
-```
-class AppDelegate: UNUserNotificationCenterDelegate, MarketingCloudSDKInboxMessagesNotificationHandlerDelegate
-```
+<script src="https://gist.github.com/0f39ddd4004118bfee64f2d53c68c88e.js"></script>
+<script src="https://gist.github.com/22e93c290c396452f2d12b64e23f2702.js"></script>
 Somewhere in the class that implements this protocol, set the SDK's delegate handler.
-```
-[[MarketingCloudSDK sharedInstance] sfmc_setInboxMessagesNotificationHandlerDelegate:self];
-```
-```
-MarketingCloudSDK.sharedInstance().sfmc_setInboxMessagesNotificationHandlerDelegate(self)
-```
+<script src="https://gist.github.com/18f5292e1fefc3ebdff61cf13757b668.js"></script>
+<script src="https://gist.github.com/c534c46e9e9d7f40dec68e1a23bb6fb0.js"></script>
 Next, implement the required protocol methods to override the built-in functionality.
-```
-- (void) sfmc_didReceiveInboxMessagesNotificationWithContents:(NSDictionary *) contents {
-    NSString *urlString = [contents objectForKey:MarketingCloudSDKInboxMessageKey];
-    if (urlString != nil) {
-        // use the url in any way you'd like
-        NSLog(urlString);
-    }
-}
-```
-```
-    func sfmc_didReceiveInboxMessagesNotification(withContents contents: [AnyHashable: Any]?) {
-        let urlString = contents![MarketingCloudSDKInboxMessageKey] as? String
-        if urlString != nil {
-            // use the url in any way you'd like
-            print(urlString)
-        }
-    }
-```
+<script src="https://gist.github.com/cb67e790b18a9f37632c845d7f03514d.js"></script>
+<script src="https://gist.github.com/a25998c1062819d1bc3851c17de191d4.js"></script>
+
 See MarketingCloudSDK+InboxMessages.h for more information.

@@ -64,41 +64,15 @@ utcOffset
 ```
 Setting an attribute updates the value of an existing attribute on the contact record. We trim leading and trailing blanks from attribute values and names.
 
-```
-// Set an attribute
-BOOL success = [[MarketingCloudSDK sharedInstance] sfmc_setAttributeNamed:@"FavoriteTeamName" value:@"favoriteTeamName"];
-```
-```
-// Set an attribute
-
-let success: Bool = MarketingCloudSDK.sharedInstance().sfmc_setAttributeNamed("FavoriteTeamName", value: "favoriteTeamName")
-```
-
+<script src="https://gist.github.com/550bf643b9e327b48ae4815a7bf3d011.js"></script>
+<script src="https://gist.github.com/8682afa7c4c63e4849178a0fc6d1d5d8.js"></script>
 You cannot use the SDK to remove attributes from the contact record. However, you can stop sending the attribute to Marketing Cloud by using the clear method. This method does not remove or change the value on the contact record in Marketing Cloud.
-```
-// Clear an attribute
-[[MarketingCloudSDK sharedInstance] sfmc_clearAttributeNamed:@"FavoriteTeamName"];
-```
-```
-// Clear an attribute
-
-MarketingCloudSDK.sharedInstance().sfmc_clearAttributeNamed("FavoriteTeamName")
-```
-
+<script src="https://gist.github.com/785cb6a5096cd35ff4e85cb10211dae3.js"></script>
+<script src="https://gist.github.com/1951108f827042ec9366019e5a1ac7ed.js"></script>
 The SDK does not retrieve attributes from the contact record. However, you can retrieve a list of all the attributes you saved locally using the setter.
 
-```
-// Get all attributes
-// Returns a dictionary of key-value pairs (key:attribute name, value: attribute value)
-NSDictionary *attributes = [[MarketingCloudSDK sharedInstance] sfmc_attributes];
-```
-```
-// Get all attributes
-// Returns a dictionary of key-value pairs (key:attribute name, value: attribute value)
-
-let attributes = MarketingCloudSDK.sharedInstance().sfmc_attributes()
-```
-
+<script src="https://gist.github.com/d287e892e988081f4d7ab27c98fd579b.js"></script>
+<script src="https://gist.github.com/353797d4a4cab0ed449bbf7af4d1e19a.js"></script>
 Find additional convenience methods to add and clear arrays of attributes in *MarketingCloudSDK+Base.h*.
 
 > The SDK sends changes to user and device information to Marketing Cloud with a REST call one minute after the first change to any Marketing Cloud data. If the REST call fails due to lack of network or a similar reason, the SDK retries the REST call in one-minute intervals until the app is suspended. If the send is unsuccessful before the app is suspended, the data sends the next time the app is opened. Marketing Cloud can take up to 5 minutes to record this value in the contact record once the SDK makes the REST call.

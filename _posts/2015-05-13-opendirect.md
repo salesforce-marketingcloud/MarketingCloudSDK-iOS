@@ -14,36 +14,12 @@ The MarketingCloudSDK opens this URL when the message is tapped using a SFSafari
 Override the built-in web view handling of the OpenDirect URL by implementing the MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate protocol.
 
 In the class handling the override, adhere to the protocol. For example, use this AppDelegate example as a sample.
-```
-AppDelegate ()<UNUserNotificationCenterDelegate, MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate>
-```
-```
-class AppDelegate: UNUserNotificationCenterDelegate, MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate
-```
+<script src="https://gist.github.com/4b9d5cf31e1070da2bbfd1af110dc923.js"></script>
+<script src="https://gist.github.com/2b7c49526a0a119353b17eb75db18281.js"></script>
 Somewhere in the class implementing this protocol, set the SDK's delegate handler.
-```
-[[MarketingCloudSDK sharedInstance] sfmc_setOpenDirectMessagesNotificationHandlerDelegate:self];
-```
-```
-MarketingCloudSDK.sharedInstance().sfmc_setOpenDirectMessagesNotificationHandlerDelegate(self)
-```
+<script src="https://gist.github.com/1b6f6184299a451fde60a6b095648f47.js"></script>
+<script src="https://gist.github.com/bdc513d57b99f929068cf05916ae44b0.js"></script>
 Next, implement the required protocol methods to override the built-in functionality.
-```
-- (void) sfmc_didReceiveOpenDirectMessagesNotificationWithContents:(NSDictionary *) contents {
-    NSString *urlString = [contents objectForKey:MarketingCloudSDKOpenDirectMessageKey];
-    if (urlString != nil) {
-        // use the url in any way you'd like
-        NSLog(urlString);
-    }
-}
-```
-```
-func sfmc_didReceiveOpenDirectMessagesNotification(withContents contents: [AnyHashable: Any]?) {
-        let urlString = contents![MarketingCloudSDKOpenDirectMessageKey] as? String
-        if urlString != nil {
-            // use the url in any way you'd like
-            print(urlString)
-        }
-    }
-```
+<script src="https://gist.github.com/49641ff60741cfcfcb4acc32ad4d2db6.js"></script>
+<script src="https://gist.github.com/02a000c3f1a42763822f9f3ed3b37cd4.js"></script>
 See MarketingCloudSDK+OpenDirectMessages.h for more information.

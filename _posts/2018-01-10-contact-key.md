@@ -11,12 +11,5 @@ Use the contact key setter method to implement a specific value as the unique id
 
 By default, Marketing Cloud generates a default contact key value if your app does not set that value using the setter. The getter method returns the value set in the last setter call and will return a nil value until you call the setter with a valid value. The getter retrieves only the local copy of the value and not the value from the Marketing Cloud server.
 
-```
-[[MarketingCloudSDK sharedInstance] sfmc_setContactKey:@"user@mycompany.com"];
-```
-```
-NSString *contactKey = [[MarketingCloudSDK sharedInstance] sfmc_contactKey];
-
-        MarketingCloudSDK.sharedInstance().sfmc_setContactKey("user@mycompany.com")
-        let contactKey: String
-```
+<script src="https://gist.github.com/b85d38dc2f1b6d353568532c0e503587.js"></script>
+<script src="https://gist.github.com/9c99d0828b5fad695b93c89dd5faf0d3.js"></script>

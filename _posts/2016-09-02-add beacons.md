@@ -23,9 +23,5 @@ If you create your own CLLocationManager object, we cannot guarantee that featur
 
 If you have enabled notifications using MarketingCloudSDK and have called -sfmc_startWatchingLocation,  you can access the device's last known location using the SDK.
 
-```
-NSDictionary *location = [[[MarketingCloudSDK sharedInstance] sfmc_lastKnownLocation];
-```
-```
-let location = MarketingCloudSDK.sharedInstance().sfmc_lastKnownLocation()
-```
+<script src="https://gist.github.com/fcb816bf9df1b7d26d300c22822f88c6.js"></script>
+<script src="https://gist.github.com/02d2c7f15461981015658691d81a4685.js"></script>
