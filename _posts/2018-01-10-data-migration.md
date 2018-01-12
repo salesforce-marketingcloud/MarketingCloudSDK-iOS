@@ -2,7 +2,7 @@
 layout: page
 title: "User Data Migration"
 subtitle: "Migrate User Data from Previous SDK Version"
-category: trouble
+category: user-data
 date: 2018-01-10 12:00:00
 order: 3
 ---

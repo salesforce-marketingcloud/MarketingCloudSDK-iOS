@@ -2,7 +2,7 @@
 layout: page
 title: "SDK Migration"
 subtitle: "Migrate to New SDK from Previous Version"
-category: trouble
+category: sdk-implementation
 date: 2018-01-11 12:00:00
 order: 4
 ---
