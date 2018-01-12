@@ -34,7 +34,7 @@ Do **NOT** use .xcodeproj. An error occurs if you open up a project file instead
 
 ## Configure the SDK
 
-MarketingCloudSDK framework via a JSON file added to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values within this file and completes its configuration based on these settings.
+Configure the MarketingCloudSDK framework via a JSON file added to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values within this file and completes its configuration based on these settings.
 
 1. Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target's Build Phases settings.
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure6.png" /><br/>

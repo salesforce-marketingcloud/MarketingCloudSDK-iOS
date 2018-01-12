@@ -9,7 +9,7 @@ order: 5
 
 Switch between multiple Marketing Cloud business units using the MarketingCloudSDK. This process can be necessary for your application implementation, such as switching between production and debug tasks.
 
-Switching business units using the AppID value used to configure the application requires you to issue *tearDown* to the SDK. Follow this call with a standard configure, as typically done in *applicationDidFinishLaunching...*.
+Switching business units using the AppID value used to configure the application requires you to issue sfmc_tearDown to the SDK. Follow this call with a standard configure, as typically done in applicationDidFinishLaunching... .
 
 Any switch in business units removes any MarketingCloudSDK data from the system. If you enable the previous business unit later via the SDK, data like contactKey, tags and attributes will no longer be set.
 <script src="https://gist.github.com/bc7a740e19d045af3285ce7de25017b0.js"></script>
