@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Journey Builder for Apps iOS SDK (v5.0.0) : SDK Migration</title>
+        <title>MarketingCloudSDK iOS (v5.0.0) : User Data Migration</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">Journey Builder for Apps iOS SDK (v5.0.0)</a>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v5.0.0)</a>
     
     
 </h4>
@@ -68,6 +68,14 @@
         
 
         
+            
+                <li class=nav-header>SDK Implementation</li>
+            
+            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration</a></li>
+        
+            
+            <li data-order="5"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
+        
     
         
         
@@ -95,10 +103,13 @@
             
                 <li class=nav-header>User Data</li>
             
-            <li data-order="1"><a href="/user-data/user-data.html">User Data</a></li>
+            <li data-order="1"><a href="/user-data/user-data.html">User Data Overview</a></li>
         
             
             <li data-order="2"><a href="/user-data/contact-key.html">Contact Key</a></li>
+        
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
         
             
             <li data-order="3"><a href="/user-data/tags.html">Tags</a></li>
@@ -176,15 +187,6 @@
             
                 <li class=nav-header>Troubleshooting</li>
             
-            <li data-order="4"><a href="/trouble/sdk-migration.html">SDK Migration</a></li>
-        
-            
-            <li data-order="3"><a href="/trouble/data-migration.html">User Data Migration</a></li>
-        
-            
-            <li data-order="4"><a href="/trouble/business-unit-switching.html">Switch Business Units</a></li>
-        
-            
             <li data-order="2"><a href="/trouble/multiple-push-sdks.html">Multiple Push SDKs Troubleshooting</a></li>
         
             
@@ -209,24 +211,21 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Migrate to New SDK from Previous Version</h2>
+    <h2>Migrate User Data from Previous SDK Version</h2>
 </div>
 
-<p>Version 5.0.0 of the MarketingCloudSDK (formerly JB4ASDK) is a new iOS framework-based SDK. The MarketingCloudSDK uses a model and method naming convention that is incompatible with the model and methods used in the JB4ASDK and is therefore not a drop-in replacement. Review and familiarize yourself with all of the documentation on using and configuring the MarketingCloudSDK before attempting an application migration.</p>
+<p>Version 5.0.0 of the MarketingCloudSDK (formerly JB4ASDK) introduces new methods for data storage encryption that are incompatible with the methods used in JB4ASDK.</p>
 
-<p>To migrate an existing application to the MarketingCloudSDK, change your application to follow the MarketingCloudSDK model. This step involves changing your application to initialize the MarketingCloudSDK with MarketingCloudSDK.sharedInstance().sfmc_configure instead of the JB4ASDK [ETPush pushManager] configureSDKWithAppID method. Your application contains a single instance of the MarketingCloudSDK. Reference that instance anytime via the MarketingCloudSDK.sharedInstance() singleton.</p>
+<p>For applications upgrading from a version of JB4ASDK to version 5.x.x, the framework provides for migrating prior customer data, including contact key, tags and attributes, from the JB4ASDK database into the new framework’s storage, re-encrypting the data, and cleaning up of old data files.</p>
 
-<p>In addition to changing the configuration method, you must change the use of any other JB4ASDK method to the equivalent MarketingCloudSDK method. MarketingCloudSDK methods use similar method names as JB4ASDK but all methods are prefixed with sfmc_ to avoid namespace collisions.</p>
+<p>Meet these conditions for successful migration of the data.</p>
 
-<p>When configuring the MarketingCloudSDK, the configuration process is initiated by a call to MarketingCloudSDK.sharedInstance().sfmc_configure. The process does not complete until the completion handler is called. If the call to MarketingCloudSDK.sharedInstance().sfmc_configure returns false, an error occurred during the configuration. The process does not call the completion handler and the MarketingCloudSDK is not ready for use. In this case, any returned error parameter contains an NSError object. Examine the returned NSError object for details on the failure.</p>
-
-<p>The MarketingCloudSDK.sharedInstance().sfmc_configure completion handler receives a call asynchronously on a worker thread, but you must also check the error parameter in the completion handler for success before using the MarketingCloudSDK. If an error occurred during the asynchronous configuration portion, the call returns an NSError object in the error parameter if one is supplied and the MarketingCloudSDK is not ready for use. Examine the returned NSError object for details on the failure.</p>
-
-<p>Once your migration to the MarketingCloudSDK is complete, remove all JB4ASDK files and references in your project.</p>
-
-<blockquote>
-  <p>Do not use both the JB4ASDK and MarketingCloudSDK simultaneously.</p>
-</blockquote>
+<ul>
+  <li>Use the same values for Application Id and Access Token between app versions.</li>
+  <li>Migration requires an app store update. The user cannot delete and reinstall the app.</li>
+  <li>The app must maintain the same bundle id.</li>
+  <li>The app cannot delete JB4ASDK data on its own.</li>
+</ul>
 
 
                     </div>
@@ -237,7 +236,7 @@
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/ExactTarget/JB4A-SDK-iOS" target="_blank">Journey Builder for Apps iOS SDK (v5.0.0)</a>
+                    Documentation for <a href="https://github.com/ExactTarget/JB4A-SDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.0.0)</a>
 
                 </div>
             </div>
