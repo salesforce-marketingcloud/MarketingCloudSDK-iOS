@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.0.0) : CloudPage Alert Overview</title>
+        <title>MarketingCloudSDK iOS (v5.0.0) : Custom Keys</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -211,46 +203,14 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Implement CloudPage functionality in Your Mobile App</h2>
+    <h2>Handling Custom Keys Sent with Message Payload</h2>
 </div>
 
-<p>The CloudPage Inbox customized push message (Alert+Inbox) contains a URL in the payload. Marketing Cloud must enable the account using this functionality with access to both MobilePush and CloudPages to successfully create and send CloudPage push messages.</p>
+<p>Use custom keys to send extra data along with a push notification. You can use custom keys to add tracking or additional functionality to your app. For example, you can define a custom key that allows a third-party application to provide custom tracking information regarding customer usage on your mobile app. This data can include an ID value used by the app to retrieve additional data or other function. You must <a href="http://help.exacttarget.com/en/documentation/mobilepush/administering_your_mobilepush_account/apps_and_optional_settings_in_your_mobilepush_account/#customkeys">enable</a> this feature in the Marketing Cloud application.</p>
 
-<p>Enable inbox in your configuration file using the inbox:true value.</p>
-
-<p>The MarketingCloudSDK opens this URL when the message is tapped using a SFSafariViewController.</p>
-
-<p>Override the built-in web view handling of the OpenDirect URL by implementing the MarketingCloudSDKInboxMessagesNotificationHandlerDelegate protocol.</p>
-
-<p>In the class that handles the override, make sure to adhere to the protocol. Use this AppDelegate sample as an example.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AppDelegate ()&lt;UNUserNotificationCenterDelegate, MarketingCloudSDKInboxMessagesNotificationHandlerDelegate&gt;
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class AppDelegate: UNUserNotificationCenterDelegate, MarketingCloudSDKInboxMessagesNotificationHandlerDelegate
-</code></pre></div></div>
-<p>Somewhere in the class that implements this protocol, set the SDK’s delegate handler.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[MarketingCloudSDK sharedInstance] sfmc_setInboxMessagesNotificationHandlerDelegate:self];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MarketingCloudSDK.sharedInstance().sfmc_setInboxMessagesNotificationHandlerDelegate(self)
-</code></pre></div></div>
-<p>Next, implement the required protocol methods to override the built-in functionality.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void) sfmc_didReceiveInboxMessagesNotificationWithContents:(NSDictionary *) contents {
-    NSString *urlString = [contents objectForKey:MarketingCloudSDKInboxMessageKey];
-    if (urlString != nil) {
-        // use the url in any way you'd like
-        NSLog(urlString);
-    }
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    func sfmc_didReceiveInboxMessagesNotification(withContents contents: [AnyHashable: Any]?) {
-        let urlString = contents![MarketingCloudSDKInboxMessageKey] as? String
-        if urlString != nil {
-            // use the url in any way you'd like
-            print(urlString)
-        }
-    }
-</code></pre></div></div>
-<p>See MarketingCloudSDK+InboxMessages.h for more information.</p>
+<p>To implement custom key support in your application, extend your push notification handler should to extract the push’s userInfo dictionary and the values contained in it.
+<script src="https://gist.github.com/6730a5367e9cbeabb0a69cde033d8b0c.js"></script>
+<script src="https://gist.github.com/69de3e0d2412e973d915d836ba6ffd7f.js"></script></p>
 
 
                     </div>

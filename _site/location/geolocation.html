@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -221,46 +213,15 @@
 <p><br />
 <img class="img-responsive" src="/assets/background_modes_plist_entry.png" /><br /></p>
 
-<p>In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-
-    if ( [[UIApplication sharedApplication] backgroundRefreshStatus] == UIBackgroundRefreshStatusAvailable )
-    {
-        // setting this will enable iOS to call the app delegate method performFetchWithCompletionHandler periodically. The implementation of that method (see below)
-        // will call the MarketingCloudSDK at most once per day to update location and proximity messages in the background - if those services have been enabled.
-        // Only call this method if you have enabled location in your MarketingCloudConfiguration.json file
-        // Note that you will require "App downloads content from the network" in your plist for this background app refresh to work
-        [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:UIApplicationBackgroundFetchIntervalMinimum];
-    }
-}
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -&gt; Bool {
-    ...
-    if UIApplication.shared.backgroundRefreshStatus == .available {
-        // setting this will enable iOS to call the app delegate method performFetchWithCompletionHandler periodically. The implementation of that method (see below)
-        // will call the MarketingCloudSDK at most once per day to update location and proximity messages in the background - if those services have been enabled.
-        // Only call this method if you have enabled location in your MarketingCloudConfiguration.json file
-        // Note that you will require "App downloads content from the network" in your plist for this background app refresh to work
-        UIApplication.shared.setMinimumBackgroundFetchInterval(UIApplicationBackgroundFetchIntervalMinimum)
-}
-</code></pre></div></div>
+<p>In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:
+<script src="https://gist.github.com/afa07fda599677c7c0a026a984bfa6b7.js"></script>
+<script src="https://gist.github.com/afaa7fda97d7a03bbe7e05eb6efb49de.js"></script></p>
 
 <p>Implement the handler for this functionality in your application delegate class:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// this method will be called by iOS to tell the MarketingCloudSDK to update location and proximity messages. This will only be called if [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:
-// has been set to a value other than UIApplicationBackgroundFetchIntervalNever and Background App Refresh is enabled.
--(void)application:(UIApplication *)application performFetchWithCompletionHandler:(void (^)(UIBackgroundFetchResult) completionHandler
-{
-    [[MarketingCloudSDK sharedInstance] sfmc_refreshWithFetchCompletionHandler:completionHandler];
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// this method will be called by iOS to tell the MarketingCloudSDK to update location and proximity messages. This will only be called if [[UIApplication sharedApplication] setMinimumBackgroundFetchInterval:
-// has been set to a value other than UIApplicationBackgroundFetchIntervalNever and Background App Refresh is enabled.
-func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -&gt; Void) {
-    MarketingCloudSDK.sharedInstance().sfmc_refresh(fetchCompletionHandler: completionHandler)
-}
-</code></pre></div></div>
+<script src="https://gist.github.com/cf0b183c9b4a4159f2b9da3c86192b13.js"></script>
+
+<script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
 
 <p>See MarketingCloudSDK+Base.h for more information regarding this method.</p>
 

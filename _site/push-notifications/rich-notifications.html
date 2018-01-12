@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -243,299 +235,12 @@
 
 <p>A service extension can timeout when it is unable to download.  In this code sample, the service extension delivers the original content with the body text changed to the value in “_mediaAlt”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/*
- * Copyright (c) 2017, salesforce.com, inc.
- * All rights reserved.
- * Licensed under the BSD 3-Clause license.
- * For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
- */</span>
-
-<span class="cp">#import "NotificationService.h"
-#import &lt;CoreGraphics/CoreGraphics.h&gt;
-</span>
-<span class="k">@interface</span> <span class="nc">NotificationService</span> <span class="p">()</span>
-
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="n">contentHandler</span><span class="p">)(</span><span class="n">UNNotificationContent</span> <span class="o">*</span><span class="n">contentToDeliver</span><span class="p">);</span>
-<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UNMutableNotificationContent</span> <span class="o">*</span><span class="n">modifiedNotificationContent</span><span class="p">;</span>
-
-<span class="k">@end</span>
-
-<span class="k">@implementation</span> <span class="nc">NotificationService</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="n">UNNotificationAttachment</span> <span class="o">*</span><span class="p">)</span><span class="nf">createMediaAttachment</span><span class="p">:(</span><span class="n">NSURL</span> <span class="o">*</span><span class="p">)</span><span class="nv">localMediaUrl</span> <span class="p">{</span>
-    <span class="c1">// options: specify what cropping rectangle of the media to use for a thumbnail
-</span>    <span class="c1">//          whether the thumbnail is hidden or not
-</span>    <span class="n">UNNotificationAttachment</span> <span class="o">*</span><span class="n">mediaAttachment</span> <span class="o">=</span> <span class="p">[</span><span class="n">UNNotificationAttachment</span> <span class="nf">attachmentWithIdentifier</span><span class="p">:</span> <span class="s">@"attachmentIdentifier"</span>
-                                                                                               <span class="nf">URL</span><span class="p">:</span> <span class="n">localMediaUrl</span>
-                                                                                           <span class="nl">options:</span> <span class="p">@{</span>
-                                                                                                      <span class="nl">UNNotificationAttachmentOptionsThumbnailClippingRectKey:</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="n">CFBridgingRelease</span><span class="p">(</span><span class="n">CGRectCreateDictionaryRepresentation</span><span class="p">(</span><span class="n">CGRectZero</span><span class="p">)),</span>
-                                                                                                      <span class="nl">UNNotificationAttachmentOptionsThumbnailHiddenKey:</span> <span class="nb">@NO</span><span class="p">}</span>
-                                                                                             <span class="nl">error:</span> <span class="nb">nil</span><span class="p">];</span>
-    <span class="k">return</span> <span class="n">mediaAttachment</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didReceiveNotificationRequest</span><span class="p">:(</span><span class="n">UNNotificationRequest</span> <span class="o">*</span><span class="p">)</span><span class="nv">request</span> <span class="nf">withContentHandler</span><span class="p">:(</span><span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">UNNotificationContent</span> <span class="o">*</span> <span class="n">_Nonnull</span><span class="p">))</span><span class="nv">contentHandler</span> <span class="p">{</span>
-
-    <span class="c1">// save the completion handler we will call back later
-</span>    <span class="n">self</span><span class="p">.</span><span class="n">contentHandler</span> <span class="o">=</span> <span class="n">contentHandler</span><span class="p">;</span>
-
-    <span class="c1">// make a copy of the notification so we can change it
-</span>    <span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span> <span class="o">=</span> <span class="p">[</span><span class="n">request</span><span class="p">.</span><span class="n">content</span> <span class="nf">mutableCopy</span><span class="p">];</span>
-
-    <span class="c1">// alternative text to display if there are any issues loading the media URL
-</span>    <span class="n">NSString</span> <span class="o">*</span><span class="n">mediaAltText</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">userInfo</span><span class="p">[</span><span class="s">@"_mediaAlt"</span><span class="p">];</span>
-
-    <span class="c1">// does the payload contains a remote URL to download or a local URL?
-</span>    <span class="n">NSString</span> <span class="o">*</span><span class="n">mediaUrlString</span> <span class="o">=</span> <span class="n">request</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">userInfo</span><span class="p">[</span><span class="s">@"_mediaUrl"</span><span class="p">];</span>
-    <span class="n">NSURL</span> <span class="o">*</span><span class="n">mediaUrl</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="nf">URLWithString</span><span class="p">:</span> <span class="n">mediaUrlString</span><span class="p">];</span>
-
-    <span class="c1">// if we have a URL, try to download media (i.e., https://media.giphy.com/media/3oz8xJBbCpzG9byZmU/giphy.gif)
-</span>    <span class="k">if</span> <span class="p">(</span><span class="n">mediaUrl</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// create a session to handle downloading of the URL
-</span>        <span class="n">NSURLSession</span> <span class="o">*</span><span class="n">session</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSession</span> <span class="nf">sessionWithConfiguration</span><span class="p">:[</span><span class="n">NSURLSessionConfiguration</span> <span class="nf">defaultSessionConfiguration</span><span class="p">]];</span>
-
-        <span class="c1">// start a download task to handle the download of the media
-</span>        <span class="n">__weak</span> <span class="n">__typeof__</span><span class="p">(</span><span class="n">self</span><span class="p">)</span> <span class="n">weakSelf</span> <span class="o">=</span> <span class="n">self</span><span class="p">;</span>
-        <span class="p">[[</span><span class="n">session</span> <span class="nf">downloadTaskWithURL</span><span class="p">:</span><span class="n">mediaUrl</span> <span class="nf">completionHandler</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">NSURL</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">location</span><span class="p">,</span> <span class="n">NSURLResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">response</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">BOOL</span> <span class="n">useAlternateText</span> <span class="o">=</span> <span class="nb">YES</span><span class="p">;</span>
-
-            <span class="c1">// if the download succeeded, save it locally and then make an attachment
-</span>            <span class="k">if</span> <span class="p">(</span><span class="n">error</span> <span class="o">==</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">if</span> <span class="p">(</span><span class="mi">200</span> <span class="o">&lt;=</span> <span class="p">((</span><span class="n">NSHTTPURLResponse</span><span class="o">*</span><span class="p">)</span><span class="n">response</span><span class="p">).</span><span class="n">statusCode</span>  <span class="o">&amp;&amp;</span> <span class="p">((</span><span class="n">NSHTTPURLResponse</span><span class="o">*</span><span class="p">)</span><span class="n">response</span><span class="p">).</span><span class="n">statusCode</span> <span class="o">&lt;=</span> <span class="mi">299</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="c1">// download was successful, attempt save the media file
-</span>                    <span class="n">NSURL</span> <span class="o">*</span><span class="n">localMediaUrl</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="nf">fileURLWithPath</span><span class="p">:[</span><span class="n">location</span><span class="p">.</span><span class="n">path</span> <span class="nf">stringByAppendingString</span><span class="p">:</span><span class="n">mediaUrl</span><span class="p">.</span><span class="n">lastPathComponent</span><span class="p">]];</span>
-
-                    <span class="c1">// remove any existing file with the same name
-</span>                    <span class="p">[[</span><span class="n">NSFileManager</span> <span class="nf">defaultManager</span><span class="p">]</span> <span class="nf">removeItemAtURL</span><span class="p">:</span><span class="n">localMediaUrl</span> <span class="nf">error</span><span class="p">:</span><span class="nb">nil</span><span class="p">];</span>
-
-                    <span class="c1">// move the downloaded file from the temporary location to a new file
-</span>                    <span class="k">if</span> <span class="p">([[</span><span class="n">NSFileManager</span> <span class="nf">defaultManager</span><span class="p">]</span> <span class="nf">moveItemAtURL</span><span class="p">:</span><span class="n">location</span> <span class="nf">toURL</span><span class="p">:</span><span class="n">localMediaUrl</span> <span class="n">error</span><span class="o">:</span><span class="nb">nil</span><span class="p">]</span> <span class="o">==</span> <span class="nb">YES</span><span class="p">)</span> <span class="p">{</span>
-                        <span class="c1">// create an attachment with the new file
-</span>                        <span class="n">UNNotificationAttachment</span> <span class="o">*</span> <span class="n">mediaAttachment</span> <span class="o">=</span> <span class="p">[</span><span class="n">weakSelf</span> <span class="nf">createMediaAttachment</span><span class="p">:</span><span class="n">localMediaUrl</span><span class="p">];</span>
-
-                        <span class="c1">// if no problems creating the attachment, we can use it
-</span>                        <span class="k">if</span> <span class="p">(</span><span class="n">mediaAttachment</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-                            <span class="c1">// set the media to display in the notification
-</span>                            <span class="n">weakSelf</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">attachments</span> <span class="o">=</span> <span class="p">@[</span><span class="n">mediaAttachment</span><span class="p">];</span>
-
-                            <span class="c1">// everything is ok
-</span>                            <span class="n">useAlternateText</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
-                        <span class="p">}</span>
-                    <span class="p">}</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-
-            <span class="c1">// if any problems creating the attachment, use the alternate text if provided
-</span>            <span class="k">if</span> <span class="p">((</span><span class="n">useAlternateText</span> <span class="o">==</span> <span class="nb">YES</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">mediaAltText</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">))</span> <span class="p">{</span>
-                <span class="n">weakSelf</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">mediaAltText</span><span class="p">;</span>
-            <span class="p">}</span>
-
-            <span class="c1">// tell the OS we are done and here is the new content
-</span>            <span class="n">weakSelf</span><span class="p">.</span><span class="n">contentHandler</span><span class="p">(</span><span class="n">weakSelf</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">);</span>
-        <span class="p">}]</span> <span class="n">resume</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">// see if the media URL is for a local file  (i.e., file://movie.mp4)
-</span>        <span class="n">BOOL</span> <span class="n">useAlternateText</span> <span class="o">=</span> <span class="nb">YES</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">mediaUrlString</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// attempt to create a URL to a file in local storage
-</span>            <span class="n">NSURL</span> <span class="o">*</span><span class="n">localMediaUrl</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURL</span> <span class="nf">fileURLWithPath</span><span class="p">:[[</span><span class="n">NSBundle</span> <span class="nf">mainBundle</span><span class="p">]</span> <span class="nf">pathForResource</span><span class="p">:</span> <span class="n">mediaUrlString</span><span class="p">.</span><span class="n">lastPathComponent</span><span class="p">.</span><span class="n">stringByDeletingLastPathComponent</span> <span class="nf">ofType</span><span class="p">:</span><span class="n">mediaUrlString</span><span class="p">.</span><span class="n">pathExtension</span><span class="p">]];</span>
-
-            <span class="c1">// is the URL a local file URL?
-</span>            <span class="k">if</span> <span class="p">(</span><span class="n">localMediaUrl</span> <span class="o">!=</span> <span class="nb">nil</span> <span class="o">&amp;&amp;</span> <span class="n">localMediaUrl</span><span class="p">.</span><span class="n">isFileURL</span> <span class="o">==</span> <span class="nb">YES</span><span class="p">)</span> <span class="p">{</span>
-                <span class="c1">// create an attachment with the local media
-</span>                <span class="n">UNNotificationAttachment</span> <span class="o">*</span> <span class="n">mediaAttachment</span> <span class="o">=</span> <span class="p">[</span><span class="n">self</span> <span class="nf">createMediaAttachment</span><span class="p">:</span><span class="n">localMediaUrl</span><span class="p">];</span>
-
-                <span class="c1">// if no problems creating the attachment, we can use it
-</span>                <span class="k">if</span> <span class="p">(</span><span class="n">mediaAttachment</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="c1">// set the media to display in the notification
-</span>                    <span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">attachments</span> <span class="o">=</span> <span class="p">@[</span><span class="n">mediaAttachment</span><span class="p">];</span>
-
-                    <span class="c1">// everything is ok
-</span>                    <span class="n">useAlternateText</span> <span class="o">=</span> <span class="nb">NO</span><span class="p">;</span>
-                <span class="p">}</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-
-        <span class="c1">// if any problems creating the attachment, use the alternate text if provided
-</span>        <span class="k">if</span> <span class="p">((</span><span class="n">useAlternateText</span> <span class="o">==</span> <span class="nb">YES</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">mediaAltText</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">))</span> <span class="p">{</span>
-            <span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">mediaAltText</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="c1">// tell the OS we are done and here is the new content
-</span>        <span class="n">contentHandler</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="o">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">serviceExtensionTimeWillExpire</span> <span class="p">{</span>
-    <span class="c1">// Called just before the extension will be terminated by the system.
-</span>    <span class="c1">// Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-</span>
-    <span class="c1">// we took too long to download the media URL, use the alternate text if provided
-</span>    <span class="n">NSString</span> <span class="o">*</span><span class="n">mediaAltText</span> <span class="o">=</span> <span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">userInfo</span><span class="p">[</span><span class="s">@"_mediaAlt"</span><span class="p">];</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">mediaAltText</span> <span class="o">!=</span> <span class="nb">nil</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">.</span><span class="n">body</span> <span class="o">=</span> <span class="n">mediaAltText</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="c1">// tell the OS we are done and here is the new content
-</span>    <span class="n">self</span><span class="p">.</span><span class="n">contentHandler</span><span class="p">(</span><span class="n">self</span><span class="p">.</span><span class="n">modifiedNotificationContent</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="k">@end</span>
-</code></pre></div></div>
+<script src="https://gist.github.com/5fc088449a66b40c8e46112c0b1bca46.js"></script>
 
 <h2 id="service-extension-example-in-swift">Service Extension Example in Swift</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/*
- * Copyright (c) 2017, salesforce.com, inc.
- * All rights reserved.
- * Licensed under the BSD 3-Clause license.
- * For full license text, see LICENSE.txt file in the repo root  or https://opensource.org/licenses/BSD-3-Clause
- */
+<script src="https://gist.github.com/10fbbfedcb518a88249fcb54e23cb83a.js"></script>
 
-import CoreGraphics
-import UserNotifications
-
-class NotificationService: UNNotificationServiceExtension {
-    var contentHandler: ((_ contentToDeliver: UNNotificationContent) -&gt; Void)? = nil
-    var modifiedNotificationContent: UNMutableNotificationContent?
-
-    func createMediaAttachment(_ localMediaUrl: URL) -&gt; UNNotificationAttachment {
-        // options: specify what cropping rectangle of the media to use for a thumbnail
-        //          whether the thumbnail is hidden or not
-        let clippingRect = CGRect.zero
-        let mediaAttachment = try? UNNotificationAttachment(identifier: "attachmentIdentifier", url: localMediaUrl, options: [UNNotificationAttachmentOptionsThumbnailClippingRectKey: clippingRect.dictionaryRepresentation, UNNotificationAttachmentOptionsThumbnailHiddenKey: false])
-        return mediaAttachment!
-    }
-
-    override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -&gt; Void) {
-
-        // save the completion handler we will call back later
-        self.contentHandler = contentHandler
-
-        // make a copy of the notification so we can change it
-        modifiedNotificationContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-
-        // does the payload contains a remote URL to download or a local URL?
-        if let mediaUrlString = request.content.userInfo["_mediaUrl"] as? String {
-            // see if the media URL is for a local file  (i.e., file://movie.mp4)
-            guard let mediaUrl = URL(string: mediaUrlString) else {
-                // attempt to create a URL to a file in local storage
-                var useAlternateText: Bool = true
-                if mediaUrlString.isEmpty == false {
-                    let mediaUrlFilename:NSString = mediaUrlString as NSString
-                    let fileName = (mediaUrlFilename.lastPathComponent as NSString).deletingPathExtension
-                    let fileExtension = (mediaUrlFilename.lastPathComponent as NSString).pathExtension
-
-                    // is it in the bundle?
-                    if let localMediaUrlPath = Bundle.main.path(forResource: fileName, ofType: fileExtension) {
-                        // is the URL a local file URL?
-                        let localMediaUrl = URL.init(fileURLWithPath: localMediaUrlPath)
-                        if localMediaUrl.isFileURL == true {
-                            // create an attachment with the local media
-                            let mediaAttachment: UNNotificationAttachment? = createMediaAttachment(localMediaUrl)
-
-                            // if no problems creating the attachment, we can use it
-                            if mediaAttachment != nil {
-                                // set the media to display in the notification
-                                modifiedNotificationContent?.attachments = [mediaAttachment!]
-
-                                // everything is ok
-                                useAlternateText = false
-                            }
-                        }
-                    }
-                }
-
-                // if any problems creating the attachment, use the alternate text if provided
-                if (useAlternateText == true) {
-                    if let mediaAltText = request.content.userInfo["_mediaAlt"] as? String {
-                        if mediaAltText.isEmpty == false {
-                            modifiedNotificationContent?.body = mediaAltText
-                        }
-                    }
-                }
-
-                // tell the OS we are done and here is the new content
-                contentHandler(modifiedNotificationContent!)
-                return
-            }
-
-            // if we have a URL, try to download media (i.e., https://media.giphy.com/media/3oz8xJBbCpzG9byZmU/giphy.gif)
-            if mediaUrl.isFileURL == false {
-                // create a session to handle downloading of the URL
-                let session = URLSession(configuration: URLSessionConfiguration.default)
-
-                // start a download task to handle the download of the media
-                weak var weakSelf: NotificationService? = self
-                session.downloadTask(with: mediaUrl, completionHandler: {(_ location: URL?, _ response: URLResponse?, _ error: Error?) -&gt; Void in
-                    var useAlternateText: Bool = true
-                    // if the download succeeded, save it locally and then make an attachment
-                    if error == nil {
-                        let downloadResponse = response as! HTTPURLResponse
-                        if (downloadResponse.statusCode &gt;= 200 &amp;&amp; downloadResponse.statusCode &lt;= 299) {
-                            // download was successful, attempt save the media file
-                            let localMediaUrl = URL.init(fileURLWithPath: location!.path + mediaUrl.lastPathComponent)
-
-                            // remove any existing file with the same name
-                            try? FileManager.default.removeItem(at: localMediaUrl)
-
-                            // move the downloaded file from the temporary location to a new file
-                            if ((try? FileManager.default.moveItem(at: location!, to: localMediaUrl)) != nil) {
-                                // create an attachment with the new file
-                                let mediaAttachment: UNNotificationAttachment? = weakSelf?.createMediaAttachment(localMediaUrl)
-
-                                // if no problems creating the attachment, we can use it
-                                if mediaAttachment != nil {
-                                    // set the media to display in the notification
-                                    weakSelf?.modifiedNotificationContent?.attachments = [mediaAttachment!]
-
-                                    // everything is ok
-                                    useAlternateText = false
-                                }
-                            }
-                        }
-                    }
-
-                    // if any problems creating the attachment, use the alternate text if provided
-                    // alternative text to display if there are any issues loading the media URL
-                    if (useAlternateText == true) {
-                        if let mediaAltText = request.content.userInfo["_mediaAlt"] as? String {
-                            if mediaAltText.isEmpty == false {
-                                weakSelf?.modifiedNotificationContent?.body = mediaAltText
-                            }
-                        }
-                    }
-
-                    // tell the OS we are done and here is the new content
-                    weakSelf?.contentHandler!((weakSelf?.modifiedNotificationContent)!)
-                }).resume()
-            }
-        }
-        else {
-            // no media URL found in the payload, just pass on the orginal payload
-            contentHandler(request.content)
-            return
-        }
-    }
-
-    override func serviceExtensionTimeWillExpire() {
-        // Called just before the extension will be terminated by the system.
-        // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-        // we took too long to download the media URL, use the alternate text if provided
-
-        if let mediaAltText = modifiedNotificationContent?.userInfo["_mediaAlt"] as? String {
-            // alternative text to display if there are any issues loading the media URL
-            if mediaAltText.isEmpty == false {
-                modifiedNotificationContent?.body = mediaAltText
-            }
-        }
-
-        // tell the OS we are done and here is the new content
-        contentHandler!(modifiedNotificationContent!)
-    }
-}
-</code></pre></div></div>
 
 
                     </div>

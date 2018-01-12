@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -220,48 +212,16 @@
 
 <h2 id="track-push-notifications">Track Push Notifications</h2>
 
-<p>To ensure proper tracking of push notifications by the SDK and Marketing Cloud analytics, call the SDK in your push notification handler method. If you do not, analytic events can’t track open counts for your push messaging campaigns.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
+<p>To ensure proper tracking of push notifications by the SDK and Marketing Cloud analytics, call the SDK in your push notification handler method. If you do not, analytic events can’t track open counts for your push messaging campaigns.
+<script src="https://gist.github.com/bbc18d768405d431b0f904c923e9e661.js"></script></p>
 
-    // tell the MarketingCloudSDK about the notification
-     [[MarketingCloudSDK sharedInstance] sfmc_setNotificationRequest:response.notification.request];
+<script src="https://gist.github.com/cb216623a751e16a42a94b09cf666190.js"></script>
 
-    if (completionHandler != nil) {
-        completionHandler();
-    }
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -&gt; Void) {
-    // tell the MarketingCloudSDK about the notification
-    MarketingCloudSDK.sharedInstance().sfmc_setNotificationRequest(response.notification.request)
-    if completionHandler != nil {
-        completionHandler()
-    }
-}
-</code></pre></div></div>
 <h2 id="track-inbox-message-opens">TRACK INBOX MESSAGE OPENS</h2>
 
-<p>You can also track analytics for Inbox messages. Call trackInboxOpenEvent() to send the open analytic value to Marketing Cloud. We automatically provide analytic information for message downloads. Call sfmc_trackMessageOpened: with an inbox message dictionary to record the analytic.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSDictionary *inboxMessagesDict = [self.dataSource objectAtIndex:indexPath.row];
-    if (inboxMessagesDict != nil) {     
-        [[MarketingCloudSDK sharedInstance] sfmc_trackMessageOpened:inboxMessagesDict];
-    }
-
-    // ... your selection handling
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let inboxMessagesDict = dataSource?[indexPath.row] as? [AnyHashable: Any]
-    if inboxMessagesDict != nil {
-        MarketingCloudSDK.sharedInstance().sfmc_trackMessageOpened(inboxMessagesDict)
-    }
-    // ... your selection handling
-}
-</code></pre></div></div>
+<p>You can also track analytics for Inbox messages. Call trackInboxOpenEvent() to send the open analytic value to Marketing Cloud. We automatically provide analytic information for message downloads. Call sfmc_trackMessageOpened: with an inbox message dictionary to record the analytic.
+<script src="https://gist.github.com/8cd1af8a76398e920d93259ea578930c.js"></script>
+<script src="https://gist.github.com/328c8e3c3b3738e009dda2047b8c9c40.js"></script></p>
 
 
                     </div>

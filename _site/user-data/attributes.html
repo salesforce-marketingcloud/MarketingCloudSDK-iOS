@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -271,34 +263,18 @@ utcOffset
 </code></pre></div></div>
 <p>Setting an attribute updates the value of an existing attribute on the contact record. We trim leading and trailing blanks from attribute values and names.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Set an attribute
-BOOL success = [[MarketingCloudSDK sharedInstance] sfmc_setAttributeNamed:@"FavoriteTeamName" value:@"favoriteTeamName"];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Set an attribute
+<script src="https://gist.github.com/550bf643b9e327b48ae4815a7bf3d011.js"></script>
 
-let success: Bool = MarketingCloudSDK.sharedInstance().sfmc_setAttributeNamed("FavoriteTeamName", value: "favoriteTeamName")
-</code></pre></div></div>
+<script src="https://gist.github.com/8682afa7c4c63e4849178a0fc6d1d5d8.js"></script>
 
-<p>You cannot use the SDK to remove attributes from the contact record. However, you can stop sending the attribute to Marketing Cloud by using the clear method. This method does not remove or change the value on the contact record in Marketing Cloud.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Clear an attribute
-[[MarketingCloudSDK sharedInstance] sfmc_clearAttributeNamed:@"FavoriteTeamName"];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Clear an attribute
+<p>You cannot use the SDK to remove attributes from the contact record. However, you can stop sending the attribute to Marketing Cloud by using the clear method. This method does not remove or change the value on the contact record in Marketing Cloud.
+<script src="https://gist.github.com/785cb6a5096cd35ff4e85cb10211dae3.js"></script>
+<script src="https://gist.github.com/1951108f827042ec9366019e5a1ac7ed.js"></script>
+The SDK does not retrieve attributes from the contact record. However, you can retrieve a list of all the attributes you saved locally using the setter.</p>
 
-MarketingCloudSDK.sharedInstance().sfmc_clearAttributeNamed("FavoriteTeamName")
-</code></pre></div></div>
+<script src="https://gist.github.com/d287e892e988081f4d7ab27c98fd579b.js"></script>
 
-<p>The SDK does not retrieve attributes from the contact record. However, you can retrieve a list of all the attributes you saved locally using the setter.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Get all attributes
-// Returns a dictionary of key-value pairs (key:attribute name, value: attribute value)
-NSDictionary *attributes = [[MarketingCloudSDK sharedInstance] sfmc_attributes];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Get all attributes
-// Returns a dictionary of key-value pairs (key:attribute name, value: attribute value)
-
-let attributes = MarketingCloudSDK.sharedInstance().sfmc_attributes()
-</code></pre></div></div>
+<script src="https://gist.github.com/353797d4a4cab0ed449bbf7af4d1e19a.js"></script>
 
 <p>Find additional convenience methods to add and clear arrays of attributes in <em>MarketingCloudSDK+Base.h</em>.</p>
 

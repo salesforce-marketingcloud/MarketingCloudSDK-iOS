@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -220,34 +212,16 @@
 
 <p>Override the built-in web view handling of the OpenDirect URL by implementing the MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate protocol.</p>
 
-<p>In the class handling the override, adhere to the protocol. For example, use this AppDelegate example as a sample.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>AppDelegate ()&lt;UNUserNotificationCenterDelegate, MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate&gt;
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class AppDelegate: UNUserNotificationCenterDelegate, MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate
-</code></pre></div></div>
-<p>Somewhere in the class implementing this protocol, set the SDK’s delegate handler.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[MarketingCloudSDK sharedInstance] sfmc_setOpenDirectMessagesNotificationHandlerDelegate:self];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MarketingCloudSDK.sharedInstance().sfmc_setOpenDirectMessagesNotificationHandlerDelegate(self)
-</code></pre></div></div>
-<p>Next, implement the required protocol methods to override the built-in functionality.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void) sfmc_didReceiveOpenDirectMessagesNotificationWithContents:(NSDictionary *) contents {
-    NSString *urlString = [contents objectForKey:MarketingCloudSDKOpenDirectMessageKey];
-    if (urlString != nil) {
-        // use the url in any way you'd like
-        NSLog(urlString);
-    }
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func sfmc_didReceiveOpenDirectMessagesNotification(withContents contents: [AnyHashable: Any]?) {
-        let urlString = contents![MarketingCloudSDKOpenDirectMessageKey] as? String
-        if urlString != nil {
-            // use the url in any way you'd like
-            print(urlString)
-        }
-    }
-</code></pre></div></div>
-<p>See MarketingCloudSDK+OpenDirectMessages.h for more information.</p>
+<p>In the class handling the override, adhere to the protocol. For example, use this AppDelegate example as a sample.
+<script src="https://gist.github.com/4b9d5cf31e1070da2bbfd1af110dc923.js"></script>
+<script src="https://gist.github.com/2b7c49526a0a119353b17eb75db18281.js"></script>
+Somewhere in the class implementing this protocol, set the SDK’s delegate handler.
+<script src="https://gist.github.com/1b6f6184299a451fde60a6b095648f47.js"></script>
+<script src="https://gist.github.com/bdc513d57b99f929068cf05916ae44b0.js"></script>
+Next, implement the required protocol methods to override the built-in functionality.
+<script src="https://gist.github.com/49641ff60741cfcfcb4acc32ad4d2db6.js"></script>
+<script src="https://gist.github.com/02a000c3f1a42763822f9f3ed3b37cd4.js"></script>
+See MarketingCloudSDK+OpenDirectMessages.h for more information.</p>
 
 
                     </div>

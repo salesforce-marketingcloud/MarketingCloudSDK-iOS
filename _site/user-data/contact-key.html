@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -218,13 +210,10 @@
 
 <p>By default, Marketing Cloud generates a default contact key value if your app does not set that value using the setter. The getter method returns the value set in the last setter call and will return a nil value until you call the setter with a valid value. The getter retrieves only the local copy of the value and not the value from the Marketing Cloud server.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[MarketingCloudSDK sharedInstance] sfmc_setContactKey:@"user@mycompany.com"];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSString *contactKey = [[MarketingCloudSDK sharedInstance] sfmc_contactKey];
+<script src="https://gist.github.com/b85d38dc2f1b6d353568532c0e503587.js"></script>
 
-        MarketingCloudSDK.sharedInstance().sfmc_setContactKey("user@mycompany.com")
-        let contactKey: String
-</code></pre></div></div>
+<script src="https://gist.github.com/9c99d0828b5fad695b93c89dd5faf0d3.js"></script>
+
 
 
                     </div>

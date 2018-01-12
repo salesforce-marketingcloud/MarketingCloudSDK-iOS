@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -220,121 +212,15 @@
 
 <p>This sample shows how to create a category named “Example”. When you send this category with the payload from Marketing Cloud, the notification displays in the notification center with the buttons shown here.</p>
 
-<p><strong>Implementation</strong></p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>UNNotificationAction *exampleAction = [UNNotificationAction actionWithIdentifier:@"App" title:@"Example" options:UNNotificationActionOptionNone]
-
-UNNotificationCategory *appCategory = [UNNotificationCategory categoryWithIdentifier:@"Example"
- actions:@[exampleAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionNone];
-
-NSSet *categories = [NSSet setWithObjects:appCategory, nil];
-[[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categories];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-    // weak reference to avoid retain cycle within block
-    __weak __typeof__(self) weakSelf = self;
-
-    NSError *configureError = nil;
-        BOOL configured = [[MarketingCloudSDK sharedInstance] sfmc_configure:&amp;configureError
-                         completionHandler:^(BOOL success, NSString *appId, NSError *error) {
-            // The SDK has been fully configured and is ready for use!
-
-            // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-            [UNUserNotificationCenter currentNotificationCenter].delegate = weakSelf;
-
-            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge
-                                                                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                                                                            if (error == nil) {
-                                                                                if (granted == YES) {
-                                                                                    os_log_info(OS_LOG_DEFAULT, "Authorized for notifications = %s", granted ? "YES" : "NO");
-
-                                                                                    // we are authorized to use notifications, request a device token for remote notifications
-                                                                                    [[UIApplication sharedApplication] registerForRemoteNotifications];
-
-                                                                                    // Support notification categories
-                                                                                    UNNotificationAction *exampleAction = [UNNotificationAction actionWithIdentifier:@"App" title:@"Example" options:UNNotificationActionOptionNone];   
-
-                                                                                    UNNotificationCategory *appCategory = [UNNotificationCategory categoryWithIdentifier:@"Example" actions:@[exampleAction] intentIdentifiers:@[] options:UNNotificationCategoryOptionNone];
-
-                                                                                    NSSet *categories = [NSSet setWithObjects:appCategory, nil];
-                                                                                    [[UNUserNotificationCenter currentNotificationCenter] setNotificationCategories:categories];
-                                                                                }
-                                                                            }
-                                                                        }];        
-        }];
-        if (configured == YES) {
-            // The configuation process is underway.
-        }
-
-    ...
-}
-
-
-
-UNNotificationAction * exampleAction = UNNotificationAction(identifier: "App", title: "Example", options: [])
-var appCategory = UNNotificationCategory(identifier: "Example", actions: [exampleAction] as? [UNNotificationAction] ?? [UNNotificationAction](), intentIdentifiers: [] as? [String] ?? [String](), options: [])
-var categories = Set&lt;AnyHashable&gt;([appCategory])
-UNUserNotificationCenter.current().setNotificationCategories(categories as? Set&lt;UNNotificationCategory&gt; ?? Set&lt;UNNotificationCategory&gt;())
-
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -&gt; Bool {
-        // weak reference to avoid retain cycle within block        weak var weakSelf = self
-        do {
-            try MarketingCloudSDK.sharedInstance().sfmc_configure(completionHandler: {(_ success: Bool, _ appId: String, _ error: Error?) -&gt; Void in
-                // The SDK has been fully configured and is ready for use!
-                // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-                UNUserNotificationCenter.current().delegate = weakSelf
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {(_ granted: Bool, _ error: Error?) -&gt; Void in
-                    if error == nil {
-                        if granted == true {
-                             // we are authorized to use notifications, request a device token for remote notifications
-                            UIApplication.shared.registerForRemoteNotifications()
-
-                            // Support notification categories
-
-                            let exampleAction = UNNotificationAction(identifier: "App", title: "Example", options: [])
-                            let appCategory = UNNotificationCategory(identifier: "Example", actions: [exampleAction], intentIdentifiers: [] as? [String] ?? [String](), options: [])
-                            let categories = Set&lt;AnyHashable&gt;([appCategory])
-                            UNUserNotificationCenter.current().setNotificationCategories(categories as? Set&lt;UNNotificationCategory&gt; ?? Set&lt;UNNotificationCategory&gt;())
-                        }
-                    }
-                })
-            })
-            return true
-        } catch let error as NSError {
-            print("Error: \(error)")
-        }
-        return false
-</code></pre></div></div>
+<p><strong>Implementation</strong>
+<script src="https://gist.github.com/100bc30faf9ff027c99462b59726c3b6.js"></script>
+<script src="https://gist.github.com/256765c97c9e67f4c1622e1a978e13b2.js"></script></p>
 
 <p><strong>Handle Action</strong></p>
 
-<p>In your push handler, examine the push notification’s payload to see if your action triggered and take action.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
-
-    // tell the MarketingCloudSDK about the notification
-    [[MarketingCloudSDK sharedInstance] sfmc_setNotificationRequest:response.notification.request];
-
-    // Check your notification custom actions
-    if ([response.actionIdentifier isEqualToString:@"App"]) {
-        // Handle your notification's custom action here
-    }
-
-    if (completionHandler != nil) {
-        completionHandler();
-    }
-}
-
-// The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
-func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -&gt; Void) {
-    // tell the MarketingCloudSDK about the notification
-    MarketingCloudSDK.sharedInstance().sfmc_setNotificationRequest(response.notification.request)
-    // Check your notification custom actions
-    if (response.actionIdentifier == "App") {
-        // Handle your notification's custom action here
-    }    
-}
-</code></pre></div></div>
+<p>In your push handler, examine the push notification’s payload to see if your action triggered and take action.
+<script src="https://gist.github.com/997077403e1152972978cc13a243d07d.js"></script>
+<script src="https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js"></script></p>
 
 
                     </div>

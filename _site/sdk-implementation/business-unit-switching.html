@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -218,108 +210,17 @@
 
 <p>Switching business units using the AppID value used to configure the application requires you to issue <em>tearDown</em> to the SDK. Follow this call with a standard configure, as typically done in <em>applicationDidFinishLaunching…</em>.</p>
 
-<p>Any switch in business units removes any MarketingCloudSDK data from the system. If you enable the previous business unit later via the SDK, data like contactKey, tags and attributes will no longer be set.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void) switchToBusinessUnit2
-{
-    // Tear down the existing instance of the SDK
-    [[MarketingCloudSDK sharedInstance] sfmc_tearDown];
-
-    // weak reference to avoid retain cycle within block
-    __weak __typeof__(self) weakSelf = self;
-
-    // Reconfigure with a different configuration file.
-    NSURL *configurationFileURL = // code to reference your configuration file for BU2
-    NSError *configureError = nil;
-        BOOL configured = [[MarketingCloudSDK sharedInstance] sfmc_configureWithURL:configurationFileURL configurationIndex:0 error:&amp;configureError
-                         completionHandler:^(BOOL success, NSString *appId, NSError *error) {
-            // The SDK has been fully configured and is ready for use!
-
-            // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-            [UNUserNotificationCenter currentNotificationCenter].delegate = weakSelf;
-
-            [[UNUserNotificationCenter currentNotificationCenter] requestAuthorizationWithOptions:UNAuthorizationOptionAlert | UNAuthorizationOptionSound | UNAuthorizationOptionBadge
-                                                                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
-                                                                            if (error == nil) {
-                                                                                if (granted == YES) {
-                                                                                    os_log_info(OS_LOG_DEFAULT, "Authorized for notifications = %s", granted ? "YES" : "NO");
-
-                                                                                    // we are authorized to use notifications, request a device token for remote notifications
-                                                                                    [[UIApplication sharedApplication] registerForRemoteNotifications];
-                                                                                }
-                                                                            }
-                                                                        }];        
-        }];
-        if (configured == YES) {
-            // The configuation process is underway.
-        }
-    }
-    ...
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -&gt; Bool {
-
-    // Tear down the existing instance of the SDK
-    MarketingCloudSDK.sharedInstance().sfmc_tearDown()
-                                weak var weakSelf = self
-        do {
-            try MarketingCloudSDK.sharedInstance().sfmc_configure(completionHandler: {(_ success: Bool, _ appId: String, _ error: Error?) -&gt; Void in
-                // The SDK has been fully configured and is ready for use!
-                // set the delegate if needed then ask if we are authorized - the delegate must be set here if used
-                UNUserNotificationCenter.current().delegate = weakSelf
-                UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge], completionHandler: {(_ granted: Bool, _ error: Error?) -&gt; Void in
-                    if error == nil {
-                        if granted == true {
-                             // we are authorized to use notifications, request a device token for remote notifications
-                            UIApplication.shared.registerForRemoteNotifications()
-                        }
-                    }
-                })
-            })
-            return true
-        } catch let error as NSError {
-            print("Error: \(error)")
-        }
-        return false
-    }
-</code></pre></div></div>
+<p>Any switch in business units removes any MarketingCloudSDK data from the system. If you enable the previous business unit later via the SDK, data like contactKey, tags and attributes will no longer be set.
+<script src="https://gist.github.com/bc7a740e19d045af3285ce7de25017b0.js"></script>
+<script src="https://gist.github.com/5cb50d2368c1fff81cedd922629bb079.js"></script></p>
 
 <p>Use a similar approach if you switch between business units for development purposes, such as using a development business unit for testing Marketing Cloud notifications and another business unit for for production releases.</p>
 
-<p>Use a configuration file to contain multiple JSON dictionaries of configuration data, each with a unique appid and access token value from Marketing Cloud.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// MarketingCloudConfiguration.json
-[{
-  "name": "prod",
-  "appid": "&lt;your production appid&gt;",
-  "accesstoken": "&lt;your production accesstoken",
-  "analytics": true,
-  "location": true,
-  "inbox": true,
-  "loglevel": 0,
-}, {
-  "name": "development",  
-  "appid": "&lt;your development appid&gt;",
-  "accesstoken": "&lt;your development accesstoken",
-  "analytics": true,
-  "location": true,
-  "inbox": true,
-  "loglevel": 0
- }]
-</code></pre></div></div>
-<p>Use the index of your configuration when configuring the SDK using the configureWithURL:configuationIndex:error: method.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>NSURL *configurationFileURL = // code to reference your configuration file
-NSInteger productionIndex = 0; // index of production configuration in the JSON file dictionary
-NSInteger debugIndex = 1;
-NSError *configureError = nil;
-    BOOL configured = [[MarketingCloudSDK sharedInstance] sfmc_configureWithURL:configurationFileURL configurationIndex:debugIndex error:&amp;configureError
-                         completionHandler:^(BOOL success, NSString *appId, NSError *error) {
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var configurationFileURL = (    // code to reference your configuration file
-NSInteger) as? URL
-// index of production configuration in the JSON file dictionary
-var debugIndex: Int = 1
-do {
-     try MarketingCloudSDK.shar
-</code></pre></div></div>
+<p>Use a configuration file to contain multiple JSON dictionaries of configuration data, each with a unique appid and access token value from Marketing Cloud.
+<script src="https://gist.github.com/9c9db39c75cd5f42fda172fbbb3e56e9.js"></script>
+Use the index of your configuration when configuring the SDK using the configureWithURL:configuationIndex:error: method.
+<script src="https://gist.github.com/afb7a3ac75241b9d6a040f7437de2bb0.js"></script>
+<script src="https://gist.github.com/e381ef8d0b6555558433039ae036b0e3.js"></script></p>
 
 
                     </div>

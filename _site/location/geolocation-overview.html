@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.0.0) : Overview</title>
+        <title>MarketingCloudSDK iOS (v5.0.0) : Geofence and Beacon Messaging</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -211,10 +203,12 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Implement Location Services</h2>
+    <h2>Geofence and Beacon Messaging</h2>
 </div>
 
 <p>If location is enabled in your MarketingCloudSDKConfiguration.json file, you can call a single method to use the Marketing Cloud location messaging feature.</p>
+
+<h2 id="location-messaging">Location Messaging</h2>
 
 <p>In addition, Apple requires adding keys to your Info.plist file to enable location services:</p>
 
@@ -232,17 +226,43 @@
   <p>MarketingCloudSDK requires “Always” permissions for full geofence and beacon functionality. An application does not receive location messages if “When-in-use authorization” is selected by the app user.</p>
 </blockquote>
 
-<p>When your application is ready to enable location features, including geofence and beacon messaging, call the MarketingCloudSDK framework’s method to start watching location.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[[MarketingCloudSDK sharedInstance] sfmc_startWatchingLocation];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MarketingCloudSDK.sharedInstance().sfmc_startWatchingLocation()
-</code></pre></div></div>
+<p>When your application is ready to enable location features, including geofence and beacon messaging, call the MarketingCloudSDK framework’s method to start watching location.
+<script src="https://gist.github.com/07e4a6508960c6b96276cc71cb08a772.js"></script>
+<script src="https://gist.github.com/31864111e51c70fc25581891444ec344.js"></script></p>
 
 <p>The MarketingCloudSDK+Location.h” header file details additional methods to get information about location and control the frameworks behavior.</p>
 
 <blockquote>
   <p>MobilePush prevents the app from displaying a geofence message with an empty alert. If you include AMPscript in your message that returns no content or an empty string, the mobile app does not display that message.</p>
 </blockquote>
+
+<h2 id="beacon-support">Beacon Support</h2>
+
+<p>We enable beacon support when you implement the location requirements on this page.</p>
+
+<p>To range for beacons in the background, add an entry to your app’s Info.plist. This permission ensures that your app can range for beacons when your app is in the background or suspended.</p>
+
+<p>Implement this key to enable this function. “App registers for location updates” is required to enable location in the MarketingCloudSDK and to range for beacons in the background.</p>
+
+<p><br />
+<img class="img-responsive" src="/assets/background_modes_plist_entry.png" /><br /></p>
+
+<blockquote>
+  <p>MobilePush prevents the app from displaying a beacon message with an empty alert. If you include AMPscript in your message that returns no content or an empty string, the mobile app will not display that message.</p>
+</blockquote>
+
+<blockquote>
+  <p>To understand how beacons behave in different situations, review the MobilePush beacons help documentation (http://help.marketingcloud.com/en/documentation/mobilepush/beacons_overview/beacon_behavior/).</p>
+</blockquote>
+
+<p>If you create your own CLLocationManager object, we cannot guarantee that features of our SDK will work as intended.</p>
+
+<p>If you have enabled notifications using MarketingCloudSDK and have called -sfmc_startWatchingLocation,  you can access the device’s last known location using the SDK.</p>
+
+<script src="https://gist.github.com/fcb816bf9df1b7d26d300c22822f88c6.js"></script>
+
+<script src="https://gist.github.com/02d2c7f15461981015658691d81a4685.js"></script>
+
 
 
                     </div>

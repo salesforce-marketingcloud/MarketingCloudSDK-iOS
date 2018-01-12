@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -222,23 +214,9 @@
 
 <p><img class="img-responsive" src="/assets/TagsFeatures.png" /><br /></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Add a tag
-[[MarketingCloudSDK sharedInstance] sfmc_addTag:@"Hiking Supplies"];
+<script src="https://gist.github.com/81541725bba9efe46611868bdf3eb465.js"></script>
 
-// Remove a tag
-[[MarketingCloudSDK sharedInstance] sfmc_removeTag:@"Boating Gear"];
-
-// Get all tags
-NSSet *tags = [[MarketingCloudSDK sharedInstance] sfmc_tags];
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Add a tag
-
-MarketingCloudSDK.sharedInstance().sfmc_addTag("Hiking Supplies")
-// Remove a tag
-MarketingCloudSDK.sharedInstance().sfmc_removeTag("Boating Gear")
-    // Get all tags
-let tags = MarketingCloudSDK.
-</code></pre></div></div>
+<script src="https://gist.github.com/07764fc487ad0c29a06b13a9f01b437f.js"></script>
 
 <p>Find additional convenience methods to add and remove arrays of tags in MarketingCloudSDK+Base.h.</p>
 

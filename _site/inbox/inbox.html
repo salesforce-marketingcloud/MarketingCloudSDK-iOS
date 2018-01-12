@@ -95,6 +95,9 @@
             
             <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
         
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
     
         
         
@@ -135,10 +138,7 @@
             
                 <li class=nav-header>Location Services</li>
             
-            <li data-order="3"><a href="/location/add-beacons.html">Beacons</a></li>
-        
-            
-            <li data-order="1"><a href="/location/geolocation-overview.html">Overview</a></li>
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
             
             <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
@@ -152,9 +152,6 @@
                 <li class=nav-header>Inbox</li>
             
             <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
-        
-            
-            <li data-order="2"><a href="/inbox/cloudpage-push-overview.html">CloudPage Alert Overview</a></li>
         
     
         
@@ -173,11 +170,6 @@
         
         
 
-        
-            
-                <li class=nav-header>Feature Implementation</li>
-            
-            <li data-order="5"><a href="/features/custom-keys.html">Custom Keys</a></li>
         
     
         
@@ -224,21 +216,9 @@
 
 <p>Additionally, the MarketingCloudSDK provides a very basic UITableView delegate to manage the selection of rows in your tableview. Otherwise, the application must implement a UITableView delegate.</p>
 
-<p>This example includes a simple implementation of an inbox using the MarketingCloudSDK as datasource and delegate:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    self.tableView.dataSource = [[MarketingCloudSDK sharedInstance] sfmc_inboxMessagesTableViewDataSourceForTableView:self.tableView];
-    self.tableView.delegate = [[MarketingCloudSDK sharedInstance] sfmc_inboxMessagesTableViewDelegateForTableView:self.tableView dataSource:self.tableView.dataSource];
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>func viewDidLoad() {
-    super.viewDidLoad()       
-    tableView.dataSource = MarketingCloudSDK.sharedInstance().sfmc_inboxMessagesTableViewDataSource(for: tableView)
-    tableView.delegate = MarketingCloudSDK.sharedInstance().sfmc_inboxMessagesTableViewDelegate(for: tableView, dataSource: tableView.dataSource as! MarketingCloudSDKInboxMessagesDataSource)
-    ...
-}
-</code></pre></div></div>
+<p>This example includes a simple implementation of an inbox using the MarketingCloudSDK as datasource and delegate:
+<script src="https://gist.github.com/eca779c4ee8893aecd25d237a40626f0.js"></script>
+<script src="https://gist.github.com/4e6c3910935f6ccab2845091837d6474.js"></script></p>
 
 <p>For additional control, presentation and usability, implement your own datasource and delegate using the support offered by the SDK.</p>
 
@@ -254,24 +234,33 @@
 
 <p>You can also track analytics for Inbox messages. Call trackInboxOpenEvent() to send the open analytic value to Marketing Cloud. We automatically provide analytic information for message downloads. Call sfmc_trackMessageOpened: with an inbox message dictionary to record the analytic.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSDictionary *inboxMessagesDict = [self.dataSource objectAtIndex:indexPath.row];
-    if (inboxMessagesDict != nil) {     
-        [[MarketingCloudSDK sharedInstance] sfmc_trackMessageOpened:inboxMessagesDict];
-    }
+<script src="https://gist.github.com/b4117533046f2f86e917e1d8eda4f9e6.js"></script>
 
-    // ... your selection handling
-}
-</code></pre></div></div>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let inboxMessagesDict = dataSource[indexPath.row] as? [AnyHashable: Any]
-        if inboxMessagesDict != nil {
-            MarketingCloudSDK.sharedInstance().sfmc_trackMessageOpened(inboxMessagesDict!)
-        }
-        // ... your selection handling
-    }
-</code></pre></div></div>
+<script src="https://gist.github.com/63c21b8d358e0e86597dea492cca74e7.js"></script>
+
+<p>See MarketingCloudSDK+InboxMessages.h for more information.</p>
+
+<h2 id="cloudpage-alerts">CloudPage Alerts</h2>
+<p>The CloudPage Inbox customized push message (Alert+Inbox) contains a URL in the payload. Marketing Cloud must enable the account using this functionality with access to both MobilePush and CloudPages to successfully create and send CloudPage push messages.</p>
+
+<p>Enable inbox in your configuration file using the inbox:true value.</p>
+
+<p>The MarketingCloudSDK opens this URL when the message is tapped using a SFSafariViewController.</p>
+
+<p>Override the built-in web view handling of the OpenDirect URL by implementing the MarketingCloudSDKInboxMessagesNotificationHandlerDelegate protocol.</p>
+
+<p>In the class that handles the override, make sure to adhere to the protocol. Use this AppDelegate sample as an example.</p>
+
+<script src="https://gist.github.com/0f39ddd4004118bfee64f2d53c68c88e.js"></script>
+
+<script src="https://gist.github.com/22e93c290c396452f2d12b64e23f2702.js"></script>
+
+<p>Somewhere in the class that implements this protocol, set the SDK’s delegate handler.
+<script src="https://gist.github.com/18f5292e1fefc3ebdff61cf13757b668.js"></script>
+<script src="https://gist.github.com/c534c46e9e9d7f40dec68e1a23bb6fb0.js"></script>
+Next, implement the required protocol methods to override the built-in functionality.
+<script src="https://gist.github.com/cb67e790b18a9f37632c845d7f03514d.js"></script>
+<script src="https://gist.github.com/a25998c1062819d1bc3851c17de191d4.js"></script></p>
 
 <p>See MarketingCloudSDK+InboxMessages.h for more information.</p>
 
