@@ -4,7 +4,7 @@ title: "User Data Migration"
 subtitle: "Migrate User Data from Previous SDK Version"
 category: user-data
 date: 2018-01-10 12:00:00
-order: 3
+order: 6
 ---
 
 Version 5.0.0 of the MarketingCloudSDK (formerly JB4ASDK) introduces new methods for data storage encryption that are incompatible with the methods used in JB4ASDK.
