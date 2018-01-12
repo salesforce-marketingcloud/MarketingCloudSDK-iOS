@@ -14,7 +14,7 @@ title: "README"
 1. [Create your apps]({{ site.baseurl }}/get-started/create-apps-overview.html) in the MobilePush Marketing Cloud app.
 1. [Download the SDK]({{site.codeurl}}).
 1. [Implement the SDK]({{ site.baseurl }}/get-started/implement-sdk.html).
-1. Add [Feature Implementation]({{ site.baseurl }}/features/feature-implementation-overview.html) to your apps.
+1. Implement [push notifications]({{ site.baseurl }}/push-notifications/push-notifications.html) for your apps.
 1. Add optional purchased features, such as [CloudPages]({{ site.baseurl }}/inbox/cloudpage-push-overview.html) and [Location Services]({{ site.baseurl }}/location/geolocation-overview.html), to your apps.
 
 ## Additional Resources
