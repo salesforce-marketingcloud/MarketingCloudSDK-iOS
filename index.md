@@ -30,4 +30,6 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 5.0.0
 _Released January 26, 2017, correlating with the Marketing Cloud January 2018 release_
 
-TBD
+* We redesigned the SDK to make it easier to integrate than ever before. This release includes a slimmer API that makes it easier to add Marketing Cloud features to your app. Existing users can upgrade their version to take advantage of the improved SDK. New users can follow the existing Getting Started directions to get the SDK up and running.
+
+* We updated the SDK for full support of iOS 11.
