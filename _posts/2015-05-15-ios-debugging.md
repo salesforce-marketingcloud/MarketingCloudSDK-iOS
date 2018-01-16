@@ -11,31 +11,20 @@ The MarketingCloudSDK.framework uses extensive internal logging to record action
 General, default-level logging is enabled at all times. Additionally, the SDK writes error and fault-level logs when conditions occur which must be recorded.
 
 Enable debug-level logging after configuration using this call.
-```
-[[MarketingCloudSDK sharedInstance] sfmc_setDebugLoggingEnabled:@(YES)];
-```
-```
-MarketingCloudSDK.sharedInstance().sfmc_setDebugLoggingEnabled(true)
-```
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/e952d4f8272e3b926f7eaa20031359aa.js"></script>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/0bd9cdf402145e97136a222bbcad426d.js"></script>
+
 Query the state of debug-level logging using this call.
-```
-BOOL enabled = [[MarketingCloudSDK sharedInstance] sfmc_getDebugLoggingEnabled];
-```
-```
-let enabled: Bool = MarketingCloudSDK.sharedInstance().sfmc_getDebugLoggingEnabled()
-```
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/7670d9404859b1a758c775e1add602a9.js"></script>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/0663b6b494a586e86228b878673a97e5.js"></script>
+
 We send all logging output to Apple's unified logging system. Read this information using Xcode's “Devices and Simulators” window or the macOS Console application. When SDK debug logging is enabled, the SDK uses the *OS_LOG_TYPE_DEBUG* value. Make sure to disable logging in your application for release builds to the Apple App Store.
 
 Review Apple documentation for more information about [unified logging](https://developer.apple.com/documentation/os/logging?language=objc).
-
-To obtain information about the state of the MarketingCloudSDK, use this call.
-```
-NSString *state = [[MarketingCloudSDK sharedInstance] sfmc_getSDKState];
-```
-```
-let state: String = MarketingCloudSDK.sharedInstance().sfmc_getSDKState()!
-```
-The call returns a JSON string of relevant information.
 
 #### Additional Resources
 
@@ -59,10 +48,14 @@ Ensure that your network team unblocks the following ports to provide communicat
 
 You can toggle the SDK logging facility by including the following lines in your code:
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/c9d6cd88962c843da694.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/9d9f0a6e38f66e637871fcbdeffef9bb.js"></script>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/0e519d3566a62c340f4708464bda77ea.js"></script>
 
 #### Add SDK State information to log
 
 For a complete list of information that the SDK has and it's current state, you can implement getSDKState() as follows:
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/d77f990a6d13ab3086da.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/9275c899342cb46ea4f9f6367bfd7f92.js"></script>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js"></script>
