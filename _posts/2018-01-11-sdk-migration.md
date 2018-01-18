@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "SDK Migration"
+title: "SDK Migration to Version 5.x"
 subtitle: "Migrate to New SDK from Previous Version"
 category: sdk-implementation
 date: 2018-01-11 12:00:00

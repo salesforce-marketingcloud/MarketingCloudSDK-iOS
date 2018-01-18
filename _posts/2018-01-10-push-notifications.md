@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Push Notifications"
+title: "Push Notifications Overview"
 subtitle: "Send Push Notifications"
 category: push-notifications
 date: 2018-01-12 12:00:00
