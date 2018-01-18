@@ -15,7 +15,12 @@ title: "README"
 1. [Download the SDK]({{site.codeurl}}).
 1. [Implement the SDK]({{ site.baseurl }}/get-started/implement-sdk.html).
 1. Implement [push notifications]({{ site.baseurl }}/push-notifications/push-notifications.html) for your apps.
+  * Create a [test audience](https://help.salesforce.com/articleView?id=mc_mp_create_an_audience.htm&type=5).
+  * Create a [test message](https://help.salesforce.com/articleView?id=mc_mp_outbound_message.htm&type=5) in the Marketing Cloud MobilePush app.
 1. Add optional purchased features, such as [CloudPages]({{ site.baseurl }}/inbox/inbox.html) and [Location Services]({{ site.baseurl }}/location/geolocation-overview.html), to your apps.
+
+> You can use an iOS simulator for testing, but the simulator will not receive push messages as part of the testing process.
+You must test push using Apple's production environment, not a sandbox environment. Build and run on a device installed with a release build.
 
 ## Additional Resources
 

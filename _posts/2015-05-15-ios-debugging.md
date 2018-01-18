@@ -26,6 +26,10 @@ We send all logging output to Apple's unified logging system. Read this informat
 
 Review Apple documentation for more information about [unified logging](https://developer.apple.com/documentation/os/logging?language=objc).
 
+#### Device Token
+
+For testing and troubleshooting purposes, retrieve your device token from a running app by calling [[MarketingCloudSDK sharedInstance] sfmc_deviceToken] and sending the result to yourself via email, alert, or other method.
+
 #### Additional Resources
 
 Use this information when testing your app and the device either does not receive messages or receives messages sporadically. Testing the app while connected to a corporate Wi-Fi network could cause issues if your IT team does not correctly configure port accessibility (preventing the test device from receiving messages).

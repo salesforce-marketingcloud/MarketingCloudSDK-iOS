@@ -71,7 +71,7 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration</a></li>
+            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration to Version 5.x</a></li>
         
             
             <li data-order="5"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
@@ -84,7 +84,7 @@
             
                 <li class=nav-header>Push Notifications</li>
             
-            <li data-order="1"><a href="/push-notifications/push-notifications.html">Push Notifications</a></li>
+            <li data-order="1"><a href="/push-notifications/push-notifications.html">Push Notifications Overview</a></li>
         
             
             <li data-order="4"><a href="/push-notifications/rich-notifications.html">Rich Notifications</a></li>
@@ -225,6 +225,10 @@
 <p>We send all logging output to Apple’s unified logging system. Read this information using Xcode’s “Devices and Simulators” window or the macOS Console application. When SDK debug logging is enabled, the SDK uses the <em>OS_LOG_TYPE_DEBUG</em> value. Make sure to disable logging in your application for release builds to the Apple App Store.</p>
 
 <p>Review Apple documentation for more information about <a href="https://developer.apple.com/documentation/os/logging?language=objc">unified logging</a>.</p>
+
+<h4 id="device-token">Device Token</h4>
+
+<p>For testing and troubleshooting purposes, retrieve your device token from a running app by calling [[MarketingCloudSDK sharedInstance] sfmc_deviceToken] and sending the result to yourself via email, alert, or other method.</p>
 
 <h4 id="additional-resources">Additional Resources</h4>
 

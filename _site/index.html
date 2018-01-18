@@ -71,7 +71,7 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration</a></li>
+            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration to Version 5.x</a></li>
         
             
             <li data-order="5"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
@@ -84,7 +84,7 @@
             
                 <li class=nav-header>Push Notifications</li>
             
-            <li data-order="1"><a href="/push-notifications/push-notifications.html">Push Notifications</a></li>
+            <li data-order="1"><a href="/push-notifications/push-notifications.html">Push Notifications Overview</a></li>
         
             
             <li data-order="4"><a href="/push-notifications/rich-notifications.html">Rich Notifications</a></li>
@@ -217,9 +217,19 @@
   <li><a href="/get-started/create-apps-overview.html">Create your apps</a> in the MobilePush Marketing Cloud app.</li>
   <li><a href="https://github.com/ExactTarget/JB4A-SDK-iOS">Download the SDK</a>.</li>
   <li><a href="/get-started/implement-sdk.html">Implement the SDK</a>.</li>
-  <li>Implement <a href="/push-notifications/push-notifications.html">push notifications</a> for your apps.</li>
+  <li>Implement <a href="/push-notifications/push-notifications.html">push notifications</a> for your apps.
+    <ul>
+      <li>Create a <a href="https://help.salesforce.com/articleView?id=mc_mp_create_an_audience.htm&amp;type=5">test audience</a>.</li>
+      <li>Create a <a href="https://help.salesforce.com/articleView?id=mc_mp_outbound_message.htm&amp;type=5">test message</a> in the Marketing Cloud MobilePush app.</li>
+    </ul>
+  </li>
   <li>Add optional purchased features, such as <a href="/inbox/inbox.html">CloudPages</a> and <a href="/location/geolocation-overview.html">Location Services</a>, to your apps.</li>
 </ol>
+
+<blockquote>
+  <p>You can use an iOS simulator for testing, but the simulator will not receive push messages as part of the testing process.
+You must test push using Apple’s production environment, not a sandbox environment. Build and run on a device installed with a release build.</p>
+</blockquote>
 
 <h2 id="additional-resources">Additional Resources</h2>
 
@@ -236,7 +246,14 @@
 <h4 id="version-500">Version 5.0.0</h4>
 <p><em>Released January 26, 2017, correlating with the Marketing Cloud January 2018 release</em></p>
 
-<p>TBD</p>
+<ul>
+  <li>
+    <p>We redesigned the SDK to make it easier to integrate than ever before. This release includes a slimmer API that makes it easier to add Marketing Cloud features to your app. Existing users can upgrade their version to take advantage of the improved SDK. New users can follow the existing Getting Started directions to get the SDK up and running.</p>
+  </li>
+  <li>
+    <p>We updated the SDK for full support of iOS 11.</p>
+  </li>
+</ul>
 
                     </div>
                 
