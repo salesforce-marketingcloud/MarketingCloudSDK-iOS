@@ -13,7 +13,7 @@ MobilePush uses the Apple Push Notification Service (APNS) to deliver messages t
 1. One for the development version of your app
 1. One for the published production version of your app.
 
-These separate certificates may expire on different days, independent of the other certificate. Some certificates may use password protection. The Marketing Cloud cannot use password-protected certificates without the client-provided password.
+These separate certificates may expire on different days, independent of the other certificate. Some certificates may use password protection. Marketing Cloud cannot use password-protected certificates without the client-provided password.
 
 ## Detailed Instructions With Screenshots
 
@@ -26,4 +26,4 @@ These separate certificates may expire on different days, independent of the oth
 * Ensure than you know whether you created an unprotected .p12 file or a password-protected .p12 file. Test this situation by double-clicking the .p12 file on your Mac. This process should import the file using the password you specifed when creating the certificate. If the process does not complete, ensure you used the correct password and try re-exporting the certificate.
 * You might encounter an issue uploading a password-protected certificate with over an existing password-protected certificate. In this case, the screen will hang and the update will appear to fail. Try importing your key into your keychain and re-exporting the certificate, also with a password. This step may resolve the issue.
 * If you try to upload a certificate without a password after initially using a password-protected certificate, the system could stall after upload. Ensure that the new certificate uses a password before uploading.
-* Ensure you use the correct AppCenter username and password in order to continue. If necessary, you can reset the password at https://appcenter-auth.s1.marketingcloudapps.com/forgot.
+* Ensure you use the correct username and password from the administration section of MobilePush in order to continue.
