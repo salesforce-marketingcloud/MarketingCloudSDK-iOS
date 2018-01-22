@@ -33,7 +33,7 @@ You must test push using Apple's production environment, not a sandbox environme
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
 #### Version 5.0.0
-_Released January 22, 2017, correlating with the Marketing Cloud January 2018 release_
+_Released January 22, 2018, correlating with the Marketing Cloud January 2018 release_
 
 * We redesigned the SDK to make it easier to integrate than ever before. This release includes a slimmer API that makes it easier to add Marketing Cloud features to your app. Existing users can upgrade their version to take advantage of the improved SDK. New users can follow the existing Getting Started directions to get the SDK up and running.
 
