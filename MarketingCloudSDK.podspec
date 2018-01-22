@@ -7,7 +7,7 @@ s.summary           = "Salesforce Marketing Cloud MobilePush iOS SDK"
     s.license           = { :type => "Salesforce Marketing Cloud iOS SDK License", :file => "LICENSE.md" }
     s.author            = "Salesforce Marketing Cloud"
 s.platform          = :ios, "10.0"
-s.source            = { :git => "https://github.exacttarget.com/Mobile/MarketingCloudSDK-iOS-Staging.git",
+s.source            = { :git => "https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS",
 :tag => "v#{s.version}"}
     s.preserve_paths    = 'MarketingCloudSDK/MarketingCloudSDK.framework'
     s.requires_arc      = true

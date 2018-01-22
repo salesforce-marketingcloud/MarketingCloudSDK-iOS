@@ -141,10 +141,9 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
  Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
 
  @param messageDictionary a dictionary representing an Inbox message
- @param read a value indicating that the message is read or not
  @return a value indicatating success in setting the message to read
  */
-- (BOOL) sfmc_markMessage:(NSDictionary *_Nonnull) messageDictionary read:(BOOL) read;
+- (BOOL) sfmc_markMessageRead:(NSDictionary *_Nonnull) messageDictionary;
 
 /**
  Mark an Inbox message as deleted.
@@ -152,10 +151,9 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
  Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
  
  @param messageDictionary a dictionary representing an Inbox message
- @param deleted a value indicating that the message is deleted or not
  @return a value indicatating success in setting the message to deleted
  */
-- (BOOL) sfmc_markMessage:(NSDictionary *_Nonnull) messageDictionary deleted:(BOOL) deleted;
+- (BOOL) sfmc_markMessageDeleted:(NSDictionary *_Nonnull) messageDictionary;
 
 /**
  Mark all Inbox messages as read.
@@ -167,15 +165,6 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 - (BOOL) sfmc_markAllMessagesRead;
 
 /**
- Mark all Inbox messages as Unread.
- 
- Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
- 
- @return a value indicatating success in setting the messages to unread
- */
-- (BOOL) sfmc_markAllMessagesUnread;
-
-/**
  Mark all Inbox messages as deleted.
  
  Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
@@ -183,15 +172,6 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
  @return a value indicatating success in setting the messages to deleted
  */
 - (BOOL) sfmc_markAllMessagesDeleted;
-
-/**
- Mark all Inbox messages as undeleted.
- 
- Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
- 
- @return a value indicatating success in setting the messages to undeleted
- */
-- (BOOL) sfmc_markAllMessagesUndeleted;
 
 /**
  Reload and refresh Inbox messages from the MarketingCloud server.
