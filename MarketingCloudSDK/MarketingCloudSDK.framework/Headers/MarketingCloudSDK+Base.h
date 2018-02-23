@@ -24,24 +24,44 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedInstance;
 
 /**
- This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON
+ This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
+
  
- @param error NSError object describing the error
- @param completionHandler Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error.
+ @param error NSError object describing the error.
+ @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
+ */
+-(BOOL)sfmc_configure:( NSError * _Nullable *)error;
+
+/**
+ This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
+
+ 
+ @param url URL to a JSON configuration file that is embedded in the application bundle.
+ @param configurationIndex zero based index into into the JSON file array of configuration settings.
+ @param error NSError object describing the error.
+ @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
+ */
+-(BOOL)sfmc_configureWithURL:(NSURL *)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error;
+
+/**
+ This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
+ 
+ @param error NSError object describing the error.
+ @param completionHandler Called when the asynchronous portion of the configuration has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.
  @return Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.
  */
--(BOOL)sfmc_configure:(NSError * _Nullable *)error completionHandler:(void (^)(BOOL configured, NSString *appId, NSError * _Nullable error))completionHandler;
+-(BOOL)sfmc_configure:(NSError * _Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError * _Nullable error)) completionHandler;
 
 /**
  This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass a URL to a JSON file with optional parameter settings. Settings that are absent will default to NO. See documentation for example JSON.
  
  @param url URL to a JSON configuration file that is embedded in the application bundle.
- @param configurationIndex zero based index into into the JSON file array of configuration settings
- @param error NSError object describing the error
- @param completionHandler Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error.
+ @param configurationIndex zero based index into into the JSON file array of configuration settings.
+ @param error NSError object describing the error.
+ @param completionHandler Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.
  @return Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.
  */
--(BOOL)sfmc_configureWithURL:(NSURL *)url configurationIndex:(NSNumber *) configurationIndex error:(NSError **)error completionHandler:(void (^)(BOOL configured, NSString *appId, NSError *completionError))completionHandler;
+-(BOOL)sfmc_configureWithURL:(NSURL *)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError * _Nullable error)) completionHandler;
 
 /** this method properly closes down the MarketingCloudSDK. It should be used in any cases where references to the MarketingCloudSDK need to be released.
  */
@@ -174,7 +194,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  This method is necessary to the implementation of Salesforce Push.
  
- @param deviceToken Token as received from Apple
+ @param deviceToken Token as received from Apple.
  
  */
 -(void) sfmc_setDeviceToken:(NSData * _Nonnull)deviceToken;
@@ -182,7 +202,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Returns the device token as a NSString.
  
- @return NSData A stringified version of the Apple deviceToken
+ @return NSData A stringified version of the Apple deviceToken.
  
  */
 - (NSString * _Nullable) sfmc_deviceToken;
@@ -190,78 +210,92 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Returns the Salesforce application ID.
  
- @return NSString Salesforce application ID
+ @return NSString Salesforce application ID.
  */
 - (NSString * _Nullable) sfmc_appID;
 
 /**
  Returns the Salesforce application accessToken.
  
- @return NSString Salesforce application accessToken
+ @return NSString Salesforce application accessToken.
  */
 - (NSString * _Nullable)sfmc_accessToken;
 
 /**
  Returns the unique device identifier that Salesforce will use to identify the device.
 
- @return NSString The device identifier (a UUID) as a NSString
+ @return NSString The device identifier (a UUID) as a NSString.
  */
 - (NSString * _Nullable) sfmc_deviceIdentifier;
 
 /**
- Informs the SDK of the current notification
+ Informs the SDK of the current notification.
 
- @param request The UNNotificationRequest that generated a notification
+ @param request The UNNotificationRequest that generated a notification.
  */
-- (void)sfmc_setNotificationRequest:(UNNotificationRequest *)request;
+- (void)sfmc_setNotificationRequest:(UNNotificationRequest *)request API_AVAILABLE(ios(10));
 
 /**
- Returns the last notification delivered to the SDK
+ Returns the last notification delivered to the SDK.
 
- @return UNNotificationRequest * The last UNNotificationRequest that generated a notification
+ @return UNNotificationRequest * The last UNNotificationRequest that generated a notification.
  */
-- (UNNotificationRequest *)sfmc_notificationRequest;
+- (UNNotificationRequest *)sfmc_notificationRequest API_AVAILABLE(ios(10));
 
 /**
- Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications
+ Informs the SDK of the current notification.
+ 
+ @param userInfo The user info the last notification delivered to the SDK.
+ */
+- (void)sfmc_setNotificationUserInfo:(NSDictionary *)userInfo;
+
+/**
+ Returns the user info of the last notification delivered to the SDK.
+ 
+ @return NSDictionary * The user info the last notification delivered to the SDK.
+ */
+- (NSDictionary *)sfmc_notificationUserInfo;
+
+/**
+ Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.
 
  @param pushEnabled Set to YES to enable push notifications.
  */
 - (void)sfmc_setPushEnabled:(BOOL)pushEnabled;
 
 /**
- The current state of the pushEnabled flag in the SDK
+ The current state of the pushEnabled flag in the SDK.
 
- @return returns a BOOL value of the current pushEnabled state
+ @return returns a BOOL value of the current pushEnabled state.
  */
 - (BOOL)sfmc_pushEnabled;
 
 /**
  Outputs a formatted, easily readable block of text describing the current status of the SDK.
  
- @return JSON string with values of the current state of the SDK
+ @return JSON string with values of the current state of the SDK.
  
  */
 -(nullable NSString *)sfmc_getSDKState NS_SWIFT_NAME(sfmc_getSDKState());
 
 /**
- Enable/Disable extra debug logging from the SDK
+ Enable/Disable extra debug logging from the SDK.
 
  @param enabled BOOL for enabling or disabling extra SDK logging.
  */
 - (void)sfmc_setDebugLoggingEnabled:(BOOL)enabled;
 
 /**
- The current state of the debug logging flag in the SDK
+ The current state of the debug logging flag in the SDK.
  
- @return returns a BOOL value of the current debug logging state
+ @return returns a BOOL value of the current debug logging state.
  */
 - (BOOL)sfmc_getDebugLoggingEnabled;
 /**
  Ask MarketingCloudSDK to update its data. MarketingCloudSDK will throttle attempts based on the time since the last time this was called.
  
  @param completionHandler The UIBackgroundFetchResult completion handler. This method will be called with UIBackgroundFetchResultNoData if no attempt was made to update data, otherwise it will be called with UIBackgroundFetchResultNewData after the update completes. If nil is passed, then process of the completion handler must be managed by the caller.
- @return YES if MarketingCloudSDK did make an attempt at updating data
+ @return YES if MarketingCloudSDK did make an attempt at updating data.
  */
 - (BOOL) sfmc_refreshWithFetchCompletionHandler:(void (^_Nullable)(UIBackgroundFetchResult result))completionHandler;
 

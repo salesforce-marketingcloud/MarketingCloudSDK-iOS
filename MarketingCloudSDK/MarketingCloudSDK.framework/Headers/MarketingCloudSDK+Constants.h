@@ -11,6 +11,9 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKErrorDomain;
 
 // MarketingCloudSDK event notifications
 //
+FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFrameworkDidSetupNotification;
+FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFrameworkDidTeardownNotification;
+
 // successfuly sent a registration to Salesforce - userinfo contains the HTTP response
 FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFoundationRegistrationResponseSucceededNotification;
 

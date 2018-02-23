@@ -176,12 +176,16 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 /**
  Reload and refresh Inbox messages from the MarketingCloud server.
  
+ Note: The underlying request to the server will be throttled such that it will execute at most every 60 seconds. If the method has been called less than 60s after the preceeding method call, NO will be returned and the request will not be made. If NO is returned, it is suggested that any UI used to reflect the refresh operation is updated (pull to refresh indicators, loading spinners, etc.).
+ 
  This method will cause notifications to be posted to NSNotificationCenter: 
  
  - SFMCInboxMessagesRefreshCompleteNotification: posted when the refresh process has completed
  - SFMCInboxMessagesNewInboxMessagesNotification: posted if there are new Inbox messages
+ 
+  @return A BOOL value indicating that refreshing has been started.
  */
-- (void) sfmc_refreshMessages;
+- (BOOL) sfmc_refreshMessages;
 
 /**
  Create an instance of a basic UITableView data source to handle all loading for a simple view controller showing Inbox messages.
