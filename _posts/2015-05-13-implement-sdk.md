@@ -5,6 +5,7 @@ subtitle: "Implement and Configure the SDK in your iOS App"
 category: get-started
 date: 2015-05-14 12:00:00
 order: 3
+published: false
 ---
 To implement the MarketingCloudSDK framework in your application, use either CocoaPods or a manual setup of the SDK.
 
