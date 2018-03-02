@@ -17,4 +17,5 @@ Before you send a push notification to your device as a test, complete all of th
   - Tip: When creating the filter criteria, use the Contact Key attribute. Find this attribute under System Data > Contact > Contact Key., Set the attribute equal to the contact key in your iOS app.
   - Tip: It may take up to five minutes for the contact created by your app to show up in the filtered list. Refresh the list until the new contact is returned before proceeding to the next step.
 1. In MobilePush in Marketing Cloud, [create a test message and send it](https://help.salesforce.com/articleView?id=mc_mp_outbound_message.htm&type=5) to your newly created filtered list.
+<br/>
 > Troubleshooting: If the push notification doesn’t arrive on the device, check the filtered list to confirm that the contact’s status is Opted In. If the contact is not opted in, check that you exactly followed the steps to set up the call to config and the other [integration steps]({{ site.baseurl }}/get-started/apple.html). Also check that the app is built appropriately for the type of push certificate you uploaded to Marketing Cloud.
