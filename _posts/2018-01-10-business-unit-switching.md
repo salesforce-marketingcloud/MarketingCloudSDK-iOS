@@ -4,7 +4,7 @@ title: "Switch Business Units"
 subtitle: "Switch Business Units"
 category: sdk-implementation
 date: 2018-01-10 12:00:00
-order: 5
+order: 2
 ---
 
 Switch between multiple Marketing Cloud business units using the MarketingCloudSDK. This process can be necessary for your application implementation, such as switching between production and debug tasks.

@@ -4,7 +4,7 @@ title: "SDK Migration to Version 5.x"
 subtitle: "Migrate to New SDK from Previous Version"
 category: sdk-implementation
 date: 2018-01-11 12:00:00
-order: 4
+order: 1
 ---
 
 Version 5.0.0 of the MarketingCloudSDK (formerly JB4ASDK) is a new iOS framework-based SDK. The MarketingCloudSDK uses a model and method naming convention that is incompatible with the model and methods used in the JB4ASDK and is therefore not a drop-in replacement. Review and familiarize yourself with all of the documentation on using and configuring the MarketingCloudSDK before attempting an application migration.
