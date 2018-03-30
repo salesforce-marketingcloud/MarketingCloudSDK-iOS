@@ -6,6 +6,7 @@ category: sdk-implementation
 date: 2018-03-22 12:00:00
 order: 3
 ---
+> We provide this information as a preview of our April 2018 implementation plans so that you can prepare your app for regulatory compliance.
 
 These changes assist you in preparing for data compliance regulations, such as the European Union's General Data Protection Regulation. For a full overview of Salesforce's approach to managing compliance, visit our [comprehensive page regarding GDPR](https://www.salesforce.com/gdpr/overview/).
 

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.0.0) : Provision Mobile App with Apple</title>
+        <title>MarketingCloudSDK iOS (v5.0.0) : Initial SDK Setup</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -45,13 +45,10 @@
             
                 <li class=nav-header>Get Started</li>
             
-            <li data-order="3"><a href="/get-started/implement-sdk.html">Implement and Configure SDK</a></li>
+            <li data-order="2"><a href="/get-started/test-first-push.html">Test SDK Setup</a></li>
         
             
-            <li data-order="2"><a href="/get-started/create-apps-overview.html">Create MobilePush App</a></li>
-        
-            
-            <li data-order="1"><a href="/get-started/apple.html">Provision Mobile App with Apple</a></li>
+            <li data-order="1"><a href="/get-started/apple.html">Initial SDK Setup</a></li>
         
     
         
@@ -71,10 +68,13 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="4"><a href="/sdk-implementation/sdk-migration.html">SDK Migration to Version 5.x</a></li>
+            <li data-order="3"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
         
             
-            <li data-order="5"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
+            <li data-order="1"><a href="/sdk-implementation/sdk-migration.html">SDK Migration to Version 5.x</a></li>
+        
+            
+            <li data-order="2"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
         
     
         
@@ -203,14 +203,136 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Provision Mobile App with Apple</h2>
+    <h2>Initial SDK Setup</h2>
 </div>
 
-<p>You must provision your mobile app in the iOS Provisioning Panel. The certificates issued in the process are valid for one year. Ensure that you repeat this procedure once per year before your certificates expire to maintain app functionality. Follow <a href="http://help.apple.com/xcode/mac/current/#/dev11b059073">Apple’s Xcode instructions</a> to integrate the MarketingCloudSDK with your iOS mobile app.</p>
+<h2 id="1-provision-your-app-with-apple">1. Provision your app with Apple</h2>
+
+<ol>
+  <li>Provision your mobile app in your Apple developer account.</li>
+  <li>To integrate the MarketingCloudSDK with your iOS mobile app and enable push notifications, follow <a href="http://help.apple.com/xcode/mac/current/#/devdfd3d04a1">Apple’s Xcode instructions</a>.</li>
+</ol>
 
 <blockquote>
-  <p>Ensure you create a provisioning profile within your Apple Developer account for your new app. These settings may vary depending on your testing and distribution needs, but you need a valid provisioning profile to send push messages through your app.</p>
+  <p>The APNS (push) certificate issued when you provision your app is valid for one year. To keep the ability to send push notifications, renew the APNS certificate annually before it expires. To create or renew certificates, follow <a href="http://help.apple.com/xcode/mac/current/#/dev11b059073?sub=dev2178d70ae">Apple’s Xcode instructions</a>.</p>
 </blockquote>
+
+<blockquote>
+  <p>If you aren’t using Xcode’s Automatically Manage Signing, ensure that you create a provisioning profile in your Apple Developer account for your new app. These settings may vary depending on your testing and distribution needs; at a minimum, you need a valid provisioning profile to send push messages through your app.</p>
+</blockquote>
+
+<h2 id="2-create-your-app-in-marketing-cloud">2. Create your app in Marketing Cloud</h2>
+
+<p>To connect your iOS app to Marketing Cloud, create a MobilePush app in MobilePush in Marketing Cloud. This connection allows your app to use MobilePush to communicate with your users via push notifications. Marketing Cloud classifies MobilePush apps as consumer-grade applications. MobilePush apps use long-lived limited- access tokens.</p>
+
+<p>Follow these steps to create a new MobilePush app:</p>
+<ol>
+  <li>Log in to Marketing Cloud.</li>
+  <li>From the Mobile Studio menu, choose MobilePush.</li>
+  <li>On the Administration page, click <strong>Create New App</strong> in the upper right corner.</li>
+  <li>Enter the name and description for the app.</li>
+  <li>Click <strong>Choose file</strong> and upload the icon for the MobilePush app.</li>
+  <li>To upload an APNS certificate, click <strong>Change</strong> and choose the certificate on your computer to upload. Enter the password for the certificate.
+    <blockquote>
+      <p>To create or renew APNS (push) certificates, follow <a href="http://help.apple.com/xcode/mac/current/#/dev11b059073">Apple’s Xcode instructions</a>.</p>
+    </blockquote>
+  </li>
+  <li>Make any applicable changes to the optional settings.</li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<p>Review <a href="https://help.salesforce.com/articleView?id=mc_mp_provisioning_info.htm&amp;type=5">MobilePush documentation</a> for more information.</p>
+
+<h2 id="3-implement-the-sdk">3. Implement the SDK</h2>
+
+<p>To implement the MarketingCloudSDK framework in your application, either use CocoaPods or manually set up the SDK.</p>
+
+<h3 id="option-1-implement-the-sdk-with-cocoapods">Option 1: Implement the SDK with CocoaPods</h3>
+
+<ol>
+  <li>Follow the <a href="https://guides.cocoapods.org/using/using-cocoapods.html">CocoaPods instructions</a> using MarketingCloudSDK as a dependency in the podfile.</li>
+  <li>Open the .xcworkspace created by the install process with Xcode and start using the SDK.
+    <blockquote>
+      <p>Do <strong>NOT</strong> open .xcodeproj. An error occurs if you open up a project file instead of a workspace.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h3 id="option-2-implement-the-sdk-manually">Option 2: Implement the SDK manually</h3>
+
+<ol>
+  <li><a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS">Download the SDK</a>.</li>
+  <li>Copy the MarketingCloudSDK directory from your downloads to your project directory.
+<br />
+<img class="img-responsive" src="/assets/SDKConfigure1.png" /><br /></li>
+  <li>Open your application project and select the appropriate target.
+<br />
+<img class="img-responsive" src="/assets/SDKConfigure2.png" /><br /></li>
+  <li>Add MarketingCloudSDK.framework to Linked Frameworks and Libraries in your target’s General settings.
+<br />
+<img class="img-responsive" src="/assets/SDKConfigure3.png" /><br /></li>
+  <li>Add MarketingCloudSDK.bundle to Copy Bundle Resources in your target’s Build Phases settings.
+<br />
+<img class="img-responsive" src="/assets/SDKConfigure4.png" /><br /></li>
+  <li>Add -ObjC to your target’s Other Linker Flags build settings.
+<br />
+<img class="img-responsive" src="/assets/SDKConfigure5.png" /><br />
+    <blockquote>
+      <p>Review <a href="https://developer.apple.com/library/content/qa/qa1490/_index.html">additional information</a> from Apple about this linker flag.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="4-configure-the-sdk">4. Configure the SDK</h2>
+
+<p>Configure the MarketingCloudSDK framework via a JSON file that you add to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values in this file and completes its configuration based on these settings.</p>
+
+<blockquote>
+  <p>All method names contain the prefix <code class="highlighter-rouge">sfmc_</code>. This convention allows the application implementing the SDK to avoid namespace collisions between the external libraries it may use. MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application may implement. Review Apple’s <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4">documentation on customizing existing classes</a> for further information.</p>
+</blockquote>
+
+<ol>
+  <li>Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target’s Build Phases settings.
+<img class="img-responsive" src="/assets/SDKConfigure6.png" /><br /></li>
+  <li>Change the <code class="highlighter-rouge">appid</code> and <code class="highlighter-rouge">accesstoken</code> values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique pairing of this iOS application with the Marketing Cloud account used for MobilePush.</li>
+  <li>Enable or disable <code class="highlighter-rouge">analytics</code>, <code class="highlighter-rouge">location</code>, or <code class="highlighter-rouge">inbox</code> entries depending on the unique needs of your application and your usage of Marketing Cloud.</li>
+  <li>To implement push notification handling in your application, ensure that you created an APNS Push Certificate in the Apple developer portal and added it to your Marketing Cloud account. Make sure that you added the push notifications feature to your application in the Apple developer portal. Enable push notifications in your target’s Capabilities settings.
+<img class="img-responsive" src="/assets/SDKConfigure7.png" /><br /></li>
+  <li>In your application delegate, import the framework header to enable MarketingCloudSDK functionality.
+<script src="https://gist.github.com/1fd881bd6bd0b81fc53fac4763d758ba.js"></script>
+<script src="https://gist.github.com/e98010d99755e03fa470b7f6bea2522e.js"></script></li>
+  <li>In your application delegate class, add the following sections of code to ensure that your application registers for and handles push notifications. Set your <code class="highlighter-rouge">AppDelegate</code> class to adhere to the <code class="highlighter-rouge">UNUserNotificationCenterDelegate</code> protocol.
+<script src="https://gist.github.com/de3ba047a63c27ec8d88fc8e6eaa4f5d.js"></script>
+<script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script></li>
+  <li>In your application delegate method <code class="highlighter-rouge">-application:didFinishLaunchingWithOptions:</code>, create an instance of the MarketingCloudSDK and configure it for use, setting the push delegate and requesting push authorization. Only configure in didFinishingLaunching.
+<script src="https://gist.github.com/1770c3d15eff943946ba254203d9ae87.js"></script>
+<script src="https://gist.github.com/9cdc6399bd6adf576371d5a5cc512b71.js"></script></li>
+</ol>
+
+<blockquote>
+  <p>Configuration of the MarketingCloudSDK includes a synchronous return of the BOOL return value and asynchronous process to complete configuration. To verify successful configuration, use the <code class="highlighter-rouge">success</code> and <code class="highlighter-rouge">error</code> values returned in the <code class="highlighter-rouge">completionHandler</code>.</p>
+</blockquote>
+
+<blockquote>
+  <p>Review the <code class="highlighter-rouge">MarketingCloudSDK+Base.h</code> header file for additional methods for configuration.</p>
+</blockquote>
+
+<blockquote>
+  <p>Add the required delegate methods to support push notifications to your AppDelegate class.</p>
+</blockquote>
+
+<blockquote>
+  <p>These methods use MarketingCloudSDK methods to enable the framework’s functionality to manage push notifications, which includes MobilePush contact registration and push analytics tracking.</p>
+</blockquote>
+
+<blockquote>
+  <p>If you implement the following methods without using the MarketingCloudSDK methods as shown, MobilePush functionality does not work as expected. If you don’t implement the methods below, MobilePush functionality <strong>does not</strong> work as expected.</p>
+</blockquote>
+
+<script src="https://gist.github.com/948f26f2acf00add2655885e3ec5d1aa.js"></script>
+
+<script src="https://gist.github.com/14a82bd3208be864e0ace803e7d6632f.js"></script>
+
 
 
                     </div>
@@ -221,7 +343,7 @@
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/ExactTarget/JB4A-SDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.0.0)</a>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.0.0)</a>
 
                 </div>
             </div>
