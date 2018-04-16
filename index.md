@@ -5,7 +5,7 @@ title: "README"
 ## Requirements
 
 * Xcode 9 or later
-* Minimum deployment target of iOS 10
+* Minimum deployment target of iOS 9
 * Compile the target application for arm64, not armv7.
 
 ## Get Started
