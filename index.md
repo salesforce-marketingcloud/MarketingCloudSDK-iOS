@@ -38,6 +38,16 @@ To receive the latest SDK news or to contact us with questions and feedback, use
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
+#### Version 5.1.0
+_Released April 23, 2018, correlating with the Marketing Cloud April 2018 release_
+* **Added iOS 9 support** -- The iOS MarketingCloudSDK framework now supports iOS 9. Use conditional coding via Apple’s `available` attributes. For notes on using conditional coding for push registration and handling push notifications, see the iOS 9 documentation.
+* **Added synchronous configuration calls** -- To prevent developers from trying to set a contact key, tag, or attribute before configuration is complete, we added synchronous configuration calls to the API as the default.
+* **Added data privacy compliance** -- This version of the iOS MarketingCloudSDK supports three privacy modes that may affect your application’s use of MobilePush: 1) Right to be Forgotten, 2) Restriction of Processing, and 3) Do Not Track. These changes assist you in preparing for data compliance regulations, such as the European Union's General Data Protection Regulation (GDPR). For more details, visit our SDK-specific [data privacy compliance documentation]( {{ site.baseurl }}/sdk-implementation/data-privacy-iOS.html).
+* **Throttled inbox message calls** -- To match the Android SDK, we now prevent the iOS MarketingCloudSDK from calling `SFMCInboxMessagesRefreshCompleteNotification` and `SFMCInboxMessagesNewInboxMessagesNotification` too often. Reference the headers for more information.
+* **Allowed Predictive Intelligence to be set separately** -- When you configure the iOS MarketingCloudSDK, you can now enable or disable Predictive Intelligence separately from Analytics. If your app uses the iOS 212 framework and if Analytics is enabled, Predictive Intelligence is also enabled. To control Predictive Intelligence separately, add the config flag.
+* **Improved registration** -- We improved registration to prevent duplicate tags and attributes.
+* **Fixed `isPushEnabled` override issue** -- Previously, disabling push notifications in the Notification Center overrode the `setPushEnable` property. We fixed this issue so that the SDK uses `setPushEnable`.
+
 #### Version 5.0.0
 _Released January 22, 2018, correlating with the Marketing Cloud January 2018 release_
 
