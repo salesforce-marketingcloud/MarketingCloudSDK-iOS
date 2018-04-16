@@ -13,8 +13,8 @@ This sample code applies to the AppDelegate.m didFinishLaunchingWithOptions appl
 This sample shows how to create a category named "Example". When you send this category with the payload from Marketing Cloud, the notification displays in the notification center with the buttons shown here.
 
 **Implementation**
-<script src="https://gist.github.com/100bc30faf9ff027c99462b59726c3b6.js"></script>
-<script src="https://gist.github.com/256765c97c9e67f4c1622e1a978e13b2.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/4667a6f0966cd5e28aadfa17d4b010d7.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js"></script>
 
 **Handle Action**
 
