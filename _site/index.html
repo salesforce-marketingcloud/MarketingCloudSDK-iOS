@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.0.0) : README</title>
+        <title>MarketingCloudSDK iOS (v5.1.0) : README</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v5.0.0)</a>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v5.1.0)</a>
     
     
 </h4>
@@ -210,7 +210,6 @@
 <ul>
   <li>Xcode 9 or later</li>
   <li>Minimum deployment target of iOS 9</li>
-  <li>Compile the target application for arm64, not armv7.</li>
 </ul>
 
 <h2 id="get-started">Get Started</h2>
@@ -258,8 +257,8 @@ Implement additional optional features of the SDK to take full advantage of Sale
   <li><strong>Added iOS 9 support</strong> – The iOS MarketingCloudSDK framework now supports iOS 9. Use conditional coding via Apple’s <code class="highlighter-rouge">available</code> attributes. For notes on using conditional coding for push registration and handling push notifications, see the iOS 9 documentation.</li>
   <li><strong>Added synchronous configuration calls</strong> – To prevent developers from trying to set a contact key, tag, or attribute before configuration is complete, we added synchronous configuration calls to the API as the default.</li>
   <li><strong>Added data privacy compliance</strong> – This version of the iOS MarketingCloudSDK supports three privacy modes that may affect your application’s use of MobilePush: 1) Right to be Forgotten, 2) Restriction of Processing, and 3) Do Not Track. These changes assist you in preparing for data compliance regulations, such as the European Union’s General Data Protection Regulation (GDPR). For more details, visit our SDK-specific <a href="/sdk-implementation/data-privacy-iOS.html">data privacy compliance documentation</a>.</li>
-  <li><strong>Throttled inbox message calls</strong> – To match the Android SDK, we now prevent the iOS MarketingCloudSDK from calling <code class="highlighter-rouge">SFMCInboxMessagesRefreshCompleteNotification</code> and <code class="highlighter-rouge">SFMCInboxMessagesNewInboxMessagesNotification</code> too often. Reference the headers for more information.</li>
-  <li><strong>Allowed Predictive Intelligence to be set separately</strong> – When you configure the iOS MarketingCloudSDK, you can now enable or disable Predictive Intelligence separately from Analytics. If your app uses the iOS 212 framework and if Analytics is enabled, Predictive Intelligence is also enabled. To control Predictive Intelligence separately, add the config flag.</li>
+  <li><strong>Throttled inbox message calls</strong> – To match the Android SDK, we now prevent the iOS MarketingCloudSDK from calling <code class="highlighter-rouge">sfmc_refreshMessages</code> too often. Reference the headers for more information.</li>
+  <li><strong>Allowed Predictive Intelligence to be set separately</strong> – When you configure the iOS MarketingCloudSDK, you can now enable or disable Predictive Intelligence separately from Analytics. If your app uses the iOS MarketingCloudSDK version 5.0.0 framework and if Analytics is enabled, Predictive Intelligence is also enabled. To control Predictive Intelligence separately, add the config flag.</li>
   <li><strong>Improved registration</strong> – We improved registration to prevent duplicate tags and attributes.</li>
   <li><strong>Fixed <code class="highlighter-rouge">isPushEnabled</code> override issue</strong> – Previously, disabling push notifications in the Notification Center overrode the <code class="highlighter-rouge">setPushEnable</code> property. We fixed this issue so that the SDK uses <code class="highlighter-rouge">setPushEnable</code>.</li>
 </ul>
@@ -284,7 +283,7 @@ Implement additional optional features of the SDK to take full advantage of Sale
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.0.0)</a>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.1.0)</a>
 
                 </div>
             </div>
