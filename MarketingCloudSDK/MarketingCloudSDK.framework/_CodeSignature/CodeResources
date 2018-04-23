@@ -6,15 +6,19 @@
 	<dict>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
-		AuZD5AWqzHNTOOHQfwnhqAZZD/k=
+		Din/AhucauhqxColeSgRFiRWLyM=
+		</data>
+		<key>Headers/MarketingCloudSDK+CloudPageMessages.h</key>
+		<data>
+		tMxA2Tc/5FD9OAy1IqFgGH/2Ows=
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
-		3xuyQARUzfmduHtwaSNn5/Y3ZSc=
+		r99SH5TYYxlOFBz5CqH6WrulicQ=
 		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
-		rijjqzm2SDcZy2ZVKmdQ4Txzj7Q=
+		UK8Yd0C7rm/tHc3QH2Vp0NMVH8I=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
@@ -30,11 +34,11 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		LsTlnR1ZAhhSg4VeZOkt7MXhHp8=
+		pRENuYwr0eLXNdfYStpcqHH7Tdc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QAVI69uu5qHl9ihxDkCBaAUbayY=
+		y8phrzAoQK/cadzgA1CIrIaui0Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,33 +51,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AuZD5AWqzHNTOOHQfwnhqAZZD/k=
+			Din/AhucauhqxColeSgRFiRWLyM=
 			</data>
 			<key>hash2</key>
 			<data>
-			9R8PsXJlFEZGFA9Qy81NdZ2NG7lh172UAb0TEKXbrTo=
+			8Y5J5QJb8mfWiQhiRgajVepwmfcwIvMnPOyt9RSwnx4=
+			</data>
+		</dict>
+		<key>Headers/MarketingCloudSDK+CloudPageMessages.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tMxA2Tc/5FD9OAy1IqFgGH/2Ows=
+			</data>
+			<key>hash2</key>
+			<data>
+			/dbi6DgEQtgWOKz8lvZ7ZtWXJOuzHK3bXMFnnuJXejg=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3xuyQARUzfmduHtwaSNn5/Y3ZSc=
+			r99SH5TYYxlOFBz5CqH6WrulicQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qIkQ5kxNXBBWesh5T4cfGy/PQkiu5SvYy7uuzOQBD0E=
+			C8H3XuXdSloqXcLRl3H7hI6A1lFUC70/QDGSUqjEXhY=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rijjqzm2SDcZy2ZVKmdQ4Txzj7Q=
+			UK8Yd0C7rm/tHc3QH2Vp0NMVH8I=
 			</data>
 			<key>hash2</key>
 			<data>
-			ws0bRMxqq+Sh5tSdeb3FOUADzZs7JoPeD1Dzlo4Is+g=
+			kplWj6l881Q5Yb3erVcApBjrr52ANy1CGKexHkgbDCc=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
@@ -113,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LsTlnR1ZAhhSg4VeZOkt7MXhHp8=
+			pRENuYwr0eLXNdfYStpcqHH7Tdc=
 			</data>
 			<key>hash2</key>
 			<data>
-			g3LtyButhjw/d+NIsSGjf9BeFMd/KmtA2Euy+zM8kD0=
+			i5MgPAQhS1IitHzN6SjRgb/JoUDSLWGZBtYHjcuXjf8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name              = "MarketingCloudSDK"
-s.version           = "5.0.0"
+s.version           = "5.1.0"
 s.summary           = "Salesforce Marketing Cloud MobilePush iOS SDK"
     s.homepage          = "https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/"
     s.documentation_url = 'https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/index.html'
