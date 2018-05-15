@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>PICart Class Reference</title>
+	<title>MarketingCloudSDKInboxMessagesDelegate Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -14,7 +14,7 @@
 		<div class="container" class="hide-in-xcode">
 			
 			<h1 id="library-title">
-				<a href="../index.html">Journey Builder for Apps SDK </a>
+				<a href="../index.html">MarketingCloudSDK </a>
 			</h1>
 
 			<p id="developer-home">
@@ -60,9 +60,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/dictionaryRepresentation">- dictionaryRepresentation</option>
-		
-		<option value="//api/name/initWithCartItems:">- initWithCartItems:</option>
+		<option value="//api/name/initWithMarketingCloudSDK:tableView:dataSource:">- initWithMarketingCloudSDK:tableView:dataSource:</option>
 		
 	</optgroup>
 	
@@ -79,7 +77,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">PICart Class Reference</h1>
+					<h1 class="title">MarketingCloudSDKInboxMessagesDelegate Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -88,10 +86,10 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Conforms to</th>
-	<td>NSCoding<br />NSCopying</td>
+	<td>UITableViewDelegate</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>PICart.h</td>
+	<td>MarketingCloudSDK+InboxMessages.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -101,9 +99,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>@class PICart</p>
-
-<p>Wrapper class for sending WAMA PI Analytic eCommerce shopping carts using a public interface.</p>
+						<p>The MarketingCloudSDKInboxMessagesDelegate is an interface object for Inbox support. It was designed to be used as a simple delegate for a UITableView, and can be allocated and used as such without too much other customization. It only supports tableView:didSelectRowAtIndexPath: to offer (along with the data source) a VERY simple inbox implementation.</p>
 					</div>
 					
 					
@@ -119,8 +115,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/initWithCartItems:" title="initWithCartItems:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithCartItems:">&ndash;&nbsp;initWithCartItems:</a></code>
+	<a name="//api/name/initWithMarketingCloudSDK:tableView:dataSource:" title="initWithMarketingCloudSDK:tableView:dataSource:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithMarketingCloudSDK:tableView:dataSource:">&ndash;&nbsp;initWithMarketingCloudSDK:tableView:dataSource:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -130,12 +126,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Initialize a Cart object for use in analytics.</p>
+				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithCartItems:(NSArray *)<em>cartItems</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (id _Nullable)initWithMarketingCloudSDK:(MarketingCloudSDK *_Nonnull)<em>sdk</em> tableView:(UITableView *_Nonnull)<em>tableView</em> dataSource:(MarketingCloudSDKInboxMessagesDataSource *_Nonnull)<em>dataSource</em></code></div>
 
 		    
 			
@@ -144,8 +140,18 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>cartItems</code></th>
-						<td><p>An array of <a href="../Classes/PICartItem.html">PICartItem</a> objects (non-nil array). An empty array indicates an empty cart, and will be used to indicate a cleared cart to the analytics system.</p></td>
+						<th scope="row" class="argument-name"><code>sdk</code></th>
+						<td><p>An instance of <a href="../Classes/MarketingCloudSDK.html">MarketingCloudSDK</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tableView</code></th>
+						<td><p>The UITableView used in the view controller. The delegate will &ldquo;own&rdquo; selection of the cells.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dataSource</code></th>
+						<td><p>An instance of <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>, a class which implements a simple set of methods from the UITableViewDataSource protocol.</p></td>
 					</tr>
 				
 				</table>
@@ -155,7 +161,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype</p>
+				<p>An instance of MarketingCloudSDKInboxMessagesDelegate, a class which implements a simple set of methods from the UITableViewDelegate protocol.</p>
 			</div>
 			
 
@@ -164,7 +170,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize a Cart object for use in analytics.</p>
+				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
 			</div>
 			
 
@@ -175,58 +181,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PICart.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/dictionaryRepresentation" title="dictionaryRepresentation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/dictionaryRepresentation">&ndash;&nbsp;dictionaryRepresentation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Convert PICart to dictionary.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *)dictionaryRepresentation</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>NSDictionary</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Convert PICart to dictionary.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">PICart.h</code></p>
+				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
 			</div>
 			
 			
@@ -247,7 +202,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2017 Salesforce Marketing Cloud. All rights reserved. Updated: 2017-10-30</p>
+						<p class="copyright">Copyright &copy; 2018 Salesforce Marketing Cloud. All rights reserved. Updated: 2018-05-15</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
