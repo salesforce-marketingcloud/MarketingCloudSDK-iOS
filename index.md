@@ -32,6 +32,11 @@ To receive the latest SDK news or to contact us with questions and feedback, use
 * The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5" target="_blank">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
 * The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos" target="_blank">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the MarketingCloudSDK.
 * [Sign up for email updates about the iOS MarketingCloudSDK](http://pub.s1.exacttarget.com/2ujjacpet3t).<br/><br/>
+* View the [Android SDK docs](http://salesforce-marketingcloud.github.io/JB4A-SDK-Android/).
+
+## Hybrid Mobile Apps
+We provide support for plugins, such as Cordova, to implement the MobilePush SDK for your Android applications.
+* [Cordova Plugin](https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin)
 
 ## Release History
 
