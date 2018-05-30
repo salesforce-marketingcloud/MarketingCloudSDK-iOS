@@ -291,7 +291,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return returns a BOOL value of the current debug logging state.
  */
 - (BOOL)sfmc_getDebugLoggingEnabled;
-
 /**
  Ask MarketingCloudSDK to update its data. MarketingCloudSDK will throttle attempts based on the time since the last time this was called.
  
@@ -299,22 +298,6 @@ NS_ASSUME_NONNULL_BEGIN
  @return YES if MarketingCloudSDK did make an attempt at updating data.
  */
 - (BOOL) sfmc_refreshWithFetchCompletionHandler:(void (^_Nullable)(UIBackgroundFetchResult result))completionHandler;
-
-/**
- Add a signedString security token for registration security
- 
- @param signedString signedString opaque token used to verify registration. pass nil to clear signedString.
- @return YES if signedString was set successfully
- */
--(BOOL)sfmc_setSignedString:(NSString * _Nullable)signedString;
-
-/**
- Returns the value of last stored signedString security token
- 
- @return a NSString of last stored signedString security token
- */
--(NSString * _Nullable)sfmc_signedString;
-
 
 @end
 
