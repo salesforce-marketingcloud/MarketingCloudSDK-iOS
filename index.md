@@ -42,6 +42,14 @@ We provide support for plugins, such as Cordova, to implement the MobilePush SDK
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
+#### Version 5.1.1
+
+_Released May 31, 2018, correlating with the Marketing Cloud 213.1 release._
+
+* **Corrected issues with multi-threading** -- We corrected issues related to multi-threading in the SDK.
+* **Added i386 slice for simulator builds** -- We updated the build process to include i386 ARCH, which allows you to run 32-bit simulators.
+* **Addressed issue loading resources on armv7s devices** -- We corrected an issue related to loading resources on armv7s devices.
+
 #### Version 5.1.0
 _Released April 23, 2018, correlating with the Marketing Cloud April 2018 release_
 * **Added iOS 9 support** -- The iOS MarketingCloudSDK framework now supports iOS 9. Use conditional coding via Apple’s `available` attributes. For notes on using conditional coding for push registration and handling push notifications, see the iOS 9 documentation.
