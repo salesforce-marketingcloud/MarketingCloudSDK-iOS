@@ -2,10 +2,10 @@
 layout: page
 title: "Appledocs"
 subtitle: "Appledocs"
-category: overview
+category: get-started
 date: 2016-04-06 12:00:00
 order: 3
-published: false
+published: true
 ---
 Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for JB4A iOS SDK v{{ site.currentVersion }}.
 
