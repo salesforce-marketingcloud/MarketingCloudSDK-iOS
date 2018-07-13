@@ -42,7 +42,7 @@
  Initialize a Cart Item dictionary for use in analytics.
  
  @param price The price amount (USD) of this item (non-nil value; 0 permissable)
- @param quantity The count of items in the cart for this particular product (non-nil value; 0 permissable)
+ @param quantity The count of items in the cart for this particular product (non-nil value; greater than zero)
  @param item The unique product code from the e-commerce system representing this cart item (non-nil string value)
  @param uniqueId The unique product id. from the e-commerce system representing this cart item (string value; nil permissable)
  @return instancetype a NSDictionary representing a cart item.

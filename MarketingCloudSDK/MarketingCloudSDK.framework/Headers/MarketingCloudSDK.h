@@ -17,4 +17,6 @@
 #import <MarketingCloudSDK/MarketingCloudSDK+OpenDirectMessages.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+CloudPageMessages.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Location.h>
+#import <MarketingCloudSDK/MarketingCloudSDK+Events.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Constants.h>
+

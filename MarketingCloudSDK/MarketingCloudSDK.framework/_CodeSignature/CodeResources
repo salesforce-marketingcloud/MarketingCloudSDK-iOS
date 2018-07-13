@@ -16,13 +16,17 @@
 		<data>
 		r99SH5TYYxlOFBz5CqH6WrulicQ=
 		</data>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<data>
+		XGCRpB6sRwWYMs4mDjS4U2RAKXc=
+		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
 		UK8Yd0C7rm/tHc3QH2Vp0NMVH8I=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
-		QUWEZ1HcF7ioX2iy85w9OBN4TmY=
+		rVs/4ELlW418FRTESX++Eqykito=
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
@@ -34,11 +38,11 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		pRENuYwr0eLXNdfYStpcqHH7Tdc=
+		6lt3BGYazyoxA4f1G/Mh0yGOHv8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mZjHO3uFH2k+9Epa2irnSsThLOY=
+		eiRZCbP7P+u6km7Cs6byRZqpJk4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,6 +84,17 @@
 			C8H3XuXdSloqXcLRl3H7hI6A1lFUC70/QDGSUqjEXhY=
 			</data>
 		</dict>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XGCRpB6sRwWYMs4mDjS4U2RAKXc=
+			</data>
+			<key>hash2</key>
+			<data>
+			w9iUJtx85H11dMZb5jN17DKSyuXNTOlSQxnq7DL8av0=
+			</data>
+		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
@@ -95,11 +110,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QUWEZ1HcF7ioX2iy85w9OBN4TmY=
+			rVs/4ELlW418FRTESX++Eqykito=
 			</data>
 			<key>hash2</key>
 			<data>
-			AGO5oa3TH18+VIrqiLvz2Ik9OWSDVKwRqLp0BptOGNI=
+			nu2v4eb3iwgIYj7z+/iiXe+BIKZyL/kUx1ZKor7PG08=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
@@ -128,11 +143,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			pRENuYwr0eLXNdfYStpcqHH7Tdc=
+			6lt3BGYazyoxA4f1G/Mh0yGOHv8=
 			</data>
 			<key>hash2</key>
 			<data>
-			i5MgPAQhS1IitHzN6SjRgb/JoUDSLWGZBtYHjcuXjf8=
+			j7KzCsqMzAPimMyfnjS9mFlihOVzy3I15TOlZJ/mBHo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
