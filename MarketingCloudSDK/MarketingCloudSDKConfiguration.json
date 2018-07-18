@@ -2,6 +2,8 @@
   "name": "production",
   "appid": "YOUR_APPID_HERE",
   "accesstoken": "YOUR_ACCESSTOKEN_HERE",
+  "marketing_cloud_server_url": "YOUR_SERVER_URL_HERE",
+  "mid": "YOUR_MID_VALUE_HERE",
   "etanalytics": true,
   "pianalytics": true,
   "location": true,
