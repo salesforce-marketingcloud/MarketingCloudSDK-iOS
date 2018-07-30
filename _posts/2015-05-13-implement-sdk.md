@@ -37,27 +37,26 @@ Do **NOT** use .xcodeproj. An error occurs if you open up a project file instead
 
 Configure the MarketingCloudSDK framework via a JSON file added to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values within this file and completes its configuration based on these settings.
 
-1. Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target's Build Phases settings.
-<img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure6.png" /><br/>
-1. Change the *appid* and *accesstoken* values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique paring of this iOS application with the Marketing Cloud account used for MobilePush.
-2. Change the *marketing_cloud_server_url* value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.
-> <img class="img-responsive" src="{{ site.baseurl }}/assets/setupConfigValues.png" />
-3. Change the *mid* value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the [MobilePush Administration site](https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/) and copy the "MID" value (numbers only).
-> <img class="img-responsive" src="{{ site.baseurl }}/assets/setupMidValues.png" />
+1. Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target's Build Phases settings.<br/><img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure6.png" /><br/>
+2. Change the *appid* and *accesstoken* values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique paring of this iOS application with the Marketing Cloud account used for MobilePush.
+3. Change the *marketing_cloud_server_url* value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.<br/><img class="img-responsive" src="{{ site.baseurl }}/assets/setupConfigValues.png" /><br/>
+4. Change the *mid* value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the [MobilePush Administration site](https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/) and copy the "MID" value (numbers only).<br/><img class="img-responsive" src="{{ site.baseurl }}/assets/setupMidValues.png" /><br/>
 1. Enable or disable *etanalytics*, *pianalytics*, *location*, or *inbox* entries depending on the unique needs of your application and your usage of Marketing Cloud.
+
+<br/><img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure7.png" /><br/>
+
+
 > Marketing Cloud and the Mobile Push MarketingCloudSDK framework support push notifications.
-1. To implement push notification handling in your application, ensure you created an APNS Push Certificate in the Apple developer portal and added that to your Marketing Cloud account. Make sure that you added the push notifications feature to your application in the Apple developer portal. Enable push notifications in  your target's Capabilities settings.
-<img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure7.png" /><br/>
+
+
+1. To implement push notification handling in your application, ensure you created an APNS Push Certificate in the Apple developer portal and added that to your Marketing Cloud account. Make sure that you added the push notifications feature to your application in the Apple developer portal. Enable push notifications in  your target's Capabilities settings. <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure8.png" /><br/>
 > When implementing the MarketingCloudSDK framework, note that all method names contain the prefix *sfmc_*. This convention allows the application implementing the SDK to protect against the possibility of namespace collisions between external libraries it may use. We've taken every precaution to ensure that MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application may implement. Review Apple's [documentation on customizing existing classes](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4) for further information.
-1. In your application delegate, import the framework header to enable MarketingCloudSDK functionality.
-<script src="https://gist.github.com/1fd881bd6bd0b81fc53fac4763d758ba.js"></script>
+2. In your application delegate, import the framework header to enable MarketingCloudSDK functionality.<br/><script src="https://gist.github.com/1fd881bd6bd0b81fc53fac4763d758ba.js"></script>
 <script src="https://gist.github.com/e98010d99755e03fa470b7f6bea2522e.js"></script>
-1. In your application delegate class, add these sections of code to ensure that your application registers for and handles push notifications. Set your AppDelegate class to adhere to the UNUserNotificationCenterDelegate protocol.
-<script src="https://gist.github.com/de3ba047a63c27ec8d88fc8e6eaa4f5d.js"></script>
+3. In your application delegate class, add these sections of code to ensure that your application registers for and handles push notifications. Set your AppDelegate class to adhere to the UNUserNotificationCenterDelegate protocol.<br/><script src="https://gist.github.com/de3ba047a63c27ec8d88fc8e6eaa4f5d.js"></script>
 <script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script>
 
-1. In your application delegate method *-application:didFinishLaunchingWithOptions:*, create an instance of the MarketingCloudSDK and configure it for use, setting the push delegate and requesting push authorization. Only init or configure in didFinishingLaunching.
-<script src="https://gist.github.com/1770c3d15eff943946ba254203d9ae87.js"></script>
+5. In your application delegate method *-application:didFinishLaunchingWithOptions:*, create an instance of the MarketingCloudSDK and configure it for use, setting the push delegate and requesting push authorization. Only init or configure in didFinishingLaunching.<br/><script src="https://gist.github.com/1770c3d15eff943946ba254203d9ae87.js"></script>
 <script src="https://gist.github.com/9cdc6399bd6adf576371d5a5cc512b71.js"></script>
 
 Configuration of the MarketingCloudSDK includes a synchronous return of the BOOL return value and asynchronous process to complete configuration. We recommend your application rely on the *success* and *error* values returned in the *completionHandler* to verify successful configuration. The *MarketingCloudSDK+Base.h* header file details additional methods for configuration.
