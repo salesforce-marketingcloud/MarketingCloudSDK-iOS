@@ -42,6 +42,11 @@ We provide support for plugins, such as Cordova, to implement the MobilePush SDK
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
+#### Version 5.3.0
+_Released August 27, 2018, correlating with the Marketing Cloud August 2018 release._
+
+* **Implemented Tenant-Specific Endpoint support for Marketing Cloud Accounts** -- New Marketing Cloud MobilePush applications will be configured with account-specific settings. See [] for instructions on configuring your SDK's values.
+
 #### Version 5.2.0
 _Released July 11, 2018, correlating with the Marketing Cloud July 2018 release._
 
