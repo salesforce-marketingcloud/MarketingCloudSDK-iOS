@@ -40,7 +40,11 @@ Configure the MarketingCloudSDK framework via a JSON file added to your applicat
 1. Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target's Build Phases settings.
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure6.png" /><br/>
 1. Change the *appid* and *accesstoken* values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique paring of this iOS application with the Marketing Cloud account used for MobilePush.
-1. Enable or disable *analytics*, *location*, or *inbox* entries depending on the unique needs of your application and your usage of Marketing Cloud.
+2. Change the *marketing_cloud_server_url* value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.
+> <img class="img-responsive" src="{{ site.baseurl }}/assets/setupConfigValues.png" />
+3. Change the *mid* value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the [MobilePush Administration site](https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/) and copy the "MID" value (numbers only).
+> <img class="img-responsive" src="{{ site.baseurl }}/assets/setupMidValues.png" />
+1. Enable or disable *etanalytics*, *pianalytics*, *location*, or *inbox* entries depending on the unique needs of your application and your usage of Marketing Cloud.
 > Marketing Cloud and the Mobile Push MarketingCloudSDK framework support push notifications.
 1. To implement push notification handling in your application, ensure you created an APNS Push Certificate in the Apple developer portal and added that to your Marketing Cloud account. Make sure that you added the push notifications feature to your application in the Apple developer portal. Enable push notifications in  your target's Capabilities settings.
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure7.png" /><br/>
