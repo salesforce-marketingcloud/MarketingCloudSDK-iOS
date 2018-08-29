@@ -33,7 +33,7 @@ Do **NOT** use .xcodeproj. An error occurs if you open up a project file instead
 
 > [Review additional information about this linker flag](https://developer.apple.com/library/content/qa/qa1490/_index.html)
 
-## Configure the SDK
+## <a name="configureTheSDK">Configure the SDK</a> 
 
 Configure the MarketingCloudSDK framework via a JSON file added to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values within this file and completes its configuration based on these settings.
 
