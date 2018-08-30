@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.2.0) : README</title>
+        <title>MarketingCloudSDK iOS (v6.0.0) : README</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v5.2.0)</a>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v6.0.0)</a>
     
     
 </h4>
@@ -70,6 +70,9 @@
         
             
                 <li class=nav-header>SDK Implementation</li>
+            
+            <li data-order="10"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+        
             
             <li data-order="4"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
         
@@ -261,12 +264,38 @@ Implement additional optional features of the SDK to take full advantage of Sale
 
 <p>For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a></p>
 
+<h4 id="version-600">Version 6.0.0</h4>
+<p><em>Released October 22, 2018, correlating with the Marketing Cloud October 2018 release.</em></p>
+
+<ul>
+  <li><strong>Implemented Tenant-Specific Endpoint support for Marketing Cloud Accounts</strong> – New Marketing Cloud MobilePush applications will be configured with account-specific settings. See <a href="/get-started/apple.html#4-configure-the-sdk">Configure the SDK</a> for instructions on configuring your SDK’s values.</li>
+  <li><strong>Removed SDK-provided web view for URLs</strong> – We removed the SDK’s built-in URL presenter to remove security concerns.  As such, you must provide the SDK with a delegate and implementation of the <code class="highlighter-rouge">MarketingCloudSDKURLHandlingDelegate</code> protocol if your message will redirect to a web URL, resource, file or other business logic driven custom application schema. See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</li>
+</ul>
+
+<blockquote>
+  <p>SDK API REMOVAL <code class="highlighter-rouge">MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate</code>, <code class="highlighter-rouge">MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate</code> and <code class="highlighter-rouge">MarketingCloudSDKInboxMessagesNotificationHandlerDelegate</code> protocols and protocol methods have been removed from the SDK. Please change your code to implement the MarketingCloudSDKURLHandlingDelegate protocol.</p>
+</blockquote>
+
+<ul>
+  <li><strong>Inbox Functionality Improvements</strong> – When an Alert+Inbox push notification arrives with the app in the foreground, Inbox messages will be reloaded from the server automatically.</li>
+  <li><strong>Inbox Functionality Improvements</strong> – Inbox message handling better tracks “active” messages in the inbox (according to start and end date values).</li>
+</ul>
+
+<h4 id="version-521">Version 5.2.1</h4>
+
+<p><em>Released August 27, 2018, correlating with the Marketing Cloud July 2018 release.</em></p>
+
+<ul>
+  <li><strong>Stability</strong> – We addressed issues related to multithreading and Core Data concurrency.</li>
+</ul>
+
 <h4 id="version-520">Version 5.2.0</h4>
-<p><em>Released July 9, 2018, correlating with the Marketing Cloud July 2018 release.</em></p>
+<p><em>Released July 11, 2018, correlating with the Marketing Cloud July 2018 release.</em></p>
 
 <ul>
   <li><strong>Added checks to prevent exceptions</strong> – We added nil checks to prevent potential exceptions that could happen when users swipe to close an app.</li>
   <li><strong>Improved log string initializers</strong> – To help prevent Xcode Address Sanitizer warnings, we improved the SDK’s use of log string initializers.</li>
+  <li><strong>Device ID migration</strong> – The SDK attempts to migrate the deviceId from versions of JB4ASDK 4.x.x, if possible.</li>
 </ul>
 
 <h4 id="version-511">Version 5.1.1</h4>
@@ -311,7 +340,7 @@ Implement additional optional features of the SDK to take full advantage of Sale
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.2.0)</a>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v6.0.0)</a>
 
                 </div>
             </div>

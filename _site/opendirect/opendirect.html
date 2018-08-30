@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v5.2.0) : OpenDirect</title>
+        <title>MarketingCloudSDK iOS (v6.0.0) : OpenDirect</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v5.2.0)</a>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v6.0.0)</a>
     
     
 </h4>
@@ -70,6 +70,9 @@
         
             
                 <li class=nav-header>SDK Implementation</li>
+            
+            <li data-order="10"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+        
             
             <li data-order="4"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
         
@@ -214,20 +217,9 @@
 
 <p>The OpenDirect customized push message contains a URL in the payload. <a href="http://help.exacttarget.com/en/documentation/mobilepush/administering_your_mobilepush_account/apps_and_optional_settings_in_your_mobilepush_account/#openDirect">Enable</a> this feature in the Marketing Cloud application.</p>
 
-<p>The MarketingCloudSDK opens this URL when the message is tapped using a SFSafariViewController.</p>
+<p>The MarketingCloudSDK can pass this URL to your application to handle according to your custom needs.</p>
 
-<p>Override the built-in web view handling of the OpenDirect URL by implementing the MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate protocol.</p>
-
-<p>In the class handling the override, adhere to the protocol. For example, use this AppDelegate example as a sample.
-<script src="https://gist.github.com/4b9d5cf31e1070da2bbfd1af110dc923.js"></script>
-<script src="https://gist.github.com/2b7c49526a0a119353b17eb75db18281.js"></script>
-Somewhere in the class implementing this protocol, set the SDK’s delegate handler.
-<script src="https://gist.github.com/1b6f6184299a451fde60a6b095648f47.js"></script>
-<script src="https://gist.github.com/bdc513d57b99f929068cf05916ae44b0.js"></script>
-Next, implement the required protocol methods to override the built-in functionality.
-<script src="https://gist.github.com/49641ff60741cfcfcb4acc32ad4d2db6.js"></script>
-<script src="https://gist.github.com/02a000c3f1a42763822f9f3ed3b37cd4.js"></script>
-See MarketingCloudSDK+OpenDirectMessages.h for more information.</p>
+<p>See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</p>
 
 
                     </div>
@@ -238,7 +230,7 @@ See MarketingCloudSDK+OpenDirectMessages.h for more information.</p>
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v5.2.0)</a>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v6.0.0)</a>
 
                 </div>
             </div>
