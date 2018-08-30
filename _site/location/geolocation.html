@@ -219,6 +219,18 @@
 
 <p>In your Info.plist, implement this key to enable this function. We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.</p>
 
+<p>In your Info.plist, add keys under <code class="highlighter-rouge">UIBackgroundModes</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;array&gt;
+	&lt;string&gt;fetch&lt;/string&gt;
+	&lt;string&gt;location&lt;/string&gt;
+	&lt;string&gt;remote-notification&lt;/string&gt;
+&lt;/array&gt;
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">fetch</code> : We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
+<code class="highlighter-rouge">location</code> : We require “App registers for location updates” to enable location in the MarketingCloudSDK and to range for beacons in the background.</p>
+
 <p><br />
 <img class="img-responsive" src="/assets/background_modes_plist_entry.png" /><br /></p>
 

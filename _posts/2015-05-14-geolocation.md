@@ -11,6 +11,20 @@ Normally, the app downloads new regions and messages as the device moves more th
 
 In your Info.plist, implement this key to enable this function. We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
 
+In your Info.plist, add keys under `UIBackgroundModes`:
+
+```
+<array>
+	<string>fetch</string>
+	<string>location</string>
+	<string>remote-notification</string>
+</array>
+```
+
+`fetch` : We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
+`location` : We require “App registers for location updates” to enable location in the MarketingCloudSDK and to range for beacons in the background.
+
+
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/background_modes_plist_entry.png" /><br/>
 
