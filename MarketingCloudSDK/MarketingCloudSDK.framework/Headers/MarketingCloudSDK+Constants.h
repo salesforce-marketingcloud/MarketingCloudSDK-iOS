@@ -20,11 +20,6 @@ FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFoundationRegistrationRe
 // a UNNotification has been received - userInfo contains the UNNotificationRequest
 FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFoundationUNNotificationReceivedNotification;
 
-// the SFMCLandingPagePresenter was displayed
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCLandingPagePresenterDidFinishLoadingWithSuccess;
-// there was an error when attempting to display SFMCLandingPagePresenter
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCLandingPagePresenterDidFinishLoadingWithError;
-
 // the Inbox was refreshed
 FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCInboxMessagesRefreshCompleteNotification;
 // the Inbox has new messages

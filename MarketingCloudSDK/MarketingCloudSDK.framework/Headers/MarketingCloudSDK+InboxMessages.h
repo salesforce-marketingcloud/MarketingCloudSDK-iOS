@@ -47,28 +47,6 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 @end
 
 
-/**
- Supporting protocol for CloudPage Inbox with Alert, part of the Salesforce 2016-04 release.
- 
- Implementation of this delegate is not required for CloudPage Inbox with Alert to function, but it is provided as a convenience to developers who do not wish to parse the push payload on their own.
- 
- All CloudPage Inbox data is passed down as a JSON String, the MarketingCloud SDK will parse and return as a NSDictionary. Please remember to parse it appropriately from there. Also, please remember to fail gracefully if you can't take action on the message.
- 
- Also, please note that setting a CloudPage Inbox with Alert Delegate will negate the automatic webpage load to inbox feature in the MarketingCloud SDK.
- */
-@protocol MarketingCloudSDKInboxMessagesNotificationHandlerDelegate <NSObject>
-
-@required
-
-/**
- Method called when notification containing an inbox message payload is received.
- 
- @param inboxMessage value NSDictionary representing an Inbox message
- */
--(void) sfmc_didReceiveInboxMessagesNotificationWithContents:(NSDictionary * _Nullable) inboxMessage;
-
-@end
-
 @interface MarketingCloudSDK (InboxMessages)
 
 /**
@@ -203,13 +181,6 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
  @return An instance of MarketingCloudSDKInboxMessagesDelegate, a class which implements a simple set of methods from the UITableViewDelegate protocol.
  */
 - (MarketingCloudSDKInboxMessagesDelegate * _Nullable) sfmc_inboxMessagesTableViewDelegateForTableView:(UITableView * _Nonnull) tableView dataSource:(MarketingCloudSDKInboxMessagesDataSource * _Nonnull) dataSource;
-
-/**
- Set a delegate class (adhering to the MarketingCloudSDKInboxMessagesNotificationHandlerDelegate protocol) to implment a handler for an Inbox payload as part of a push notification
- 
- @param delegate the class implementing sfmc_didReceiveInboxMessagesNotificationWithContents:
- */
--(void)sfmc_setInboxMessagesNotificationHandlerDelegate:(id<MarketingCloudSDKInboxMessagesNotificationHandlerDelegate> _Nullable)delegate;
 
 @end
 
