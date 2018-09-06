@@ -52,6 +52,7 @@ _Released October 22, 2018, correlating with the Marketing Cloud October 2018 re
  
 * **Inbox Functionality Improvements** -- When an Alert+Inbox push notification arrives with the app in the foreground, Inbox messages will be reloaded from the server automatically.
 * **Inbox Functionality Improvements** -- Inbox message handling better tracks "active" messages in the inbox (according to start and end date values).
+* **SDK Configuration** -- Added option to configure SDK via runtime values passed to SDK (`sfmc_configureWithDictionary:`)
 
 #### Version 5.2.1
 
