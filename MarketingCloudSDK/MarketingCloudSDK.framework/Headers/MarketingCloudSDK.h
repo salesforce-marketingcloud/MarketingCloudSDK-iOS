@@ -15,7 +15,6 @@
 #import <MarketingCloudSDK/MarketingCloudSDK+Intelligence.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+InboxMessages.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Location.h>
-#import <MarketingCloudSDK/MarketingCloudSDK+Events.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Constants.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+URLHandling.h>
 #import <MarketingCloudSDK/MarketingCloudSDKConfigBuilder.h>
