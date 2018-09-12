@@ -7,6 +7,7 @@ propagationDelay: '5 minutes'
 disqus_shortname: ''
 
 # if you use google analytics, add your tracking id here
+# what do these mean these days?
 google_analytics_id: 'UA-82902574-4' #PROD
 #google_analytics_id: 'UA-82902574-1' #DocPreview
 #google_analytics_id: 'UA-82902574-3' #PROD
