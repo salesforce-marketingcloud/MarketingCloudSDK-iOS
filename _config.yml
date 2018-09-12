@@ -63,6 +63,3 @@ markdown: kramdown
 # Current SDK version, use for all mentions
 currentVersion: "6.0.0"
 
-# Retry and REST delay message
-retryAndRESTdelayMessage: "The SDK will send changes to Tags to the Marketing Cloud with a REST call one minute after the first change to any Marketing Cloud data.  If the REST call fails (no network for example), then it will retry in one minute intervals until the app is suspended.  If the send is unsuccessful before the app is suspended, the data will be sent the next time the app is opened.  It will take up to 5 minutes for this value to be recorded in the Contact record once the REST call is made by the SDK.
-"
