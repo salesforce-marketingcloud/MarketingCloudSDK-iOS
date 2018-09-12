@@ -4,7 +4,7 @@ title: "Data Protection and Privacy"
 subtitle: "Data Protection and Privacy"
 category: sdk-implementation
 date: 2018-03-22 12:00:00
-order: 4
+order: 1
 ---
 These changes assist you in preparing for data compliance regulations, such as the European Union's General Data Protection Regulation. For a full overview of Salesforce's approach to managing compliance, visit our [comprehensive page regarding GDPR](https://www.salesforce.com/gdpr/overview/).
 

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>MarketingCloudSDK iOS (v6.0.0) : Device & Contact Registration</title>
+        <meta name="description" content="">
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/syntax.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/gist.css">
+<script src="/scripts/gists.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class=row-fluid>
+                <div id=header class=span12>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v6.0.0)</a>
+    
+    
+</h4>
+
+
+                </div>
+            </div>
+
+            <div class=row-fluid>
+                
+                
+                    <div id=navigation class=span2>
+                        <ul class="nav nav-list">
+    <li><a href="/">Home</a></li>
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Get Started</li>
+            
+            <li data-order="2"><a href="/get-started/test-first-push.html">Test SDK Setup</a></li>
+        
+            
+            <li data-order="3"><a href="/get-started/appledocs.html">Appledocs</a></li>
+        
+            
+            <li data-order="1"><a href="/get-started/apple.html">Initial SDK Setup</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>SDK Implementation</li>
+            
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+        
+            
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+        
+            
+            <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
+        
+            
+            <li data-order="8"><a href="/sdk-implementation/iOS-9.html">iOS 9 Implementation</a></li>
+        
+            
+            <li data-order="10"><a href="/sdk-implementation/sdk-migration.html">SDK Migration to Version 5.x</a></li>
+        
+            
+            <li data-order="9"><a href="/sdk-implementation/business-unit-switching.html">Switch Business Units</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Push Notifications</li>
+            
+            <li data-order="1"><a href="/push-notifications/push-notifications.html">Push Notifications Overview</a></li>
+        
+            
+            <li data-order="4"><a href="/push-notifications/rich-notifications.html">Rich Notifications</a></li>
+        
+            
+            <li data-order="3"><a href="/push-notifications/interactive-notifications.html">Interactive Notifications</a></li>
+        
+            
+            <li data-order="2"><a href="/push-notifications/custom-sound.html">Custom Sound</a></li>
+        
+            
+            <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Location Services</li>
+            
+            <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
+        
+            
+            <li data-order="2"><a href="/location/geolocation.html">Background Location Updates</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Inbox</li>
+            
+            <li data-order="1"><a href="/inbox/inbox.html">Inbox</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Analytics</li>
+            
+            <li data-order="2"><a href="/analytics/personalization-collect.html">Personalization Builder and Collect API Integration</a></li>
+        
+            
+            <li data-order="1"><a href="/analytics/analytics.html">Analytics</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>OpenDirect</li>
+            
+            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>User Data</li>
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Troubleshooting</li>
+            
+            <li data-order="2"><a href="/trouble/multiple-push-sdks.html">Multiple Push SDKs Troubleshooting</a></li>
+        
+            
+            <li data-order="1"><a href="/trouble/ios-debugging.html">iOS Debugging</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+<!-- List additional links. It is recommended to add a divider
+    e.g. <li class=divider></li> first to break up the content. -->
+</ul>
+
+                    </div>
+
+                    <div id=content class=span10>
+                        <div class=page-header>
+    <h2>Updating Contact Key, Attributes and Tags</h2>
+</div>
+
+<p>The SDK will send changes to the Marketing Cloud servers within one minute of the first change to any Marketing Cloud Mobile Push device or contact registration record and no more frequently than once per minute after as required.  This can be data set by your application like Contact Key, Tags or Attributes or it could be system related and set by the SDK like Time Zone, Locale or Application Version, etc.</p>
+
+<p>If the registration update fails the SDK will retry using a backoff algorithm with increasing retry intervals to a maximum delay of 1 day at which point the SDK will retry daily until it is successful.</p>
+
+<p>It will take up to 5 minutes for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
+
+<blockquote>
+  <p>NOTE: The SDK is considered the source of truth with regards to the contact’s device registration.  Data is replicated 1-way from the SDK to the Marketing Cloud servers.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: Only modify the contact record while your UI is in the foreground - not the background.  This will optimize API calls to the Marketing Cloud servers.  For instance, setting an Attribute like “LastAppUsed” to a date-timestamp upon successful SDK initialization will result in an updated registration record every time the SDK is initialized.  If your app is backgrounded the SDK may initialize to show a notification or pre-cache messages.  This will result in unnecessary communication with the Marketing Cloud servers.</p>
+</blockquote>
+
+<h3 id="contact-key">Contact Key</h3>
+
+<p>Contact Key is the unique identifier used to aggregate a contact’s devices within the Marketing Cloud.  As such you should set the Contact Key to a specific value provided by your customer or some other unique identifier for the Contact like mobile number, e-mail address, customer number, etc.</p>
+
+<blockquote>
+  <p>NOTE: Contact Key may not be null or an empty string and leading and/or trailing whitespace will be removed.  Contact Key, once set, may be changed, but can not be cleared and should never be set to a generic, non-unique value.</p>
+</blockquote>
+<div class="tab" id="contactkey"><button class="tablinks" id="contactkeyObj-CButton" onclick="openLanguage(event, 'contactkey', 'contactkeyObj-C')">Obj-C</button><button class="tablinks" id="contactkeySwiftButton" onclick="openLanguage(event, 'contactkey', 'contactkeySwift')">Swift</button></div>
+<div id="contactkeyGists"><div id="contactkeyObj-C" class="tabcontent">
+    <script src="https://gist.github.com/b85d38dc2f1b6d353568532c0e503587.js"></script>
+  </div><div id="contactkeySwift" class="tabcontent">
+    <script src="https://gist.github.com/9c99d0828b5fad695b93c89dd5faf0d3.js"></script>
+  </div></div>
+<script>document.getElementById("contactkeyObj-CButton").click()</script>
+<blockquote>
+  <p>NOTE: By default, if your app does not set the Contact Key using <code class="highlighter-rouge">sfmc_setContactKey:</code>, the Marketing Cloud will match the registration sent with a Contact Record that matches the System Token included in the registration payload. If the Marketing Cloud does not find a match, the Marketing Cloud will set a new Contact Key and will not send the value back to the SDK.</p>
+</blockquote>
+
+<h3 id="attributes">Attributes</h3>
+
+<p>Audience segmentation and personalization can be accomplished through the use of Attributes.  Attributes may only be set or cleared by the SDK and must be created in your Marketing Cloud Mobile Push account prior to implementation within your application.  See <a href="#reserved-words">RESERVED WORDS</a> below for a list of Attribute keys that may not be modified by the SDK or your application.</p>
+
+<div class="tab" id="attributes_set"><button class="tablinks" id="attributes_setObj-CButton" onclick="openLanguage(event, 'attributes_set', 'attributes_setObj-C')">Obj-C</button><button class="tablinks" id="attributes_setSwiftButton" onclick="openLanguage(event, 'attributes_set', 'attributes_setSwift')">Swift</button></div>
+<div id="attributes_setGists"><div id="attributes_setObj-C" class="tabcontent">
+    <script src="https://gist.github.com/550bf643b9e327b48ae4815a7bf3d011.js"></script>
+  </div><div id="attributes_setSwift" class="tabcontent">
+    <script src="https://gist.github.com/8682afa7c4c63e4849178a0fc6d1d5d8.js"></script>
+  </div></div>
+<script>document.getElementById("attributes_setObj-CButton").click()</script>
+
+<div class="tab" id="attributes_clear"><button class="tablinks" id="attributes_clearObj-CButton" onclick="openLanguage(event, 'attributes_clear', 'attributes_clearObj-C')">Obj-C</button><button class="tablinks" id="attributes_clearSwiftButton" onclick="openLanguage(event, 'attributes_clear', 'attributes_clearSwift')">Swift</button></div>
+<div id="attributes_clearGists"><div id="attributes_clearObj-C" class="tabcontent">
+    <script src="https://gist.github.com/785cb6a5096cd35ff4e85cb10211dae3.js"></script>
+  </div><div id="attributes_clearSwift" class="tabcontent">
+    <script src="https://gist.github.com/1951108f827042ec9366019e5a1ac7ed.js"></script>
+  </div></div>
+<script>document.getElementById("attributes_clearObj-CButton").click()</script>
+
+<div class="tab" id="attributes_get"><button class="tablinks" id="attributes_getObj-CButton" onclick="openLanguage(event, 'attributes_get', 'attributes_getObj-C')">Obj-C</button><button class="tablinks" id="attributes_getSwiftButton" onclick="openLanguage(event, 'attributes_get', 'attributes_getSwift')">Swift</button></div>
+<div id="attributes_getGists"><div id="attributes_getObj-C" class="tabcontent">
+    <script src="https://gist.github.com/d287e892e988081f4d7ab27c98fd579b.js"></script>
+  </div><div id="attributes_getSwift" class="tabcontent">
+    <script src="https://gist.github.com/353797d4a4cab0ed449bbf7af4d1e19a.js"></script>
+  </div></div>
+<script>document.getElementById("attributes_getObj-CButton").click()</script>
+
+<blockquote>
+  <p>NOTE: The attribute key may not be one of the <a href="#reserved-words">RESERVED WORDS</a> listed below, it may not be null or an empty string and whitespace will be trimmed from the input.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: The attribute value may not be null and whitespace will be trimmed from the input.</p>
+</blockquote>
+
+<p>Find additional convenience methods to manage Attributes in <em>MarketingCloudSDK+Base.h</em>.</p>
+
+<h3 id="tags">Tags</h3>
+
+<p>Audience segmentation can be accomplished with Tags.  Tags are commonly used to express consumer interest in something.  For instance, a “news” application might offer predefined categories of articles for which the consumer wishes to receive content like “sports”, “headlines” or “entertainment”.  Tags may be added and removed dynamically by the SDK and do not require a pre-configuration on the Marketing Cloud server side like Attributes.</p>
+
+<div class="tab" id="tags"><button class="tablinks" id="tagsObj-CButton" onclick="openLanguage(event, 'tags', 'tagsObj-C')">Obj-C</button><button class="tablinks" id="tagsSwiftButton" onclick="openLanguage(event, 'tags', 'tagsSwift')">Swift</button></div>
+<div id="tagsGists"><div id="tagsObj-C" class="tabcontent">
+    <script src="https://gist.github.com/81541725bba9efe46611868bdf3eb465.js"></script>
+  </div><div id="tagsSwift" class="tabcontent">
+    <script src="https://gist.github.com/07764fc487ad0c29a06b13a9f01b437f.js"></script>
+  </div></div>
+<script>document.getElementById("tagsObj-CButton").click()</script>
+
+<blockquote>
+  <p>NOTE: Tags can not be null or an empty string and whitespace will be trimmed from the input.</p>
+</blockquote>
+
+<p>Find additional convenience methods to manage Tags in <em>MarketingCloudSDK+Base.h</em>.</p>
+
+<h3 id="reserved-words">Reserved Words</h3>
+
+<p>The SDK ignores calls to modify values associated with the following attribute keys, as these attributes represent reserved internal attributes:</p>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/34af56f4a7d4a1acd2a3.js"></script>
+
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class=row-fluid>
+                <div id=footer class=span12>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v6.0.0)</a>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
+
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
+
+                if (!navUl) return;
+
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
+
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
+
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
+
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
+
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
+
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
+
+            if (document.querySelectorAll) orderNav();
+        </script>
+
+        
+            <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-82902574-4', 'auto');
+  ga('send', 'pageview');
+</script>
+
+        
+    </body>
+</html>

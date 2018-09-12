@@ -5,6 +5,7 @@ subtitle: "Using Attributes"
 category: user-data
 date: 2015-05-14 12:00:00
 order: 4
+published: false
 ---
 Attributes contain information used to describe different aspects about a contact. For example, the attribute “FavoriteTeamName” can contain a string value with the name of the favorite sports team for that contact. Add any attributes you set with the SDK to your Marketing Cloud contact record in advance so Marketing Cloud can connect the values sent by the SDK to the correct contact fields. Attribute names assigned in your mobile app must maintain a 1:1 relationship with attributes stored in the Marketing Cloud to ensure segmentation and messaging activities use correct data values.
 

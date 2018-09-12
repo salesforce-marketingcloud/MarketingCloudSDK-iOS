@@ -4,7 +4,7 @@ title: "URL Handling"
 subtitle: "Messages with a URL"
 category: sdk-implementation
 date: 2018-08-29 12:00:00
-order: 10
+order: 7
 ---
 
 > The SDK does not automatically preset CloudPage or OpenDirect URLs when handling a push notification, nor does it present the CloudPage associated with an Inbox message when using the built-in UITableView delegate.

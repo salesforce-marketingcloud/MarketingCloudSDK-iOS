@@ -1,6 +1,8 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'MarketingCloudSDK iOS (v6.0.0)'
 
+propagationDelay: '5 minutes'
+
 # if you wish to integrate disqus on pages set your shortname here
 disqus_shortname: ''
 
@@ -27,12 +29,12 @@ sections: [
     ['create-apps', 'Create Cloud Apps'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
-    ['user-data', 'User Data'],
-    ['opendirect', 'OpenDirect'],
     ['location', 'Location Services'],
     ['inbox', 'Inbox'],
     ['analytics', 'Analytics'],
+    ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
+    ['user-data', 'User Data'],
     ['trouble', 'Troubleshooting'],
     ['upgrading', 'Upgrading'],
     ['resources', 'Additional Resources']

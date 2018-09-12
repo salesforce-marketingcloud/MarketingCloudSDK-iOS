@@ -5,6 +5,7 @@ subtitle: "Contact Key"
 category: user-data
 date: 2018-01-12 12:00:00
 order: 2
+published: false
 ---
 
 Use the contact key setter method to implement a specific value as the unique identifier for the contact record. You can use a mobile number, email address, device ID, or other appropriate value. Contact keys cannot include a null or blank value.
