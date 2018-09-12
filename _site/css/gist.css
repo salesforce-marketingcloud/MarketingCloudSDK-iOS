@@ -13,6 +13,7 @@ body .gist .gist-file {
   
   body .gist .blob-wrapper {
       border-radius: 0;
+      padding: 10px;
   }
   
   body .gist .highlight {
