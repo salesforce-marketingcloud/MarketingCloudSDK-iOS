@@ -1,0 +1,90 @@
+/* Gist CSS */
+body .gist .gist-file {
+      margin-bottom: 0;
+      border: none; /*1px dashed #adb5bd;*/
+      border-radius: 0;
+  }
+  
+  body .gist .gist-data {
+      border-bottom: none;
+      border-radius: 0;
+      background-color: #f1f3f5;
+  }
+  
+  body .gist .blob-wrapper {
+      border-radius: 0;
+  }
+  
+  body .gist .highlight {
+      background-color: transparent;
+      font-family: monospace;
+      font-size: 14px;
+  }
+  
+  body .gist .highlight td {
+      padding: 5px 15px !important;
+      line-height: 1;
+      font-family: inherit;
+      font-size: inherit;
+  }
+  
+  body .gist tr:first-child td {
+      padding-top: 15px !important;
+  }
+  
+  body .gist tr:last-child td {
+      padding-bottom: 15px !important;
+  }
+  
+  body .gist .blob-num {
+      color: #495057;
+      background-color: #ddd;
+      pointer-events: none;
+  }
+  
+  body .gist .gist-meta {
+      display: none;
+  } 
+
+/* Tab section CSS */
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: #495057;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    background-color: #f1f3f5;
+    /* padding: 6px 12px; */
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 

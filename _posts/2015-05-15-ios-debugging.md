@@ -60,9 +60,8 @@ You can toggle the SDK logging facility by including the following lines in your
 
 For a complete list of information that the SDK has and it's current state, you can implement getSDKState() as follows:
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/9275c899342cb46ea4f9f6367bfd7f92.js"></script>
+{%- include gist.html sectionId="getsdkstate" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/9275c899342cb46ea4f9f6367bfd7f92.js,https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js" -%}
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js"></script>
 
 The SDK will output a JSON string like this:
 
