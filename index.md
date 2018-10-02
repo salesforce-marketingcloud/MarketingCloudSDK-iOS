@@ -43,6 +43,12 @@ We provide support for plugins, such as Cordova, to implement the MobilePush SDK
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
+#### Version 6.1.0
+_Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
+
+* **Implemented Location Message Segmentation** - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed.
+
+
 #### Version 6.0.0
 _Released October 22, 2018, correlating with the Marketing Cloud October 2018 release._
 

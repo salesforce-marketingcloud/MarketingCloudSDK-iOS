@@ -118,27 +118,10 @@
 
         
             
-                <li class=nav-header>User Data</li>
-            
-            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
-        
-    
-        
-        
-
-        
-            
-                <li class=nav-header>OpenDirect</li>
-            
-            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
-        
-    
-        
-        
-
-        
-            
                 <li class=nav-header>Location Services</li>
+            
+            <li data-order="3"><a href="/location/geolocation-segmentation.html">Location Message Segmentation</a></li>
+        
             
             <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
         
@@ -172,6 +155,26 @@
         
         
 
+        
+            
+                <li class=nav-header>OpenDirect</li>
+            
+            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>User Data</li>
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
         
     
         
@@ -212,7 +215,7 @@
 
 <p>If the registration update fails the SDK will retry using a backoff algorithm with increasing retry intervals to a maximum delay of 1 day at which point the SDK will retry daily until it is successful.</p>
 
-<p>It will take up to  for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
+<p>It will take up to 5 minutes for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
 
 <blockquote>
   <p>NOTE: The SDK is considered the source of truth with regards to the contact’s device registration.  Data is replicated 1-way from the SDK to the Marketing Cloud servers.</p>
