@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v6.0.0) : Background Location Updates</title>
+        <title>MarketingCloudSDK iOS (v6.0.0) : Location Message Segmentation</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -208,39 +208,35 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Background Location Updates</h2>
+    <h2>Location Message Segmentation</h2>
 </div>
 
-<p>Normally, the app downloads new regions and messages as the device moves more than 5 kilometers from the last location and download of this data. However, if your app serves customers who spend a lot of time within a single 5K radius, consider adding the ability to do a background refresh of regions and messages. Since Apple controls when this background refresh takes place, we cannot guarantee when the refresh occurs. However, Apple allows the SDK to download new regions and messages for those times your customer spends a considerable amount of time in a single 5K region.</p>
+<p>Geofence and Beacon Messages are delivered from the Marketing Cloud server to all devices within the general area of a MobilePush Location. MobilePush does not allow audience segmentation or filtering of Location messages at the time of message creation.</p>
 
-<p>In your Info.plist, implement this key to enable this function. We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.</p>
+<p>To support delivery of messages to a subset of contacts in a MobilePush audience, the MobilePush SDK offers support for app control over what location messages will be displayed.</p>
 
-<p>In your Info.plist, add keys under <code class="highlighter-rouge">UIBackgroundModes</code>:</p>
+<p>When the device breaks a geofence, or is in proximity to a Bluetooth beacon, the SDK can trigger a call back to your mobile app to evaluate if that message should be shown. Your application can apply a variety of criteria in determining if the message should be shown, including using information within the MobilePush message itself.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;array&gt;
-	&lt;string&gt;fetch&lt;/string&gt;
-	&lt;string&gt;location&lt;/string&gt;
-	&lt;string&gt;remote-notification&lt;/string&gt;
-&lt;/array&gt;
-</code></pre></div></div>
+<h3 id="implementation">Implementation:</h3>
+<div class="tab" id="contactkey"><button class="tablinks" id="contactkeyObj-CButton" onclick="openLanguage(event, 'contactkey', 'contactkeyObj-C')">Obj-C</button><button class="tablinks" id="contactkeySwiftButton" onclick="openLanguage(event, 'contactkey', 'contactkeySwift')">Swift</button></div>
+<div id="contactkeyGists"><div id="contactkeyObj-C" class="tabcontent">
+    <script src="https://gist.github.com/db2005951ce433fcdc5f477b39de82f5.js"></script>
+  </div><div id="contactkeySwift" class="tabcontent">
+    <script src="https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js"></script>
+  </div></div>
+<script>document.getElementById("contactkeyObj-CButton").click()</script>
+<p>See <em>MarketingCloudSDK+Location.h</em> for more information.</p>
 
-<p><code class="highlighter-rouge">fetch</code> : We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
-<code class="highlighter-rouge">location</code> : We require “App registers for location updates” to enable location in the MarketingCloudSDK and to range for beacons in the background.</p>
+<h3 id="some-potential-use-cases">Some potential use cases:</h3>
 
-<p><br />
-<img class="img-responsive" src="/assets/background_modes_plist_entry.png" /><br /></p>
+<ul>
+  <li>Check if the user’s “my store” location is within the geofence region and show the message only if true.</li>
+  <li>Check if the user has items in their app shopping cart. If the message has a custom key “abandonedCart”:”true” show the message.</li>
+  <li>Based on the region and current time, check the app’s store location list to only show the location message when the store is open.</li>
+  <li>Do not allow messages to be shown if the user is not logged in to their account.</li>
+  <li>Show specific messages based on the user’s customer profile - customers who are coffee lovers get messages about coffee, but customers who prefer pastry receive a message to “add a coffee” when they’re in the shop.</li>
+</ul>
 
-<p>In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:
-<script src="https://gist.github.com/afa07fda599677c7c0a026a984bfa6b7.js"></script>
-<script src="https://gist.github.com/afaa7fda97d7a03bbe7e05eb6efb49de.js"></script></p>
-
-<p>Implement the handler for this functionality in your application delegate class:</p>
-
-<script src="https://gist.github.com/cf0b183c9b4a4159f2b9da3c86192b13.js"></script>
-
-<script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
-
-<p>See MarketingCloudSDK+Base.h for more information regarding this method.</p>
 
 
                     </div>
