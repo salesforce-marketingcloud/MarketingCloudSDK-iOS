@@ -301,11 +301,12 @@
 </blockquote>
 
 <ol>
-  <li>Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target’s Build Phases settings.<br /><img class="img-responsive" src="/assets/SDKConfigure6.png" /><br /><br /><img class="img-responsive" src="/assets/SDKConfigure7.png" /><br /></li>
+  <li>Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target’s Build Phases settings.<br /><img class="img-responsive" src="/assets/SDKConfigure6.png" /><br />
+<script src="https://gist.github.com/f7f01542bc24c2a5cfce1a12a8b4e18d.js"></script></li>
   <li>Change the <em>appid</em> and <em>accesstoken</em> values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique paring of this iOS application with the Marketing Cloud account used for MobilePush.</li>
   <li>Change the <em>marketing_cloud_server_url</em> value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.<br /><img class="img-responsive" src="/assets/setupConfigValues.png" /><br /></li>
   <li>Change the <em>mid</em> value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the <a href="https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/">MobilePush Administration site</a> and copy the “MID” value (numbers only).<br /><img class="img-responsive" src="/assets/setupMidValues.png" /><br /></li>
-  <li>Enable or disable <em>etanalytics</em>, <em>pianalytics</em>, <em>location</em>, or <em>inbox</em> entries depending on the unique needs of your application and your usage of Marketing Cloud.</li>
+  <li>Enable or disable <em>etanalytics</em>, <em>pianalytics</em>, <em>location</em>, <em>inbox</em> or <em>useLegacyPiIdentifier</em> entries depending on the unique needs of your application and your usage of Marketing Cloud.</li>
 </ol>
 
 <h2 id="5-implement-push">5. Implement Push</h2>

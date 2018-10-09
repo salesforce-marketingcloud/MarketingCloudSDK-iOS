@@ -15,7 +15,11 @@ The following methods integrate your mobile app with Personalization Builder. Yo
 
 ## Predictive Intelligence Identifier
 
-Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application. See [AnalyticsManager#setPiIdentifier](/javadocs/6.1/reference/com/salesforce/marketingcloud/analytics/AnalyticsManager.html#setPiIdentifier(java.lang.String)){:target="_blank"} for details and [MarketingCloudConfig.Builder#setUseLegacyPiIdentifier](/javadocs/6.1/reference/com/salesforce/marketingcloud/MarketingCloudConfig.Builder.html#setUseLegacyPiIdentifier(boolean)){:target="_blank"} for configuration details.
+Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application. 
+<script src="https://gist.github.com/c8de13c1b560a19def8bc2d63a2f061c.js"></script>
+To clear the value, you can pass in a nil value. 
+<script src="https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js"></script>
+
 
 ## Track Cart
 
