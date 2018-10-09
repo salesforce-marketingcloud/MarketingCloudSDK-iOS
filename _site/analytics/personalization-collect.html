@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v6.0.0) : Personalization Builder and Collect API Integration</title>
+        <title>MarketingCloudSDK iOS (v6.1.0) : Personalization Builder and Collect API Integration</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -19,7 +19,7 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v6.0.0)</a>
+                    <h4><a class=brand href="/">MarketingCloudSDK iOS (v6.1.0)</a>
     
     
 </h4>
@@ -211,7 +211,19 @@
     <h2>Integrate Personalization Builder and Collect API</h2>
 </div>
 
-<p>These methods integrate your mobile app with Personalization Builder. Your Marketing Cloud account must include a <a href="http://help.marketingcloud.com/en/documentation/personalization_builder">Personalization Builder</a> deployment use these methods. Enable the analytics option in your SDK configuration file.</p>
+<p>The following methods integrate your mobile app with Personalization Builder. You must have an existing <a href="http://help.marketingcloud.com/en/documentation/personalization_builder">Personalization Builder</a> deployment in order to use these. Also, you must enable the “PiAnalytics” option when you configure your SDK.</p>
+
+<blockquote>
+  <p>NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with existing records information, in this case: contactKey. Should this configuration be FALSE, no replacement will occur.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID.</p>
+</blockquote>
+
+<h2 id="predictive-intelligence-identifier">Predictive Intelligence Identifier</h2>
+
+<p>Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application. See <a href="/javadocs/6.1/reference/com/salesforce/marketingcloud/analytics/AnalyticsManager.html#setPiIdentifier(java.lang.String)" target="_blank">AnalyticsManager#setPiIdentifier</a> for details and <a href="/javadocs/6.1/reference/com/salesforce/marketingcloud/MarketingCloudConfig.Builder.html#setUseLegacyPiIdentifier(boolean)" target="_blank">MarketingCloudConfig.Builder#setUseLegacyPiIdentifier</a> for configuration details.</p>
 
 <h2 id="track-cart">Track Cart</h2>
 
@@ -241,7 +253,7 @@ See MarketingCloudSDK+Intelligence.h for more information.</p>
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v6.0.0)</a>
+                    Documentation for <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS" target="_blank">MarketingCloudSDK iOS (v6.1.0)</a>
 
                 </div>
             </div>

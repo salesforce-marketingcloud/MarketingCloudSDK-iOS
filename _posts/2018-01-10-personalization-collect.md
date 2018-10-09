@@ -7,7 +7,15 @@ date: 2018-01-10 12:00:00
 order: 2
 ---
 
-These methods integrate your mobile app with Personalization Builder. Your Marketing Cloud account must include a [Personalization Builder](http://help.marketingcloud.com/en/documentation/personalization_builder) deployment use these methods. Enable the analytics option in your SDK configuration file.
+The following methods integrate your mobile app with Personalization Builder. You must have an existing [Personalization Builder](http://help.marketingcloud.com/en/documentation/personalization_builder) deployment in order to use these. Also, you must enable the "PiAnalytics" option when you configure your SDK.
+
+> NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with existing records information, in this case: contactKey. Should this configuration be FALSE, no replacement will occur.
+
+> NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID.
+
+## Predictive Intelligence Identifier
+
+Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application. See [AnalyticsManager#setPiIdentifier](/javadocs/6.1/reference/com/salesforce/marketingcloud/analytics/AnalyticsManager.html#setPiIdentifier(java.lang.String)){:target="_blank"} for details and [MarketingCloudConfig.Builder#setUseLegacyPiIdentifier](/javadocs/6.1/reference/com/salesforce/marketingcloud/MarketingCloudConfig.Builder.html#setUseLegacyPiIdentifier(boolean)){:target="_blank"} for configuration details.
 
 ## Track Cart
 
