@@ -11,6 +11,8 @@ The following methods integrate your mobile app with Personalization Builder. Yo
 
 > NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with existing records information, in this case: contactKey. Should this configuration be FALSE, no replacement will occur.
 
+> WARNING: useLegacyPiIdentifier: This configuration option will be deprecated in a future release. It is recommended that you explicitly set the Predictive Intelligence identifier for future compatibility.
+
 > NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID.
 
 ## Predictive Intelligence Identifier
