@@ -211,8 +211,30 @@
     <h2>Integrate Personalization Builder and Collect API</h2>
 </div>
 
-<p>These methods integrate your mobile app with Personalization Builder. Your Marketing Cloud account must include a <a href="http://help.marketingcloud.com/en/documentation/personalization_builder">Personalization Builder</a> deployment use these methods. Enable the analytics option in your SDK configuration file.</p>
+<p>The following methods integrate your mobile app with Personalization Builder. You must have an existing <a href="http://help.marketingcloud.com/en/documentation/personalization_builder">Personalization Builder</a> deployment in order to use these. Also, you must enable the “pianalytics” option when you configure your SDK.</p>
 
+<blockquote>
+  <p>NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with the MobilePush contactKey value. Should this configuration be FALSE, no replacement will occur.</p>
+</blockquote>
+
+<blockquote>
+  <p>WARNING: useLegacyPiIdentifier: This configuration option will be deprecated in a future release. It is recommended that you explicitly set the Predictive Intelligence identifier for future compatibility.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID. See <a href="/get-started/apple.html#4-configure-the-sdk">Configure the SDK</a> for information about configuring the SDK with pianalytics and useLegacyPiIdentifier.</p>
+</blockquote>
+
+<h2 id="predictive-intelligence-identifier">Predictive Intelligence Identifier</h2>
+
+<p>Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application.</p>
+<div class="tab" id="contactkey"><button class="tablinks" id="contactkeyObj-CButton" onclick="openLanguage(event, 'contactkey', 'contactkeyObj-C')">Obj-C</button><button class="tablinks" id="contactkeySwiftButton" onclick="openLanguage(event, 'contactkey', 'contactkeySwift')">Swift</button></div>
+<div id="contactkeyGists"><div id="contactkeyObj-C" class="tabcontent">
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/c8de13c1b560a19def8bc2d63a2f061c.js"></script>
+  </div><div id="contactkeySwift" class="tabcontent">
+    <script src="https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js"></script>
+  </div></div>
+<script>document.getElementById("contactkeyObj-CButton").click()</script>
 <h2 id="track-cart">Track Cart</h2>
 
 <p>Use to track the contents of an in-app shopping cart. For more information about this method’s general use with Personalization Builder, see <a href="https://help.salesforce.com/articleView?id=mc_ctc_track_cart.htm&amp;type=5">Track Items in Shopping Cart</a>. Review this sample code for use in your mobile app.
