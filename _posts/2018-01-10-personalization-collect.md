@@ -7,20 +7,19 @@ date: 2018-01-10 12:00:00
 order: 2
 ---
 
-The following methods integrate your mobile app with Personalization Builder. You must have an existing [Personalization Builder](http://help.marketingcloud.com/en/documentation/personalization_builder) deployment in order to use these. Also, you must enable the "PiAnalytics" option when you configure your SDK.
+The following methods integrate your mobile app with Personalization Builder. You must have an existing [Personalization Builder](http://help.marketingcloud.com/en/documentation/personalization_builder) deployment in order to use these. Also, you must enable the "pianalytics" option when you configure your SDK.
 
-> NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with existing records information, in this case: contactKey. Should this configuration be FALSE, no replacement will occur.
+> NOTE: The Mobile Push SDK has an optional configuration value: useLegacyPiIdentifier. This allows you to control whether you wish to replace an absent/empty Predictive Intelligence Identifier with the MobilePush contactKey value. Should this configuration be FALSE, no replacement will occur.
 
 > WARNING: useLegacyPiIdentifier: This configuration option will be deprecated in a future release. It is recommended that you explicitly set the Predictive Intelligence identifier for future compatibility.
 
-> NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID.
+> NOTE: If the Predictive Intelligence Identifier is not set or null and the SDK is configured to use the Legacy PI Identifier then the SDK will automatically send the Contact Key as the PIID. See [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) for information about configuring the SDK with pianalytics and useLegacyPiIdentifier.
 
 ## Predictive Intelligence Identifier
 
 Predictive Intelligence analytics use an unique identifier to properly attribute collected analytics to a given user. The SDK, by default, uses the Contact Key as the PIID. This value may be explicitly set by your application. 
-<script src="https://gist.github.com/c8de13c1b560a19def8bc2d63a2f061c.js"></script>
-To clear the value, you can pass in a nil value. 
-<script src="https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js"></script>
+
+{%- include gist.html sectionId="contactkey" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/c8de13c1b560a19def8bc2d63a2f061c.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" -%}
 
 
 ## Track Cart
