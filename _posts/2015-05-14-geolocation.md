@@ -21,14 +21,14 @@ In your Info.plist, add keys under `UIBackgroundModes`:
 </array>
 ```
 
-`fetch` : We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
+`fetch` : We require “App downloads content from the network” to perform a background app refresh periodically to refresh geofences and beacons.
 `location` : We require “App registers for location updates” to enable location in the MarketingCloudSDK and to range for beacons in the background.
 
 
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/background_modes_plist_entry.png" /><br/>
 
-In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:
+In your application delegate method `-application:didFinishLaunchingWithOptions:`, implement this code:
 <script src="https://gist.github.com/afa07fda599677c7c0a026a984bfa6b7.js"></script>
 <script src="https://gist.github.com/afaa7fda97d7a03bbe7e05eb6efb49de.js"></script>
 
@@ -37,4 +37,4 @@ Implement the handler for this functionality in your application delegate class:
 <script src="https://gist.github.com/cf0b183c9b4a4159f2b9da3c86192b13.js"></script>
 <script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
 
-See MarketingCloudSDK+Base.h for more information regarding this method.
+See MarketingCloudSDK+Base.h for more information about this method.

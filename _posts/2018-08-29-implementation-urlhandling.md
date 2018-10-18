@@ -1,23 +1,27 @@
 ---
 layout: page
-title: "URL Handling"
-subtitle: "Messages with a URL"
+title: "Handle URLs"
+subtitle: "Handle Messages with a URL"
 category: sdk-implementation
 date: 2018-08-29 12:00:00
 order: 7
 ---
 
-> The SDK does not automatically preset CloudPage or OpenDirect URLs when handling a push notification, nor does it present the CloudPage associated with an Inbox message when using the built-in UITableView delegate.
+The SDK doesn’t automatically present URLs from these sources.
+* CloudPage URLs from push notifications
+* OpenDirect URLs from push notifications
+* CloudPage URLs from inbox messages using the built-in `UITableView` delegate
 
-In order to handle URLs from the above sources, the application must implement the `MarketingCloudSDKURLHandlingDelegate` protocol and set a delegate for this protocol via the `sfmc_setURLHandlingDelegate:` method.
+To handle URLs from these sources, follow these instructions.
 
-Implementing the protocol method `sfmc_handleURL:type:`, along with setting the delegate for the SDK, will result in the SDK calling the delegate method upon handling of a push notification with a CloudPage or OpenDirect link or if your Inbox uses the built-in UITableView delegate.
+1. Implement the `MarketingCloudSDKURLHandlingDelegate` protocol in your app.
+1. Use the `sfmc_setURLHandlingDelegate:` method to set a delegate for this protocol.
 
-The SDK will pass your implementation of `sfmc_handleURL:type:` a NSURL value containing the URL in the message (push notification or inbox) data. Additionally, a type value will reflect the source of the URL (`SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`).
+> If you implement the `sfmc_handleURL:type:` protocol method and set `MarketingCloudSDKURLHandlingDelegate`, the SDK calls the `sfmc_setURLHandlingDelegate:` method. The SDK passes to your implementation of `sfmc_handleURL:type:` an NSURL value. This value contains the data of the push notification or inbox message, including the URL. A type value also reflects the source of the URL, either `SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`.
 
-See `MarketingCloudSDK+URLHandling.h` for more information.
+> See `MarketingCloudSDK+URLHandling.h` for more information.
 
-Examples and use cases:
+## Examples
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/d9f3ef00c2678aced1d4e19acbc66b02.js"></script>
 
