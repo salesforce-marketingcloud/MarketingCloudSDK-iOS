@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v6.1.0) : URL Handling</title>
+        <title>MarketingCloudSDK iOS (v6.1.0) : Handle URLs</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -73,10 +73,10 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device and Contact Registration</a></li>
         
             
-            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">Handle URLs</a></li>
         
             
             <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
@@ -208,22 +208,32 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Messages with a URL</h2>
+    <h2>Handle Messages with a URL</h2>
 </div>
 
+<p>The SDK doesn’t automatically present URLs from these sources.</p>
+<ul>
+  <li>CloudPage URLs from push notifications</li>
+  <li>OpenDirect URLs from push notifications</li>
+  <li>CloudPage URLs from inbox messages using the built-in <code class="highlighter-rouge">UITableView</code> delegate</li>
+</ul>
+
+<p>To handle URLs from these sources, follow these instructions.</p>
+
+<ol>
+  <li>Implement the <code class="highlighter-rouge">MarketingCloudSDKURLHandlingDelegate</code> protocol in your app.</li>
+  <li>Use the <code class="highlighter-rouge">sfmc_setURLHandlingDelegate:</code> method to set a delegate for this protocol.</li>
+</ol>
+
 <blockquote>
-  <p>The SDK does not automatically preset CloudPage or OpenDirect URLs when handling a push notification, nor does it present the CloudPage associated with an Inbox message when using the built-in UITableView delegate.</p>
+  <p>If you implement the <code class="highlighter-rouge">sfmc_handleURL:type:</code> protocol method and set <code class="highlighter-rouge">MarketingCloudSDKURLHandlingDelegate</code>, the SDK calls the <code class="highlighter-rouge">sfmc_setURLHandlingDelegate:</code> method. The SDK passes to your implementation of <code class="highlighter-rouge">sfmc_handleURL:type:</code> an NSURL value. This value contains the data of the push notification or inbox message, including the URL. A type value also reflects the source of the URL, either <code class="highlighter-rouge">SFMCURLTypeCloudPage</code> or <code class="highlighter-rouge">SFMCURLTypeOpenDirect</code>.</p>
 </blockquote>
 
-<p>In order to handle URLs from the above sources, the application must implement the <code class="highlighter-rouge">MarketingCloudSDKURLHandlingDelegate</code> protocol and set a delegate for this protocol via the <code class="highlighter-rouge">sfmc_setURLHandlingDelegate:</code> method.</p>
+<blockquote>
+  <p>See <code class="highlighter-rouge">MarketingCloudSDK+URLHandling.h</code> for more information.</p>
+</blockquote>
 
-<p>Implementing the protocol method <code class="highlighter-rouge">sfmc_handleURL:type:</code>, along with setting the delegate for the SDK, will result in the SDK calling the delegate method upon handling of a push notification with a CloudPage or OpenDirect link or if your Inbox uses the built-in UITableView delegate.</p>
-
-<p>The SDK will pass your implementation of <code class="highlighter-rouge">sfmc_handleURL:type:</code> a NSURL value containing the URL in the message (push notification or inbox) data. Additionally, a type value will reflect the source of the URL (<code class="highlighter-rouge">SFMCURLTypeCloudPage</code> or <code class="highlighter-rouge">SFMCURLTypeOpenDirect</code>).</p>
-
-<p>See <code class="highlighter-rouge">MarketingCloudSDK+URLHandling.h</code> for more information.</p>
-
-<p>Examples and use cases:</p>
+<h2 id="examples">Examples</h2>
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/d9f3ef00c2678aced1d4e19acbc66b02.js"></script>
 

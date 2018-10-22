@@ -73,10 +73,10 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device and Contact Registration</a></li>
         
             
-            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">Handle URLs</a></li>
         
             
             <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
@@ -211,13 +211,13 @@
     <h2>Inbox</h2>
 </div>
 
-<p>Inbox Message functionality allows you to send alerts along with an inbox message or just an inbox message.</p>
+<p>Inbox message functionality allows you to send alerts along with an inbox message or just an inbox message.</p>
 
-<p>For Inbox-only Messages, the MarketingCloudSDK downloads new messages each time your app comes into the foreground or any time you ask the SDK to refresh messages.</p>
+<p>For Inbox-only messages, the MarketingCloudSDK downloads new messages each time your app comes into the foreground or any time you ask the SDK to refresh messages.</p>
 
 <p>If your application includes basic inbox UI requirements, consider using the built-in support of MarketingCloudSDK.</p>
 
-<p>The SDK provides a UITableView datasource for you to use in a UIViewController to display the Inbox-only messages sent from Marketing Cloud. The UIViewController you create essentially creates an inbox in your app to display these messages. The SDK adds these messages to the datasource after downloading. The app does not display alerts for these messages.</p>
+<p>The SDK provides a UITableView datasource for you to use in a UIViewController to display the Inbox-only messages sent from Marketing Cloud. The UIViewController you create essentially creates an inbox in your app to display these messages. The SDK adds these messages to the datasource after they are downloaded. The app does not display alerts for these messages.</p>
 
 <p>Additionally, the MarketingCloudSDK provides a very basic UITableView delegate to manage the selection of rows in your tableview. Otherwise, the application must implement a UITableView delegate.</p>
 
@@ -225,9 +225,9 @@
 <script src="https://gist.github.com/eca779c4ee8893aecd25d237a40626f0.js"></script>
 <script src="https://gist.github.com/4e6c3910935f6ccab2845091837d6474.js"></script></p>
 
-<p>For additional control, presentation and usability, implement your own datasource and delegate using the support offered by the SDK.</p>
+<p>For additional control, presentation, and usability, implement your own datasource and delegate using the support offered by the SDK.</p>
 
-<p>The SDK provides many additional methods for fully customizing the behavior of your UITableView.</p>
+<p>The SDK provides many additional methods to fully customize the behavior of your UITableView.</p>
 
 <ul>
   <li>To populate your own datasource array, use sfmc_getAllMessages to return messages from Marketing Cloud. Messages are dictionaries of attributes and can be inspected to determine what information to use in your user interface.</li>
@@ -246,13 +246,11 @@
 <p>See MarketingCloudSDK+InboxMessages.h for more information.</p>
 
 <h2 id="cloudpage-alerts">CloudPage Alerts</h2>
-<p>The CloudPage Inbox customized push message (Alert+Inbox) contains a URL in the payload. Marketing Cloud must enable the account using this functionality with access to both MobilePush and CloudPages to successfully create and send CloudPage push messages.</p>
+<p>The CloudPage Inbox customized push message (Alert + Inbox) contains a URL in the payload. Marketing Cloud must enable the account using this functionality with access to both MobilePush and CloudPages to successfully create and send CloudPage push messages.</p>
 
 <p>Enable inbox in your configuration file using the inbox:true value.</p>
 
-<p>The MarketingCloudSDK can pass this URL to your application to handle according to your custom needs.</p>
-
-<p>See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</p>
+<p>The MarketingCloudSDK can pass this URL to your application to handle according to your situation. See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</p>
 
 
                     </div>
