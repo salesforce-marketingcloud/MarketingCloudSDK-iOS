@@ -73,10 +73,10 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device and Contact Registration</a></li>
         
             
-            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">Handle URLs</a></li>
         
             
             <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
@@ -118,26 +118,6 @@
 
         
             
-                <li class=nav-header>User Data</li>
-            
-            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
-        
-    
-        
-        
-
-        
-            
-                <li class=nav-header>OpenDirect</li>
-            
-            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
-        
-    
-        
-        
-
-        
-            
                 <li class=nav-header>Location Services</li>
             
             <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
@@ -172,6 +152,26 @@
         
         
 
+        
+            
+                <li class=nav-header>OpenDirect</li>
+            
+            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>User Data</li>
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
         
     
         
@@ -225,7 +225,7 @@
 
 <h2 id="2-create-your-app-in-marketing-cloud">2. Create your app in Marketing Cloud</h2>
 
-<p>To connect your iOS app to Marketing Cloud, create a MobilePush app in MobilePush in Marketing Cloud. This connection allows your app to use MobilePush to communicate with your users via push notifications. Marketing Cloud classifies MobilePush apps as consumer-grade applications. MobilePush apps use long-lived limited- access tokens.</p>
+<p>To connect your iOS app to Marketing Cloud, create a MobilePush app in MobilePush in Marketing Cloud. This connection allows your app to use MobilePush to communicate with your users via push notifications. Marketing Cloud classifies MobilePush apps as consumer-grade applications. MobilePush apps use long-lived limited-access tokens.</p>
 
 <p>Follow these steps to create a new MobilePush app:</p>
 <ol>
@@ -288,28 +288,24 @@
 <h2 id="4-configure-the-sdk">4. Configure the SDK</h2>
 
 <blockquote>
-  <p>See the SDK header &lt;MarketingCloudSDK/MarketingCloudSDK+Base.h (<a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html">AppleDoc</a>) for alternate configuration methods.</p>
+  <p>See the SDK header MarketingCloudSDK/MarketingCloudSDK+Base.h (<a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html">AppleDoc</a>) for alternate configuration methods.</p>
 </blockquote>
 
 <p>Configure the MarketingCloudSDK framework via a JSON file that you add to your application. This file contains the parameters unique to your application and feature needs. The MarketingCloudSDK framework reads the values in this file and completes its configuration based on these settings.</p>
 
 <blockquote>
-  <p>All method names contain the prefix <code class="highlighter-rouge">sfmc_</code>. This convention allows the application implementing the SDK to avoid namespace collisions between the external libraries it may use. MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application may implement. Review Apple’s <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4">documentation on customizing existing classes</a> for further information.</p>
+  <p>All method names contain the prefix <code class="highlighter-rouge">sfmc_</code>. This convention allows the application implementing the SDK to avoid namespace collisions between the external libraries it uses. MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application implements. Review Apple’s <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4">documentation on customizing existing classes</a> for further information.</p>
 </blockquote>
 
 <ol>
   <li>Add MarketingCloudSDKConfiguration.json to Copy Bundle Resources in your target’s Build Phases settings.<br /><img class="img-responsive" src="/assets/SDKConfigure6.png" /><br /><br /><img class="img-responsive" src="/assets/SDKConfigure7.png" /><br /></li>
-  <li>Change the <em>appid</em> and <em>accesstoken</em> values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique paring of this iOS application with the Marketing Cloud account used for MobilePush.</li>
-  <li>Change the <em>marketing_cloud_server_url</em> value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.<br /><img class="img-responsive" src="/assets/setupConfigValues.png" /><br /></li>
-  <li>Change the <em>mid</em> value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the <a href="https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/">MobilePush Administration site</a> and copy the “MID” value (numbers only).<br /><img class="img-responsive" src="/assets/setupMidValues.png" /><br /></li>
-  <li>Enable or disable <em>etanalytics</em>, <em>pianalytics</em>, <em>location</em>, or <em>inbox</em> entries depending on the unique needs of your application and your usage of Marketing Cloud.</li>
+  <li>Change the <code class="highlighter-rouge">appid</code> and <code class="highlighter-rouge">accesstoken</code> values to match the information from your Marketing Cloud account when you configured your application. These values represent the unique pairing of this iOS application with the Marketing Cloud account used for MobilePush.</li>
+  <li>Change the <code class="highlighter-rouge">marketing_cloud_server_url</code> value to match information from your Marketing Cloud account when you configured your application. This value represents the server to which the SDK will communicate.<br /><img class="img-responsive" src="/assets/setupConfigValues.png" /><br /></li>
+  <li>Change the <code class="highlighter-rouge">mid</code> value to match information from your Marketing Cloud account when you configured your application. Select your account name in the upper-right corner of the <a href="https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/">MobilePush Administration site</a> and copy the “MID” value (numbers only).<br /><img class="img-responsive" src="/assets/setupMidValues.png" /><br /></li>
+  <li>Enable or disable <code class="highlighter-rouge">etanalytics</code>, <code class="highlighter-rouge">pianalytics</code>, <code class="highlighter-rouge">location</code>, or <code class="highlighter-rouge">inbox</code> entries depending on the unique needs of your application and your usage of Marketing Cloud.</li>
 </ol>
 
 <h2 id="5-implement-push">5. Implement Push</h2>
-
-<blockquote>
-  <p>When implementing the MarketingCloudSDK framework, note that all method names contain the prefix <em>sfmc_</em>. This convention allows the application implementing the SDK to protect against the possibility of namespace collisions between external libraries it may use. We’ve taken every precaution to ensure that MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application may implement. Review Apple’s <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4">documentation on customizing existing classes</a> for further information.</p>
-</blockquote>
 
 <ol>
   <li>To implement push notification handling in your application, ensure that you created an APNS Push Certificate in the Apple developer portal and added it to your Marketing Cloud account. Make sure that you added the push notifications feature to your application in the Apple developer portal. Enable push notifications in your target’s Capabilities settings.

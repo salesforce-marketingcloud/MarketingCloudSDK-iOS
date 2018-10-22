@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v6.0.0) : Device & Contact Registration</title>
+        <title>MarketingCloudSDK iOS (v6.0.0) : Device and Contact Registration</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -73,10 +73,10 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device and Contact Registration</a></li>
         
             
-            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">Handle URLs</a></li>
         
             
             <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
@@ -111,26 +111,6 @@
         
             
             <li data-order="5"><a href="/push-notifications/custom-keys.html">Custom Keys</a></li>
-        
-    
-        
-        
-
-        
-            
-                <li class=nav-header>User Data</li>
-            
-            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
-        
-    
-        
-        
-
-        
-            
-                <li class=nav-header>OpenDirect</li>
-            
-            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
         
     
         
@@ -173,6 +153,26 @@
         
 
         
+            
+                <li class=nav-header>OpenDirect</li>
+            
+            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>User Data</li>
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
+        
     
         
         
@@ -205,14 +205,14 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h2>Updating Contact Key, Attributes and Tags</h2>
+    <h2>Registration Updates Via Contact Key, Attributes, and Tags</h2>
 </div>
 
 <p>The SDK will send changes to the Marketing Cloud servers within one minute of the first change to any Marketing Cloud Mobile Push device or contact registration record and no more frequently than once per minute after as required.  This can be data set by your application like Contact Key, Tags or Attributes or it could be system related and set by the SDK like Time Zone, Locale or Application Version, etc.</p>
 
 <p>If the registration update fails the SDK will retry using a backoff algorithm with increasing retry intervals to a maximum delay of 1 day at which point the SDK will retry daily until it is successful.</p>
 
-<p>It will take up to  for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
+<p>It will take up to 5 minutes for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
 
 <blockquote>
   <p>NOTE: The SDK is considered the source of truth with regards to the contact’s device registration.  Data is replicated 1-way from the SDK to the Marketing Cloud servers.</p>
@@ -224,10 +224,10 @@
 
 <h3 id="contact-key">Contact Key</h3>
 
-<p>Contact Key is the unique identifier used to aggregate a contact’s devices within the Marketing Cloud.  As such you should set the Contact Key to a specific value provided by your customer or some other unique identifier for the Contact like mobile number, e-mail address, customer number, etc.</p>
+<p>Contact key is the unique identifier used to aggregate a contact’s devices within Marketing Cloud. Set the contact key to a specific value provided by your customer or to another unique identifier for the contact, such as mobile number, email address, customer number, or another value.</p>
 
 <blockquote>
-  <p>NOTE: Contact Key may not be null or an empty string and leading and/or trailing whitespace will be removed.  Contact Key, once set, may be changed, but can not be cleared and should never be set to a generic, non-unique value.</p>
+  <p>Contact Key can’t be null and can’t be an empty string. Leading or trailing whitespace is removed. After you set the contact key for a contact, you can change it, but you can’t clear it. Don’t set the contact key to a generic, non-unique value.</p>
 </blockquote>
 <div class="tab" id="contactkey"><button class="tablinks" id="contactkeyObj-CButton" onclick="openLanguage(event, 'contactkey', 'contactkeyObj-C')">Obj-C</button><button class="tablinks" id="contactkeySwiftButton" onclick="openLanguage(event, 'contactkey', 'contactkeySwift')">Swift</button></div>
 <div id="contactkeyGists"><div id="contactkeyObj-C" class="tabcontent">
@@ -237,12 +237,12 @@
   </div></div>
 <script>document.getElementById("contactkeyObj-CButton").click()</script>
 <blockquote>
-  <p>NOTE: By default, if your app does not set the Contact Key using <code class="highlighter-rouge">sfmc_setContactKey:</code>, the Marketing Cloud will match the registration sent with a Contact Record that matches the System Token included in the registration payload. If the Marketing Cloud does not find a match, the Marketing Cloud will set a new Contact Key and will not send the value back to the SDK.</p>
+  <p>If your app doesn’t set the contact key using <code class="highlighter-rouge">sfmc_setContactKey:</code>, Marketing Cloud uses the registration sent with a contact record that matches the system token included in the registration payload. If Marketing Cloud doesn’t find a match, it sets a new contact key and doesn’t send the value back to the SDK.</p>
 </blockquote>
 
 <h3 id="attributes">Attributes</h3>
 
-<p>Audience segmentation and personalization can be accomplished through the use of Attributes.  Attributes may only be set or cleared by the SDK and must be created in your Marketing Cloud Mobile Push account prior to implementation within your application.  See <a href="#reserved-words">RESERVED WORDS</a> below for a list of Attribute keys that may not be modified by the SDK or your application.</p>
+<p>You can use attributes to segment your audience and personalize your messages. Before you can use attributes, create them in your MobilePush account. Attributes may only be set or cleared by the SDK. See the <a href="#reserved-words">Reserved Words</a> section for a list of attribute keys that can’t be modified by the SDK or your application.</p>
 
 <div class="tab" id="attributes_set"><button class="tablinks" id="attributes_setObj-CButton" onclick="openLanguage(event, 'attributes_set', 'attributes_setObj-C')">Obj-C</button><button class="tablinks" id="attributes_setSwiftButton" onclick="openLanguage(event, 'attributes_set', 'attributes_setSwift')">Swift</button></div>
 <div id="attributes_setGists"><div id="attributes_setObj-C" class="tabcontent">
@@ -269,18 +269,20 @@
 <script>document.getElementById("attributes_getObj-CButton").click()</script>
 
 <blockquote>
-  <p>NOTE: The attribute key may not be one of the <a href="#reserved-words">RESERVED WORDS</a> listed below, it may not be null or an empty string and whitespace will be trimmed from the input.</p>
+  <p>The attribute key can’t be one of the reserved words; it can’t be null or an empty string; and whitespace is trimmed.</p>
 </blockquote>
 
 <blockquote>
-  <p>NOTE: The attribute value may not be null and whitespace will be trimmed from the input.</p>
+  <p>The attribute value can’t be null, and whitespace is trimmed.</p>
 </blockquote>
 
-<p>Find additional convenience methods to manage Attributes in <em>MarketingCloudSDK+Base.h</em>.</p>
+<p>For additional convenience methods to manage attributes, see <em>MarketingCloudSDK+Base.h</em>.</p>
 
 <h3 id="tags">Tags</h3>
 
-<p>Audience segmentation can be accomplished with Tags.  Tags are commonly used to express consumer interest in something.  For instance, a “news” application might offer predefined categories of articles for which the consumer wishes to receive content like “sports”, “headlines” or “entertainment”.  Tags may be added and removed dynamically by the SDK and do not require a pre-configuration on the Marketing Cloud server side like Attributes.</p>
+<p>You can use tags to segment your audience. Tags are commonly used to allow customers to express their interests. For example, a news app offers predefined article categories, such as sports, headlines, and entertainment. App users select the categories, or tags, that they want to receive notifications for.</p>
+
+<p>Dynamically add and remove tags via the SDK. You don’t have to create tags in Marketing Cloud.</p>
 
 <div class="tab" id="tags"><button class="tablinks" id="tagsObj-CButton" onclick="openLanguage(event, 'tags', 'tagsObj-C')">Obj-C</button><button class="tablinks" id="tagsSwiftButton" onclick="openLanguage(event, 'tags', 'tagsSwift')">Swift</button></div>
 <div id="tagsGists"><div id="tagsObj-C" class="tabcontent">
@@ -291,14 +293,14 @@
 <script>document.getElementById("tagsObj-CButton").click()</script>
 
 <blockquote>
-  <p>NOTE: Tags can not be null or an empty string and whitespace will be trimmed from the input.</p>
+  <p>Tags can’t be null or an empty string, and whitespace is trimmed.</p>
 </blockquote>
 
-<p>Find additional convenience methods to manage Tags in <em>MarketingCloudSDK+Base.h</em>.</p>
+<p>For additional convenience methods to manage Tags, see <em>MarketingCloudSDK+Base.h</em>.</p>
 
 <h3 id="reserved-words">Reserved Words</h3>
 
-<p>The SDK ignores calls to modify values associated with the following attribute keys, as these attributes represent reserved internal attributes:</p>
+<p>The SDK ignores calls to modify values associated with the following attribute keys because these attributes are reserved for internal use.</p>
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/34af56f4a7d4a1acd2a3.js"></script>
 

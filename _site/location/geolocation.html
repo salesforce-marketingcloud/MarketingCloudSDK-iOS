@@ -73,10 +73,10 @@
             
                 <li class=nav-header>SDK Implementation</li>
             
-            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device & Contact Registration</a></li>
+            <li data-order="2"><a href="/sdk-implementation/user-data.html">Device and Contact Registration</a></li>
         
             
-            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">URL Handling</a></li>
+            <li data-order="7"><a href="/sdk-implementation/implementation-urlhandling.html">Handle URLs</a></li>
         
             
             <li data-order="1"><a href="/sdk-implementation/data-privacy-iOS.html">Data Protection and Privacy</a></li>
@@ -118,26 +118,6 @@
 
         
             
-                <li class=nav-header>User Data</li>
-            
-            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
-        
-    
-        
-        
-
-        
-            
-                <li class=nav-header>OpenDirect</li>
-            
-            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
-        
-    
-        
-        
-
-        
-            
                 <li class=nav-header>Location Services</li>
             
             <li data-order="1"><a href="/location/geolocation-overview.html">Geofence and Beacon Messaging</a></li>
@@ -172,6 +152,26 @@
         
         
 
+        
+            
+                <li class=nav-header>OpenDirect</li>
+            
+            <li data-order="4"><a href="/opendirect/opendirect.html">OpenDirect</a></li>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>User Data</li>
+            
+            <li data-order="6"><a href="/user-data/data-migration.html">User Data Migration</a></li>
         
     
         
@@ -221,13 +221,13 @@
 &lt;/array&gt;
 </code></pre></div></div>
 
-<p><code class="highlighter-rouge">fetch</code> : We require “App downloads content from the network” to perform a Background App Refresh periodically to refresh geofences and beacons.
+<p><code class="highlighter-rouge">fetch</code> : We require “App downloads content from the network” to perform a background app refresh periodically to refresh geofences and beacons.
 <code class="highlighter-rouge">location</code> : We require “App registers for location updates” to enable location in the MarketingCloudSDK and to range for beacons in the background.</p>
 
 <p><br />
 <img class="img-responsive" src="/assets/background_modes_plist_entry.png" /><br /></p>
 
-<p>In your application delegate method -application:didFinishLaunchingWithOptions:, implement this code:
+<p>In your application delegate method <code class="highlighter-rouge">-application:didFinishLaunchingWithOptions:</code>, implement this code:
 <script src="https://gist.github.com/afa07fda599677c7c0a026a984bfa6b7.js"></script>
 <script src="https://gist.github.com/afaa7fda97d7a03bbe7e05eb6efb49de.js"></script></p>
 
@@ -237,7 +237,7 @@
 
 <script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
 
-<p>See MarketingCloudSDK+Base.h for more information regarding this method.</p>
+<p>See MarketingCloudSDK+Base.h for more information about this method.</p>
 
 
                     </div>
