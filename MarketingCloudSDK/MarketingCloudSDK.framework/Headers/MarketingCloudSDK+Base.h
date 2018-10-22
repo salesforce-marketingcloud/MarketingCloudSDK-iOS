@@ -33,6 +33,53 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)sfmc_configure:( NSError * _Nullable *)error;
 
 /**
+ This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the MarketingCloudSDKConfigBuilder sfmc_build method. Use the MarketingCloudSDKConfigBuilder class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO. The following example shows how you can use the MarketingCloudSDKConfigBuilder class to create the configuration dictionary.
+ 
+     MarketingCloudSDKConfigBuilder *mcsdkBuilder = [MarketingCloudSDKConfigBuilder new];
+     [mcsdkBuilder sfmc_setApplicationId:@"93783629-08C7-48D3-8482-3E5BC8DBA888"];
+     [mcsdkBuilder sfmc_setAccessToken:@"xyzymn5gb7y2z3wph3t4yxyz"];
+     [mcsdkBuilder sfmc_setInboxEnabled:@(YES)];
+     [mcsdkBuilder sfmc_setLocationEnabled:@(YES)];
+     [mcsdkBuilder sfmc_setAnalyticsEnabled:@(YES)];
+     [mcsdkBuilder sfmc_setPiAnalyticsEnabled:@(YES)];
+     [mcsdkBuilder sfmc_setMid:@"1234567"];
+     [mcsdkBuilder sfmc_setMarketingCloudServerUrl:@"https://consumer.exacttargetapis.com"];
+ 
+     NSError *error = nil;
+     BOOL success = [[MarketingCloudSDK sharedInstance] sfmc_configureWithDictionary:[mcsdkBuilder sfmc_build] error:&error];
+ 
+ 
+ @param configuration NSDictionary created by the MarketingCloudSDKConfigBuilder class
+ @param error NSError object describing the error.
+ @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
+ */
+-(BOOL)sfmc_configureWithDictionary:(NSDictionary *)configuration error:(NSError *_Nullable *)error;
+
+/**
+ This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the MarketingCloudSDKConfigBuilder sfmc_build method. Use the MarketingCloudSDKConfigBuilder class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO. The following example shows how you can use the MarketingCloudSDKConfigBuilder class to create the configuration dictionary.
+ 
+    MarketingCloudSDKConfigBuilder *mcsdkBuilder = [MarketingCloudSDKConfigBuilder new];
+    [mcsdkBuilder sfmc_setApplicationId:@"93783629-08C7-48D3-8482-3E5BC8DBA888"];
+    [mcsdkBuilder sfmc_setAccessToken:@"xyzymn5gb7y2z3wph3t4yxyz"];
+    [mcsdkBuilder sfmc_setInboxEnabled:@(YES)];
+    [mcsdkBuilder sfmc_setLocationEnabled:@(YES)];
+    [mcsdkBuilder sfmc_setAnalyticsEnabled:@(YES)];
+    [mcsdkBuilder sfmc_setPiAnalyticsEnabled:@(YES)];
+    [mcsdkBuilder sfmc_setMid:@"1234567"];
+    [mcsdkBuilder sfmc_setMarketingCloudServerUrl:@"https://consumer.exacttargetapis.com"];
+ 
+    NSError *error = nil;
+    BOOL success = [[MarketingCloudSDK sharedInstance] sfmc_configureWithDictionary:[mcsdkBuilder sfmc_build] error:&error completionHandler:^(BOOL success, NSString *appid, NSError *error) {}];
+
+
+@param configuration NSDictionary created by the MarketingCloudSDKConfigBuilder class
+@param error NSError object describing the error.
+@param completionHandler Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.
+@return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
+ */
+-(BOOL)sfmc_configureWithDictionary:(NSDictionary *)configuration error:(NSError *_Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError *completionError))completionHandler;
+
+/**
  This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
 
  
@@ -41,7 +88,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param error NSError object describing the error.
  @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
  */
--(BOOL)sfmc_configureWithURL:(NSURL *)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error;
+-(BOOL)sfmc_configureWithURL:(NSURL * _Nullable)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error;
 
 /**
  This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
@@ -257,16 +304,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary *)sfmc_notificationUserInfo;
 
 /**
- Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.
+ Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated. When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.) Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.
 
  @param pushEnabled Set to YES to enable push notifications.
  */
 - (void)sfmc_setPushEnabled:(BOOL)pushEnabled;
 
 /**
- The current state of the pushEnabled flag in the SDK.
+ The current state of the developer's push enablement override
 
- @return returns a BOOL value of the current pushEnabled state.
+ @return returns a BOOL value of the developer's push enablement override.
  */
 - (BOOL)sfmc_pushEnabled;
 
