@@ -88,6 +88,10 @@
 		
 		<option value="//api/name/sfmc_configure:completionHandler:">- sfmc_configure:completionHandler:</option>
 		
+		<option value="//api/name/sfmc_configureWithDictionary:error:">- sfmc_configureWithDictionary:error:</option>
+		
+		<option value="//api/name/sfmc_configureWithDictionary:error:completionHandler:">- sfmc_configureWithDictionary:error:completionHandler:</option>
+		
 		<option value="//api/name/sfmc_configureWithURL:configurationIndex:error:">- sfmc_configureWithURL:configurationIndex:error:</option>
 		
 		<option value="//api/name/sfmc_configureWithURL:configurationIndex:error:completionHandler:">- sfmc_configureWithURL:configurationIndex:error:completionHandler:</option>
@@ -154,25 +158,21 @@
 		
 		<option value="//api/name/sfmc_setAttributes:">- sfmc_setAttributes:</option>
 		
-		<option value="//api/name/sfmc_setCloudPageMessagesNotificationHandlerDelegate:">- sfmc_setCloudPageMessagesNotificationHandlerDelegate:</option>
-		
 		<option value="//api/name/sfmc_setContactKey:">- sfmc_setContactKey:</option>
 		
 		<option value="//api/name/sfmc_setDebugLoggingEnabled:">- sfmc_setDebugLoggingEnabled:</option>
 		
 		<option value="//api/name/sfmc_setDeviceToken:">- sfmc_setDeviceToken:</option>
 		
-		<option value="//api/name/sfmc_setInboxMessagesNotificationHandlerDelegate:">- sfmc_setInboxMessagesNotificationHandlerDelegate:</option>
-		
 		<option value="//api/name/sfmc_setNotificationRequest:">- sfmc_setNotificationRequest:</option>
 		
 		<option value="//api/name/sfmc_setNotificationUserInfo:">- sfmc_setNotificationUserInfo:</option>
 		
-		<option value="//api/name/sfmc_setOpenDirectMessagesNotificationHandlerDelegate:">- sfmc_setOpenDirectMessagesNotificationHandlerDelegate:</option>
-		
 		<option value="//api/name/sfmc_setPushEnabled:">- sfmc_setPushEnabled:</option>
 		
 		<option value="//api/name/sfmc_setSignedString:">- sfmc_setSignedString:</option>
+		
+		<option value="//api/name/sfmc_setURLHandlingDelegate:">- sfmc_setURLHandlingDelegate:</option>
 		
 		<option value="//api/name/sfmc_signedString">- sfmc_signedString</option>
 		
@@ -358,6 +358,147 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/sfmc_configureWithDictionary:error:" title="sfmc_configureWithDictionary:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithDictionary:error:">&ndash;&nbsp;sfmc_configureWithDictionary:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> sfmc_build method. Use the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithDictionary:(NSDictionary *)<em>configuration</em> error:(NSError *_Nullable *)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>NSError object describing the error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> sfmc_build method. Use the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_configureWithDictionary:error:completionHandler:" title="sfmc_configureWithDictionary:error:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithDictionary:error:completionHandler:">&ndash;&nbsp;sfmc_configureWithDictionary:error:completionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> sfmc_build method. Use the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithDictionary:(NSDictionary *)<em>configuration</em> error:(NSError *_Nullable *)<em>error</em> completionHandler:(void ( ^ _Nullable ) ( BOOL configured , NSString *appId , NSError *completionError ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>NSError object describing the error.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> sfmc_build method. Use the <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a> class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/sfmc_configureWithURL:configurationIndex:error:" title="sfmc_configureWithURL:configurationIndex:error:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithURL:configurationIndex:error:">&ndash;&nbsp;sfmc_configureWithURL:configurationIndex:error:</a></code>
 </h3>
@@ -374,7 +515,7 @@
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithURL:(NSURL *)<em>url</em> configurationIndex:(NSNumber *)<em>configurationIndex</em> error:(NSError *_Nullable *)<em>error</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithURL:(NSURL *_Nullable)<em>url</em> configurationIndex:(NSNumber *)<em>configurationIndex</em> error:(NSError *_Nullable *)<em>error</em></code></div>
 
 		    
 			
@@ -1868,7 +2009,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.</p>
+				<p>Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated. When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.) Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.</p>
 			</div>
 			
 		    
@@ -1897,7 +2038,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.</p>
+				<p>Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated. When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.) Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.</p>
 			</div>
 			
 
@@ -1926,7 +2067,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			
 			<div class="method-subsection brief-description">
-				<p>The current state of the pushEnabled flag in the SDK.</p>
+				<p>The current state of the developer&rsquo;s push enablement override</p>
 			</div>
 			
 		    
@@ -1939,7 +2080,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>returns a BOOL value of the current pushEnabled state.</p>
+				<p>returns a BOOL value of the developer&rsquo;s push enablement override.</p>
 			</div>
 			
 
@@ -1948,7 +2089,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>The current state of the pushEnabled flag in the SDK.</p>
+				<p>The current state of the developer&rsquo;s push enablement override</p>
 			</div>
 			
 
@@ -2297,320 +2438,6 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
 				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="OpenDirectMessages Methods" name="task_OpenDirectMessages Methods"></a>
-						<h2 class="task-title">OpenDirectMessages Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_setOpenDirectMessagesNotificationHandlerDelegate:" title="sfmc_setOpenDirectMessagesNotificationHandlerDelegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setOpenDirectMessagesNotificationHandlerDelegate:">&ndash;&nbsp;sfmc_setOpenDirectMessagesNotificationHandlerDelegate:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate.html">MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an OpenDirect payload as part of a push notification</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_setOpenDirectMessagesNotificationHandlerDelegate:(id&lt;MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate&gt; _Nullable)<em>delegate</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>the class implementing sfmc_didReceiveOpenDirectMessagesNotificationWithContents:</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate.html">MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an OpenDirect payload as part of a push notification</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+OpenDirectMessages.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="Location Methods" name="task_Location Methods"></a>
-						<h2 class="task-title">Location Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_locationEnabled" title="sfmc_locationEnabled"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_locationEnabled">&ndash;&nbsp;sfmc_locationEnabled</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Determines the state of Location Services based on developer setting and OS-level permission. This is the preferred method for checking for location state.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_locationEnabled</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>A boolean value reflecting if location services are enabled (i.e. authorized) or not.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Determines the state of Location Services based on developer setting and OS-level permission. This is the preferred method for checking for location state.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_startWatchingLocation" title="sfmc_startWatchingLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_startWatchingLocation">&ndash;&nbsp;sfmc_startWatchingLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Use this method to initiate Location Services through the MobilePush SDK.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_startWatchingLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Use this method to initiate Location Services through the MobilePush SDK.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_stopWatchingLocation" title="sfmc_stopWatchingLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_stopWatchingLocation">&ndash;&nbsp;sfmc_stopWatchingLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Use this method to disable Location Services through the MobilePush SDK.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_stopWatchingLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Use this method to disable Location Services through the MobilePush SDK.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_watchingLocation" title="sfmc_watchingLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_watchingLocation">&ndash;&nbsp;sfmc_watchingLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Use this method to determine if the SDK is actively monitoring location.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_watchingLocation</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>A boolean value reflecting if the SDK has called startWatchingLocation.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Use this method to determine if the SDK is actively monitoring location.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_lastKnownLocation" title="sfmc_lastKnownLocation"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_lastKnownLocation">&ndash;&nbsp;sfmc_lastKnownLocation</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>A dictionary version of the last known Location. The dictionary will contain two keys, latitude and longitude, which are NSNumber wrappers around doubles. Use doubleValue to retrieve.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSString*,NSString*&gt; *_Nullable)sfmc_lastKnownLocation</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>A dictionary version of the last known Location. The dictionary will contain two keys, latitude and longitude, which are NSNumber wrappers around doubles. Use doubleValue to retrieve.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
 			</div>
 			
 			
@@ -3468,9 +3295,17 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 		</div>
 	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_setInboxMessagesNotificationHandlerDelegate:" title="sfmc_setInboxMessagesNotificationHandlerDelegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setInboxMessagesNotificationHandlerDelegate:">&ndash;&nbsp;sfmc_setInboxMessagesNotificationHandlerDelegate:</a></code>
+</div>
+						</div>
+						
+
+						<a title="Location Methods" name="task_Location Methods"></a>
+						<h2 class="task-title">Location Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sfmc_locationEnabled" title="sfmc_locationEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_locationEnabled">&ndash;&nbsp;sfmc_locationEnabled</a></code>
 </h3>
 
 	<div class="method-info">
@@ -3480,28 +3315,21 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKInboxMessagesNotificationHandlerDelegate.html">MarketingCloudSDKInboxMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an Inbox payload as part of a push notification</p>
+				<p>Determines the state of Location Services based on developer setting and OS-level permission. This is the preferred method for checking for location state.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_setInboxMessagesNotificationHandlerDelegate:(id&lt;MarketingCloudSDKInboxMessagesNotificationHandlerDelegate&gt; _Nullable)<em>delegate</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_locationEnabled</code></div>
 
 		    
 			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>the class implementing sfmc_didReceiveInboxMessagesNotificationWithContents:</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
 
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A boolean value reflecting if location services are enabled (i.e. authorized) or not.</p>
+			</div>
 			
 
 			
@@ -3509,7 +3337,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKInboxMessagesNotificationHandlerDelegate.html">MarketingCloudSDKInboxMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an Inbox payload as part of a push notification</p>
+				<p>Determines the state of Location Services based on developer setting and OS-level permission. This is the preferred method for checking for location state.</p>
 			</div>
 			
 
@@ -3520,23 +3348,15 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
 			</div>
 			
 			
 		</div>
 	</div>
-</div>
-						</div>
-						
-
-						<a title="CloudPageMessages Methods" name="task_CloudPageMessages Methods"></a>
-						<h2 class="task-title">CloudPageMessages Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_setCloudPageMessagesNotificationHandlerDelegate:" title="sfmc_setCloudPageMessagesNotificationHandlerDelegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setCloudPageMessagesNotificationHandlerDelegate:">&ndash;&nbsp;sfmc_setCloudPageMessagesNotificationHandlerDelegate:</a></code>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_startWatchingLocation" title="sfmc_startWatchingLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_startWatchingLocation">&ndash;&nbsp;sfmc_startWatchingLocation</a></code>
 </h3>
 
 	<div class="method-info">
@@ -3546,26 +3366,14 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate.html">MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an CloudPage payload as part of a push notification</p>
+				<p>Use this method to initiate Location Services through the MobilePush SDK.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_setCloudPageMessagesNotificationHandlerDelegate:(id&lt;MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate&gt; _Nullable)<em>delegate</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_startWatchingLocation</code></div>
 
 		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>the class implementing sfmc_didReceiveCloudPageMessagesNotificationWithContents:</p></td>
-					</tr>
-				
-				</table>
-			</div>
 			
 
 			
@@ -3575,7 +3383,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate.html">MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate</a> protocol) to implment a handler for an CloudPage payload as part of a push notification</p>
+				<p>Use this method to initiate Location Services through the MobilePush SDK.</p>
 			</div>
 			
 
@@ -3586,7 +3394,150 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+CloudPageMessages.h</code></p>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_stopWatchingLocation" title="sfmc_stopWatchingLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_stopWatchingLocation">&ndash;&nbsp;sfmc_stopWatchingLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to disable Location Services through the MobilePush SDK.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_stopWatchingLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to disable Location Services through the MobilePush SDK.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_watchingLocation" title="sfmc_watchingLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_watchingLocation">&ndash;&nbsp;sfmc_watchingLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to determine if the SDK is actively monitoring location.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_watchingLocation</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A boolean value reflecting if the SDK has called startWatchingLocation.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to determine if the SDK is actively monitoring location.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_lastKnownLocation" title="sfmc_lastKnownLocation"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_lastKnownLocation">&ndash;&nbsp;sfmc_lastKnownLocation</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>A dictionary version of the last known Location. The dictionary will contain two keys, latitude and longitude, which are NSNumber wrappers around doubles. Use doubleValue to retrieve.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary&lt;NSString*,NSString*&gt; *_Nullable)sfmc_lastKnownLocation</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>A dictionary version of the last known Location. The dictionary will contain two keys, latitude and longitude, which are NSNumber wrappers around doubles. Use doubleValue to retrieve.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
 			</div>
 			
 			
@@ -3879,7 +3830,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 				
 					<tr>
 						<th scope="row" class="argument-name"><code>quantity</code></th>
-						<td><p>The count of items in the cart for this particular product (non-nil value; 0 permissable)</p></td>
+						<td><p>The count of items in the cart for this particular product (non-nil value; greater than zero)</p></td>
 					</tr>
 				
 					<tr>
@@ -4069,6 +4020,72 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 </div>
 						</div>
 						
+
+						<a title="URLHandling Methods" name="task_URLHandling Methods"></a>
+						<h2 class="task-title">URLHandling Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sfmc_setURLHandlingDelegate:" title="sfmc_setURLHandlingDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_setURLHandlingDelegate:">&ndash;&nbsp;sfmc_setURLHandlingDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to set a delegate implmenting the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_setURLHandlingDelegate:(id&lt;MarketingCloudSDKURLHandlingDelegate&gt; _Nullable)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>value A class adhering to the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a> and implementing the required method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to set a delegate implmenting the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+URLHandling.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
 					</div>
 					
 					
@@ -4081,7 +4098,7 @@ SFMC Contact model, then this attribute will be accepted by the SDK, but will be
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Salesforce Marketing Cloud. All rights reserved. Updated: 2018-05-15</p>
+						<p class="copyright">Copyright &copy; 2018 Salesforce Marketing Cloud. All rights reserved. Updated: 2018-10-22</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>

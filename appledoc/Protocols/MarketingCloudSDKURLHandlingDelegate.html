@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MarketingCloudSDKInboxMessagesDelegate Class Reference</title>
+	<title>MarketingCloudSDKURLHandlingDelegate Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -60,7 +60,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/initWithMarketingCloudSDK:tableView:dataSource:">- initWithMarketingCloudSDK:tableView:dataSource:</option>
+		<option value="//api/name/sfmc_handleURL:type:">- sfmc_handleURL:type:</option>
 		
 	</optgroup>
 	
@@ -77,19 +77,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MarketingCloudSDKInboxMessagesDelegate Class Reference</h1>
+					<h1 class="title">MarketingCloudSDKURLHandlingDelegate Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Inherits from</th>
+	<th>Conforms to</th>
 	<td>NSObject</td>
 </tr><tr>
-	<th>Conforms to</th>
-	<td>UITableViewDelegate</td>
-</tr><tr>
 	<th>Declared in</th>
-	<td>MarketingCloudSDK+InboxMessages.h</td>
+	<td>MarketingCloudSDK+URLHandling.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,7 +96,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The MarketingCloudSDKInboxMessagesDelegate is an interface object for Inbox support. It was designed to be used as a simple delegate for a UITableView, and can be allocated and used as such without too much other customization. It only supports tableView:didSelectRowAtIndexPath: to offer (along with the data source) a VERY simple inbox implementation.</p>
+						<p>These type constants are used by <a href="#//api/name/sfmc_handleURL:type:">sfmc_handleURL:type:</a> to indicate the MarketingCloud source of the URL</p>
 					</div>
 					
 					
@@ -115,9 +112,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/initWithMarketingCloudSDK:tableView:dataSource:" title="initWithMarketingCloudSDK:tableView:dataSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithMarketingCloudSDK:tableView:dataSource:">&ndash;&nbsp;initWithMarketingCloudSDK:tableView:dataSource:</a></code>
-</h3>
+	<a name="//api/name/sfmc_handleURL:type:" title="sfmc_handleURL:type:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_handleURL:type:">&ndash;&nbsp;sfmc_handleURL:type:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -126,12 +123,13 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
+				<p>This method, if implemented, can be called when a Alert+CloudPage, Alert+OpenDirect, Alert+Inbox or Inbox message is processed by the SDK.
+Implementing this method allows the application to handle the URL from Marketing Cloud data.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (id _Nullable)initWithMarketingCloudSDK:(MarketingCloudSDK *_Nonnull)<em>sdk</em> tableView:(UITableView *_Nonnull)<em>tableView</em> dataSource:(MarketingCloudSDKInboxMessagesDataSource *_Nonnull)<em>dataSource</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_handleURL:(NSURL *)<em>url</em> type:(NSString *_Nonnull)<em>type</em></code></div>
 
 		    
 			
@@ -140,18 +138,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>sdk</code></th>
-						<td><p>An instance of <a href="../Classes/MarketingCloudSDK.html">MarketingCloudSDK</a>.</p></td>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>value NSURL sent with the Location, CloudPage, OpenDirect or Inbox message</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>tableView</code></th>
-						<td><p>The UITableView used in the view controller. The delegate will &ldquo;own&rdquo; selection of the cells.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>dataSource</code></th>
-						<td><p>An instance of <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>, a class which implements a simple set of methods from the UITableViewDataSource protocol.</p></td>
+						<th scope="row" class="argument-name"><code>type</code></th>
+						<td><p>value NSInteger enumeration of the MobilePush source type of this URL</p></td>
 					</tr>
 				
 				</table>
@@ -159,18 +152,18 @@
 			
 
 			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>An instance of MarketingCloudSDKInboxMessagesDelegate, a class which implements a simple set of methods from the UITableViewDelegate protocol.</p>
-			</div>
-			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
+				<p>This method, if implemented, can be called when a Alert+CloudPage, Alert+OpenDirect, Alert+Inbox or Inbox message is processed by the SDK.
+Implementing this method allows the application to handle the URL from Marketing Cloud data.</p>
+
+<p>Prior to the MobilePush SDK version 6.0.0, the SDK would automatically handle these URLs and present them using a SFSafariViewController.</p>
+
+<p>Given security risks inherent in URLs and web pages (Open Redirect vulnerabilities, especially), the responsibility of processing the URL shall be held by the application implementing the MobilePush SDK. This reduces risk to the application by affording full control over processing, presentation and security to the application code itself.</p>
 			</div>
 			
 
@@ -181,7 +174,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
+				<p><code class="declared-in-ref">MarketingCloudSDK+URLHandling.h</code></p>
 			</div>
 			
 			
@@ -202,7 +195,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2018 Salesforce Marketing Cloud. All rights reserved. Updated: 2018-05-15</p>
+						<p class="copyright">Copyright &copy; 2018 Salesforce Marketing Cloud. All rights reserved. Updated: 2018-10-22</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
