@@ -1,5 +1,6 @@
 *.sw?
 _site
+_site/
 _pages
 .jekyll-metadata
 .DS_Store
