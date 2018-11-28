@@ -1,0 +1,13 @@
+// Example MarketingCloudSDKConfiguration json file
+[{
+  "name": "production",
+  "appid": "<app id from Marketing Cloud here>",
+  "accesstoken": "<access token from Marketing Cloud here>",
+  "marketing_cloud_server_url": "<server url from Marketing Cloud here>",
+  "mid": "<mid value from Marketing Cloud here>",
+  "etanalytics": true,
+  "pianalytics": true,
+  "location": true,
+  "inbox": true,
+  "useLegacyPiIdentifier": true
+  }]
