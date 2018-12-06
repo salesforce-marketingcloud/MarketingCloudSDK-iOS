@@ -305,6 +305,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated. When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.) Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.
+ Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.
 
  @param pushEnabled Set to YES to enable push notifications.
  */
@@ -312,8 +313,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  The current state of the developer's push enablement override
+ The current state of the pushEnabled flag in the SDK.
 
  @return returns a BOOL value of the developer's push enablement override.
+ @return returns a BOOL value of the current pushEnabled state.
  */
 - (BOOL)sfmc_pushEnabled;
 

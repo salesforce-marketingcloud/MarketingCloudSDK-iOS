@@ -15,6 +15,10 @@
 #import <MarketingCloudSDK/MarketingCloudSDK+Intelligence.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+InboxMessages.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Location.h>
+//TODO:IAM Only
+#ifdef INCLUDE_IAM
+#import <MarketingCloudSDK/MarketingCloudSDK+Events.h>
+#endif
 #import <MarketingCloudSDK/MarketingCloudSDK+Constants.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+URLHandling.h>
 #import <MarketingCloudSDK/MarketingCloudSDKConfigBuilder.h>

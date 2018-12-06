@@ -11,6 +11,28 @@
 @interface MarketingCloudSDK (Intelligence)
 
 /**
+ Set the identifier to associate with Predictive Intelligence data sent to Salesforce Marketing Cloud
+ 
+ The clear the value, pass a nil value.
+ 
+ Will trim leading and trailing whitespace from the string.
+ 
+ An identifier will persist until it is cleared or changed and will used to associate with all analytic events generated while set.
+ 
+ @param identifier The string you want to associate analytics with.
+ @return YES if set successfully.
+ */
+- (BOOL)sfmc_setPiIdentifier:( NSString * _Nullable)identifier;
+
+/**
+ Returns a read-only copy of the Analytics identity set
+ 
+ @return All attributes currently set.
+ */
+- (NSString * _Nullable)sfmc_piIdentifier;
+
+
+/**
  When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.
 
  @param inboxMessage a non-nil NSDictionary object representing an Inbox message

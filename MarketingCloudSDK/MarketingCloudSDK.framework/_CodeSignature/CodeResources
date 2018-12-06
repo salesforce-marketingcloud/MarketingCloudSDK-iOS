@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
-		/uYApCxgZKKL7UxHxU1kRv2DvIE=
+		+7smPueQ1noMhO82z05v2PZBsC0=
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
@@ -18,27 +18,27 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
-		rVs/4ELlW418FRTESX++Eqykito=
+		V5rR0pnsuZMvQuwdglwDD2JvKLw=
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
-		TRmaaWCMmXikQLgn4MEhnQnkmVA=
+		LJCXuCqkXIIwRq01Fu59C6zl+sk=
 		</data>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<data>
-		zu7CaxIDVK9Hf7PmqMHEPaqJ4bk=
+		6RVKGsS6Snbxth83S/WpGMhKDCw=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		skWub3RIO9MwigtNV0iB1wfXVB4=
+		DuWVUvFQQ1BLXBZPUxf7CP72WBY=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
-		4+yx2MJLkWpfd/VVBGEHAI9Bl84=
+		SgtIMuOhRVss2axnY4hLNF8SmPg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hbkA+3jp8L0DvT0KXJ9mYHpbjpw=
+		vHUvBmRCwC6JGnhhEP7qa/lQMBU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/uYApCxgZKKL7UxHxU1kRv2DvIE=
+			+7smPueQ1noMhO82z05v2PZBsC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			f3QKLOgUNbRzWC0oo6mp1vCyNgqkZOvI7tyX/ElwVbc=
+			jvhCI0PfATUeOh+EEY6+OgqELYPGZNz0KEZ3oNIwvLo=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
@@ -84,55 +84,55 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rVs/4ELlW418FRTESX++Eqykito=
+			V5rR0pnsuZMvQuwdglwDD2JvKLw=
 			</data>
 			<key>hash2</key>
 			<data>
-			nu2v4eb3iwgIYj7z+/iiXe+BIKZyL/kUx1ZKor7PG08=
+			h4XEEE8gdEnJB87jYQGQn17SzB6YXFO3O4UwkQZIK/4=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TRmaaWCMmXikQLgn4MEhnQnkmVA=
+			LJCXuCqkXIIwRq01Fu59C6zl+sk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Zn1QEs6zP/ByySq3nHnBwI7ZnAoo/E8BemAU9hBbaz4=
+			8URMD108yzOCrYyql7MJZ6it+U9xwQ0CmVGBZcwNAZI=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			zu7CaxIDVK9Hf7PmqMHEPaqJ4bk=
+			6RVKGsS6Snbxth83S/WpGMhKDCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			hI6TTNyzwG4gWa2rwf2LHo5WtU4CXSicyOHLB23ZImY=
+			b+3XW8tLZ2c2l8rMFg1iiATQLG8Y2quCg31Ht/TJUas=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			skWub3RIO9MwigtNV0iB1wfXVB4=
+			DuWVUvFQQ1BLXBZPUxf7CP72WBY=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCo1fFFUtcST8gp9lHOxcRAJZUAeUQPdNaB3BTxZywQ=
+			990DO48QDyznKHbDGv7lGKKQ486U5bxJCA79zx9l3jg=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4+yx2MJLkWpfd/VVBGEHAI9Bl84=
+			SgtIMuOhRVss2axnY4hLNF8SmPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			i2dF8DKDYQ1JH8JNsH46q9PVeEdP0kHDxv1++YBhoPI=
+			VQ4rDaVzd4H6QqpDqMVsGRIc2UNXThafNtagF1ZutZM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -149,7 +149,7 @@
 	</dict>
 	<key>rules</key>
 	<dict>
-		<key>^</key>
+		<key>^.*</key>
 		<true/>
 		<key>^.*\.lproj/</key>
 		<dict>
@@ -180,24 +180,12 @@
 			<key>weight</key>
 			<real>11</real>
 		</dict>
-		<key>^</key>
-		<dict>
-			<key>weight</key>
-			<real>20</real>
-		</dict>
 		<key>^(.*/)?\.DS_Store$</key>
 		<dict>
 			<key>omit</key>
 			<true/>
 			<key>weight</key>
 			<real>2000</real>
-		</dict>
-		<key>^(Frameworks|SharedFrameworks|PlugIns|Plug-ins|XPCServices|Helpers|MacOS|Library/(Automator|Spotlight|LoginItems))/</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^.*</key>
 		<true/>
@@ -233,13 +221,6 @@
 			<true/>
 			<key>weight</key>
 			<real>20</real>
-		</dict>
-		<key>^[^/]+$</key>
-		<dict>
-			<key>nested</key>
-			<true/>
-			<key>weight</key>
-			<real>10</real>
 		</dict>
 		<key>^embedded\.provisionprofile$</key>
 		<dict>
