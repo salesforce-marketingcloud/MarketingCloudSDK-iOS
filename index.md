@@ -16,7 +16,7 @@ Send your first push notification to test your initial SDK setup.
 1. Implement optional features
 Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
     * [Add custom sounds, media, custom keys, and interactions]({{ site.baseurl }}/push-notifications/push-notifications.html) -- Use these features to further customize push notifications for your apps.
-    * Add [attributes]({{ site.baseurl }}/user-data/attributes.html) and [tags]({{ site.baseurl }}/user-data/tags.html) -- Enhance your ability to segment your push message audiences.
+    * Add [attributes]({{ site.baseurl }}/sdk-implementation/user-data.html) and [tags]({{ site.baseurl }}/sdk-implementation/user-data.html) -- Enhance your ability to segment your push message audiences.
     * [Add predictive intelligence]({{ site.baseurl }}/analytics/personalization-collect.html) using Personalization Builder -- Track cart and cart conversions. Purchase this feature separately.
     * Add other features -- Send push notifications along with your [inbox messages]({{ site.baseurl }}/inbox/inbox.html), use OpenDirect for [deep linking]({{ site.baseurl }}/opendirect/opendirect.html), and trigger location-based messages with [location and beacon messaging]({{ site.baseurl }}/location/geolocation-overview.html).
 
