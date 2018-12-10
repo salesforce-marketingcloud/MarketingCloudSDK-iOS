@@ -46,7 +46,7 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 6.1.0
 _Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
 
-* **Implemented Location Message Segmentation** - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed.
+* **Implemented Location Message Segmentation** - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
 
 * **Implemented Predictive Intelligence identifier configuration options and APIs** - Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.
 

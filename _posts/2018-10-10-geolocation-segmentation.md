@@ -15,7 +15,7 @@ When the device breaks a geofence, or is in proximity to a Bluetooth beacon, the
 
 ### Implementation:
 
-{%- include gist.html names="Obj-C,Swift" gists="https://gist.github.com/db2005951ce433fcdc5f477b39de82f5.js,https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js" -%}
+{% include gist.html sectionId="locationSegmentation" names="Obj-C,Swift" gists="https://gist.github.com/db2005951ce433fcdc5f477b39de82f5.js,https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js" %}
 
 See _MarketingCloudSDK+Location.h_ for more information.
 
