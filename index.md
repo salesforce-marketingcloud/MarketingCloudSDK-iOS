@@ -52,6 +52,11 @@ _Released January XX, 2019, correlating with the Marketing Cloud January 2019 re
 
 * **iOS File Protection - Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
 
+#### Version 6.0.1
+_Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
+
+* **Analytics** -- Addressed an issue sending analytics to Predictive Intelligence if the `MID` configuration value is used.
+* **Networking** --Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.
 
 #### Version 6.0.0
 _Released October 22, 2018, correlating with the Marketing Cloud October 2018 release._
