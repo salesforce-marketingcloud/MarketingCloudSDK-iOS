@@ -50,7 +50,7 @@ _Released January XX, 2019, correlating with the Marketing Cloud January 2019 re
 
 * **Implemented Predictive Intelligence identifier configuration options and APIs** - Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.
 
-* **iOS File Protection - Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
+* **iOS File Protection** - Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
 
 #### Version 6.0.1
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
