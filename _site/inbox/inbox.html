@@ -211,9 +211,17 @@
     <h2>Inbox</h2>
 </div>
 
-<p>Inbox message functionality allows you to send alerts along with an inbox message or just an inbox message.</p>
+<p>The SDK simplifies the incorporation of inbox functionality into your application.  Convenience methods for refreshing the inbox, getting, reading and deleting messages can be found in the <a href="/appledoc/Classes/MarketingCloudSDK.html#task_InboxMessages%20Methods">InboxMessages Methods</a>.</p>
 
-<p>For Inbox-only messages, the MarketingCloudSDK downloads new messages each time your app comes into the foreground or any time you ask the SDK to refresh messages.</p>
+<p>All active Inbox messages are downloaded to the device each time the application is brought to the foreground.</p>
+
+<p>Messages can be delivered silently to the inbox with an <code class="highlighter-rouge">Inbox Only</code> message or be accompanied by a push notification using an <code class="highlighter-rouge">Inbox+Alert</code> message.</p>
+
+<p>Inbox+Alert messages are similar to Inbox Only messages, but additionally show a notification when they are received on the device.  See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for details on how to handle these notifications.</p>
+
+<p>Please see <a href="/analytics/analytics.html#track-inbox-message-opens">Analytics</a> for details regarding recording Inbox message analytics.</p>
+
+<h3 id="display-implementation">Display Implementation</h3>
 
 <p>If your application includes basic inbox UI requirements, consider using the built-in support of MarketingCloudSDK.</p>
 
@@ -226,31 +234,6 @@
 <script src="https://gist.github.com/4e6c3910935f6ccab2845091837d6474.js"></script></p>
 
 <p>For additional control, presentation, and usability, implement your own datasource and delegate using the support offered by the SDK.</p>
-
-<p>The SDK provides many additional methods to fully customize the behavior of your UITableView.</p>
-
-<ul>
-  <li>To populate your own datasource array, use sfmc_getAllMessages to return messages from Marketing Cloud. Messages are dictionaries of attributes and can be inspected to determine what information to use in your user interface.</li>
-  <li>To mark a message as read, use -sfmc_markMessageRead:</li>
-  <li>To reload messages from the server, use sfmc_refreshMessages</li>
-</ul>
-
-<h2 id="track-inbox-message-opens">Track Inbox Message Opens</h2>
-
-<p>You can also track analytics for Inbox messages. Call trackInboxOpenEvent() to send the open analytic value to Marketing Cloud. We automatically provide analytic information for message downloads. Call sfmc_trackMessageOpened: with an inbox message dictionary to record the analytic.</p>
-
-<script src="https://gist.github.com/b4117533046f2f86e917e1d8eda4f9e6.js"></script>
-
-<script src="https://gist.github.com/63c21b8d358e0e86597dea492cca74e7.js"></script>
-
-<p>See MarketingCloudSDK+InboxMessages.h for more information.</p>
-
-<h2 id="cloudpage-alerts">CloudPage Alerts</h2>
-<p>The CloudPage Inbox customized push message (Alert + Inbox) contains a URL in the payload. Marketing Cloud must enable the account using this functionality with access to both MobilePush and CloudPages to successfully create and send CloudPage push messages.</p>
-
-<p>Enable inbox in your configuration file using the inbox:true value.</p>
-
-<p>The MarketingCloudSDK can pass this URL to your application to handle according to your situation. See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</p>
 
 
                     </div>

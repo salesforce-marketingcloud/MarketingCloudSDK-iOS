@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>MarketingCloudSDK iOS (v6.1.0) : README</title>
+        <title>MarketingCloudSDK iOS (v6.1.0) : Home</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -221,11 +221,11 @@
 Integrate the SDK into your app and configure the SDK to send push notifications.</li>
   <li><a href="/get-started/test-first-push.html">Test your setup</a>
 Send your first push notification to test your initial SDK setup.</li>
-  <li>Implement optional features
-Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
+  <li>Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
     <ul>
       <li><a href="/push-notifications/push-notifications.html">Add custom sounds, media, custom keys, and interactions</a> – Use these features to further customize push notifications for your apps.</li>
-      <li>Add <a href="/user-data/attributes.html">attributes</a> and <a href="/user-data/tags.html">tags</a> – Enhance your ability to segment your push message audiences.</li>
+      <li>Use a <a href="/sdk-implementation/user-data.html#contact-key">contact key</a> to set the unique identifier used to aggregate a contact’s devices within Marketing Cloud. Set the contact key to a specific value provided by your customer or to another unique identifier for the contact, such as mobile number, email address, customer number, or another value.</li>
+      <li>Add <a href="/sdk-implementation/user-data.html#attributes">attributes</a> and <a href="/sdk-implementation/user-data.html#tags">tags</a> – Enhance your ability to segment your push message audiences.</li>
       <li><a href="/analytics/personalization-collect.html">Add predictive intelligence</a> using Personalization Builder – Track cart and cart conversions. Purchase this feature separately.</li>
       <li>Add other features – Send push notifications along with your <a href="/inbox/inbox.html">inbox messages</a>, use OpenDirect for <a href="/opendirect/opendirect.html">deep linking</a>, and trigger location-based messages with <a href="/location/geolocation-overview.html">location and beacon messaging</a>.</li>
     </ul>
@@ -245,32 +245,50 @@ Implement additional optional features of the SDK to take full advantage of Sale
 
 <ul>
   <li>The MarketingCloudSDK for iOS can be found on <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS">GitHub</a> and <a href="https://cocoapods.org/pods/MarketingCloudSDK">CocoaPods</a>.</li>
-  <li>The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&amp;type=5" target="_blank">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.</li>
-  <li>The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos" target="_blank">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the MarketingCloudSDK.</li>
+  <li>The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&amp;type=5">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.</li>
+  <li>The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the MarketingCloudSDK.</li>
+  <li>Review the <a href="/appledoc/index.html">Appledocs</a> for the SDK.</li>
   <li><a href="http://pub.s1.exacttarget.com/2ujjacpet3t">Sign up for email updates about the iOS MarketingCloudSDK</a>.<br /></li>
   <li>View the <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-Android/">Android SDK docs</a>.</li>
 </ul>
 
 <h2 id="hybrid-mobile-apps">Hybrid Mobile Apps</h2>
-<p>We provide support for plugins, such as Cordova, to implement the MobilePush SDK for your iOS applications.</p>
+
+<p>We provide support for plugins, such as Cordova, to implement the MobilePush SDK for your Android applications.</p>
+
 <ul>
-  <li><a href="https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin">Cordova Plugin</a></li>
+  <li><a href="https://www.npmjs.com/package/cordova-plugin-marketingcloudsdk">Cordova Plugin</a></li>
 </ul>
+
+<h2 id="deprecations">Deprecations</h2>
+
+<p>We remove deprecated methods from the SDK two releases after the initial deprecation announcement.</p>
 
 <h2 id="release-history">Release History</h2>
 
-<p>For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a></p>
+<p>For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a></p>
 
 <h4 id="version-610">Version 6.1.0</h4>
 <p><em>Released January XX, 2019, correlating with the Marketing Cloud January 2019 release.</em></p>
 
 <ul>
   <li>
-    <p><strong>Implemented Location Message Segmentation</strong> - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed.</p>
+    <p><strong>Implemented Location Message Segmentation</strong> - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See <a href="/location/geolocation-segmentation.html">Location Message Segmentation</a> for details.</p>
   </li>
   <li>
     <p><strong>Implemented Predictive Intelligence identifier configuration options and APIs</strong> - Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.</p>
   </li>
+  <li>
+    <p><strong>iOS File Protection</strong> - Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication’s <code class="highlighter-rouge">isProtectedDataAvailable</code> returns NO, configuration will fail.</p>
+  </li>
+</ul>
+
+<h4 id="version-601">Version 6.0.1</h4>
+<p><em>Released December 5, 2018, correlating with the Marketing Cloud 215.1 release.</em></p>
+
+<ul>
+  <li><strong>Analytics</strong> – Addressed an issue sending analytics to Predictive Intelligence if the <code class="highlighter-rouge">MID</code> configuration value is used.</li>
+  <li><strong>Networking</strong> –Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.</li>
 </ul>
 
 <h4 id="version-600">Version 6.0.0</h4>
