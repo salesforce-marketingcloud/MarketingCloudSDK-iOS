@@ -211,25 +211,62 @@
     <h2>Add Support for iOS 9</h2>
 </div>
 
-<p>iOS 9 is supported in the MarketingCloudSDK framework, under armv7, armv7s and arm64 architectures.</p>
+<p>The MarketingCloudSDK framework supports iOS 9 under armv7, armv7s and arm64 architectures.</p>
 
-<p>Supporting iOS 9 when building with Xcode 9 and later requires conditional coding via Apple’s <code class="highlighter-rouge">available</code> attributes.</p>
+<p>To support iOS 9, build your app with Xcode 9 or later. Use conditional coding via Apple’s <code class="highlighter-rouge">available</code> attributes when you set up push notification handling and when you register for push notifications during SDK configuration.</p>
 
-<p>Specifically, conditional coding would be necessary in SDK configuration (registering for push notifications) and push notification handling.</p>
+<h3 id="register-for-push-notifications">Register for Push Notifications</h3>
 
-<h3 id="push-registration">Push registration</h3>
+<p>To register for push notifications on iOS 9, use the <code class="highlighter-rouge">registerUserNotificationSettings</code> and <code class="highlighter-rouge">registerForRemoteNotifications</code> methods of <code class="highlighter-rouge">UIApplication</code>. Implement <code class="highlighter-rouge">UNUserNotificationCenter</code> with conditional code, as shown in this code sample.</p>
 
-<p>Registering for push on iOS 9 requires using the <code class="highlighter-rouge">registerUserNotificationSettings</code> and <code class="highlighter-rouge">registerForRemoteNotifications</code> methods of <code class="highlighter-rouge">UIApplication</code>. Note the conditional handling of the usage of <code class="highlighter-rouge">UNUserNotificationCenter</code> here.</p>
+<h4 id="example-registration">Example: Registration</h4>
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/9adf5dafa2ef98c9484aaa7a66d7668b.js"></script>
+<div class="tab" id="registration">
+  
+  <button class="tablinks" id="registrationObj-CButton" onclick="openLanguage(event, 'registration', 'registrationObj-C')">Obj-C</button>
+  
+  <button class="tablinks" id="registrationSwiftButton" onclick="openLanguage(event, 'registration', 'registrationSwift')">Swift</button>
+  
+</div>
+<div id="registrationGists">
+   
+  <div id="registrationObj-C" class="tabcontent">
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/9adf5dafa2ef98c9484aaa7a66d7668b.js"></script>
+  </div>
+    
+  <div id="registrationSwift" class="tabcontent">
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/5aabbd1337fab819109e427460e26ec7.js"></script>
+  </div>
+     
+</div>
+<script>document.getElementById("registrationObj-CButton").click()</script>
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/5aabbd1337fab819109e427460e26ec7.js"></script>
+<h3 id="handle-push-notifications">Handle Push Notifications</h3>
 
-<h3 id="handle-push-notifications">Handle push notifications</h3>
+<p>To handle push notifications on iOS 9, implement <code class="highlighter-rouge">-application:didReceiveRemoteNotification:fetchCompletionHandler</code> with conditional code, as shown in this code sample.</p>
 
-<p>You must implement <code class="highlighter-rouge">-application:didReceiveRemoteNotification:fetchCompletionHandler</code> with conditional code for iOS 9.
-<script src="https://gist.github.com/sfmc-mobilepushsdk/5268061311a34b96a33c7cad97d237a3.js"></script>
-<script src="https://gist.github.com/sfmc-mobilepushsdk/e0a96e7f956cc33c1d16f9e99e313500.js"></script></p>
+<h4 id="example-handling">Example: Handling</h4>
+
+<div class="tab" id="handling">
+  
+  <button class="tablinks" id="handlingObj-CButton" onclick="openLanguage(event, 'handling', 'handlingObj-C')">Obj-C</button>
+  
+  <button class="tablinks" id="handlingSwiftButton" onclick="openLanguage(event, 'handling', 'handlingSwift')">Swift</button>
+  
+</div>
+<div id="handlingGists">
+   
+  <div id="handlingObj-C" class="tabcontent">
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/5268061311a34b96a33c7cad97d237a3.js"></script>
+  </div>
+    
+  <div id="handlingSwift" class="tabcontent">
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/e0a96e7f956cc33c1d16f9e99e313500.js"></script>
+  </div>
+     
+</div>
+<script>document.getElementById("handlingObj-CButton").click()</script>
+
 
 
                     </div>

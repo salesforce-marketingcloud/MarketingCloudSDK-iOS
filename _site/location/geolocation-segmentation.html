@@ -218,13 +218,27 @@
 <p>When the device breaks a geofence, or is in proximity to a Bluetooth beacon, the SDK can trigger a call back to your mobile app to evaluate if that message should be shown. Your application can apply a variety of criteria in determining if the message should be shown, including using information within the MobilePush message itself.</p>
 
 <h3 id="implementation">Implementation:</h3>
-<div class="tab" id="contactkey"><button class="tablinks" id="contactkeyObj-CButton" onclick="openLanguage(event, 'contactkey', 'contactkeyObj-C')">Obj-C</button><button class="tablinks" id="contactkeySwiftButton" onclick="openLanguage(event, 'contactkey', 'contactkeySwift')">Swift</button></div>
-<div id="contactkeyGists"><div id="contactkeyObj-C" class="tabcontent">
+
+<div class="tab" id="locationSegmentation">
+  
+  <button class="tablinks" id="locationSegmentationObj-CButton" onclick="openLanguage(event, 'locationSegmentation', 'locationSegmentationObj-C')">Obj-C</button>
+  
+  <button class="tablinks" id="locationSegmentationSwiftButton" onclick="openLanguage(event, 'locationSegmentation', 'locationSegmentationSwift')">Swift</button>
+  
+</div>
+<div id="locationSegmentationGists">
+   
+  <div id="locationSegmentationObj-C" class="tabcontent">
     <script src="https://gist.github.com/db2005951ce433fcdc5f477b39de82f5.js"></script>
-  </div><div id="contactkeySwift" class="tabcontent">
+  </div>
+    
+  <div id="locationSegmentationSwift" class="tabcontent">
     <script src="https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js"></script>
-  </div></div>
-<script>document.getElementById("contactkeyObj-CButton").click()</script>
+  </div>
+     
+</div>
+<script>document.getElementById("locationSegmentationObj-CButton").click()</script>
+
 <p>See <em>MarketingCloudSDK+Location.h</em> for more information.</p>
 
 <h3 id="some-potential-use-cases">Some potential use cases:</h3>
