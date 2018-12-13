@@ -1,23 +1,28 @@
 ---
 layout: page
 title: "Interactive Notifications"
-subtitle: "Display Interactive Notification Messages"
+subtitle: "Display Interactive Notifications"
 category: push-notifications
 date: 2015-05-14 12:00:00
 order: 3
 ---
-Add buttons called interactive notifications to push notifications in your mobile app. Marketing Cloud sends the category name for these interactive notifications in the message payload. This feature requires [enablement](http://help.exacttarget.com/en/documentation/mobilepush/administering_your_mobilepush_account/apps_and_optional_settings_in_your_mobilepush_account/#interactiveNotifications) in the Marketing Cloud application.
+Use interactive notifications to add buttons to push notifications from your mobile app. Marketing Cloud sends the category name for these interactive notifications in the message payload.
 
-This sample code applies to the AppDelegate.m didFinishLaunchingWithOptions application delegate mention. Modify this sample code for your specific circumstances.
+1. To set up interactive notifications for your app, use the Implementation sample code as a guide and modify for your situation.
+ > The sample code applies to the `AppDelegate.m` `didFinishLaunchingWithOptions` application delegate mention.
+ > The sample code shows how to create a category named "Example". When you send this category with the payload from Marketing Cloud, the notification displays in the notification center with buttons.
 
-This sample shows how to create a category named "Example". When you send this category with the payload from Marketing Cloud, the notification displays in the notification center with the buttons shown here.
+1. To check if your action triggered and to take action, examine the push notification’s payload in your push handler. Use the Handle Action sample code as a guide.
+1. After setup, ask the marketer to enable interactive notifications on the MobilePush Administration page in Marketing Cloud.
 
-**Implementation**
-<script src="https://gist.github.com/sfmc-mobilepushsdk/4667a6f0966cd5e28aadfa17d4b010d7.js"></script>
-<script src="https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js"></script>
+#### Example: Implementation
+{% include gist.html sectionId="implementation" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/4667a6f0966cd5e28aadfa17d4b010d7.js,https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js" %}
 
-**Handle Action**
+#### Example: Handle Action
 
-In your push handler, examine the push notification's payload to see if your action triggered and take action.
-<script src="https://gist.github.com/997077403e1152972978cc13a243d07d.js"></script>
-<script src="https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js"></script>
+In your push handler, examine the push notification's payload to see if your action triggered and if your application performed the action.
+
+{% include gist.html sectionId="action" names="Obj-C,Swift" gists="https://gist.github.com/997077403e1152972978cc13a243d07d.js,https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js" %}
+
+### Related Items
+* [Interactive Notifications](https://help.salesforce.com/articleView?id=mc_mp_interactive_notifications.htm&type=5#interactiveNotifications)
