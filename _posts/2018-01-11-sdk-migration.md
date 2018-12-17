@@ -1,22 +1,27 @@
 ---
 layout: page
 title: "SDK Migration to Version 5.x"
-subtitle: "Migrate to New SDK from Previous Version"
+subtitle: "Migrate Existing App to SDK Version 5.x"
 category: sdk-implementation
 date: 2018-01-11 12:00:00
 order: 10
 ---
 
-Version 5.0.0 of the MarketingCloudSDK (formerly JB4ASDK) is a new iOS framework-based SDK. The MarketingCloudSDK uses a model and method naming convention that is incompatible with the model and methods used in the JB4ASDK and is therefore not a drop-in replacement. Review and familiarize yourself with all of the documentation on using and configuring the MarketingCloudSDK before attempting an application migration.
+Starting with version 5.0.0, the iOS MarketingCloudSDK replaces the iOS Journey Builder for Apps, or JB4A, SDK. The model and method-naming conventions are incompatible between the JB4A SDK and the MarketingCloudSDK. Do not use both the JB4A SDK and MarketingCloudSDK simultaneously.
 
-To migrate an existing application to the MarketingCloudSDK, change your application to follow the MarketingCloudSDK model. This step involves changing your application to initialize the MarketingCloudSDK with MarketingCloudSDK.sharedInstance().sfmc_configure instead of the JB4ASDK [ETPush pushManager] configureSDKWithAppID method. Your application contains a single instance of the MarketingCloudSDK. Reference that instance anytime via the MarketingCloudSDK.sharedInstance() singleton.
+Because this is not a simple drop-in replacement, review how to use and configure the MarketingCloudSDK before attempting an application migration.
 
-In addition to changing the configuration method, you must change the use of any other JB4ASDK method to the equivalent MarketingCloudSDK method. MarketingCloudSDK methods use similar method names as JB4ASDK but all methods are prefixed with sfmc_ to avoid namespace collisions.
+To migrate an existing application to the MarketingCloudSDK, update your application to follow the MarketingCloudSDK model:
 
-When configuring the MarketingCloudSDK, the configuration process is initiated by a call to MarketingCloudSDK.sharedInstance().sfmc_configure. The process does not complete until the completion handler is called. If the call to MarketingCloudSDK.sharedInstance().sfmc_configure returns false, an error occurred during the configuration. The process does not call the completion handler and the MarketingCloudSDK is not ready for use. In this case, any returned error parameter contains an NSError object. Examine the returned NSError object for details on the failure.
+1. Update your application to initialize the MarketingCloudSDK with `MarketingCloudSDK.sharedInstance().sfmc_configure` instead of the `JB4ASDK [ETPush pushManager] configureSDKWithAppID` method.
+1. Check the error parameter in the completion handler for any errors.
+> The `MarketingCloudSDK.sharedInstance().sfmc_configure` completion handler receives a call asynchronously on a worker thread. If an error occurs during the asynchronous configuration portion, the call returns an NSError object in the error parameter if one is supplied, and the MarketingCloudSDK is not ready to use. Examine the returned NSError object for details on the failure before using the MarketingCloudSDK.
 
-The MarketingCloudSDK.sharedInstance().sfmc_configure completion handler receives a call asynchronously on a worker thread, but you must also check the error parameter in the completion handler for success before using the MarketingCloudSDK. If an error occurred during the asynchronous configuration portion, the call returns an NSError object in the error parameter if one is supplied and the MarketingCloudSDK is not ready for use. Examine the returned NSError object for details on the failure.
+1. Change all JB4A SDK methods to the equivalent MarketingCloudSDK methods found in the Appledocs headers.
+> MarketingCloudSDK method names are similar to the JB4A SDK method names but contain the prefix sfmc_ to avoid namespace collisions.
 
-Once your migration to the MarketingCloudSDK is complete, remove all JB4ASDK files and references in your project.
+1. After migration is complete, remove all JB4A SDK files and references in your project.
 
-> Do not use both the JB4ASDK and MarketingCloudSDK simultaneously.
+Your application contains a single instance of the MarketingCloudSDK. Reference that instance any time via the `MarketingCloudSDK.sharedInstance()` singleton.
+
+The MarketingCloudSDK configuration process is initiated by a call to `MarketingCloudSDK.sharedInstance().sfmc_configure`. The process is not complete until the completion handler is called. If the call to `MarketingCloudSDK.sharedInstance().sfmc_configure` returns false, an error occurred during the configuration, the process does not call the completion handler, and the MarketingCloudSDK is not ready to use. Examine the returned `NSError` object in any returned error parameter for details on the failure.
