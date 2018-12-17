@@ -50,14 +50,16 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
-#### Version 6.1.0
+#### Version 6.1.1
 _Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
 
-* **Implemented Location Message Segmentation** - Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
+* **Implemented Location Message Segmentation** -- Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
 
-* **Implemented Predictive Intelligence identifier configuration options and APIs** - Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.
+* **Implemented Predictive Intelligence identifier configuration options and APIs** -- Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.
 
-* **iOS File Protection** - Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
+* **iOS File Protection** -- Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
+
+* **Predictive Intelligence** -- Addressed issues related to sending Predictive Intelligence analytics if the `MID` configuration value is used.
 
 #### Version 6.0.1
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
