@@ -48,3 +48,5 @@ Use the `sfmc_setApplicationControlsBadging` method in your configuration builde
 Or, in Objective-C, use the builder with: `sfmc_setApplicationControlsBadging:@(YES)`
 
 Once your application takes ownership of badging during SDK configuration, the MobilePush SDK will no longer set badges reflecting Inbox message unread count.
+
+For more information about configuring the SDK, see [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) for more information.
