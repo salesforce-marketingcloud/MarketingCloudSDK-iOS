@@ -8,5 +8,6 @@
 "etanalytics": true,
 "pianalytics": true,
 "location": true,
-"inbox": true
+"inbox": true,
+"uselegacypiidentifier": false
 }]
