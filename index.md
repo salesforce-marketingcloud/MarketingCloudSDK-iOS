@@ -50,6 +50,11 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
+#### Version 6.2.0
+_Released April XX, 2019, correlating with the Marketing Cloud April 2019 release._
+
+* **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
+
 #### Version 6.1.1
 _Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
 
