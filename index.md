@@ -61,6 +61,8 @@ _Released January XX, 2019, correlating with the Marketing Cloud January 2019 re
 
 * **Predictive Intelligence** -- Addressed issues related to sending Predictive Intelligence analytics if the `MID` configuration value is used.
 
+* **Location Messaging** -- Addressed an issue related to geofence and beacon messages which, when reloaded from the server, could cause a display-limited message to be shown again - contrary to the message setting.
+
 #### Version 6.0.1
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
 
