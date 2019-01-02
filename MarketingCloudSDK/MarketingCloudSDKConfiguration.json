@@ -1,11 +1,14 @@
- [{
-  "name": "production",
-  "appid": "<appid from Marketing Cloud here>",
-  "accesstoken": "<accesstoken from Marketing Cloud here>",
-  "marketing_cloud_server_url": "<server url from Marketing Cloud here>",
-  "mid": "<mid value from Marketing Cloud here>",
-  "etanalytics": true,
-  "pianalytics": true,
-  "location": true,
-  "inbox": true
-  }]
+[{
+"name": "production",
+"appid": "<appid from Marketing Cloud here>",
+"accesstoken": "<accesstoken from Marketing Cloud here>",
+"applicationcontrolsbadging":false,
+"marketing_cloud_server_url": "<server url from Marketing Cloud here>",
+"mid": "<mid value from Marketing Cloud here>",
+"etanalytics": true,
+"pianalytics": true,
+"location": true,
+"inbox": true,
+"uselegacypiidentifier": true
+}]
+
