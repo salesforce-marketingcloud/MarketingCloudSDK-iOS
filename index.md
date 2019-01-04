@@ -54,8 +54,9 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 _Released April XX, 2019, correlating with the Marketing Cloud April 2019 release._
 
 * **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
+* **Delay Registration until Contact Key is Set** -- The SDK now offers a configuration value to allow for registrations to the Marketing Cloud to be delayed until a contact key has been set via `sfmc_setContactKey:`. See [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
-#### Version 6.1.1
+#### Version 6.1.2
 _Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
 
 * **Implemented Location Message Segmentation** -- Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
