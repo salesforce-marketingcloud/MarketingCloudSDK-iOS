@@ -65,4 +65,4 @@ For a complete list of information that the SDK has and it's current state, you 
 
 The SDK will output a JSON string like this:
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/63d6ce621fb3130bc52d27fd67e42ec6.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/7d1961dd86d5dbde2552293490257505.js"></script>
