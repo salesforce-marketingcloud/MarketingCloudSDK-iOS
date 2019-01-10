@@ -43,6 +43,13 @@ We provide support for plugins, such as Cordova, to implement the MobilePush SDK
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
 
+#### Version 6.0.1
+_Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
+
+* **Analytics** -- Addressed an issue sending analytics to Predictive Intelligence if the `MID` configuration value is used.
+* **Networking** --Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.
+
+
 #### Version 6.0.0
 _Released October 22, 2018, correlating with the Marketing Cloud October 2018 release._
 
