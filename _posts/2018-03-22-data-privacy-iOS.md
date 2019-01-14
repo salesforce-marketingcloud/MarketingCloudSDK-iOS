@@ -28,6 +28,7 @@ This mode completely disables these functions for the lifecycle of your applicat
 * Inbox
 * Geofence and beacon messaging
 * Configuration changes
+* In-App Messaging
 
 For your contact to use Marketing Cloud services again, they must delete and reinstall your application on their mobile device. The MobilePush SDK must then be configured for usage by that contact.
 
@@ -51,6 +52,7 @@ This mode completely disables this functionality when the contact is in a restri
 * Inbox
 * Geofence and beacon messaging
 * Configuration changes
+* In-App Messaging
 
 If the contact moves off the restriction state and is again usable, the SDK receives a notification of the change in state, either via a silent push notification or when your application comes to the foreground. This change automatically reconfigures the SDK for use, based on your last-used configuration settings.
 
@@ -65,6 +67,7 @@ This mode completely disables behavioral analytic tracking, and geofence and bea
 * User events
 * Message open events
 * App open and close events
+* In-App Message events
 
 Push notifications and Inbox functionality continue to work. The SDK can also continue to change registration attributes, such as tags and attributes.
 
