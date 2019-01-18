@@ -50,8 +50,8 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
-#### Version 6.1.1
-_Released January XX, 2019, correlating with the Marketing Cloud January 2019 release._
+#### Version 6.1.2
+_Released February 11, 2019, correlating with the Marketing Cloud January 2019 release._
 
 * **Implemented Location Message Segmentation** -- Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
 
