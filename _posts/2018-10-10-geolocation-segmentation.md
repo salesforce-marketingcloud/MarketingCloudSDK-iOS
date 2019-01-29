@@ -22,4 +22,4 @@ Your app can apply criteria, including information within the MobilePush message
 {% include gist.html sectionId="locationSegmentation" names="Obj-C,Swift" gists="https://gist.github.com/db2005951ce433fcdc5f477b39de82f5.js,https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js" %}
 
 #### Related Items
-* _MarketingCloudSDK+Location.h_ in [Appledocs]({{ site.baseurl }}/get-started/appledocs.html)
+* _MarketingCloudSDK+Location.h_
