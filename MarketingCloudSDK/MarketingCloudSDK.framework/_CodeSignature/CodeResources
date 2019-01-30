@@ -12,9 +12,13 @@
 		<data>
 		Ni3HS6I6/sIGGZcVtHcv01ddsw4=
 		</data>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<data>
+		nYsOPp/i9bUrwTEd/HtT5eX0qYE=
+		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
-		W48QSD231JYuMJP/HyBctxAlzp4=
+		D8HvfttQvbM2QFI88ftBswTFQpk=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
@@ -30,15 +34,15 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		skWub3RIO9MwigtNV0iB1wfXVB4=
+		41k4N4jj8ZRInlxREdhjqiaKUhE=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
-		SgtIMuOhRVss2axnY4hLNF8SmPg=
+		yYPTNH7Pp4yvPuYvmXgbCITeh9U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		B5YzWZbOfJZHFLgz0oMKsfImYQg=
+		CfM76ts50b6+5RaYj8KIPVE4lIc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,15 +73,26 @@
 			g76Odsf4cctf0TYD4KeC7607NqibBi00yqt4Peppa20=
 			</data>
 		</dict>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nYsOPp/i9bUrwTEd/HtT5eX0qYE=
+			</data>
+			<key>hash2</key>
+			<data>
+			baUJlD4fx1ODT6NiajdC4Sm2qXgooMD8Q511So0ociM=
+			</data>
+		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W48QSD231JYuMJP/HyBctxAlzp4=
+			D8HvfttQvbM2QFI88ftBswTFQpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CsBSpPZFbC8X/vEdquQJVbKKoQP60PcofwjbuGTbEsg=
+			8KE8yn899twsiTGk1/gKBOGk38gWgkpqq4rAU30VGAg=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
@@ -117,22 +132,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			skWub3RIO9MwigtNV0iB1wfXVB4=
+			41k4N4jj8ZRInlxREdhjqiaKUhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCo1fFFUtcST8gp9lHOxcRAJZUAeUQPdNaB3BTxZywQ=
+			1yugKXeeKesw1yzW6I3orYVdxaGhrCR7vCXJh3bGUvo=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SgtIMuOhRVss2axnY4hLNF8SmPg=
+			yYPTNH7Pp4yvPuYvmXgbCITeh9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			VQ4rDaVzd4H6QqpDqMVsGRIc2UNXThafNtagF1ZutZM=
+			FrOUsXaZhMJHIcum5rRa5SgRKv0EbWeT9fx568T75RQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
