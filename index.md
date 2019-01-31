@@ -53,15 +53,14 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 6.1.2
 _Released February 11, 2019, correlating with the Marketing Cloud January 2019 release._
 
-* **Implemented Location Message Segmentation** -- Offering finer-grained control over geofence and beacon messages, the MobilePush SDK offers support for app control over what location messages will be displayed. See [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html) for details.
+* **Implemented location message segmentation**—The SDK now supports app control over which geofence and beacon messages are displayed. Use the region information provided for geofence and beacon messages in your notification presentation logic. Review [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html).
 
-* **Implemented Predictive Intelligence identifier configuration options and APIs** -- Marketing Cloud applications can be configured to either use existing contactKey data as the identifier for Predictive Intelligence analytics or use a Predictive Intelligence-specific identifier according to your usage of this Marketing Cloud feature.
+* **Implemented predictive intelligence identifier (PIID) configuration options and APIs**—You can configure the identifier for predictive intelligence analytics according to how you use Personalization Builder. Configure your applications to use either existing contact key data or a PI-specific identifier. Review [Personalization Builder and Collect API Integration]({{ site.baseurl }}/analytics/personalization-collect.html).
 
-* **iOS File Protection** -- Added a guarding mechanism in the SDK to ensure that iOS File Protection transitions are complete before the SDK completes configuration. The SDK will wait up to 5 seconds (non-blocking) to accommodate the transition; if UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
+* **Added time for iOS file protection transitions**—To ensure that iOS file protection transitions are complete before the SDK completes configuration, we added a guarding mechanism. Now, to accommodate these transitions, the SDK waits up to 5 seconds, without blocking other functions. If UIApplication's isProtectedDataAvailable returns “no”, configuration will fail.
+* **Fixed predictive intelligence analytics issues**—Fixed issues related to sending predictive intelligence analytics if the `MID` configuration value is used.
 
-* **Predictive Intelligence** -- Addressed issues related to sending Predictive Intelligence analytics if the `MID` configuration value is used.
-
-* **Location Messaging** -- Addressed an issue related to geofence and beacon messages which, when reloaded from the server, could cause a display-limited message to be shown again - contrary to the message setting.
+* **Fixed location messaging issue**—Previously, reloading location messages from the server could show a display-limited message again, contrary to the message setting. This has been fixed.
 
 #### Version 6.0.1
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
@@ -74,9 +73,9 @@ _Released October 22, 2018, correlating with the Marketing Cloud October 2018 re
 
 * **Implemented Tenant-Specific Endpoint support for Marketing Cloud Accounts** -- New Marketing Cloud MobilePush applications will be configured with account-specific settings. See [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) for instructions on configuring your SDK's values.
 * **Removed SDK-provided web view for URLs** -- We removed the SDK's built-in URL presenter to remove security concerns.  As such, you must provide the SDK with a delegate and implementation of the `MarketingCloudSDKURLHandlingDelegate` protocol if your message will redirect to a web URL, resource, file or other business logic driven custom application schema. See [Handling URLs]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html) for more information.
- 
+
  > SDK API REMOVAL `MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate`, `MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate` and `MarketingCloudSDKInboxMessagesNotificationHandlerDelegate` protocols and protocol methods have been removed from the SDK. Please change your code to implement the MarketingCloudSDKURLHandlingDelegate protocol.
- 
+
 * **Inbox Functionality Improvements** -- When an Alert+Inbox push notification arrives with the app in the foreground, Inbox messages will be reloaded from the server automatically.
 * **Inbox Functionality Improvements** -- Inbox message handling better tracks "active" messages in the inbox (according to start and end date values).
 * **SDK Configuration** -- Added option to configure SDK via runtime values passed to SDK (`sfmc_configureWithDictionary:`)
