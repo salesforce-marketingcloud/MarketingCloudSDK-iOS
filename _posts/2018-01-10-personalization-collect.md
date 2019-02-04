@@ -9,7 +9,7 @@ order: 2
 
 ### Analytic Attribution
 
-Personalization Builder analytics use an unique identifier to attribute collected analytics to a specific user. By default, the SDK uses the contact key as this identifier, called the PIID. Your app can explicitly set this value.
+Personalization Builder analytics uses an unique identifier to attribute collected analytics to a specific user. By default, the SDK uses the contact key as this identifier, called the PIID. Your app can explicitly set this value.
 
 The Mobile Push SDK has an optional configuration option called useLegacyPiIdentifier. This option replaces an absent or empty PIID with the MobilePush contact key. If this configuration option is false, the SDK doesn’t replace an absent or empty PIID. Review [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) to configure the SDK with pianalytics and useLegacyPiIdentifier.
 
