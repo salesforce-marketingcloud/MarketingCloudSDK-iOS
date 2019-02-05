@@ -57,7 +57,7 @@ _Released February 11, 2019, correlating with the Marketing Cloud January 2019 r
 
 * **Implemented predictive intelligence identifier (PIID) configuration options and APIs**—You can configure the identifier for predictive intelligence analytics according to how you use Personalization Builder. Configure your applications to use either existing contact key data or a PI-specific identifier. Review [Personalization Builder and Collect API Integration]({{ site.baseurl }}/analytics/personalization-collect.html).
 
-* **Added time for iOS file protection transitions**—To ensure that iOS file protection transitions are complete before the SDK completes configuration, we added a guarding mechanism. Now, to accommodate these transitions, the SDK waits up to 5 seconds, without blocking other functions. If UIApplication's isProtectedDataAvailable returns “no”, configuration will fail.
+* **Added time for iOS file protection transitions**—To ensure that iOS file protection transitions are complete before the SDK completes configuration, we added a guarding mechanism. Now, to accommodate these transitions, the SDK waits up to 5 seconds, without blocking other functions. If UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
 
 * **Fixed predictive intelligence analytics issues**—Fixed issues related to sending predictive intelligence analytics if the `MID` configuration value is used.
 
