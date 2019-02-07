@@ -35,7 +35,7 @@ The delegate methods help ensure that your application's view state can be manag
 `sfmc_didCloseInAppMessage`
 {% include gist.html sectionId="sfmc_showClose" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/7ed692c0cc01f58583f175f06a8f71a1.js" %}
 
-Additionally, your application can be informed that a message is about to be shown and choose to prevent or defer a messages's display.
+Additionally, your application can be informed that a message is about to be shown and choose to prevent or defer a message's display.
 
 Typically, this would be used if your application is in a process where an IAM would be inappropriate to present (you are showing a loading indicator, instructional information, sign-in flow, etc.). In that case, returning false from the shouldShowInAppMessage method will prevent the SDK from displaying the IAM.
 
