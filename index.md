@@ -53,7 +53,7 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 6.2.0
 _Released April XX, 2019, correlating with the Marketing Cloud April 2019 release._
 
-* **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html##configuration_requirements) for details.
+* **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
 
 * **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
 
