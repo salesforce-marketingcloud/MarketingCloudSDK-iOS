@@ -53,7 +53,10 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 6.2.0
 _Released April XX, 2019, correlating with the Marketing Cloud April 2019 release._
 
+* **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html##configuration_requirements) for details.
+
 * **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
+
 * **Delay Registration until Contact Key is Set** -- The SDK now offers a configuration value to allow for registrations to the Marketing Cloud to be delayed until a contact key has been set via `sfmc_setContactKey:`. See [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
 #### Version 6.1.2
@@ -71,18 +74,22 @@ _Released January XX, 2019, correlating with the Marketing Cloud January 2019 re
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
 
 * **Analytics** -- Addressed an issue sending analytics to Predictive Intelligence if the `MID` configuration value is used.
-* **Networking** --Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.
+
+* **Networking** -- Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.
 
 #### Version 6.0.0
 _Released October 22, 2018, correlating with the Marketing Cloud October 2018 release._
 
 * **Implemented Tenant-Specific Endpoint support for Marketing Cloud Accounts** -- New Marketing Cloud MobilePush applications will be configured with account-specific settings. See [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) for instructions on configuring your SDK's values.
+
 * **Removed SDK-provided web view for URLs** -- We removed the SDK's built-in URL presenter to remove security concerns.  As such, you must provide the SDK with a delegate and implementation of the `MarketingCloudSDKURLHandlingDelegate` protocol if your message will redirect to a web URL, resource, file or other business logic driven custom application schema. See [Handling URLs]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html) for more information.
  
  > SDK API REMOVAL `MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate`, `MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate` and `MarketingCloudSDKInboxMessagesNotificationHandlerDelegate` protocols and protocol methods have been removed from the SDK. Please change your code to implement the MarketingCloudSDKURLHandlingDelegate protocol.
  
 * **Inbox Functionality Improvements** -- When an Alert+Inbox push notification arrives with the app in the foreground, Inbox messages will be reloaded from the server automatically.
+
 * **Inbox Functionality Improvements** -- Inbox message handling better tracks "active" messages in the inbox (according to start and end date values).
+
 * **SDK Configuration** -- Added option to configure SDK via runtime values passed to SDK (`sfmc_configureWithDictionary:`)
 
 #### Version 5.2.1
@@ -95,7 +102,9 @@ _Released August 27, 2018, correlating with the Marketing Cloud July 2018 releas
 _Released July 11, 2018, correlating with the Marketing Cloud July 2018 release._
 
 * **Added checks to prevent exceptions** -- We added nil checks to prevent potential exceptions that could happen when users swipe to close an app.
+
 * **Improved log string initializers** -- To help prevent Xcode Address Sanitizer warnings, we improved the SDK's use of log string initializers.
+
 * **Device ID migration** -- The SDK attempts to migrate the deviceId from versions of JB4ASDK 4.x.x, if possible.
 
 #### Version 5.1.1
@@ -103,17 +112,25 @@ _Released July 11, 2018, correlating with the Marketing Cloud July 2018 release.
 _Released May 31, 2018, correlating with the Marketing Cloud 213.1 release._
 
 * **Corrected issues with multi-threading** -- We corrected issues related to multi-threading in the SDK.
+
 * **Added i386 slice for simulator builds** -- We updated the build process to include i386 ARCH, which allows you to run 32-bit simulators.
+
 * **Addressed issue loading resources on armv7s devices** -- We corrected an issue related to loading resources on armv7s devices.
 
 #### Version 5.1.0
 _Released April 23, 2018, correlating with the Marketing Cloud April 2018 release_
 * **Added iOS 9 support** -- The iOS MarketingCloudSDK framework now supports iOS 9. Use conditional coding via Apple’s `available` attributes. For notes on using conditional coding for push registration and handling push notifications, see the iOS 9 documentation.
+
 * **Added synchronous configuration calls** -- To prevent developers from trying to set a contact key, tag, or attribute before configuration is complete, we added synchronous configuration calls to the API as the default.
+
 * **Added data privacy compliance** -- This version of the iOS MarketingCloudSDK supports three privacy modes that may affect your application’s use of MobilePush: 1) Right to be Forgotten, 2) Restriction of Processing, and 3) Do Not Track. These changes assist you in preparing for data compliance regulations, such as the European Union's General Data Protection Regulation (GDPR). For more details, visit our SDK-specific [data privacy compliance documentation]( {{ site.baseurl }}/sdk-implementation/data-privacy-iOS.html).
+
 * **Throttled inbox message calls** -- To match the Android SDK, we now prevent the iOS MarketingCloudSDK from calling `sfmc_refreshMessages` too often. Reference the headers for more information.
+
 * **Allowed Predictive Intelligence to be set separately** -- When you configure the iOS MarketingCloudSDK, you can now enable or disable Predictive Intelligence separately from Analytics. If your app uses the iOS MarketingCloudSDK version 5.0.0 framework and if Analytics is enabled, Predictive Intelligence is also enabled. To control Predictive Intelligence separately, add the config flag.
+
 * **Improved registration** -- We improved registration to prevent duplicate tags and attributes.
+
 * **Fixed `isPushEnabled` override issue** -- Previously, disabling push notifications in the Notification Center overrode the `setPushEnable` property. We fixed this issue so that the SDK uses `setPushEnable`.
 
 #### Version 5.0.0
