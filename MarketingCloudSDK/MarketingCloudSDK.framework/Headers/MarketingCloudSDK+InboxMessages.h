@@ -134,26 +134,6 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 - (BOOL) sfmc_markMessageDeleted:(NSDictionary *_Nonnull) messageDictionary;
 
 /**
- Mark a Inbox message as read using messageId.
- 
- Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
- 
- @param messageId a string representing an Inbox message identifier
- @return a value indicatating success in setting the message to read
- */
-- (BOOL) sfmc_markMessageWithIdRead:(NSString *_Nonnull) messageId;
-
-/**
- Mark an Inbox message as deleted using messageId.
- 
- Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
- 
- @param messageId a string representing an Inbox message identifier
- @return a value indicatating success in setting the message to deleted
- */
-- (BOOL) sfmc_markMessageWithIdDeleted:(NSString *_Nonnull) messageId;
-
-/**
  Mark all Inbox messages as read.
  
  Note: this information is persisted locally and would be reset if the SDK's data is reset (via app delete and reinstall, for instance).
