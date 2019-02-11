@@ -50,7 +50,7 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
-#### Version 6.1.2
+#### Version 6.1.3
 _Released February 11, 2019, correlating with the Marketing Cloud January 2019 release._
 
 * **Implemented location message segmentation**—The SDK now supports app control over which geofence and beacon messages are displayed. Use the region information provided for geofence and beacon messages in your notification presentation logic. Review [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html).
