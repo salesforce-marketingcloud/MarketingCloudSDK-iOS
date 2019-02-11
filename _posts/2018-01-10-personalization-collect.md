@@ -16,7 +16,7 @@ The Mobile Push SDK has an optional configuration option called useLegacyPiIdent
 > **Important:** To ensure future compatibility, we recommend explicitly setting the PIID. The useLegacyPiIdentifier configuration option will be deprecated in a future release.
 
 #### Example: Analytic Attribution
-{%- include gist.html sectionId="contactkey" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/c8de13c1b560a19def8bc2d63a2f061c.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" -%}
+{% include gist.html sectionId="contactkey" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/c8de13c1b560a19def8bc2d63a2f061c.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" %}
 
 ### Integration Methods
 
