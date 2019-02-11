@@ -37,7 +37,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const SFMCURLTypeAction;
 @interface MarketingCloudSDK (URLHandling)
 
 /**
- Method to set a delegate implmenting the MarketingCloudSDKURLHandlingDelegate.
+ Method to set a delegate implementing the MarketingCloudSDKURLHandlingDelegate.
  
  @param delegate value A class adhering to the MarketingCloudSDKURLHandlingDelegate and implementing the required method.
  */

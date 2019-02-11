@@ -58,6 +58,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) sfmc_setPiAnalyticsEnabled:(NSNumber *) setPiAnalyticsEnabled;
 
 /**
+ Sets the configuration flag that enables or disables Salesforce Predictive Intelligence email override
+to take contactKey if no value is set
+ 
+ @param etUseLegacyPIIdentifier Allows setting the state to YES or NO.
+ @return returns the MarketingCloudSDKConfigBuilder instancetype value
+ */
+- (instancetype) sfmc_setUseLegacyPIIdentifier:(NSNumber *) etUseLegacyPIIdentifier;
+
+/**
  Sets the configuration flag that enables or disables Salesforce MarketingCloud Analytics services
 
  @param setAnalyticsEnabled Allows setting the state to YES or NO.
