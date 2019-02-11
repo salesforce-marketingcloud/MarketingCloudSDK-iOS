@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "README"
+title: "Home"
 ---
 ## Requirements
 
@@ -13,10 +13,10 @@ title: "README"
 Integrate the SDK into your app and configure the SDK to send push notifications.
 1. [Test your setup]({{ site.baseurl }}/get-started/test-first-push.html)
 Send your first push notification to test your initial SDK setup.
-1. Implement optional features
-Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
+1. Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
     * [Add custom sounds, media, custom keys, and interactions]({{ site.baseurl }}/push-notifications/push-notifications.html) -- Use these features to further customize push notifications for your apps.
-    * Add [attributes]({{ site.baseurl }}/user-data/attributes.html) and [tags]({{ site.baseurl }}/user-data/tags.html) -- Enhance your ability to segment your push message audiences.
+    * Use a [contact key]({{ site.baseurl }}/sdk-implementation/user-data.html#contact-key) to set the unique identifier used to aggregate a contact’s devices within Marketing Cloud. Set the contact key to a specific value provided by your customer or to another unique identifier for the contact, such as mobile number, email address, customer number, or another value.
+    * Add [attributes]({{ site.baseurl }}/sdk-implementation/user-data.html#attributes) and [tags]({{ site.baseurl }}/sdk-implementation/user-data.html#tags) -- Enhance your ability to segment your push message audiences.
     * [Add predictive intelligence]({{ site.baseurl }}/analytics/personalization-collect.html) using Personalization Builder -- Track cart and cart conversions. Purchase this feature separately.
     * Add other features -- Send push notifications along with your [inbox messages]({{ site.baseurl }}/inbox/inbox.html), use OpenDirect for [deep linking]({{ site.baseurl }}/opendirect/opendirect.html), and trigger location-based messages with [location and beacon messaging]({{ site.baseurl }}/location/geolocation-overview.html).
 
@@ -30,18 +30,44 @@ To receive the latest SDK news or to contact us with questions and feedback, use
 ## Additional Resources
 
 * The MarketingCloudSDK for iOS can be found on [GitHub](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS) and [CocoaPods](https://cocoapods.org/pods/MarketingCloudSDK).
-* The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5" target="_blank">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
-* The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos" target="_blank">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the MarketingCloudSDK.
+* The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
+* The Marketing Cloud provides the <a href="https://github.com/salesforce-marketingcloud/LearningAppIos">Learning App for iOS</a> that implements features of the SDK to allow you to explore how a native app implements the MarketingCloudSDK.
+* Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for the SDK.
 * [Sign up for email updates about the iOS MarketingCloudSDK](http://pub.s1.exacttarget.com/2ujjacpet3t).<br/>
 * View the [Android SDK docs](http://salesforce-marketingcloud.github.io/JB4A-SDK-Android/).
 
 ## Hybrid Mobile Apps
-We provide support for plugins, such as Cordova, to implement the MobilePush SDK for your iOS applications.
-* [Cordova Plugin](https://github.com/salesforce-marketingcloud/MC-Cordova-Plugin)
+
+We provide support for plugins, such as Cordova, to implement the MobilePush SDK for your iOS and Android applications.
+
+* [Cordova Plugin](https://www.npmjs.com/package/cordova-plugin-marketingcloudsdk)
+
+## Deprecations
+
+We remove deprecated methods from the SDK two releases after the initial deprecation announcement.
 
 ## Release History
 
-For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/" target="_blank">Prior Release Documentation</a>
+For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
+
+#### Version 6.1.2
+_Released February 11, 2019, correlating with the Marketing Cloud January 2019 release._
+
+* **Implemented location message segmentation**—The SDK now supports app control over which geofence and beacon messages are displayed. Use the region information provided for geofence and beacon messages in your notification presentation logic. Review [Location Message Segmentation]({{ site.baseurl }}/location/geolocation-segmentation.html).
+
+* **Implemented predictive intelligence identifier (PIID) configuration options and APIs**—You can configure the identifier for predictive intelligence analytics according to how you use Personalization Builder. Configure your applications to use either existing contact key data or a PI-specific identifier. Review [Personalization Builder and Collect API Integration]({{ site.baseurl }}/analytics/personalization-collect.html).
+
+* **Added time for iOS file protection transitions**—To ensure that iOS file protection transitions are complete before the SDK completes configuration, we added a guarding mechanism. Now, to accommodate these transitions, the SDK waits up to 5 seconds, without blocking other functions. If UIApplication's `isProtectedDataAvailable` returns NO, configuration will fail.
+
+* **Fixed predictive intelligence analytics issues**—Fixed issues related to sending predictive intelligence analytics if the `MID` configuration value is used.
+
+* **Fixed location messaging issue**—Previously, reloading location messages from the server could show a display-limited message again, contrary to the message setting. This has been fixed.
+
+#### Version 6.0.1
+_Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
+
+* **Analytics** -- Addressed an issue sending analytics to Predictive Intelligence if the `MID` configuration value is used.
+* **Networking** --Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.
 
 #### Version 6.0.1
 _Released December 5, 2018, correlating with the Marketing Cloud 215.1 release._
@@ -55,9 +81,9 @@ _Released October 22, 2018, correlating with the Marketing Cloud October 2018 re
 
 * **Implemented Tenant-Specific Endpoint support for Marketing Cloud Accounts** -- New Marketing Cloud MobilePush applications will be configured with account-specific settings. See [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk) for instructions on configuring your SDK's values.
 * **Removed SDK-provided web view for URLs** -- We removed the SDK's built-in URL presenter to remove security concerns.  As such, you must provide the SDK with a delegate and implementation of the `MarketingCloudSDKURLHandlingDelegate` protocol if your message will redirect to a web URL, resource, file or other business logic driven custom application schema. See [Handling URLs]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html) for more information.
- 
+
  > SDK API REMOVAL `MarketingCloudSDKCloudPageMessagesNotificationHandlerDelegate`, `MarketingCloudSDKOpenDirectMessagesNotificationHandlerDelegate` and `MarketingCloudSDKInboxMessagesNotificationHandlerDelegate` protocols and protocol methods have been removed from the SDK. Please change your code to implement the MarketingCloudSDKURLHandlingDelegate protocol.
- 
+
 * **Inbox Functionality Improvements** -- When an Alert+Inbox push notification arrives with the app in the foreground, Inbox messages will be reloaded from the server automatically.
 * **Inbox Functionality Improvements** -- Inbox message handling better tracks "active" messages in the inbox (according to start and end date values).
 * **SDK Configuration** -- Added option to configure SDK via runtime values passed to SDK (`sfmc_configureWithDictionary:`)
