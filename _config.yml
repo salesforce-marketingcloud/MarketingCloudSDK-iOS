@@ -31,6 +31,7 @@ sections: [
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
+    ['in-app-message', 'In-App Messaging'],
     ['location', 'Location Services'],
     ['inbox', 'Inbox'],
     ['analytics', 'Analytics'],
