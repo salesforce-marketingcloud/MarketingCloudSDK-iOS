@@ -1,5 +1,10 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'MarketingCloudSDK iOS (v6.1.3)'
+title: 'MarketingCloudSDK iOS (v6.1.4)'
+
+
+# Current SDK version, use for all mentions
+currentVersion: "6.1.4"
+
 
 propagationDelay: '5 minutes'
 
@@ -60,7 +65,4 @@ exclude: ['bin', 'README.md']
 
 # Use the kramdown Markdown renderer
 markdown: kramdown
-
-# Current SDK version, use for all mentions
-currentVersion: "6.1.3"
 
