@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>MarketingCloudSDKInboxMessagesDelegate Class Reference</title>
+	<title>MarketingCloudSDKLocationDelegate Protocol Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -60,7 +60,7 @@
 	
 	<optgroup label="Instance Methods">
 		
-		<option value="//api/name/initWithMarketingCloudSDK:tableView:dataSource:">- initWithMarketingCloudSDK:tableView:dataSource:</option>
+		<option value="//api/name/sfmc_shouldShowLocationMessage:forRegion:">- sfmc_shouldShowLocationMessage:forRegion:</option>
 		
 	</optgroup>
 	
@@ -77,19 +77,16 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">MarketingCloudSDKInboxMessagesDelegate Class Reference</h1>
+					<h1 class="title">MarketingCloudSDKLocationDelegate Protocol Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<th>Inherits from</th>
+	<th>Conforms to</th>
 	<td>NSObject</td>
 </tr><tr>
-	<th>Conforms to</th>
-	<td>UITableViewDelegate</td>
-</tr><tr>
 	<th>Declared in</th>
-	<td>MarketingCloudSDK+InboxMessages.h</td>
+	<td>MarketingCloudSDK+Location.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -99,7 +96,11 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>The MarketingCloudSDKInboxMessagesDelegate is an interface object for Inbox support. It was designed to be used as a simple delegate for a UITableView, and can be allocated and used as such without too much other customization. It only supports tableView:didSelectRowAtIndexPath: to offer (along with the data source) a VERY simple inbox implementation.</p>
+						<p>Supporting protocol for the MobilePush SDK&rsquo;s support for Locations.</p>
+
+<p>Implementation of this protocol is not required for the Location feature to work, although it provides addition control for an application developer.</p>
+
+<p>This protocol allows for awareness into the SDK&rsquo;s lifecycle for Location tracking and messaging.</p>
 					</div>
 					
 					
@@ -115,9 +116,9 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/initWithMarketingCloudSDK:tableView:dataSource:" title="initWithMarketingCloudSDK:tableView:dataSource:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithMarketingCloudSDK:tableView:dataSource:">&ndash;&nbsp;initWithMarketingCloudSDK:tableView:dataSource:</a></code>
-</h3>
+	<a name="//api/name/sfmc_shouldShowLocationMessage:forRegion:" title="sfmc_shouldShowLocationMessage:forRegion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_shouldShowLocationMessage:forRegion:">&ndash;&nbsp;sfmc_shouldShowLocationMessage:forRegion:</a></code>
+<span class="task-item-suffix">required method</span></h3>
 
 	<div class="method-info">
 		<div class="pointy-thing"></div>
@@ -126,12 +127,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
+				<p>Method called by the SDK when a Location message is ready to be shown. The delegate implementing this method returns YES or NO.</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>- (id _Nullable)initWithMarketingCloudSDK:(MarketingCloudSDK *_Nonnull)<em>sdk</em> tableView:(UITableView *_Nonnull)<em>tableView</em> dataSource:(MarketingCloudSDKInboxMessagesDataSource *_Nonnull)<em>dataSource</em></code></div>
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_shouldShowLocationMessage:(NSDictionary *_Nonnull)<em>message</em> forRegion:(NSDictionary *_Nonnull)<em>region</em></code></div>
 
 		    
 			
@@ -140,18 +141,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>sdk</code></th>
-						<td><p>An instance of <a href="../Classes/MarketingCloudSDK.html">MarketingCloudSDK</a>.</p></td>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>NSDictionary representing a MobilePush Location message</p></td>
 					</tr>
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>tableView</code></th>
-						<td><p>The UITableView used in the view controller. The delegate will &ldquo;own&rdquo; selection of the cells.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>dataSource</code></th>
-						<td><p>An instance of <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>, a class which implements a simple set of methods from the UITableViewDataSource protocol.</p></td>
+						<th scope="row" class="argument-name"><code>region</code></th>
+						<td><p>NSDictionary representing a MobilePush region (geofence or beacon), which can be converted into a CLRegion object via the method sfmc_regionFromDictionary</p></td>
 					</tr>
 				
 				</table>
@@ -161,7 +157,7 @@
 			
 			<div class="method-subsection return">
 				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>An instance of MarketingCloudSDKInboxMessagesDelegate, a class which implements a simple set of methods from the UITableViewDelegate protocol.</p>
+				<p>value reflecting application&rsquo;s behavior</p>
 			</div>
 			
 
@@ -170,7 +166,11 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.</p>
+				<p>Method called by the SDK when a Location message is ready to be shown. The delegate implementing this method returns YES or NO.</p>
+
+<p>YES indicates to the SDK that this message is able to be shown (allowed by the application).</p>
+
+<p>NO indicates that the SDK should not show this message.</p>
 			</div>
 			
 
@@ -181,7 +181,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Location.h</code></p>
 			</div>
 			
 			
