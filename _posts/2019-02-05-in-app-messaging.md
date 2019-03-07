@@ -16,6 +16,13 @@ In-App Messages are delivered to your application while in the background (using
 
 When your app comes to the foreground, any messages which are valid for display will be prepared to be presented atop your application's view stack.
 
+## Required Methods
+In-App Messages containing buttons have associated "actions" configured by the marketer which will offer additional flexibility in using the message. 
+
+Actions require [URL handling]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html) to be implemented in order for In-App Messages to properly handle button action types of *Web URL*, *App URL*, *Notification Settings*, and *Location Settings*.
+
+Your application *must* implement [URL handling]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html).
+
 ## Optional Methods
 
 The MobilePush SDK offers optional delegate functionality so that your application can be informed of the In-App Message display lifecycle and control aspects of the message display.

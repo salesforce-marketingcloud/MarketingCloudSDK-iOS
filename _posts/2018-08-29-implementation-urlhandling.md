@@ -11,6 +11,7 @@ The SDK doesn’t automatically present URLs from these sources.
 * CloudPage URLs from push notifications
 * OpenDirect URLs from push notifications
 * CloudPage URLs from inbox messages using the built-in `UITableView` delegate
+* In-App Message buttons
 
 To handle URLs from these sources, follow these instructions.
 

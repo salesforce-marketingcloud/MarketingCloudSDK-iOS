@@ -61,6 +61,8 @@ _Released April XX, 2019, correlating with the Marketing Cloud April 2019 releas
 
 * **Delay Registration until Contact Key is Set** -- The SDK now offers a configuration value to allow for registrations to the Marketing Cloud to be delayed until a contact key has been set via `sfmc_setContactKey:`. See [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
+* **Inbox Messages support `sendDateUtc` for Sorting** -- If using the app inbox functionality of MobilePush, messages delivered to your application now include the date the message was sent. You can sort your inbox based on this value. See [Inbox]({{ site.baseurl }}/inbox/inbox.html) for more information.
+
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
 
