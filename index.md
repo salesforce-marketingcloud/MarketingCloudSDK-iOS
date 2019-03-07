@@ -9,7 +9,7 @@ title: "Home"
 
 ## Get Started
 
-1. [Perform initial SDK setup]({{ site.baseurl }}/get-started/apple.html)
+1. [Download and set up the SDK]({{ site.baseurl }}/get-started/apple.html)
 Integrate the SDK into your app and configure the SDK to send push notifications.
 1. [Test your setup]({{ site.baseurl }}/get-started/test-first-push.html)
 Send your first push notification to test your initial SDK setup.
@@ -22,7 +22,7 @@ Send your first push notification to test your initial SDK setup.
 
 ## Contact Us
 
-To receive the latest SDK news or to contact us with questions and feedback, use these channels:
+Sign up for email announcements and contact us with questions or feedback about the iOS SDK.
   * Email us at <marketingcloudsdkfeedback@salesforce.com>.
   * Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example tags: marketing-cloud, salesforcemobilesdk-ios, mobilesdk, and mobilepush-ios
   * Sign up for [email updates](http://pub.s1.exacttarget.com/2ujjacpet3t) about release announcements and other important information. (10 or fewer emails per year)
