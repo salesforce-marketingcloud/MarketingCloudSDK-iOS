@@ -138,6 +138,10 @@
 		
 		<option value="//api/name/sfmc_markMessageRead:">- sfmc_markMessageRead:</option>
 		
+		<option value="//api/name/sfmc_markMessageWithIdDeleted:">- sfmc_markMessageWithIdDeleted:</option>
+		
+		<option value="//api/name/sfmc_markMessageWithIdRead:">- sfmc_markMessageWithIdRead:</option>
+		
 		<option value="//api/name/sfmc_notificationRequest">- sfmc_notificationRequest</option>
 		
 		<option value="//api/name/sfmc_notificationUserInfo">- sfmc_notificationUserInfo</option>
@@ -2487,6 +2491,72 @@ The current state of the pushEnabled flag in the SDK.</p>
 						</div>
 						
 
+						<a title="URLHandling Methods" name="task_URLHandling Methods"></a>
+						<h2 class="task-title">URLHandling Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sfmc_setURLHandlingDelegate:" title="sfmc_setURLHandlingDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_setURLHandlingDelegate:">&ndash;&nbsp;sfmc_setURLHandlingDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to set a delegate implementing the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_setURLHandlingDelegate:(id&lt;MarketingCloudSDKURLHandlingDelegate&gt; _Nullable)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>value A class adhering to the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a> and implementing the required method.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to set a delegate implementing the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+URLHandling.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="InboxMessages Methods" name="task_InboxMessages Methods"></a>
 						<h2 class="task-title">InboxMessages Methods</h2>
 
@@ -3019,6 +3089,136 @@ The current state of the pushEnabled flag in the SDK.</p>
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
 				<p>Mark an Inbox message as deleted.</p>
+
+<p>Note: this information is persisted locally and would be reset if the SDK&rsquo;s data is reset (via app delete and reinstall, for instance).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_markMessageWithIdRead:" title="sfmc_markMessageWithIdRead:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_markMessageWithIdRead:">&ndash;&nbsp;sfmc_markMessageWithIdRead:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark a Inbox message as read using messageId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_markMessageWithIdRead:(NSString *_Nonnull)<em>messageId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messageId</code></th>
+						<td><p>a string representing an Inbox message identifier</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a value indicatating success in setting the message to read</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mark a Inbox message as read using messageId.</p>
+
+<p>Note: this information is persisted locally and would be reset if the SDK&rsquo;s data is reset (via app delete and reinstall, for instance).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+InboxMessages.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_markMessageWithIdDeleted:" title="sfmc_markMessageWithIdDeleted:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_markMessageWithIdDeleted:">&ndash;&nbsp;sfmc_markMessageWithIdDeleted:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Mark an Inbox message as deleted using messageId.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_markMessageWithIdDeleted:(NSString *_Nonnull)<em>messageId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messageId</code></th>
+						<td><p>a string representing an Inbox message identifier</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>a value indicatating success in setting the message to deleted</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Mark an Inbox message as deleted using messageId.</p>
 
 <p>Note: this information is persisted locally and would be reset if the SDK&rsquo;s data is reset (via app delete and reinstall, for instance).</p>
 			</div>
@@ -3933,72 +4133,6 @@ The current state of the pushEnabled flag in the SDK.</p>
 						</div>
 						
 
-						<a title="URLHandling Methods" name="task_URLHandling Methods"></a>
-						<h2 class="task-title">URLHandling Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_setURLHandlingDelegate:" title="sfmc_setURLHandlingDelegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setURLHandlingDelegate:">&ndash;&nbsp;sfmc_setURLHandlingDelegate:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Method to set a delegate implementing the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_setURLHandlingDelegate:(id&lt;MarketingCloudSDKURLHandlingDelegate&gt; _Nullable)<em>delegate</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>value A class adhering to the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a> and implementing the required method.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Method to set a delegate implementing the <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+URLHandling.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="Location Methods" name="task_Location Methods"></a>
 						<h2 class="task-title">Location Methods</h2>
 
@@ -4081,6 +4215,18 @@ The current state of the pushEnabled flag in the SDK.</p>
 			<div class="method-subsection method-declaration"><code>- (CLRegion *)sfmc_regionFromDictionary:(NSDictionary *_Nonnull)<em>dictionary</em></code></div>
 
 		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dictionary</code></th>
+						<td><p>value representing a region object from the sfmc_shouldShowLocationMessage method</p></td>
+					</tr>
+				
+				</table>
+			</div>
 			
 
 			
@@ -4362,7 +4508,7 @@ The current state of the pushEnabled flag in the SDK.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Salesforce Marketing Cloud. All rights reserved. Updated: 2019-02-11</p>
+						<p class="copyright">Copyright &copy; 2019 Salesforce Marketing Cloud. All rights reserved. Updated: 2019-03-18</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
