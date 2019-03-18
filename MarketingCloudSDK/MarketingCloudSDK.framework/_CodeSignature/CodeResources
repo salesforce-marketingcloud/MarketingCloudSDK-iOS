@@ -10,11 +10,15 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
-		Ni3HS6I6/sIGGZcVtHcv01ddsw4=
+		cW9rnGFIl2ya5618lHr7BOiaqjA=
+		</data>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<data>
+		hXDhsasy6RBfZ63I5F1KUT2aZns=
 		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
-		W48QSD231JYuMJP/HyBctxAlzp4=
+		D8HvfttQvbM2QFI88ftBswTFQpk=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
@@ -22,7 +26,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
-		LJCXuCqkXIIwRq01Fu59C6zl+sk=
+		kh0IDs+CmVVYsx4UlLTTmk8X3bY=
 		</data>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<data>
@@ -30,15 +34,15 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		skWub3RIO9MwigtNV0iB1wfXVB4=
+		41k4N4jj8ZRInlxREdhjqiaKUhE=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
-		SgtIMuOhRVss2axnY4hLNF8SmPg=
+		yYPTNH7Pp4yvPuYvmXgbCITeh9U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+a8Ofuk+eoVLxfpFANFGJPX/E7E=
+		MN6MdsPpJro3xrdPJpDsYA/ilnQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,22 +66,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ni3HS6I6/sIGGZcVtHcv01ddsw4=
+			cW9rnGFIl2ya5618lHr7BOiaqjA=
 			</data>
 			<key>hash2</key>
 			<data>
-			g76Odsf4cctf0TYD4KeC7607NqibBi00yqt4Peppa20=
+			xTe2gPYqA4dXTSMrc8QsSwen3BribE1jbjHZ5J6ELHg=
+			</data>
+		</dict>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hXDhsasy6RBfZ63I5F1KUT2aZns=
+			</data>
+			<key>hash2</key>
+			<data>
+			8iRsM1mWZcrzfg8/rDSqkWN1rXwdWZ0Uofhty6kE+RY=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W48QSD231JYuMJP/HyBctxAlzp4=
+			D8HvfttQvbM2QFI88ftBswTFQpk=
 			</data>
 			<key>hash2</key>
 			<data>
-			CsBSpPZFbC8X/vEdquQJVbKKoQP60PcofwjbuGTbEsg=
+			8KE8yn899twsiTGk1/gKBOGk38gWgkpqq4rAU30VGAg=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
@@ -95,11 +110,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LJCXuCqkXIIwRq01Fu59C6zl+sk=
+			kh0IDs+CmVVYsx4UlLTTmk8X3bY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8URMD108yzOCrYyql7MJZ6it+U9xwQ0CmVGBZcwNAZI=
+			TUsOXlXL35XrYmNCzecAOoYPMhwIF6Dz3ZjjHto/ho4=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
@@ -117,22 +132,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			skWub3RIO9MwigtNV0iB1wfXVB4=
+			41k4N4jj8ZRInlxREdhjqiaKUhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCo1fFFUtcST8gp9lHOxcRAJZUAeUQPdNaB3BTxZywQ=
+			1yugKXeeKesw1yzW6I3orYVdxaGhrCR7vCXJh3bGUvo=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SgtIMuOhRVss2axnY4hLNF8SmPg=
+			yYPTNH7Pp4yvPuYvmXgbCITeh9U=
 			</data>
 			<key>hash2</key>
 			<data>
-			VQ4rDaVzd4H6QqpDqMVsGRIc2UNXThafNtagF1ZutZM=
+			FrOUsXaZhMJHIcum5rRa5SgRKv0EbWeT9fx568T75RQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
