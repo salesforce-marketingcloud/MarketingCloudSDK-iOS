@@ -12,10 +12,6 @@
 		<data>
 		cW9rnGFIl2ya5618lHr7BOiaqjA=
 		</data>
-		<key>Headers/MarketingCloudSDK+Events.h</key>
-		<data>
-		hXDhsasy6RBfZ63I5F1KUT2aZns=
-		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
 		D8HvfttQvbM2QFI88ftBswTFQpk=
@@ -34,7 +30,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		41k4N4jj8ZRInlxREdhjqiaKUhE=
+		skWub3RIO9MwigtNV0iB1wfXVB4=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
@@ -42,7 +38,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MN6MdsPpJro3xrdPJpDsYA/ilnQ=
+		VNW62vSwoN/uTztRr/R2yI/dy9s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,17 +67,6 @@
 			<key>hash2</key>
 			<data>
 			xTe2gPYqA4dXTSMrc8QsSwen3BribE1jbjHZ5J6ELHg=
-			</data>
-		</dict>
-		<key>Headers/MarketingCloudSDK+Events.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			hXDhsasy6RBfZ63I5F1KUT2aZns=
-			</data>
-			<key>hash2</key>
-			<data>
-			8iRsM1mWZcrzfg8/rDSqkWN1rXwdWZ0Uofhty6kE+RY=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
@@ -132,11 +117,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			41k4N4jj8ZRInlxREdhjqiaKUhE=
+			skWub3RIO9MwigtNV0iB1wfXVB4=
 			</data>
 			<key>hash2</key>
 			<data>
-			1yugKXeeKesw1yzW6I3orYVdxaGhrCR7vCXJh3bGUvo=
+			tCo1fFFUtcST8gp9lHOxcRAJZUAeUQPdNaB3BTxZywQ=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
