@@ -51,11 +51,9 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
 #### Version 6.2.0
-_Released April XX, 2019, correlating with the Marketing Cloud April 2019 release._
+_Released April 29, 2019, correlating with the Marketing Cloud April 2019 release._
 
 * **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
-
-* **In-App Messaging** -- In-App Messaging (IAM) affords customized in-app experiences for delivering relevant, personalized messages to users of your app. Without relying on push notifications being enabled, Marketing Cloud customers can create engaging full-screen, modal or banner messages for delivery to your application and presentation while your users are interacting with your application. See [In-App Messaging]({{ site.baseurl }}/in-app-message/in-app-messaging.html) for more.
 
 * **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
 
