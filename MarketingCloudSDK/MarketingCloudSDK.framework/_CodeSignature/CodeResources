@@ -12,6 +12,10 @@
 		<data>
 		cW9rnGFIl2ya5618lHr7BOiaqjA=
 		</data>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<data>
+		Pg8LuVC3SWM1D6l6G32ks8HbNBI=
+		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
 		D8HvfttQvbM2QFI88ftBswTFQpk=
@@ -22,15 +26,15 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
-		kh0IDs+CmVVYsx4UlLTTmk8X3bY=
+		v2G+Fbo2pysGMHKPxlLKHotJOaM=
 		</data>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<data>
-		6RVKGsS6Snbxth83S/WpGMhKDCw=
+		qA0X7zgmWhM1G8aGv5D3sQvSC9M=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		skWub3RIO9MwigtNV0iB1wfXVB4=
+		41k4N4jj8ZRInlxREdhjqiaKUhE=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		VNW62vSwoN/uTztRr/R2yI/dy9s=
+		0+lWDpP3kiAHLSww4CdNGeIft9I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,6 +73,17 @@
 			xTe2gPYqA4dXTSMrc8QsSwen3BribE1jbjHZ5J6ELHg=
 			</data>
 		</dict>
+		<key>Headers/MarketingCloudSDK+Events.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Pg8LuVC3SWM1D6l6G32ks8HbNBI=
+			</data>
+			<key>hash2</key>
+			<data>
+			1dGcgVa/gNUp+7bWdYDsAAwVntnNJhphwOS19BnsLRA=
+			</data>
+		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
@@ -95,33 +110,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kh0IDs+CmVVYsx4UlLTTmk8X3bY=
+			v2G+Fbo2pysGMHKPxlLKHotJOaM=
 			</data>
 			<key>hash2</key>
 			<data>
-			TUsOXlXL35XrYmNCzecAOoYPMhwIF6Dz3ZjjHto/ho4=
+			ljXwDNg0yLM5VLdF8rRYYnT3adxqQgeuoXlr4awTOMw=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6RVKGsS6Snbxth83S/WpGMhKDCw=
+			qA0X7zgmWhM1G8aGv5D3sQvSC9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			b+3XW8tLZ2c2l8rMFg1iiATQLG8Y2quCg31Ht/TJUas=
+			dvSU4cEw/Ql4HpuRRQfbQV4kjZMNOOnunq8D5/su5zY=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			skWub3RIO9MwigtNV0iB1wfXVB4=
+			41k4N4jj8ZRInlxREdhjqiaKUhE=
 			</data>
 			<key>hash2</key>
 			<data>
-			tCo1fFFUtcST8gp9lHOxcRAJZUAeUQPdNaB3BTxZywQ=
+			1yugKXeeKesw1yzW6I3orYVdxaGhrCR7vCXJh3bGUvo=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
