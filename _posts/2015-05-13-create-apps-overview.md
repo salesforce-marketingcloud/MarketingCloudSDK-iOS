@@ -22,4 +22,4 @@ After you log into MobilePush, follow these steps to create a new MobilePush app
 
 Review the steps in our [MobilePush documentation](https://help.marketingcloud.com/en/documentation/mobilepush/administering_your_mobilepush_account/add_provisioning_info_to_your_app_center_app/) for more information.
 
-To maintain you certificate signing assets, follow [Apple's Instructions](https://help.apple.com/xcode/mac/current/#/dev3a05256b8).
+To maintain you certificate signing assets, follow [Apple's Instructions](https://help.apple.com/xcode/mac/current/#/dev154b28f09).
