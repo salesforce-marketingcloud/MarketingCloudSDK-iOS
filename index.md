@@ -53,13 +53,13 @@ For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.gith
 #### Version 6.2.0
 _Released April 29, 2019, correlating with the Marketing Cloud April 2019 release._
 
-* **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
+* **Required app endpoint (tenant-specific endpoint)**—To pass the SDK's configuration, an app endpoint is now required. [Find the app endpoint](https://help.salesforce.com/articleView?id=mc_mp_provisioning_info.htm&type=5#mc_mp_provisioning_info) for your app under Administration in MobilePush. Review [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
 
-* **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
+* **Added application badging override**—A new SDK configuration value gives you full control of your app’s badge value. Review [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
 
-* **Delay Registration until Contact Key is Set** -- The SDK now offers a configuration value to allow for registrations to the Marketing Cloud to be delayed until a contact key has been set via `sfmc_setContactKey:`. See [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
+* **Added ability to delay registration until contact key is set**—Use a new SDK configuration value to delay registrations to Marketing Cloud until a contact key is set via `sfmc_setContactKey:`. Review [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
-* **Inbox Messages support `sendDateUtc` for Sorting** -- If using the app inbox functionality of MobilePush, messages delivered to your application now include the date the message was sent. You can sort your inbox based on this value. See [Inbox]({{ site.baseurl }}/inbox/inbox.html) for more information.
+* **Inbox messages support `sendDateUtc` for Sorting**—Inbox messages delivered to your app now include the date that the message was sent. App users can sort their inbox based on this value. Review [Inbox]({{ site.baseurl }}/inbox/inbox.html) for details.
 
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
