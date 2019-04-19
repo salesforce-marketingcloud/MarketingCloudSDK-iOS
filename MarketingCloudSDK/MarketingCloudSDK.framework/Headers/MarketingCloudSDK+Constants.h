@@ -101,6 +101,8 @@ typedef NS_ENUM(NSUInteger, configureError) {
     configureInvalidConfigurationIndexError,
     /** configureFailedFrameworkCreationError  */
     configureFailedFrameworkCreationError,
+    /** configureInvalidAppEndpointError  */
+    configureInvalidAppEndpointError,
     /** lastconfigureIndex */
-    lastConfigureErrorIndex = configureFailedFrameworkCreationError
+    lastConfigureErrorIndex = configureInvalidAppEndpointError
 };

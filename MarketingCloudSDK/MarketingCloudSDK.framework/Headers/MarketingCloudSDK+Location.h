@@ -47,8 +47,10 @@
 
 /**
  Method to convert a region dictionary returned from sfmc_shouldShowLocationMessage into a CLRegion
+ 
+ @param dictionary value representing a region object from the sfmc_shouldShowLocationMessage method
  */
-- (CLRegion *) sfmc_regionFromDictionary:(NSDictionary * _Nonnull) dictionary;
+- (CLRegion *_Nullable) sfmc_regionFromDictionary:(NSDictionary * _Nonnull) dictionary;
 
 /**
  Determines the state of Location Services based on developer setting and OS-level permission. This is the preferred method for checking for location state.
