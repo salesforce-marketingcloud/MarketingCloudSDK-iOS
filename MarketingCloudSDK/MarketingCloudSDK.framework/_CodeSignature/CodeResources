@@ -6,15 +6,15 @@
 	<dict>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
-		YqdEwZEfx2JwK2H/X+Pmam4wTF8=
+		+7smPueQ1noMhO82z05v2PZBsC0=
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
-		cW9rnGFIl2ya5618lHr7BOiaqjA=
+		Ni3HS6I6/sIGGZcVtHcv01ddsw4=
 		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
-		D8HvfttQvbM2QFI88ftBswTFQpk=
+		W48QSD231JYuMJP/HyBctxAlzp4=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
-		v2G+Fbo2pysGMHKPxlLKHotJOaM=
+		LJCXuCqkXIIwRq01Fu59C6zl+sk=
 		</data>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<data>
-		qA0X7zgmWhM1G8aGv5D3sQvSC9M=
+		6RVKGsS6Snbxth83S/WpGMhKDCw=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
-		yYPTNH7Pp4yvPuYvmXgbCITeh9U=
+		SgtIMuOhRVss2axnY4hLNF8SmPg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+4IEz5ftmt9YR5d4TuINdnxEUpI=
+		SR2zRtva3UpMZ6Gpu60peqNidAQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,33 +51,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YqdEwZEfx2JwK2H/X+Pmam4wTF8=
+			+7smPueQ1noMhO82z05v2PZBsC0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3EBfQifUm2Owx3M0Za6uFObmATlW5LDquxOpf2bMDuQ=
+			jvhCI0PfATUeOh+EEY6+OgqELYPGZNz0KEZ3oNIwvLo=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cW9rnGFIl2ya5618lHr7BOiaqjA=
+			Ni3HS6I6/sIGGZcVtHcv01ddsw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			xTe2gPYqA4dXTSMrc8QsSwen3BribE1jbjHZ5J6ELHg=
+			g76Odsf4cctf0TYD4KeC7607NqibBi00yqt4Peppa20=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D8HvfttQvbM2QFI88ftBswTFQpk=
+			W48QSD231JYuMJP/HyBctxAlzp4=
 			</data>
 			<key>hash2</key>
 			<data>
-			8KE8yn899twsiTGk1/gKBOGk38gWgkpqq4rAU30VGAg=
+			CsBSpPZFbC8X/vEdquQJVbKKoQP60PcofwjbuGTbEsg=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
@@ -95,22 +95,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v2G+Fbo2pysGMHKPxlLKHotJOaM=
+			LJCXuCqkXIIwRq01Fu59C6zl+sk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ljXwDNg0yLM5VLdF8rRYYnT3adxqQgeuoXlr4awTOMw=
+			8URMD108yzOCrYyql7MJZ6it+U9xwQ0CmVGBZcwNAZI=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			qA0X7zgmWhM1G8aGv5D3sQvSC9M=
+			6RVKGsS6Snbxth83S/WpGMhKDCw=
 			</data>
 			<key>hash2</key>
 			<data>
-			dvSU4cEw/Ql4HpuRRQfbQV4kjZMNOOnunq8D5/su5zY=
+			b+3XW8tLZ2c2l8rMFg1iiATQLG8Y2quCg31Ht/TJUas=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
@@ -128,11 +128,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yYPTNH7Pp4yvPuYvmXgbCITeh9U=
+			SgtIMuOhRVss2axnY4hLNF8SmPg=
 			</data>
 			<key>hash2</key>
 			<data>
-			FrOUsXaZhMJHIcum5rRa5SgRKv0EbWeT9fx568T75RQ=
+			VQ4rDaVzd4H6QqpDqMVsGRIc2UNXThafNtagF1ZutZM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

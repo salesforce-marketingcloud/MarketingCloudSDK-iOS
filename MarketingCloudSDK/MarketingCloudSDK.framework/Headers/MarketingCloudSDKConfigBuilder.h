@@ -90,20 +90,5 @@ to take contactKey if no value is set
  */
 - (instancetype) sfmc_setMarketingCloudServerUrl:(NSString *) setMarketingCloudServerUrl;
 
-/**
- Sets the configuration value which enables or disables application control over badging
- 
- @param setApplicationControlsBadging Allows setting the state to YES or NO.
- @return returns the MarketingCloudSDKConfigBuilder instancetype value
- */
-- (instancetype) sfmc_setApplicationControlsBadging:(NSNumber *) setApplicationControlsBadging;
-
-/**
- Sets the configuration value which enables or disables application control over delaying SDK registration until a contact key is set
- 
- @param delayRegistrationUntilContactKeyIsSet Allows setting the state to YES or NO.
- @return returns the MarketingCloudSDKConfigBuilder instancetype value
- */
-- (instancetype) sfmc_setDelayRegistrationUntilContactKeyIsSet:(NSNumber *) delayRegistrationUntilContactKeyIsSet;
 @end
 NS_ASSUME_NONNULL_END

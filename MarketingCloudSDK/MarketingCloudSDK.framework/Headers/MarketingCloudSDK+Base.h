@@ -365,19 +365,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(NSString * _Nullable)sfmc_signedString;
 
-/**
- BOOL indicating whether the SDK is ready to be used.
-
- @return returns YES if the SDK is initialized and ready to be used.
- */
-- (BOOL)sfmc_isReady;
-
-/**
- BOOL indicating the SDK is in the process of being initialized.
- 
- @return returns YES if the SDK is in the process of being initialized.
- */
-- (BOOL)sfmc_isInitializing;
 
 @end
 

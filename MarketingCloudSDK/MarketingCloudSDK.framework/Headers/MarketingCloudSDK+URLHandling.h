@@ -30,7 +30,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const SFMCURLTypeAction;
  @param url value NSURL sent with the Location, CloudPage, OpenDirect or Inbox message
  @param type value NSInteger enumeration of the MobilePush source type of this URL
  */
--(void) sfmc_handleURL:(NSURL *_Nonnull) url type:(NSString * _Nonnull) type;
+-(void) sfmc_handleURL:(NSURL *) url type:(NSString * _Nonnull) type;
 
 @end
 
