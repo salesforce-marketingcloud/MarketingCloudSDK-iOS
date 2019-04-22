@@ -51,7 +51,7 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
 #### Version 6.2.0
-_Released April 29, 2019, correlating with the Marketing Cloud April 2019 release._
+_Released April 23, 2019, correlating with the Marketing Cloud April 2019 release._
 
 * **Required app endpoint (tenant-specific endpoint)**—To pass the SDK's configuration, an app endpoint is now required. [Find the app endpoint](https://help.salesforce.com/articleView?id=mc_mp_provisioning_info.htm&type=5#mc_mp_provisioning_info) for your app under Administration in MobilePush. Review [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
 
@@ -60,6 +60,8 @@ _Released April 29, 2019, correlating with the Marketing Cloud April 2019 releas
 * **Added ability to delay registration until contact key is set**—Use a new SDK configuration value to delay registrations to Marketing Cloud until a contact key is set via `sfmc_setContactKey:`. Review [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
 * **Inbox messages support `sendDateUtc` for Sorting**—Inbox messages delivered to your app now include the date that the message was sent. App users can sort their inbox based on this value. Review [Inbox]({{ site.baseurl }}/inbox/inbox.html) for details.
+
+* **Better tracking of open from push analytics**—The tracking of "open from push" analytics when an application is not running will now be captured more effectively if the SDK is configured asynchronously.
 
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
