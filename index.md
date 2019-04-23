@@ -63,6 +63,8 @@ _Released April 23, 2019, correlating with the Marketing Cloud April 2019 releas
 
 * **Better tracking of open from push analytics**—The tracking of "open from push" analytics when an application is not running will now be captured more effectively if the SDK is configured asynchronously.
 
+* **Fixed issue with the ConfigurationBuilder**—There was an issue with using the builder method of configuring the SDK which may have caused an authorization error when contacting Marketing Cloud.
+
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
 
