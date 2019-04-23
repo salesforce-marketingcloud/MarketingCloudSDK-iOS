@@ -66,7 +66,7 @@ _Released April 23, 2019, correlating with the Marketing Cloud April 2019 releas
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
 
-* **Location -- Corrected an issue that prevented a location or proximity CloudPage+Alert message from displaying.
+* **Location**—Corrected an issue that prevented a location or proximity CloudPage+Alert message from displaying.
 
 #### Version 6.1.3
 _Released February 11, 2019, correlating with the Marketing Cloud January 2019 release._
