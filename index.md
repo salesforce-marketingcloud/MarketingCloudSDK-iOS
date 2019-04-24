@@ -55,19 +55,21 @@ _Released June XX, 2019, correlating with the Marketing Cloud June 2019 release.
 
 * **In-App Messaging** -- In-App Messaging (IAM) affords customized in-app experiences for delivering relevant, personalized messages to users of your app. Without relying on push notifications being enabled, Marketing Cloud customers can create engaging full-screen, modal or banner messages for delivery to your application and presentation while your users are interacting with your application. See [In-App Messaging]({{ site.baseurl }}/in-app-message/in-app-messaging.html) for more.
 
-* **Push Open Analytics** -- If a push notification is opened and the app is in the background *or* foreground, the SDK will record an open from push analytic. Previous versions only recorded an open from push analytic if the app was in the background.
-
 
 #### Version 6.2.0
-_Released April 29, 2019, correlating with the Marketing Cloud April 2019 release._
+_Released April 23, 2019, correlating with the Marketing Cloud April 2019 release._
 
-* **Required: App Endpoint (Tenant-Specific Endpoint)** -- Passing the SDK's configuration an App Endpoint value is now required. See [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
+* **Required app endpoint (tenant-specific endpoint)**—To pass the SDK's configuration, an app endpoint is now required. [Find the app endpoint](https://help.salesforce.com/articleView?id=mc_mp_provisioning_info.htm&type=5#mc_mp_provisioning_info) for your app under Administration in MobilePush. Review [Configuration Requirements]({{ site.baseurl }}/get-started/apple.html#configuration_requirements) for details.
 
-* **Application Badging Override** -- The SDK now offers a configuration value to allow for full application control of app badge value. See [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
+* **Added application badging override**—A new SDK configuration value gives you full control of your app’s badge value. Review [Application Badging]({{ site.baseurl }}/application-badging/application-badging.html) for details.
 
-* **Delay Registration until Contact Key is Set** -- The SDK now offers a configuration value to allow for registrations to the Marketing Cloud to be delayed until a contact key has been set via `sfmc_setContactKey:`. See [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
+* **Added ability to delay registration until contact key is set**—Use a new SDK configuration value to delay registrations to Marketing Cloud until a contact key is set via `sfmc_setContactKey:`. Review [Delay Registration]({{ site.baseurl }}/sdk-implementation/user-data.html) for details.
 
-* **Inbox Messages support `sendDateUtc` for Sorting** -- If using the app inbox functionality of MobilePush, messages delivered to your application now include the date the message was sent. You can sort your inbox based on this value. See [Inbox]({{ site.baseurl }}/inbox/inbox.html) for more information.
+* **Inbox messages support `sendDateUtc` for Sorting**—Inbox messages delivered to your app now include the date that the message was sent. App users can sort their inbox based on this value. Review [Inbox]({{ site.baseurl }}/inbox/inbox.html) for details.
+
+* **Better tracking of open from push analytics**—The tracking of "open from push" analytics when an application is not running will now be captured more effectively if the SDK is configured asynchronously.
+
+* **Fixed issue with the ConfigurationBuilder**—There was an issue with using the builder method of configuring the SDK which may have caused an authorization error when contacting Marketing Cloud.
 
 #### Version 6.1.4
 _Released February 28, 2019, correlating with the Marketing Cloud January 2019 release._
