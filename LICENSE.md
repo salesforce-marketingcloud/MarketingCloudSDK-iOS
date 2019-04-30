@@ -1,4 +1,5 @@
 Copyright © 2019 Salesforce Marketing Cloud. All rights reserved.
+Copyright Salesforce, Inc.
 
 All rights reserved.
 
