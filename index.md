@@ -50,6 +50,11 @@ We remove deprecated methods from the SDK two releases after the initial depreca
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
+#### Version 6.2.3
+_Released May 21, 2019, correlating with the Marketing Cloud April 2019 release._
+
+* **Fixed issue with Inbox start date**—Inbox messages now will respect startDateUtc payload value in all cases.
+
 #### Version 6.2.2
 _Released May 2, 2019, correlating with the Marketing Cloud April 2019 release._
 
