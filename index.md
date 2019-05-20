@@ -55,6 +55,17 @@ _Released June XX, 2019, correlating with the Marketing Cloud June 2019 release.
 
 * **In-App Messaging** -- In-App Messaging (IAM) affords customized in-app experiences for delivering relevant, personalized messages to users of your app. Without relying on push notifications being enabled, Marketing Cloud customers can create engaging full-screen, modal or banner messages for delivery to your application and presentation while your users are interacting with your application. See [In-App Messaging]({{ site.baseurl }}/in-app-message/in-app-messaging.html) for more.
 
+#### Version 6.2.3
+_Released May 21, 2019, correlating with the Marketing Cloud April 2019 release._
+
+* **Fixed issue with Inbox start date**—Inbox messages now will respect startDateUtc payload value in all cases.
+
+#### Version 6.2.2
+_Released May 2, 2019, correlating with the Marketing Cloud April 2019 release._
+
+* **Removed SDK test code from library**—Test code associated with SDK development was removed from the public release.
+
+* **Fixed Location Messaging Date Calculation**—When calculating a "next show date" for a location message, fixed a case where the day may have been off by one.
 
 #### Version 6.2.0
 _Released April 23, 2019, correlating with the Marketing Cloud April 2019 release._
