@@ -1,0 +1,16 @@
+
+#### Version {{ page.version }}
+
+{% assign day = page.date | date: "%-d"  %}
+{% capture day_str %}
+    {% case day %}
+    {% when '1' or '21' or '31' %}{{ day }}st
+    {% when '2' or '22' %}{{ day }}nd
+    {% when '3' or '23' %}{{ day }}rd
+    {% else %}{{ day }}th
+    {% endcase %}
+{% endcapture %}
+
+_Released {{ page.date | date: "%B" }} {{ day_str | strip }}, correlating with the Marketing Cloud {{ page.mc_release }} release._
+
+{{ content }}
