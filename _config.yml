@@ -22,12 +22,13 @@ navigation: 1
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS'
 
+collections:
+  releases:
+    permalink: "releases/:path"
+
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['overview', 'Overview'],
     ['get-started', 'Get Started'],
-    ['provisioning', 'Provisioning'],
-    ['create-apps', 'Create Cloud Apps'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
@@ -38,9 +39,7 @@ sections: [
     ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
     ['user-data', 'User Data'],
-    ['trouble', 'Troubleshooting'],
-    ['upgrading', 'Upgrading'],
-    ['resources', 'Additional Resources']
+    ['trouble', 'Troubleshooting']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
@@ -58,7 +57,7 @@ highlighter: rouge
 future: true
 
 # Exclude non-site files
-exclude: ['bin', 'README.md']
+exclude: ['bin', 'README.md', 'docker-compose.yml']
 
 # Use the kramdown Markdown renderer
 markdown: kramdown

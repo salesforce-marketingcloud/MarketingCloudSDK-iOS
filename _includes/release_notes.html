@@ -1,0 +1,6 @@
+## Releases
+
+{% assign releases = site.releases | sort: "date" | reverse %}
+{% for release in releases %}
+  {{ release }}
+{% endfor %}
