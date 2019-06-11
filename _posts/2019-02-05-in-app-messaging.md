@@ -9,16 +9,12 @@ order: 1
 
 Deliver relevant, personalized messages to your app’s users with in-app messaging. You can now send messages without relying on users having enabled push notifications. Engaging full-screen, modal, or banner messages are presented while your users are interacting with your app.
 
-To ensure that your app has the latest message data, in-app messages are delivered via MobilePush’s silent push feature to your app while it’s in the background and each time your app comes to the foreground. When your app comes to the foreground, any messages marked for display are presented at the top of your app's view stack.
+To ensure that your app has the latest message data, in-app messages are loaded each time your app comes to the foreground. When your app comes into the foreground, any messages marked for display are prepared to be presented at the top of your app's view stack. Only one message is displayed each time the app comes into the foreground. Depending on how your app is enabled, the SDK can be triggered to download in-app messages in the background.
 
-To use in-app messages, enable them in [Marketing Cloud Journey Builder](https://help.salesforce.com/articleView?id=mc_jb_configure_inapp_in_journey_builder.htm&type=5). No SDK configuration specific to in-app messages is required. However, in-app messaging requires some other SDK methods.
+You can fully enable in-app messages in [Marketing Cloud Journey Builder](https://help.salesforce.com/articleView?id=mc_jb_configure_inapp_in_journey_builder.htm&type=5). To use certain in-app messaging functionality, such as button actions, some SDK configuration is required.
 
-### Required Methods
-Marketers can configure the action that occurs when an end-user taps a button on an in-app message. To use these configurable actions, implement [URL handling]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html). URL handling ensures that in-app messages properly handle these button action types:
-* Web URL
-* App URL
-* Notification Settings
-* Location Settings
+### Required Methods for Button Actions
+Marketers can configure the action that occurs when an end-user taps a button on an in-app message. Actions for *Notification Settings* and *Location Settings* are handled by the SDK, while actions for *Web URL* and *App URL* require that you implement [URL handling]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html).
 
 ### Optional Methods
 
