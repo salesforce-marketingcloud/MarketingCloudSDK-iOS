@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'MarketingCloudSDK iOS (v6.2.3)'
+title: 'MarketingCloudSDK iOS (v6.3.0)'
 
 propagationDelay: '5 minutes'
 
@@ -22,24 +22,24 @@ navigation: 1
 # URL to source code, used in _includes/footer.html
 codeurl: 'https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS'
 
+collections:
+  releases:
+    permalink: "releases/:path"
+
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['overview', 'Overview'],
     ['get-started', 'Get Started'],
-    ['provisioning', 'Provisioning'],
-    ['create-apps', 'Create Cloud Apps'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
+    ['in-app-message', 'In-App Messaging'],
     ['location', 'Location Services'],
     ['inbox', 'Inbox'],
     ['analytics', 'Analytics'],
     ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
     ['user-data', 'User Data'],
-    ['trouble', 'Troubleshooting'],
-    ['upgrading', 'Upgrading'],
-    ['resources', 'Additional Resources']
+    ['trouble', 'Troubleshooting']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
@@ -57,11 +57,11 @@ highlighter: rouge
 future: true
 
 # Exclude non-site files
-exclude: ['bin', 'README.md']
+exclude: ['bin', 'README.md', 'docker-compose.yml']
 
 # Use the kramdown Markdown renderer
 markdown: kramdown
 
 # Current SDK version, use for all mentions
-currentVersion: "6.2.3"
+currentVersion: "6.3.0"
 
