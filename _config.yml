@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'MarketingCloudSDK iOS (v6.3.3)'
+title: 'MarketingCloudSDK iOS (v6.3.4)'
 
 propagationDelay: '5 minutes'
 
@@ -63,5 +63,5 @@ exclude: ['bin', 'README.md', 'docker-compose.yml']
 markdown: kramdown
 
 # Current SDK version, use for all mentions
-currentVersion: "6.3.3"
+currentVersion: "6.3.4"
 
