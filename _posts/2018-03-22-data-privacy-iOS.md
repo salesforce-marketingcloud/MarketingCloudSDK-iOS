@@ -16,7 +16,7 @@ The MobilePush SDK supports three privacy modes that may affect your application
 Each mode restricts the functionality of the MobilePush SDK and may limit your customers' experience.
 
 ## Right to be Forgotten
-Use this mode when a contact requests that you remove all data related to them from Marketing Cloud. This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/user-data/contact-key.html), as forgotten. This setting prevents Marketing Cloud marketing activities from storing data or interacting with the contact for marketing activities. Marketing Cloud servers host this status. This suppression lasts for a period of 14 days. After this time period elapses, Marketing Cloud permanently deletes all contact data.
+Use this mode when a contact requests that you remove all data related to them from Marketing Cloud. This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/sdk-implementation/user-data.html), as forgotten. This setting prevents Marketing Cloud marketing activities from storing data or interacting with the contact for marketing activities. Marketing Cloud servers host this status. This suppression lasts for a period of 14 days. After this time period elapses, Marketing Cloud permanently deletes all contact data.
 
 ### What Happens in the SDK?
 The MobilePush SDK takes actions to restrict all functionality after it receives the first Right to be Forgotten mode change for a contact from the server, either via a silent push notification or when your application comes to the foreground.
@@ -33,7 +33,7 @@ This mode completely disables these functions for the lifecycle of your applicat
 For your contact to use Marketing Cloud services again, they must delete and reinstall your application on their mobile device. The MobilePush SDK must then be configured for usage by that contact.
 
 ## Restriction of Processing
-This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/user-data/contact-key.html), as restricted from processing. This mode restricts all data operations for that contact.
+This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/sdk-implementation/user-data.html), as restricted from processing. This mode restricts all data operations for that contact.
 
 * Modifying information
 * Deleting information
@@ -57,7 +57,7 @@ This mode completely disables this functionality when the contact is in a restri
 If the contact moves off the restriction state and is again usable, the SDK receives a notification of the change in state, either via a silent push notification or when your application comes to the foreground. This change automatically reconfigures the SDK for use, based on your last-used configuration settings.
 
 ## Do Not Track
-This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/user-data/contact-key.html), as restricted from tracking activities. This setting restricts certain data operations that collect or act upon personally identifiable information (PII).
+This mode marks a contact, identified by the SDK's [contact key string]({{ site.baseurl }}/sdk-implementation/user-data.html), as restricted from tracking activities. This setting restricts certain data operations that collect or act upon personally identifiable information (PII).
 
 ### What Happens in the SDK?
 If a contact has been moved to Do Not Track, the MobilePush SDK takes actions to restrict functionality after it receives the first change in mode from the server, either via a silent push notification or when your application comes to the foreground.
