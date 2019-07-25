@@ -31,7 +31,7 @@ Sign up for email announcements and contact us with questions or feedback about 
 
 * The MarketingCloudSDK for iOS can be found on [GitHub](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS) and [CocoaPods](https://cocoapods.org/pods/MarketingCloudSDK).
 * The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
-* The Marketing Cloud provides the [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.
+* The Marketing Cloud provides the [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.
 * Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for the SDK.
 * [Sign up for email updates about the iOS MarketingCloudSDK](http://pub.s1.exacttarget.com/2ujjacpet3t).<br/>
 * View the [Android SDK docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android).
