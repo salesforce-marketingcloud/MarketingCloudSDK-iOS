@@ -12,7 +12,7 @@ Before you send a push notification to your device as a test, complete all of th
 1. Verify that your app is built appropriately for the type of push certificate you uploaded to Marketing Cloud.
   - If you set up the app in Marketing Cloud with an Apple Production certificate, build your app for distribution. Examples include Ad Hoc, TestFlight, and Enterprise.
   - If you set up the app in Marketing Cloud with a Development Certificate, build your app for development. An example is Debug.
-1. Set a temporary [contact key]({{ site.baseurl }}/user-data/contact-key.html) in your app for testing. For example, use an email address. This allows you to target the device you are testing on when sending the test push.
+1. Set a temporary [contact key]({{ site.baseurl }}/sdk-implementation/user-data.html) in your app for testing. For example, use an email address. This allows you to target the device you are testing on when sending the test push.
 1. In MobilePush in Marketing Cloud, create a [filtered list](https://help.salesforce.com/articleView?id=mc_mp_create_filtered_list.htm&type=5) that targets the contact key you set.
   - Tip: When creating the filter criteria, use the Contact Key attribute. Find this attribute under System Data > Contact > Contact Key., Set the attribute equal to the contact key in your iOS app.
   - Tip: It may take up to five minutes for the contact created by your app to show up in the filtered list. Refresh the list until the new contact is returned before proceeding to the next step.
