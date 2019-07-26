@@ -34,7 +34,7 @@ Sign up for email announcements and contact us with questions or feedback about 
 * The Marketing Cloud provides the [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.
 * Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for the SDK.
 * [Sign up for email updates about the iOS MarketingCloudSDK](http://pub.s1.exacttarget.com/2ujjacpet3t).<br/>
-* View the [Android SDK docs](http://salesforce-marketingcloud.github.io/JB4A-SDK-Android/).
+* View the [Android SDK docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android/).
 
 ## Hybrid Mobile Apps
 
