@@ -28,7 +28,7 @@ Review Apple documentation for more information about [unified logging](https://
 
 #### Device Token
 
-For testing and troubleshooting purposes, retrieve your device token from a running app by calling [[MarketingCloudSDK sharedInstance] sfmc_deviceToken] and sending the result to yourself via email, alert, or other method.
+For testing and troubleshooting purposes, retrieve your device token from a running app by calling [[MarketingCloudSDK sharedInstance] sfmc_deviceToken] and send the result to yourself via email, alert, or other method.
 
 #### Additional Resources
 
