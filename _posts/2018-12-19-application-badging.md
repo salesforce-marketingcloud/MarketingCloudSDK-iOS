@@ -41,9 +41,21 @@ To enable override via JSON, set the `applicationcontrolsbadging` key to `true`.
 
 To enable override via dictionary, use the `sfmc_setApplicationControlsBadging` method in your configuration builder.
 
-    `MarketingCloudSDKConfigBuilder().sfmc_setApplicationId(appID).sfmc_setAccessToken(accessToken).sfmc_setApplicationControlsBadging(true).sfmc_build()!`
+    MarketingCloudSDKConfigBuilder().sfmc_setApplicationId(appID).sfmc_setAccessToken(accessToken).sfmc_setApplicationControlsBadging(true).sfmc_build()!`
 
 Or, in Objective-C, use the builder with `sfmc_setApplicationControlsBadging:@(YES)`.
+
+#### Clearing the badge
+
+When your application controls badging, it may be desirable to clear the badge value when events or data change within your app.
+
+This is done by setting the badge value to `0`.
+
+    // example: clear the badge when app comes to foreground
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        application.applicationIconBadgeNumber = 0
+    }
+
 
 #### Related Item
 [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk)
