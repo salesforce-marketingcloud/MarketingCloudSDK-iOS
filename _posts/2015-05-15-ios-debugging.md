@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "iOS Debugging"
+title: "Push Setup"
 subtitle: "iOS Debugging"
 category: trouble
 date: 2015-05-14 12:00:00
@@ -12,15 +12,11 @@ General, default-level logging is enabled at all times. Additionally, the SDK wr
 
 Enable debug-level logging after configuration using this call.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/e952d4f8272e3b926f7eaa20031359aa.js"></script>
-
-<script src="https://gist.github.com/sfmc-mobilepushsdk/0bd9cdf402145e97136a222bbcad426d.js"></script>
+{% include gist.html sectionId="sfmc_setDebugLoggingEnabled" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/0bd9cdf402145e97136a222bbcad426d.js" %}
 
 Query the state of debug-level logging using this call.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/7670d9404859b1a758c775e1add602a9.js"></script>
-
-<script src="https://gist.github.com/sfmc-mobilepushsdk/0663b6b494a586e86228b878673a97e5.js"></script>
+{% include gist.html sectionId="sfmc_getDebugLoggingEnabled" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/0663b6b494a586e86228b878673a97e5.js" %}
 
 We send all logging output to Apple's unified logging system. Read this information using Xcode's “Devices and Simulators” window or the macOS Console application. When SDK debug logging is enabled, the SDK uses the *OS_LOG_TYPE_DEBUG* value. Make sure to disable logging in your application for release builds to the Apple App Store.
 
@@ -28,7 +24,22 @@ Review Apple documentation for more information about [unified logging](https://
 
 #### Device Token
 
-For testing and troubleshooting purposes, retrieve your device token from a running app by calling [[MarketingCloudSDK sharedInstance] sfmc_deviceToken] and sending the result to yourself via email, alert, or other method.
+For testing and troubleshooting purposes, retrieve your device token from a running app by calling `sfmc_deviceToken()` and sending the result to yourself via email, alert, or other method.
+
+{% include gist.html sectionId="testPushDeviceToken" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js" %}
+
+
+#### Send a test push
+
+Test that your app can receive a push directly from APNS (Apple Push Notification Service).
+
+- Get the push token from the SDK
+
+{% include gist.html sectionId="sendTestPushDeviceToken" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js" %}
+
+- Trigger the APNS API directly from the command line
+
+{% include gist.html sectionId="sendTestPush" names="Shell" gists="https://gist.github.com/sfmc-mobilepushsdk/453df3208247c74b7c50bebb23d53a87.js" %}
 
 #### Additional Resources
 
@@ -48,19 +59,11 @@ Ensure that your network team unblocks the following ports to provide communicat
 * TCP port 2196 (used by the APNS feedback service)
 * TCP port 443 (used as a fallback service for Wi-Fi devices when those devices cannot communicate to the APNS service on port 5223)
 
-#### Add debugging statements to the log
-
-You can toggle the SDK logging facility by including the following lines in your code:
-
-<script src="https://gist.github.com/sfmc-mobilepushsdk/9d9f0a6e38f66e637871fcbdeffef9bb.js"></script>
-
-<script src="https://gist.github.com/sfmc-mobilepushsdk/0e519d3566a62c340f4708464bda77ea.js"></script>
-
 #### Add SDK State information to log
 
 For a complete list of information that the SDK has and it's current state, you can implement getSDKState() as follows:
 
-{% include gist.html sectionId="getsdkstate" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/9275c899342cb46ea4f9f6367bfd7f92.js,https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js" %}
+{% include gist.html sectionId="getsdkstate" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js" %}
 
 
 The SDK will output a JSON string like this:
