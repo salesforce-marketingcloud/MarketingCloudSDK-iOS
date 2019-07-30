@@ -29,21 +29,22 @@ To enable an application's override of badging, pass a configuration value into 
 
 To enable override via JSON, set the `applicationcontrolsbadging` key to `true`.
 
-    [{
-	    "name": "production",
-	    "appid": "<appid from Marketing Cloud here>",
-	    "accesstoken": "<accesstoken from Marketing Cloud here>",
-	    "applicationcontrolsbadging":true,
-	    ...
-    }]
+{% include gist.html sectionId="badgingConfigureViaJSON" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/e8ebf1a1fad4cf544a379a5fc69c2362.js" %}
 
 #### Configure via Dictionary
 
 To enable override via dictionary, use the `sfmc_setApplicationControlsBadging` method in your configuration builder.
 
-    `MarketingCloudSDKConfigBuilder().sfmc_setApplicationId(appID).sfmc_setAccessToken(accessToken).sfmc_setApplicationControlsBadging(true).sfmc_build()!`
+{% include gist.html sectionId="badgingConfigureViaBuilder" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js" %}
 
-Or, in Objective-C, use the builder with `sfmc_setApplicationControlsBadging:@(YES)`.
+#### Clearing the badge
+
+When your application controls badging, it may be desirable to clear the badge value when events or data change within your app.
+
+This is done by setting the badge value to `0`.
+
+{% include gist.html sectionId="badgingClearBadge" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/b845fd75b336b0b8e7ef7f291b7425bf.js" %}
+
 
 #### Related Item
 [Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk)

@@ -28,7 +28,6 @@ For testing and troubleshooting purposes, retrieve your device token from a runn
 
 {% include gist.html sectionId="testPushDeviceToken" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js" %}
 
-
 #### Send a test push
 
 Test that your app can receive a push directly from APNS (Apple Push Notification Service).
