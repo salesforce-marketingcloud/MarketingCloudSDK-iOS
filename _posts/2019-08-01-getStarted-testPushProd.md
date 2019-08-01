@@ -1,9 +1,9 @@
 ---
 layout: page
-title: "Test SDK Setup"
+title: "Production / Distribution"
 subtitle: "Test Your Setup: Send a Push"
-category: get-started
-date: 2018-02-19 12:00:00
+category: testing-push
+date: 2019-08-01 12:00:00
 order: 2
 ---
 Before you send a push notification to your device as a test, complete all of the [steps to set up the SDK]({{ site.baseurl }}/get-started/apple.html).

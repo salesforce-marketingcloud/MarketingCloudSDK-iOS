@@ -30,6 +30,7 @@ collections:
 sections: [
     ['docs', 'Documentation'],
     ['get-started', 'Get Started'],
+    ['testing-push', 'Testing the SDK'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
