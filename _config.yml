@@ -28,6 +28,7 @@ collections:
 
 # Default categories (in order) to appear in the navigation
 sections: [
+    ['docs', 'Documentation'],
     ['get-started', 'Get Started'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
