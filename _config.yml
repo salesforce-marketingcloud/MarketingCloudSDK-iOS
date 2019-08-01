@@ -33,12 +33,13 @@ sections: [
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
     ['in-app-message', 'In-App Messaging'],
-    ['location', 'Location Services'],
-    ['inbox', 'Inbox'],
+    ['inbox', 'Inbox Messaging'],
+    ['location', 'Location Messaging'],
     ['analytics', 'Analytics'],
     ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
     ['user-data', 'User Data'],
+    ['use-cases', 'Use Cases'],
     ['trouble', 'Troubleshooting']
 ]
 
