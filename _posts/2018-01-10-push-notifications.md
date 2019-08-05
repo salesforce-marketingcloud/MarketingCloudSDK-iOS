@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Push Notification Extensions"
-subtitle: "Push Notification Extensions"
+title: "Customize Push Notifications"
+subtitle: "Extent Push Notification Functionality"
 category: push-notifications
 date: 2018-01-12 12:00:00
 order: 1

@@ -39,7 +39,6 @@ sections: [
     ['location', 'Location Messaging'],
     ['analytics', 'Analytics'],
     ['features', 'Feature Implementation'],
-    ['user-data', 'User Data'],
     ['use-cases', 'Use Cases'],
     ['trouble', 'Troubleshooting']
 ]
