@@ -17,7 +17,7 @@ Your development, test, and deployment process is best accomplished by creating 
 
 To connect your iOS app to Marketing Cloud, create a MobilePush app in MobilePush in Marketing Cloud. This connection allows your app to use MobilePush to communicate with your users via push notifications. Marketing Cloud classifies MobilePush apps as consumer-grade applications. MobilePush apps use long-lived, limited-access tokens.
 
-Before starting, make sure you have created push certificates as outlined in our [Provision for Push]({{ site.baseurl }}/get-started-provision.html) document.
+Before starting, make sure you have created push certificates as outlined in our [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
 
 Follow these steps to create new MobilePush apps:
 1. Log in to [Marketing Cloud MobilePush](https://mc.exacttarget.com).
@@ -30,9 +30,9 @@ Follow these steps to create new MobilePush apps:
 1. Click **Choose file** and upload the icon for the MobilePush app.
 1. To upload an APNS certificate, click **Change** and choose the certificate on your computer to upload. Enter the password for the certificate.
 
-    > Development app: upload the **iOS Apple Push Notification service SSL (Sandbox)** .p12 file created following the directions in [Provision for Push]({{ site.baseurl }}/get-started-provision.html).
+    > Development app: upload the **iOS Apple Push Notification service SSL (Sandbox)** .p12 file created following the directions in [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html).
     
-    > Production app: upload the **Apple Push Notification service SSL (Sandbox & Production)** .p12 file created following the directions in [Provision for Push]({{ site.baseurl }}/get-started-provision.html).
+    > Production app: upload the **Apple Push Notification service SSL (Sandbox & Production)** .p12 file created following the directions in [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html).
     
     > Validate correct certificate is uploaded. The certificate should be for Push Notifications (APNS), not the signing certificate used to provision your application for AdHoc or App Store deployment. Double-check to ensure that the certificate uploaded is a valid, current APNS (push) certificate, as they expire after 1 year.
     

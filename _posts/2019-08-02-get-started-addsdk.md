@@ -45,4 +45,4 @@ Open the .xcworkspace created by the install process with Xcode and start using 
   
 ### Next Steps
 
-[Configure the SDK]({{ site.baseurl }}get-started/get-started-configuresdk.html)
+[Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)

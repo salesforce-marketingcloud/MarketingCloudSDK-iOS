@@ -47,4 +47,4 @@ This is done by setting the badge value to an integer value.
 
 
 #### Related Item
-[Configure the SDK]({{ site.baseurl }}get-started/get-started-configuresdk.html)
+[Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)

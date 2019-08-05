@@ -11,10 +11,10 @@ order: 2
 
 Before you send a push notification to your deployment app, complete all of the **Get Started* steps:
 
-1. [Provision for Push]({{ site.baseurl }}/get-started/provision.html)
+1. [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html)
 1. [Setup Push Apps]({{ site.baseurl }}/get-started/get-started-setupapps.html)
 1. [Add the SDK]({{ site.baseurl }}/get-started/get-started-addsdk.html)
-1. [Configure the SDK]({{ site.baseurl }}get-started/get-started-configuresdk.html)
+1. [Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)
 1. [Configure for Push]({{ site.baseurl }}/get-started/get-started-configureforpush.html)
 
 > Use a device to test. You can use an iOS simulator for testing some aspects of the SDK, but the simulator cannot receive push notifications.
