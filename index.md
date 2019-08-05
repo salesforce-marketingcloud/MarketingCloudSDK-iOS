@@ -29,7 +29,7 @@ Send your first push notification to test your initial SDK setup.
     * Use a [contact key]({{ site.baseurl }}/sdk-implementation/user-data.html#contact-key) to set the unique identifier used to aggregate a contact’s devices within Marketing Cloud. Set the contact key to a specific value provided by your customer or to another unique identifier for the contact, such as mobile number, email address, customer number, or another value.
     * Add [attributes]({{ site.baseurl }}/sdk-implementation/user-data.html#attributes) and [tags]({{ site.baseurl }}/sdk-implementation/user-data.html#tags) -- Enhance your ability to segment your push message audiences.
     * [Add predictive intelligence]({{ site.baseurl }}/analytics/personalization-collect.html) using Personalization Builder -- Track cart and cart conversions. Purchase this feature separately.
-    * Add other features -- Send push notifications along with your [inbox messages]({{ site.baseurl }}/inbox/inbox.html), use OpenDirect for [deep linking]({{ site.baseurl }}/opendirect/opendirect.html), and trigger location-based messages with [location and beacon messaging]({{ site.baseurl }}/location/geolocation-overview.html).
+    * Add other features -- Send push notifications along with your [inbox messages]({{ site.baseurl }}/inbox/inbox.html), use OpenDirect for [deep linking]({{ site.baseurl }}/push-notifications/opendirect.html), and trigger location-based messages with [location and beacon messaging]({{ site.baseurl }}/location/geolocation-overview.html).
 
 ## Contact Us
 

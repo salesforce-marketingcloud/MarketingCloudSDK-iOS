@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "5. Configure for Push"
-subtitle: "Configure for Push"
+title: "5. Enable Push"
+subtitle: "Enable Push"
 category: get-started
 date: 2019-08-02 12:00:00
 order: 4
@@ -20,7 +20,7 @@ published: true
 1. Set your `AppDelegate` class to adhere to the `UIApplicationDelegate` and `UNUserNotificationCenterDelegate` protocol.
     <script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script><br>
 
-1. Extend the SDK configuration code outlined in [Configure the SDK]({{ site.baseurl }}get-started/get-started-configuresdk.html) to add support for push registration. 
+1. Extend the SDK configuration code outlined in [Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html) to add support for push registration. 
     
     <script src="https://gist.github.com/sfmc-mobilepushsdk/75374975e2f386560c04455dec1092bd.js"></script><br>
 

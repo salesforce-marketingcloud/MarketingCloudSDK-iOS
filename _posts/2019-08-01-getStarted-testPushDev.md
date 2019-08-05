@@ -9,7 +9,7 @@ order: 1
 
 #### MobilePush SDK Setup
 
-Before you send a push notification to your device as a test, complete all of the **Get Started* steps:
+Before you send a push notification to your device as a test, complete all of the **Get Started** steps:
 
 1. [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html)
 1. [Setup Push Apps]({{ site.baseurl }}/get-started/get-started-setupapps.html)

@@ -10,12 +10,10 @@ published: true
 
 #### Create your apps in Marketing Cloud
 
-Your development, test, and deployment process is best accomplished by creating *two** unique MobilePush apps 
+Your development, test, and deployment process is best accomplished by creating **two** unique MobilePush apps 
 
 - one for development (utilizing Apple's push sandbox) 
 - one for production (targeting Apple's production push system).
-
-To connect your iOS app to Marketing Cloud, create a MobilePush app in MobilePush in Marketing Cloud. This connection allows your app to use MobilePush to communicate with your users via push notifications. Marketing Cloud classifies MobilePush apps as consumer-grade applications. MobilePush apps use long-lived, limited-access tokens.
 
 Before starting, make sure you have created push certificates as outlined in our [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
 
