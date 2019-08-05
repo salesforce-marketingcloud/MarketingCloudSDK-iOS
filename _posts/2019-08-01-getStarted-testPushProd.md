@@ -7,9 +7,15 @@ date: 2019-08-01 12:00:00
 order: 2
 ---
 
-#### SDK Setup
+#### MobilePush SDK Setup
 
-Before you send a push notification to your deployment app, complete all of the [steps to set up the SDK]({{ site.baseurl }}/get-started/apple.html).
+Before you send a push notification to your deployment app, complete all of the **Get Started* steps:
+
+1. [Provision for Push]({{ site.baseurl }}/get-started/provision.html)
+1. [Setup Push Apps]({{ site.baseurl }}/get-started/get-started-setupapps.html)
+1. [Add the SDK]({{ site.baseurl }}/get-started/get-started-addsdk.html)
+1. [Configure the SDK]({{ site.baseurl }}get-started/get-started-configuresdk.html)
+1. [Configure for Push]({{ site.baseurl }}/get-started/get-started-configureforpush.html)
 
 > Use a device to test. You can use an iOS simulator for testing some aspects of the SDK, but the simulator cannot receive push notifications.
 
@@ -18,33 +24,14 @@ Before you send a push notification to your deployment app, complete all of the 
 1. Provision your app for Ad Hoc or App Store distribution. See [Apple's docs](https://developer.apple.com/support/code-signing/) for more information.
 2. Archive your application and prepare it for distribution through tools like TestFlight, Fabric, or HockeyApp.
 
-#### MobilePush Setup
-
-4. Following [Apple’s instructions](https://help.apple.com/developer-account/#/dev82a71386a), create an **Apple Push Notification service SSL (Sandbox & Production)** certificate. This type of certificate is used to send pushes through Apple’s production push environment, which allows you to receive pushes in your production configuration. The .p12 file resulting from this step will be used in creating your Marketing Cloud MobilePush app in the next step.
-
-    > Note: You *must* select "Apple Push Notification service SSL (Sandbox & Production)" for this step.
-    
-    > Note: Do *not* select "iOS Apple Push Notification service SSL (Sandbox)" for this step.
-    
-4. Log in to [Marketing Cloud MobilePush](https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/) and select the "Administration" tab.
-- On the app settings screen, under *APNS Client*, upload the .p12 file created in the steps above. Enter the .p12 file password in the text field.
-- Note and copy the `Access Token`, `App ID` and `App Endpoint`. These values will be used to configure the SDK for production testing.
-- Save your settings.
-
-> If you **do not** have a MobilePush app created in Marketing Cloud, click “Create New App” in "Administration" to create an MobilePush app. Save and continue, and follow the instructions above. Suggestion for name: `[product]_PROD-APNS`.
-
 #### Configure the SDK for Production
 
 5. In your configuration of the SDK, use the MobilePush application values created in the steps above.
 7. Archive and distribute your application (Ad Hoc and/or App Store).
 
-    > This example uses the MobilePush SDK [ConfigBuilder ](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html#//api/name/sfmc_configureWithDictionary:error:) configuration, as it is the most flexible means to support your debug environment.
-    
-    > If using the JSON configuration file, see [Handle Multiple Configurations]({{ site.baseurl }}/sdk-implementation/business-unit-switching.html) for an example of switching between multiple configurations.
+   > It may take up to 5 minutes for your contact to be created in Marketing Cloud
 
-    > It may take up to 5 minutes for your contact to be created in Marketing Cloud
-    
-{% include gist.html sectionId="221_ios_getStartedDevConfigure" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/26263f30ab936037e110e191f5514a44.js" %}
+<script src="https://gist.github.com/sfmc-mobilepushsdk/26263f30ab936037e110e191f5514a44.js"></script>
 
 #### Send a Test Push
 
