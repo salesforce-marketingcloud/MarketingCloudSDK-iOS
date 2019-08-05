@@ -38,7 +38,6 @@ sections: [
     ['inbox', 'Inbox Messaging'],
     ['location', 'Location Messaging'],
     ['analytics', 'Analytics'],
-    ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
     ['user-data', 'User Data'],
     ['use-cases', 'Use Cases'],
