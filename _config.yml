@@ -65,4 +65,3 @@ markdown: kramdown
 
 # Current SDK version, use for all mentions
 currentVersion: "6.3.4"
-currentMajorMinor: "6.3" #used for cocoapods doc reference
