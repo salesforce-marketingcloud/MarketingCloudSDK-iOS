@@ -22,7 +22,7 @@ title: "Home"
 
 1. [Download and set up the SDK]({{ site.baseurl }}/get-started/apple.html)
 Integrate the SDK into your app and configure the SDK to send push notifications.
-1. [Test your setup]({{ site.baseurl }}/get-started/test-first-push.html)
+1. [Test your setup]({{ site.baseurl }}/testing-push/getStarted-testPushDev.html)
 Send your first push notification to test your initial SDK setup.
 1. Implement additional optional features of the SDK to take full advantage of Salesforce Marketing Cloud.
     * [Add custom sounds, media, custom keys, and interactions]({{ site.baseurl }}/push-notifications/push-notifications.html) -- Use these features to further customize push notifications for your apps.
