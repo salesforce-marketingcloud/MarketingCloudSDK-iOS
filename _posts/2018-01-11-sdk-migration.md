@@ -5,6 +5,7 @@ subtitle: "Migrate Existing App to SDK Version 5.x"
 category: sdk-implementation
 date: 2018-01-11 12:00:00
 order: 10
+published: false
 ---
 
 Starting with version 5.0.0, the iOS MarketingCloudSDK replaces the iOS Journey Builder for Apps, or JB4A, SDK. The model and method-naming conventions are incompatible between the JB4A SDK and the MarketingCloudSDK. Do not use both the JB4A SDK and MarketingCloudSDK simultaneously.

@@ -37,14 +37,14 @@ To enable override via dictionary, use the `sfmc_setApplicationControlsBadging` 
 
 {% include gist.html sectionId="badgingConfigureViaBuilder" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js" %}
 
-#### Clearing the badge
+#### Setting and Clearing the Badge
 
-When your application controls badging, it may be desirable to clear the badge value when events or data change within your app.
+When your application controls badging, it may be desirable to set or clear the badge value when events or data change within your app.
 
-This is done by setting the badge value to `0`.
+This is done by setting the badge value to an integer value.
 
-{% include gist.html sectionId="badgingClearBadge" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/b845fd75b336b0b8e7ef7f291b7425bf.js" %}
+{% include gist.html sectionId="badgingSetClearBadge" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/b845fd75b336b0b8e7ef7f291b7425bf.js" %}
 
 
 #### Related Item
-[Configure the SDK]({{ site.baseurl }}/get-started/apple.html#4-configure-the-sdk)
+[Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)

@@ -28,7 +28,9 @@ collections:
 
 # Default categories (in order) to appear in the navigation
 sections: [
+    ['docs', 'Documentation'],
     ['get-started', 'Get Started'],
+    ['testing-push', 'Testing the SDK'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
@@ -36,9 +38,7 @@ sections: [
     ['inbox', 'Inbox Messaging'],
     ['location', 'Location Messaging'],
     ['analytics', 'Analytics'],
-    ['opendirect', 'OpenDirect'],
     ['features', 'Feature Implementation'],
-    ['user-data', 'User Data'],
     ['use-cases', 'Use Cases'],
     ['trouble', 'Troubleshooting']
 ]
@@ -65,4 +65,3 @@ markdown: kramdown
 
 # Current SDK version, use for all mentions
 currentVersion: "6.3.4"
-
