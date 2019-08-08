@@ -25,17 +25,11 @@ You can allow your application to override the SDK's badge setting. After your a
 
 To enable an application's override of badging, pass a configuration value into the SDK's `sfmc_configure...` method via the JSON configuration file, or use the `sfmc_configureWithDictionary:` method.
 
-#### Configure via JSON file
+#### Configure
 
-To enable override via JSON, set the `applicationcontrolsbadging` key to `true`.
+To enable override, use the `sfmc_setApplicationControlsBadging` method in your configuration builder.
 
-{% include gist.html sectionId="badgingConfigureViaJSON" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/e8ebf1a1fad4cf544a379a5fc69c2362.js" %}
-
-#### Configure via Dictionary
-
-To enable override via dictionary, use the `sfmc_setApplicationControlsBadging` method in your configuration builder.
-
-{% include gist.html sectionId="badgingConfigureViaBuilder" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js" %}
+<script src="https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js"></script>
 
 #### Setting and Clearing the Badge
 
@@ -43,8 +37,7 @@ When your application controls badging, it may be desirable to set or clear the 
 
 This is done by setting the badge value to an integer value.
 
-{% include gist.html sectionId="badgingSetClearBadge" names="Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/b845fd75b336b0b8e7ef7f291b7425bf.js" %}
-
+<script src="https://gist.github.com/sfmc-mobilepushsdk/b845fd75b336b0b8e7ef7f291b7425bf.js"></script>
 
 #### Related Item
 [Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)

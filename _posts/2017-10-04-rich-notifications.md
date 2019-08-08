@@ -24,14 +24,10 @@ Rich notifications include images, videos, titles and subtitles from the MobileP
 
 > Note: Notification Target must be signed by the same XCode Managed Profile as the main project.
 
-## Service Extension Example in Objective C
+## Service Extension Example
 
 This service extension checks for a "&#95;mediaUrl" element in request.content.userInfo.  If found, the extension attempts to download the media from the URL , creates a thumbnail-size version, and then adds the attachment. The service extension also checks for a ""&#95;mediaAlt" element in request.content.userInfo.  If found, the service extension uses the element for the body text if there are any problems downloading or creating the media attachment.
 
 A service extension can timeout when it is unable to download.  In this code sample, the service extension delivers the original content with the body text changed to the value in "&#95;mediaAlt".
-
-<script src="https://gist.github.com/5fc088449a66b40c8e46112c0b1bca46.js"></script>
-
-## Service Extension Example in Swift
 
 <script src="https://gist.github.com/10fbbfedcb518a88249fcb54e23cb83a.js"></script>

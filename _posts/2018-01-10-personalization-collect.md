@@ -16,7 +16,8 @@ The Mobile Push SDK has an optional configuration option called useLegacyPiIdent
 > **Important:** To ensure future compatibility, we recommend explicitly setting the PIID. The useLegacyPiIdentifier configuration option will be deprecated in a future release.
 
 #### Example: Analytic Attribution
-{% include gist.html sectionId="contactkey" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/c8de13c1b560a19def8bc2d63a2f061c.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" %}
+
+<script src="https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js"></script>
 
 ### Integration Methods
 
@@ -26,19 +27,19 @@ These methods integrate your mobile app with Personalization Builder. To use the
 
 To track the contents of an in-app shopping cart, use the method shown in the example. For more information about this method’s general use with Personalization Builder, review [Track Items in Shopping Cart](https://help.salesforce.com/articleView?id=mc_ctc_track_cart.htm&type=5).
 
-{% include gist.html sectionId="trackcart" names="Obj-C,Swift" gists="https://gist.github.com/55cb5aca932689cf9e2935c6980beabe.js,https://gist.github.com/0f6d9da815f4799dccdeb4fce13bf77c.js" %}
+<script src="https://gist.github.com/0f6d9da815f4799dccdeb4fce13bf77c.js"></script>
 
 #### Track Conversion
 
 To track a purchase made through your mobile app, use the method shown in the example. For more information about this method’s general use with Personalization Builder, review [Track Purchase Details](https://help.salesforce.com/articleView?id=mc_ctc_track_conversion.htm&type=5).
 
-{% include gist.html sectionId="trackconversion" names="Obj-C,Swift" gists="https://gist.github.com/6e9ed834a2645463f267ac1c497bb611.js,https://gist.github.com/2e0a5c806024da20f4b0abfc77d05957.js" %}
+<script src="https://gist.github.com/2e0a5c806024da20f4b0abfc77d05957.js"></script>
 
 #### Track Page Views
 
 To implement page-view analytics in your app, use the method shown in the example. For more information about this method’s general use with Personalization Builder, review [Track Items Viewed](https://help.salesforce.com/articleView?id=mc_ctc_track_page_view.htm&type=5).
 
-{% include gist.html sectionId="trackpageviews" names="Obj-C,Swift" gists="https://gist.github.com/e605564bd235b85255b9c1460f84a8b7.js,https://gist.github.com/63511dd483bd521dbeb3b46fbece001a.js" %}
+<script src="https://gist.github.com/63511dd483bd521dbeb3b46fbece001a.js"></script>
 
 ### Related Items
 * _MarketingCloudSDK+Intelligence.h_

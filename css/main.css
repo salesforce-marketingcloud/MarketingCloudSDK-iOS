@@ -57,6 +57,10 @@ code {
     padding-right: 0;
 }
 
+#navigation li.active a {
+    cursor: default;
+}
+
 body.rtl {
 	direction: rtl;
 }
