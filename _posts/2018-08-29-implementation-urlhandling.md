@@ -23,4 +23,4 @@ To handle URLs from these sources, follow these instructions.
 
 ## Examples
 
-{% include gist.html sectionId="attributes_set" names="Obj-C,Swift" gists="https://gist.github.com/sfmc-mobilepushsdk/d9f3ef00c2678aced1d4e19acbc66b02.js,https://gist.github.com/sfmc-mobilepushsdk/1b58f9577d22daa4467609263b56d922.js" %}
+<script src="https://gist.github.com/sfmc-mobilepushsdk/1b58f9577d22daa4467609263b56d922.js"></script>

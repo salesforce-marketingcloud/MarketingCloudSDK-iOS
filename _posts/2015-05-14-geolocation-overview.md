@@ -23,7 +23,7 @@ Review the [Apple documentation](https://developer.apple.com/documentation/corel
 > MarketingCloudSDK requires “Always” permissions for full geofence and beacon functionality. An application does not receive location messages if “When-in-use authorization” is selected by the app user.
 
 When your application is ready to enable location features, including geofence and beacon messaging, call the MarketingCloudSDK framework's method to start watching location.
-<script src="https://gist.github.com/07e4a6508960c6b96276cc71cb08a772.js"></script>
+
 <script src="https://gist.github.com/31864111e51c70fc25581891444ec344.js"></script>
 
 The MarketingCloudSDK+Location.h” header file details additional methods to get information about location and control the frameworks behavior.
@@ -49,5 +49,4 @@ If you create your own CLLocationManager object, we cannot guarantee that featur
 
 If you have enabled notifications using MarketingCloudSDK and have called -sfmc_startWatchingLocation,  you can access the device's last known location using the SDK.
 
-<script src="https://gist.github.com/fcb816bf9df1b7d26d300c22822f88c6.js"></script>
 <script src="https://gist.github.com/02d2c7f15461981015658691d81a4685.js"></script>
