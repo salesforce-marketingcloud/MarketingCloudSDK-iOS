@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Push Setup"
-subtitle: "iOS Debugging"
+subtitle: "Troubleshooting Push Setup"
 category: trouble
 date: 2015-05-14 12:00:00
 order: 1
