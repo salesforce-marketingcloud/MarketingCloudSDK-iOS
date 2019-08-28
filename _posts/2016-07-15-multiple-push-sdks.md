@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Multiple Push SDKs Troubleshooting"
-subtitle: "Multiple Push SDKs Troubleshooting"
+title: "Multiple Push SDKs"
+subtitle: "Troubleshooting Multiple Push SDKs"
 category: trouble
 date: 2016-07-15 12:00:00
 order: 2

@@ -6,7 +6,7 @@ category: location
 date: 2015-05-14 08:44:12
 order: 1
 ---
-If location is enabled in your MarketingCloudSDKConfiguration.json file, you can call a single method to use the Marketing Cloud location messaging feature.
+If location is enabled in your MobilePush SDK configuration (via `MarketingCloudSDKConfigBuilder()` `sfmc_setLocationEnabled()`), you can call a single method to use the Marketing Cloud location messaging feature.
 
 ## Location Messaging
 
