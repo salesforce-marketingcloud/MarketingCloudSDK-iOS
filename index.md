@@ -15,8 +15,9 @@ title: "Home"
 
 ## Requirements
 
-* Xcode 9 or later
-* Minimum deployment target of iOS 9
+* Xcode 10 or later
+* Minimum deployment target of iOS 10.0
+* Device architecture of armv7s or newer
 
 ## Get Started
 
