@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'MarketingCloudSDK iOS (v6.5.0)'
+title: 'MarketingCloudSDK iOS (v6.4.0)'
 
 propagationDelay: '5 minutes'
 
@@ -28,7 +28,9 @@ collections:
 
 # Default categories (in order) to appear in the navigation
 sections: [
+    ['docs', 'Documentation'],
     ['get-started', 'Get Started'],
+    ['testing-push', 'Testing the SDK'],
     ['sdk-implementation', 'SDK Implementation'],
     ['push-notifications', 'Push Notifications'],
     ['application-badging', 'Application Badging'],
@@ -36,9 +38,6 @@ sections: [
     ['inbox', 'Inbox Messaging'],
     ['location', 'Location Messaging'],
     ['analytics', 'Analytics'],
-    ['opendirect', 'OpenDirect'],
-    ['features', 'Feature Implementation'],
-    ['user-data', 'User Data'],
     ['use-cases', 'Use Cases'],
     ['trouble', 'Troubleshooting']
 ]
@@ -64,5 +63,4 @@ exclude: ['bin', 'README.md', 'docker-compose.yml']
 markdown: kramdown
 
 # Current SDK version, use for all mentions
-currentVersion: "6.5.0"
-
+currentVersion: "6.4.0"
