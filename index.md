@@ -12,6 +12,11 @@ title: "Home"
 >
 > Existing mobile applications will continue to function, without change. Mobile applications may continue to reference older SDK versions, without change. Applications which adopt the January, 2020 MobilePush SDK release may require a project change if your application build still supports an older value (Android: earlier than API 21, iOS: iOS 9).
 
+## iOS 13 Support
+
+> - The MobilePush SDK version {{ site.currentVersion }} has been tested against and is compatibile with iOS 13.
+> - Our [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been tested against and is compatibile with iOS 13.
+> - Older versions of the SDK *may be* compatibile but have not been tested.
 
 ## Requirements
 
