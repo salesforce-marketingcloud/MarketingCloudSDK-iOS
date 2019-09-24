@@ -28,7 +28,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const SFMCURLTypeAction;
  Given security risks inherent in URLs and web pages (Open Redirect vulnerabilities, especially), the responsibility of processing the URL shall be held by the application implementing the MobilePush SDK. This reduces risk to the application by affording full control over processing, presentation and security to the application code itself.
  
  @param url value NSURL sent with the Location, CloudPage, OpenDirect or Inbox message
- @param type value NSInteger enumeration of the MobilePush source type of this URL
+ @param type value NSString constant of the MobilePush source type of this URL
  */
 -(void) sfmc_handleURL:(NSURL *_Nonnull) url type:(NSString * _Nonnull) type;
 

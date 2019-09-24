@@ -172,9 +172,17 @@ extension AppDelegate: MarketingCloudSDKURLHandlingDelegate {
      */
     func sfmc_handle(_ url: URL, type: String) {
         
-        // Very simply, show a Safari view controller in the root VC with the URL returned from the MobilePush SDK.
-        let vc = SFSafariViewController(url: url, entersReaderIfAvailable: false)
-        window?.topMostViewController()?.present(vc, animated: true)
+        // Very simply, send the URL returned from the MobilePush SDK to UIApplication to handle correctly.
+        if #available(iOS 10, *) {
+            UIApplication.shared.open(url, options: [:],
+                                      completionHandler: {
+                                        (success) in
+                                        print("Open \(url): \(success)")
+            })
+        } else {
+            let success = UIApplication.shared.openURL(url)
+            print("Open \(url): \(success)")
+        }
     }
 }
 
