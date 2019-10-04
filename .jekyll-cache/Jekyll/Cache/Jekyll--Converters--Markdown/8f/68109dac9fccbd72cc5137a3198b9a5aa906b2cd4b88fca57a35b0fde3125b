@@ -1,0 +1,9 @@
+I"j<ul>
+  <li>
+    <p><strong>Analytics</strong> – Addressed an issue sending analytics to Predictive Intelligence if the <code class="highlighter-rouge">MID</code> configuration value is used.</p>
+  </li>
+  <li>
+    <p><strong>Networking</strong> – Reduced number of network calls made to Marketing Cloud servers during lifecycle of the SDK.</p>
+  </li>
+</ul>
+:ET

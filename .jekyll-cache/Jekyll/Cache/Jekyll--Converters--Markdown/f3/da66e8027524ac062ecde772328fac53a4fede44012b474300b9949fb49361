@@ -1,0 +1,34 @@
+I"‹<p>You can use the MarketingCloudSDK to switch between Marketing Cloud business units. For example, you can switch business units to move from production tasks to debug tasks, or you can use one business unit for testing during development and another business unit for production releases.</p>
+
+<p>The following code samples walk you through switching business units. For these instructions, you need the <code class="highlighter-rouge">appid</code> value that you used during application configuration.</p>
+
+<blockquote>
+  <p><strong>Caution:</strong> Switching business units removes any MarketingCloudSDK data, such as contact key, tags, and attributes from the system. See the Preserve Configuration Information section.</p>
+</blockquote>
+
+<ol>
+  <li>Issue <code class="highlighter-rouge">sfmc_tearDown</code> to the SDK.</li>
+  <li>Execute a standard configure, as in <code class="highlighter-rouge">applicationDidFinishLaunching</code>.</li>
+  <li>Set the delegate, if needed.</li>
+  <li>Authorize the MarketingCloudSDK to use notifications.</li>
+</ol>
+
+<h4 id="example-bu-switching">Example: BU Switching</h4>
+
+<script src="https://gist.github.com/5cb50d2368c1fff81cedd922629bb079.js"></script>
+
+<h3 id="preserve-configuration-information">Preserve Configuration Information</h3>
+<p>To keep track of configuration information that would be lost during business unit switching, use a configuration file. The file, like in the following example, can contain multiple JSON dictionaries of configuration data, each with a unique <code class="highlighter-rouge">appid</code> and access token value from Marketing Cloud.</p>
+
+<h4 id="example-configuration-file">Example: Configuration File</h4>
+
+<script src="https://gist.github.com/9c9db39c75cd5f42fda172fbbb3e56e9.js"></script>
+
+<h3 id="handle-multiple-configurations">Handle Multiple Configurations</h3>
+<p>To select from multiple configurations, use the index of your configuration when configuring the SDK using the configureWithURL:configuationIndex:error: method.</p>
+
+<h4 id="example-select-configuration">Example: Select Configuration</h4>
+
+<script src="https://gist.github.com/e381ef8d0b6555558433039ae036b0e3.js"></script>
+
+:ET

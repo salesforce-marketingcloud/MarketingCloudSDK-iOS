@@ -1,0 +1,17 @@
+I"ø<p>Enable analytics in your configuration file using the analytics:true value.</p>
+
+<p>The SDK collects analytics in the background as well as when SDK methods are called.</p>
+
+<h2 id="track-push-notifications">Track Push Notifications</h2>
+
+<p>To ensure proper tracking of push notifications by the SDK and Marketing Cloud analytics, call the SDK in your push notification handler method. If you do not, analytic events canâ€™t track open counts for your push messaging campaigns.</p>
+
+<script src="https://gist.github.com/cb216623a751e16a42a94b09cf666190.js"></script>
+
+<h2 id="track-inbox-message-opens">TRACK INBOX MESSAGE OPENS</h2>
+
+<p>You can also track analytics for Inbox messages. Call trackInboxOpenEvent() to send the open analytic value to Marketing Cloud. We automatically provide analytic information for message downloads. Call sfmc_trackMessageOpened: with an inbox message dictionary to record the analytic.</p>
+
+<script src="https://gist.github.com/328c8e3c3b3738e009dda2047b8c9c40.js"></script>
+
+:ET

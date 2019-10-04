@@ -1,0 +1,28 @@
+I"�<p>Use interactive notifications to add buttons to push notifications from your mobile app. Marketing Cloud sends the category name for these interactive notifications in the message payload.</p>
+
+<ol>
+  <li>To set up interactive notifications for your app, use the Implementation sample code as a guide and modify for your situation.
+    <blockquote>
+      <p>The sample code applies to the <code class="highlighter-rouge">AppDelegate.m</code> <code class="highlighter-rouge">didFinishLaunchingWithOptions</code> application delegate mention.
+The sample code shows how to create a category named “Example”. When you send this category with the payload from Marketing Cloud, the notification displays in the notification center with buttons.</p>
+    </blockquote>
+  </li>
+  <li>To check if your action triggered and to take action, examine the push notification’s payload in your push handler. Use the Handle Action sample code as a guide.</li>
+  <li>After setup, ask the marketer to enable interactive notifications on the MobilePush Administration page in Marketing Cloud.</li>
+</ol>
+
+<h4 id="example-implementation">Example: Implementation</h4>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js"></script>
+
+<h4 id="example-handle-action">Example: Handle Action</h4>
+
+<p>In your push handler, examine the push notification’s payload to see if your action triggered and if your application performed the action.</p>
+
+<script src="https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js"></script>
+
+<h3 id="related-items">Related Items</h3>
+<ul>
+  <li><a href="https://help.salesforce.com/articleView?id=mc_mp_interactive_notifications.htm&amp;type=5#interactiveNotifications">Interactive Notifications</a></li>
+</ul>
+:ET

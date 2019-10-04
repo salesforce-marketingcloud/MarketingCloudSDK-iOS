@@ -1,0 +1,66 @@
+I"�<h4 id="mobilepush-sdk-setup">MobilePush SDK Setup</h4>
+
+<p>Before you send a push notification to your deployment app, complete all of the <strong>Get Started</strong> steps:</p>
+
+<ol>
+  <li><a href="/get-started/get-started-provision.html">Provision for Push</a></li>
+  <li><a href="/get-started/get-started-setupapps.html">Setup Push Apps</a></li>
+  <li><a href="/get-started/get-started-addsdk.html">Add the SDK</a></li>
+  <li><a href="/get-started/get-started-configuresdk.html">Configure the SDK</a></li>
+  <li><a href="/get-started/get-started-configureforpush.html">Configure for Push</a></li>
+</ol>
+
+<blockquote>
+  <p>Use a device to test. You can use an iOS simulator for testing some aspects of the SDK, but the simulator cannot receive push notifications.</p>
+</blockquote>
+
+<h4 id="app-build-setup">App Build Setup</h4>
+
+<ol>
+  <li>Provision your app for Ad Hoc or App Store distribution. See <a href="https://developer.apple.com/support/code-signing/">Apple’s docs</a> for more information.</li>
+  <li>Archive your application and prepare it for distribution through tools like TestFlight, Fabric, or HockeyApp.</li>
+</ol>
+
+<h4 id="configure-the-sdk-for-production">Configure the SDK for Production</h4>
+
+<ol>
+  <li>In your configuration of the SDK, use the MobilePush application values created in the steps above.</li>
+  <li>
+    <p>Archive and distribute your application (Ad Hoc and/or App Store).</p>
+
+    <blockquote>
+      <p>It may take up to 5 minutes for your contact to be created in Marketing Cloud</p>
+    </blockquote>
+  </li>
+</ol>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/26263f30ab936037e110e191f5514a44.js"></script>
+
+<h4 id="send-a-test-push">Send a Test Push</h4>
+
+<ol>
+  <li>
+    <p>In MobilePush in Marketing Cloud, create a <a href="https://help.salesforce.com/articleView?id=mc_mp_create_filtered_list.htm&amp;type=5">filtered list</a> that targets the contact key you set as in the example above.</p>
+
+    <blockquote>
+      <p>When creating the filter criteria, use the Contact Key attribute. Find this attribute under System Data &gt; Contact &gt; Contact Key., Set the attribute equal to the contact key in your iOS app.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>It may take up to five minutes for the contact created by your app to show up in the filtered list. Refresh the list until the new contact is returned before proceeding to the next step.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>In MobilePush in Marketing Cloud, <a href="https://help.salesforce.com/articleView?id=mc_mp_outbound_message.htm&amp;type=5">create a test message and send it</a> to your newly created filtered list.</p>
+  </li>
+</ol>
+
+<h4 id="troubleshooting">Troubleshooting</h4>
+
+<ul>
+  <li>If the push notification doesn’t arrive on the device, check the filtered list to confirm that the contact’s status is Opted In.</li>
+  <li>If the contact is not opted in, check that you exactly followed the steps to set up the call to config and the other <a href="/get-started/apple.html">integration steps</a>.</li>
+  <li>Verify that the app settings in MobilePush match those you are using to configure the SDK.</li>
+  <li>For further diagnostic steps, see our <a href="/trouble/ios-debugging.html">Troubleshooting Push Setup</a>.</li>
+</ul>
+:ET

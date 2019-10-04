@@ -1,0 +1,32 @@
+I")<h2 id="prerequisites">Prerequisites</h2>
+
+<ul>
+  <li>Make sure that your iOS app is built for iOS 10 or 11.</li>
+  <li>Include a service extension for your app that can handle mutable content. See <a href="https://developer.apple.com/library/content/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/ModifyingNotifications.html">Apple’s documentation</a>.</li>
+  <li>Update to version 4.9.6 or higher of the Journey Builder for Apps (JB4A) SDK, which supports iOS 10.</li>
+  <li>Make sure that your app is registered for push notifications via the MarketingCloudSDK.</li>
+</ul>
+
+<p>Rich notifications include images, videos, titles and subtitles from the MobilePush app, and mutable content. Mutable content can include personalization in the title, subtitle, or body of your message. Use Xcode 9 from Apple to create a Notification Service Extension in your application project.</p>
+
+<ol>
+  <li>Click <strong>File</strong>.</li>
+  <li>Click <strong>New</strong>.</li>
+  <li>Click <strong>Target</strong>.</li>
+  <li>Select Notification Service Extension.</li>
+  <li>Name and save the new extension.</li>
+</ol>
+
+<blockquote>
+  <p>Note: Notification Target must be signed by the same XCode Managed Profile as the main project.</p>
+</blockquote>
+
+<h2 id="service-extension-example">Service Extension Example</h2>
+
+<p>This service extension checks for a “_mediaUrl” element in request.content.userInfo.  If found, the extension attempts to download the media from the URL , creates a thumbnail-size version, and then adds the attachment. The service extension also checks for a ““_mediaAlt” element in request.content.userInfo.  If found, the service extension uses the element for the body text if there are any problems downloading or creating the media attachment.</p>
+
+<p>A service extension can timeout when it is unable to download.  In this code sample, the service extension delivers the original content with the body text changed to the value in “_mediaAlt”.</p>
+
+<script src="https://gist.github.com/10fbbfedcb518a88249fcb54e23cb83a.js"></script>
+
+:ET

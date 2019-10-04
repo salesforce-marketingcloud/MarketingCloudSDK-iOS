@@ -1,0 +1,58 @@
+I"�<p>Deliver relevant, personalized messages to your app’s users with in-app messaging. You can now send messages without relying on users having enabled push notifications. Engaging full-screen, modal, or banner messages are presented while your users are interacting with your app.</p>
+
+<p>To ensure that your app has the latest message data, in-app messages are loaded each time your app comes to the foreground. When your app comes into the foreground, any messages marked for display are prepared to be presented at the top of your app’s view stack. Only one message is displayed each time the app comes into the foreground. Depending on how your app is enabled, the SDK can be triggered to download in-app messages in the background.</p>
+
+<p>You can fully enable in-app messages in <a href="https://help.salesforce.com/articleView?id=mc_jb_configure_inapp_in_journey_builder.htm&amp;type=5">Marketing Cloud Journey Builder</a>. To use certain in-app messaging functionality, such as button actions, some SDK configuration is required.</p>
+
+<h3 id="required-methods-for-button-actions">Required Methods for Button Actions</h3>
+<p>Marketers can configure the action that occurs when an end-user taps a button on an in-app message. Actions for <em>Notification Settings</em> and <em>Location Settings</em> are handled by the SDK, while actions for <em>Web URL</em> and <em>App URL</em> require that you implement <a href="/sdk-implementation/implementation-urlhandling.html">URL handling</a>.</p>
+
+<h3 id="optional-methods">Optional Methods</h3>
+
+<p>You can use the SDK’s optional delegate functionality to control aspects of message display and to get information about the in-app message display lifecycle.</p>
+
+<h4 id="seteventdelegate">setEventDelegate</h4>
+
+<p>To make your application a delegate of the SDK’s in-app messaging functionality, use <code class="highlighter-rouge">sfmc_setEventDelegate</code>.</p>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/3fc38fc54f3637a8dadcf19a08aee243.js"></script>
+
+<h4 id="didshowinappmessage-and-didcloseinappmessage">didShowInAppMessage and didCloseInAppMessage</h4>
+<p>The following delegate methods help ensure that you can appropriately manage your app’s view state. In-app messages are shown as the top view controller in your app’s hierarchy. Your application may need to respond to a view appearing or disappearing.</p>
+
+<p><code class="highlighter-rouge">sfmc_didShowInAppMessage</code></p>
+
+<p><code class="highlighter-rouge">sfmc_didCloseInAppMessage</code>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/7ed692c0cc01f58583f175f06a8f71a1.js"></script></p>
+
+<h4 id="prevent-or-delay-message-display">Prevent or Delay Message Display</h4>
+<p>You can delay or prevent an in-app message’s display. For example, prevent an in-app message from displaying during loading, instructions, the sign-in flow, and other situations. To prevent display of the message, make the shouldShowInAppMessage method return false.</p>
+
+<p><code class="highlighter-rouge">sfmc_shouldShowInAppMessage</code>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/ad9cf5dce00d9650a73ecb4d701169b7.js"></script></p>
+
+<p>You can capture the message data and show that message later. For example, present the message after the end-user has signed in. To present the message later, use the following methods.</p>
+
+<p><code class="highlighter-rouge">sfmc_messageIdForMessage</code></p>
+
+<p><code class="highlighter-rouge">sfmc_showInAppMessage</code>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/211d6335447a1c0b746d277c755562bb.js"></script></p>
+
+<h4 id="customize-display">Customize Display</h4>
+
+<p>In-app messages use your device’s system font. You can override the default font face to customize the display of an in-app message title, body, and button labels.</p>
+
+<blockquote>
+  <p>You can’t alter the font size because this is defined by the message’s design.</p>
+</blockquote>
+
+<p>To set the display font, use the following method to pass the SDK a valid font name for the device’s installed fonts or your app’s custom fonts.</p>
+
+<p><code class="highlighter-rouge">sfmc_setInAppMessageFontName</code>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/41603e39d5cef8ad9c84842a9e805320.js"></script></p>
+
+<p>If the font is not a valid font, the SDK returns false and reverts to the system font.</p>
+
+<h3 id="related-items">Related Items</h3>
+<p>See <em>MarketingCloudSDK+Events.h</em> for more information.</p>
+:ET

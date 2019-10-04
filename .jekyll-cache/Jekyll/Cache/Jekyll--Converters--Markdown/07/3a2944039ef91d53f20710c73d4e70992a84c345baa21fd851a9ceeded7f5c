@@ -1,0 +1,4 @@
+I"ê<p>The OpenDirect customized push message contains a URL in the payload. <a href="https://help.salesforce.com/articleView?id=mc_mp_apps_and_optional_settings_in_your_mobilepush_account.htm&amp;type=5#openDirect">Enable</a> this feature in the Marketing Cloud application.</p>
+
+<p>The MarketingCloudSDK can pass this URL to your application to handle according to your  situation. See <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a> for more information.</p>
+:ET

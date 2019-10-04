@@ -1,0 +1,14 @@
+I"8<p>This feature uses a sound included in your mobile app as a custom audio signal when a push message arrives on the mobile device.</p>
+
+<ol>
+  <li>Add a file named custom.caf to your project. The cloud push payload looks for a file named custom.caf.</li>
+  <li>Add the custom.caf audio file to the Copy Bundle Resources folder for your app.</li>
+  <li>To prevent Xcode from using cached files, perform a clean build folder in Xcode. In the Product menu, hold the Option key and select <strong>Clean Build Folder</strong>.</li>
+  <li>Ask the marketer to enable custom sound on the MobilePush Administration page in Marketing Cloud.</li>
+</ol>
+
+<h3 id="related-items">Related Items</h3>
+<ul>
+  <li><a href="https://help.salesforce.com/articleView?id=mc_mp_custom_sound.htm&amp;type=5#customSound">Custom Sound</a></li>
+</ul>
+:ET

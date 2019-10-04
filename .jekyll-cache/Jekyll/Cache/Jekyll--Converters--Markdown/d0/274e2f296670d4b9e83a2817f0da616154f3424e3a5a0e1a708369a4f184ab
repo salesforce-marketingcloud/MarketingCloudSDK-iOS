@@ -1,0 +1,29 @@
+I"R<h2 id="configure-the-sdk">Configure the SDK</h2>
+
+<h4 id="see-the-sdk-header-marketingcloudsdkmarketingcloudsdkbaseh-appledoc-for-detailed-documentation-on-sdk-configuration-methods">See the SDK header MarketingCloudSDK/MarketingCloudSDK+Base.h (<a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html">AppleDoc</a>) for detailed documentation on SDK configuration methods.</h4>
+
+<p>This example uses the MarketingCloudSDK <a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html#//api/name/sfmc_configureWithDictionary:error:">ConfigBuilder </a> configuration method, as it is the most flexible means to support your application’s usage of MobilePush.</p>
+
+<blockquote>
+  <p>Configuration of the SDK using a JSON file (included in our <a href="https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS">GitHub repository</a>) will be <strong>deprecated</strong> in an upcoming SDK release. We encourage you to move existing implementations to the builder method. For more information on our configuration methods, see the <a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html">AppleDoc</a>).</p>
+</blockquote>
+
+<blockquote>
+  <p>All method names contain the prefix <code class="highlighter-rouge">sfmc_</code>. This convention allows the application implementing the SDK to avoid namespace collisions between the external libraries it uses. MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application implements. Review Apple’s <a href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4">documentation on customizing existing classes</a> for further information.</p>
+</blockquote>
+
+<ol>
+  <li>
+    <p>Using the <code class="highlighter-rouge">Access Token</code>, <code class="highlighter-rouge">App ID</code>, <code class="highlighter-rouge">App Endpoint</code>, and <code class="highlighter-rouge">MID</code> values noted when you <a href="/get-started/get-started-setupapps.html">Setup Push Apps</a>, configure the SDK in your application.</p>
+
+    <script src="https://gist.github.com/dff538b60618bdcf6d64cef21fe4e0c2.js"></script>
+  </li>
+  <li>
+    <p>Enable or disable <code class="highlighter-rouge">etanalytics</code>, <code class="highlighter-rouge">pianalytics</code>, <code class="highlighter-rouge">location</code>, or <code class="highlighter-rouge">inbox</code> entries depending on the unique needs of your application and your usage of Marketing Cloud.</p>
+  </li>
+</ol>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<p><a href="/get-started/get-started-configureforpush.html">Configure for Push</a></p>
+:ET

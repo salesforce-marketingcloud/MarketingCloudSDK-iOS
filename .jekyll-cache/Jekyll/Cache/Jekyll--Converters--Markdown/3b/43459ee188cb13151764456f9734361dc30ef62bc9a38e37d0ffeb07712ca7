@@ -1,0 +1,12 @@
+I"<ul>
+  <li>
+    <p><strong>Added checks to prevent exceptions</strong> – We added nil checks to prevent potential exceptions that could happen when users swipe to close an app.</p>
+  </li>
+  <li>
+    <p><strong>Improved log string initializers</strong> – To help prevent Xcode Address Sanitizer warnings, we improved the SDK’s use of log string initializers.</p>
+  </li>
+  <li>
+    <p><strong>Device ID migration</strong> – The SDK attempts to migrate the deviceId from versions of JB4ASDK 4.x.x, if possible.</p>
+  </li>
+</ul>
+:ET

@@ -1,0 +1,21 @@
+I"®<p>The MarketingCloudSDK framework supports iOS 9 under armv7, armv7s and arm64 architectures.</p>
+
+<p>To support iOS 9, build your app with Xcode 9 or later, and use conditional coding via Appleâ€™s <code class="highlighter-rouge">available</code> attributes when you set up push notification handling and when you register for push notifications during SDK configuration.</p>
+
+<h3 id="register-for-push-notifications">Register for Push Notifications</h3>
+
+<p>To register for push notifications on iOS 9, use the <code class="highlighter-rouge">registerUserNotificationSettings</code> and <code class="highlighter-rouge">registerForRemoteNotifications</code> methods of <code class="highlighter-rouge">UIApplication</code>. Implement <code class="highlighter-rouge">UNUserNotificationCenter</code> with conditional code, as shown in this code sample.</p>
+
+<h4 id="example-registration">Example: Registration</h4>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/5aabbd1337fab819109e427460e26ec7.js"></script>
+
+<h3 id="handle-push-notifications">Handle Push Notifications</h3>
+
+<p>To handle push notifications on iOS 9, implement <code class="highlighter-rouge">-application:didReceiveRemoteNotification:fetchCompletionHandler</code> with conditional code, as shown in this code sample.</p>
+
+<h4 id="example-handling">Example: Handling</h4>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/e0a96e7f956cc33c1d16f9e99e313500.js"></script>
+
+:ET

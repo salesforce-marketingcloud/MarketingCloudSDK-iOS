@@ -1,0 +1,94 @@
+I"�<p>These changes assist you in preparing for data compliance regulations, such as the European Union’s General Data Protection Regulation. For a full overview of Salesforce’s approach to managing compliance, visit our <a href="https://www.salesforce.com/gdpr/overview/">comprehensive page regarding GDPR</a>.</p>
+
+<p>The MobilePush SDK supports three privacy modes that may affect your application’s usage of MobilePush.</p>
+<ol>
+  <li>Right to be Forgotten</li>
+  <li>Restriction of Processing</li>
+  <li>Do Not Track</li>
+</ol>
+
+<p>Each mode restricts the functionality of the MobilePush SDK and may limit your customers’ experience.</p>
+
+<h2 id="right-to-be-forgotten">Right to be Forgotten</h2>
+<p>Use this mode when a contact requests that you remove all data related to them from Marketing Cloud. This mode marks a contact, identified by the SDK’s <a href="/sdk-implementation/user-data.html">contact key string</a>, as forgotten. This setting prevents Marketing Cloud marketing activities from storing data or interacting with the contact for marketing activities. Marketing Cloud servers host this status. This suppression lasts for a period of 14 days. After this time period elapses, Marketing Cloud permanently deletes all contact data.</p>
+
+<h3 id="what-happens-in-the-sdk">What Happens in the SDK?</h3>
+<p>The MobilePush SDK takes actions to restrict all functionality after it receives the first Right to be Forgotten mode change for a contact from the server, either via a silent push notification or when your application comes to the foreground.</p>
+
+<p>This mode completely disables these functions for the lifecycle of your application regarding this contact.</p>
+
+<ul>
+  <li>Push notifications</li>
+  <li>Analytics tracking</li>
+  <li>Inbox</li>
+  <li>Geofence and beacon messaging</li>
+  <li>Configuration changes</li>
+  <li>In-App Messaging</li>
+</ul>
+
+<p>For your contact to use Marketing Cloud services again, they must delete and reinstall your application on their mobile device. The MobilePush SDK must then be configured for usage by that contact.</p>
+
+<h2 id="restriction-of-processing">Restriction of Processing</h2>
+<p>This mode marks a contact, identified by the SDK’s <a href="/sdk-implementation/user-data.html">contact key string</a>, as restricted from processing. This mode restricts all data operations for that contact.</p>
+
+<ul>
+  <li>Modifying information</li>
+  <li>Deleting information</li>
+  <li>Changing registration state</li>
+  <li>Sending pushes</li>
+  <li>Creating inbox messages</li>
+  <li>Processing Analytics</li>
+</ul>
+
+<h3 id="what-happens-in-the-sdk-1">What Happens in the SDK?</h3>
+<p>The MobilePush SDK takes actions to restrict all functionality once it receives a Restriction of Processing mode change for a contact from the server.</p>
+
+<p>This mode completely disables this functionality when the contact is in a restricted state.</p>
+
+<ul>
+  <li>Push notifications</li>
+  <li>Analytics tracking</li>
+  <li>Inbox</li>
+  <li>Geofence and beacon messaging</li>
+  <li>Configuration changes</li>
+  <li>In-App Messaging</li>
+</ul>
+
+<p>If the contact moves off the restriction state and is again usable, the SDK receives a notification of the change in state, either via a silent push notification or when your application comes to the foreground. This change automatically reconfigures the SDK for use, based on your last-used configuration settings.</p>
+
+<h2 id="do-not-track">Do Not Track</h2>
+<p>This mode marks a contact, identified by the SDK’s <a href="/sdk-implementation/user-data.html">contact key string</a>, as restricted from tracking activities. This setting restricts certain data operations that collect or act upon personally identifiable information (PII).</p>
+
+<h3 id="what-happens-in-the-sdk-2">What Happens in the SDK?</h3>
+<p>If a contact has been moved to Do Not Track, the MobilePush SDK takes actions to restrict functionality after it receives the first change in mode from the server, either via a silent push notification or when your application comes to the foreground.</p>
+
+<p>This mode completely disables behavioral analytic tracking, and geofence and beacon messaging while Do Not Track is enabled. Behavioral analytic tracking includes these events.</p>
+
+<ul>
+  <li>User events</li>
+  <li>Message open events</li>
+  <li>App open and close events</li>
+  <li>In-App Message events</li>
+</ul>
+
+<p>Push notifications and Inbox functionality continue to work. The SDK can also continue to change registration attributes, such as tags and attributes.</p>
+
+<p>If the contact moves out of the Do Not Track state, the SDK receives notification of the change in state, either via a silent push notification or when your application comes to the foreground. This change automatically reconfigures the SDK for use, based on your last-used configuration settings.</p>
+
+<h2 id="how-to-prepare">How to Prepare?</h2>
+<p>To prepare your application for data privacy compliance, implement the April 2018 version of the MobilePush SDKs as soon as possible.</p>
+
+<h3 id="android">Android</h3>
+<ul>
+  <li>Ensure that you implement version 5.5.0 of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.</li>
+</ul>
+
+<h3 id="ios">iOS</h3>
+<ul>
+  <li>Ensure that you implement version 5.1.0 of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.</li>
+  <li>Enable background refresh in your application to assure the best opportunity for silent push notification delivery for seamless mode enablement. Review the <a href="">iOS SDK documentation</a> for more details.</li>
+</ul>
+
+<h2 id="any-questions">Any Questions?</h2>
+<p>If you have any questions on this document or on our SDKs in general, please send us an email at <a href="mailto:marketingcloudsdkfeedback@salesforce.com">marketingcloudsdkfeedback@salesforce.com</a>. We would love to hear from you.</p>
+:ET

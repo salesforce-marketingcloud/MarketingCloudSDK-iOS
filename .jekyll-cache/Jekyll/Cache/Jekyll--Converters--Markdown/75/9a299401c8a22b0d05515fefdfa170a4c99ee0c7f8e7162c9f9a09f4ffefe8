@@ -1,0 +1,121 @@
+I"�$<p>Upon initial configuration of the SDK (after app installation and first launch), a MobilePush registration will be sent immediately to Marketing Cloud. Subsequent registration changes will be sent as described below.</p>
+
+<p>The SDK will send changes to the Marketing Cloud servers within one minute of the first change to any Marketing Cloud MobilePush device or contact registration record and no more frequently than once per minute after as required.  This can be data set by your application like Contact Key, Tags or Attributes or it could be system related and set by the SDK like Time Zone, Locale or Application Version, etc.</p>
+
+<p>If the registration update fails the SDK will retry using a backoff algorithm with increasing retry intervals to a maximum delay of 1 day at which point the SDK will retry daily until it is successful.</p>
+
+<p>It will take up to 5 minutes for the registration data to be propagated throughout the Marketing Cloud servers and services once the REST call is successfully completed by the SDK.</p>
+
+<blockquote>
+  <p>NOTE: The SDK is considered the source of truth with regards to the contact’s device registration.  Data is replicated 1-way from the SDK to the Marketing Cloud servers.</p>
+</blockquote>
+
+<blockquote>
+  <p>NOTE: Only modify the contact record while your UI is in the foreground - not the background.  This will optimize API calls to the Marketing Cloud servers.  For instance, setting an Attribute like “LastAppUsed” to a date-timestamp upon successful SDK initialization will result in an updated registration record every time the SDK is initialized.  If your app is backgrounded the SDK may initialize to show a notification or pre-cache messages.  This will result in unnecessary communication with the Marketing Cloud servers.</p>
+</blockquote>
+
+<h3 id="delay-registration-until-contact-key-is-set">Delay Registration Until Contact Key is Set</h3>
+
+<p>You can configure the SDK in a mode that delays registration until a contact key is set by the application. Use this configuration mode <strong>only</strong> in implementations where the device running your app is tied to a specific contact key in Marketing Cloud and not to a generic device contact.</p>
+
+<p>For more information about configuring the SDK, review <a href="/get-started/get-started-configuresdk.html">Configure the SDK</a>.</p>
+
+<h4 id="configure">Configure</h4>
+
+<p>To enable delay registration, use the <code class="highlighter-rouge">sfmc_setDelayRegistrationUntilContactKeyIsSet</code> method in your configuration builder.</p>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/83196dae8008120ca97b60925e7f96f6.js"></script>
+
+<p>Or, in Objective-C, use the builder with <code class="highlighter-rouge">sfmc_setDelayRegistrationUntilContactKeyIsSet:@(YES)</code>.</p>
+
+<h3 id="contact-key">Contact Key</h3>
+
+<p>Contact key is the unique identifier used to aggregate a contact’s devices within Marketing Cloud. Set the contact key to a specific value provided by your customer or to another unique identifier for the contact, such as mobile number, email address, customer number, or another value.</p>
+
+<blockquote>
+  <p>Contact Key can’t be null and can’t be an empty string. Leading or trailing whitespace is removed. After you set the contact key for a contact, you can change it, but you can’t clear it. Don’t set the contact key to a generic, non-unique value.</p>
+</blockquote>
+
+<script src="https://gist.github.com/9c99d0828b5fad695b93c89dd5faf0d3.js"></script>
+
+<blockquote>
+  <p>If your app doesn’t set the contact key using <code class="highlighter-rouge">sfmc_setContactKey:</code>, Marketing Cloud uses the registration sent with a contact record that matches the system token included in the registration payload. If Marketing Cloud doesn’t find a match, it sets a new contact key and doesn’t send the value back to the SDK.</p>
+</blockquote>
+
+<h3 id="attributes">Attributes</h3>
+
+<p>You can use attributes to segment your audience and personalize your messages. Before you can use attributes, create them in your MobilePush account. Attributes may only be set or cleared by the SDK. See the <a href="#reserved-words">Reserved Words</a> section for a list of attribute keys that can’t be modified by the SDK or your application.</p>
+
+<script src="https://gist.github.com/8682afa7c4c63e4849178a0fc6d1d5d8.js"></script>
+
+<script src="https://gist.github.com/1951108f827042ec9366019e5a1ac7ed.js"></script>
+
+<script src="https://gist.github.com/353797d4a4cab0ed449bbf7af4d1e19a.js"></script>
+
+<blockquote>
+  <p>The attribute key can’t be one of the reserved words; it can’t be null or an empty string; and whitespace is trimmed.</p>
+</blockquote>
+
+<blockquote>
+  <p>The attribute value can’t be null, and whitespace is trimmed.</p>
+</blockquote>
+
+<p>For additional convenience methods to manage attributes, see <em>MarketingCloudSDK+Base.h</em>.</p>
+
+<h3 id="tags">Tags</h3>
+
+<p>You can use tags to segment your audience. Tags are commonly used to allow customers to express their interests. For example, a news app offers predefined article categories, such as sports, headlines, and entertainment. App users select the categories, or tags, that they want to receive notifications for.</p>
+
+<p>Dynamically add and remove tags via the SDK. You don’t have to create tags in Marketing Cloud.</p>
+
+<script src="https://gist.github.com/07764fc487ad0c29a06b13a9f01b437f.js"></script>
+
+<blockquote>
+  <p>Tags can’t be null or an empty string, and whitespace is trimmed.</p>
+</blockquote>
+
+<p>For additional convenience methods to manage Tags, see <em>MarketingCloudSDK+Base.h</em>.</p>
+
+<h3 id="reserved-words">Reserved Words</h3>
+
+<p>The SDK ignores calls to modify values associated with the following attribute keys because these attributes are reserved for internal use.</p>
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/d203ad25ac96ed8cb570d9c40910cf0a.js"></script>
+
+<h3 id="orphaned-contacts">Orphaned Contacts</h3>
+
+<h4 id="what-is-an-orphaned-contact">What is an orphaned contact?</h4>
+
+<p>An orphaned contact is a contact that is no longer targetable by the marketer due to the contact becoming disassociated with any known devices in the Marketing Cloud.</p>
+
+<h4 id="common-causes-of-orphaned-contacts">Common causes of orphaned contacts</h4>
+
+<ul>
+  <li>Initializing the SDK without setting the <code class="highlighter-rouge">sfmc_setDelayRegistrationUntilContactKeyIsSet</code> flag to <code class="highlighter-rouge">true</code> in an app that will eventually associate the device users with a known identifier.
+    <ol>
+      <li>The first launch of the app the SDK will send a registration to the Marketing Cloud.  This will be done before it would be possible for the customer to set a contact key.</li>
+      <li>Upon receiving a registration payload without a contact key, the Marketing Cloud will generate one for the device. (eg. abc123)</li>
+      <li>At a point in the future (let’s say once the user logs into their account in the application) the app sets the known contact key in the registration.</li>
+      <li>The device will now send a new registration payload to the Marketing Cloud, a new contact will be created and the device will become associated with the new contact.</li>
+    </ol>
+  </li>
+  <li>The application allows for multiple users, for example, a banking app, where each user can log into the application and are targeted as individual users.
+    <ol>
+      <li><strong>User A</strong> logs into their account in the banking app and the application sets the contact key in the registration to <strong>user.a@example.com</strong>.</li>
+      <li>The Marketing Cloud creates a contact for <strong>User A</strong> in the contact record for the customer’s MC App.</li>
+      <li>At a point in the future <strong>User B</strong> logs into their account on the same device and the application sets the contact key in the registration to <strong>user.b@example.com</strong>.</li>
+      <li>The Marketing Cloud creates a contact for <strong>User B</strong> in the contact record and associates the device with that contact.  The contact for <strong>User A</strong> no longer has an association with a targettable device and is now considered “orphaned.”</li>
+    </ol>
+  </li>
+</ul>
+
+<h4 id="avoiding-orphaned-contacts">Avoiding orphaned contacts</h4>
+
+<p>Depending on the design/usage of an application, orphaned contacts may not be entirely avoidable.  However, the likelihood of an orphaned contact being created can be reduced by using the <code class="highlighter-rouge">sfmc_setDelayRegistrationUntilContactKeyIsSet</code> configuration flag when initializing the SDK.</p>
+
+<p>The default value for <code class="highlighter-rouge">sfmc_setDelayRegistrationUntilContactKeyIsSet</code> is <code class="highlighter-rouge">false</code>, but if a developer sets the flag to <code class="highlighter-rouge">true</code> the SDK will not send a registration request to the Marketing Cloud until a contact key has been set by the application.  For new installs of the application, this will prevent an unknown contact from being created in the Marketing Cloud.</p>
+
+<h4 id="how-is-billing-affected-by-orphaned-contacts">How is billing affected by orphaned contacts?</h4>
+
+<p>Each Contact with a unique ContactKey/SubscriberKey is counted as a Distinct Contact for billing purposes.</p>
+:ET

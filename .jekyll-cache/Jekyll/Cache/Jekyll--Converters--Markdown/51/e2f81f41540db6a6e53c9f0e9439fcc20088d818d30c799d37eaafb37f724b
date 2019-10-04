@@ -1,0 +1,4 @@
+I"”<ul>
+  <li><strong>Fixed issue with Inbox start date</strong>â€”Inbox messages now will respect startDateUtc payload value in all cases.</li>
+</ul>
+:ET

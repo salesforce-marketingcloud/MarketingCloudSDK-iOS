@@ -1,0 +1,51 @@
+I"�<p>While you can integrate multiple push SDKs into a single app, we cannot guarantee the expected results. This section provides some considerations you should keep in mind as you develop your app. This list does not represent all possible issues.</p>
+
+<h4 id="1-registration">1. Registration</h4>
+
+<p>Only ONE call to a push SDK to register for push notifications can be made. Otherwise, multiple notification banners, alerts, or sounds can trigger in a single push. MarketingCloudSDK gives the app developer the power to register.</p>
+
+<h4 id="2-notification-settings">2. Notification Settings</h4>
+
+<p>An app can call requestAuthorizationWithOptions and registerForRemoteNotifications multiple times, but only the last call is used. The settings are overwritten each time it is called.</p>
+
+<h4 id="3-badging">3. Badging</h4>
+
+<p>There is no way to guarantee the value of a badge.</p>
+
+<h4 id="4-notification-handling">4. Notification Handling</h4>
+
+<p>Notification handling in your application delegate with multiple SDKs depends on the SDKs used. The notifications may be visually stacked, discarded, or otherwise confused.</p>
+
+<h4 id="5-custom-payload-keys">5. Custom Payload Keys</h4>
+
+<p>Use custom keys or other payload-specific data to ensure that the correct SDK handler is called in an app that supports multiple notification handlers.</p>
+
+<h4 id="6-method-swizzling">6. Method Swizzling</h4>
+
+<blockquote>
+  <p>Warning: If a push SDK uses method swizzling as a means of replacing iOS framework code at runtime, the MarketingCloudSDK may not work as expected.</p>
+</blockquote>
+
+<p>To determine if an SDK uses swizzling, look for SDKs that do not use these methods:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfofetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))handler
+</code></pre></div></div>
+
+<p>Some SDKs offer a secondary implementation, which uses standard app delegate methods. If so, you must use the secondary implementation.</p>
+
+<h4 id="7-geolocation">7. Geolocation</h4>
+
+<p>If you implement multiple SDKs that use location-enabled services, use only one SDK’s location enablement. Using more than one leads to unknown and unsupportable consequences.</p>
+
+<p>For example, each provider is likely affected by the methods used by the other providers to interact with iOS CoreLocation services and enablement of location services. An app can monitor a limited number of geofences at any one time. This number depends on iOS version, device type, and other considerations. With multiple implementations competing for a limited resource, user experience may suffer.</p>
+
+<p>In addition, permissions needed to use location-enabled SDKs may overlap or conflict.</p>
+
+<h4 id="8-feedback">8. Feedback</h4>
+
+<p>All providers may not be able to detect if a device has been unregistered.</p>
+
+<p>The binary Apple Push Notification Service (APNS) uses a feedback mechanism to let the provider know if a device unregistered from APNS. This feedback mechanism clears the list of unregistered devices after the provider reads it and only returns failures that happened since the provider last connected. So, the first provider to read from the feedback mechanism would clear the list, preventing the other providers from determining if a device has unregistered. If the other providers can’t tell that a device unregistered, they will still attempt to send to the device.</p>
+
+<p>The HTTP/2 APNS communication mechanism uses a more direct feedback system, which pushes to the device and immediately notifies the provider if the device is unregistered. Once a device is marked as unregistered in APNS and communicates this information to a push provider, the information may not communicate to secondary push providers accessing the feedback mechanism. Therefore, secondary push providers may not know that a device is unregistered and may get errors back from APNS that don’t make sense.</p>
+:ET

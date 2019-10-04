@@ -1,0 +1,51 @@
+I"5<h4 id="create-your-apps-in-marketing-cloud">Create your apps in Marketing Cloud</h4>
+
+<p>Your development, test, and deployment process is best accomplished by creating <strong>two</strong> unique MobilePush apps</p>
+
+<ul>
+  <li>one for development (utilizing Apple’s push sandbox)</li>
+  <li>one for production (targeting Apple’s production push system).</li>
+</ul>
+
+<p>Before starting, make sure you have created push certificates as outlined in our <a href="/get-started/get-started-provision.html">Provision for Push</a> document.</p>
+
+<p>Follow these steps to create new MobilePush apps:</p>
+<ol>
+  <li>Log in to <a href="https://mc.exacttarget.com">Marketing Cloud MobilePush</a>.</li>
+  <li>From the Mobile Studio menu, choose MobilePush.</li>
+  <li>On the Administration tab, click <strong>Create New App</strong> in the upper right corner.</li>
+  <li>
+    <p>Enter the name and description for the app.</p>
+
+    <blockquote>
+      <p>Development app: suggestion for name: <code class="highlighter-rouge">[product]_DEV-APNS</code>.<br />Production app: suggestion for name: <code class="highlighter-rouge">[product]_PROD-APNS</code>.</p>
+    </blockquote>
+  </li>
+  <li>Click <strong>Choose file</strong> and upload the icon for the MobilePush app.</li>
+  <li>
+    <p>To upload an APNS certificate, click <strong>Change</strong> and choose the certificate on your computer to upload. Enter the password for the certificate.</p>
+
+    <blockquote>
+      <p>Development app: upload the <strong>iOS Apple Push Notification service SSL (Sandbox)</strong> .p12 file created following the directions in <a href="/get-started/get-started-provision.html">Provision for Push</a>.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>Production app: upload the <strong>Apple Push Notification service SSL (Sandbox &amp; Production)</strong> .p12 file created following the directions in <a href="/get-started/get-started-provision.html">Provision for Push</a>.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>Validate correct certificate is uploaded. The certificate should be for Push Notifications (APNS), not the signing certificate used to provision your application for AdHoc or App Store deployment. Double-check to ensure that the certificate uploaded is a valid, current APNS (push) certificate, as they expire after 1 year.</p>
+    </blockquote>
+  </li>
+  <li>Make any applicable changes to the optional settings.</li>
+  <li>Note and copy the <code class="highlighter-rouge">Access Token</code>, <code class="highlighter-rouge">App ID</code> and <code class="highlighter-rouge">App Endpoint</code>. These values will be used to configure the SDK for development testing.<br /><img class="img-responsive" src="/assets/setupConfigValues222.png" /><br /></li>
+  <li>Select your account name in the upper-right corner of the <a href="https://mc.exacttarget.com/cloud/#app/MobilePush/MobilePush/">MobilePush Administration site</a> and node and copy the “MID” value (numbers only).<br /><img class="img-responsive" src="/assets/setupMidValues.png" /><br /></li>
+  <li>Click <strong>Save</strong>.</li>
+</ol>
+
+<p>Review <a href="https://help.salesforce.com/articleView?id=mc_mp_provisioning_info.htm&amp;type=5">MobilePush documentation</a> for more information.</p>
+
+<h3 id="next-steps">Next Steps</h3>
+
+<p><a href="/get-started/get-started-addsdk.html">Add the SDK</a></p>
+:ET

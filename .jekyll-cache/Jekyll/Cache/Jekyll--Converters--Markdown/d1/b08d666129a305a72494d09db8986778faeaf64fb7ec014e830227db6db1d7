@@ -1,0 +1,12 @@
+I"�<ul>
+  <li>
+    <p><strong>Corrected issues with multi-threading</strong> – We corrected issues related to multi-threading in the SDK.</p>
+  </li>
+  <li>
+    <p><strong>Added i386 slice for simulator builds</strong> – We updated the build process to include i386 ARCH, which allows you to run 32-bit simulators.</p>
+  </li>
+  <li>
+    <p><strong>Addressed issue loading resources on armv7s devices</strong> – We corrected an issue related to loading resources on armv7s devices.</p>
+  </li>
+</ul>
+:ET

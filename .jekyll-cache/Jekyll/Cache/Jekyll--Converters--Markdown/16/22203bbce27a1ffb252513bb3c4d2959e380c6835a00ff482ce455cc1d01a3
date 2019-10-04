@@ -1,0 +1,51 @@
+I"<h2 id="implement-push">Implement Push</h2>
+
+<h4 id="before-starting-make-sure-you-have-created-push-certificates-as-outlined-in-our-provision-for-push-document">Before starting, make sure you have created push certificates as outlined in our <a href="/get-started/get-started-provision.html">Provision for Push</a> document.</h4>
+
+<ol>
+  <li>
+    <p>Enable push notifications in your target’s Capabilities settings.</p>
+
+    <p><img class="img-responsive" src="/assets/SDKConfigure8.png" /><br /><br /></p>
+  </li>
+  <li>
+    <p>Set your <code class="highlighter-rouge">AppDelegate</code> class to adhere to the <code class="highlighter-rouge">UIApplicationDelegate</code> and <code class="highlighter-rouge">UNUserNotificationCenterDelegate</code> protocol.
+ <script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script><br /></p>
+  </li>
+  <li>
+    <p>Extend the SDK configuration code outlined in <a href="/get-started/get-started-configuresdk.html">Configure the SDK</a> to add support for push registration.</p>
+
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/75374975e2f386560c04455dec1092bd.js"></script>
+    <p><br /></p>
+
+    <blockquote>
+      <p>Note: for information on handling URLs in MobilePush messages, see <a href="/sdk-implementation/implementation-urlhandling.html">Handling URLs</a>.</p>
+    </blockquote>
+  </li>
+  <li>
+    <p>Add the required <code class="highlighter-rouge">UIApplicationDelegate</code> protocol methods (to support push registration) to your AppDelegate class.</p>
+
+    <script src="https://gist.github.com/14a82bd3208be864e0ace803e7d6632f.js"></script>
+    <p><br /></p>
+  </li>
+  <li>
+    <p>Add the required <code class="highlighter-rouge">UNUserNotificationCenterDelegate</code> protocol methods (to support push notifications) to your AppDelegate class.</p>
+
+    <script src="https://gist.github.com/sfmc-mobilepushsdk/53c9322a4b54dd11fe008d76a611b801.js"></script>
+    <p><br /></p>
+
+    <blockquote>
+      <p>These methods use MarketingCloud SDK methods to enable the framework’s functionality to manage push notifications, which includes MobilePush contact registration and push analytics tracking.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>If you implement the methods without using the MarketingCloud SDK methods as shown, MobilePush functionality does not work as expected. If you <strong>do not</strong> implement the methods, MobilePush functionality <strong>does not</strong> work.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<h2 id="continue-push-setup-with-rich-notifications">Continue Push Setup with Rich Notifications</h2>
+
+<p>See <a href="/push-notifications/rich-notifications.html">Rich Notifications</a> for more information on handling rich notifications (iOS <code class="highlighter-rouge">mutable-content</code>) in MobilePush.</p>
+
+:ET
