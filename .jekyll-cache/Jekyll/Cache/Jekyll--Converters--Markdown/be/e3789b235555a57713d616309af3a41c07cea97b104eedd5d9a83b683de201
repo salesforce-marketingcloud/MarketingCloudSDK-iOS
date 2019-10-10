@@ -1,9 +1,0 @@
-I"v<ul>
-  <li>
-    <p><strong>Removed SDK test code from library</strong>—Test code associated with SDK development was removed from the public release.</p>
-  </li>
-  <li>
-    <p><strong>Fixed Location Messaging Date Calculation</strong>—When calculating a “next show date” for a location message, fixed a case where the day may have been off by one.</p>
-  </li>
-</ul>
-:ET
