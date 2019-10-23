@@ -82,6 +82,3 @@ To prepare your application for data privacy compliance, implement the April 201
 ### iOS
 * Ensure that you implement version 5.1.0 of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
 * Enable background refresh in your application to assure the best opportunity for silent push notification delivery for seamless mode enablement. Review the [iOS SDK documentation]({{ site.baseurl }}) for more details.
-
-## Any Questions?
-If you have any questions on this document or on our SDKs in general, please send us an email at <marketingcloudsdkfeedback@salesforce.com>. We would love to hear from you.
