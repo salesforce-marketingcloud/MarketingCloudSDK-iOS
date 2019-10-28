@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67982578DD4C4D73561C6BA1 /* Pods_LearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DCD7C298C9345F6CE8083D4 /* Pods_LearningApp.framework */; };
-		9B75120822B036A00071C5CB /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9B75120722B036A00071C5CB /* Podfile */; };
-		9B75120A22B03EA20071C5CB /* ReadMe.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B75120922B03EA20071C5CB /* ReadMe.md */; };
 		9BDC678322A85ABB0098A2E2 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */; };
 		9BDC679922AADED90098A2E2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC679822AADED90098A2E2 /* NotificationService.swift */; };
 		9BDC679D22AADED90098A2E2 /* MarketingCloudServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9BDC679622AADED80098A2E2 /* MarketingCloudServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -246,9 +244,7 @@
 			files = (
 				9BF1C6E122A6DD2F004E4AF0 /* LaunchScreen.storyboard in Resources */,
 				9BF1C6DE22A6DD2F004E4AF0 /* Assets.xcassets in Resources */,
-				9B75120822B036A00071C5CB /* Podfile in Resources */,
 				9BF1C6DC22A6DD2D004E4AF0 /* Main.storyboard in Resources */,
-				9B75120A22B03EA20071C5CB /* ReadMe.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

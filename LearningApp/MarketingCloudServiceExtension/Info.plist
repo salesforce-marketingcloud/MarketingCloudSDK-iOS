@@ -16,10 +16,10 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
-	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<key>CFBundleShortVesionString</key>
+	<string>6.4.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>6.4.0</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
