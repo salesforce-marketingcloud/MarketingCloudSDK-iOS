@@ -20,9 +20,15 @@ This example uses the MarketingCloudSDK [ConfigBuilder ](https://salesforce-mark
 
 1. Using the `Access Token`, `App ID`, `App Endpoint`, and `MID` values noted when you [Setup Push Apps]({{ site.baseurl }}/get-started/get-started-setupapps.html), configure the SDK in your application.
 
-    <script src="https://gist.github.com/dff538b60618bdcf6d64cef21fe4e0c2.js"></script>
+    <script src="https://gist.github.com/018c4f6f89501a4599031a701563441b.js"></script>
 
 1. Enable or disable `etanalytics`, `pianalytics`, `location`, or `inbox` entries depending on the unique needs of your application and your usage of Marketing Cloud.
+
+Note: iOS Data Protection affects the SDK as follows:
+1. No protection - SDK works in foreground & background
+2. Complete until first user authentication - SDK works in foreground & background after 1st unlock.
+3. Complete unless open - SDK works in foreground & background after 1st unlock.
+4. Complete - SDK works only in the forground after the device is unlocked.
 
   
 ### Next Steps
