@@ -7,8 +7,6 @@ date: 2019-11-10 12:00:00
 order: 3
 ---
 
-## Troubleshooting iOSData Protection
-
 Note: iOS Data Protection affects the SDK as follows:
 1. No protection - SDK works in foreground & background
 2. Complete until first user authentication - SDK works in foreground & background after 1st unlock.
