@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "iOS Data Protection"
-subtitle: "Troubleshooting iOSData Protection"
+subtitle: "Troubleshooting iOS Data Protection"
 category: trouble
 date: 2019-11-10 12:00:00
 order: 3
