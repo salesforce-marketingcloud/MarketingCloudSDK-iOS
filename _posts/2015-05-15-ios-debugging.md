@@ -38,7 +38,7 @@ Test that your app can receive a push directly from APNS (Apple Push Notificatio
 
 - Trigger the APNS API directly from the command line
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/453df3208247c74b7c50bebb23d53a87.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/88f9f3e05fc76a15e8e01b50e5e3adde.js"></script>
 
 #### Additional Resources
 
