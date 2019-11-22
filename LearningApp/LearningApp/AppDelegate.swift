@@ -28,11 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let location = true
     let pushAnalytics = true
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        // MobilePush SDK: REQUIRED IMPLEMENTATION
-
+    // MobilePush SDK: REQUIRED IMPLEMENTATION
+    @discardableResult
+    func configureMarketingCloudSDK() -> Bool {
         // Use the builder method to configure the SDK for usage. This gives you the maximum flexibility in SDK configuration.
         // The builder lets you configure the SDK parameters at runtime.
         let builder = MarketingCloudSDKConfigBuilder()
@@ -44,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             .sfmc_setLocationEnabled(location as NSNumber)
             .sfmc_setAnalyticsEnabled(pushAnalytics as NSNumber)
             .sfmc_build()!
-
+        
         var success = false
         
         // Once you've created the builder, pass it to the sfmc_configure method.
@@ -57,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             let configErrorString = String(format: "MarketingCloudSDK sfmc_configure failed with error = %@", error)
             print(configErrorString)
-        
+            
             DispatchQueue.main.async {
                 let alert = UIAlertController(title: "Configuration Error", message: configErrorString, preferredStyle: .alert)
                 
@@ -96,7 +94,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Additional app and project setup must be complete in order for Location Messaging to work correctly.
             // See https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/location/geolocation-overview.html
             MarketingCloudSDK.sharedInstance().sfmc_startWatchingLocation()
-
+            
             // Make sure to dispatch this to the main thread, as UNUserNotificationCenter will present UI.
             DispatchQueue.main.async {
                 if #available(iOS 10.0, *) {
@@ -130,9 +128,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
         
-        return true
+        return success
+    }
+
+    // MobilePush SDK: REQUIRED IMPLEMENTATION
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        return self.configureMarketingCloudSDK()
     }
     
+    // MobilePush SDK: OPTIONAL IMPLEMENTATION (if using Data Protection)
+    func applicationProtectedDataDidBecomeAvailable(_ application: UIApplication) {
+        if(MarketingCloudSDK.sharedInstance().sfmc_isReady() == false)
+        {
+            self.configureMarketingCloudSDK()
+        }
+    }
+
     // MobilePush SDK: REQUIRED IMPLEMENTATION
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         MarketingCloudSDK.sharedInstance().sfmc_setDeviceToken(deviceToken)

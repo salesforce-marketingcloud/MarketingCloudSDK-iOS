@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		4DCD7C298C9345F6CE8083D4 /* Pods_LearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B75120722B036A00071C5CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		9B75120722B036A00071C5CB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B75120922B03EA20071C5CB /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
 		9BDC679122A966CC0098A2E2 /* LearningApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningApp.entitlements; sourceTree = "<group>"; };
