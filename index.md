@@ -14,7 +14,7 @@ title: "Home"
 
 ## iOS 13 Support
 
-> - The MobilePush SDK version {{ site.currentVersion }} has been tested against and is compatibile with iOS 13.
+> - The MobilePush SDK version 6.4.0 and up has been tested against and is compatibile with iOS 13.
 > - Our [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been tested against and is compatibile with iOS 13.
 > - Older versions of the SDK *may be* compatibile but have not been tested.
 
