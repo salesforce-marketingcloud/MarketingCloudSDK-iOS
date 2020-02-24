@@ -44,8 +44,7 @@ Send your first push notification to test your initial SDK setup.
 
 ## Contact Us
 
-Sign up for email announcements and contact us with questions or feedback about the iOS SDK.
-  * Email us at <marketingcloudsdkfeedback@salesforce.com>.
+Sign up for email announcements and contact us with questions about the iOS SDK.
   * Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example tags: marketing-cloud, salesforcemobilesdk-ios, mobilesdk, and mobilepush-ios
   * Sign up for [email updates](http://pub.s1.exacttarget.com/2ujjacpet3t) about release announcements and other important information. (10 or fewer emails per year)
 
