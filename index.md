@@ -14,10 +14,14 @@ title: "Home"
 
 ## iOS 13 Support
 
-> - The MobilePush SDK version {{ site.currentVersion }} has been tested against and is compatibile with iOS 13.
+> - The MobilePush SDK version 6.4.0 and up has been tested against and is compatibile with iOS 13.
 > - Our [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been tested against and is compatibile with iOS 13.
 > - Building with XCode11 or greater requires SDK version 5.x or later in order to continue receiving push notifications on iOS13 devices.
 
+
+## iOS Data Protection
+> - The MobilePush SDK version 6.4.1 includes new troubleshooting information and code examples to demonstrate proper configuration and usage when iOS Data Protection is in use. See [iOS Data Protection]({{ site.baseurl }}/trouble/trouble-ios-data-protection.html).
+> - The [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been modified to show proper usage.
 
 ## Requirements
 
