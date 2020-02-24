@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "iOS Data Protection"
-subtitle: "Troubleshooting iOSData Protection"
+subtitle: "Troubleshooting iOS Data Protection"
 category: trouble
 date: 2019-11-10 12:00:00
 order: 3
@@ -20,5 +20,3 @@ In the case of configuration, if iOS Data Protection is set such that the file s
 
 #### 2. Foreground/Background Operation Issues
 Certain features of the SDK require access to the file system while transitioning to the foregorund or background. Foreground operations include retrieving messages from the Marketing Cloud for Inbox and Location and sending analytic information back to the Marketing Cloud. Background operations include sending analytic information back to the Marketing Cloud. If any of these features are enabled via configuration then an appropriate iOS Data Protection mode must be selected in order for them to work correctly.
-
-

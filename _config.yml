@@ -63,5 +63,4 @@ exclude: ['bin', 'README.md', 'docker-compose.yml']
 markdown: kramdown
 
 # Current SDK version, use for all mentions
-
 currentVersion: "7.0.0"

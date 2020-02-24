@@ -10,13 +10,18 @@ title: "Home"
 > - Android will require a minimum API version of 21
 > - iOS will require a minimum deployment target of 10.0
 >
-> Existing mobile applications will continue to function, without change. Mobile applications may continue to reference older SDK versions, without change. Applications which adopt the January, 2020 MobilePush SDK release may require a project change if your application build still supports an older value (Android: earlier than API 21, iOS: iOS 9).
+> Existing mobile applications built with SDK version 5.x or later will continue to function, without change. Mobile applications may continue to reference older SDK versions, without change. Applications which adopt the January, 2020 MobilePush SDK release may require a project change if your application build still supports an older value (Android: earlier than API 21, iOS: iOS 9).
 
 ## iOS 13 Support
 
-> - The MobilePush SDK version {{ site.currentVersion }} has been tested against and is compatibile with iOS 13.
+> - The MobilePush SDK version 6.4.0 and up has been tested against and is compatibile with iOS 13.
 > - Our [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been tested against and is compatibile with iOS 13.
-> - Older versions of the SDK *may be* compatibile but have not been tested.
+> - Building with XCode11 or greater requires SDK version 5.x or later in order to continue receiving push notifications on iOS13 devices.
+
+
+## iOS Data Protection
+> - The MobilePush SDK version 6.4.1 includes new troubleshooting information and code examples to demonstrate proper configuration and usage when iOS Data Protection is in use. See [iOS Data Protection]({{ site.baseurl }}/trouble/trouble-ios-data-protection.html).
+> - The [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been modified to show proper usage.
 
 ## Requirements
 
