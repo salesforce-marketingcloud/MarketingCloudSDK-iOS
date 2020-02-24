@@ -84,17 +84,9 @@
 		
 		<option value="//api/name/sfmc_clearAttributesNamed:">- sfmc_clearAttributesNamed:</option>
 		
-		<option value="//api/name/sfmc_configure:">- sfmc_configure:</option>
-		
-		<option value="//api/name/sfmc_configure:completionHandler:">- sfmc_configure:completionHandler:</option>
-		
 		<option value="//api/name/sfmc_configureWithDictionary:error:">- sfmc_configureWithDictionary:error:</option>
 		
 		<option value="//api/name/sfmc_configureWithDictionary:error:completionHandler:">- sfmc_configureWithDictionary:error:completionHandler:</option>
-		
-		<option value="//api/name/sfmc_configureWithURL:configurationIndex:error:">- sfmc_configureWithURL:configurationIndex:error:</option>
-		
-		<option value="//api/name/sfmc_configureWithURL:configurationIndex:error:completionHandler:">- sfmc_configureWithURL:configurationIndex:error:completionHandler:</option>
 		
 		<option value="//api/name/sfmc_contactKey">- sfmc_contactKey</option>
 		
@@ -319,69 +311,6 @@
 		</div>
 	</div>
 </div><div class="section-method">
-	<a name="//api/name/sfmc_configure:" title="sfmc_configure:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_configure:">&ndash;&nbsp;sfmc_configure:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configure:(NSError *_Nullable *)<em>error</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>NSError object describing the error.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
 	<a name="//api/name/sfmc_configureWithDictionary:error:" title="sfmc_configureWithDictionary:error:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithDictionary:error:">&ndash;&nbsp;sfmc_configureWithDictionary:error:</a></code>
 </h3>
@@ -534,225 +463,6 @@
 NSError *error = nil;
 BOOL success = [[MarketingCloudSDK sharedInstance] sfmc_configureWithDictionary:[mcsdkBuilder sfmc_build] error:&amp;error completionHandler:^(BOOL success, NSString *appid, NSError *error) {}];
 </code></pre>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_configureWithURL:configurationIndex:error:" title="sfmc_configureWithURL:configurationIndex:error:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithURL:configurationIndex:error:">&ndash;&nbsp;sfmc_configureWithURL:configurationIndex:error:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithURL:(NSURL *_Nullable)<em>url</em> configurationIndex:(NSNumber *)<em>configurationIndex</em> error:(NSError *_Nullable *)<em>error</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>URL to a JSON configuration file that is embedded in the application bundle.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>configurationIndex</code></th>
-						<td><p>zero based index into into the JSON file array of configuration settings.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>NSError object describing the error.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_configure:completionHandler:" title="sfmc_configure:completionHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_configure:completionHandler:">&ndash;&nbsp;sfmc_configure:completionHandler:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configure:(NSError *_Nullable *)<em>error</em> completionHandler:(void ( ^ _Nullable ) ( BOOL configured , NSString *appId , NSError *_Nullable error ))<em>completionHandler</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>NSError object describing the error.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Called when the asynchronous portion of the configuration has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Base.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_configureWithURL:configurationIndex:error:completionHandler:" title="sfmc_configureWithURL:configurationIndex:error:completionHandler:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_configureWithURL:configurationIndex:error:completionHandler:">&ndash;&nbsp;sfmc_configureWithURL:configurationIndex:error:completionHandler:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass a URL to a JSON file with optional parameter settings. Settings that are absent will default to NO. See documentation for example JSON.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_configureWithURL:(NSURL *)<em>url</em> configurationIndex:(NSNumber *)<em>configurationIndex</em> error:(NSError *_Nullable *)<em>error</em> completionHandler:(void ( ^ _Nullable ) ( BOOL configured , NSString *appId , NSError *_Nullable error ))<em>completionHandler</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>URL to a JSON configuration file that is embedded in the application bundle.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>configurationIndex</code></th>
-						<td><p>zero based index into into the JSON file array of configuration settings.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>error</code></th>
-						<td><p>NSError object describing the error.</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>completionHandler</code></th>
-						<td><p>Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass a URL to a JSON file with optional parameter settings. Settings that are absent will default to NO. See documentation for example JSON.</p>
 			</div>
 			
 
@@ -2605,850 +2315,6 @@ The current state of the pushEnabled flag in the SDK.</p>
 						</div>
 						
 
-						<a title="Events Methods" name="task_Events Methods"></a>
-						<h2 class="task-title">Events Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_setEventDelegate:" title="sfmc_setEventDelegate:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setEventDelegate:">&ndash;&nbsp;sfmc_setEventDelegate:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Method to set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> protocol) to implment methods for In-App Message lifecycle events.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_setEventDelegate:(id&lt;MarketingCloudSDKEventDelegate&gt; _Nullable)<em>delegate</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>delegate</code></th>
-						<td><p>the class implementing the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a>.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Method to set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> protocol) to implment methods for In-App Message lifecycle events.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_messageIdForMessage:" title="sfmc_messageIdForMessage:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_messageIdForMessage:">&ndash;&nbsp;sfmc_messageIdForMessage:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Extract a message identifier for an In-App Message dictionary (provided in the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods).</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)sfmc_messageIdForMessage:(NSDictionary *_Nonnull)<em>message</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>message</code></th>
-						<td><p>NSDictionary representing an In-App Message</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>string value of the message identifier</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Extract a message identifier for an In-App Message dictionary (provided in the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods).</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_showInAppMessage:" title="sfmc_showInAppMessage:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_showInAppMessage:">&ndash;&nbsp;sfmc_showInAppMessage:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>When called, instructs the SDK to attempt to display the In-App Message. This will cause the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods to be called, if implemented.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_showInAppMessage:(NSString *_Nonnull)<em>messageId</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>messageId</code></th>
-						<td><p>identifier of In-App Message</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>When called, instructs the SDK to attempt to display the In-App Message. This will cause the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods to be called, if implemented.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_setInAppMessageFontName:" title="sfmc_setInAppMessageFontName:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setInAppMessageFontName:">&ndash;&nbsp;sfmc_setInAppMessageFontName:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>When called, sets the font for In-App Message display.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_setInAppMessageFontName:(NSString *_Nullable)<em>fontName</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>fontName</code></th>
-						<td><p>name of font installed on device or built into application. Note: this may be different than the font family name. If nil, the SDK default (system font) will be used.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>value of YES indicating that the font name is valid and can be used, NO if the font name is not valid. If nil is passed as fontName, YES will be returned.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>When called, sets the font for In-App Message display.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
-						<a title="Intelligence Methods" name="task_Intelligence Methods"></a>
-						<h2 class="task-title">Intelligence Methods</h2>
-
-						<div class="task-list">
-							<div class="section-method">
-	<a name="//api/name/sfmc_setPiIdentifier:" title="sfmc_setPiIdentifier:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_setPiIdentifier:">&ndash;&nbsp;sfmc_setPiIdentifier:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Set the identifier to associate with Predictive Intelligence data sent to Salesforce Marketing Cloud</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_setPiIdentifier:(NSString *_Nullable)<em>identifier</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>identifier</code></th>
-						<td><p>The string you want to associate analytics with.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>YES if set successfully.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Set the identifier to associate with Predictive Intelligence data sent to Salesforce Marketing Cloud</p>
-
-<p>The clear the value, pass a nil value.</p>
-
-<p>Will trim leading and trailing whitespace from the string.</p>
-
-<p>An identifier will persist until it is cleared or changed and will used to associate with all analytic events generated while set.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_piIdentifier" title="sfmc_piIdentifier"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_piIdentifier">&ndash;&nbsp;sfmc_piIdentifier</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Returns a read-only copy of the Analytics identity set</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)sfmc_piIdentifier</code></div>
-
-		    
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>All attributes currently set.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Returns a read-only copy of the Analytics identity set</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_trackMessageOpened:" title="sfmc_trackMessageOpened:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackMessageOpened:">&ndash;&nbsp;sfmc_trackMessageOpened:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackMessageOpened:(NSDictionary *_Nonnull)<em>inboxMessage</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>inboxMessage</code></th>
-						<td><p>a non-nil NSDictionary object representing an Inbox message</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_trackPageViewWithURL:title:item:search:" title="sfmc_trackPageViewWithURL:title:item:search:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackPageViewWithURL:title:item:search:">&ndash;&nbsp;sfmc_trackPageViewWithURL:title:item:search:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Track page views within your application.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackPageViewWithURL:(NSString *_Nonnull)<em>url</em> title:(NSString *_Nullable)<em>title</em> item:(NSString *_Nullable)<em>item</em> search:(NSString *_Nullable)<em>search</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>url</code></th>
-						<td><p>a non-nil NSString to identify the location within your app traversed by your customers.  For example: com.yourpackage.viewcontrollername</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>title</code></th>
-						<td><p>a NSString (nil if n/a) to identify the title of the location within your app traversed by your customers. For example: Screen Name</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>item</code></th>
-						<td><p>a NSString (nil if n/a) to identify an item viewed by your customer.  For example: UPC-1234</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>search</code></th>
-						<td><p>a NSString (nil if n/a) to identify search terms used by your customer.  For example: blue jeans.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Track page views within your application.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_trackCartContents:" title="sfmc_trackCartContents:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackCartContents:">&ndash;&nbsp;sfmc_trackCartContents:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Track cart contents within your application.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackCartContents:(NSDictionary *_Nonnull)<em>cartDictionary</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>cartDictionary</code></th>
-						<td><p>a non-nil NSDictionanry object containing a cartID and an array of cart item dictionaries</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Track cart contents within your application.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_trackCartConversion:" title="sfmc_trackCartConversion:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackCartConversion:">&ndash;&nbsp;sfmc_trackCartConversion:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Track cart conversion within your application.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackCartConversion:(NSDictionary *_Nonnull)<em>orderDictionary</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>orderDictionary</code></th>
-						<td><p>a non-nil NSDictionanry object representing an order; created from a cart and cart items and &ldquo;converted&rdquo; into a sale of some sort</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Track cart conversion within your application.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:" title="sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:">&ndash;&nbsp;sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Initialize a Cart Item dictionary for use in analytics.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_cartItemDictionaryWithPrice:(NSNumber *_Nonnull)<em>price</em> quantity:(NSNumber *_Nonnull)<em>quantity</em> item:(NSString *_Nonnull)<em>item</em> uniqueId:(NSString *_Nullable)<em>uniqueId</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>price</code></th>
-						<td><p>The price amount (USD) of this item (non-nil value; 0 permissable)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>quantity</code></th>
-						<td><p>The count of items in the cart for this particular product (non-nil value; greater than zero)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>item</code></th>
-						<td><p>The unique product code from the e-commerce system representing this cart item (non-nil string value)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>uniqueId</code></th>
-						<td><p>The unique product id. from the e-commerce system representing this cart item (string value; nil permissable)</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype a NSDictionary representing a cart item.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize a Cart Item dictionary for use in analytics.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_cartDictionaryWithCartItemDictionaryArray:" title="sfmc_cartDictionaryWithCartItemDictionaryArray:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_cartDictionaryWithCartItemDictionaryArray:">&ndash;&nbsp;sfmc_cartDictionaryWithCartItemDictionaryArray:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Initialize a Cart dictionary for use in analytics.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_cartDictionaryWithCartItemDictionaryArray:(NSArray *_Nonnull)<em>cartItemDictionaryArray</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>cartItemDictionaryArray</code></th>
-						<td><p>An array of cart item dictionary objects (non-nil array). An empty array indicates an empty cart, and will be used to indicate a cleared cart to the analytics system.</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype a MarketingCloudSDKCart.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize a Cart dictionary for use in analytics.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:" title="sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:">&ndash;&nbsp;sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>Initialize an Order dictionary for use in analytics.</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_orderDictionaryWithOrderNumber:(NSString *_Nonnull)<em>orderNumber</em> shipping:(NSNumber *_Nonnull)<em>shipping</em> discount:(NSNumber *_Nonnull)<em>discount</em> cart:(NSDictionary *_Nonnull)<em>cartDictionary</em></code></div>
-
-		    
-			
-			<div class="method-subsection arguments-section parameters">
-				<h4 class="method-subtitle parameter-title">Parameters</h4>
-				<table class="argument-def parameter-def">
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>orderNumber</code></th>
-						<td><p>The order number of from the e-commerce system (non-nil string)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>shipping</code></th>
-						<td><p>The shipping amount (USD) of this order (non-nil value; 0 permissable)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>discount</code></th>
-						<td><p>The discount amount (USD) of this order (non-nil value; 0 permissable)</p></td>
-					</tr>
-				
-					<tr>
-						<th scope="row" class="argument-name"><code>cartDictionary</code></th>
-						<td><p>The order&rsquo;s shopping cart object (non-nil object)</p></td>
-					</tr>
-				
-				</table>
-			</div>
-			
-
-			
-			<div class="method-subsection return">
-				<h4 class="method-subtitle parameter-title">Return Value</h4>
-				<p>instancetype a NSDictionary representing an order.</p>
-			</div>
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>Initialize an Order dictionary for use in analytics.</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div>
-						</div>
-						
-
 						<a title="URLHandling Methods" name="task_URLHandling Methods"></a>
 						<h2 class="task-title">URLHandling Methods</h2>
 
@@ -4497,6 +3363,850 @@ The current state of the pushEnabled flag in the SDK.</p>
 						</div>
 						
 
+						<a title="Events Methods" name="task_Events Methods"></a>
+						<h2 class="task-title">Events Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sfmc_setEventDelegate:" title="sfmc_setEventDelegate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_setEventDelegate:">&ndash;&nbsp;sfmc_setEventDelegate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> protocol) to implment methods for In-App Message lifecycle events.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_setEventDelegate:(id&lt;MarketingCloudSDKEventDelegate&gt; _Nullable)<em>delegate</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>delegate</code></th>
+						<td><p>the class implementing the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Method to set a delegate class (adhering to the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> protocol) to implment methods for In-App Message lifecycle events.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_messageIdForMessage:" title="sfmc_messageIdForMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_messageIdForMessage:">&ndash;&nbsp;sfmc_messageIdForMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Extract a message identifier for an In-App Message dictionary (provided in the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods).</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)sfmc_messageIdForMessage:(NSDictionary *_Nonnull)<em>message</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>message</code></th>
+						<td><p>NSDictionary representing an In-App Message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>string value of the message identifier</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Extract a message identifier for an In-App Message dictionary (provided in the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods).</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_showInAppMessage:" title="sfmc_showInAppMessage:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_showInAppMessage:">&ndash;&nbsp;sfmc_showInAppMessage:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When called, instructs the SDK to attempt to display the In-App Message. This will cause the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods to be called, if implemented.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_showInAppMessage:(NSString *_Nonnull)<em>messageId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>messageId</code></th>
+						<td><p>identifier of In-App Message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When called, instructs the SDK to attempt to display the In-App Message. This will cause the <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a> methods to be called, if implemented.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_setInAppMessageFontName:" title="sfmc_setInAppMessageFontName:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_setInAppMessageFontName:">&ndash;&nbsp;sfmc_setInAppMessageFontName:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When called, sets the font for In-App Message display.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_setInAppMessageFontName:(NSString *_Nullable)<em>fontName</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fontName</code></th>
+						<td><p>name of font installed on device or built into application. Note: this may be different than the font family name. If nil, the SDK default (system font) will be used.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>value of YES indicating that the font name is valid and can be used, NO if the font name is not valid. If nil is passed as fontName, YES will be returned.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When called, sets the font for In-App Message display.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Events.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Intelligence Methods" name="task_Intelligence Methods"></a>
+						<h2 class="task-title">Intelligence Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sfmc_setPiIdentifier:" title="sfmc_setPiIdentifier:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_setPiIdentifier:">&ndash;&nbsp;sfmc_setPiIdentifier:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Set the identifier to associate with Predictive Intelligence data sent to Salesforce Marketing Cloud</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)sfmc_setPiIdentifier:(NSString *_Nullable)<em>identifier</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>identifier</code></th>
+						<td><p>The string you want to associate analytics with.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>YES if set successfully.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Set the identifier to associate with Predictive Intelligence data sent to Salesforce Marketing Cloud</p>
+
+<p>The clear the value, pass a nil value.</p>
+
+<p>Will trim leading and trailing whitespace from the string.</p>
+
+<p>An identifier will persist until it is cleared or changed and will used to associate with all analytic events generated while set.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_piIdentifier" title="sfmc_piIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_piIdentifier">&ndash;&nbsp;sfmc_piIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a read-only copy of the Analytics identity set</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *_Nullable)sfmc_piIdentifier</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>All attributes currently set.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Returns a read-only copy of the Analytics identity set</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_trackMessageOpened:" title="sfmc_trackMessageOpened:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackMessageOpened:">&ndash;&nbsp;sfmc_trackMessageOpened:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackMessageOpened:(NSDictionary *_Nonnull)<em>inboxMessage</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>inboxMessage</code></th>
+						<td><p>a non-nil NSDictionary object representing an Inbox message</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_trackPageViewWithURL:title:item:search:" title="sfmc_trackPageViewWithURL:title:item:search:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackPageViewWithURL:title:item:search:">&ndash;&nbsp;sfmc_trackPageViewWithURL:title:item:search:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track page views within your application.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackPageViewWithURL:(NSString *_Nonnull)<em>url</em> title:(NSString *_Nullable)<em>title</em> item:(NSString *_Nullable)<em>item</em> search:(NSString *_Nullable)<em>search</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>a non-nil NSString to identify the location within your app traversed by your customers.  For example: com.yourpackage.viewcontrollername</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>title</code></th>
+						<td><p>a NSString (nil if n/a) to identify the title of the location within your app traversed by your customers. For example: Screen Name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>item</code></th>
+						<td><p>a NSString (nil if n/a) to identify an item viewed by your customer.  For example: UPC-1234</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>search</code></th>
+						<td><p>a NSString (nil if n/a) to identify search terms used by your customer.  For example: blue jeans.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Track page views within your application.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_trackCartContents:" title="sfmc_trackCartContents:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackCartContents:">&ndash;&nbsp;sfmc_trackCartContents:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track cart contents within your application.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackCartContents:(NSDictionary *_Nonnull)<em>cartDictionary</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cartDictionary</code></th>
+						<td><p>a non-nil NSDictionanry object containing a cartID and an array of cart item dictionaries</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Track cart contents within your application.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_trackCartConversion:" title="sfmc_trackCartConversion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_trackCartConversion:">&ndash;&nbsp;sfmc_trackCartConversion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Track cart conversion within your application.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)sfmc_trackCartConversion:(NSDictionary *_Nonnull)<em>orderDictionary</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>orderDictionary</code></th>
+						<td><p>a non-nil NSDictionanry object representing an order; created from a cart and cart items and &ldquo;converted&rdquo; into a sale of some sort</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Track cart conversion within your application.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:" title="sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:">&ndash;&nbsp;sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize a Cart Item dictionary for use in analytics.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_cartItemDictionaryWithPrice:(NSNumber *_Nonnull)<em>price</em> quantity:(NSNumber *_Nonnull)<em>quantity</em> item:(NSString *_Nonnull)<em>item</em> uniqueId:(NSString *_Nullable)<em>uniqueId</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>price</code></th>
+						<td><p>The price amount (USD) of this item (non-nil value; 0 permissable)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>quantity</code></th>
+						<td><p>The count of items in the cart for this particular product (non-nil value; greater than zero)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>item</code></th>
+						<td><p>The unique product code from the e-commerce system representing this cart item (non-nil string value)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uniqueId</code></th>
+						<td><p>The unique product id. from the e-commerce system representing this cart item (string value; nil permissable)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instancetype a NSDictionary representing a cart item.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialize a Cart Item dictionary for use in analytics.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_cartDictionaryWithCartItemDictionaryArray:" title="sfmc_cartDictionaryWithCartItemDictionaryArray:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_cartDictionaryWithCartItemDictionaryArray:">&ndash;&nbsp;sfmc_cartDictionaryWithCartItemDictionaryArray:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize a Cart dictionary for use in analytics.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_cartDictionaryWithCartItemDictionaryArray:(NSArray *_Nonnull)<em>cartItemDictionaryArray</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cartItemDictionaryArray</code></th>
+						<td><p>An array of cart item dictionary objects (non-nil array). An empty array indicates an empty cart, and will be used to indicate a cleared cart to the analytics system.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instancetype a MarketingCloudSDKCart.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialize a Cart dictionary for use in analytics.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:" title="sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:">&ndash;&nbsp;sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initialize an Order dictionary for use in analytics.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *_Nullable)sfmc_orderDictionaryWithOrderNumber:(NSString *_Nonnull)<em>orderNumber</em> shipping:(NSNumber *_Nonnull)<em>shipping</em> discount:(NSNumber *_Nonnull)<em>discount</em> cart:(NSDictionary *_Nonnull)<em>cartDictionary</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>orderNumber</code></th>
+						<td><p>The order number of from the e-commerce system (non-nil string)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>shipping</code></th>
+						<td><p>The shipping amount (USD) of this order (non-nil value; 0 permissable)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>discount</code></th>
+						<td><p>The discount amount (USD) of this order (non-nil value; 0 permissable)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cartDictionary</code></th>
+						<td><p>The order&rsquo;s shopping cart object (non-nil object)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>instancetype a NSDictionary representing an order.</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Initialize an Order dictionary for use in analytics.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">MarketingCloudSDK+Intelligence.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
 						<a title="Location Methods" name="task_Location Methods"></a>
 						<h2 class="task-title">Location Methods</h2>
 
@@ -4872,7 +4582,7 @@ The current state of the pushEnabled flag in the SDK.</p>
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2019 Salesforce Marketing Cloud. All rights reserved. Updated: 2019-05-20</p>
+						<p class="copyright">Copyright &copy; 1398 Salesforce Marketing Cloud. All rights reserved. Updated: 1398-11-30</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
