@@ -24,15 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedInstance;
 
 /**
- This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
-
- 
- @param error NSError object describing the error.
- @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
- */
--(BOOL)sfmc_configure:( NSError * _Nullable *)error __attribute__((deprecated("Deprecated and will be removed in the Marketing Cloud January, 2020 release. Use MarketingCloudSDKConfigBuilder and sfmc_configureWithDictionary:.")));
-
-/**
  This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass in the NSDictionary created by the MarketingCloudSDKConfigBuilder sfmc_build method. Use the MarketingCloudSDKConfigBuilder class to specify the configuration parameter settings needed by your project. Settings that are absent will default to NO. The following example shows how you can use the MarketingCloudSDKConfigBuilder class to create the configuration dictionary.
  
      MarketingCloudSDKConfigBuilder *mcsdkBuilder = [MarketingCloudSDKConfigBuilder new];
@@ -78,37 +69,6 @@ NS_ASSUME_NONNULL_BEGIN
 @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
  */
 -(BOOL)sfmc_configureWithDictionary:(NSDictionary *)configuration error:(NSError *_Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError *completionError))completionHandler;
-
-/**
- This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
-
- 
- @param url URL to a JSON configuration file that is embedded in the application bundle.
- @param configurationIndex zero based index into into the JSON file array of configuration settings.
- @param error NSError object describing the error.
- @return Returns YES if the configuration is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error. The configuration is synchronously performed and will block the calling thread.
- */
--(BOOL)sfmc_configureWithURL:(NSURL * _Nullable)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error __attribute__((deprecated("Deprecated and will be removed in the Marketing Cloud January, 2020 release. Use MarketingCloudSDKConfigBuilder and sfmc_configureWithDictionary:.")));
-
-/**
- This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must have a JSON file embedded in the application bundle with optional parameter settings as part of your project. Settings that are absent will default to NO. See documentation for example JSON.
- 
- @param error NSError object describing the error.
- @param completionHandler Called when the asynchronous portion of the configuration has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.
- @return Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.
- */
--(BOOL)sfmc_configure:(NSError * _Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError * _Nullable error)) completionHandler __attribute__((deprecated("Deprecated and will be removed in the Marketing Cloud January, 2020 release. Use MarketingCloudSDKConfigBuilder and sfmc_configureWithDictionary:.")));
-
-/**
- This is the main configuration method, responsible for setting credentials needed to communicate with Salesforce. You must pass a URL to a JSON file with optional parameter settings. Settings that are absent will default to NO. See documentation for example JSON.
- 
- @param url URL to a JSON configuration file that is embedded in the application bundle.
- @param configurationIndex zero based index into into the JSON file array of configuration settings.
- @param error NSError object describing the error.
- @param completionHandler Called when the asynchronous portion has completed. Do not proceed if NO is returned and error will contain an error object describing the error. If completionHandler is nil, the configuration is synchronously performed and will block the calling thread.
- @return Returns YES if the synchronous portion is successful or NO if failed. Do not proceed if NO is returned and error will contain an error object describing the error.
- */
--(BOOL)sfmc_configureWithURL:(NSURL *)url configurationIndex:(NSNumber *) configurationIndex error:(NSError * _Nullable *)error completionHandler:(void (^_Nullable)(BOOL configured, NSString *appId, NSError * _Nullable error)) completionHandler __attribute__((deprecated("Deprecated and will be removed in the Marketing Cloud January, 2020 release. Use MarketingCloudSDKConfigBuilder and sfmc_configureWithDictionary:.")));
 
 /** this method properly closes down the MarketingCloudSDK. It should be used in any cases where references to the MarketingCloudSDK need to be released.
  */
