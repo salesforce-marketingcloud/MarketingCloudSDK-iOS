@@ -4,3 +4,4 @@ _site
 _pages
 .jekyll-metadata
 .DS_Store
+.jekyll-cache/*
