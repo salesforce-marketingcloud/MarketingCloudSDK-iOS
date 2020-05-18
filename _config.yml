@@ -1,14 +1,14 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'MarketingCloudSDK iOS (v7.1.0)'
+title: "MarketingCloudSDK iOS (v7.1.1)"
 
-propagationDelay: '5 minutes'
+propagationDelay: "5 minutes"
 
 # if you wish to integrate disqus on pages set your shortname here
-disqus_shortname: ''
+disqus_shortname: ""
 
 # if you use google analytics, add your tracking id here
 # what do these mean these days?
-google_analytics_id: 'UA-82902574-4' #PROD
+google_analytics_id: "UA-82902574-4" #PROD
 #google_analytics_id: 'UA-82902574-1' #DocPreview
 #google_analytics_id: 'UA-82902574-3' #PROD
 #google_analytics_id: 'UA-82902574-2' #DocPreview
@@ -20,27 +20,28 @@ google_analytics_id: 'UA-82902574-4' #PROD
 navigation: 1
 
 # URL to source code, used in _includes/footer.html
-codeurl: 'https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS'
+codeurl: "https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS"
 
 collections:
   releases:
     permalink: "releases/:path"
 
 # Default categories (in order) to appear in the navigation
-sections: [
-    ['docs', 'Documentation'],
-    ['get-started', 'Get Started'],
-    ['testing-push', 'Testing the SDK'],
-    ['sdk-implementation', 'SDK Implementation'],
-    ['push-notifications', 'Push Notifications'],
-    ['application-badging', 'Application Badging'],
-    ['in-app-message', 'In-App Messaging'],
-    ['inbox', 'Inbox Messaging'],
-    ['location', 'Location Messaging'],
-    ['analytics', 'Analytics'],
-    ['use-cases', 'Use Cases'],
-    ['trouble', 'Troubleshooting']
-]
+sections:
+  [
+    ["docs", "Documentation"],
+    ["get-started", "Get Started"],
+    ["testing-push", "Testing the SDK"],
+    ["sdk-implementation", "SDK Implementation"],
+    ["push-notifications", "Push Notifications"],
+    ["application-badging", "Application Badging"],
+    ["in-app-message", "In-App Messaging"],
+    ["inbox", "Inbox Messaging"],
+    ["location", "Location Messaging"],
+    ["analytics", "Analytics"],
+    ["use-cases", "Use Cases"],
+    ["trouble", "Troubleshooting"],
+  ]
 
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
@@ -57,10 +58,10 @@ highlighter: rouge
 future: true
 
 # Exclude non-site files
-exclude: ['bin', 'README.md', 'docker-compose.yml']
+exclude: ["bin", "README.md", "docker-compose.yml"]
 
 # Use the kramdown Markdown renderer
 markdown: kramdown
 
 # Current SDK version, use for all mentions
-currentVersion: "7.1.0"
+currentVersion: "7.1.1"
