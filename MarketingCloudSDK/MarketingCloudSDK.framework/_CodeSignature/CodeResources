@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Events.h</key>
 		<data>
-		Pg8LuVC3SWM1D6l6G32ks8HbNBI=
+		Is9ZetzgTjvGK6xN7OtevG636pQ=
 		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		41k4N4jj8ZRInlxREdhjqiaKUhE=
+		WEILiiTy+47vyuTRZn9FoBkyNJc=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SchZOx5W3Vnxk1neEf8+P2PAWZY=
+		a1uslcNkYfDCevyZbbec0D1BVSo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,11 +77,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Pg8LuVC3SWM1D6l6G32ks8HbNBI=
+			Is9ZetzgTjvGK6xN7OtevG636pQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			1dGcgVa/gNUp+7bWdYDsAAwVntnNJhphwOS19BnsLRA=
+			4w8CnezgBArPjfFjnOlU2VJTnHQABinngL5h0azMCTM=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
@@ -132,11 +132,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			41k4N4jj8ZRInlxREdhjqiaKUhE=
+			WEILiiTy+47vyuTRZn9FoBkyNJc=
 			</data>
 			<key>hash2</key>
 			<data>
-			1yugKXeeKesw1yzW6I3orYVdxaGhrCR7vCXJh3bGUvo=
+			QRI5svSuvGJAUQB36g2iX8+5yJMqMQW/qFi9T6pOKr8=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>

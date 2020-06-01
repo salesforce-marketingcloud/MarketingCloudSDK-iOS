@@ -8,7 +8,6 @@
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
 
-
 /**
  Supporting protocol for In-App Messaging
  

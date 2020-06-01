@@ -19,4 +19,3 @@
 #import <MarketingCloudSDK/MarketingCloudSDK+URLHandling.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Events.h>
 #import <MarketingCloudSDK/MarketingCloudSDKConfigBuilder.h>
-
