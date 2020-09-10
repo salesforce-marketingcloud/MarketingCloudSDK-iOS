@@ -6,6 +6,10 @@ category: location
 date: 2015-05-14 08:44:12
 order: 1
 ---
+## iOS 14 Location Changes
+>As of iOS 14, users will now have the option to use approximate instead of precise location. Users who choose to use this new approximate location permission should not expect geofences or beacons to be triggered. 
+Ref: https://developer.apple.com/documentation/corelocation/cllocationmanager/3600215-accuracyauthorization
+
 If location is enabled in your MobilePush SDK configuration (via `MarketingCloudSDKConfigBuilder()` `sfmc_setLocationEnabled()`), you can call a single method to use the Marketing Cloud location messaging feature.
 
 ## Location Messaging
