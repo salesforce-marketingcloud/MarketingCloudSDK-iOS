@@ -66,6 +66,9 @@ We provide support for plugins, such as Cordova, to implement the MobilePush SDK
 
 We remove deprecated methods from the SDK two releases after the initial deprecation announcement.
 
+### 3rd Party Product Language Disclaimers
+Where possible, we changed noninclusive terms to align with our company value of Equality. We retained noninclusive terms to document a third-party system, but we encourage the developer community to embrace more inclusive language. We can update the term when it’s no longer required for technical accuracy.
+
 ## Release History
 
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
