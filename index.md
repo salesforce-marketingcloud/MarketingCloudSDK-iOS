@@ -45,7 +45,6 @@ Send your first push notification to test your initial SDK setup.
 
 Sign up for email announcements and contact us with questions about the iOS SDK.
   * Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example tags: marketing-cloud, salesforcemobilesdk-ios, mobilesdk, and mobilepush-ios
-  * Sign up for [email updates](http://pub.s1.exacttarget.com/2ujjacpet3t) about release announcements and other important information. (10 or fewer emails per year)
 
 ## Additional Resources
 
@@ -53,7 +52,7 @@ Sign up for email announcements and contact us with questions about the iOS SDK.
 * The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
 * The Marketing Cloud provides the [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.
 * Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for the SDK.
-* [Sign up for email updates about the iOS MarketingCloudSDK](http://pub.s1.exacttarget.com/2ujjacpet3t).<br/>
+<br/>
 * View the [Android SDK docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android).
 
 ## Hybrid Mobile Apps
