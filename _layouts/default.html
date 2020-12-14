@@ -12,7 +12,11 @@
         <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/gist.css">
-<script src="{{ site.baseurl }}/scripts/gists.js"></script>
+        <script src="{{ site.baseurl }}/scripts/gists.js"></script>
+
+        {% if site.google_analytics_id != "" %}
+            {% include google_analytics.html %}
+        {% endif %}
     </head>
     <body>
 
@@ -61,9 +65,5 @@
                 </div>
             </div>
         </div>
-
-        {% if site.google_analytics_id != "" %}
-            {% include google_analytics.html %}
-        {% endif %}
     </body>
 </html>
