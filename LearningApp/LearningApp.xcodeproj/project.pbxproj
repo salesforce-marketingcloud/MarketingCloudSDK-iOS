@@ -353,6 +353,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 7.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -372,6 +373,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 7.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -517,7 +519,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = LA_Prod_DevAPNS_Provisioning;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Debug;
 		};
@@ -542,7 +543,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = LA_Prod_DevAPNS_Provisioning;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALID_ARCHS = "arm64 arm64e armv7s";
 			};
 			name = Release;
 		};
