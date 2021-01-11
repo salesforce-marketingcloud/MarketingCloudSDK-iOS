@@ -46,8 +46,7 @@ Send your first push notification to test your initial SDK setup.
 
 ## Contact Us
 
-Sign up for email announcements and contact us with questions about the iOS SDK.
-  * Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example tags: marketing-cloud, salesforcemobilesdk-ios, mobilesdk, and mobilepush-ios
+Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example tags: marketing-cloud, salesforcemobilesdk-ios, mobilesdk, and mobilepush-ios
 
 ## Additional Resources
 
