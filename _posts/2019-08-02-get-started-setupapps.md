@@ -27,7 +27,7 @@ Follow these steps to create new MobilePush apps (Repeat steps to create both a 
 
 ### Provisioned with p8 Auth Key (Recommended):
 1. Click **Choose File** and upload the icon for the MobilePush app.
-1. Upload the .p8 Auth Key File created [Here]({{ site.baseurl }}/get-started/get-started-provision.html) by clicking **Choose File** and choose the Auth Key on your computer to upload. This key will work for both Production and Development apps. To distinguish the difference for your app use the radio buttons described below as follows:
+1. Upload the previously created .p8 Auth Key File by clicking **Choose File** and choose the Auth Key on your computer to upload. This key will work for both Production and Development apps. To distinguish the difference for your app use the radio buttons described below as follows:
 
     > Development app: Select the **Development** APNs Environment radio button.
 
