@@ -33,9 +33,9 @@ Follow these steps to create new MobilePush apps (Repeat steps to create both a 
 
     > Production app: Select the **Production** APNs Environment radio button.
 
-    > Validate the correct Auth Key File is uploaded. The file should be a text file with a .p8 file extension. **This is not the signing certificate used to provision your application for AdHoc or App Store deployment.**
+    > Validate the correct Auth Key File is uploaded. **This should be a text file with a .p8 file extension. Not the signing certificate used to provision your application for AdHoc or App Store deployment.**
 
-1. Enter in the 10-character **Key ID** field the Key (this is usually the name of the .p8 text file after it is created) or can be viewed in your [Apple Developer Account](https://developer.apple.com/account/resources/certificates/list).
+1. Enter in the 10-character **Key ID**, this is usually the name of the .p8 text file after it is created or it can be viewed in your [Apple Developer Account](https://developer.apple.com/account/resources/certificates/list).
 1. Enter in the 10-character **Team ID** associated with this Key. The team ID can be found in the [Membership tab](https://developer.apple.com/account/#/membership/) in your Apple Developer Account.
 1. Enter in the Bundle Identifier of the app you are building. 
 1. Make any applicable changes to the optional settings.
