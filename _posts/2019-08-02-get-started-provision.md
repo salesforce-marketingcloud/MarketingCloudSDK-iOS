@@ -8,6 +8,23 @@ order: 1
 published: true
 ---
 
+### Create a .p8 Auth Key File
+
+#### Following [Apple’s instructions](https://help.apple.com/developer-account/#/devcdfbb56a3), create a private .p8 Auth Key:
+1. In Certificates, Identifiers & Profiles, select Keys from the sidebar, then click the Add button (+) in the upper-left corner.
+1. Under Key Description, enter a unique name for the key.
+1. Select the checkbox next to Apple Push Notification service, then click Continue.
+1. Review the key configuration, then click Confirm.
+1. click Download to generate and download the key now. The key is saved as a text file with a .p8 file extension in the Downloads folder.
+MobilePush requires this information to communicate with Apple. After creation download and save the .p8 Auth Key File.
+> REMEMBER: Save the resulting text file with a .p8 file extension in a secure place. **This key is not saved in your developer account and you will not be able to download it again.**
+
+
+## - OR -
+
+
+### Create a .p12 Certificate
+
 #### Following [Apple’s instructions](https://help.apple.com/developer-account/#/dev82a71386a), create two iOS Push Notification certificates:
 <br>
 
