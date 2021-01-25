@@ -20,14 +20,14 @@ Before starting, make sure you have provisioned your app for push notifications 
 Follow these steps to create new MobilePush apps (Repeat steps to create both a development and production app):
 1. Log in to [Marketing Cloud MobilePush](https://mc.exacttarget.com).
 1. Highlight the Mobile Studio menu and choose MobilePush from the dropdown.
-1. On the top select the Administration tab, click **Create New App** in the upper right corner.
+1. On the top, select the Administration tab and click **Create New App** in the upper right corner.
 1. Enter the name and description for the app.
 
     > Development app name suggestion: `[App]_DEV-APNS`.<br>Production app name suggestion: `[App]_PROD-APNS`.
 
 ### Provisioned with p8 Auth Key (Recommended):
 1. Click **Choose File** and upload the icon for the MobilePush app.
-1. Upload the either the .p8 Auth Key File created at the beginning of this page by clicking **Choose File** and choose the Auth Key on your computer to upload. Upload this key for both Production and Development apps.
+1. Upload the .p8 Auth Key File created [Here]({{ site.baseurl }}/get-started/get-started-provision.html) by clicking **Choose File** and choose the Auth Key on your computer to upload. This key will work for both Production and Development apps. To distinguish the difference for your app use the radio buttons described below as follows:
 
     > Development app: Select the **Development** APNs Environment radio button.
 
