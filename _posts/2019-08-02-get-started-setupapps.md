@@ -15,7 +15,7 @@ Your development, test, and deployment process is best accomplished by creating 
 - one for development (utilizing Apple's push sandbox)
 - one for production (targeting Apple's production push system).
 
-Before starting, make sure you have provisioned your app for push notifications with either a .p8 Auth Key File (Recommended) **or** a .p12 certificate as outlined in our [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
+Before starting, make sure you have provisioned your app for push notifications with either a .p8 Auth Key File (Recommended) **OR** a .p12 certificate as outlined in our [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
 
 Follow these steps to create new MobilePush apps (Repeat steps to create both a development and production app):
 1. Log in to [Marketing Cloud MobilePush](https://mc.exacttarget.com).

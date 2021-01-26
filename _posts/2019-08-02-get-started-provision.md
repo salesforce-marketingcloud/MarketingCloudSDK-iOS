@@ -8,7 +8,7 @@ order: 1
 published: true
 ---
 
-### Create a .p8 Auth Key File
+### Create a .p8 Auth Key File (Recommended)
 
 #### Following [Apple’s instructions](https://help.apple.com/developer-account/#/devcdfbb56a3), create a private .p8 Auth Key:
 1. In Certificates, Identifiers & Profiles, select Keys from the sidebar, then click the Add button (+) in the upper-left corner.
