@@ -11,7 +11,7 @@ published: true
 
 ## Implement Push
 
-#### Before starting, make sure you have created push certificates as outlined in our [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
+#### Before starting, make sure you have provisioned your app for push notifications outlined in [Provision for Push]({{ site.baseurl }}/get-started/get-started-provision.html) document.
 
 1. Enable push notifications in your target’s Capabilities settings.
 
