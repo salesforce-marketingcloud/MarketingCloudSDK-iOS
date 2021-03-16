@@ -32,7 +32,7 @@ Open the .xcworkspace created by the install process with Xcode and start using 
 1. Open your application project and select the appropriate target.
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure2.png" /><br/>
-1. Add MarketingCloudSDK.framework to Linked Frameworks and Libraries in your target’s General settings.
+1. Add MarketingCloudSDK.xcframework to Linked Frameworks and Libraries in your target’s General settings.
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure3.png" /><br/>
 1. Add MarketingCloudSDK.bundle to Copy Bundle Resources in your target’s Build Phases settings.

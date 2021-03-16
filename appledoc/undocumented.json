@@ -1,0 +1,194 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Base.h",
+      "line": 17,
+      "symbol": "MarketingCloudSDK.-init",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 10,
+      "symbol": "MarketingCloudSDKErrorDomain",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 14,
+      "symbol": "SFMCFrameworkDidSetupNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 15,
+      "symbol": "SFMCFrameworkDidTeardownNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 18,
+      "symbol": "SFMCFoundationRegistrationResponseSucceededNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 21,
+      "symbol": "SFMCFoundationUNNotificationReceivedNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 24,
+      "symbol": "SFMCInboxMessagesRefreshCompleteNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 26,
+      "symbol": "SFMCInboxMessagesNewInboxMessagesNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 28,
+      "symbol": "SFMCInboxMessagesUpdateStatusCompleteNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 30,
+      "symbol": "SFMCInboxMessagesNotificationHandledNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 33,
+      "symbol": "SFMCOpenDirectMessageNotificationHandledNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 36,
+      "symbol": "SFMCLocationDidFixLocationNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 38,
+      "symbol": "SFMCLocationDidReceiveLocationUpdateNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 40,
+      "symbol": "SFMCLocationGeofenceRefreshCompleteNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 42,
+      "symbol": "SFMCDidEnterLocationRegionMessageNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 44,
+      "symbol": "SFMCDidExitLocationRegionMessageNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 47,
+      "symbol": "SFMCDidDisplayLocationMessageNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 50,
+      "symbol": "SFMCBeaconRefreshCompleteNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 52,
+      "symbol": "SFMCDidRangeBeaconLocationMessageNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 54,
+      "symbol": "SFMCLocationDidStartMonitoringForRegionNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.h",
+      "line": 56,
+      "symbol": "SFMCFrameworkDidBlockNotification",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.h",
+      "line": 54,
+      "symbol": "MarketingCloudSDK(Events)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+InboxMessages.h",
+      "line": 11,
+      "symbol": "MarketingCloudSDKInboxMessageKey",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.constant",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+InboxMessages.h",
+      "line": 50,
+      "symbol": "MarketingCloudSDK(InboxMessages)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Intelligence.h",
+      "line": 11,
+      "symbol": "MarketingCloudSDK(Intelligence)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Location.h",
+      "line": 39,
+      "symbol": "MarketingCloudSDK(Location)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+URLHandling.h",
+      "line": 42,
+      "symbol": "MarketingCloudSDK(URLHandling)",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/stanner/sdk-ios/MarketingCloudSDK"
+}
