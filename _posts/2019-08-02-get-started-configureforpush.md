@@ -15,7 +15,7 @@ published: true
 
 1. Enable push notifications in your target’s Capabilities settings.
 
-    <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure8.png" /><br/><br>
+    <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure6.png" /><br/><br>
 
 1. Set your `AppDelegate` class to adhere to the `UIApplicationDelegate` and `UNUserNotificationCenterDelegate` protocol.
     <script src="https://gist.github.com/88c8b6247e1e1cdce48a19dc0c19e304.js"></script><br>
