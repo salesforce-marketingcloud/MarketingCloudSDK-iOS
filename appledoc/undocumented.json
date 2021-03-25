@@ -149,7 +149,7 @@
     },
     {
       "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.h",
-      "line": 54,
+      "line": 55,
       "symbol": "MarketingCloudSDK(Events)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
