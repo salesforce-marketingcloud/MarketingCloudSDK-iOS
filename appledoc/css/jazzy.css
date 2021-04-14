@@ -81,7 +81,7 @@ blockquote {
 
 .content-wrapper {
   margin: 0 auto;
-  width: 1050px; }
+  width: 1250px; }
 
 header {
   font-size: 0.85em;
@@ -123,7 +123,7 @@ header {
   position: fixed;
   top: 70px;
   bottom: 0;
-  width: 350px;
+  width: 425px;
   word-wrap: normal; }
 
 .nav-groups {
@@ -152,12 +152,12 @@ header {
 .main-content {
   background-color: #fff;
   border: 1px solid #e2e2e2;
-  margin-left: 366px;
+  margin-left: 441px;
   position: absolute;
   overflow: hidden;
   padding-bottom: 20px;
   top: 70px;
-  width: 684px; }
+  width: 809px; }
   .main-content p, .main-content a, .main-content code, .main-content em, .main-content ul, .main-content table, .main-content blockquote {
     margin-bottom: 1em; }
   .main-content p {
@@ -360,7 +360,7 @@ html.dash header, html.dash #breadcrumbs, html.dash .sidebar {
   display: none; }
 
 html.dash .main-content {
-  width: 1050px;
+  width: 1250px;
   margin-left: 0;
   border: none;
   width: 100%;
