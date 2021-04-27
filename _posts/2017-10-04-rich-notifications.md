@@ -21,6 +21,7 @@ Rich notifications include images, videos, titles and subtitles from the MobileP
 1. Click **Target**.
 1. Select Notification Service Extension.
 1. Name and save the new extension.
+1. Verify in your project target's general settings that the new extension was added to the `Frameworks, Libraries, and Embedded Content` section. If not present, please add it.
 
 > Note: Notification Target must be signed by the same XCode Managed Profile as the main project.
 
