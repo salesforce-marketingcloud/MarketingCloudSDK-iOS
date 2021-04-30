@@ -26,29 +26,23 @@ For further information about implementing the MobilePush SDK, see the documenta
 
 **Requirements**
 
-* Xcode 10
-* CocoaPods: https://guides.cocoapods.org/using/getting-started.html 
+* Xcode 12
 
 **Setup**
 
 1. Clone or download the SDK and LearningApp from the source repository.
-2. Open Terminal and enter the following information.
-
-        $ cd <path to>/LearningApp
-        $ pod install
-
-3. After CocoaPods prepares the project, open `LearningApp.xcworkspace` in Xcode.
-4. Open `AppDelegate.swift` and replace the values for `appId`, `accessToken`, `appEndpoint` and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
+2. Open `LearningApp.xcodeproj` in Xcode.
+3. Open `AppDelegate.swift` and replace the values for `appId`, `accessToken`, `appEndpoint` and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
 
         let appID = "<your appID here>"
         let accessToken = "<your accessToken here>"
         let appEndpoint = "<your appEndpoint here>"
         let mid = "<your account MID here>"
 
-5. In the Xcode Project Navigator, select the LearningApp project.
-6. In the Project Editor, select the LearningApp target.
-7. On the General tab, set your unique Bundle Identifier and Signing values.
-8. Build and run the LearningApp project.
+4. In the Xcode Project Navigator, select the LearningApp project.
+5. In the Project Editor, select the LearningApp target.
+6. On the General tab, set your unique Bundle Identifier and Signing values.
+7. Build and run the LearningApp project.
 
 **iOS SDK Development Notes**
 
