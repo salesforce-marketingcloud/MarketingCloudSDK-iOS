@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** The MarketingCloudSDK base class and categories */
 @interface MarketingCloudSDK : NSObject
+/** UNAVAILABLE - please use the sharedInstance class method to get an instance of the SDK */
 - (instancetype)init NS_UNAVAILABLE;
 
 /**

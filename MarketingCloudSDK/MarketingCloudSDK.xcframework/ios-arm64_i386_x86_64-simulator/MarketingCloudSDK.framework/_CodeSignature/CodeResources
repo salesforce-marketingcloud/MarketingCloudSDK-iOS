@@ -6,43 +6,47 @@
 	<dict>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
-		tearK4q28vcQyYP3zCoUX5GtrFI=
+		WZbJEiQrIEGzYaSOpB/4BHqc4sk=
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
-		cW9rnGFIl2ya5618lHr7BOiaqjA=
+		VlV6G2VoEt/5EW4jKykB30Rroxw=
 		</data>
 		<key>Headers/MarketingCloudSDK+Events.h</key>
 		<data>
-		Is9ZetzgTjvGK6xN7OtevG636pQ=
+		jSqCjYhoYe1pdEhPWI4O+wpjMYo=
 		</data>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<data>
-		D8HvfttQvbM2QFI88ftBswTFQpk=
+		ACH0MRhj1IU/max80OxgQN2RQk8=
 		</data>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<data>
-		V5rR0pnsuZMvQuwdglwDD2JvKLw=
+		TrISvrZcuSYEhGhHVQMq3YmsSEg=
 		</data>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<data>
-		v2G+Fbo2pysGMHKPxlLKHotJOaM=
+		bNTkXYU1V6o9N2w+uWOgN2iFSaA=
 		</data>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<data>
-		MKw6ahZQUJvYi8PGLbtpXK/2DMc=
+		CJo7YrW55o96qlvhTyTl884VjLk=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		WEILiiTy+47vyuTRZn9FoBkyNJc=
+		G7yzvmW4uaxj4XA7slvm7lDdvGk=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
 		yYPTNH7Pp4yvPuYvmXgbCITeh9U=
 		</data>
+		<key>Headers/SFMCEvent.h</key>
+		<data>
+		68s52ZipHr5Zlkr7UKd4NPyYtOw=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		BPckjYtDFIOkIzOqxhUnxfbTskI=
+		yRzC4hBMU7NEXrVRmZlqxFwSB3c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,88 +59,88 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tearK4q28vcQyYP3zCoUX5GtrFI=
+			WZbJEiQrIEGzYaSOpB/4BHqc4sk=
 			</data>
 			<key>hash2</key>
 			<data>
-			toJ/cEqY2rERPy38l3yNalLVPx53Uv0TiS94PqrleSw=
+			EodSghcfSmP+P8giYmLfenA2GmUR9JY8D+X2N6iiMQ8=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cW9rnGFIl2ya5618lHr7BOiaqjA=
+			VlV6G2VoEt/5EW4jKykB30Rroxw=
 			</data>
 			<key>hash2</key>
 			<data>
-			xTe2gPYqA4dXTSMrc8QsSwen3BribE1jbjHZ5J6ELHg=
+			+lMQd2Xq5IfchQzVK5E2266WDmqbWsIIRO7tnKC34Bw=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Events.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Is9ZetzgTjvGK6xN7OtevG636pQ=
+			jSqCjYhoYe1pdEhPWI4O+wpjMYo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4w8CnezgBArPjfFjnOlU2VJTnHQABinngL5h0azMCTM=
+			xQNV5XwK8mGczMYiARWG2qUITn4H/8CVln1FEGRM790=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+InboxMessages.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			D8HvfttQvbM2QFI88ftBswTFQpk=
+			ACH0MRhj1IU/max80OxgQN2RQk8=
 			</data>
 			<key>hash2</key>
 			<data>
-			8KE8yn899twsiTGk1/gKBOGk38gWgkpqq4rAU30VGAg=
+			TvUYMTfGzb9nUSw3dcqgtVVrYUpuomN5Ai5+Y3jzqJI=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Intelligence.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V5rR0pnsuZMvQuwdglwDD2JvKLw=
+			TrISvrZcuSYEhGhHVQMq3YmsSEg=
 			</data>
 			<key>hash2</key>
 			<data>
-			h4XEEE8gdEnJB87jYQGQn17SzB6YXFO3O4UwkQZIK/4=
+			LNofw6zhgMiqd7rcZSvT+Kx7N2y8rr2+WS7i9rMD+N8=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Location.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v2G+Fbo2pysGMHKPxlLKHotJOaM=
+			bNTkXYU1V6o9N2w+uWOgN2iFSaA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ljXwDNg0yLM5VLdF8rRYYnT3adxqQgeuoXlr4awTOMw=
+			OfM/QJfb3RK2TOh6PB7/403Lqkr+T/UVjoiVlFUvY1E=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+URLHandling.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MKw6ahZQUJvYi8PGLbtpXK/2DMc=
+			CJo7YrW55o96qlvhTyTl884VjLk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/XCjgr/Wji94xtrRO8FGEiXxiaLIdTzNqc9O+4nZKMg=
+			bsbrpChGGhhIMiMgFYU4Z7uNVt8a3MMZTIGun1vJgSc=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WEILiiTy+47vyuTRZn9FoBkyNJc=
+			G7yzvmW4uaxj4XA7slvm7lDdvGk=
 			</data>
 			<key>hash2</key>
 			<data>
-			QRI5svSuvGJAUQB36g2iX8+5yJMqMQW/qFi9T6pOKr8=
+			diGkmGlIgLKH+g01D89JV+Ao4E3Xn8wz0RZDECNbG/k=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
@@ -148,6 +152,17 @@
 			<key>hash2</key>
 			<data>
 			FrOUsXaZhMJHIcum5rRa5SgRKv0EbWeT9fx568T75RQ=
+			</data>
+		</dict>
+		<key>Headers/SFMCEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			68s52ZipHr5Zlkr7UKd4NPyYtOw=
+			</data>
+			<key>hash2</key>
+			<data>
+			u2TuPanPICVyVHLP1L06chsVzwok9r0tPgXY1RR1hO4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

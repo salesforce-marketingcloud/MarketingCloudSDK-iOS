@@ -8,6 +8,7 @@
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
 
+/** key used in notification payload to determine an inbox message's content  */
 FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 
 /**
@@ -46,7 +47,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 
 @end
 
-
+/** Inbox Messages */
 @interface MarketingCloudSDK (InboxMessages)
 
 /**
