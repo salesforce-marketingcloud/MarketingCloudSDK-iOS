@@ -5,15 +5,15 @@ import PackageDescription
 
 let package = Package(
     name: "MarketingCloudSDK",
-    resources: [
-    	.copy("MarketingCloudSDK/MarketingCloudSDK.bundle")
-    ],
     products: [
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"]),
     ],
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
+            resources: [
+                .copy("MarketingCloudSDK/MarketingCloudSDK.bundle")
+            ],
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
         )
     ]
