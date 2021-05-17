@@ -11,9 +11,6 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
-            resources: [
-                .copy("MarketingCloudSDK/MarketingCloudSDK.bundle")
-            ],
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
         )
     ]
