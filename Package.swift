@@ -13,7 +13,7 @@ let package = Package(
             name: "MarketingCloudSDK",
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
             resources: [
-                .copy("MarketingCloudSDK/MarketingCloudSDK.bundle")
+                .process("MarketingCloudSDK/Resources")
             ]
         )
     ]
