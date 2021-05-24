@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 12.0.0 (clang-1200.0.32.27)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk
 iPhoneOS14.2.sdk
-/Users/iosadmin/Library/Developer/Xcode/DerivedData/MarketingCloudSDK-flnpfrpydukiiafbjyeadubvfote/Build/Intermediates.noindex/ArchiveIntermediates/MarketingCloudSDK/IntermediateBuildFilesPath/MarketingCloudSDK.build/Release-iphoneos/MarketingCloudSDK.build/DerivedSources/MarketingCloudSDK_vers.c
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK
+/Users/iosadmin/Library/Developer/Xcode/DerivedData/MarketingCloudSDK-ffxuazziieqcskehgcciykoekyxs/Build/Intermediates.noindex/ArchiveIntermediates/MarketingCloudSDK/IntermediateBuildFilesPath/MarketingCloudSDK.build/Release-iphoneos/MarketingCloudSDK.build/DerivedSources/MarketingCloudSDK_vers.c
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK
 -[MarketingCloudSDK(Intelligence) sfmc_setPiIdentifier:]
 -[MarketingCloudSDK(Intelligence) sfmc_piIdentifier]
 -[MarketingCloudSDK(Intelligence) sfmc_trackMessageOpened:]
@@ -36,7 +36,7 @@ _OBJC_SELECTOR_REFERENCES_.63
 _OBJC_SELECTOR_REFERENCES_.65
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDK_$_Intelligence
 __OBJC_$_CATEGORY_MarketingCloudSDK_$_Intelligence
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Intelligence.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Intelligence.m
 MarketingCloudSDK/MarketingCloudSDK+Intelligence.m
 -[MarketingCloudSDK(Events) sfmc_setEventDelegate:]
 -[MarketingCloudSDK(Events) sfmc_messageIdForMessage:]
@@ -56,7 +56,7 @@ _OBJC_SELECTOR_REFERENCES_.45
 _OBJC_CLASSLIST_REFERENCES_$_.46
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDK_$_Events
 __OBJC_$_CATEGORY_MarketingCloudSDK_$_Events
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.m
 MarketingCloudSDK/MarketingCloudSDK+Events.m
 -[MarketingCloudSDK(InboxMessages) sfmc_getAllMessages]
 -[MarketingCloudSDK(InboxMessages) sfmc_getUnreadMessages]
@@ -216,7 +216,7 @@ _OBJC_IVAR_$_MarketingCloudSDKInboxMessagesDelegate._dataSource
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKInboxMessagesDelegate
 __OBJC_$_PROP_LIST_MarketingCloudSDKInboxMessagesDelegate
 __OBJC_CLASS_RO_$_MarketingCloudSDKInboxMessagesDelegate
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+InboxMessages.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+InboxMessages.m
 MarketingCloudSDK/MarketingCloudSDK+InboxMessages.m
 __destroy_helper_block_e4_20w
 __copy_helper_block_e4_20w
@@ -225,10 +225,10 @@ __92-[MarketingCloudSDKInboxMessagesDataSource sfmc_inboxMessagesAvailableNotifi
 _OBJC_SELECTOR_REFERENCES_.35
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDK_$_URLHandling
 __OBJC_$_CATEGORY_MarketingCloudSDK_$_URLHandling
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+URLHandling.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+URLHandling.m
 MarketingCloudSDK/MarketingCloudSDK+URLHandling.m
 __OBJC_$_CATEGORY_MarketingCloudSDK_$_Constants
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Constants.m
 -[MarketingCloudSDK(Location) sfmc_setLocationDelegate:]
 -[MarketingCloudSDK(Location) sfmc_regionFromDictionary:]
 -[MarketingCloudSDK(Location) sfmc_locationEnabled]
@@ -242,7 +242,7 @@ _OBJC_SELECTOR_REFERENCES_.39
 _OBJC_SELECTOR_REFERENCES_.47
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDK_$_Location
 __OBJC_$_CATEGORY_MarketingCloudSDK_$_Location
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Location.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Location.m
 MarketingCloudSDK/MarketingCloudSDK+Location.m
 -[MarketingCloudSDKConfigBuilder init]
 -[MarketingCloudSDKConfigBuilder sfmc_build]
@@ -273,7 +273,7 @@ _OBJC_IVAR_$_MarketingCloudSDKConfigBuilder._configurePayload
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKConfigBuilder
 __OBJC_$_PROP_LIST_MarketingCloudSDKConfigBuilder
 __OBJC_CLASS_RO_$_MarketingCloudSDKConfigBuilder
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDKConfigBuilder.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDKConfigBuilder.m
 MarketingCloudSDK/MarketingCloudSDKConfigBuilder.m
 +[MarketingCloudSDK sharedInstance]
 ___35+[MarketingCloudSDK sharedInstance]_block_invoke
@@ -675,7 +675,7 @@ _OBJC_IVAR_$_MarketingCloudSDK._foundation
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDK
 __OBJC_$_PROP_LIST_MarketingCloudSDK
 __OBJC_CLASS_RO_$_MarketingCloudSDK
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Base.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Base.m
 MarketingCloudSDK/MarketingCloudSDK+Base.m
 MarketingCloudSDK/MarketingCloudSDKPrivate.h
 __68-[MarketingCloudSDK observeValueForKeyPath:ofObject:change:context:]_block_invoke
@@ -760,7 +760,7 @@ _OBJC_IVAR_$_MarketingCloudSDKConfig._delayregistrationuntilcontactkeyisset
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKConfig
 __OBJC_$_PROP_LIST_MarketingCloudSDKConfig
 __OBJC_CLASS_RO_$_MarketingCloudSDKConfig
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDKConfig.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDKConfig.m
 MarketingCloudSDK/MarketingCloudSDKConfig.m
 MarketingCloudSDK/MarketingCloudSDKConfig.h
 -[SFMCDisplayTimer resume]
@@ -778,10 +778,10 @@ _OBJC_IVAR_$_SFMCDisplayTimer._currentResumeDate
 __OBJC_$_INSTANCE_VARIABLES_SFMCDisplayTimer
 __OBJC_$_PROP_LIST_SFMCDisplayTimer
 __OBJC_CLASS_RO_$_SFMCDisplayTimer
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKNotification/SFMCDisplayTimer.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKNotification/SFMCDisplayTimer.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent
 MarketingCloudSDKNotification/SFMCDisplayTimer.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232
 -[IAMButtonDescriptor keysForEncoding]
 -[IAMButtonDescriptor keysForButtonsObject]
 -[IAMButtonDescriptor init]
@@ -848,14 +848,14 @@ _OBJC_IVAR_$_IAMButtonDescriptor._alignment
 __OBJC_$_INSTANCE_VARIABLES_IAMButtonDescriptor
 __OBJC_$_PROP_LIST_IAMButtonDescriptor
 __OBJC_CLASS_RO_$_IAMButtonDescriptor
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMButtonDescriptor.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMButtonDescriptor.m
 MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMButtonDescriptor.m
 MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMButtonDescriptor.h
 -[InAppMessageCloseButton pointInside:withEvent:]
 __OBJC_METACLASS_RO_$_InAppMessageCloseButton
 __OBJC_$_INSTANCE_METHODS_InAppMessageCloseButton
 __OBJC_CLASS_RO_$_InAppMessageCloseButton
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageCloseButton.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageCloseButton.m
 MarketingCloudSDKEvent/InAppMessageCloseButton.m
 CGRectMake
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
@@ -1170,7 +1170,7 @@ _OBJC_IVAR_$_MarketingCloudSDKEvent._fontName
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKEvent
 __OBJC_$_PROP_LIST_MarketingCloudSDKEvent
 __OBJC_CLASS_RO_$_MarketingCloudSDKEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/MarketingCloudSDKEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/MarketingCloudSDKEvent.m
 MarketingCloudSDKEvent/MarketingCloudSDKEvent.m
 MarketingCloudSDKEvent/MarketingCloudSDKEventPrivate.h
 __63-[MarketingCloudSDKEvent loadImageFromUrl:requestTimeInterval:]_block_invoke.708
@@ -1233,7 +1233,7 @@ _OBJC_IVAR_$_CustomEvent.compareType
 __OBJC_$_INSTANCE_VARIABLES_CustomEvent
 __OBJC_$_PROP_LIST_CustomEvent
 __OBJC_CLASS_RO_$_CustomEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/CustomEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/CustomEvent.m
 MarketingCloudSDKEvent/CustomEvent.m
 -[Evaluator initWithEvalLogic:]
 -[Evaluator isInvalidIndex:]
@@ -1262,7 +1262,7 @@ _OBJC_IVAR_$_Evaluator.logicOperator
 __OBJC_$_INSTANCE_VARIABLES_Evaluator
 __OBJC_$_PROP_LIST_Evaluator
 __OBJC_CLASS_RO_$_Evaluator
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/Evaluator.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/Evaluator.m
 MarketingCloudSDKEvent/Evaluator.m
 -[PurchaseEvent initWithPrice:]
 -[PurchaseEvent initWithSku:]
@@ -1282,7 +1282,7 @@ _OBJC_IVAR_$_PurchaseEvent.compareType
 __OBJC_$_INSTANCE_VARIABLES_PurchaseEvent
 __OBJC_$_PROP_LIST_PurchaseEvent
 __OBJC_CLASS_RO_$_PurchaseEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/PurchaseEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/PurchaseEvent.m
 MarketingCloudSDKEvent/PurchaseEvent.m
 +[SFMCOutcome modelObjectWithDictionary:]
 -[SFMCOutcome initWithDictionary:]
@@ -1308,7 +1308,7 @@ _OBJC_IVAR_$_SFMCOutcome._activityInstanceId
 __OBJC_$_INSTANCE_VARIABLES_SFMCOutcome
 __OBJC_$_PROP_LIST_SFMCOutcome
 __OBJC_CLASS_RO_$_SFMCOutcome
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCOutcome.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCOutcome.m
 MarketingCloudSDKEvent/SFMCOutcome.m
 -[InAppMessageUIViewController viewWillTransitionToSize:withTransitionCoordinator:]
 ___83-[InAppMessageUIViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
@@ -1340,14 +1340,14 @@ ___43-[InAppMessageUIViewController viewDidLoad]_block_invoke
 ___43-[InAppMessageUIViewController viewDidLoad]_block_invoke_2
 ___43-[InAppMessageUIViewController viewDidLoad]_block_invoke_3
 ___43-[InAppMessageUIViewController viewDidLoad]_block_invoke_4
-___43-[InAppMessageUIViewController viewDidLoad]_block_invoke.537
+___43-[InAppMessageUIViewController viewDidLoad]_block_invoke.547
 -[InAppMessageUIViewController shouldDismiss:velocity:]
 -[InAppMessageUIViewController handleGesture:]
 ___46-[InAppMessageUIViewController handleGesture:]_block_invoke
-___46-[InAppMessageUIViewController handleGesture:]_block_invoke.561
+___46-[InAppMessageUIViewController handleGesture:]_block_invoke.571
 ___46-[InAppMessageUIViewController handleGesture:]_block_invoke_2
-___46-[InAppMessageUIViewController handleGesture:]_block_invoke.574
-___46-[InAppMessageUIViewController handleGesture:]_block_invoke_2.575
+___46-[InAppMessageUIViewController handleGesture:]_block_invoke.584
+___46-[InAppMessageUIViewController handleGesture:]_block_invoke_2.585
 ___46-[InAppMessageUIViewController handleGesture:]_block_invoke_3
 -[InAppMessageUIViewController setupImageLayout:]
 -[InAppMessageUIViewController viewWillAppear:]
@@ -1355,7 +1355,7 @@ ___46-[InAppMessageUIViewController handleGesture:]_block_invoke_3
 -[InAppMessageUIViewController viewWillDisappear:]
 -[InAppMessageUIViewController viewDidAppear:]
 ___46-[InAppMessageUIViewController viewDidAppear:]_block_invoke
-___46-[InAppMessageUIViewController viewDidAppear:]_block_invoke.620
+___46-[InAppMessageUIViewController viewDidAppear:]_block_invoke.630
 -[InAppMessageUIViewController viewDidDisappear:]
 -[InAppMessageUIViewController gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
 -[InAppMessageUIViewController appWillEnterForeground:]
@@ -1467,35 +1467,42 @@ _OBJC_SELECTOR_REFERENCES_.236
 _OBJC_CLASSLIST_REFERENCES_$_.255
 _OBJC_CLASSLIST_REFERENCES_$_.258
 _OBJC_SELECTOR_REFERENCES_.266
-_OBJC_CLASSLIST_REFERENCES_$_.271
 _OBJC_SELECTOR_REFERENCES_.283
 _OBJC_SELECTOR_REFERENCES_.285
 _OBJC_SELECTOR_REFERENCES_.287
 _OBJC_SELECTOR_REFERENCES_.289
-_OBJC_SELECTOR_REFERENCES_.291
-_OBJC_CLASSLIST_REFERENCES_$_.292
-_OBJC_SELECTOR_REFERENCES_.294
-_OBJC_CLASSLIST_REFERENCES_$_.297
-_OBJC_SELECTOR_REFERENCES_.310
-_OBJC_SELECTOR_REFERENCES_.315
-_OBJC_SELECTOR_REFERENCES_.321
-_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.301
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_CLASSLIST_REFERENCES_$_.304
+_OBJC_CLASSLIST_REFERENCES_$_.310
+_OBJC_SELECTOR_REFERENCES_.312
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.316
+_OBJC_CLASSLIST_REFERENCES_$_.323
+_OBJC_SELECTOR_REFERENCES_.325
 _OBJC_SELECTOR_REFERENCES_.327
 _OBJC_SELECTOR_REFERENCES_.335
-_OBJC_SELECTOR_REFERENCES_.344
-_OBJC_CLASSLIST_REFERENCES_$_.347
-_OBJC_SELECTOR_REFERENCES_.351
-_OBJC_CLASSLIST_REFERENCES_$_.352
+_OBJC_SELECTOR_REFERENCES_.339
+_OBJC_SELECTOR_REFERENCES_.341
+_OBJC_SELECTOR_REFERENCES_.350
 _OBJC_SELECTOR_REFERENCES_.354
-_OBJC_CLASSLIST_REFERENCES_$_.389
-_OBJC_SELECTOR_REFERENCES_.391
-_OBJC_SELECTOR_REFERENCES_.399
+_OBJC_CLASSLIST_REFERENCES_$_.359
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_CLASSLIST_REFERENCES_$_.364
+_OBJC_CLASSLIST_REFERENCES_$_.401
 _OBJC_SELECTOR_REFERENCES_.403
-_OBJC_CLASSLIST_REFERENCES_$_.404
+_OBJC_SELECTOR_REFERENCES_.405
+_OBJC_SELECTOR_REFERENCES_.409
+_OBJC_SELECTOR_REFERENCES_.411
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_CLASSLIST_REFERENCES_$_.416
 _OBJC_SELECTOR_REFERENCES_.428
-_OBJC_CLASSLIST_REFERENCES_$_.439
-_OBJC_SELECTOR_REFERENCES_.450
-_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.440
+_OBJC_SELECTOR_REFERENCES_.442
+_OBJC_CLASSLIST_REFERENCES_$_.454
 _OBJC_SELECTOR_REFERENCES_.458
 _OBJC_SELECTOR_REFERENCES_.460
 _OBJC_SELECTOR_REFERENCES_.462
@@ -1505,47 +1512,50 @@ _OBJC_SELECTOR_REFERENCES_.470
 _OBJC_SELECTOR_REFERENCES_.472
 _OBJC_SELECTOR_REFERENCES_.474
 _OBJC_SELECTOR_REFERENCES_.476
-_OBJC_CLASSLIST_REFERENCES_$_.477
-_OBJC_SELECTOR_REFERENCES_.481
-_OBJC_SELECTOR_REFERENCES_.483
-_OBJC_SELECTOR_REFERENCES_.485
-_OBJC_SELECTOR_REFERENCES_.487
+_OBJC_SELECTOR_REFERENCES_.486
+_OBJC_CLASSLIST_REFERENCES_$_.487
 _OBJC_SELECTOR_REFERENCES_.489
 _OBJC_SELECTOR_REFERENCES_.491
 _OBJC_SELECTOR_REFERENCES_.499
-_OBJC_CLASSLIST_REFERENCES_$_.500
-_OBJC_SELECTOR_REFERENCES_.502
-_OBJC_SELECTOR_REFERENCES_.508
-_OBJC_SELECTOR_REFERENCES_.510
+_OBJC_SELECTOR_REFERENCES_.501
+_OBJC_SELECTOR_REFERENCES_.503
+_OBJC_SELECTOR_REFERENCES_.505
+_OBJC_SELECTOR_REFERENCES_.507
+_OBJC_SELECTOR_REFERENCES_.509
+_OBJC_CLASSLIST_REFERENCES_$_.510
 _OBJC_SELECTOR_REFERENCES_.512
 _OBJC_SELECTOR_REFERENCES_.518
-_OBJC_CLASSLIST_REFERENCES_$_.523
-_OBJC_SELECTOR_REFERENCES_.527
+_OBJC_SELECTOR_REFERENCES_.528
+_OBJC_SELECTOR_REFERENCES_.530
 ___block_descriptor_24_e4_20w_e7_v8?0c4l
-_OBJC_SELECTOR_REFERENCES_.540
-_OBJC_SELECTOR_REFERENCES_.542
 _OBJC_SELECTOR_REFERENCES_.550
-_OBJC_SELECTOR_REFERENCES_.569
+_OBJC_SELECTOR_REFERENCES_.564
+_OBJC_SELECTOR_REFERENCES_.568
 _OBJC_SELECTOR_REFERENCES_.573
-___block_descriptor_32_e4_20w_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.575
 _OBJC_SELECTOR_REFERENCES_.577
 _OBJC_SELECTOR_REFERENCES_.579
 _OBJC_SELECTOR_REFERENCES_.581
 _OBJC_SELECTOR_REFERENCES_.583
-_OBJC_SELECTOR_REFERENCES_.585
+___block_descriptor_32_e4_20w_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.587
+_OBJC_SELECTOR_REFERENCES_.589
 _OBJC_SELECTOR_REFERENCES_.591
 _OBJC_SELECTOR_REFERENCES_.593
 _OBJC_SELECTOR_REFERENCES_.607
 _OBJC_SELECTOR_REFERENCES_.609
+_OBJC_SELECTOR_REFERENCES_.611
+_OBJC_SELECTOR_REFERENCES_.613
 _OBJC_SELECTOR_REFERENCES_.617
 _OBJC_SELECTOR_REFERENCES_.619
+_OBJC_SELECTOR_REFERENCES_.627
+_OBJC_SELECTOR_REFERENCES_.629
 ___block_descriptor_40_e4_20w_e5_v4?0l
 ___block_descriptor_40_e4_20w_e7_v8?0c4l
-_OBJC_SELECTOR_REFERENCES_.622
-_OBJC_SELECTOR_REFERENCES_.624
-_OBJC_SELECTOR_REFERENCES_.626
-_OBJC_SELECTOR_REFERENCES_.628
+_OBJC_SELECTOR_REFERENCES_.632
+_OBJC_SELECTOR_REFERENCES_.634
+_OBJC_SELECTOR_REFERENCES_.636
+_OBJC_SELECTOR_REFERENCES_.638
 _OBJC_IVAR_$_InAppMessageUIViewController._message
 _OBJC_IVAR_$_InAppMessageUIViewController._imageCache
 _OBJC_IVAR_$_InAppMessageUIViewController._foundation
@@ -1596,19 +1606,19 @@ __OBJC_$_INSTANCE_METHODS_InAppMessageUIViewController
 __OBJC_$_INSTANCE_VARIABLES_InAppMessageUIViewController
 __OBJC_$_PROP_LIST_InAppMessageUIViewController
 __OBJC_CLASS_RO_$_InAppMessageUIViewController
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageUIViewController.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageUIViewController.m
 MarketingCloudSDKEvent/InAppMessageUIViewController.m
 MarketingCloudSDKEvent/InAppMessageUIViewController.h
-__46-[InAppMessageUIViewController viewDidAppear:]_block_invoke.620
+__46-[InAppMessageUIViewController viewDidAppear:]_block_invoke.630
 __46-[InAppMessageUIViewController viewDidAppear:]_block_invoke
 __46-[InAppMessageUIViewController handleGesture:]_block_invoke_3
-__46-[InAppMessageUIViewController handleGesture:]_block_invoke_2.575
-__46-[InAppMessageUIViewController handleGesture:]_block_invoke.574
+__46-[InAppMessageUIViewController handleGesture:]_block_invoke_2.585
+__46-[InAppMessageUIViewController handleGesture:]_block_invoke.584
 __46-[InAppMessageUIViewController handleGesture:]_block_invoke_2
-__46-[InAppMessageUIViewController handleGesture:]_block_invoke.561
+__46-[InAppMessageUIViewController handleGesture:]_block_invoke.571
 __46-[InAppMessageUIViewController handleGesture:]_block_invoke
 CGPointMake
-__43-[InAppMessageUIViewController viewDidLoad]_block_invoke.537
+__43-[InAppMessageUIViewController viewDidLoad]_block_invoke.547
 __43-[InAppMessageUIViewController viewDidLoad]_block_invoke_4
 __43-[InAppMessageUIViewController viewDidLoad]_block_invoke_3
 __43-[InAppMessageUIViewController viewDidLoad]_block_invoke_2
@@ -1635,7 +1645,7 @@ _OBJC_IVAR_$_AbandonedCartEvent.priceData
 __OBJC_$_INSTANCE_VARIABLES_AbandonedCartEvent
 __OBJC_$_PROP_LIST_AbandonedCartEvent
 __OBJC_CLASS_RO_$_AbandonedCartEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AbandonedCartEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AbandonedCartEvent.m
 MarketingCloudSDKEvent/AbandonedCartEvent.m
 -[InAppMessageCTAButton initWithFrame:]
 -[InAppMessageCTAButton buttonTextLabel]
@@ -1647,14 +1657,14 @@ __OBJC_$_INSTANCE_METHODS_InAppMessageCTAButton
 __OBJC_$_INSTANCE_VARIABLES_InAppMessageCTAButton
 __OBJC_$_PROP_LIST_InAppMessageCTAButton
 __OBJC_CLASS_RO_$_InAppMessageCTAButton
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageCTAButton.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageCTAButton.m
 MarketingCloudSDKEvent/InAppMessageCTAButton.m
 MarketingCloudSDKEvent/InAppMessageCTAButton.h
 -[InAppMessageLabel layoutSubviews]
 __OBJC_METACLASS_RO_$_InAppMessageLabel
 __OBJC_$_INSTANCE_METHODS_InAppMessageLabel
 __OBJC_CLASS_RO_$_InAppMessageLabel
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageLabel.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/InAppMessageLabel.m
 MarketingCloudSDKEvent/InAppMessageLabel.m
 -[AuthenticationEvent init:]
 -[AuthenticationEvent data]
@@ -1673,7 +1683,7 @@ _OBJC_IVAR_$_AuthenticationEvent.authenticationData
 __OBJC_$_INSTANCE_VARIABLES_AuthenticationEvent
 __OBJC_$_PROP_LIST_AuthenticationEvent
 __OBJC_CLASS_RO_$_AuthenticationEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AuthenticationEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AuthenticationEvent.m
 MarketingCloudSDKEvent/AuthenticationEvent.m
 +[SFMCEvent purchaseEventWithPrice:]
 +[SFMCEvent purchaseEventWithSku:]
@@ -1692,7 +1702,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.20
 __OBJC_$_CLASS_METHODS_SFMCEvent
 __OBJC_METACLASS_RO_$_SFMCEvent
 __OBJC_CLASS_RO_$_SFMCEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCEvent.m
 MarketingCloudSDKEvent/SFMCEvent.m
 -[IAMActivityItemProvider pdfData]
 -[IAMActivityItemProvider updatePDFPage:setTextRange:setFramesetter:]
@@ -1710,7 +1720,7 @@ __OBJC_$_INSTANCE_METHODS_IAMActivityItemProvider
 __OBJC_$_INSTANCE_VARIABLES_IAMActivityItemProvider
 __OBJC_$_PROP_LIST_IAMActivityItemProvider
 __OBJC_CLASS_RO_$_IAMActivityItemProvider
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/IAMActivityItemProvider.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/IAMActivityItemProvider.m
 MarketingCloudSDKEvent/IAMActivityItemProvider.m
 MarketingCloudSDKEvent/IAMActivityItemProvider.h
 CFRangeMake
@@ -1806,15 +1816,12 @@ _OBJC_SELECTOR_REFERENCES_.212
 _OBJC_SELECTOR_REFERENCES_.242
 _OBJC_CLASSLIST_REFERENCES_$_.281
 _OBJC_CLASSLIST_REFERENCES_$_.284
+_OBJC_SELECTOR_REFERENCES_.294
 _OBJC_CLASSLIST_REFERENCES_$_.295
-_OBJC_SELECTOR_REFERENCES_.299
-_OBJC_SELECTOR_REFERENCES_.301
-_OBJC_SELECTOR_REFERENCES_.303
 _OBJC_SELECTOR_REFERENCES_.305
 _OBJC_SELECTOR_REFERENCES_.307
 _OBJC_SELECTOR_REFERENCES_.309
 _OBJC_SELECTOR_REFERENCES_.317
-_OBJC_SELECTOR_REFERENCES_.325
 __OBJC_$_CLASS_METHODS_IAMDisplayDescriptor
 __OBJC_METACLASS_RO_$_IAMDisplayDescriptor
 __OBJC_$_INSTANCE_METHODS_IAMDisplayDescriptor
@@ -1849,7 +1856,7 @@ _OBJC_IVAR_$_IAMDisplayDescriptor._mediaAltText
 __OBJC_$_INSTANCE_VARIABLES_IAMDisplayDescriptor
 __OBJC_$_PROP_LIST_IAMDisplayDescriptor
 __OBJC_CLASS_RO_$_IAMDisplayDescriptor
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMDisplayDescriptor.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMDisplayDescriptor.m
 MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMDisplayDescriptor.m
 MarketingCloudSDKExplorer/SDKExplorer/IAM/IAMDisplayDescriptor.h
 -[ConversionEvent init:]
@@ -1866,7 +1873,7 @@ _OBJC_IVAR_$_ConversionEvent.conversionData
 __OBJC_$_INSTANCE_VARIABLES_ConversionEvent
 __OBJC_$_PROP_LIST_ConversionEvent
 __OBJC_CLASS_RO_$_ConversionEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/ConversionEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/ConversionEvent.m
 MarketingCloudSDKEvent/ConversionEvent.m
 +[SFMCRule modelObjectWithDictionary:]
 -[SFMCRule initWithDictionary:]
@@ -1903,7 +1910,7 @@ _OBJC_IVAR_$_SFMCRule._index
 __OBJC_$_INSTANCE_VARIABLES_SFMCRule
 __OBJC_$_PROP_LIST_SFMCRule
 __OBJC_CLASS_RO_$_SFMCRule
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCRule.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/SFMCRule.m
 MarketingCloudSDKEvent/SFMCRule.m
 -[AppOpenEvent data]
 -[AppOpenEvent key]
@@ -1913,7 +1920,7 @@ __OBJC_METACLASS_RO_$_AppOpenEvent
 __OBJC_$_INSTANCE_METHODS_AppOpenEvent
 __OBJC_$_PROP_LIST_AppOpenEvent
 __OBJC_CLASS_RO_$_AppOpenEvent
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AppOpenEvent.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKEvent/MarketingCloudSDKEvent/AppOpenEvent.m
 MarketingCloudSDKEvent/AppOpenEvent.m
 +[UIColor(SFMCColorUtils) sfmc_colorFromHexString:]
 +[UIColor(SFMCColorUtils) sfmc_hexStringFromColor:]
@@ -1922,7 +1929,7 @@ _OBJC_SELECTOR_REFERENCES_.7
 _OBJC_CLASSLIST_REFERENCES_$_.8
 __OBJC_$_CATEGORY_CLASS_METHODS_UIColor_$_SFMCColorUtils
 __OBJC_$_CATEGORY_UIColor_$_SFMCColorUtils
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/UIColor+SFMCColorUtils.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/UIColor+SFMCColorUtils.m
 MarketingCloudSDKCommon/UIColor+SFMCColorUtils.m
 -[MarketingCloudSDKCloudPageMessage setupWithFoundation:error:]
 -[MarketingCloudSDKCloudPageMessage setupOnMainThread]
@@ -1977,8 +1984,8 @@ _OBJC_IVAR_$_MarketingCloudSDKCloudPageMessage._userNotificationCenter
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKCloudPageMessage
 __OBJC_$_PROP_LIST_MarketingCloudSDKCloudPageMessage
 __OBJC_CLASS_RO_$_MarketingCloudSDKCloudPageMessage
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessage.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCloudPageMessage
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessage.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCloudPageMessage
 MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessage.m
 MarketingCloudSDKCloudPageMessage/MarketingCloudSDKCloudPageMessagePrivate.h
 -[MarketingCloudSDKControlChannel setupWithFoundation:error:]
@@ -2053,10 +2060,11 @@ _OBJC_CLASSLIST_REFERENCES_$_.246
 _OBJC_CLASSLIST_REFERENCES_$_.275
 ___block_descriptor_28_e4_20s24w_e58_v20?0"NSData"4"NSURLResponse"8"NSNumber"12"NSError"16l
 ___block_descriptor_24_e4_20s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.291
 _OBJC_SELECTOR_REFERENCES_.293
 __requestTimeInterval
-_OBJC_SELECTOR_REFERENCES_.295
 _OBJC_CLASSLIST_REFERENCES_$_.296
+_OBJC_SELECTOR_REFERENCES_.310
 __OBJC_$_CLASS_METHODS_MarketingCloudSDKControlChannel
 __OBJC_$_PROTOCOL_REFS_MarketingCloudSDKFrameworkRequestTimerProtocol
 __OBJC_$_PROTOCOL_CLASS_METHODS_MarketingCloudSDKFrameworkRequestTimerProtocol
@@ -2082,8 +2090,8 @@ _OBJC_IVAR_$_MarketingCloudSDKControlChannel._logger
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKControlChannel
 __OBJC_$_PROP_LIST_MarketingCloudSDKControlChannel
 __OBJC_CLASS_RO_$_MarketingCloudSDKControlChannel
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannel.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKControlChannel
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannel.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKControlChannel
 MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannel.m
 MarketingCloudSDKControlChannel/MarketingCloudSDKControlChannelPrivate.h
 __56-[MarketingCloudSDKControlChannel getControlChannelData]_block_invoke.281
@@ -2108,8 +2116,8 @@ __OBJC_$_INSTANCE_METHODS_SFMCInAppMessageEntity
 __OBJC_$_INSTANCE_VARIABLES_SFMCInAppMessageEntity
 __OBJC_$_PROP_LIST_SFMCInAppMessageEntity
 __OBJC_CLASS_RO_$_SFMCInAppMessageEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCInAppMessageEntity.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCInAppMessageEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation
 MarketingCloudSDKCommon/SFMCInAppMessageEntity.m
 +[SFMCDeviceStatsItemEntity requestTimeInterval]
 +[SFMCDeviceStatsItemEntity setRequestTimeInterval:]
@@ -2142,7 +2150,7 @@ __OBJC_METACLASS_RO_$_SFMCDeviceStatsItemEntity
 __OBJC_$_INSTANCE_METHODS_SFMCDeviceStatsItemEntity
 __OBJC_$_PROP_LIST_SFMCDeviceStatsItemEntity
 __OBJC_CLASS_RO_$_SFMCDeviceStatsItemEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCDeviceStatsItemEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCDeviceStatsItemEntity.m
 MarketingCloudSDKCommon/SFMCDeviceStatsItemEntity.m
 +[SFMCETAnalyticEntity requestTimeInterval]
 +[SFMCETAnalyticEntity setRequestTimeInterval:]
@@ -2160,11 +2168,11 @@ __OBJC_METACLASS_RO_$_SFMCETAnalyticEntity
 __OBJC_$_INSTANCE_METHODS_SFMCETAnalyticEntity
 __OBJC_$_PROP_LIST_SFMCETAnalyticEntity
 __OBJC_CLASS_RO_$_SFMCETAnalyticEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCETAnalyticEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCETAnalyticEntity.m
 MarketingCloudSDKCommon/SFMCETAnalyticEntity.m
 __OBJC_METACLASS_RO_$_SFMCNotificationConstants
 __OBJC_CLASS_RO_$_SFMCNotificationConstants
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCNotificationConstants.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCNotificationConstants.m
 +[MarketingCloudSDKFoundation initialize]
 -[MarketingCloudSDKFoundation dealloc]
 -[MarketingCloudSDKFoundation sdkVersionString]
@@ -2346,19 +2354,15 @@ _OBJC_CLASSLIST_REFERENCES_$_.253
 _OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.261
 _OBJC_SELECTOR_REFERENCES_.263
+_OBJC_CLASSLIST_REFERENCES_$_.271
 _OBJC_SELECTOR_REFERENCES_.279
-_OBJC_SELECTOR_REFERENCES_.314
 _OBJC_SELECTOR_REFERENCES_.328
 _OBJC_CLASSLIST_REFERENCES_$_.329
 _OBJC_CLASSLIST_REFERENCES_$_.336
 _OBJC_CLASSLIST_REFERENCES_$_.337
-_OBJC_SELECTOR_REFERENCES_.339
-_OBJC_SELECTOR_REFERENCES_.341
+_OBJC_SELECTOR_REFERENCES_.351
 _OBJC_SELECTOR_REFERENCES_.355
 _OBJC_SELECTOR_REFERENCES_.357
-_OBJC_CLASSLIST_REFERENCES_$_.359
-_OBJC_SELECTOR_REFERENCES_.361
-_OBJC_SELECTOR_REFERENCES_.363
 _OBJC_CLASSLIST_REFERENCES_$_.371
 _OBJC_SELECTOR_REFERENCES_.373
 _OBJC_SELECTOR_REFERENCES_.375
@@ -2368,6 +2372,7 @@ _OBJC_SELECTOR_REFERENCES_.381
 _OBJC_SELECTOR_REFERENCES_.383
 _OBJC_CLASSLIST_REFERENCES_$_.384
 _OBJC_CLASSLIST_REFERENCES_$_.393
+_OBJC_SELECTOR_REFERENCES_.399
 _OBJC_CLASSLIST_REFERENCES_$_.400
 _OBJC_CLASSLIST_REFERENCES_$_.419
 _OBJC_SELECTOR_REFERENCES_.421
@@ -2375,23 +2380,18 @@ _OBJC_SELECTOR_REFERENCES_.423
 _OBJC_SELECTOR_REFERENCES_.427
 _OBJC_SELECTOR_REFERENCES_.435
 _OBJC_CLASSLIST_REFERENCES_$_.436
+_OBJC_CLASSLIST_REFERENCES_$_.439
 _OBJC_SELECTOR_REFERENCES_.447
 _OBJC_SELECTOR_REFERENCES_.449
 _OBJC_SELECTOR_REFERENCES_.455
 _OBJC_CLASSLIST_REFERENCES_$_.456
-_OBJC_SELECTOR_REFERENCES_.486
 _OBJC_SELECTOR_REFERENCES_.490
 _OBJC_SELECTOR_REFERENCES_.492
 _OBJC_SELECTOR_REFERENCES_.494
 _OBJC_SELECTOR_REFERENCES_.496
-_OBJC_SELECTOR_REFERENCES_.501
-_OBJC_SELECTOR_REFERENCES_.503
 ___block_descriptor_40_e4_20s24s28r32r36w_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.505
 ___block_descriptor_36_e4_20s24r28r32w_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.509
 _OBJC_CLASSLIST_REFERENCES_$_.512
-_OBJC_SELECTOR_REFERENCES_.528
 _OBJC_CLASSLIST_REFERENCES_$_.529
 _OBJC_SELECTOR_REFERENCES_.549
 _OBJC_SELECTOR_REFERENCES_.551
@@ -2399,17 +2399,18 @@ _OBJC_SELECTOR_REFERENCES_.553
 _OBJC_SELECTOR_REFERENCES_.561
 _OBJC_CLASSLIST_REFERENCES_$_.564
 _OBJC_CLASSLIST_REFERENCES_$_.567
-_OBJC_SELECTOR_REFERENCES_.575
+_OBJC_SELECTOR_REFERENCES_.569
 _OBJC_CLASSLIST_REFERENCES_$_.576
 _OBJC_SELECTOR_REFERENCES_.578
 _OBJC_CLASSLIST_REFERENCES_$_.583
-_OBJC_SELECTOR_REFERENCES_.589
 _OBJC_SELECTOR_REFERENCES_.604
 ___block_descriptor_28_e4_20r24w_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.606
 _OBJC_SELECTOR_REFERENCES_.610
 ___block_descriptor_40_e4_20s24s28s32r36w_e58_v20?0"NSData"4"NSURLResponse"8"NSNumber"12"NSError"16l
-_OBJC_SELECTOR_REFERENCES_.636
+_OBJC_SELECTOR_REFERENCES_.624
+_OBJC_SELECTOR_REFERENCES_.626
+_OBJC_SELECTOR_REFERENCES_.628
 _OBJC_CLASSLIST_REFERENCES_$_.637
 _OBJC_SELECTOR_REFERENCES_.639
 _OBJC_SELECTOR_REFERENCES_.641
@@ -2531,7 +2532,7 @@ _OBJC_IVAR_$_MarketingCloudSDKFoundation._registration
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKFoundation
 __OBJC_$_PROP_LIST_MarketingCloudSDKFoundation
 __OBJC_CLASS_RO_$_MarketingCloudSDKFoundation
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation.m
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundation.m
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundationPrivate.h
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundation.h
@@ -2619,7 +2620,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.170
 _OBJC_CLASSLIST_REFERENCES_$_.185
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDKFoundation_$_ClientData
 __OBJC_$_CATEGORY_MarketingCloudSDKFoundation_$_ClientData
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+ClientData.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+ClientData.m
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+ClientData.m
 __64-[MarketingCloudSDKFoundation(ClientData) sfmc_setSignedString:]_block_invoke
 __69-[MarketingCloudSDKFoundation(ClientData) sfmc_clearAttributesNamed:]_block_invoke
@@ -2655,7 +2656,7 @@ __OBJC_$_INSTANCE_METHODS_SFMCBlobValueTransformer
 __OBJC_$_INSTANCE_VARIABLES_SFMCBlobValueTransformer
 __OBJC_$_PROP_LIST_SFMCBlobValueTransformer
 __OBJC_CLASS_RO_$_SFMCBlobValueTransformer
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCBlobValueTransformer.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCBlobValueTransformer.m
 MarketingCloudSDKFoundation/SFMCBlobValueTransformer.m
 MarketingCloudSDKFoundation/SFMCBlobValueTransformer.h
 -[MarketingCloudSDKFoundation(Utilities) reservedWords]
@@ -2667,7 +2668,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.99
 _OBJC_CLASSLIST_REFERENCES_$_.104
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDKFoundation_$_Utilities
 __OBJC_$_CATEGORY_MarketingCloudSDKFoundation_$_Utilities
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+Utilities.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+Utilities.m
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+Utilities.m
 +[SFMCMessageEntity requestTimeInterval]
 +[SFMCMessageEntity setRequestTimeInterval:]
@@ -2711,15 +2712,13 @@ _OBJC_SELECTOR_REFERENCES_.249
 _OBJC_SELECTOR_REFERENCES_.251
 _OBJC_SELECTOR_REFERENCES_.267
 _OBJC_CLASSLIST_REFERENCES_$_.288
-_OBJC_SELECTOR_REFERENCES_.312
-_OBJC_SELECTOR_REFERENCES_.316
 __OBJC_$_CLASS_METHODS_SFMCMessageEntity
 __OBJC_CLASS_PROTOCOLS_$_SFMCMessageEntity
 __OBJC_METACLASS_RO_$_SFMCMessageEntity
 __OBJC_$_INSTANCE_METHODS_SFMCMessageEntity
 __OBJC_$_PROP_LIST_SFMCMessageEntity
 __OBJC_CLASS_RO_$_SFMCMessageEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCMessageEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCMessageEntity.m
 MarketingCloudSDKCommon/SFMCMessageEntity.m
 -[SFMCPIAnalyticEntity payload]
 -[SFMCPIAnalyticEntity setPayload:]
@@ -2730,7 +2729,7 @@ __OBJC_METACLASS_RO_$_SFMCPIAnalyticEntity
 __OBJC_$_INSTANCE_METHODS_SFMCPIAnalyticEntity
 __OBJC_$_PROP_LIST_SFMCPIAnalyticEntity
 __OBJC_CLASS_RO_$_SFMCPIAnalyticEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCPIAnalyticEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCPIAnalyticEntity.m
 MarketingCloudSDKCommon/SFMCPIAnalyticEntity.m
 +[SFMCRegistration requestTimeInterval]
 +[SFMCRegistration setRequestTimeInterval:]
@@ -2819,7 +2818,7 @@ _OBJC_IVAR_$_SFMCRegistration._payloadHash
 __OBJC_$_INSTANCE_VARIABLES_SFMCRegistration
 __OBJC_$_PROP_LIST_SFMCRegistration
 __OBJC_CLASS_RO_$_SFMCRegistration
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCRegistration.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCRegistration.m
 MarketingCloudSDKCommon/SFMCRegistration.m
 MarketingCloudSDKCommon/SFMCRegistration.h
 __37-[SFMCRegistration payloadDictionary]_block_invoke
@@ -2839,7 +2838,7 @@ __OBJC_$_CATEGORY_NSArray_$_MutableDeepCopy
 _OBJC_CLASSLIST_REFERENCES_$_.29
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSSet_$_MutableDeepCopy
 __OBJC_$_CATEGORY_NSSet_$_MutableDeepCopy
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCNSDictionary+Extensions.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCNSDictionary+Extensions.m
 MarketingCloudSDKCommon/SFMCNSDictionary+Extensions.m
 -[SFMCTriggerEntity populateFromDictionary:]
 +[SFMCTriggerEntity validTriggerPayload:]
@@ -2848,12 +2847,12 @@ __OBJC_METACLASS_RO_$_SFMCTriggerEntity
 __OBJC_$_INSTANCE_METHODS_SFMCTriggerEntity
 __OBJC_$_PROP_LIST_SFMCTriggerEntity
 __OBJC_CLASS_RO_$_SFMCTriggerEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCTriggerEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCTriggerEntity.m
 MarketingCloudSDKCommon/SFMCTriggerEntity.m
 __OBJC_METACLASS_RO_$_SFMCRegistrationEntity
 __OBJC_$_PROP_LIST_SFMCRegistrationEntity
 __OBJC_CLASS_RO_$_SFMCRegistrationEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCRegistrationEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCRegistrationEntity.m
 +[SFMCDeviceIdUtil storeDeviceIdNoBackup:]
 +[SFMCDeviceIdUtil getStoredDeviceId]
 +[SFMCDeviceIdUtil deleteStoredDeviceId]
@@ -2862,7 +2861,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.19
 __OBJC_$_CLASS_METHODS_SFMCDeviceIdUtil
 __OBJC_METACLASS_RO_$_SFMCDeviceIdUtil
 __OBJC_CLASS_RO_$_SFMCDeviceIdUtil
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDeviceIdUtil.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDeviceIdUtil.m
 MarketingCloudSDKFoundation/SFMCDeviceIdUtil.m
 +[SFMCKeychainUtil setValue:forKeychainKey:inService:]
 +[SFMCKeychainUtil valueForKeychainKey:inService:]
@@ -2871,13 +2870,13 @@ MarketingCloudSDKFoundation/SFMCDeviceIdUtil.m
 __OBJC_$_CLASS_METHODS_SFMCKeychainUtil
 __OBJC_METACLASS_RO_$_SFMCKeychainUtil
 __OBJC_CLASS_RO_$_SFMCKeychainUtil
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCKeychainUtil.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCKeychainUtil.m
 MarketingCloudSDKFoundation/SFMCKeychainUtil.m
 -[MarketingCloudSDKFoundation(DataUtils) setupCoredataWithAppID:andAccessToken:error:]
 _OBJC_CLASSLIST_REFERENCES_$_.76
 __OBJC_$_CATEGORY_INSTANCE_METHODS_MarketingCloudSDKFoundation_$_DataUtils
 __OBJC_$_CATEGORY_MarketingCloudSDKFoundation_$_DataUtils
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+DataUtils.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+DataUtils.m
 MarketingCloudSDKFoundation/MarketingCloudSDKFoundation+DataUtils.m
 llvm.loop.isvectorized
 +[SFMCTimedDispatcher mappingsDictionary]
@@ -2894,7 +2893,7 @@ ___block_descriptor_32_e4_20s24bs28w_e5_v4?0l
 __OBJC_$_CLASS_METHODS_SFMCTimedDispatcher
 __OBJC_METACLASS_RO_$_SFMCTimedDispatcher
 __OBJC_CLASS_RO_$_SFMCTimedDispatcher
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCTimedDispatcher.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCTimedDispatcher.m
 __copy_helper_block_e4_20s24b28w
 __83+[SFMCTimedDispatcher dispatchWithIdentifier:onQueue:afterTimeInterval:completion:]_block_invoke
 MarketingCloudSDKFoundation/SFMCTimedDispatcher.m
@@ -3017,7 +3016,7 @@ _OBJC_IVAR_$_SFMCInAppMessage._messagePayload
 __OBJC_$_INSTANCE_VARIABLES_SFMCInAppMessage
 __OBJC_$_PROP_LIST_SFMCInAppMessage
 __OBJC_CLASS_RO_$_SFMCInAppMessage
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCInAppMessage.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCInAppMessage.m
 MarketingCloudSDKCommon/SFMCInAppMessage.m
 MarketingCloudSDKCommon/SFMCInAppMessage.h
 +[SFMCDeviceId deviceId]
@@ -3034,7 +3033,7 @@ _OBJC_IVAR_$_SFMCDeviceId._sfmcDeviceId
 __OBJC_$_INSTANCE_VARIABLES_SFMCDeviceId
 __OBJC_$_PROP_LIST_SFMCDeviceId
 __OBJC_CLASS_RO_$_SFMCDeviceId
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDeviceId.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDeviceId.m
 MarketingCloudSDKFoundation/SFMCDeviceId.m
 MarketingCloudSDKFoundation/SFMCDeviceId.h
 -[SFMCLogger initWithLogger:logDebug:]
@@ -3058,14 +3057,14 @@ _OBJC_IVAR_$_SFMCLogger._logger
 __OBJC_$_INSTANCE_VARIABLES_SFMCLogger
 __OBJC_$_PROP_LIST_SFMCLogger
 __OBJC_CLASS_RO_$_SFMCLogger
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCLogger.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCLogger.m
 MarketingCloudSDKCommon/SFMCLogger.m
 MarketingCloudSDKCommon/SFMCLogger.h
 __os_log_helper_16_2_3_4_66_4_66_4_66
 __OBJC_METACLASS_RO_$_SFMCKeyValueEntity
 __OBJC_$_PROP_LIST_SFMCKeyValueEntity
 __OBJC_CLASS_RO_$_SFMCKeyValueEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCKeyValueEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCKeyValueEntity.m
 +[SFMCDateNumberFormatters initialize]
 ___38+[SFMCDateNumberFormatters initialize]_block_invoke
 -[SFMCDateNumberFormatters dateFormatter]
@@ -3079,7 +3078,7 @@ __OBJC_$_CLASS_METHODS_SFMCDateNumberFormatters
 __OBJC_METACLASS_RO_$_SFMCDateNumberFormatters
 __OBJC_$_INSTANCE_METHODS_SFMCDateNumberFormatters
 __OBJC_CLASS_RO_$_SFMCDateNumberFormatters
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCDateNumberFormatters.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCDateNumberFormatters.m
 MarketingCloudSDKCommon/SFMCDateNumberFormatters.m
 __38+[SFMCDateNumberFormatters initialize]_block_invoke
 -[SFMCNetworkRequest description]
@@ -3125,7 +3124,7 @@ _OBJC_IVAR_$_SFMCNetworkRequest._networkRequestTimeInterval
 __OBJC_$_INSTANCE_VARIABLES_SFMCNetworkRequest
 __OBJC_$_PROP_LIST_SFMCNetworkRequest
 __OBJC_CLASS_RO_$_SFMCNetworkRequest
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCNetworkRequest.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCNetworkRequest.m
 MarketingCloudSDKFoundation/SFMCNetworkRequest.m
 MarketingCloudSDKFoundation/SFMCNetworkRequest.h
 __83-[SFMCNetworkRequest performRequestWithCompletionHandler:requestCompletionHandler:]_block_invoke
@@ -3181,7 +3180,7 @@ _OBJC_IVAR_$_SFMCDatabase._foundation
 __OBJC_$_INSTANCE_VARIABLES_SFMCDatabase
 __OBJC_$_PROP_LIST_SFMCDatabase
 __OBJC_CLASS_RO_$_SFMCDatabase
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDatabase.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKFoundation/MarketingCloudSDKFoundation/SFMCDatabase.m
 MarketingCloudSDKFoundation/SFMCDatabase.m
 MarketingCloudSDKFoundation/SFMCDatabase.h
 __34-[SFMCDatabase saveContext:error:]_block_invoke.92
@@ -3209,7 +3208,7 @@ __OBJC_$_INSTANCE_METHODS_SFMCManagedObject
 __OBJC_$_INSTANCE_VARIABLES_SFMCManagedObject
 __OBJC_$_PROP_LIST_SFMCManagedObject
 __OBJC_CLASS_RO_$_SFMCManagedObject
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCManagedObject.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCManagedObject.m
 MarketingCloudSDKCommon/SFMCManagedObject.m
 -[SFMCRegionEntity name]
 -[SFMCRegionEntity setName:]
@@ -3235,7 +3234,7 @@ __OBJC_METACLASS_RO_$_SFMCRegionEntity
 __OBJC_$_INSTANCE_METHODS_SFMCRegionEntity
 __OBJC_$_PROP_LIST_SFMCRegionEntity
 __OBJC_CLASS_RO_$_SFMCRegionEntity
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKCommon/SFMCRegionEntity.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKCommon/SFMCRegionEntity.m
 MarketingCloudSDKCommon/SFMCRegionEntity.m
 __43-[SFMCRegionEntity populateFromDictionary:]_block_invoke
 -[MarketingCloudSDKInboxMessage setupWithFoundation:error:]
@@ -3336,21 +3335,23 @@ _OBJC_CLASSLIST_REFERENCES_$_.274
 _OBJC_SELECTOR_REFERENCES_.276
 _OBJC_CLASSLIST_REFERENCES_$_.279
 ___block_descriptor_40_e4_20s24s28s32s36w_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.321
 _OBJC_CLASSLIST_REFERENCES_$_.322
 _OBJC_CLASSLIST_REFERENCES_$_.331
 _OBJC_SELECTOR_REFERENCES_.337
-_OBJC_CLASSLIST_REFERENCES_$_.364
+_OBJC_CLASSLIST_REFERENCES_$_.389
+_OBJC_SELECTOR_REFERENCES_.391
 _OBJC_CLASSLIST_REFERENCES_$_.394
 _OBJC_CLASSLIST_REFERENCES_$_.397
 _OBJC_CLASSLIST_REFERENCES_$_.407
-_OBJC_SELECTOR_REFERENCES_.409
-_OBJC_SELECTOR_REFERENCES_.411
-_OBJC_SELECTOR_REFERENCES_.415
 _OBJC_SELECTOR_REFERENCES_.417
 ___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.420
+_OBJC_SELECTOR_REFERENCES_.510
 _OBJC_CLASSLIST_REFERENCES_$_.525
+_OBJC_SELECTOR_REFERENCES_.527
 _OBJC_SELECTOR_REFERENCES_.538
+_OBJC_SELECTOR_REFERENCES_.540
 ___block_descriptor_32_e4_20s24r28w_e58_v20?0"NSData"4"NSURLResponse"8"NSNumber"12"NSError"16l
 _OBJC_SELECTOR_REFERENCES_.572
 _OBJC_SELECTOR_REFERENCES_.598
@@ -3359,7 +3360,7 @@ ___block_descriptor_37_e4_20s24s28r32w_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.612
 _OBJC_SELECTOR_REFERENCES_.614
 _OBJC_SELECTOR_REFERENCES_.616
-_OBJC_SELECTOR_REFERENCES_.634
+_OBJC_SELECTOR_REFERENCES_.622
 __OBJC_CLASS_PROTOCOLS_$_MarketingCloudSDKInboxMessage
 __OBJC_METACLASS_RO_$_MarketingCloudSDKInboxMessage
 __OBJC_$_INSTANCE_METHODS_MarketingCloudSDKInboxMessage
@@ -3378,8 +3379,8 @@ _OBJC_IVAR_$_MarketingCloudSDKInboxMessage._manualThrottleDate
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKInboxMessage
 __OBJC_$_PROP_LIST_MarketingCloudSDKInboxMessage
 __OBJC_CLASS_RO_$_MarketingCloudSDKInboxMessage
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKInboxMessage
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKInboxMessage
 MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage.m
 MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessagePrivate.h
 __62-[MarketingCloudSDKInboxMessage processControlChannelPayload:]_block_invoke
@@ -3426,7 +3427,7 @@ __OBJC_CLASS_PROTOCOLS_$_MarketingCloudSDKInboxMessageUpdateStatus
 __OBJC_METACLASS_RO_$_MarketingCloudSDKInboxMessageUpdateStatus
 __OBJC_$_PROP_LIST_MarketingCloudSDKInboxMessageUpdateStatus
 __OBJC_CLASS_RO_$_MarketingCloudSDKInboxMessageUpdateStatus
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessageMessageUpdateStatus.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessageMessageUpdateStatus.m
 MarketingCloudSDKInboxMessage/MarketingCloudSDKInboxMessageMessageUpdateStatus.m
 -[MarketingCloudSDKIntelligence setupWithFoundation:error:]
 -[MarketingCloudSDKIntelligence setupOnMainThread]
@@ -3584,6 +3585,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.157
 _OBJC_CLASSLIST_REFERENCES_$_.169
 _OBJC_CLASSLIST_REFERENCES_$_.209
 _OBJC_CLASSLIST_REFERENCES_$_.237
+_OBJC_SELECTOR_REFERENCES_.315
 _OBJC_CLASSLIST_REFERENCES_$_.318
 _OBJC_SELECTOR_REFERENCES_.353
 _OBJC_SELECTOR_REFERENCES_.359
@@ -3594,23 +3596,26 @@ _OBJC_SELECTOR_REFERENCES_.419
 _OBJC_CLASSLIST_REFERENCES_$_.426
 _OBJC_SELECTOR_REFERENCES_.437
 _OBJC_SELECTOR_REFERENCES_.445
+_OBJC_SELECTOR_REFERENCES_.452
 _OBJC_SELECTOR_REFERENCES_.459
 _OBJC_CLASSLIST_REFERENCES_$_.462
 ___block_descriptor_32_e4_20s24r28r_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.483
 ___block_descriptor_24_e4_20s_e36_v16?0"SFMCPIAnalyticEntity"4I8^c12l
 ___block_descriptor_48_e4_20s24s28s32r36r40r44w_e5_v4?0l
 ___block_descriptor_56_e4_20s24s28r32r36r40r44r48r52w_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.498
+_OBJC_SELECTOR_REFERENCES_.502
 _OBJC_CLASSLIST_REFERENCES_$_.507
 _OBJC_SELECTOR_REFERENCES_.519
 ___block_descriptor_36_e4_20s24s28w_e58_v20?0"NSData"4"NSURLResponse"8"NSNumber"12"NSError"16lu32l4
 _OBJC_CLASSLIST_REFERENCES_$_.536
+_OBJC_SELECTOR_REFERENCES_.542
 _OBJC_CLASSLIST_REFERENCES_$_.573
 _OBJC_CLASSLIST_REFERENCES_$_.584
 _OBJC_SELECTOR_REFERENCES_.588
 _OBJC_SELECTOR_REFERENCES_.590
 _OBJC_CLASSLIST_REFERENCES_$_.605
-_OBJC_SELECTOR_REFERENCES_.613
 _OBJC_SELECTOR_REFERENCES_.635
 ___block_descriptor_24_e4_20s_e36_v16?0"SFMCETAnalyticEntity"4I8^c12l
 _OBJC_SELECTOR_REFERENCES_.647
@@ -3666,8 +3671,8 @@ _OBJC_IVAR_$_MarketingCloudSDKIntelligence._appOpenEventDate
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKIntelligence
 __OBJC_$_PROP_LIST_MarketingCloudSDKIntelligence
 __OBJC_CLASS_RO_$_MarketingCloudSDKIntelligence
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKIntelligence
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKIntelligence
 MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence.m
 MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligencePrivate.h
 __61-[MarketingCloudSDKIntelligence sendDeviceStatsItemAnalytics]_block_invoke_7
@@ -3745,7 +3750,7 @@ __OBJC_CLASS_PROTOCOLS_$_MarketingCloudSDKIntelligenceSendPIAnalyticsSystem
 __OBJC_METACLASS_RO_$_MarketingCloudSDKIntelligenceSendPIAnalyticsSystem
 __OBJC_$_PROP_LIST_MarketingCloudSDKIntelligenceSendPIAnalyticsSystem
 __OBJC_CLASS_RO_$_MarketingCloudSDKIntelligenceSendPIAnalyticsSystem
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligenceSendPIAnalyticsSystem.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligenceSendPIAnalyticsSystem.m
 MarketingCloudSDKIntelligence/MarketingCloudSDKIntelligenceSendPIAnalyticsSystem.m
 -[MarketingCloudSDKLocation setupWithFoundation:error:]
 -[MarketingCloudSDKLocation setupOnMainThread]
@@ -3879,18 +3884,19 @@ _OBJC_CLASSLIST_REFERENCES_$_.236
 _OBJC_CLASSLIST_REFERENCES_$_.250
 _OBJC_SELECTOR_REFERENCES_.258
 _OBJC_SELECTOR_REFERENCES_.269
+_OBJC_CLASSLIST_REFERENCES_$_.297
 _OBJC_CLASSLIST_REFERENCES_$_.302
 _OBJC_CLASSLIST_REFERENCES_$_.305
 ___block_descriptor_24_e4_20w_e58_v20?0"NSData"4"NSURLResponse"8"NSNumber"12"NSError"16l
 _OBJC_CLASSLIST_REFERENCES_$_.421
 _OBJC_CLASSLIST_REFERENCES_$_.435
 _OBJC_CLASSLIST_REFERENCES_$_.440
-_OBJC_SELECTOR_REFERENCES_.442
 _OBJC_CLASSLIST_REFERENCES_$_.451
-_OBJC_SELECTOR_REFERENCES_.507
+_OBJC_SELECTOR_REFERENCES_.481
+_OBJC_SELECTOR_REFERENCES_.485
+_OBJC_SELECTOR_REFERENCES_.487
 _OBJC_CLASSLIST_REFERENCES_$_.548
 ___block_descriptor_24_e4_20s_e21_v12?0"CLRegion"4^c8l
-_OBJC_SELECTOR_REFERENCES_.568
 ___block_descriptor_24_e4_20w_e21_v12?0"CLRegion"4^c8l
 ___block_descriptor_24_e4_20w_e29_v12?0"SFMCRegionEntity"4^c8l
 _OBJC_SELECTOR_REFERENCES_.618
@@ -3996,8 +4002,8 @@ _OBJC_IVAR_$_MarketingCloudSDKLocation._fenceEvents
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKLocation
 __OBJC_$_PROP_LIST_MarketingCloudSDKLocation
 __OBJC_CLASS_RO_$_MarketingCloudSDKLocation
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocation.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKLocation
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocation.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKLocation
 MarketingCloudSDKLocation/MarketingCloudSDKLocation.m
 MarketingCloudSDKLocation/MarketingCloudSDKLocationPrivate.h
 MarketingCloudSDKLocation/MarketingCloudSDKLocation.h
@@ -4055,7 +4061,7 @@ __OBJC_CLASS_PROTOCOLS_$_MarketingCloudSDKLocationGetBeaconsRequestTimer
 __OBJC_METACLASS_RO_$_MarketingCloudSDKLocationGetBeaconsRequestTimer
 __OBJC_$_PROP_LIST_MarketingCloudSDKLocationGetBeaconsRequestTimer
 __OBJC_CLASS_RO_$_MarketingCloudSDKLocationGetBeaconsRequestTimer
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocationGetBeaconsRequestTimer.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocationGetBeaconsRequestTimer.m
 MarketingCloudSDKLocation/MarketingCloudSDKLocationGetBeaconsRequestTimer.m
 +[MarketingCloudSDKLocationGetGeofencesRequestTimer requestTimeInterval]
 +[MarketingCloudSDKLocationGetGeofencesRequestTimer setRequestTimeInterval:]
@@ -4068,7 +4074,7 @@ __OBJC_CLASS_PROTOCOLS_$_MarketingCloudSDKLocationGetGeofencesRequestTimer
 __OBJC_METACLASS_RO_$_MarketingCloudSDKLocationGetGeofencesRequestTimer
 __OBJC_$_PROP_LIST_MarketingCloudSDKLocationGetGeofencesRequestTimer
 __OBJC_CLASS_RO_$_MarketingCloudSDKLocationGetGeofencesRequestTimer
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocationGetGeofencesRequestTimer.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKLocation/MarketingCloudSDKLocation/MarketingCloudSDKLocationGetGeofencesRequestTimer.m
 MarketingCloudSDKLocation/MarketingCloudSDKLocationGetGeofencesRequestTimer.m
 -[ETSqliteHelper initWithMigration:]
 -[ETSqliteHelper openDatabaseAtPath:]
@@ -4102,8 +4108,8 @@ _OBJC_IVAR_$_ETSqliteHelper._migration
 __OBJC_$_INSTANCE_VARIABLES_ETSqliteHelper
 __OBJC_$_PROP_LIST_ETSqliteHelper
 __OBJC_CLASS_RO_$_ETSqliteHelper
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKMigration/MarketingCloudSDKMigration/SQLite/ETSqliteHelper.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKMigration
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKMigration/MarketingCloudSDKMigration/SQLite/ETSqliteHelper.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKMigration
 MarketingCloudSDKMigration/SQLite/ETSqliteHelper.m
 MarketingCloudSDKMigration/SQLite/ETSqliteHelper.h
 -[MarketingCloudSDKMigration setupWithFoundation:error:]
@@ -4157,7 +4163,7 @@ _OBJC_IVAR_$_MarketingCloudSDKMigration._helper
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKMigration
 __OBJC_$_PROP_LIST_MarketingCloudSDKMigration
 __OBJC_CLASS_RO_$_MarketingCloudSDKMigration
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKMigration/MarketingCloudSDKMigration/MarketingCloudSDKMigration.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKMigration/MarketingCloudSDKMigration/MarketingCloudSDKMigration.m
 MarketingCloudSDKMigration/MarketingCloudSDKMigration.m
 MarketingCloudSDKMigration/MarketingCloudSDKMigrationPrivate.h
 __44-[MarketingCloudSDKMigration jb4aAttributes]_block_invoke
@@ -5992,7 +5998,7 @@ _Te0
 _Te1
 _Te2
 _Te3
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKMigration/MarketingCloudSDKMigration/SQLite/see-aes128-ccm-sqlite3.c
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKMigration/MarketingCloudSDKMigration/SQLite/see-aes128-ccm-sqlite3.c
 sqlite3WalBeginWriteTransaction
 MarketingCloudSDKMigration/SQLite/see-aes128-ccm-sqlite3.c
 sqlite3WalBeginReadTransaction
@@ -7944,8 +7950,8 @@ _OBJC_IVAR_$_MarketingCloudSDKNotification._dispatchQueue
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKNotification
 __OBJC_$_PROP_LIST_MarketingCloudSDKNotification
 __OBJC_CLASS_RO_$_MarketingCloudSDKNotification
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKNotification/MarketingCloudSDKNotification/MarketingCloudSDKNotification.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKNotification
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKNotification/MarketingCloudSDKNotification/MarketingCloudSDKNotification.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKNotification
 MarketingCloudSDKNotification/MarketingCloudSDKNotification.m
 MarketingCloudSDKNotification/MarketingCloudSDKNotification.h
 __50-[MarketingCloudSDKNotification setupOnMainThread]_block_invoke_3
@@ -7991,8 +7997,8 @@ _OBJC_IVAR_$_MarketingCloudSDKOpenDirectMessage._userNotificationCenter
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKOpenDirectMessage
 __OBJC_$_PROP_LIST_MarketingCloudSDKOpenDirectMessage
 __OBJC_CLASS_RO_$_MarketingCloudSDKOpenDirectMessage
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessage.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKOpenDirectMessage
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessage.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKOpenDirectMessage
 MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessage.m
 MarketingCloudSDKOpenDirectMessage/MarketingCloudSDKOpenDirectMessagePrivate.h
 -[NSNumber(SFMCBinaryString) binaryString]
@@ -8051,8 +8057,8 @@ _OBJC_IVAR_$_MarketingCloudSDKPrivacy._logger
 __OBJC_$_INSTANCE_VARIABLES_MarketingCloudSDKPrivacy
 __OBJC_$_PROP_LIST_MarketingCloudSDKPrivacy
 __OBJC_CLASS_RO_$_MarketingCloudSDKPrivacy
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy.m
-/Users/iosadmin/workspace/_-_YAML_Pipeline_sdk-ios_develop/MarketingCloudSDKPrivacy
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy.m
+/Users/iosadmin/workspace/__YAML_Pipeline_sdk-ios_MCET_232/MarketingCloudSDKPrivacy
 MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy.m
 MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacyPrivate.h
 MarketingCloudSDKPrivacy/MarketingCloudSDKPrivacy.h
