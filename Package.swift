@@ -9,13 +9,11 @@ let package = Package(
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"]),
 
     ],
-    dependencies: [
-        .package(path: "MarketingCloudSDK/MarketingCloudSDK.bundle")
-    ],
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
-            path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
+            path: "MarketingCloudSDK/MarketingCloudSDK.xcframework",
+            resources: [.process("MarketingCloudSDK.bundle")]
         )
     ]
 )
