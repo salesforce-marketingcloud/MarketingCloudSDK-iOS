@@ -7,13 +7,16 @@ let package = Package(
     name: "MarketingCloudSDK",
     products: [
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"]),
-
+        .library(name: "")
     ],
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework",
-            resources: [.process("MarketingCloudSDK.bundle")]
+            resources: [
+                .process("MarketingCloudSDK")
+                ]
+            exclude:["MarketingCloudSDK.BCSymbolMaps", "MarketingCloudSDK.dSYMs"]
         )
     ]
 )
