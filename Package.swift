@@ -6,16 +6,12 @@ import PackageDescription
 let package = Package(
     name: "MarketingCloudSDK",
     products: [
-        .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"]),
-        .library(name: "")
+        .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"])
     ],
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework",
-            resources: [
-                .process("MarketingCloudSDK")
-                ]
             exclude:["MarketingCloudSDK.BCSymbolMaps", "MarketingCloudSDK.dSYMs"]
         )
     ]
