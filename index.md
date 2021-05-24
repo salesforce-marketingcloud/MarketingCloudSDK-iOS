@@ -22,6 +22,8 @@ title: "Home"
 
 > - No changes required to support iOS 14 devices.
 
+> - AppTrackingTransparency: Apple introduced a new permission setting called Asking Permission to Track. With iOS 14.5, you must obtain a user’s permission through the AppTrackingTransparency (ATT) framework to access their device’s advertising identifier (IDFA) and track them across multiple apps. By default, MobilePush SDK does not collect IDFAs nor do we use such values to track users across multiple apps. As such, at the moment, there are no changes required for MobilePush customers. If your organization plans to capture IDFA, you must explicitly obtain user’s permission through ATT in your app. To submit this value to the Marketing Cloud, set it as an attribute within the MobilePush SDK.
+
 ## iOS Data Protection
 > - The MobilePush SDK version 6.4.1 includes new troubleshooting information and code examples to demonstrate proper configuration and usage when iOS Data Protection is in use. See [iOS Data Protection]({{ site.baseurl }}/trouble/trouble-ios-data-protection.html).
 > - The [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been modified to show proper usage.
