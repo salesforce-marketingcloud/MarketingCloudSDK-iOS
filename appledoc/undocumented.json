@@ -1,19 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.h",
-      "line": 89,
-      "symbol": "MarketingCloudSDK(Events).-sfmc_triggerEvent:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/stanner/sdk-ios/MarketingCloudSDK/MarketingCloudSDK/MarketingCloudSDK+Events.h",
-      "line": 91,
-      "symbol": "MarketingCloudSDK(Events).-sfmc_triggerEvents:",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
-  "source_directory": "/Users/stanner/sdk-ios/MarketingCloudSDK"
+  "source_directory": "/Users/iosadmin/workspace/YAML_Pipeline_sdk-ios_MCET_232.1/MarketingCloudSDK"
 }

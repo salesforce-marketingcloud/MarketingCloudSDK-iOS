@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>MarketingCloudSDKEventDelegate Protocol Reference</title>
+    <title>SFMCEvent Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="../js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/objc/Protocol/MarketingCloudSDKEventDelegate" class="dashAnchor"></a>
-    <a title="MarketingCloudSDKEventDelegate Protocol Reference"></a>
+    <a name="//apple_ref/objc/Class/SFMCEvent" class="dashAnchor"></a>
+    <a title="SFMCEvent Class Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">MarketingCloudSDK Docs</a> (100% documented)</p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="../index.html">MarketingCloudSDK Reference</a>
         <img id="carat" src="../img/carat.png" />
-        MarketingCloudSDKEventDelegate Protocol Reference
+        SFMCEvent Class Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -165,26 +165,20 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>MarketingCloudSDKEventDelegate</h1>
+            <h1>SFMCEvent</h1>
               <div class="declaration">
                 <div class="language">
                   <p class="aside-title">Objective-C</p>
-                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">MarketingCloudSDKEventDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc"><a href="../Protocols/SFMCEvent.html">SFMCEvent</a></span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
 
                 </div>
                 <div class="language">
                   <p class="aside-title">Swift</p>
-                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MarketingCloudSDKEventDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt"><a href="../Protocols/SFMCEvent.html">SFMCEvent</a></span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                 </div>
               </div>
-            <p>Supporting protocol for In-App Messaging</p>
-
-<p>Implementation of this protocol is not required for In-App Messaging to work, although it provides addition control for an application developer.</p>
-
-<p>In-App messages are presented by the MobilePush SDK in an application&rsquo;s context, inserted into the view hierarchy atop the application&rsquo;s topmost view controller.</p>
-
-<p>This protocol allows for awareness into the SDK&rsquo;s lifecycle for In-App Messages.</p>
+            <p>Event class</p>
 
           </section>
           <section class="section task-group-section">
@@ -193,9 +187,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_shouldShowInAppMessage:"></a>
-                    <a name="//apple_ref/objc/Method/-sfmc_shouldShowInAppMessage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_shouldShowInAppMessage:">-sfmc_shouldShowInAppMessage:<wbr></a>
+                    <a name="/c:objc(cs)SFMCEvent(cm)customEventWithName:"></a>
+                    <a name="//apple_ref/objc/Method/+customEventWithName:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCEvent(cm)customEventWithName:">+customEventWithName:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -203,25 +197,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Method called by the SDK when an In-App Message is ready to be shown. The delegate implementing this method returns YES or NO.</p>
-
-<p>YES indicates to the SDK that this message is able to be shown (allowed by the application).</p>
-
-<p>NO indicates that the SDK should not show this message. An application may return NO if its visual hierarchy or user flow is such that an interruption would not be acceptable to the usability or functionality of the application.</p>
-
-<p>If NO is returned, the application may capture the message&rsquo;s identifier (via sfmc_messageIdForMessage:) and attempt to show that message later via sfmc_showInAppMessage:.</p>
+                        <p>Method to return a custom event with key.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">BOOL</span><span class="p">)</span><span class="nf">sfmc_shouldShowInAppMessage</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SFMCEvent.html">SFMCEvent</a></span><span class="o">&gt;</span><span class="p">)</span><span class="nf">customEventWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sfmc_shouldShow</span><span class="p">(</span><span class="n">inAppMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">customEvent</span><span class="p">(</span><span class="n">withName</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SFMCEventProtocol</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -232,12 +220,129 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>message</em>
+                                <em>key</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>NSDictionary representing an In-App Message</p>
+                                  <p>The custom event key</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SFMCEvent(cm)customEventWithName:withAttributes:"></a>
+                    <a name="//apple_ref/objc/Method/+customEventWithName:withAttributes:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCEvent(cm)customEventWithName:withAttributes:">+customEventWithName:<wbr>withAttributes:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to return a custom event with key and  parameters.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">id</span><span class="o">&lt;</span><span class="n"><a href="../Protocols/SFMCEvent.html">SFMCEvent</a></span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="nf">customEventWithName</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">key</span>
+         <span class="nf">withAttributes</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">parameters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">customEvent</span><span class="p">(</span><span class="n">withName</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withAttributes</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:])</span> <span class="o">-&gt;</span> <span class="kt">SFMCEventProtocol</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The custom event key</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Custom event parameters</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SFMCEvent(cm)parseAndTrim:"></a>
+                    <a name="//apple_ref/objc/Method/+parseAndTrim:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCEvent(cm)parseAndTrim:">+parseAndTrim:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Parse and trim parameters for event creation. Validate key, trim, drop if criteria not met.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nf">parseAndTrim</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="nv">parameters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">parseAndTrim</span><span class="p">(</span><span class="n">_</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>for preparation.</p>
                                 </div>
                               </td>
                             </tr>
@@ -246,7 +351,7 @@
                       </div>
                       <div>
                         <h4>Return Value</h4>
-                        <p>value reflecting application&rsquo;s behavior</p>
+                        <p>parsed parameters</p>
                       </div>
                     </section>
                   </div>
@@ -254,9 +359,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_didShowInAppMessage:"></a>
-                    <a name="//apple_ref/objc/Method/-sfmc_didShowInAppMessage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_didShowInAppMessage:">-sfmc_didShowInAppMessage:<wbr></a>
+                    <a name="/c:objc(cs)SFMCEvent(cm)validateAndPrepareKey:"></a>
+                    <a name="//apple_ref/objc/Method/+validateAndPrepareKey:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCEvent(cm)validateAndPrepareKey:">+validateAndPrepareKey:<wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -264,19 +369,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Method called by the SDK when an In-App Message has been shown.</p>
+                        <p>Validate and prepare the key to meet requirements.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sfmc_didShowInAppMessage</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
+                          <pre class="highlight objective_c"><code><span class="k">+</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nf">validateAndPrepareKey</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">id</span><span class="p">)</span><span class="nv">key</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sfmc_didShow</span><span class="p">(</span><span class="n">inAppMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kd">func</span> <span class="nf">validateAndPrepareKey</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -287,68 +392,21 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>message</em>
+                                <em>key</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>NSDictionary representing an In-App Message</p>
+                                  <p>The custom event key</p>
                                 </div>
                               </td>
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_didCloseInAppMessage:"></a>
-                    <a name="//apple_ref/objc/Method/-sfmc_didCloseInAppMessage:" class="dashAnchor"></a>
-                    <a class="token" href="#/c:objc(pl)MarketingCloudSDKEventDelegate(im)sfmc_didCloseInAppMessage:">-sfmc_didCloseInAppMessage:<wbr></a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Method called by the SDK when an In-App Message has been closed.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Objective-C</p>
-                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">sfmc_didCloseInAppMessage</span><span class="p">:(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">)</span><span class="nv">message</span><span class="p">;</span></code></pre>
-
-                        </div>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">sfmc_didClose</span><span class="p">(</span><span class="n">inAppMessage</span> <span class="nv">message</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
-
-                        </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>message</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>NSDictionary representing an In-App Message</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <h4>Return Value</h4>
+                        <p>key</p>
                       </div>
                     </section>
                   </div>
