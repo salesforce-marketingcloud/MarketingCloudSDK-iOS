@@ -35,7 +35,7 @@
 
 @end
 
-
+/** Location */
 @interface MarketingCloudSDK (Location)
 
 /**

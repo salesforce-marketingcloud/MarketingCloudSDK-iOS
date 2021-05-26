@@ -39,6 +39,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const SFMCURLTypeAction;
 
 @end
 
+/** URL Handling */
 @interface MarketingCloudSDK (URLHandling)
 
 /**

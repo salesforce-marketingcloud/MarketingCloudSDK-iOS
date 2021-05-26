@@ -19,7 +19,7 @@
 	<key>CFBundleShortVesionString</key>
 	<string>7.5.0</string>
 	<key>CFBundleVersion</key>
-	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<string>7.5.0</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>

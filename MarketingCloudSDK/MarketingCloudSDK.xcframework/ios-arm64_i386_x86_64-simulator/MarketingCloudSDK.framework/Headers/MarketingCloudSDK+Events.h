@@ -7,7 +7,7 @@
 //
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
-
+#import <MarketingCloudSDK/SFMCEvent.h>
 /**
  Supporting protocol for In-App Messaging
  
@@ -51,6 +51,7 @@
 
 @end
 
+/** Events */
 @interface MarketingCloudSDK (Events)
 
 /**
@@ -84,4 +85,10 @@
  */
 - (BOOL) sfmc_setInAppMessageFontName:(NSString * _Nullable) fontName;
 
+/**
+ Method to track events, which could result in actions such as an In-App Message displaying.
+ @param events event or an array of events to trigger.
+ */
+
+- (void) sfmc_track:(nullable id) events;
 @end

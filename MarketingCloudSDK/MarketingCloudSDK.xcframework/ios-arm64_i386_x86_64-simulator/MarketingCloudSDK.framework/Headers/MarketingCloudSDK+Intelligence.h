@@ -8,6 +8,7 @@
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
 
+/** Intelligence (Analytics) methods */
 @interface MarketingCloudSDK (Intelligence)
 
 /**

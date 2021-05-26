@@ -12,6 +12,7 @@
 #import <UIKit/UIKit.h>
 
 #import <MarketingCloudSDK/MarketingCloudSDK+Base.h>
+#import <MarketingCloudSDK/SFMCEvent.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Intelligence.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+InboxMessages.h>
 #import <MarketingCloudSDK/MarketingCloudSDK+Location.h>
