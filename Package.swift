@@ -11,8 +11,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
-            path: "MarketingCloudSDK/MarketingCloudSDK.xcframework",
-            exclude:["MarketingCloudSDK.BCSymbolMaps", "MarketingCloudSDK.dSYMs"]
+            path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
         )
     ]
 )
