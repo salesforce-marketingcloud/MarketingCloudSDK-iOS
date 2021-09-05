@@ -4,3 +4,8 @@ framework module MarketingCloudSDK {
   export *
   module * { export * }
 }
+
+module MarketingCloudSDK.Swift {
+    header "MarketingCloudSDK-Swift.h"
+    requires objc
+}

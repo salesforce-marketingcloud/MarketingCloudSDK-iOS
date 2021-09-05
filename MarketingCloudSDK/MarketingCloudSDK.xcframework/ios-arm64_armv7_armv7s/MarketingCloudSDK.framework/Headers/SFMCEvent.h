@@ -30,12 +30,12 @@ typedef NS_ENUM(NSInteger, AuthEventType) {
 
 /// Method to return a custom event with key.
 /// @param key The custom event key
-+ (nullable id <SFMCEvent>) customEventWithKey:(nonnull NSString *) key;
++ (nullable id <SFMCEvent>) customEventWithName:(nonnull NSString *) key;
 
 /// Method to return a custom event with key and  parameters.
 /// @param key The custom event key
 /// @param parameters Custom event parameters
-+ (nullable id <SFMCEvent>) customEventWithKey:(nonnull NSString *) key withParameters: (nonnull NSDictionary<NSString *, id> *)parameters;
++ (nullable id <SFMCEvent>) customEventWithName:(nonnull NSString *) key withAttributes: (nonnull NSDictionary<NSString *, id> *)parameters;
 
 
 /// Parse and trim parameters for event creation. Validate key, trim, drop if criteria not met.

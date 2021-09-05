@@ -46,6 +46,13 @@
 - (void) sfmc_setLocationDelegate:(id<MarketingCloudSDKLocationDelegate> _Nullable)delegate;
 
 /**
+ Method to set a delegate implementing the MarketingCloudSDKLocationDelegate.
+ 
+ @param delegate value A class adhering to the MarketingCloudSDKLocationDelegate and implementing the required method.
+ */
+- (void) sfmc_setSFMCSdkLocationDelegate:(id<SFMCSdkLocationDelegate> _Nullable)delegate;
+
+/**
  Method to convert a region dictionary returned from sfmc_shouldShowLocationMessage into a CLRegion
  
  @param dictionary value representing a region object from the sfmc_shouldShowLocationMessage method
