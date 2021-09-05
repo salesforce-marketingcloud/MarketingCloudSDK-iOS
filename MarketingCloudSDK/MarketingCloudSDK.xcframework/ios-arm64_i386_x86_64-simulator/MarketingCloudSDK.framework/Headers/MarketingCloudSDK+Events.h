@@ -8,6 +8,7 @@
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
 #import <MarketingCloudSDK/SFMCEvent.h>
+#import "SFMCSDK/SFMCSDK.h"
 /**
  Supporting protocol for In-App Messaging
  
@@ -60,6 +61,13 @@
  @param delegate the class implementing the MarketingCloudSDKEventDelegate.
  */
 - (void) sfmc_setEventDelegate:(id<MarketingCloudSDKEventDelegate> _Nullable)delegate;
+
+/**
+ Method to set a delegate class (adhering to the SFMCSdkInAppMessageEventDelegate protocol) to implment methods for In-App Message lifecycle events.
+ 
+ @param delegate the class implementing the SFMCSdkInAppMessageEventDelegate..
+ */
+- (void) sfmc_setInAppEventDelegate:(id<SFMCSdkInAppMessageEventDelegate> _Nullable)delegate;
 
 /**
  Extract a message identifier for an In-App Message dictionary (provided in the MarketingCloudSDKEventDelegate methods).

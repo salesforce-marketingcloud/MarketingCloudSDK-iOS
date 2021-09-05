@@ -7,6 +7,7 @@
 //
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
+#import "SFMCSDK/SFMCSDK.h"
 
 /** These type constants are used by sfmc_handleURL:type: to indicate the MarketingCloud source of the URL
  */
@@ -49,6 +50,12 @@ FOUNDATION_EXTERN NSString * _Nonnull const SFMCURLTypeAction;
  */
 -(void)sfmc_setURLHandlingDelegate:(id<MarketingCloudSDKURLHandlingDelegate> _Nullable)delegate;
 
+/**
+ Method to set a delegate implementing the MarketingCloudSDKURLHandlingDelegate.
+ 
+ @param delegate value A class adhering to the MarketingCloudSDKURLHandlingDelegate and implementing the required method.
+ */
+-(void)sfmc_setSFMCSdkURLHandlingDelegate:(id<SFMCSdkURLHandlingDelegate> _Nullable)delegate;
 @end
 
 

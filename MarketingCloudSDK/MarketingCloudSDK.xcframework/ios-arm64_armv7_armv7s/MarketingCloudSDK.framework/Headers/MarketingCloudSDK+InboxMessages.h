@@ -7,6 +7,7 @@
 //
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
+@import SFMCSDK;
 
 /** key used in notification payload to determine an inbox message's content  */
 FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
@@ -16,7 +17,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
  
  Should you wish to customize the display of the Data Source, you should subclass from here. At that time, you may override any typical UITableViewDataSource protocol members. You will likely be the most interested in cellForRowAtIndexPath:. If you do, you can access the current message by asking the messages array for the object corresponding to your NSIndexPath row. It will be a NSDictionary object representing an Inbox object.
  */
-@interface MarketingCloudSDKInboxMessagesDataSource : NSObject <UITableViewDataSource>
+@interface MarketingCloudSDKInboxMessagesDataSource : NSObject <UITableViewDataSource, SFMCSdkInboxMessagesDataSource>
 
 /**
  Create an instance of a basic UITableView data source to handle all loading for a simple view controller showing Inbox messages.
@@ -33,7 +34,7 @@ FOUNDATION_EXTERN NSString * _Nonnull const MarketingCloudSDKInboxMessageKey;
 /**
  The MarketingCloudSDKInboxMessagesDelegate is an interface object for Inbox support. It was designed to be used as a simple delegate for a UITableView, and can be allocated and used as such without too much other customization. It only supports tableView:didSelectRowAtIndexPath: to offer (along with the data source) a VERY simple inbox implementation.
  */
-@interface MarketingCloudSDKInboxMessagesDelegate : NSObject <UITableViewDelegate>
+@interface MarketingCloudSDKInboxMessagesDelegate : NSObject <UITableViewDelegate, SFMCSdkInboxMessagesDelegate>
 
 /**
  Create an instance of a basic UITableView delegate to handle cell selection for a simple view controller showing Inbox messages.
