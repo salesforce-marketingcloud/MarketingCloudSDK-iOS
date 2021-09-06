@@ -5,17 +5,21 @@ import PackageDescription
 
 let package = Package(
     name: "MarketingCloudSDK",
+    defaultLocalization: "en",
     products: [
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"])
+    ],
+    dependencies: [
+        .package(url: "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios", from: "0.8.9"),
     ],
     targets: [
         .binaryTarget(
             name: "MarketingCloudSDK",
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
-            resources: [.copy("SFMCModel.momd"),
-                        .copy("en.lproj),
-                        .copy("InAppMessageUI.storyboardc"),
-                        .copy("Assets.car")
+        ),
+        .target(
+             name: "MarketingCloudSDKResources",
+             resources: [.process("Resources")
             ]
         )
     ]
