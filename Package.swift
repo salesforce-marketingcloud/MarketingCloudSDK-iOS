@@ -12,7 +12,7 @@ let package = Package(
         .binaryTarget(
             name: "MarketingCloudSDK",
             path: "MarketingCloudSDK/MarketingCloudSDK.xcframework"
-            resources: [.copy("MarketingCloudSDK/MarketingCloudSDK.bundle/SFMCModel.momd"), 
+            resources: [.copy("MarketingCloudSDK/MarketingCloudSDK.bundle/SFMCModel.momd"),
                         .copy("MarketingCloudSDK/MarketingCloudSDK.bundle/en.lproj),
                         .copy("MarketingCloudSDK/MarketingCloudSDK.bundle/InAppMessageUI.storyboardc"),
                         .copy("MarketingCloudSDK/MarketingCloudSDK.bundle/Assets.car")
