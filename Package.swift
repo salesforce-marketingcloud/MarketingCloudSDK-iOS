@@ -7,7 +7,7 @@ let package = Package(
     name: "MarketingCloudSDK",
     defaultLocalization: "en",
     products: [
-        .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK", "MarketingCloudSDKResources"])
+        .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"])
     ],
     dependencies: [
         .package(url: "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios", from: "0.8.9"),
