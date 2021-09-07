@@ -19,15 +19,7 @@ let package = Package(
         ),
         .target(
              name: "MarketingCloudSDKResources",
-             path: "MarketingCloudSDK/",
-             exclude: ["MarketingCloudSDK.BCSymbolMaps", "MarketingCloudSDK.xcframework", "MarketingCloudSDK.dSYMs"],
-             resources: [
-                .copy("SFMCModel.momd"),
-                .copy("en.lproj"),
-                .copy("InAppMessageUI.storyboardc"),
-                .copy("Assets.car"),
-                .copy("MarketingCloudSDK.bundle")
-            ]
+             resources: [.process("Resources")]
         )
     ]
 )
