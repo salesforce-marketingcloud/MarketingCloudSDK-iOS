@@ -19,7 +19,7 @@ let package = Package(
         ),
         .target(
              name: "MarketingCloudSDKResources",
-             resources: [.copy("Resources")]
+             resources: [.process("Resources")]
         )
     ]
 )
