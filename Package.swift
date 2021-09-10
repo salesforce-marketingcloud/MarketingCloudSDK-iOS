@@ -10,7 +10,7 @@ let package = Package(
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDK"])
     ],
     dependencies: [
-        .package(url: "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios", from: "0.8.9"),
+        .package(url: "https://git.soma.salesforce.com/MarketingCloudSdk/mobile-sfmc-sdk-ios", from: "0.9.3"),
     ],
     targets: [
         .binaryTarget(
