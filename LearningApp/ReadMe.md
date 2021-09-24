@@ -47,7 +47,7 @@ For further information about implementing the MobilePush SDK, see the documenta
 
 5. In the Xcode Project Navigator, select the LearningApp project.
 6. In the Project Editor, select the LearningApp target.
-8. On the General tab, set your unique Bundle Identifier(Same as Apple ID's Bundle Identifier of Apple Developer Program) and Signing values. 
+8. On the General tab, set your unique Bundle Identifier(correspond with Apple ID's Bundle Identifier created in Apple Developer Program) and Signing values. 
 9. Build and run the LearningApp project.
 
 **iOS SDK Development Notes**
