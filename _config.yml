@@ -35,6 +35,7 @@ sections:
     ["sdk-implementation", "SDK Implementation"],
     ["push-notifications", "Push Notifications"],
     ["application-badging", "Application Badging"],
+    ["event-tracking", "Event Tracking"],
     ["in-app-message", "In-App Messaging"],
     ["inbox", "Inbox Messaging"],
     ["location", "Location Messaging"],
