@@ -1,0 +1,11 @@
+framework module SFMCSDK {
+  umbrella header "SFMCSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SFMCSDK.Swift {
+    header "SFMCSDK-Swift.h"
+    requires objc
+}
