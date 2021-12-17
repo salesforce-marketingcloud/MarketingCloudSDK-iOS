@@ -1,0 +1,45 @@
+{% assign parsedNames = include.names | split: ',' %} {% assign parsedGists = include.gists | split: ',' %} {% assign
+namesSize
+= parsedNames | size %} {% assign gistsSize = parsedGists | size %}
+<style>
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.button1 {width: 100px;}
+
+</style>
+<div class="tab" id="{{ include.sectionId }}">
+    {% for name in parsedNames %}
+    <button class="tablinks button1" id="{{include.sectionId}}{{ name }}Button" onclick="openLanguage(event, '{{ include.sectionId }}', '{{ include.sectionId }}{{ name }}')">{{
+        name }}</button>
+    {% endfor %}
+</div>
+<div id="{{ include.sectionId }}Gists">
+    {% for i in (0..gistsSize) %} {% if parsedGists[i] %}
+    <div id="{{ include.sectionId }}{{ parsedNames[i] }}" class="tabcontent">
+        <script src="{{ parsedGists[i] }}"></script>
+    </div>
+    {% endif %} {% endfor %}
+</div>
+<script>document.getElementById("{{include.sectionId}}{{ parsedNames[0] }}Button").click()</script>

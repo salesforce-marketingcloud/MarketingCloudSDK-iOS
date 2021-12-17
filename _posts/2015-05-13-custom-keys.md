@@ -11,4 +11,4 @@ Use custom keys to send extra data along with a push notification. You can use c
 
 To implement custom key support in your application, extend your push notification handler to extract the push's userInfo dictionary and the values contained in it.
 
-<script src="https://gist.github.com/69de3e0d2412e973d915d836ba6ffd7f.js"></script>
+{% include tabbed_gists.html sectionId="custom_keys" names="8.x,7.x" gists="https://gist.github.com/stopczewska/c204dcc10af47943e1057789cf710dd1.js,https://gist.github.com/69de3e0d2412e973d915d836ba6ffd7f.js" %}

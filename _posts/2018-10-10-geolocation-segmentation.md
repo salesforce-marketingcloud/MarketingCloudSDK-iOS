@@ -20,7 +20,7 @@ Your app can apply criteria, including information within the MobilePush message
 
 ### Segment Location Messages
 
-<script src="https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js"></script>
+{% include tabbed_gists.html sectionId="geolocation_segmentation" names="8.x,7.x" gists="https://gist.github.com/stopczewska/ec2cc2c49cc52e9cfb0b7f5494d8bb91.js,https://gist.github.com/de2a284ef4462a7358f84c954ae45fb9.js" %}
 
 #### Related Items
 * _MarketingCloudSDK+Location.h_

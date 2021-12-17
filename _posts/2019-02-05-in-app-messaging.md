@@ -24,7 +24,7 @@ You can use the SDK’s optional delegate functionality to control aspects of me
 
 To make your application a delegate of the SDK's in-app messaging functionality, use `sfmc_setEventDelegate`.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/3fc38fc54f3637a8dadcf19a08aee243.js"></script>
+{% include tabbed_gists.html sectionId="in_app_set_event_delegate" names="8.x,7.x" gists="https://gist.github.com/stopczewska/8ca53b6545100515233fc1bd928cb929.js,https://gist.github.com/sfmc-mobilepushsdk/3fc38fc54f3637a8dadcf19a08aee243.js" %}
 
 #### didShowInAppMessage and didCloseInAppMessage
 The following delegate methods help ensure that you can appropriately manage your app's view state. In-app messages are shown as the top view controller in your app's hierarchy. Your application may need to respond to a view appearing or disappearing.
@@ -45,7 +45,7 @@ You can capture the message data and show that message later. For example, prese
 `sfmc_messageIdForMessage`
 
 `sfmc_showInAppMessage`
-<script src="https://gist.github.com/sfmc-mobilepushsdk/211d6335447a1c0b746d277c755562bb.js"></script>
+{% include tabbed_gists.html sectionId="in_app_capture_msg_data" names="8.x,7.x" gists="https://gist.github.com/stopczewska/d22b2d96616d0655453199f5c0f227ab.js,https://gist.github.com/sfmc-mobilepushsdk/211d6335447a1c0b746d277c755562bb.js" %}
 
 #### Customize Display
 
@@ -56,7 +56,7 @@ In-app messages use your device's system font. You can override the default font
 To set the display font, use the following method to pass the SDK a valid font name for the device's installed fonts or your app's custom fonts.
 
 `sfmc_setInAppMessageFontName`
-<script src="https://gist.github.com/sfmc-mobilepushsdk/41603e39d5cef8ad9c84842a9e805320.js"></script>
+{% include tabbed_gists.html sectionId="in_app_message_display_font" names="8.x,7.x" gists="https://gist.github.com/stopczewska/90d53069e3769ad5cef4944cad93c6db.js,https://gist.github.com/sfmc-mobilepushsdk/41603e39d5cef8ad9c84842a9e805320.js" %}
 
 If the font is not a valid font, the SDK returns false and reverts to the system font.
 

@@ -12,13 +12,13 @@ published: true
 
 ## Migrating to 8.x
 
-This SDK update set a more modern architectural foundation to enable a variety of improvements and all new features moving forward. The next generation MobilePush SDK was designed with existing MobilePush customers in mind so that the upgrade path is light and straightforward. 
+This SDK update set a more modern architectural foundation to enable a variety of improvements and all new features moving forward. The next generation MobilePush SDK was designed with existing MobilePush customers in mind so that the upgrade path is light and straightforward.
 
 
 ### Step 1 - Add the new iOS SDK build
 
 * Please remove existing cocoa pod dependency, as the MarketingCloudSDK is now included as a Swift Package (MobilePush).
-* Both dependencies are available via Swift Package Manager 
+* Both dependencies are available via Swift Package Manager
     * Core (SFMCSDK) https://github.com/salesforce-marketingcloud/sfmc-sdk-ios (tag 1.0.0)
     * MobilePush https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS (tag 8.0.0)
 * Please add both dependencies to your application target
@@ -27,37 +27,37 @@ This SDK update set a more modern architectural foundation to enable a variety o
 
 
 
-### Step 2 - Initialize the SDK 
+### Step 2 - Initialize the SDK
 
-You will need to replace your existing initialization function to reference the new SDK. Once you have fetched the updated SDK version in your project, the functions that need to be modified will be highlighted in your codebase. 
+You will need to replace your existing initialization function to reference the new SDK. Once you have fetched the updated SDK version in your project, the functions that need to be modified will be highlighted in your codebase.
 
 
-1. *Update the configuration builder function* as shown in the example below. 
-2. *Ensure that the SDK has initialized correctly* by using a check on the status of initialization, or by using the completion handler, as shown in the example below. 
+1. *Update the configuration builder function* as shown in the example below.
+2. *Ensure that the SDK has initialized correctly* by using a check on the status of initialization, or by using the completion handler, as shown in the example below.
 
 ```swift
-// Old 
+// Old
 
 let builder = MarketingCloudSDKConfigBuilder()
             .sfmc_setApplicationId(appID)
             .sfmc_setAccessToken(accessToken)
             .sfmc_setMarketingCloudServerUrl(appEndpoint)
             .sfmc_build()!
-        
+
 var success = false
-             
+
  do {
     try MarketingCloudSDK.sharedInstance().sfmc_configure(with:builder)
     success = true
 } catch let error as NSError {
     // error logic
 }
-    
+
 if success == true {
     //function logic
 }
- 
-// New 
+
+// New
 
 // With manual check on the module initialization success
 let configuration = PushConfigBuilder(appId: PUSH_APP_ID)
@@ -69,17 +69,17 @@ SFMCSdk.initializeSdk(ConfigBuilder().setPush(config: configuration).build())
 
 if SFMCSdk.mp.getStatus() == .operational {
      //function logic
-} 
+}
 
 // Or with using the completion handler
 let configuration = PushConfigBuilder(appId: PUSH_APP_ID)
      .setAccessToken(PUSH_ACCESS_TOKEN)
      .setMarketingCloudServerUrl(URL(string: PUSH_TSE)!)
      .build()
-     
+
 SFMCSdk.initializeSdk(ConfigBuilder()
      .setPush(
-          config: configuration, 
+          config: configuration,
           onCompletion: {result in print("TODO, Module initialization result is: \(result.rawValue)")}
      ).build())
 ```     
@@ -90,21 +90,20 @@ SFMCSdk.initializeSdk(ConfigBuilder()
 2. *Set the Attributes of a user* - Update your existing identity tracking function setAttribute to instead use the new function setProfileAttributes
 
 ```swift
-// Old 
+// Old
 MarketingCloudSDK.sharedInstance().sfmc_setContactKey("john.smith")
 
-// New 
+// New
 SFMCSdk.identity.setProfileId("john.smith")
 
 
-// Old 
+// Old
 MarketingCloudSDK.sharedInstance().sfmc_setAttributeNamed("email", value: "john@example.com")
 
-// New 
-SFMCSdk.identity.setProfileAttributes("email", "john@example.com")
+// New
+SFMCSdk.identity.setProfileAttributes(["email": "john@example.com"])
 ```
 
 ### Step 4 - Update remaining functions
 
 1. Update your existing functions to reference the new SDK. All existing functions that need to be modified will be highlighted as deprecated in your codebase.
-

@@ -20,7 +20,7 @@ This example uses the MarketingCloudSDK [ConfigBuilder ](https://salesforce-mark
 
 1. Using the `Access Token`, `App ID`, `App Endpoint`, and `MID` values noted when you [Setup Push Apps]({{ site.baseurl }}/get-started/get-started-setupapps.html), configure the SDK in your application.
 
-    <script src="https://gist.github.com/018c4f6f89501a4599031a701563441b.js"></script>
+{% include tabbed_gists.html sectionId="configure_the_sdk" names="8.x,7.x" gists="https://gist.github.com/stopczewska/4f58a460e42ca7fc4eb2f9aca8b9db03.js,https://gist.github.com/018c4f6f89501a4599031a701563441b.js" %}
 
 1. Enable or disable `analytics`, `location`, or `inbox` entries depending on the unique needs of your application and your usage of Marketing Cloud.
 
@@ -30,7 +30,7 @@ Note: iOS Data Protection affects the SDK as follows:
 3. Complete unless open - SDK works in foreground & background after 1st unlock.
 4. Complete - SDK works only in the forground after the device is unlocked.
 
-  
+
 ### Next Steps
 
 [Configure for Push]({{ site.baseurl }}/get-started/get-started-configureforpush.html)

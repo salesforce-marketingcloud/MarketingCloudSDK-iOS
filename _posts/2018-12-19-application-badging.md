@@ -29,7 +29,7 @@ To enable an application's override of badging, pass a configuration value into 
 
 To enable override, use the `sfmc_setApplicationControlsBadging` method in your configuration builder.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js"></script>
+{% include tabbed_gists.html sectionId="app_badging" names="8.x,7.x" gists="https://gist.github.com/stopczewska/991536173ec33a6efacab0c388d8ffd8.js,https://gist.github.com/sfmc-mobilepushsdk/063cf789b9b156e1e4191bad65941614.js" %}
 
 #### Setting and Clearing the Badge
 

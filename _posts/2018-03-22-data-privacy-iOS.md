@@ -74,11 +74,11 @@ Push notifications and Inbox functionality continue to work. The SDK can also co
 If the contact moves out of the Do Not Track state, the SDK receives notification of the change in state, either via a silent push notification or when your application comes to the foreground. This change automatically reconfigures the SDK for use, based on your last-used configuration settings.
 
 ## How to Prepare?
-To prepare your application for data privacy compliance, implement the April 2018 version of the MobilePush SDKs as soon as possible.
+To prepare your application for data privacy compliance, implement the April 2018 version or newer of the MobilePush SDKs as soon as possible.
 
 ### Android
-* Ensure that you implement version 5.5.0 of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
+* Ensure that you implement version 5.5.0 or above of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
 
 ### iOS
-* Ensure that you implement version 5.1.0 of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
+* Ensure that you implement version 5.1.0 or above of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
 * Enable background refresh in your application to assure the best opportunity for silent push notification delivery for seamless mode enablement. Review the [iOS SDK documentation]({{ site.baseurl }}) for more details.

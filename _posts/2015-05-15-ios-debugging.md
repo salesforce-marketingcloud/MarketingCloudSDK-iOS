@@ -10,13 +10,26 @@ The MarketingCloudSDK.framework uses extensive internal logging to record action
 
 General, default-level logging is enabled at all times. Additionally, the SDK writes error and fault-level logs when conditions occur which must be recorded.
 
-Enable debug-level logging after configuration using this call.
+Enable logging using this call. When using version < 8.x enable it after configuration.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/0bd9cdf402145e97136a222bbcad426d.js"></script>
+{% include tabbed_gists.html sectionId="enable_debug_logs" names="8.x,7.x" gists="https://gist.github.com/stopczewska/a1a56b76d0dd7cbbcbcaf19f8329079a.js,https://gist.github.com/sfmc-mobilepushsdk/0bd9cdf402145e97136a222bbcad426d.js" %}
+
+Enable logging with a custom log outputter.
+
+{% include tabbed_gists.html sectionId="enable_debug_logs_outputter" names="8.x" gists="https://gist.github.com/stopczewska/56754efd7ad52c9779e971aabf837508.js" %}
+
+Enable logging with a standard log outputter and a log filter. Check Xcode autocompletion for more filtering options.
+
+{% include tabbed_gists.html sectionId="enable_debug_logs_outputter_filter" names="8.x" gists="https://gist.github.com/stopczewska/3cc45f5c01de599939223480caff04c0.js" %}
+
+Clear previously set filtering options
+
+{% include tabbed_gists.html sectionId="enable_debug_logs_clear_filter" names="8.x" gists="https://gist.github.com/stopczewska/996fabe74a3fa5b471f8d4c95600ec1b.js" %}
+
 
 Query the state of debug-level logging using this call.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/0663b6b494a586e86228b878673a97e5.js"></script>
+{% include tabbed_gists.html sectionId="query_state_of_debug_log" names="7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/0663b6b494a586e86228b878673a97e5.js" %}
 
 We send all logging output to Apple's unified logging system. Read this information using Xcode's “Devices and Simulators” window or the macOS Console application. When SDK debug logging is enabled, the SDK uses the *OS_LOG_TYPE_DEBUG* value. Make sure to disable logging in your application for release builds to the Apple App Store.
 
@@ -26,7 +39,7 @@ Review Apple documentation for more information about [unified logging](https://
 
 For testing and troubleshooting purposes, retrieve your device token from a running app by calling `sfmc_deviceToken()` and send the result to yourself via email, alert, or other method.
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js"></script>
+{% include tabbed_gists.html sectionId="device_token" names="8.x,7.x" gists="https://gist.github.com/stopczewska/b9931a9cae9eb4c3a0a6cc3b78308d8f.js,https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js" %}
 
 #### Send a test push
 
@@ -34,7 +47,7 @@ Test that your app can receive a push directly from APNS (Apple Push Notificatio
 
 - Get the push token from the SDK
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js"></script>
+{% include tabbed_gists.html sectionId="get_sdk_push_token" names="8.x,7.x" gists="https://gist.github.com/stopczewska/b9931a9cae9eb4c3a0a6cc3b78308d8f.js,https://gist.github.com/sfmc-mobilepushsdk/5d549d0e283ca303f293995d35ded4e7.js" %}
 
 - Trigger the APNS API directly from the command line **If using a .p8 Auth Key File**
 
@@ -66,7 +79,7 @@ Ensure that your network team unblocks the following ports to provide communicat
 
 For a complete list of information that the SDK has and it's current state, you can implement getSDKState() as follows:
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js"></script>
+{% include tabbed_gists.html sectionId="add_sdk_state_info" names="8.x,7.x" gists="https://gist.github.com/stopczewska/cfcab4e6664a0cc1c99d2647f2091676.js,https://gist.github.com/sfmc-mobilepushsdk/c5b95248b98586894e68e70dbdcbbf3b.js" %}
 
 
 The SDK will output a JSON string like this:

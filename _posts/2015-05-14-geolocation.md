@@ -34,6 +34,6 @@ In your application delegate method `-application:didFinishLaunchingWithOptions:
 
 Implement the handler for this functionality in your application delegate class:
 
-<script src="https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js"></script>
+{% include tabbed_gists.html sectionId="geolocation_handler_impl" names="8.x,7.x" gists="https://gist.github.com/stopczewska/3dcde481baf924ebbfec9675a11d6c0e.js,https://gist.github.com/b06bc514d446f8a4fd3200aac1b7e5c1.js" %}
 
 See MarketingCloudSDK+Base.h for more information about this method.

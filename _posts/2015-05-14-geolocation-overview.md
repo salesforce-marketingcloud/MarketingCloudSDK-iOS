@@ -7,7 +7,7 @@ date: 2015-05-14 08:44:12
 order: 1
 ---
 ## iOS 14 Location Changes
->As of iOS 14, users will now have the option to use approximate instead of precise location. Users who choose to use this new approximate location permission should not expect geofences or beacons to be triggered. 
+>As of iOS 14, users will now have the option to use approximate instead of precise location. Users who choose to use this new approximate location permission should not expect geofences or beacons to be triggered.
 Ref: https://developer.apple.com/documentation/corelocation/cllocationmanager/3600215-accuracyauthorization
 
 If location is enabled in your MobilePush SDK configuration (via `MarketingCloudSDKConfigBuilder()` `sfmc_setLocationEnabled()`), you can call a single method to use the Marketing Cloud location messaging feature.
@@ -28,7 +28,7 @@ Review the [Apple documentation](https://developer.apple.com/documentation/corel
 
 When your application is ready to enable location features, including geofence and beacon messaging, call the MarketingCloudSDK framework's method to start watching location.
 
-<script src="https://gist.github.com/31864111e51c70fc25581891444ec344.js"></script>
+{% include tabbed_gists.html sectionId="geolocation_overview" names="8.x,7.x" gists="https://gist.github.com/stopczewska/f056ee7401789d33055563e8b266a490.js,https://gist.github.com/31864111e51c70fc25581891444ec344.js" %}
 
 The MarketingCloudSDK+Location.h” header file details additional methods to get information about location and control the frameworks behavior.
 
@@ -53,4 +53,4 @@ If you create your own CLLocationManager object, we cannot guarantee that featur
 
 If you have enabled notifications using MarketingCloudSDK and have called -sfmc_startWatchingLocation,  you can access the device's last known location using the SDK.
 
-<script src="https://gist.github.com/02d2c7f15461981015658691d81a4685.js"></script>
+{% include tabbed_gists.html sectionId="beacon_overview" names="8.x,7.x" gists="https://gist.github.com/stopczewska/3dcde481baf924ebbfec9675a11d6c0e.js,https://gist.github.com/02d2c7f15461981015658691d81a4685.js" %}

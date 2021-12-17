@@ -14,9 +14,9 @@ To implement the MarketingCloudSDK framework in your application, either use Coc
 
 1. Follow the [CocoaPods instructions](https://guides.cocoapods.org/using/using-cocoapods.html) using `MarketingCloudSDK` as a dependency in the podfile. See [CocoaPods - MarketingCloudSDK](https://cocoapods.org/pods/MarketingCloudSDK):
 
-    ``` 
+    ```
 target 'MyApp' do
-  pod 'MarketingCloudSDK', '~> {{ site.currentVersion | slice: 0, 3 }}'
+  pod 'MarketingCloudSDK', '~> 7.6'
 end
     ```
 Open the .xcworkspace created by the install process with Xcode and start using the SDK.
@@ -42,7 +42,7 @@ Open the .xcworkspace created by the install process with Xcode and start using 
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure5.png" /><br/>
   > Review [additional information](https://developer.apple.com/library/content/qa/qa1490/_index.html) from Apple about this linker flag.
-  
+
 ### Next Steps
 
 [Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html)
