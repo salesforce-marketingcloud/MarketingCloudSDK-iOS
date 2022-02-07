@@ -23,4 +23,4 @@ To handle URLs from these sources, follow these instructions.
 
 ## Examples
 
-{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/stopczewska/fcbddb9c4e0f24b00460d327f4d67d4f.js,https://gist.github.com/sfmc-mobilepushsdk/1b58f9577d22daa4467609263b56d922.js" %}
+{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/1afb1d354b531045c08e247d34c0178a.js,https://gist.github.com/sfmc-mobilepushsdk/1b58f9577d22daa4467609263b56d922.js" %}
