@@ -30,7 +30,7 @@ title: "Home"
 
 ## Requirements
 
-* Xcode 10 or later
+* Xcode 12.5 or later (Compatible with Xcode 12.5 onwards)
 * Minimum deployment target of iOS 10.0
 
 ## Get Started
