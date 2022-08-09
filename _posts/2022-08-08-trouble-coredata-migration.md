@@ -11,13 +11,13 @@ order: 5
 
 When the version 8 of the SDK (Unified SDK) was introduced there was a change in how the configuration is being processed by the SDK. As the application ID is being provided to the SDK by the application developer, the configuration builder validates if the provided application ID is a valid uuid String. With this process, the application ID was implicitly uppercased by the Swift programming language class. 
 
-To persist the data, the SDK uses “datastores” which are database files. The files are named after the application ID. This means that after the upgrade, database files would be named using an uppercased version of the provided application ID. The iOS device filesystems are case sensitive and this resulted in a data inconsistency as the v8 SDK reached out to new datastore. This means that currently (v8.0.0 - v8.0.6), devices leveraging SDK v8 hold two separate datastores.
+To persist the data, the SDK uses “datastores” which are database files. The files are named after the application ID. This means that after the upgrade, database files would be named using an uppercased version of the provided application ID. The iOS device file systems are case sensitive and this resulted in a data inconsistency as the v8 SDK reached out to the new datastore. This means that currently (v8.0.0 - v8.0.6), devices leveraging SDK v8 hold two separate datastores.
 
 ## Migration Guide
 
-The following guide will walk through the requirements for migrating your databases' successfully.
+The following guide will walk through the requirements for migrating databases successfully.
 
-The process of "migration" is a unification of the two databases.
+The process of "migration" is a unification of the two databases. A migration tool has been provided with the SDK to facilitate a merging of the two databases that are currently in the file system.
 
 There are three scenarios regarding SDK users:
 
@@ -50,7 +50,7 @@ The migration tool offers two options for migrating data such as ContactKey, Dev
 
 #### Option 1: Automatic Migration
 
-The automatic migration option attempts to migrate the old data into current database by merging the two, with data within the current database taking precedence over the data within the v7.x database  
+The automatic migration option attempts to migrate the old data into the current database by merging the two, with data within the current database taking precedence over the data within the v7.x database.
 
 Below is an illustration of the behavior of the automatic migration tool and how data will be migrated:
 
@@ -120,7 +120,7 @@ _Note: It's recommended to place the following code prior to the initialization 
 
 In the event the migration doesn't operate as intended or the application developer needs to run the migration tool again, there is the option to attempt the migration again.
 
-However, **this does not rollback the current database. It allows the developer to regain access to the data within the old v7.x database.**
+However, **this does not rollback the current database.** It allows the developer to regain access to the data within the old v7.x database.
 
 ##### Code Example
 
