@@ -39,34 +39,13 @@ The merging tool allows you to opt-out of the merge process. By not implementing
 
 ### Opting To Merge
 
-The merging tool offers two options for merging data such as ContactKey, DeviceToken, Attributes, and Tags.
+The merging tool offers two options for merging data (i.e. Attributes and Tags).
 
 #### Option 1: Automatic Merging
 
 The automatic merging option attempts to merge the old data into the current data set by merging the two, with data within the current data set taking precedence over the data within the v7.x data set.
 
 Below is an illustration of the behavior of the automatic merging tool and how data will be merged:
-
--------
-
-##### ContactKey
-
-| Prior Data Set | Current Data Set | Merge Result |
-| :----: | :----: | :----: |
-| old@example.com | _empty_ | old@example.com |
-| _empty_ | current@example.com | current@example.com |
-| old@example.com | current@example.com | current@example.com |
-
--------
-
-##### DeviceToken
-
-
-| Prior Data Set | Current Data Set | Merge Result |
-| :----: | :----: | :----: |
-| device_token_1 | _empty_ | device_token_1 |
-| _empty_ | device_token_2 | device_token_2 |
-| device_token_1 | device_token_2 | device_token_2 |
 
 -------
 
