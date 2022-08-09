@@ -102,6 +102,7 @@ _Note: It's recommended to place the following code prior to the initialization 
 
 The manual merge option allows the application developer to receive both the prior data and the current data in a callback, giving the developer the opportunity to choose what data will ultimately end up in the data set.
 
+It is up to the application developer to determine what attributes and tags are set in the current data set.
 
 ##### Code Example
 
