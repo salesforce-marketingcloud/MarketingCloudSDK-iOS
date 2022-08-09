@@ -9,7 +9,7 @@ order: 5
 
 ## Overview
 
-When the version 8 of the SDK (Unified SDK) was introduced there was a change in how the configuration is being processed by the SDK. As the application ID is being provided to the SDK by the application developer, the configuration builder validates if the provided application ID is a valid uuid String. With this process, the application ID was implicitly uppercased by the Swift programming language class. 
+When the version 8 of the SDK (SFMCSDK) was introduced there was a change in how the configuration is being processed by the SDK. As the application ID is being provided to the SDK by the application developer, the configuration builder validates if the provided application ID is a valid uuid String. With this process, the application ID was implicitly uppercased by the Swift programming language class. 
 
 To persist the data, the SDK uses “datastores” which are database files. The files are named after the application ID. This means that after the upgrade, database files would be named using an uppercased version of the provided application ID. The iOS device file systems are case sensitive and this resulted in a data inconsistency as the v8 SDK reached out to the new datastore. This means that currently (v8.0.0 - v8.0.6), devices leveraging SDK v8 hold two separate datastores.
 
