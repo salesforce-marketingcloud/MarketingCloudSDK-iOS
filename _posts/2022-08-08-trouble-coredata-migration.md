@@ -28,7 +28,7 @@ In some scenarios, an application developer may choose to defer or avoid merging
 
 The merging tool allows one to opt-out of the merge process. By not implementing the below steps, the merge tool defaults to an "opted-out" state.
 
-If an application developer does not opt-in, tags and attributes will not be merged from v7.x to your current application.
+If an application developer is "opted-out" (default), tags and attributes will not be merged from v7.x to your current application.
 
 #### Option 1: Automatic Merging
 
