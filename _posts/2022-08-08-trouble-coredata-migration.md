@@ -7,7 +7,7 @@ date: 2022-08-08 12:00:00
 order: 5
 ---
 
-For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK and applications that intend to upgrade to v8.x in the future.**
+For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK**
 
 The following guide will walk through the requirements for merging data sets successfully.
 
