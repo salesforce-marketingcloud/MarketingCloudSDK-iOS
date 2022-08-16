@@ -7,9 +7,9 @@ date: 2022-08-08 12:00:00
 order: 5
 ---
 
-For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK.**
+For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK and applications that intend to upgrade to v8.x in the future.**
 
- The following guide will walk through the requirements for merging data sets successfully.
+The following guide will walk through the requirements for merging data sets successfully.
 
 ## Steps
 
@@ -27,6 +27,8 @@ The merging tool offers two options for merging data (i.e. Attributes and Tags).
 In some scenarios, an application developer may choose to defer or avoid merging the data sets.
 
 The merging tool allows one to opt-out of the merge process. By not implementing the below steps, the merge tool defaults to an "opted-out" state.
+
+If an application developer does not opt-in, tags and attributes will not be merged from v7.x to your current application.
 
 #### Option 1: Automatic Merging
 
@@ -71,6 +73,8 @@ _Note: It's recommended to place the following code prior to the initialization 
 The manual merge option allows the application developer to receive both the prior data and the current data in a callback, giving the developer the opportunity to choose what data will ultimately end up in the data set.
 
 It is up to the application developer to determine what attributes and tags are set in the current data set.
+
+> _IMPORTANT_: You will be given access to the v8.x and v7.x tags and attributes _prior to_ the SDK being initialized! The developer will need to hold onto the data until the SDK had been initialized, so that you may set (for example) your tags using SFMCSdk.mp.addTags().
 
 <br>
 
