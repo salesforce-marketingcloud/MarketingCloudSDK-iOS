@@ -76,10 +76,6 @@ It is up to the application developer to determine what attributes and tags are 
 
 > _IMPORTANT_: You will be given access to the v8.x and v7.x tags and attributes _prior to_ the SDK being initialized! The developer will need to hold onto the data until the SDK had been initialized, so that you may set (for example) your tags using SFMCSdk.mp.addTags().
 
-<br>
-
-_Note: It's recommended to place the following code prior to the initialization of the SDK_
-
 {% include tabbed_gists.html sectionId="manual_merging_optin" names="Swift,Obj-C" gists="https://gist.github.com/sfmc-mobilepushsdk/ecddccc7199ce27df08996014a7b623e.js,https://gist.github.com/sfmc-mobilepushsdk/8dfce5a8b9d6686eeae8c2c290cd4db8.js" %}
 
 ## Retrying
