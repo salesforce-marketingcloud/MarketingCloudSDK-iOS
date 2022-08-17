@@ -7,7 +7,7 @@ date: 2022-08-08 12:00:00
 order: 5
 ---
 
-For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK**
+For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK**.
 
 The following guide will walk through the requirements for merging data sets successfully.
 
@@ -28,7 +28,7 @@ In some scenarios, an application developer may choose to defer or avoid merging
 
 The merging tool allows one to opt-out of the merge process. By not implementing the below steps, the merge tool defaults to an "opted-out" state.
 
-If an application developer is "opted-out" (default), tags and attributes will not be merged from v7.x to your current application.
+If an application developer is "opted-out" (default), tags and attributes will not be merged from the v7.x data set to your current application's data set.
 
 #### Option 1: Automatic Merging
 
