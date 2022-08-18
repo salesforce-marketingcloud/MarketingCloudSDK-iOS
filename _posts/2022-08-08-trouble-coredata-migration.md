@@ -7,7 +7,7 @@ date: 2022-08-08 12:00:00
 order: 5
 ---
 
-For iOS devices upgraded from v7.x to v8.x, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to v8.x of the SDK**.
+For iOS devices upgraded from v7.x to versions up to v8.0.6, the previous v7.x tags/attributes are being held on the device and not sent to the server. If an application does not reset or re-generate tags/attributes, the device will send empty tags and attributes to the system. **The applications that have been affected are those that have migrated from v7.x to <=v8.0.6 of the SDK**.
 
 The following guide will walk through the requirements for merging data sets successfully.
 
@@ -64,7 +64,7 @@ _Note: For this example we denote Key:Value pairs by denoting ":" as the separat
 
 <br>
 
-_Note: It's recommended to place the following code prior to the initialization of the SDK_
+_Note: It's recommended to place the following code prior to the initialization of the SDK to ensure the completion callback (passed into setAutoMergePolicy) is set prior to initialization_
 
 {% include tabbed_gists.html sectionId="automatic_merging_optin" names="Swift,Obj-C" gists="https://gist.github.com/sfmc-mobilepushsdk/45eff5f9d313ea752b12a7a74acd7667.js,https://gist.github.com/sfmc-mobilepushsdk/b462cec6e9a2b66dbcf64d75a0406839.js" %}
 
