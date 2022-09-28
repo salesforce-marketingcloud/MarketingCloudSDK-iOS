@@ -64,5 +64,7 @@ exclude: ["bin", "README.md", "docker-compose.yml"]
 # Use the kramdown Markdown renderer
 markdown: kramdown
 
+currentMajorMinor: "8.0"
+
 # Current SDK version, use for all mentions
 currentVersion: "8.0.8"

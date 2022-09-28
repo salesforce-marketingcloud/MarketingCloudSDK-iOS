@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MarketingCloudSDKConfigBuilder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MarketingCloudSDKConfigBuilder" class="dashAnchor"></a>
+    <a title="MarketingCloudSDKConfigBuilder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MarketingCloudSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MarketingCloudSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MarketingCloudSDKConfigBuilder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDelegate.html">MarketingCloudSDKInboxMessagesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobilePushSDK.html">MobilePushSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfig.html">PushConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfigBuilder.html">PushConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushModule.html">PushModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKErrorDomain">MarketingCloudSDKErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKInboxMessageKey">MarketingCloudSDKInboxMessageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCBeaconRefreshCompleteNotification">SFMCBeaconRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidDisplayLocationMessageNotification">SFMCDidDisplayLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidEnterLocationRegionMessageNotification">SFMCDidEnterLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidExitLocationRegionMessageNotification">SFMCDidExitLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidRangeBeaconLocationMessageNotification">SFMCDidRangeBeaconLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationRegistrationResponseSucceededNotification">SFMCFoundationRegistrationResponseSucceededNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationUNNotificationReceivedNotification">SFMCFoundationUNNotificationReceivedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidBlockNotification">SFMCFrameworkDidBlockNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidSetupNotification">SFMCFrameworkDidSetupNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidTeardownNotification">SFMCFrameworkDidTeardownNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNewInboxMessagesNotification">SFMCInboxMessagesNewInboxMessagesNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNotificationHandledNotification">SFMCInboxMessagesNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesRefreshCompleteNotification">SFMCInboxMessagesRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesUpdateStatusCompleteNotification">SFMCInboxMessagesUpdateStatusCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidFixLocationNotification">SFMCLocationDidFixLocationNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidReceiveLocationUpdateNotification">SFMCLocationDidReceiveLocationUpdateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidStartMonitoringForRegionNotification">SFMCLocationDidStartMonitoringForRegionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationGeofenceRefreshCompleteNotification">SFMCLocationGeofenceRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCOpenDirectMessageNotificationHandledNotification">SFMCOpenDirectMessageNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeAction">SFMCURLTypeAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeCloudPage">SFMCURLTypeCloudPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeOpenDirect">SFMCURLTypeOpenDirect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthEventType.html">AuthEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/configureError.html">configureError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKLocationDelegate.html">MarketingCloudSDKLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MarketingCloudSDKConfigBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">MarketingCloudSDKConfigBuilder</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>The MarketingCloudSDKConfigBuilder class</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_build"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_build" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_build">-sfmc_build</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a NSDictionary containing the current builder configuration settings. This can be passed to the MarketingCloudSDK sfmc_configureWithDictionary method(s)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="n">_Nullable</span><span class="p">)</span><span class="n">sfmc_build</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NSDictionary containing the current builder configuration settings.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setApplicationId:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setApplicationId:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setApplicationId:">-sfmc_setApplicationId:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value to use for the Salesforce MarketingCloud Application ID.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setApplicationId</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">setApplicationId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setApplicationId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the value to use for the Salesforce MarketingCloud application ID.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setAccessToken:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setAccessToken:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setAccessToken:">-sfmc_setAccessToken:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value to use for the Salesforce MarketingCloud Tenant accessToken.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setAccessToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">setAccessToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setAccessToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the value to use for the Salesforce MarketingCloud accessToken.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setLocationEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setLocationEnabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setLocationEnabled:">-sfmc_setLocationEnabled:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration flag that enables or disables location services</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setLocationEnabled</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">setLocationEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setLocationEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setInboxEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setInboxEnabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setInboxEnabled:">-sfmc_setInboxEnabled:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration flag that enables or disables inbox services</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setInboxEnabled</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">setInboxEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setInboxEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setPiAnalyticsEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setPiAnalyticsEnabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setPiAnalyticsEnabled:">-sfmc_setPiAnalyticsEnabled:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration flag that enables or disables Salesforce Predictive Intelligence analytics services</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setPiAnalyticsEnabled</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">setPiAnalyticsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setPiAnalyticsEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setUseLegacyPIIdentifier:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setUseLegacyPIIdentifier:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setUseLegacyPIIdentifier:">-sfmc_setUseLegacyPIIdentifier:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration flag that enables or disables Salesforce Predictive Intelligence email override
+to take contactKey if no value is set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setUseLegacyPIIdentifier</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">etUseLegacyPIIdentifier</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>etUseLegacyPIIdentifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setAnalyticsEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setAnalyticsEnabled:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setAnalyticsEnabled:">-sfmc_setAnalyticsEnabled:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration flag that enables or disables Salesforce MarketingCloud Analytics services</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setAnalyticsEnabled</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">setAnalyticsEnabled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setAnalyticsEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setMid:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setMid:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setMid:">-sfmc_setMid:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value to use for the Salesforce MarketingCloud Tenant Specific mid.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setMid</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">setMid</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setMid</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the value to use for the Salesforce MarketingCloud Tenant Specific mid.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setMarketingCloudServerUrl:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setMarketingCloudServerUrl:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setMarketingCloudServerUrl:">-sfmc_setMarketingCloudServerUrl:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value to use for the Salesforce MarketingCloud Tenant Specific Url.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setMarketingCloudServerUrl</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">setMarketingCloudServerUrl</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setMarketingCloudServerUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the value to use for the Salesforce Tenant Specific Url.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setApplicationControlsBadging:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setApplicationControlsBadging:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setApplicationControlsBadging:">-sfmc_setApplicationControlsBadging:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value which enables or disables application control over badging</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setApplicationControlsBadging</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">setApplicationControlsBadging</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>setApplicationControlsBadging</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setDelayRegistrationUntilContactKeyIsSet:"></a>
+                    <a name="//apple_ref/swift/Method/-sfmc_setDelayRegistrationUntilContactKeyIsSet:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)MarketingCloudSDKConfigBuilder(im)sfmc_setDelayRegistrationUntilContactKeyIsSet:">-sfmc_setDelayRegistrationUntilContactKeyIsSet:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the configuration value which enables or disables application control over delaying SDK registration until a contact key is set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">instancetype</span><span class="p">)</span><span class="nf">sfmc_setDelayRegistrationUntilContactKeyIsSet</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSNumber</span> <span class="o">*</span><span class="p">)</span><span class="nv">delayRegistrationUntilContactKeyIsSet</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delayRegistrationUntilContactKeyIsSet</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Allows setting the state to YES or NO.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>returns the MarketingCloudSDKConfigBuilder instancetype value</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2022-09-22)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
