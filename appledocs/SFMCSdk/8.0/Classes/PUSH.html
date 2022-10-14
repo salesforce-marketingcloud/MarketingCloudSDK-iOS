@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PUSH Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PUSH" class="dashAnchor"></a>
+    <a title="PUSH Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFMCSdk Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFMCSdk Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PUSH Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AuthHeader.html">AuthHeader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Behavior.html">Behavior</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BehaviorManager.html">BehaviorManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CDP.html">CDP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkCompatibility">Compatibility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CompletedCall.html">CompletedCall</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkConfig">Config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigBuilder.html">ConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CustomEvent.html">CustomEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EncryptionManager.html">EncryptionManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EngagementEvent.html">EngagementEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventBus.html">EventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDENTITY.html">IDENTITY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutputter.html">LogOutputter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Message.html">Message</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModuleLogger.html">ModuleLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkManager.html">NetworkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PUSH.html">PUSH</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdk.html">SFMCSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdkComponents.html">SFMCSdkComponents</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdkLogger.html">SFMCSdkLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SecurePrefs.html">SecurePrefs</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StorageManager.html">StorageManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemEvent.html">SystemEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedRequest.html">WrappedRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedRequest/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedResponse.html">WrappedResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/BehaviorType.html">BehaviorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Consent.html">Consent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/DataMergePolicy.html">DataMergePolicy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/EventCategory.html">EventCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LogLevel.html">LogLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggerCategory.html">LoggerCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/LoggerSubsystem.html">LoggerSubsystem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/MessageProducer.html">MessageProducer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ModuleName.html">ModuleName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ModuleStatus.html">ModuleStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/NetworkManagerError.html">NetworkManagerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationResult.html">OperationResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/Authenticator.html">Authenticator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BehaviorObserver.html">BehaviorObserver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/CdpInterface.html">CdpInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Coordinates.html">Coordinates</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentityEventProtocol.html">IdentityEventProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageEventDelegate.html">InAppMessageEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDataSource">InboxMessagesDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDelegate">InboxMessagesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleConfig.html">ModuleConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleIdentity.html">ModuleIdentity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PushInterface.html">PushInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMCModule.html">SFMCModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Subscriber.html">Subscriber</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLHandlingDelegate.html">URLHandlingDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7SFMCSDK23AutoMergePolicyCallbacka">AutoMergePolicyCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:7SFMCSDK25ManualMergePolicyCallbacka">ManualMergePolicyCallback</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PUSH</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc(SFMCSdkPUSH)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PUSH</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/PushInterface.html">PushInterface</a></span><span class="p">,</span> <span class="kt">SFMCModuleApi</span></code></pre>
+
+                </div>
+              </div>
+            <p>Push module</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getStatus"></a>
+                    <a name="//apple_ref/swift/Method/getStatus()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getStatus">getStatus()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getStatus</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Enums/ModuleStatus.html">ModuleStatus</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getIdentity"></a>
+                    <a name="//apple_ref/swift/Method/getIdentity()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getIdentity">getIdentity()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIdentity</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/ModuleIdentity.html">ModuleIdentity</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)tearDown"></a>
+                    <a name="//apple_ref/swift/Method/tearDown()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)tearDown">tearDown()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tearDown</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)contactKey"></a>
+                    <a name="//apple_ref/swift/Method/contactKey()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)contactKey">contactKey()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contactKey</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)addTag:"></a>
+                    <a name="//apple_ref/swift/Method/addTag(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)addTag:">addTag(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTag</span><span class="p">(</span><span class="n">_</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)addTags:"></a>
+                    <a name="//apple_ref/swift/Method/addTags(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)addTags:">addTags(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)removeTag:"></a>
+                    <a name="//apple_ref/swift/Method/removeTag(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)removeTag:">removeTag(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeTag</span><span class="p">(</span><span class="n">_</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)tags"></a>
+                    <a name="//apple_ref/swift/Method/tags()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)tags">tags()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tags</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setDeviceToken:"></a>
+                    <a name="//apple_ref/swift/Method/setDeviceToken(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setDeviceToken:">setDeviceToken(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setDebugLoggingEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setDebugLoggingEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setDebugLoggingEnabled:">setDebugLoggingEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDebugLoggingEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)attributes"></a>
+                    <a name="//apple_ref/swift/Method/attributes()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)attributes">attributes()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)deviceToken"></a>
+                    <a name="//apple_ref/swift/Method/deviceToken()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)deviceToken">deviceToken()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deviceToken</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)accessToken"></a>
+                    <a name="//apple_ref/swift/Method/accessToken()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)accessToken">accessToken()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accessToken</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)deviceIdentifier"></a>
+                    <a name="//apple_ref/swift/Method/deviceIdentifier()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)deviceIdentifier">deviceIdentifier()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deviceIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setNotificationRequest:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationRequest(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setNotificationRequest:">setNotificationRequest(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">UNNotificationRequest</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)notificationRequest"></a>
+                    <a name="//apple_ref/swift/Method/notificationRequest()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)notificationRequest">notificationRequest()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationRequest</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationRequest</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setNotificationUserInfo:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationUserInfo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setNotificationUserInfo:">setNotificationUserInfo(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationUserInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)notificationUserInfo"></a>
+                    <a name="//apple_ref/swift/Method/notificationUserInfo()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)notificationUserInfo">notificationUserInfo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationUserInfo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setPushEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setPushEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setPushEnabled:">setPushEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPushEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">pushEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)pushEnabled"></a>
+                    <a name="//apple_ref/swift/Method/pushEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)pushEnabled">pushEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pushEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)refreshWithFetchCompletionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/refresh(fetchCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)refreshWithFetchCompletionHandler:">refresh(fetchCompletionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refresh</span><span class="p">(</span><span class="n">fetchCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIBackgroundFetchResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setSignedString:"></a>
+                    <a name="//apple_ref/swift/Method/setSignedString(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setSignedString:">setSignedString(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSignedString</span><span class="p">(</span><span class="n">_</span> <span class="nv">signedString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)signedString"></a>
+                    <a name="//apple_ref/swift/Method/signedString()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)signedString">signedString()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedString</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setEventDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setEventDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setEventDelegate:">setEventDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setEventDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageEventDelegate.html">InAppMessageEventDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)messageIdForMessage:"></a>
+                    <a name="//apple_ref/swift/Method/messageId(forMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)messageIdForMessage:">messageId(forMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">messageId</span><span class="p">(</span><span class="nv">forMessage</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)showInAppMessageWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/showInAppMessage(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)showInAppMessageWithMessageId:">showInAppMessage(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showInAppMessage</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setInAppMessageWithFontName:"></a>
+                    <a name="//apple_ref/swift/Method/setInAppMessage(fontName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setInAppMessageWithFontName:">setInAppMessage(fontName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setInAppMessage</span><span class="p">(</span><span class="nv">fontName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getAllMessages"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getAllMessages">getAllMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getUnreadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getUnreadMessages">getUnreadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getReadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getReadMessages">getReadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getDeletedMessages"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getDeletedMessages">getDeletedMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getAllMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getAllMessagesCount">getAllMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getUnreadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getUnreadMessagesCount">getUnreadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getReadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getReadMessagesCount">getReadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getDeletedMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)getDeletedMessagesCount">getDeletedMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageRead:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageRead(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageRead:">markMessageRead(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageRead</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageDeleted:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageDeleted(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageDeleted:">markMessageDeleted(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageDeleted</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageWithIdReadWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageWithIdRead(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageWithIdReadWithMessageId:">markMessageWithIdRead(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageWithIdRead</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageWithIdDeletedWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageWithIdDeleted(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markMessageWithIdDeletedWithMessageId:">markMessageWithIdDeleted(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageWithIdDeleted</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markAllMessagesRead"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesRead()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markAllMessagesRead">markAllMessagesRead()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesRead</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markAllMessagesDeleted"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesDeleted()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)markAllMessagesDeleted">markAllMessagesDeleted()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesDeleted</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)refreshMessages"></a>
+                    <a name="//apple_ref/swift/Method/refreshMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)refreshMessages">refreshMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)inboxMessagesTableViewDataSourceForTableView:"></a>
+                    <a name="//apple_ref/swift/Method/inboxMessagesTableViewDataSourceFor(tableView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)inboxMessagesTableViewDataSourceForTableView:">inboxMessagesTableViewDataSourceFor(tableView:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inboxMessagesTableViewDataSourceFor</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDataSource">InboxMessagesDataSource</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)inboxMessagesTableViewDelegateForTableView:dataSource:"></a>
+                    <a name="//apple_ref/swift/Method/inboxMessagesTableViewDelegateFor(tableView:dataSource:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)inboxMessagesTableViewDelegateForTableView:dataSource:">inboxMessagesTableViewDelegateFor(tableView:<wbr>dataSource:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inboxMessagesTableViewDelegateFor</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDataSource">InboxMessagesDataSource</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDelegate">InboxMessagesDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setPiIdentifier:"></a>
+                    <a name="//apple_ref/swift/Method/setPiIdentifier(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setPiIdentifier:">setPiIdentifier(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPiIdentifier</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)piIdentifier"></a>
+                    <a name="//apple_ref/swift/Method/piIdentifier()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)piIdentifier">piIdentifier()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">piIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)trackMessageOpened:"></a>
+                    <a name="//apple_ref/swift/Method/trackMessageOpened(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)trackMessageOpened:">trackMessageOpened(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackMessageOpened</span><span class="p">(</span><span class="n">_</span> <span class="nv">inboxMessage</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)trackPageViewWithUrl:title:item:search:"></a>
+                    <a name="//apple_ref/swift/Method/trackPageView(url:title:item:search:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)trackPageViewWithUrl:title:item:search:">trackPageView(url:<wbr>title:<wbr>item:<wbr>search:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackPageView</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">search</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setLocationDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setLocationDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setLocationDelegate:">setLocationDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocationDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/LocationDelegate.html">LocationDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)regionFromDictionary:"></a>
+                    <a name="//apple_ref/swift/Method/regionFrom(dictionary:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)regionFromDictionary:">regionFrom(dictionary:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">regionFrom</span><span class="p">(</span><span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">CLRegion</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)locationEnabled"></a>
+                    <a name="//apple_ref/swift/Method/locationEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)locationEnabled">locationEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)startWatchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/startWatchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)startWatchingLocation">startWatchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startWatchingLocation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)stopWatchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/stopWatchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)stopWatchingLocation">stopWatchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopWatchingLocation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)watchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/watchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)watchingLocation">watchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">watchingLocation</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)lastKnownLocation"></a>
+                    <a name="//apple_ref/swift/Method/lastKnownLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)lastKnownLocation">lastKnownLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastKnownLocation</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setURLHandlingDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setURLHandlingDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)setURLHandlingDelegate:">setURLHandlingDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setURLHandlingDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/URLHandlingDelegate.html">URLHandlingDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)resetDataPolicy"></a>
+                    <a name="//apple_ref/swift/Method/resetDataPolicy()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH(im)resetDataPolicy">resetDataPolicy()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetDataPolicy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2022-10-13)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

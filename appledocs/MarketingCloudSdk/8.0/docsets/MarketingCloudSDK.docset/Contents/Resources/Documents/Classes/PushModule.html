@@ -1,0 +1,2938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PushModule Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PushModule" class="dashAnchor"></a>
+    <a title="PushModule Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MarketingCloudSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MarketingCloudSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PushModule Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDelegate.html">MarketingCloudSDKInboxMessagesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobilePushSDK.html">MobilePushSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfig.html">PushConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfigBuilder.html">PushConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushModule.html">PushModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKErrorDomain">MarketingCloudSDKErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKInboxMessageKey">MarketingCloudSDKInboxMessageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCBeaconRefreshCompleteNotification">SFMCBeaconRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidDisplayLocationMessageNotification">SFMCDidDisplayLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidEnterLocationRegionMessageNotification">SFMCDidEnterLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidExitLocationRegionMessageNotification">SFMCDidExitLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidRangeBeaconLocationMessageNotification">SFMCDidRangeBeaconLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationRegistrationResponseSucceededNotification">SFMCFoundationRegistrationResponseSucceededNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationUNNotificationReceivedNotification">SFMCFoundationUNNotificationReceivedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidBlockNotification">SFMCFrameworkDidBlockNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidSetupNotification">SFMCFrameworkDidSetupNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidTeardownNotification">SFMCFrameworkDidTeardownNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNewInboxMessagesNotification">SFMCInboxMessagesNewInboxMessagesNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNotificationHandledNotification">SFMCInboxMessagesNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesRefreshCompleteNotification">SFMCInboxMessagesRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesUpdateStatusCompleteNotification">SFMCInboxMessagesUpdateStatusCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidFixLocationNotification">SFMCLocationDidFixLocationNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidReceiveLocationUpdateNotification">SFMCLocationDidReceiveLocationUpdateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidStartMonitoringForRegionNotification">SFMCLocationDidStartMonitoringForRegionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationGeofenceRefreshCompleteNotification">SFMCLocationGeofenceRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCOpenDirectMessageNotificationHandledNotification">SFMCOpenDirectMessageNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeAction">SFMCURLTypeAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeCloudPage">SFMCURLTypeCloudPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeOpenDirect">SFMCURLTypeOpenDirect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthEventType.html">AuthEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/configureError.html">configureError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKLocationDelegate.html">MarketingCloudSDKLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PushModule</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc(SFMCSdkPushModule)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PushModule</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SFMCModule</span><span class="p">,</span> <span class="kt">PushInterface</span><span class="p">,</span> <span class="kt">Subscriber</span><span class="p">,</span> <span class="kt">Publisher</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is a Swift Interface  for SFMCSdkPushModule</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(py)name"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(py)name">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enum to get the Module Name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">ModuleName</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)moduleVersion"></a>
+                    <a name="//apple_ref/swift/Variable/moduleVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)moduleVersion">moduleVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>String to get the Module Version</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">moduleVersion</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)stateProperties"></a>
+                    <a name="//apple_ref/swift/Variable/stateProperties" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)stateProperties">stateProperties</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary to get the SDK properties</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">stateProperties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)status"></a>
+                    <a name="//apple_ref/swift/Variable/status" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)status">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enum to get the status of Module with options =&gt; .inactive, .cancelled, .disabled, .failed, .initializing, .operational</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">ModuleStatus</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)shared"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)shared">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Singleton interface to access the PushModule</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">PushModule</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)logger"></a>
+                    <a name="//apple_ref/swift/Variable/logger" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)logger">logger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unified Logger initialized for &lsquo;Push&rsquo; Module
+Usage: logger.d(category: .event, message: &ldquo;Message&rdquo;)
+Category : Enum with following values =&gt; auth, behavior, encryption, eventBus, network, module, sdk, storage, consent, coredata, database, event, identity, interface, location, session, util</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">logger</span><span class="p">:</span> <span class="kt">ModuleLogger</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)getLogger"></a>
+                    <a name="//apple_ref/swift/Method/getLogger()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)getLogger">getLogger()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unified Logger initialized for &lsquo;Push&rsquo; Module</p>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+
+<p>PushModule.shared.getLogger().d(category: .event, message: &ldquo;Message&rdquo;)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getLogger</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">ModuleLogger</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getIdentity"></a>
+                    <a name="//apple_ref/swift/Method/getIdentity()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getIdentity">getIdentity()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is used to get the SDK identity attributes such as applicationId, customProperties, installationId, profileId</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getIdentity</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">ModuleIdentity</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)receiveWithMessage:"></a>
+                    <a name="//apple_ref/swift/Method/receive(message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)receiveWithMessage:">receive(message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is used to receive message from publishers and update the identities like profile atributes and contactKey</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">receive</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">Message</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SFMCEvent, publish to specific Custom event</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendSfmcEvent:category:"></a>
+                    <a name="//apple_ref/swift/Method/sendSfmcEvent(_:category:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendSfmcEvent:category:">sendSfmcEvent(_:<wbr>category:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is used to publish to a custom event, SFMCEvent</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sendSfmcEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">event</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SFMCEvent.html">SFMCEvent</a></span><span class="p">,</span> <span class="nv">category</span><span class="p">:</span> <span class="kt">EventCategory</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>event</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>SFMCEvent, publish to specific Custom event</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>category</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EventCategory, category which falls under any one of the category 1) .engagemnt, 2) .identity, 3) .system</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForTags"></a>
+                    <a name="//apple_ref/swift/Method/sendIdentityEventForTags()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForTags">sendIdentityEventForTags()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is to listen to specific tags set by the consuming application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sendIdentityEventForTags</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForContactKey"></a>
+                    <a name="//apple_ref/swift/Method/sendIdentityEventForContactKey()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForContactKey">sendIdentityEventForContactKey()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is to listen to contactkey set by the consuming application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sendIdentityEventForContactKey</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForAttributes"></a>
+                    <a name="//apple_ref/swift/Method/sendIdentityEventForAttributes()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForAttributes">sendIdentityEventForAttributes()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is to listen to attributes set by the consuming application</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">sendIdentityEventForAttributes</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)metadata"></a>
+                    <a name="//apple_ref/swift/Method/metadata()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)metadata">metadata()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is to get the SDK metadata</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">metadata</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tearDown"></a>
+                    <a name="//apple_ref/swift/Method/tearDown()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tearDown">tearDown()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method properly closes down the MarketingCloudSDK. It should be used in any cases where references to the MarketingCloudSDK need to be released. Ensure to be called when sdk is operational
+Eg: if(SFMCSdk.mp.getStatus() == .operational) { SFMCSdk.mp.tearDown()}</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tearDown</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)contactKey"></a>
+                    <a name="//apple_ref/swift/Method/contactKey()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)contactKey">contactKey()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the contact key for the active user, in case you need it.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contactKey</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Contact key String that is set in the application.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTag:"></a>
+                    <a name="//apple_ref/swift/Method/addTag(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTag:">addTag(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the provided Tag (NSString) to the set of unique tags.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTag</span><span class="p">(</span><span class="n">_</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string to add to the list of tags.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if added successfully.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTags:"></a>
+                    <a name="//apple_ref/swift/Method/addTags(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTags:">addTags(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds the provided array of Tags (NSString) to the set of unique tags.
+Will trim leading and trailing whitespace.
+ Cannot be nil or blank.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">addTags</span><span class="p">(</span><span class="n">_</span> <span class="nv">tags</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tags</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags to add to the list.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Set of tags added, as strings, or nil if something failed.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)removeTag:"></a>
+                    <a name="//apple_ref/swift/Method/removeTag(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)removeTag:">removeTag(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes the provided Tag (NSString) from the list of tags.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">removeTag</span><span class="p">(</span><span class="n">_</span> <span class="nv">tag</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tag</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A string to remove from the list of tags.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>YES if removed successfully.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tags"></a>
+                    <a name="//apple_ref/swift/Method/tags()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tags">tags()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the list of tags for this device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tags</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt">AnyHashable</span><span class="o">&gt;</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>All tags associated, as strings.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDeviceToken:"></a>
+                    <a name="//apple_ref/swift/Method/setDeviceToken(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDeviceToken:">setDeviceToken(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Responsible for sending the Apple device token back to Salesforce. It marks the end of the token registration flow. If it is unable to reach Salesforce server, it will save the token and try again later.
+This method is necessary to the implementation of Salesforce Push.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of tags to add to the list.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDebugLoggingEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setDebugLoggingEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDebugLoggingEnabled:">setDebugLoggingEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enable/Disable extra debug logging from the SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDebugLoggingEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>BOOL for enabling or disabling extra SDK logging.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceToken"></a>
+                    <a name="//apple_ref/swift/Method/deviceToken()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceToken">deviceToken()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the device token as a NSString.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deviceToken</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)attributes"></a>
+                    <a name="//apple_ref/swift/Method/attributes()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)attributes">attributes()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a read-only copy of the Attributes dictionary as it is right now.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">attributes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)accessToken"></a>
+                    <a name="//apple_ref/swift/Method/accessToken()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)accessToken">accessToken()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the Salesforce application accessToken.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">accessToken</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceIdentifier"></a>
+                    <a name="//apple_ref/swift/Method/deviceIdentifier()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceIdentifier">deviceIdentifier()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the unique device identifier that Salesforce will use to identify the device.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deviceIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationRequest:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationRequest(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationRequest:">setNotificationRequest(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the SDK of the current notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span><span class="p">:</span> <span class="kt">UNNotificationRequest</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationRequest"></a>
+                    <a name="//apple_ref/swift/Method/notificationRequest()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationRequest">notificationRequest()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last notification delivered to the SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationRequest</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationRequest</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationUserInfo:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationUserInfo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationUserInfo:">setNotificationUserInfo(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the SDK of the current notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationUserInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user info the last notification delivered to the SDK.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationUserInfo"></a>
+                    <a name="//apple_ref/swift/Method/notificationUserInfo()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationUserInfo">notificationUserInfo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user info of the last notification delivered to the SDK.</p>
+<pre class="highlight swift"><code>   <span class="kd">@return</span> <span class="kt">NSDictionary</span> <span class="o">*</span> <span class="kt">The</span> <span class="n">user</span> <span class="n">info</span> <span class="n">the</span> <span class="n">last</span> <span class="n">notification</span> <span class="n">delivered</span> <span class="n">to</span> <span class="n">the</span> <span class="kt">SDK</span><span class="o">.</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationUserInfo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPushEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setPushEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPushEnabled:">setPushEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated.
+When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.)
+Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPushEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">pushEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pushEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set to YES to enable push notifications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)pushEnabled"></a>
+                    <a name="//apple_ref/swift/Method/pushEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)pushEnabled">pushEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current state of the developer&rsquo;s push enablement override
+ The current state of the pushEnabled flag in the SDK.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">pushEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshWithFetchCompletionHandler:"></a>
+                    <a name="//apple_ref/swift/Method/refresh(fetchCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshWithFetchCompletionHandler:">refresh(fetchCompletionHandler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ask MarketingCloudSDK to update its data. MarketingCloudSDK will throttle attempts based on the time since the last time this was called.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refresh</span><span class="p">(</span><span class="n">fetchCompletionHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">UIBackgroundFetchResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionHandler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIBackgroundFetchResult completion handler. This method will be called with UIBackgroundFetchResultNoData if no attempt was made to update data, otherwise it will be called with UIBackgroundFetchResultNewData after the update completes. If nil is passed, then process of the completion handler must be managed by the caller.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setSignedString:"></a>
+                    <a name="//apple_ref/swift/Method/setSignedString(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setSignedString:">setSignedString(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a signedString security token for registration security</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setSignedString</span><span class="p">(</span><span class="n">_</span> <span class="nv">signedString</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>signedString</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>signedString opaque token used to verify registration. pass nil to clear signedString.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)signedString"></a>
+                    <a name="//apple_ref/swift/Method/signedString()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)signedString">signedString()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the value of last stored signedString security token</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">signedString</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setEventDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setEventDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setEventDelegate:">setEventDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>In-app messages is used to deliver relevant, personalized messages to the app’s users with in-app messaging without relying on users having enabled push notifications. Set inapp message delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setEventDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">InAppMessageEventDelegate</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)messageIdForMessage:"></a>
+                    <a name="//apple_ref/swift/Method/messageId(forMessage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)messageIdForMessage:">messageId(forMessage:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Message Id for a given message dictionary</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">messageId</span><span class="p">(</span><span class="nv">forMessage</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Message Dictionary</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)showInAppMessageWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/showInAppMessage(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)showInAppMessageWithMessageId:">showInAppMessage(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Show in-app message in the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showInAppMessage</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>MessageId Id of the in-app message to be shown</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setInAppMessageWithFontName:"></a>
+                    <a name="//apple_ref/swift/Method/setInAppMessage(fontName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setInAppMessageWithFontName:">setInAppMessage(fontName:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set in-app message to be shown in the app with specified font</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setInAppMessage</span><span class="p">(</span><span class="nv">fontName</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fontName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Fontname in which the app should be set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessages"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessages">getAllMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of all messages that includes read, unread , deleted messages</p>
+
+<p><a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/inbox/inbox.html">Public properties in inbox message dictionary </a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>an Array of  Dictionary containing all messages (read, unread and deleted)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessages">getUnreadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of unread messages</p>
+
+<p><a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/inbox/inbox.html">Public properties in inbox message dictionary </a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessages">getReadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of read messages</p>
+
+<p><a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/inbox/inbox.html">Public properties in inbox message dictionary </a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessages"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessages">getDeletedMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns an array of deleted messages</p>
+
+<p><a href="https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/inbox/inbox.html">Public properties in inbox message dictionary </a></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessagesCount">getAllMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns all messages count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessagesCount">getUnreadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns unread messages count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessagesCount">getReadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns read messages count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessagesCount">getDeletedMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns deleted messages count</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UInt</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageRead:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageRead(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageRead:">markMessageRead(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark the unread messages as read</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageRead</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageDeleted:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageDeleted(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageDeleted:">markMessageDeleted(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark the  messages as deleted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageDeleted</span><span class="p">(</span><span class="n">_</span> <span class="nv">messageDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageDictionary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Collection of messages to be marked as deleted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdReadWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageWithIdRead(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdReadWithMessageId:">markMessageWithIdRead(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark the message with specific messageId as read</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageWithIdRead</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String  Message with messageId String to be marked as read</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdDeletedWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageWithIdDeleted(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdDeletedWithMessageId:">markMessageWithIdDeleted(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark the message with specific messageId as deleted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageWithIdDeleted</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String  Message with messageId String to be marked as deleted</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesRead"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesRead()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesRead">markAllMessagesRead()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark all the messages with specific messageId as read</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesRead</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesDeleted"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesDeleted()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesDeleted">markAllMessagesDeleted()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Mark all the messages with specific messageId as deleted</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesDeleted</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshMessages"></a>
+                    <a name="//apple_ref/swift/Method/refreshMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshMessages">refreshMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches and refreshes messages from server</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)inboxMessagesTableViewDataSourceForTableView:"></a>
+                    <a name="//apple_ref/swift/Method/inboxMessagesTableViewDataSourceFor(tableView:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)inboxMessagesTableViewDataSourceForTableView:">inboxMessagesTableViewDataSourceFor(tableView:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set  datasource for the inbox tableview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inboxMessagesTableViewDataSourceFor</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">InboxMessagesDataSource</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Tableview for which datasource should be set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)inboxMessagesTableViewDelegateForTableView:dataSource:"></a>
+                    <a name="//apple_ref/swift/Method/inboxMessagesTableViewDelegateFor(tableView:dataSource:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)inboxMessagesTableViewDelegateForTableView:dataSource:">inboxMessagesTableViewDelegateFor(tableView:<wbr>dataSource:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set  delegate for the inbox tableview</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inboxMessagesTableViewDelegateFor</span><span class="p">(</span><span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="nv">dataSource</span><span class="p">:</span> <span class="kt">InboxMessagesDataSource</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">InboxMessagesDelegate</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPiIdentifier:"></a>
+                    <a name="//apple_ref/swift/Method/setPiIdentifier(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPiIdentifier:">setPiIdentifier(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set  String identifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPiIdentifier</span><span class="p">(</span><span class="n">_</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>identifier</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Identifier to be set</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)piIdentifier"></a>
+                    <a name="//apple_ref/swift/Method/piIdentifier()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)piIdentifier">piIdentifier()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns piIdentifier</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">piIdentifier</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackMessageOpened:"></a>
+                    <a name="//apple_ref/swift/Method/trackMessageOpened(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackMessageOpened:">trackMessageOpened(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track the inbox messages that are opened in the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackMessageOpened</span><span class="p">(</span><span class="n">_</span> <span class="nv">inboxMessage</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inboxMessage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary for which the track should happen</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackPageViewWithUrl:title:item:search:"></a>
+                    <a name="//apple_ref/swift/Method/trackPageView(url:title:item:search:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackPageViewWithUrl:title:item:search:">trackPageView(url:<wbr>title:<wbr>item:<wbr>search:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track the pageview  visited in the page</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackPageView</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">search</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>url</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>url String</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title of the pageview</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>item</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>item String</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>search</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>search String</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartContents:"></a>
+                    <a name="//apple_ref/swift/Method/trackCartContents(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartContents:">trackCartContents(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track contents in the cart</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackCartContents</span><span class="p">(</span><span class="n">_</span> <span class="nv">cartDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cartDictionary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Collection of items to be tracked</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartConversion:"></a>
+                    <a name="//apple_ref/swift/Method/trackCartConversion(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartConversion:">trackCartConversion(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Track Conversion on the items in the cart</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackCartConversion</span><span class="p">(</span><span class="n">_</span> <span class="nv">orderDictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orderDictionary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Collection of items converted in the bag</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartItemDictionaryWithPrice:quantity:item:uniqueId:"></a>
+                    <a name="//apple_ref/swift/Method/cartItemDictionary(price:quantity:item:uniqueId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartItemDictionaryWithPrice:quantity:item:uniqueId:">cartItemDictionary(price:<wbr>quantity:<wbr>item:<wbr>uniqueId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns cartItem Dictionary with specific price, quantity, item and Id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cartItemDictionary</span><span class="p">(</span><span class="nv">price</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">quantity</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">uniqueId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>quantity</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>car item Dictionary should be returned by quantity</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>item</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>item by which the car item Dictionary should be returned</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>uniqueId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Unique Id  by which the car item Dictionary should be returned</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartDictionaryWithCartItem:"></a>
+                    <a name="//apple_ref/swift/Method/cartDictionary(cartItem:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartDictionaryWithCartItem:">cartDictionary(cartItem:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns cart Dictionary with cartItem</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">cartDictionary</span><span class="p">(</span><span class="nv">cartItem</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>cartItem</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Collection of cartItems</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)orderDictionaryWithOrderNumber:shipping:discount:cart:"></a>
+                    <a name="//apple_ref/swift/Method/orderDictionary(orderNumber:shipping:discount:cart:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)orderDictionaryWithOrderNumber:shipping:discount:cart:">orderDictionary(orderNumber:<wbr>shipping:<wbr>discount:<wbr>cart:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns order Dictionary with ordernumber, shipping number, discount, cart dictionary</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">orderDictionary</span><span class="p">(</span><span class="nv">orderNumber</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">shipping</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">discount</span><span class="p">:</span> <span class="kt">NSNumber</span><span class="p">,</span> <span class="nv">cart</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>orderNumber</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Order  Dictionary returned by orderNumber</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setLocationDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setLocationDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setLocationDelegate:">setLocationDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set location delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setLocationDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">LocationDelegate</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Location delegate</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)regionFromDictionary:"></a>
+                    <a name="//apple_ref/swift/Method/regionFrom(dictionary:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)regionFromDictionary:">regionFrom(dictionary:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns region from collection of  region</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">regionFrom</span><span class="p">(</span><span class="nv">dictionary</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="kt">CLRegion</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dictionary</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Collection of region</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)locationEnabled"></a>
+                    <a name="//apple_ref/swift/Method/locationEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)locationEnabled">locationEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns if location is enabled in the SDK</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">locationEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)startWatchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/startWatchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)startWatchingLocation">startWatchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables the co-ordinates tracking  on the device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">startWatchingLocation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)stopWatchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/stopWatchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)stopWatchingLocation">stopWatchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Disables the co-ordinates tracking  on the device</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">stopWatchingLocation</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)watchingLocation"></a>
+                    <a name="//apple_ref/swift/Method/watchingLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)watchingLocation">watchingLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns if location watching is enabled or not</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">watchingLocation</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)lastKnownLocation"></a>
+                    <a name="//apple_ref/swift/Method/lastKnownLocation()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)lastKnownLocation">lastKnownLocation()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns  last known location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">lastKnownLocation</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setURLHandlingDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setURLHandlingDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setURLHandlingDelegate:">setURLHandlingDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set URLHandling delegate to handle URLs in OpenDirect URLs, CloudPage URLs, CloudPage URLs from inbox messages</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setURLHandlingDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">URLHandlingDelegate</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>set the delegate to handle URLs</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)initModuleWithConfig:components:"></a>
+                    <a name="//apple_ref/swift/Method/initModule(config:components:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)initModuleWithConfig:components:">initModule(config:<wbr>components:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize PushModule and return Shared instance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">initModule</span><span class="p">(</span><span class="nv">config</span><span class="p">:</span> <span class="kt">ModuleConfig</span><span class="p">,</span> <span class="nv">components</span><span class="p">:</span> <span class="kt">SFMCSdkComponents</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">SFMCModule</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>config</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Module config with module name and appid</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>components</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>EncryptionManager, StorageManager, BehaviourManager</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)resetDataPolicy"></a>
+                    <a name="//apple_ref/swift/Method/resetDataPolicy()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)resetDataPolicy">resetDataPolicy()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns if Data merge policy is reset to re-trigger merge</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">resetDataPolicy</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2022-10-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

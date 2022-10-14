@@ -7,4 +7,16 @@ date: 2019-08-01 12:00:00
 order: 1
 published: true
 ---
-Review the [AppleDocs]({{ site.baseurl }}/appledoc/index.html) to browse the MobilePush SDK implementation headers.
+
+### Appledocs for Marketing Cloud iOS SDK
+
+#### [Current Version]({{site.baseurl}}/appledocs/MarketingCloudSdk/{{site.currentMajorMinor}}/index.html)
+
+* [8.x]({{site.baseurl}}/appledocs/MarketingCloudSdk/8.0/index.html)
+* [7.x]({{site.baseurl}}/appledocs/MarketingCloudSdk/7.6/index.html)
+
+### Appledocs for SFMCSdk
+
+#### [Current Version]({{site.baseurl}}/appledocs/SFMCSdk/{{site.currentMajorMinor}}/index.html)
+
+* [8.x]({{site.baseurl}}/appledocs/SFMCSdk/8.0/index.html)

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SFMCEvent Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SFMCEvent" class="dashAnchor"></a>
+    <a title="SFMCEvent Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">MarketingCloudSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">MarketingCloudSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SFMCEvent Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKConfigBuilder.html">MarketingCloudSDKConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDataSource.html">MarketingCloudSDKInboxMessagesDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MarketingCloudSDKInboxMessagesDelegate.html">MarketingCloudSDKInboxMessagesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MobilePushSDK.html">MobilePushSDK</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfig.html">PushConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushConfigBuilder.html">PushConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushModule.html">PushModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Constants.html">Constants</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKErrorDomain">MarketingCloudSDKErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@MarketingCloudSDKInboxMessageKey">MarketingCloudSDKInboxMessageKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCBeaconRefreshCompleteNotification">SFMCBeaconRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidDisplayLocationMessageNotification">SFMCDidDisplayLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidEnterLocationRegionMessageNotification">SFMCDidEnterLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidExitLocationRegionMessageNotification">SFMCDidExitLocationRegionMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCDidRangeBeaconLocationMessageNotification">SFMCDidRangeBeaconLocationMessageNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationRegistrationResponseSucceededNotification">SFMCFoundationRegistrationResponseSucceededNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFoundationUNNotificationReceivedNotification">SFMCFoundationUNNotificationReceivedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidBlockNotification">SFMCFrameworkDidBlockNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidSetupNotification">SFMCFrameworkDidSetupNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCFrameworkDidTeardownNotification">SFMCFrameworkDidTeardownNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNewInboxMessagesNotification">SFMCInboxMessagesNewInboxMessagesNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesNotificationHandledNotification">SFMCInboxMessagesNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesRefreshCompleteNotification">SFMCInboxMessagesRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCInboxMessagesUpdateStatusCompleteNotification">SFMCInboxMessagesUpdateStatusCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidFixLocationNotification">SFMCLocationDidFixLocationNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidReceiveLocationUpdateNotification">SFMCLocationDidReceiveLocationUpdateNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationDidStartMonitoringForRegionNotification">SFMCLocationDidStartMonitoringForRegionNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCLocationGeofenceRefreshCompleteNotification">SFMCLocationGeofenceRefreshCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCOpenDirectMessageNotificationHandledNotification">SFMCOpenDirectMessageNotificationHandledNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeAction">SFMCURLTypeAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeCloudPage">SFMCURLTypeCloudPage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Constants.html#/c:@SFMCURLTypeOpenDirect">SFMCURLTypeOpenDirect</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/AuthEventType.html">AuthEventType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/configureError.html">configureError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKEventDelegate.html">MarketingCloudSDKEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKLocationDelegate.html">MarketingCloudSDKLocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/MarketingCloudSDKURLHandlingDelegate.html">MarketingCloudSDKURLHandlingDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMCEvent.html">SFMCEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SFMCEvent</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SFMCEvent</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Required protocol for creating event objects to be passed into the SDK</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SFMCEvent(im)key"></a>
+                    <a name="//apple_ref/swift/Method/-key" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SFMCEvent(im)key">-key</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event Key</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">key</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SFMCEvent(im)eventId"></a>
+                    <a name="//apple_ref/swift/Method/-eventId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SFMCEvent(im)eventId">-eventId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Event Id</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="n">eventId</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SFMCEvent(im)parameters"></a>
+                    <a name="//apple_ref/swift/Method/-parameters" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SFMCEvent(im)parameters">-parameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Key value pair of data to be passed</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="n">nullable</span> <span class="n">NSDictionary</span><span class="o">&lt;</span><span class="n">NSString</span> <span class="o">*</span><span class="p">,</span> <span class="n">id</span><span class="o">&gt;</span> <span class="o">*</span><span class="p">)</span><span class="n">parameters</span><span class="p">;</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2022 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2022-10-12)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
