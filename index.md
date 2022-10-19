@@ -15,7 +15,7 @@ title: "Home"
 ## iOS 13 Support
 
 > - The MobilePush SDK version 6.4.0 and up has been tested against and is compatible with iOS 13.
-> - Our [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been tested against and is compatible with iOS 13.
+> - Our  **LearningApp for iOS** using [CocoaPods](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) and [Swift Package Manager](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/LearningApp) has been tested against and is compatible with iOS 13.
 > - Building with XCode11 or greater requires SDK version 5.x or later in order to continue receiving push notifications on iOS 13 devices.
 
 ## iOS 14 Support
@@ -26,7 +26,7 @@ title: "Home"
 
 ## iOS Data Protection
 > - The MobilePush SDK version 6.4.1 includes new troubleshooting information and code examples to demonstrate proper configuration and usage when iOS Data Protection is in use. See [iOS Data Protection]({{ site.baseurl }}/trouble/trouble-ios-data-protection.html).
-> - The [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) has been modified to show proper usage.
+> - The  **LearningApp for iOS** using [CocoaPods](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) and [Swift Package Manager](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/LearningApp) has been modified to show proper usage.
 
 ## Requirements
 
@@ -54,8 +54,8 @@ Post on our [Stack Exchange](https://salesforce.stackexchange.com/tags). Example
 
 * The MarketingCloudSDK for iOS can be found on [GitHub](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS) and [CocoaPods](https://cocoapods.org/pods/MarketingCloudSDK).
 * The <a href="https://help.salesforce.com/articleView?id=mc_mp_mobilepush.htm&type=5">Marketing Cloud MobilePush Documentation</a> contains information on the Marketing Cloud MobilePush app, including information on associating MobilePush with a mobile app.
-* The Marketing Cloud provides the [LearningApp for iOS](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.
-* Review the [Appledocs]({{ site.baseurl }}/appledoc/index.html) for the SDK.
+* The Marketing Cloud provides **LearningApp for iOS** using [CocoaPods](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/master/LearningApp) and [Swift Package Manager](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/LearningApp) which implements features of the SDK to allow you to explore how a native app properly utilizes the MarketingCloudSDK.   
+* Review the [Appledocs]({{ site.baseurl }}/docs/appledocs.html) for the SDK.
 <br/>
 * View the [Android SDK docs](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-Android).
 
