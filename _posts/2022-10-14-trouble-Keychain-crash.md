@@ -7,7 +7,7 @@ date: 2022-10-14 12:00:00
 order: 6
 ---
 
- When the device is setup with FaceId/Passcode based authentication and when any of the application which has MarketingCloudSDK integrated access the Keychain when the device is in a locked state, a fatal exception is thrown where the SDK cannot access these files due to an iOS Data Protection mode.
+If a device is setup with FaceId or Passcode based authentication, and if an application (with MarketingCloudSDK integrated) accesses the Keychain when the device is in a locked state, a fatal exception is thrown. The SDK cannot access these files due to the iOS Data Protection mode.
 
 ### Common Exceptions with Keychain thrown by the SDK
 
@@ -23,7 +23,7 @@ order: 6
 
 * Upgrade to **MarketingCloudSDK** version - `8.0.8` and **SFMCSDK** version - `1.0.6`
 * Before initializing the SDK, add the code to **setKeychainAccessErrorsAreFatal** as **false** as => `SFMCSdk.setKeychainAccessErrorsAreFatal(errorsAreFatal: false)`
-* The above just logs the exception to console instead of crashing the application.
+    * The above logs the exception to console instead of crashing the application.
 
 <br/>
 
@@ -40,4 +40,4 @@ Enable **Keychain sharing** in the Xcode `Signing & Capabilities`. Please note t
 #### Related Items
 
 [Learning App](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/LearningApp)
-- Please note that the code sample shows how to integrate SDK, not all piece of code is mandatory and it is upto consuming application.
+- Please note that the code sample shows how to integrate SDK, not all piece of code is mandatory and it is up to the consuming application.
