@@ -17,7 +17,7 @@ To handle URLs from these sources, follow these instructions.
 1. Implement the `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) protocol in your app.
 2. Use the `sfmc_setURLHandlingDelegate:` method to set a delegate for this protocol.
 
-> If you implement the `sfmc_handleURL:type:` protocol method and set `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x), the SDK calls the `sfmc_setURLHandlingDelegate:` method. The SDK passes to your implementation of `sfmc_handleURL:type:` an NSURL value. This value contains the data of the push notification or inbox message, including the URL. A type value also reflects the source of the URL, either `SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`.
+The `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) is set using `sfmc_setURLHandlingDelegate:` method. This enforces the protocol method `sfmc_handleURL:type:`. When an OpenDirect or CloudPage push notification is received, the SDK passes an `NSURL` value to `sfmc_handleURL:type:`. This value contains the push notification or inbox message, and includes the URL. A type value also reflects the source of the URL, which is either `SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`.
 
 > The class that implements the `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) delegate must be Objective-C compatible.
 
