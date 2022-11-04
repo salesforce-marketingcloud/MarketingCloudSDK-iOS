@@ -14,13 +14,15 @@ The SDK doesn’t automatically present URLs from these sources.
 
 To handle URLs from these sources, follow these instructions.
 
-1. Implement the `MarketingCloudSDKURLHandlingDelegate` protocol in your app.
-1. Use the `sfmc_setURLHandlingDelegate:` method to set a delegate for this protocol.
+1. Implement the `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) protocol in your app.
+2. Use the `sfmc_setURLHandlingDelegate:` method to set a delegate for this protocol.
 
-> If you implement the `sfmc_handleURL:type:` protocol method and set `MarketingCloudSDKURLHandlingDelegate`, the SDK calls the `sfmc_setURLHandlingDelegate:` method. The SDK passes to your implementation of `sfmc_handleURL:type:` an NSURL value. This value contains the data of the push notification or inbox message, including the URL. A type value also reflects the source of the URL, either `SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`.
+The `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) is set using `sfmc_setURLHandlingDelegate:` method. This enforces the protocol method `sfmc_handleURL:type:`. When an OpenDirect or CloudPage push notification is received, the SDK passes an `NSURL` value to `sfmc_handleURL:type:`. This value contains the push notification or inbox message, and includes the URL. A type value also reflects the source of the URL, which is either `SFMCURLTypeCloudPage` or `SFMCURLTypeOpenDirect`.
+
+> The class that implements the `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x) delegate must be Objective-C compatible.
 
 > See `MarketingCloudSDK+URLHandling.h` for more information.
 
 ## Examples
 
-{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/1afb1d354b531045c08e247d34c0178a.js,https://gist.github.com/sfmc-mobilepushsdk/1b58f9577d22daa4467609263b56d922.js" %}
+{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/3584f70fa52bef0788e93895baf1880f.js,https://gist.github.com/sfmc-mobilepushsdk/80bf2165a5f3e0ebf11c4a3111437238.js" %}
