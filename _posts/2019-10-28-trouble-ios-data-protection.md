@@ -17,6 +17,8 @@ The MarketingCloud SDK requires access to files on the iOS Device file system. S
 
 The MarketingCloud SDK sets the file protection type by default to [NSFileProtectionCompleteUntilFirstUserAuthentication](https://developer.apple.com/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication). This means the files are stored in an encrypted format on disk and cannot be read from or written to until the user unlocks the device for the first time. The MarketingCloud SDK, as of version 8.0.9, will continue to retain the default protection type (i.e. [NSFileProtectionCompleteUntilFirstUserAuthentication](https://developer.apple.com/documentation/foundation/nsfileprotectioncompleteuntilfirstuserauthentication)), but also provides a capability to override (e.g. to [NSFileProtectionComplete](https://developer.apple.com/documentation/foundation/nsfileprotectioncomplete), [NSFileProtectionCompleteUnlessOpen](https://developer.apple.com/documentation/foundation/nsfileprotectioncompleteunlessopen), etc) the file protection type within the consuming application.
 
+> NOTE: NSSQLiteErrorDomain errors will appear in logs if the FileProtectionType is NSFileProtectionComplete and the application goes in the background
+
 #### How To Override FileProtectionType
 
 {% include tabbed_gists.html sectionId="override_file_protection_example" names="8.x" gists="https://gist.github.com/sfmc-mobilepushsdk/d63d400da23bf217a947640dc02a2855.js" %}
