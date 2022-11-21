@@ -8,7 +8,7 @@ order: 6
 published: true
 ---
 
-> 2022-11-16 - We have identified an issue in the 8.x versions of the iOS SDK affecting push open reporting and Inbox message retrieval. We're recommending that you hold off upgrading your SDK to version 8 until a fix has been released. If you have already updated to SDK v8 please monitor our releases and update your application as soon as a bug fix version is available.
+> 2022-11-21 - We have identified an issue in the 8.x versions of the iOS SDK affecting push open reporting and Inbox message retrieval if you are upgrading your SDK. You will not be impacted if you are using 8.x as your first version of the SDK implemented. We’re recommending that you hold off upgrading your SDK to version 8 until a fix has been released, the current target is first week of December. If you have already updated to SDK v8 please monitor our releases and update your application as soon as a bug fix version is available.
 
 # Next-gen SDK migration steps
 
