@@ -8,29 +8,24 @@ order: 2
 ---
 MobilePush is able to work in the same app as other push vendor SDKs. However, we recommend checking with your other SDK vendor to ensure they also support a multi-push provider implementation. This page provides considerations for multiple push SDKs successfully work together. Common areas for poor implementation can include device registration, geolocation and more. Note that this is not an exhaustive list.
 
-#### 1. Registration
+### Steps to handle Multiple Push provider with MarketingCloudSDK
 
-Only ONE call to a push SDK to register for push notifications can be made. Otherwise, multiple notification banners, alerts, or sounds can trigger in a single push. MarketingCloudSDK gives the app developer the power to register.
+#### Disable Swizzling
 
-#### 2. Notification Settings
+Few Push Providers automatically setup SDKs through Swizzling. If Swizzling is enabled, other push providers automatically intercept all the application delegate methods, which will differ from the normal flow in setting up the deviceToken, notification userinfo.
+To **disable Swizzling**, refer to the other Push provider documentation.
 
-An app can call requestAuthorizationWithOptions and registerForRemoteNotifications multiple times, but only the last call is used. The settings are overwritten each time it is called.
+If choosing **automatic SDK setup by other Push provider**, implement the respective PushProvider's delegate methods and set the following to MarketingCloudSDK <br/>
+  <br/>
+    i) deviceToken using the API `SFMCSdk.mp.setDeviceToken(apnsToken)`,
 
-#### 3. Badging
+      <script src="https://gist.github.com/sfmc-mobilepushsdk/afc15f2ef78c055af57d343d8fe27acc.js"></script>
 
-There is no way to guarantee the value of a badge.
+    ii)userInfo using the API `SFMCSdk.mp.setNotificationUserInfo(userInfo)` or notificationRequest using `SFMCSdk.mp.setNotificationRequest(response.notification.request)`
 
-#### 4. Notification Handling
+    **Note:** When Swizzling is enabled in the third party push provider, respective delegate methods are intercepted (eg. Considering Firebase as other Push provider, appDidRecieveMessage method gets intercepted automatically) and the notification userinfo  is massaged to the MessagingMessageInfo object . This will result in message not showing up when passed to MarketingCloudSDK.
 
-Notification handling in your application delegate with multiple SDKs depends on the SDKs used. The notifications may be visually stacked, discarded, or otherwise confused.
-
-#### 5. Custom Payload Keys
-
-Use custom keys or other payload-specific data to ensure that the correct SDK handler is called in an app that supports multiple notification handlers.
-
-#### 6. Method Swizzling
-
-> Warning: If a push SDK uses method swizzling as a means of replacing iOS framework code at runtime, the MarketingCloudSDK may not work as expected.
+It is recommended to **disable Swizzling** for the third party push provider and implement the Apple provided delegate methods for the straight forward functioning of MarketingCloudSDK.
 
 To determine if an SDK uses swizzling, look for SDKs that do not use these methods:
 
@@ -38,20 +33,20 @@ To determine if an SDK uses swizzling, look for SDKs that do not use these metho
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfofetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))handler
 ```
 
-Some SDKs offer a secondary implementation, which uses standard app delegate methods. If so, you must use the secondary implementation.
+#### Configure MarketingCloudSDK along with other PushProvider
 
-#### 7. Geolocation
+Configure the MarketingCloudSDK along with the other Push providers.
 
-If you implement multiple SDKs that use location-enabled services, use only one SDK’s location enablement. Using more than one leads to unknown and unsupportable consequences.
+<script src="https://gist.github.com/sfmc-mobilepushsdk/8bf1bbe95c7b8fa2528d89d5640a308e.js"></script>
 
-For example, each provider is likely affected by the methods used by the other providers to interact with iOS CoreLocation services and enablement of location services. An app can monitor a limited number of geofences at any one time. This number depends on iOS version, device type, and other considerations. With multiple implementations competing for a limited resource, user experience may suffer.
+#### Implement Application delegate methods and set deviceToken and userInfo
 
-In addition, permissions needed to use location-enabled SDKs may overlap or conflict.
+<script src="https://gist.github.com/sfmc-mobilepushsdk/68a8f6f093c45d1278f349b040bf1fd1.js"></script>
 
-#### 8. Feedback
+##### Note
 
-All providers may not be able to detect if a device has been unregistered.
+With Multiple Push Providers integrated in the application, there are chances for swizzling other features namely `Device Registration`, `Notification Settings`, `Badging`, `Custom Payload Keys`, `Geolocation`, `APNS Feedback on Unregistering the device`.
 
-The binary Apple Push Notification Service (APNS) uses a feedback mechanism to let the provider know if a device unregistered from APNS. This feedback mechanism clears the list of unregistered devices after the provider reads it and only returns failures that happened since the provider last connected. So, the first provider to read from the feedback mechanism would clear the list, preventing the other providers from determining if a device has unregistered. If the other providers can’t tell that a device unregistered, they will still attempt to send to the device.
+The document showcases a sample implementation on how to handle registration and notifications received. Similar implementation might be needed for the above listed features where the calls are intercepted by the other Push Provider. When swizzling is disabled, Apple provided delegates are invoked which will not affect the normal flow.
 
-The HTTP/2 APNS communication mechanism uses a more direct feedback system, which pushes to the device and immediately notifies the provider if the device is unregistered. Once a device is marked as unregistered in APNS and communicates this information to a push provider, the information may not communicate to secondary push providers accessing the feedback mechanism. Therefore, secondary push providers may not know that a device is unregistered and may get errors back from APNS that don’t make sense.
+See the [learning application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/example/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.
