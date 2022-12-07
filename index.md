@@ -75,8 +75,6 @@ Where possible, we changed noninclusive terms to align with our company value of
 
 ## Release History
 
-> 2022-11-21 - We have identified an issue in the 8.x versions of the iOS SDK affecting push open reporting and Inbox message retrieval if you are upgrading your SDK. You will not be impacted if you are using 8.x as your first version of the SDK implemented. We’re recommending that you hold off upgrading your SDK to version 8 until a fix has been released, the current target is first week of December. If you have already updated to SDK v8 please monitor our releases and update your application as soon as a bug fix version is available.
-
 For releases prior to 5.0.0, see: <a href="http://salesforce-marketingcloud.github.io/JB4A-SDK-iOS/">Prior Release Documentation</a>
 
 {% include release_notes.html %}
