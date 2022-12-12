@@ -8,47 +8,66 @@ order: 2
 ---
 MobilePush is able to work in the same app as other push vendor SDKs. However, we recommend checking with your other SDK vendor to ensure they also support a multi-push provider implementation. This page provides considerations for multiple push SDKs successfully work together.
 
-## Most common Issues faced with Multi Push Provider (MPP)
+## Common Issues faced with Multi Push Provider (MPP)
 
-  * Receiving DeviceToken
-  * Receiving Push Messages
+There are two common functionality that gets affected which prevents the SDK from behaving as expected. They are:
 
-  Apple has specific delegate methods that should be implemented by the consuming application in order to register to APNS and receive the Push Notifications henceforth. When Multiple Push providers comes to a picture, the above functionality may get affected as the MMPs  provide a wrapper methods for registration and receiving the notifications. Consuming applications generally listen to the wrapper methods instead of actual apple provided delegate methods. This causes messages not being displayed as the registration is done with one push provider and not setting the **deviceToken**, **notification userinfo** to other push providers.
+  1. Receiving DeviceToken
+  2. Receiving Push Messages
 
-## Steps to handle Multiple Push provider with MarketingCloudSDK
+  Without device tokens, the SDK will not register the device properly and MarketingCloud wouldn't be able to send push notifications to the device. The SDK expects you to hand off the push notifications to the setNotificationRequest method, which makes the SDK aware of the notifications and allows it to handle it accordingly (e.g. tracking, URL handling, etc).
 
-### When Swizzling Enabled
+  Apple has specific delegate methods that must be implemented by the consuming application in order to register to APNS and receive the Push Notifications. When there are Multiple Push providers, the aforementioned functionality may be affected because other vendors may provide wrapper methods for registration and receiving the notifications. Consuming applications often listen to the wrapper methods instead of actual apple provided delegate methods. A typical issue for example, is when registration with Apple is done for one push provider and not setting the deviceToken for other push providers.
 
-If **Swizzling is enabled**, implement the respective PushProvider's delegate methods and set the following to MarketingCloudSDK <br/>
-##### DeviceToken
-**API:** `SFMCSdk.mp.setDeviceToken(apnsToken)`,
+## Handling Multiple Push provider with MarketingCloudSDK
 
-  <script src="https://gist.github.com/sfmc-mobilepushsdk/afc15f2ef78c055af57d343d8fe27acc.js"></script>
+### what is Method Swizzling?
 
-##### Notification userInfo or notificationRequest
-**API:**
-  * `SFMCSdk.mp.setNotificationUserInfo(userInfo)`
-  * `SFMCSdk.mp.setNotificationRequest(response.notification.request)`
+Method swizzling is the **process of changing the implementation of an existing selector at runtime**.
+If Method Swizzling is enabled, other push providers automatically intercept all the application delegate methods, which will differ from the normal flow in setting up the deviceToken, notification userinfo.
 
-**Note:** When Swizzling is enabled in the third party push provider, respective delegate methods are intercepted (eg. Considering Firebase as other Push provider, appDidRecieveMessage method gets intercepted automatically) and the notification userinfo  is altered to the MessagingMessageInfo object . This will result in message not showing up when passed to MarketingCloudSDK as the payload expected by the SDK does not match
-
-To determine if an SDK uses swizzling, look for SDKs that do not use these methods:
+To determine if non-MarketingCloudSDK push providers uses swizzling, look if they do not use below methods:
 * `func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void)`
 
 * `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)`
 
-#### Configure MarketingCloudSDK along with other PushProvider
+There are two ways how Multiple Push providers can be handled with MarketingCloudSDK. They are:
+
+  1. With Swizzling Enabled
+  2. With Swizzling Disabled
+
+#### With Swizzling Enabled
+
+If **Swizzling is enabled**, implement the respective PushProvider's delegate methods and set the following to MarketingCloudSDK <br/>
+##### i) DeviceToken
+**API:** `SFMCSdk.mp.setDeviceToken(apnsToken)`,
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/afc15f2ef78c055af57d343d8fe27acc.js"></script>
+
+##### ii) Notification userInfo or notificationRequest
+
+When Swizzling is enabled in the other push provider, respective delegate methods are intercepted. For example, considering **Firebase** as other Push provider, when a push notification is received from firebase, the payload received in the UNUserNotificationCenterDelegate's `didReceive` notification method is altered to the MessagingMessageInfo object. This will result in message not showing up when passed to MarketingCloudSDK as the payload expected by the SDK does not match.
+
+**API:**
+  * `SFMCSdk.mp.setNotificationUserInfo(userInfo)`
+  * `SFMCSdk.mp.setNotificationRequest(response.notification.request)`
+
+<script src="https://gist.github.com/sfmc-mobilepushsdk/8e8f740de3af5c3e86b55e2e3bc4b29d.js"></script>  
+
+  **Please note that the notification message from other providers are displayed in the devices's notification centre, but the actions on the notification message will not work as expected**.
+
+##### Configure MarketingCloudSDK along with other PushProvider
 
 Configure the MarketingCloudSDK along with the other Push providers.
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/8bf1bbe95c7b8fa2528d89d5640a308e.js"></script>
 
-### When Swizzling Disabled
+#### With Swizzling Disabled
 
-Few Push Providers automatically setup SDKs through **Method Swizzling** (Method swizzling is the **process of changing the implementation of an existing selector at runtime**). If Method Swizzling is enabled, other push providers automatically intercept all the application delegate methods, which will differ from the normal flow in setting up the deviceToken, notification userinfo.
 To **disable Swizzling**, refer to the other Push provider documentation.
+When Swizzling is disabled in the other PushProvider, default AppDelegate methods are called.
 
-#### Implement Application delegate methods and set deviceToken and Notification userInfo
+##### Implement Application delegate methods and set deviceToken and Notification userInfo
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/68a8f6f093c45d1278f349b040bf1fd1.js"></script>
 
@@ -84,17 +103,8 @@ For example, each provider is likely affected by the methods used by the other p
 
 In addition, permissions needed to use location-enabled SDKs may overlap or conflict.
 
-**8. Feedback**
+**7. Feedback**
 
 All providers may **not be able to detect if a device has been unregistered**.
-
-The binary Apple Push Notification Service (APNS) uses a feedback mechanism to let the provider know if a device unregistered from APNS. This feedback mechanism clears the list of unregistered devices after the provider reads it and only returns failures that happened since the provider last connected. So, the first provider to read from the feedback mechanism would clear the list, preventing the other providers from determining if a device has unregistered. If the other providers can’t tell that a device unregistered, they will still attempt to send to the device.
-
-The HTTP/2 APNS communication mechanism uses a more direct feedback system, which pushes to the device and immediately notifies the provider if the device is unregistered. Once a device is marked as unregistered in APNS and communicates this information to a push provider, the information may not communicate to secondary push providers accessing the feedback mechanism. Therefore, secondary push providers may not know that a device is unregistered and may get errors back from APNS that don’t make sense.
-
-##### Note
-* The document showcases a sample implementation on how to handle registration and notifications received. Similar implementation might be needed which is decided based on the other Push Provider used.
-* When swizzling is disabled, Apple provided delegates are invoked which will not affect the normal flow.
-* Some of the samples provided uses **Firebase** push provider and this may differ based on the Push provider used by the consuming application.
 
 See the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/example/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.
