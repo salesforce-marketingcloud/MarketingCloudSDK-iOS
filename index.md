@@ -5,7 +5,7 @@ title: "Home"
 
 ## MobilePush SDK: Important Forward-Compatibility Statement
 
-> In the January, 2023 Marketing Cloud MobilePush SDK release, support for older iOS versions will be removed from the SDK, requires a
+> In the January, 2023 Marketing Cloud MobilePush SDK release, support for older iOS versions will be removed from the SDK. Requirements are:
 > - Minimum deployment target of 11.0
 > - Xcode 14.0
 >
