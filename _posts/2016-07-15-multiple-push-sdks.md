@@ -108,4 +108,4 @@ All providers may not be able to detect if a device has been unregistered.
 
 ------
 
-See the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/example/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.
+See the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/examples/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.
