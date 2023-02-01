@@ -39,5 +39,5 @@ Enable **Keychain sharing** in the Xcode `Signing & Capabilities`. Please note t
 
 #### Related Items
 
-[Learning App](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/LearningApp)
+[Learning App](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/examples/LearningApp)
 - Please note that the code sample shows how to integrate SDK, not all piece of code is mandatory and it is up to the consuming application.
