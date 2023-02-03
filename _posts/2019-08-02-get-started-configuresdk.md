@@ -10,11 +10,11 @@ published: true
 
 ## Configure the SDK
 
-#### See the SDK header MarketingCloudSDK/MarketingCloudSDK+Base.h ([AppleDoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html)) for detailed documentation on SDK configuration methods.
+#### See the SDK header MarketingCloudSDK/MarketingCloudSDK+Base.h ([AppleDoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/MarketingCloudSdk/7.6/Classes/MarketingCloudSDK.html)) for detailed documentation on SDK configuration methods.
 
-This example uses the MarketingCloudSDK [ConfigBuilder ](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html#//api/name/sfmc_configureWithDictionary:error:) configuration method, as it is the most flexible means to support your application's usage of MobilePush.
+This example uses the MarketingCloudSDK [ConfigBuilder](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/SFMCSdk/8.0/Classes/ConfigBuilder.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkConfigBuilder(im)setPushWithConfig:onCompletion:) configuration method, as it is the most flexible means to support your application's usage of MobilePush.
 
-> Configuration of the SDK using a JSON file (included in our [GitHub repository](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS)) is **deprecated**. We encourage you to move existing implementations to the builder method. For more information on our configuration methods, see the [AppleDoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/Classes/MarketingCloudSDK.html)).
+> Configuration of the SDK using a JSON file (included in our [GitHub repository](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS)) is **deprecated**. We encourage you to move existing implementations to the builder method. For more information on our configuration methods, see the [AppleDoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/MarketingCloudSdk/8.0/Classes/PushModule.html)).
 
 > All method names contain the prefix `sfmc_`. This convention allows the application implementing the SDK to avoid namespace collisions between the external libraries it uses. MarketingCloudSDK does not cause compile, link, or runtime collisions with other code your application implements. Review Apple’s [documentation on customizing existing classes](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/CustomizingExistingClasses/CustomizingExistingClasses.html#//apple_ref/doc/uid/TP40011210-CH6-SW4) for further information.
 

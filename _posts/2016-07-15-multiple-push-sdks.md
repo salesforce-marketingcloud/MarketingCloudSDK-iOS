@@ -6,7 +6,7 @@ category: trouble
 date: 2016-07-15 12:00:00
 order: 2
 ---
-MobilePush is able to work in the same app as other push vendor SDKs. However, we recommend checking with your other SDK vendor to ensure they also support a multi-push provider implementation. This page provides considerations for multiple push SDKs successfully work together.
+MobilePush is able to work in the same app as other push vendor SDKs. However, we recommend checking with your other SDK vendor to ensure they also support a multi-push provider implementation. This page provides considerations for multiple push SDKs to successfully work together.
 
 ## Common Issues With Multi-Push Provider (MPP)
 
@@ -108,4 +108,4 @@ All providers may not be able to detect if a device has been unregistered.
 
 ------
 
-See the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/example/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.
+See the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/examples/LearningApp/LearningApp/AppDelegate.swift) to see how Notification are handled using Firebase PushProvider.

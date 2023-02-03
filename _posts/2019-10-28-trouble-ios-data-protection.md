@@ -23,7 +23,7 @@ The MarketingCloud SDK sets the file protection type by default to [NSFileProtec
 
 {% include tabbed_gists.html sectionId="override_file_protection_example" names="8.x" gists="https://gist.github.com/sfmc-mobilepushsdk/d63d400da23bf217a947640dc02a2855.js" %}
 
-See the [learning application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/master/LearningApp/LearningApp/AppDelegate.swift) for an additional example.
+See the [learning application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm/examples/LearningApp/LearningApp/AppDelegate.swift) for an additional example.
 
 #### Configuration Issues
 In the case of configuration, if iOS Data Protection is set such that the file system is not accessible when the call to configure the SDK is made, the configuration call will be retried for up to 5 seconds allowing time for a user to unlock the device and make the file system accessible. If the user does not unlock the device within the 5 seconds an error object is returned describing the error and the configuration call will fail returning false. When this happens the SDK is NOT configured and no access to any SDK methods should be attempted until the configure method returns true. The error code returned in the error object will be 'configureDatabaseAccessError'.
