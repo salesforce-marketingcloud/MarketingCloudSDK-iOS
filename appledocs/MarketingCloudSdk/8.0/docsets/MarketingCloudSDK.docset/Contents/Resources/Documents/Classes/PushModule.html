@@ -644,11 +644,11 @@ Category : Enum with following values =&gt; auth, behavior, encryption, eventBus
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>This method properly closes down the MarketingCloudSDK. It should be used in any cases where references to the MarketingCloudSDK need to be released. Ensure to be called when sdk is operational
+                        <p>This method properly closes down the MarketingCloudSDK. It should be used in any cases where references to the MarketingCloudSDK need to be released. Only call when SDK is operational.
 Eg: if(SFMCSdk.mp.getStatus() == .operational) { SFMCSdk.mp.tearDown()}</p>
 <div class="aside aside-note">
     <p class="aside-title">Note</p>
-    This method will be removed in future versions
+    This method will be removed in future versions.
 
 </div>
 
