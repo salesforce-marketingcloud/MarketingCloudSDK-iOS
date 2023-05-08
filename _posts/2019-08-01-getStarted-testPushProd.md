@@ -29,7 +29,7 @@ Before you send a push notification to your deployment app, complete all of the 
 5. In your configuration of the SDK, use the MobilePush application values created in the steps above.
 7. Archive and distribute your application (Ad Hoc and/or App Store).
 
-   > It may take up to 5 minutes for your contact to be created in Marketing Cloud
+   > It may take up to {{ site.propagationDelay }} for your contact to be created in Marketing Cloud
 
 {% include tabbed_gists.html sectionId="test_push_prod" names="8.x,7.x" gists="https://gist.github.com/stopczewska/39086ae9914cb687cdf40a3ba59d99bd.js,https://gist.github.com/sfmc-mobilepushsdk/26263f30ab936037e110e191f5514a44.js" %}
 
