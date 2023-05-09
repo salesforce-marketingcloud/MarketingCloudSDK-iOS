@@ -30,7 +30,7 @@ Before you send a push notification to your device as a test, complete all of th
 6. Set a temporary [contact key]({{ site.baseurl }}/sdk-implementation/user-data.html) in your app for testing. For example, use an email address. This allows you to target the device you are testing on when sending the test push.
 7. Build and run your application on your connected device.
 
-    > It may take up to 5 minutes for your contact to be created in Marketing Cloud
+    > It may take up to {{ site.propagationDelay }} for your contact to be created in Marketing Cloud
 
 {% include tabbed_gists.html sectionId="test_push_dev" names="8.x,7.x" gists="https://gist.github.com/stopczewska/39086ae9914cb687cdf40a3ba59d99bd.js,https://gist.github.com/sfmc-mobilepushsdk/26263f30ab936037e110e191f5514a44.js" %}
 
