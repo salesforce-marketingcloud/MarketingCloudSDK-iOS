@@ -4,7 +4,7 @@ title: "Handle URLs"
 subtitle: "Handle Messages with a URL"
 category: sdk-implementation
 date: 2018-08-29 12:00:00
-order: 7
+order: 3
 ---
 
 The SDK doesn’t automatically present URLs from these sources.
