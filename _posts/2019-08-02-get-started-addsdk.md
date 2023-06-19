@@ -9,6 +9,7 @@ published: true
 ---
 
 To implement the MarketingCloudSDK framework in your application, either use CocoaPods or manually set up the SDK.
+> If you are looking for adding 8.x version or migrating from older versions to 8.x version, follow [Migrating to 8.x]({{ site.baseurl }}/get-started/get-started-migration.html) guide.
 
 #### Option 1: Implement the SDK with CocoaPods
 
