@@ -31,15 +31,3 @@ The setAnalyticsEnabled function allows you to enable or disable the Analytics f
 
 Note: The remaining feature toggle APIs follow a similar pattern.
 
-## GDPR Configuration
-
-The Runtime Toggles take into consideration GDPR (General Data Protection Regulation) configurations passed down from the Marketing Cloud servers, the initial configuration set in the PushConfigBuilder during SDK initialization, and whether or not the toggle has been set.
-
-In the event that GDPR configurations are set, they take precedence over both the initial configuration and the toggle. The following GDPR settings are considered:
-
-1. Right to be Forgotten
-2. Restriction of Processing
-3. Do Not Track
-
-If any of these GDPR settings are configured, the corresponding feature will be automatically disabled, overriding any other configuration.
-
