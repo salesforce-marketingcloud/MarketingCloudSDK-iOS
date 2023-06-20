@@ -7,7 +7,7 @@ date: 2023-06-14 12:00:00
 order: 4
 ---
 
-The Runtime Toggles feature, also known as "feature toggles," allows you to dynamically enable or disable specific functionalities within the SDK without the need to re-initialize it. With Runtime Toggles, you have control over the following features:
+The Runtime Toggle feature, also known as "feature toggles", allows you to dynamically enable or disable specific functionalities within the SDK without the need to re-initialize it. With Runtime Toggles, you have control over the following features:
 
 1. Analytics: Enables or disables Salesforce MarketingCloud Analytics services.
 2. PI (Predictive Intelligence) Analytics: Enables or disables Salesforce Predictive Intelligence Analytics services.
