@@ -27,7 +27,8 @@ SFMCSdk.mp.setAnalyticsEnabled(_: Bool)
 SFMCSdk.mp.isAnalyticsEnabled()
 ```
 
+For more details see the [Feature Toggle Apple Documentation]({{site.baseurl}}/appledocs/MarketingCloudSdk/8.0/Classes/PushModule.html#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setAnalyticsEnabled:).
+
 The setAnalyticsEnabled function allows you to enable or disable the Analytics feature. By passing true, Analytics services will be enabled, while passing false will disable them. The isAnalyticsEnabled function returns the current status of the Analytics toggle.
 
 Note: The remaining feature toggle APIs follow a similar pattern.
-
