@@ -32,3 +32,11 @@ For more details see the [Feature Toggle Apple Documentation]({{site.baseurl}}/a
 The setAnalyticsEnabled function allows you to enable or disable the Analytics feature. By passing true, Analytics services will be enabled, while passing false will disable them. The isAnalyticsEnabled function returns the current status of the Analytics toggle.
 
 Note: The remaining feature toggle APIs follow a similar pattern.
+
+
+## Explaining Analytic Runtime Toggle
+
+The functionality of analytic runtime toggles entails several actions when disabling it. Firstly, it involves the removal of all non-billable analytics, and secondly, it ensures that the SDK does not record any non-billable analytics. 
+
+Non-billable analytics encompass data that appears in reports and relates to how marketers monitor the performance of their messaging. For example, tracking of push notifications and inbox opens. See Analytics documentation for more details on this. On the other hand, billable analytics serve the purpose of informing Marketing Cloud whether a billable action occurred, without tracking any user-specific information. Therefore, although certain "analytics" will still be transmitted to Marketing Cloud when the toggle is disabled, they exclusively pertain to billable events and do not involve any user-related data from the device.
+
