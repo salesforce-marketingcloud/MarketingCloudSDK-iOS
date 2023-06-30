@@ -6,6 +6,7 @@ category: trouble
 date: 2022-10-14 12:00:00
 order: 7
 ---
+> The below troubleshooting guide is applicable until MarketingCloudSDK version 8.0.13. Post this version, manual addition of bundle to the application is removed and is automated.
 
 When the SDK is upgraded to latest version, there might be changes to the resources bundle (MarketingCloudSDK.bundle) that comes packaged with the SDK. If the right versions are not copied, the app crashes with the exception as the SDK might not find the required resources in the .bundle file.
 

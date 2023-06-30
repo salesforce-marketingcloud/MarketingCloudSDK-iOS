@@ -9,6 +9,7 @@ published: true
 ---
 
 To implement the MarketingCloudSDK framework in your application, either use CocoaPods or manually set up the SDK.
+> If you are looking to add 8.x version or migrate from older versions to 8.x version, follow [Migrating to 8.x]({{ site.baseurl }}/get-started/get-started-migration.html) guide.
 
 #### Option 1: Implement the SDK with CocoaPods
 
@@ -35,6 +36,8 @@ Open the .xcworkspace created by the install process with Xcode and start using 
 1. Add MarketingCloudSDK.xcframework to Linked Frameworks and Libraries in your target’s General settings.
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure3.png" /><br/>
+<br/>
+> The below step #5 is needed until MarketingCloudSDK version 8.0.13. Post this version, manual addition of bundle to the application is removed and is automated.
 1. Add MarketingCloudSDK.bundle to Copy Bundle Resources in your target’s Build Phases settings.
 <br/>
 <img class="img-responsive" src="{{ site.baseurl }}/assets/SDKConfigure4.png" /><br/>
