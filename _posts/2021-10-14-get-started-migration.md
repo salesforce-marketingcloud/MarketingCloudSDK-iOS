@@ -107,3 +107,64 @@ SFMCSdk.identity.setProfileAttributes(["email": "john@example.com"])
 ### Step 4 - Update remaining functions
 
 1. Update your existing functions to reference the new SDK. All existing functions that need to be modified will be highlighted as deprecated in your codebase.
+
+### Step 5 - Capture Notifications On Launch
+
+To ensure proper functionality of processing Push Notifications when the application is not actively running (i.e. in a terminated/killed state), it is necessary to capture notifications during application launch and retain them in memory until the SDK is fully initialized. Failing to implement this step would prevent the SDK from processing incoming push notifications. After the SDK is operational, the notification is set to the SDK using setNotificationUserInfo API.
+
+Take a look at the below example to help understand the implementation. For a more complete example of this implementation, please see the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/spm/examples/LearningApp/LearningApp/AppDelegate.swift#L186L191).
+
+```swift
+// Add a member variable in the AppDelegate class
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    // ...
+
+    // Notification to capture
+    var notificationUserInfo:[AnyHashable:Any]?
+
+// -----------------------------
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+  // Extract the notification from launchOptions
+  if let options = launchOptions, let notification = options[UIApplication.LaunchOptionsKey.remoteNotification] as? [AnyHashable: Any] {
+    self.notificationUserInfo = notification
+  }
+  // ... 
+
+  let completionHandler: (OperationResult) -> () = { result in
+    if result == .success {
+      // Method to call when the SDK is ready
+      self.setupMobilePush()
+    }   
+  }
+
+  // Initialize the SDK
+  SFMCSdk.initializeSdk(
+    ConfigBuilder().setPush(
+        config: mobilePushConfiguration, 
+        onCompletion: completionHandler
+    ).build()
+  )
+
+  // ...
+}
+
+// -----------------------------
+
+func setupMobilePush() {
+  // ...
+
+  // Provide the notification object to SDK when the SDK is ready.
+  DispatchQueue.main.async {
+    if let userInfo = self.notificationUserInfo {
+      SFMCSdk.mp.setNotificationUserInfo(userInfo)
+    } else {
+      debugPrint("No notification UserInfo: - either it should be a direct launch or Notification userInfo is not available when launched from notification")
+    }
+  }
+}
+```
+
