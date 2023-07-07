@@ -110,9 +110,9 @@ SFMCSdk.identity.setProfileAttributes(["email": "john@example.com"])
 
 ### Step 5 - Capture Notifications On Launch
 
-To ensure proper functionality of processing Push Notifications when the application is not actively running (i.e. in a terminated/killed state), it is necessary to capture notifications during application launch and retain them in memory until the SDK is fully initialized. Failing to implement this step would prevent the SDK from processing incoming push notifications. After the SDK is operational, the notification is set to the SDK using setNotificationUserInfo API.
+To ensure proper processing of push notifications when the application is not actively running (i.e. in a terminated/killed state), it is necessary to capture notifications during application launch and retain them in memory until the SDK is fully initialized. Failing to implement this step would prevent the SDK from processing incoming push notifications. After the SDK is operational, the notification is set to the SDK using setNotificationUserInfo API.
 
-Take a look at the below example to help understand the implementation. For a more complete example of this implementation, please see the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/spm/examples/LearningApp/LearningApp/AppDelegate.swift#L186L191).
+See example code below. For a more complete implementation example, please see the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/spm/examples/LearningApp/LearningApp/AppDelegate.swift#L186L191).
 
 ```swift
 // Add a member variable in the AppDelegate class
