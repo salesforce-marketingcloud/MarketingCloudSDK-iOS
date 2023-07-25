@@ -26,7 +26,7 @@ This SDK update set a more modern architectural foundation to enable a variety o
   * Core (SFMCSDK) -  https://github.com/salesforce-marketingcloud/sfmc-sdk-ios (tag 1.x) 
   * MobilePush - https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS (tag 8.x) 
   
-2. Also, manually pull in the Resources/MarketingCloudSDK.bundle from the sources folder in the Mobile Push SPM and link it with the binary in build phase, failing to do so will cause the following error: **Thread 1: "Cannot create an NSPersistentStoreCoordinator with a nil model"**.
+2. Ensure you manually pull in the Resources/MarketingCloudSDK.bundle from the sources folder in the MarketingCloudSDK SPM module and add it as a resource within "Copy Bundle Resources" in the build phase configuration. Failing to do so will result in the following error: **Thread 1: Cannot create an NSPersistentStoreCoordinator with a nil model**.
 
 ### Step 2 - Initialize the SDK
 
