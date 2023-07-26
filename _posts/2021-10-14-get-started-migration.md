@@ -17,7 +17,7 @@ This SDK update set a more modern architectural foundation to enable a variety o
 
 ### Step 1 - Add the new iOS SDK build
 
-* Please remove existing cocoa pod dependency before adding MarketingCloudSDK from Swift Package (MobilePush).
+* Please remove existing cocoapods dependency before adding MarketingCloudSDK from Swift Package (MobilePush).
 * Add MobilePush dependency https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS (tag 8.x) to your application target.
 
 #### Installation Notes
