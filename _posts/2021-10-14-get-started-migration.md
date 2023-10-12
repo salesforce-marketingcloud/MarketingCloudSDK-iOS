@@ -161,7 +161,9 @@ func setupMobilePush() {
   // Provide the notification object to SDK when the SDK is ready.
   DispatchQueue.main.async {
     if let userInfo = self.notificationUserInfo {
-      SFMCSdk.mp.setNotificationUserInfo(userInfo)
+      SFMCSdk.requestPushSdk { mp in
+          mp.setNotificationUserInfo(userInfo)
+      }
     } else {
       debugPrint("No notification UserInfo: - either it should be a direct launch or Notification userInfo is not available when launched from notification")
     }

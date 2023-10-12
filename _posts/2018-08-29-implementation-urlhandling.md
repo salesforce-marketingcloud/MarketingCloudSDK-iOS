@@ -25,4 +25,4 @@ The `URLHandlingDelegate` (v8.x) or `MarketingCloudSDKURLHandlingDelegate` (v7.x
 
 ## Examples
 
-{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/3584f70fa52bef0788e93895baf1880f.js,https://gist.github.com/sfmc-mobilepushsdk/80bf2165a5f3e0ebf11c4a3111437238.js" %}
+{% include tabbed_gists.html sectionId="url_handling" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/faf611e50d793a1d60d079f7583a6750.js,https://gist.github.com/sfmc-mobilepushsdk/80bf2165a5f3e0ebf11c4a3111437238.js" %}

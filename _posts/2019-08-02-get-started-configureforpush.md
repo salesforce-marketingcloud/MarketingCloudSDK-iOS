@@ -22,17 +22,17 @@ published: true
 
 1. Extend the SDK configuration code outlined in [Configure the SDK]({{ site.baseurl }}/get-started/get-started-configuresdk.html) to add support for push registration.
 
-{% include tabbed_gists.html sectionId="configure_for_push-1" names="8.x,7.x" gists="https://gist.github.com/stopczewska/11fc4610b5ec98614c2554c0fdce8d55.js,https://gist.github.com/sfmc-mobilepushsdk/75374975e2f386560c04455dec1092bd.js" %}
+{% include tabbed_gists.html sectionId="configure_for_push-1" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/8a6e14154783fb123fcb18b1b9c0fa5f.js,https://gist.github.com/sfmc-mobilepushsdk/75374975e2f386560c04455dec1092bd.js" %}
 
     > Note: for information on handling URLs in MobilePush messages, see [Handling URLs]({{ site.baseurl }}/sdk-implementation/implementation-urlhandling.html).
 
 1. Add the required `UIApplicationDelegate` protocol methods (to support push registration) to your AppDelegate class.
 
-{% include tabbed_gists.html sectionId="configure_for_push-2" names="8.x,7.x" gists="https://gist.github.com/stopczewska/0971f78771b949afc2e4a0522a0d6fea.js,https://gist.github.com/14a82bd3208be864e0ace803e7d6632f.js" %}
+{% include tabbed_gists.html sectionId="configure_for_push-2" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/6ab0d4dc3cfaf5d8882505e236290529.js,https://gist.github.com/14a82bd3208be864e0ace803e7d6632f.js" %}
 
 1. Add the required `UNUserNotificationCenterDelegate` protocol methods (to support push notifications) to your AppDelegate class.
 
-{% include tabbed_gists.html sectionId="configure_for_push-3" names="8.x,7.x" gists="https://gist.github.com/stopczewska/0b06b0705f3c20a205a56157db2c21e4.js,https://gist.github.com/sfmc-mobilepushsdk/53c9322a4b54dd11fe008d76a611b801.js" %}
+{% include tabbed_gists.html sectionId="configure_for_push-3" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/af7c886379a9c9455dac21ce08a9a2e0.js,https://gist.github.com/sfmc-mobilepushsdk/53c9322a4b54dd11fe008d76a611b801.js" %}
 
     > These methods use MarketingCloud SDK methods to enable the framework’s functionality to manage push notifications, which includes MobilePush contact registration and push analytics tracking.
 

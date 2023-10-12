@@ -49,7 +49,7 @@ Configure the MarketingCloudSDK along with the other Push provider.
 
 **API:** `SFMCSdk.mp.setDeviceToken(apnsToken)`,
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/afc15f2ef78c055af57d343d8fe27acc.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/ecd3b5f58f8e96700f6e9b6c85f5d77a.js"></script>
 
 ##### Handling Notifications
 
@@ -59,7 +59,7 @@ When Swizzling is enabled in the other push provider, respective delegate method
   * `SFMCSdk.mp.setNotificationUserInfo(userInfo)`
   * `SFMCSdk.mp.setNotificationRequest(response.notification.request)`
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/8e8f740de3af5c3e86b55e2e3bc4b29d.js"></script>  
+<script src="https://gist.github.com/sfmc-mobilepushsdk/44ea9e49f41c2d997a011dc38e74b36d.js"></script>  
 
 > Note: Notification messages from other providers are displayed in the devices's notification centre, however any actions on the notification message from the MarketingCloudSDK will not work (e.g. URL Handling, reporting, etc)
 
@@ -70,7 +70,7 @@ When Swizzling is disabled in the other PushProvider, the default AppDelegate me
 
 ##### Implement AppDelegate Methods 
 
-<script src="https://gist.github.com/sfmc-mobilepushsdk/68a8f6f093c45d1278f349b040bf1fd1.js"></script>
+<script src="https://gist.github.com/sfmc-mobilepushsdk/4c399fe43313beea06c3a1616059de55.js"></script>
 
 ## Other MPP Call-Outs 
 
