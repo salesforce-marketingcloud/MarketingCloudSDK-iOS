@@ -17,7 +17,7 @@ The Mobile Push SDK has an optional configuration option called useLegacyPiIdent
 
 #### Example: Analytic Attribution
 
-{% include tabbed_gists.html sectionId="analytics_attribution" names="8.x,7.x" gists="https://gist.github.com/stopczewska/8766f7b68b36c63f25ea56677e9997c9.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" %}
+{% include tabbed_gists.html sectionId="analytics_attribution" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/f7fb1f5cd1456f8b02f05091a3ac29ea.js,https://gist.github.com/8c9d0186ce37fb00aff742880bcbab08.js" %}
 
 ### Integration Methods
 
@@ -27,19 +27,19 @@ These methods integrate your mobile app with Einstein Recommendations. To use th
 
 To track the contents of an in-app shopping cart, use the method shown in the example. For more information about this method’s general use with Einstein Recommendations, review [Track Items in Shopping Cart](https://help.salesforce.com/articleView?id=mc_ctc_track_cart.htm&type=5).
 
-{% include tabbed_gists.html sectionId="track_cart" names="8.x,7.x" gists="https://gist.github.com/stopczewska/93abf50ae1f6f865c6cca90b7f1330c9.js,https://gist.github.com/0f6d9da815f4799dccdeb4fce13bf77c.js" %}
+{% include tabbed_gists.html sectionId="track_cart" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/37083c88472c4f3ce969f8e5d4175e9b.js,https://gist.github.com/0f6d9da815f4799dccdeb4fce13bf77c.js" %}
 
 #### Track Conversion
 
 To track a purchase made through your mobile app, use the method shown in the example. For more information about this method’s general use with Einstein Recommendations, review [Track Purchase Details](https://help.salesforce.com/articleView?id=mc_ctc_track_conversion.htm&type=5).
 
-{% include tabbed_gists.html sectionId="track_conversion" names="8.x,7.x" gists="https://gist.github.com/stopczewska/cd654b96bfe0226872090927de4a0b18.js,https://gist.github.com/2e0a5c806024da20f4b0abfc77d05957.js" %}
+{% include tabbed_gists.html sectionId="track_conversion" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/b1f9950be668c85effbd18af5a38826c.js,https://gist.github.com/2e0a5c806024da20f4b0abfc77d05957.js" %}
 
 #### Track Page Views
 
 To implement page-view analytics in your app, use the method shown in the example. For more information about this method’s general use with Einstein Recommendations, review [Track Items Viewed](https://help.salesforce.com/articleView?id=mc_ctc_track_page_view.htm&type=5).
 
-{% include tabbed_gists.html sectionId="track_page_view" names="8.x,7.x" gists="https://gist.github.com/stopczewska/6bda7dd1b026e8a32add6a3f996be363.js,https://gist.github.com/63511dd483bd521dbeb3b46fbece001a.js" %}
+{% include tabbed_gists.html sectionId="track_page_view" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/ee8097154695ddf3f353350f7dca29a6.js,https://gist.github.com/63511dd483bd521dbeb3b46fbece001a.js" %}
 
 > Rights of ALBERT EINSTEIN are used with permission of The Hebrew University of Jerusalem. Represented exclusively by Greenlight.
 

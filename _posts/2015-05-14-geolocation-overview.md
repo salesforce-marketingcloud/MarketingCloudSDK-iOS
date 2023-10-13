@@ -30,7 +30,7 @@ Review the [Apple documentation](https://developer.apple.com/documentation/corel
 
 When your application is ready to enable location features, including geofence and beacon messaging, call the MarketingCloudSDK framework's method to start watching location.
 
-{% include tabbed_gists.html sectionId="geolocation_overview" names="8.x,7.x" gists="https://gist.github.com/stopczewska/f056ee7401789d33055563e8b266a490.js,https://gist.github.com/31864111e51c70fc25581891444ec344.js" %}
+{% include tabbed_gists.html sectionId="geolocation_overview" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/f60544222bacb2a26133013cbe4ff0b0.js,https://gist.github.com/31864111e51c70fc25581891444ec344.js" %}
 
 The MarketingCloudSDK+Location.h” header file details additional methods to get information about location and control the frameworks behavior.
 
@@ -55,4 +55,4 @@ If you create your own CLLocationManager object, we cannot guarantee that featur
 
 If you have enabled notifications using MarketingCloudSDK and have called -sfmc_startWatchingLocation,  you can access the device's last known location using the SDK.
 
-{% include tabbed_gists.html sectionId="beacon_overview" names="8.x,7.x" gists="https://gist.github.com/stopczewska/3dcde481baf924ebbfec9675a11d6c0e.js,https://gist.github.com/02d2c7f15461981015658691d81a4685.js" %}
+{% include tabbed_gists.html sectionId="beacon_overview" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/ce9c6731926292e02357cdc7ad5a5684.js,https://gist.github.com/02d2c7f15461981015658691d81a4685.js" %}

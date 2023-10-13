@@ -17,13 +17,13 @@ Use interactive notifications to add buttons to push notifications from your mob
 
 #### Example: Implementation
 
-{% include tabbed_gists.html sectionId="interactive_notifications-example" names="8.x,7.x" gists="https://gist.github.com/stopczewska/efc4e85a4997a16015bcd70dc60b2d59.js,https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js" %}
+{% include tabbed_gists.html sectionId="interactive_notifications-example" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/bd38e5333bdafa5dc5c5f8fdc22bdf1e.js,https://gist.github.com/sfmc-mobilepushsdk/d5214aed3800ece0460273d30aaa1733.js" %}
 
 #### Example: Handle Action
 
 In your push handler, examine the push notification's payload to see if your action triggered and if your application performed the action.
 
-{% include tabbed_gists.html sectionId="interactive_notifications-handler" names="8.x,7.x" gists="https://gist.github.com/stopczewska/36b2414c179f81f30be6493881ee9508.js,https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js" %}
+{% include tabbed_gists.html sectionId="interactive_notifications-handler" names="8.x,7.x" gists="https://gist.github.com/sfmc-mobilepushsdk/1ca4491f7eb58f98b758d072568f4fff.js,https://gist.github.com/0ef8e0766c13ada7d333495e5d1cabe1.js" %}
 
 ### Related Items
 * [Interactive Notifications](https://help.salesforce.com/articleView?id=mc_mp_interactive_notifications.htm&type=5#interactiveNotifications)
