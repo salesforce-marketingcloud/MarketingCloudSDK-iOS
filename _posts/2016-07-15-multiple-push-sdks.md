@@ -47,7 +47,7 @@ Configure the MarketingCloudSDK along with the other Push provider.
 
 ##### Handling DeviceToken
 
-**API:** `SFMCSdk.mp.setDeviceToken(apnsToken)`,
+**API:** `setDeviceToken(apnsToken)`,
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/ecd3b5f58f8e96700f6e9b6c85f5d77a.js"></script>
 
@@ -56,8 +56,8 @@ Configure the MarketingCloudSDK along with the other Push provider.
 When Swizzling is enabled in the other push provider, respective delegate methods are intercepted. For example, considering **Firebase** as the other Push provider, when a push notification is received from firebase, the payload received in the UNUserNotificationCenterDelegate's `didReceive` notification method is altered to receive a MessagingMessageInfo object. This will result in message not being reported when passed to MarketingCloudSDK as the payload expected by the SDK does not match.
 
 **API:**
-  * `SFMCSdk.mp.setNotificationUserInfo(userInfo)`
-  * `SFMCSdk.mp.setNotificationRequest(response.notification.request)`
+  * `setNotificationUserInfo(userInfo)`
+  * `setNotificationRequest(response.notification.request)`
 
 <script src="https://gist.github.com/sfmc-mobilepushsdk/44ea9e49f41c2d997a011dc38e74b36d.js"></script>  
 

@@ -23,8 +23,10 @@ To interact with the Runtime Toggles, the SDK provides APIs for each feature to 
 ### Toggle APIs
 
 ```swift
-SFMCSdk.mp.setAnalyticsEnabled(_: Bool)
-SFMCSdk.mp.isAnalyticsEnabled()
+SFMCSdk.requestPushSdk { mp in
+    setAnalyticsEnabled(_: Bool)
+    isAnalyticsEnabled()
+}
 ```
 
 For more details see the [Feature Toggle Apple Documentation]({{site.baseurl}}/appledocs/MarketingCloudSdk/8.0/Classes/PushModule.html#/c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setAnalyticsEnabled:).
