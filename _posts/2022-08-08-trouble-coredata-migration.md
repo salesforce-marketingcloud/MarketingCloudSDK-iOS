@@ -74,9 +74,9 @@ The manual merge option allows the application developer to receive both the pri
 
 It is up to the application developer to determine what attributes and tags are set in the current data set.
 
-> _IMPORTANT_: You will be given access to the v8.x and v7.x tags and attributes _prior to_ the SDK being initialized! The developer will need to hold onto the data until the SDK had been initialized, so that you may set (for example) your tags using SFMCSdk.mp.addTags().
+> _IMPORTANT_: You will be given access to the v8.x and v7.x tags and attributes _prior to_ the SDK being initialized! The developer will need to hold onto the data until the SDK had been initialized, so that you may set (for example) your tags using `addTags()`.
 
-{% include tabbed_gists.html sectionId="manual_merging_optin" names="Swift,Obj-C" gists="https://gist.github.com/sfmc-mobilepushsdk/dc58826be814f0ca13519bf6c1c37ef2.js,https://gist.github.com/sfmc-mobilepushsdk/8dfce5a8b9d6686eeae8c2c290cd4db8.js" %}
+{% include tabbed_gists.html sectionId="manual_merging_optin" names="Swift,Obj-C" gists="https://gist.github.com/sfmc-mobilepushsdk/dc58826be814f0ca13519bf6c1c37ef2.js,https://gist.github.com/sfmc-mobilepushsdk/70422d9a501a5c30ac099e5ba0b79019.js" %}
 
 ## Retrying
 
