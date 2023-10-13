@@ -24,8 +24,8 @@ To interact with the Runtime Toggles, the SDK provides APIs for each feature to 
 
 ```swift
 SFMCSdk.requestPushSdk { mp in
-    setAnalyticsEnabled(_: Bool)
-    isAnalyticsEnabled()
+    mp.setAnalyticsEnabled(_: Bool)
+    mp.isAnalyticsEnabled()
 }
 ```
 
