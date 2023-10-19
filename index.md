@@ -5,18 +5,9 @@ title: "Home"
 
 ## MobilePush SDK: Important Forward-Compatibility Statement
 
-## iOS 11 Support
-
-> In early 2024, the SDK will discontinue support for iOS 11.
+> In early 2024 Marketing Cloud MobilePush SDK support for older iOS versions will be removed from the SDK. Requirements moving forward will be:
 > - iOS will require a minimum deployment target of 12.0
 > - Xcode 15.0
-
-> In the January 2023 Marketing Cloud MobilePush SDK release, support for older Android and iOS versions will be removed from the SDK. Requirements are:
-> - iOS will require a minimum deployment target of 11.0
-> - Xcode 14.0
-> - Android will require a minimum API version of 21
->
-> Existing mobile applications built with SDK version 5.x or later will continue to function, without change. Mobile applications may continue to reference older SDK versions, without change. Applications which adopt the January 2023 MobilePush SDK release may require a project change if your application build still supports an older value (iOS: iOS 10).
 
 ## iOS 13 Support
 
