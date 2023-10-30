@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EngagementEvent Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/EngagementEvent" class="dashAnchor"></a>
+    <a title="EngagementEvent Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFMCSdk Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFMCSdk Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        EngagementEvent Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../SFMCSDK.html">SFMCSDK</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CDP.html">CDP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../SFMCSDK.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkPUSH">PUSH</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IDENTITY.html">IDENTITY</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdk.html">SFMCSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigBuilder.html">ConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../SFMCSDK%20Protocols.html">SFMCSDK Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleConfig.html">ModuleConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SFMCModule.html">SFMCModule</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleIdentity.html">ModuleIdentity</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Events.html">Events</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomEvent.html">CustomEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SystemEvent.html">SystemEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EngagementEvent.html">EngagementEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Logging.html">Logging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdkLogger.html">SFMCSdkLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModuleLogger.html">ModuleLogger</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutputter.html">LogOutputter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Network%20Layer.html">Network Layer</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkManager.html">NetworkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedRequest.html">WrappedRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedRequest/Builder.html">– Builder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WrappedResponse.html">WrappedResponse</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Merge%20Policy.html">Merge Policy</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Merge%20Policy.html#/s:7SFMCSDK23AutoMergePolicyCallbacka">AutoMergePolicyCallback</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Merge%20Policy.html#/s:7SFMCSDK25ManualMergePolicyCallbacka">ManualMergePolicyCallback</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enumerations.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ModuleStatus.html">ModuleStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationResult.html">OperationResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../EventBus.html">EventBus</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/EventBus.html">EventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Publisher.html">Publisher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Subscriber.html">Subscriber</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageEventDelegate.html">InAppMessageEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDataSource">InboxMessagesDataSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessagesDelegate">InboxMessagesDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLHandlingDelegate.html">URLHandlingDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>EngagementEvent</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc(SFMCSdkEngagementEvent)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">EngagementEvent</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">Event</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)id"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)id">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)category"></a>
+                    <a name="//apple_ref/swift/Property/category" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)category">category</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">category</span><span class="p">:</span> <span class="kt">EventCategory</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)attributes"></a>
+                    <a name="//apple_ref/swift/Property/attributes" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)attributes">attributes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">attributes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)name"></a>
+                    <a name="//apple_ref/swift/Property/name" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(cs)SFMCSdkEngagementEvent(py)name">name</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://github.com/salesforce-marketingcloud/sfmc-sdk-ios" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2023-10-17)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
