@@ -109,11 +109,13 @@ SFMCSdk.identity.setProfileAttributes(["email": "john@example.com"])
 
 1. Update your existing functions to reference the new SDK. All existing functions that need to be modified will be highlighted as deprecated in your codebase.
 
-### Step 5 - Capture Notifications On Launch
+### Step 5 - Capture Notifications On Launch (Only for 8.0.x)
+
+> NOTE: If you are using version 8.1.x of the SDK, there is no requirement to perform this step. Utilizing the new `requestPushSdk` API will enable the SDK to automatically capture notifications for you, regardless of the application's state and the SDK initialization status.
 
 To ensure proper processing of push notifications when the application is not actively running (i.e. in a terminated/killed state), it is necessary to capture notifications during application launch and retain them in memory until the SDK is fully initialized. Failing to implement this step would prevent the SDK from processing incoming push notifications. After the SDK is operational, the notification is set to the SDK using setNotificationUserInfo API.
 
-See example code below. For a more complete implementation example, please see the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/spm/examples/LearningApp/LearningApp/AppDelegate.swift#L186L191).
+See example code below. For a more complete implementation example, please see the [Learning Application](https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/blob/29240f99e5fab3e7e674a847c48253ade82b140a/examples/LearningApp/LearningApp/AppDelegate.swift#L186L191).
 
 ```swift
 // Add a member variable in the AppDelegate class
@@ -161,9 +163,7 @@ func setupMobilePush() {
   // Provide the notification object to SDK when the SDK is ready.
   DispatchQueue.main.async {
     if let userInfo = self.notificationUserInfo {
-      SFMCSdk.requestPushSdk { mp in
-          mp.setNotificationUserInfo(userInfo)
-      }
+      SFMCSdk.mp.setNotificationUserInfo(userInfo)
     } else {
       debugPrint("No notification UserInfo: - either it should be a direct launch or Notification userInfo is not available when launched from notification")
     }
