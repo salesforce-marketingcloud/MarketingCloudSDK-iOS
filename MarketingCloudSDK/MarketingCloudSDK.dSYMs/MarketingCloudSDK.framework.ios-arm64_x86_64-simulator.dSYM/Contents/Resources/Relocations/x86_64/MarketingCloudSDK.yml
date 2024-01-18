@@ -1,0 +1,664 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/iosadmin/Library/Developer/Xcode/DerivedData/MarketingCloudSDK-aworfqfsqdfzligllqdaxybhmcvh/Build/Intermediates.noindex/ArchiveIntermediates/MarketingCloudSDK/InstallationBuildProductsLocation/Library/Frameworks/MarketingCloudSDK.framework/MarketingCloudSDK'
+relocations:
+  - { offsetInCU: 0x34, offset: 0x590D2, size: 0x8, addend: 0x0, symName: _MarketingCloudSDKVersionString, symObjAddr: 0x0, symBinAddr: 0x195400, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x59107, size: 0x8, addend: 0x0, symName: _MarketingCloudSDKVersionNumber, symObjAddr: 0x40, symBinAddr: 0x195440, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x59144, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticReportTemplate getDiagnosticTemplate]', symObjAddr: 0x0, symBinAddr: 0x5250, symSize: 0xCE }
+  - { offsetInCU: 0x41, offset: 0x5915E, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportCrossHeader, symObjAddr: 0x8F8, symBinAddr: 0x1C8F50, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x591D8, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportNotConfiguredMessage, symObjAddr: 0x900, symBinAddr: 0x1C8F58, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x591EE, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportHelpfulDocsMessage, symObjAddr: 0x908, symBinAddr: 0x1C8F60, symSize: 0x0 }
+  - { offsetInCU: 0xE7, offset: 0x59204, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportMultipleIssuesMessage, symObjAddr: 0x910, symBinAddr: 0x1C8F68, symSize: 0x0 }
+  - { offsetInCU: 0xFD, offset: 0x5921A, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticNewLine, symObjAddr: 0x918, symBinAddr: 0x1C8F70, symSize: 0x0 }
+  - { offsetInCU: 0x113, offset: 0x59230, size: 0x8, addend: 0x0, symName: _SFMCDynamicMessagePlaceHolder, symObjAddr: 0x920, symBinAddr: 0x1C8F78, symSize: 0x0 }
+  - { offsetInCU: 0x129, offset: 0x59246, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportIssue, symObjAddr: 0x928, symBinAddr: 0x1C8F80, symSize: 0x0 }
+  - { offsetInCU: 0x13F, offset: 0x5925C, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportResult, symObjAddr: 0x930, symBinAddr: 0x1C8F88, symSize: 0x0 }
+  - { offsetInCU: 0x155, offset: 0x59272, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportSuggestion, symObjAddr: 0x938, symBinAddr: 0x1C8F90, symSize: 0x0 }
+  - { offsetInCU: 0x17F, offset: 0x5929C, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticReportTemplate getDiagnosticTemplate]', symObjAddr: 0x0, symBinAddr: 0x5250, symSize: 0xCE }
+  - { offsetInCU: 0x1E2, offset: 0x592FF, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticReportTemplate getDiagnosticReport:]', symObjAddr: 0xCE, symBinAddr: 0x531E, symSize: 0xC7 }
+  - { offsetInCU: 0x2AD, offset: 0x593CA, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticReportTemplate getDynamicMessage:]', symObjAddr: 0x195, symBinAddr: 0x53E5, symSize: 0x234 }
+  - { offsetInCU: 0x484, offset: 0x595A1, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticReportTemplate getDiagnosticMessage:]', symObjAddr: 0x3C9, symBinAddr: 0x5619, symSize: 0x220 }
+  - { offsetInCU: 0x27, offset: 0x59820, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_setPiIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x5839, symSize: 0x6E }
+  - { offsetInCU: 0x198, offset: 0x59991, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_setPiIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x5839, symSize: 0x6E }
+  - { offsetInCU: 0x21B, offset: 0x59A14, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_piIdentifier]', symObjAddr: 0x6E, symBinAddr: 0x58A7, symSize: 0x50 }
+  - { offsetInCU: 0x276, offset: 0x59A6F, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_trackMessageOpened:]', symObjAddr: 0xBE, symBinAddr: 0x58F7, symSize: 0x2D9 }
+  - { offsetInCU: 0x447, offset: 0x59C40, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_trackPageViewWithURL:title:item:search:]', symObjAddr: 0x397, symBinAddr: 0x5BD0, symSize: 0x1E6 }
+  - { offsetInCU: 0x5DD, offset: 0x59DD6, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_trackCartContents:]', symObjAddr: 0x57D, symBinAddr: 0x5DB6, symSize: 0x112 }
+  - { offsetInCU: 0x6A7, offset: 0x59EA0, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_trackCartConversion:]', symObjAddr: 0x68F, symBinAddr: 0x5EC8, symSize: 0x112 }
+  - { offsetInCU: 0x771, offset: 0x59F6A, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_cartItemDictionaryWithPrice:quantity:item:uniqueId:]', symObjAddr: 0x7A1, symBinAddr: 0x5FDA, symSize: 0xCE }
+  - { offsetInCU: 0x86C, offset: 0x5A065, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_cartDictionaryWithCartItemDictionaryArray:]', symObjAddr: 0x86F, symBinAddr: 0x60A8, symSize: 0x7B }
+  - { offsetInCU: 0x8EF, offset: 0x5A0E8, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Intelligence) sfmc_orderDictionaryWithOrderNumber:shipping:discount:cart:]', symObjAddr: 0x8EA, symBinAddr: 0x6123, symSize: 0xCE }
+  - { offsetInCU: 0x27, offset: 0x5AAE6, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_setAnalyticsEnabled:]', symObjAddr: 0x0, symBinAddr: 0x61F1, symSize: 0x19A }
+  - { offsetInCU: 0x106, offset: 0x5ABC5, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_setAnalyticsEnabled:]', symObjAddr: 0x0, symBinAddr: 0x61F1, symSize: 0x19A }
+  - { offsetInCU: 0x221, offset: 0x5ACE0, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_isAnalyticsEnabled]', symObjAddr: 0x19A, symBinAddr: 0x638B, symSize: 0x46 }
+  - { offsetInCU: 0x27C, offset: 0x5AD3B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_setPiAnalyticsEnabled:]', symObjAddr: 0x1E0, symBinAddr: 0x63D1, symSize: 0x19D }
+  - { offsetInCU: 0x397, offset: 0x5AE56, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_isPiAnalyticsEnabled]', symObjAddr: 0x37D, symBinAddr: 0x656E, symSize: 0x49 }
+  - { offsetInCU: 0x3F2, offset: 0x5AEB1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_setLocationEnabled:]', symObjAddr: 0x3C6, symBinAddr: 0x65B7, symSize: 0x19D }
+  - { offsetInCU: 0x50D, offset: 0x5AFCC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_isLocationEnabled]', symObjAddr: 0x563, symBinAddr: 0x6754, symSize: 0x49 }
+  - { offsetInCU: 0x568, offset: 0x5B027, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_setInboxEnabled:]', symObjAddr: 0x5AC, symBinAddr: 0x679D, symSize: 0x19D }
+  - { offsetInCU: 0x683, offset: 0x5B142, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(FeatureToggle) sfmc_isInboxEnabled]', symObjAddr: 0x749, symBinAddr: 0x693A, symSize: 0x49 }
+  - { offsetInCU: 0x27, offset: 0x5BA83, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(URLHandling) validateURLHandlingDelegate]', symObjAddr: 0x0, symBinAddr: 0x6983, symSize: 0x565 }
+  - { offsetInCU: 0x128, offset: 0x5BB84, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(URLHandling) validateURLHandlingDelegate]', symObjAddr: 0x0, symBinAddr: 0x6983, symSize: 0x565 }
+  - { offsetInCU: 0x27, offset: 0x5BF8B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_setEventDelegate:]', symObjAddr: 0x0, symBinAddr: 0x6EE8, symSize: 0x183 }
+  - { offsetInCU: 0x26B, offset: 0x5C1CF, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_setEventDelegate:]', symObjAddr: 0x0, symBinAddr: 0x6EE8, symSize: 0x183 }
+  - { offsetInCU: 0x386, offset: 0x5C2EA, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_setInAppEventDelegate:]', symObjAddr: 0x183, symBinAddr: 0x706B, symSize: 0x183 }
+  - { offsetInCU: 0x4A1, offset: 0x5C405, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_messageIdForMessage:]', symObjAddr: 0x306, symBinAddr: 0x71EE, symSize: 0xB4 }
+  - { offsetInCU: 0x548, offset: 0x5C4AC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_showInAppMessage:]', symObjAddr: 0x3BA, symBinAddr: 0x72A2, symSize: 0x6F }
+  - { offsetInCU: 0x5C7, offset: 0x5C52B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_setInAppMessageFontName:]', symObjAddr: 0x429, symBinAddr: 0x7311, symSize: 0xDF }
+  - { offsetInCU: 0x6A5, offset: 0x5C609, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Events) sfmc_track:]', symObjAddr: 0x508, symBinAddr: 0x73F0, symSize: 0x34E }
+  - { offsetInCU: 0x27, offset: 0x5D83C, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(AppDelegate) validateAppDelegateMethods]', symObjAddr: 0x0, symBinAddr: 0x773E, symSize: 0x283 }
+  - { offsetInCU: 0xE0, offset: 0x5D8F5, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(AppDelegate) validateAppDelegateMethods]', symObjAddr: 0x0, symBinAddr: 0x773E, symSize: 0x283 }
+  - { offsetInCU: 0x27, offset: 0x5DADA, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getAllMessages]', symObjAddr: 0x0, symBinAddr: 0x79C1, symSize: 0x50 }
+  - { offsetInCU: 0xA5, offset: 0x5DB58, size: 0x8, addend: 0x0, symName: _MarketingCloudSDKInboxMessageKey, symObjAddr: 0x1E10, symBinAddr: 0x1C8F98, symSize: 0x0 }
+  - { offsetInCU: 0xBD, offset: 0x5DB70, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView:cellForRowAtIndexPath:]', symObjAddr: 0xAEE, symBinAddr: 0x848F, symSize: 0x531 }
+  - { offsetInCU: 0x2C02, offset: 0x606B5, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getAllMessages]', symObjAddr: 0x0, symBinAddr: 0x79C1, symSize: 0x50 }
+  - { offsetInCU: 0x2C5D, offset: 0x60710, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getUnreadMessages]', symObjAddr: 0x50, symBinAddr: 0x7A11, symSize: 0x50 }
+  - { offsetInCU: 0x2CB8, offset: 0x6076B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getReadMessages]', symObjAddr: 0xA0, symBinAddr: 0x7A61, symSize: 0x50 }
+  - { offsetInCU: 0x2D13, offset: 0x607C6, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getDeletedMessages]', symObjAddr: 0xF0, symBinAddr: 0x7AB1, symSize: 0x50 }
+  - { offsetInCU: 0x2D6E, offset: 0x60821, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getAllMessagesCount]', symObjAddr: 0x140, symBinAddr: 0x7B01, symSize: 0x44 }
+  - { offsetInCU: 0x2DC9, offset: 0x6087C, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getUnreadMessagesCount]', symObjAddr: 0x184, symBinAddr: 0x7B45, symSize: 0x44 }
+  - { offsetInCU: 0x2E24, offset: 0x608D7, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getReadMessagesCount]', symObjAddr: 0x1C8, symBinAddr: 0x7B89, symSize: 0x44 }
+  - { offsetInCU: 0x2E7F, offset: 0x60932, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_getDeletedMessagesCount]', symObjAddr: 0x20C, symBinAddr: 0x7BCD, symSize: 0x44 }
+  - { offsetInCU: 0x2EDA, offset: 0x6098D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markMessageRead:]', symObjAddr: 0x250, symBinAddr: 0x7C11, symSize: 0x73 }
+  - { offsetInCU: 0x2F5D, offset: 0x60A10, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markMessageDeleted:]', symObjAddr: 0x2C3, symBinAddr: 0x7C84, symSize: 0x73 }
+  - { offsetInCU: 0x2FE0, offset: 0x60A93, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markMessageWithIdRead:]', symObjAddr: 0x336, symBinAddr: 0x7CF7, symSize: 0x73 }
+  - { offsetInCU: 0x3063, offset: 0x60B16, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markMessageWithIdDeleted:]', symObjAddr: 0x3A9, symBinAddr: 0x7D6A, symSize: 0x73 }
+  - { offsetInCU: 0x30E6, offset: 0x60B99, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markAllMessagesRead]', symObjAddr: 0x41C, symBinAddr: 0x7DDD, symSize: 0x44 }
+  - { offsetInCU: 0x3141, offset: 0x60BF4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_markAllMessagesDeleted]', symObjAddr: 0x460, symBinAddr: 0x7E21, symSize: 0x44 }
+  - { offsetInCU: 0x319C, offset: 0x60C4F, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_refreshMessages]', symObjAddr: 0x4A4, symBinAddr: 0x7E65, symSize: 0x44 }
+  - { offsetInCU: 0x31F7, offset: 0x60CAA, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_inboxMessagesTableViewDataSourceForTableView:]', symObjAddr: 0x4E8, symBinAddr: 0x7EA9, symSize: 0x5C }
+  - { offsetInCU: 0x3262, offset: 0x60D15, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(InboxMessages) sfmc_inboxMessagesTableViewDelegateForTableView:dataSource:]', symObjAddr: 0x544, symBinAddr: 0x7F05, symSize: 0x81 }
+  - { offsetInCU: 0x32F5, offset: 0x60DA8, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource initWithMarketingCloudSDK:tableView:]', symObjAddr: 0x5C5, symBinAddr: 0x7F86, symSize: 0x21B }
+  - { offsetInCU: 0x3454, offset: 0x60F07, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource dealloc]', symObjAddr: 0x7E0, symBinAddr: 0x81A1, symSize: 0x95 }
+  - { offsetInCU: 0x34B7, offset: 0x60F6A, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource sfmc_inboxMessagesAvailableNotificationReceived:]', symObjAddr: 0x875, symBinAddr: 0x8236, symSize: 0x1F8 }
+  - { offsetInCU: 0x3686, offset: 0x61139, size: 0x8, addend: 0x0, symName: '___92-[MarketingCloudSDKInboxMessagesDataSource sfmc_inboxMessagesAvailableNotificationReceived:]_block_invoke', symObjAddr: 0xA6D, symBinAddr: 0x842E, symSize: 0x61 }
+  - { offsetInCU: 0x36F1, offset: 0x611A4, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource numberOfSectionsInTableView:]', symObjAddr: 0x101F, symBinAddr: 0x89C0, symSize: 0xB }
+  - { offsetInCU: 0x3730, offset: 0x611E3, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView:numberOfRowsInSection:]', symObjAddr: 0x102A, symBinAddr: 0x89CB, symSize: 0x44 }
+  - { offsetInCU: 0x37A3, offset: 0x61256, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView:canEditRowAtIndexPath:]', symObjAddr: 0x106E, symBinAddr: 0x8A0F, symSize: 0x8 }
+  - { offsetInCU: 0x37EE, offset: 0x612A1, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView:canMoveRowAtIndexPath:]', symObjAddr: 0x1076, symBinAddr: 0x8A17, symSize: 0x8 }
+  - { offsetInCU: 0x3839, offset: 0x612EC, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView:commitEditingStyle:forRowAtIndexPath:]', symObjAddr: 0x107E, symBinAddr: 0x8A1F, symSize: 0x1E7 }
+  - { offsetInCU: 0x3A37, offset: 0x614EA, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource sfmc_readIndicatorWithColor:]', symObjAddr: 0x1265, symBinAddr: 0x8C06, symSize: 0xE3 }
+  - { offsetInCU: 0x4341, offset: 0x61DF4, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource sfmc_messages]', symObjAddr: 0x1348, symBinAddr: 0x8CE9, symSize: 0xA }
+  - { offsetInCU: 0x4376, offset: 0x61E29, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource setSfmc_messages:]', symObjAddr: 0x1352, symBinAddr: 0x8CF3, symSize: 0xF }
+  - { offsetInCU: 0x43B5, offset: 0x61E68, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource sdk]', symObjAddr: 0x1361, symBinAddr: 0x8D02, symSize: 0xA }
+  - { offsetInCU: 0x43EA, offset: 0x61E9D, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource setSdk:]', symObjAddr: 0x136B, symBinAddr: 0x8D0C, symSize: 0xA }
+  - { offsetInCU: 0x4427, offset: 0x61EDA, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource tableView]', symObjAddr: 0x1375, symBinAddr: 0x8D16, symSize: 0x16 }
+  - { offsetInCU: 0x445E, offset: 0x61F11, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource setTableView:]', symObjAddr: 0x138B, symBinAddr: 0x8D2C, symSize: 0x11 }
+  - { offsetInCU: 0x449D, offset: 0x61F50, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDataSource .cxx_destruct]', symObjAddr: 0x139C, symBinAddr: 0x8D3D, symSize: 0x26 }
+  - { offsetInCU: 0x44D0, offset: 0x61F83, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate initWithMarketingCloudSDK:tableView:dataSource:]', symObjAddr: 0x13C2, symBinAddr: 0x8D63, symSize: 0x20F }
+  - { offsetInCU: 0x4637, offset: 0x620EA, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate tableView:didSelectRowAtIndexPath:]', symObjAddr: 0x15D1, symBinAddr: 0x8F72, symSize: 0x40C }
+  - { offsetInCU: 0x4919, offset: 0x623CC, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate sdk]', symObjAddr: 0x19DD, symBinAddr: 0x937E, symSize: 0xA }
+  - { offsetInCU: 0x494E, offset: 0x62401, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate setSdk:]', symObjAddr: 0x19E7, symBinAddr: 0x9388, symSize: 0xA }
+  - { offsetInCU: 0x498B, offset: 0x6243E, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate tableView]', symObjAddr: 0x19F1, symBinAddr: 0x9392, symSize: 0x16 }
+  - { offsetInCU: 0x49C2, offset: 0x62475, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate setTableView:]', symObjAddr: 0x1A07, symBinAddr: 0x93A8, symSize: 0x11 }
+  - { offsetInCU: 0x4A01, offset: 0x624B4, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate dataSource]', symObjAddr: 0x1A18, symBinAddr: 0x93B9, symSize: 0xA }
+  - { offsetInCU: 0x4A36, offset: 0x624E9, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate setDataSource:]', symObjAddr: 0x1A22, symBinAddr: 0x93C3, symSize: 0x11 }
+  - { offsetInCU: 0x4A75, offset: 0x62528, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKInboxMessagesDelegate .cxx_destruct]', symObjAddr: 0x1A33, symBinAddr: 0x93D4, symSize: 0x26 }
+  - { offsetInCU: 0x27, offset: 0x63040, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(URLHandling) sfmc_setURLHandlingDelegate:]', symObjAddr: 0x0, symBinAddr: 0x93FA, symSize: 0x14C }
+  - { offsetInCU: 0xA5, offset: 0x630BE, size: 0x8, addend: 0x0, symName: _SFMCURLTypeCloudPage, symObjAddr: 0x3E8, symBinAddr: 0x1C8FD0, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x630D4, size: 0x8, addend: 0x0, symName: _SFMCURLTypeOpenDirect, symObjAddr: 0x3F0, symBinAddr: 0x1C8FD8, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x630EA, size: 0x8, addend: 0x0, symName: _SFMCURLTypeAction, symObjAddr: 0x3F8, symBinAddr: 0x1C8FE0, symSize: 0x0 }
+  - { offsetInCU: 0x1C3, offset: 0x631DC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(URLHandling) sfmc_setURLHandlingDelegate:]', symObjAddr: 0x0, symBinAddr: 0x93FA, symSize: 0x14C }
+  - { offsetInCU: 0x2C6, offset: 0x632DF, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(URLHandling) sfmc_setSFMCSdkURLHandlingDelegate:]', symObjAddr: 0x14C, symBinAddr: 0x9546, symSize: 0x14C }
+  - { offsetInCU: 0x27, offset: 0x63CC8, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError initWithDictionary:]', symObjAddr: 0x0, symBinAddr: 0x9692, symSize: 0x138 }
+  - { offsetInCU: 0x41, offset: 0x63CE2, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticSuggestionKey, symObjAddr: 0x2D0, symBinAddr: 0x1C8FE8, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x63D5C, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticMessageKey, symObjAddr: 0x2D8, symBinAddr: 0x1C8FF0, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x63D72, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticMissingFunctionKey, symObjAddr: 0x2E0, symBinAddr: 0x1C8FF8, symSize: 0x0 }
+  - { offsetInCU: 0xE7, offset: 0x63D88, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticResultKey, symObjAddr: 0x2E8, symBinAddr: 0x1C9000, symSize: 0x0 }
+  - { offsetInCU: 0xFD, offset: 0x63D9E, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticIssueTypeKey, symObjAddr: 0x2F0, symBinAddr: 0x1C9008, symSize: 0x0 }
+  - { offsetInCU: 0x1C6, offset: 0x63E67, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError initWithDictionary:]', symObjAddr: 0x0, symBinAddr: 0x9692, symSize: 0x138 }
+  - { offsetInCU: 0x2A9, offset: 0x63F4A, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError suggestion]', symObjAddr: 0x138, symBinAddr: 0x97CA, symSize: 0xA }
+  - { offsetInCU: 0x2DE, offset: 0x63F7F, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError setSuggestion:]', symObjAddr: 0x142, symBinAddr: 0x97D4, symSize: 0x11 }
+  - { offsetInCU: 0x31D, offset: 0x63FBE, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError message]', symObjAddr: 0x153, symBinAddr: 0x97E5, symSize: 0xA }
+  - { offsetInCU: 0x352, offset: 0x63FF3, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError setMessage:]', symObjAddr: 0x15D, symBinAddr: 0x97EF, symSize: 0x11 }
+  - { offsetInCU: 0x391, offset: 0x64032, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError missingFunction]', symObjAddr: 0x16E, symBinAddr: 0x9800, symSize: 0xA }
+  - { offsetInCU: 0x3C6, offset: 0x64067, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError setMissingFunction:]', symObjAddr: 0x178, symBinAddr: 0x980A, symSize: 0x11 }
+  - { offsetInCU: 0x405, offset: 0x640A6, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError result]', symObjAddr: 0x189, symBinAddr: 0x981B, symSize: 0xA }
+  - { offsetInCU: 0x43A, offset: 0x640DB, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError setResult:]', symObjAddr: 0x193, symBinAddr: 0x9825, symSize: 0x11 }
+  - { offsetInCU: 0x479, offset: 0x6411A, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError issueType]', symObjAddr: 0x1A4, symBinAddr: 0x9836, symSize: 0xA }
+  - { offsetInCU: 0x4AE, offset: 0x6414F, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError setIssueType:]', symObjAddr: 0x1AE, symBinAddr: 0x9840, symSize: 0xA }
+  - { offsetInCU: 0x4EB, offset: 0x6418C, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKDiagnosticError .cxx_destruct]', symObjAddr: 0x1B8, symBinAddr: 0x984A, symSize: 0x3E }
+  - { offsetInCU: 0x27, offset: 0x64226, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK(MPP) getFrameworksList]', symObjAddr: 0x0, symBinAddr: 0x9888, symSize: 0xBD }
+  - { offsetInCU: 0x141, offset: 0x64340, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK(MPP) getFrameworksList]', symObjAddr: 0x0, symBinAddr: 0x9888, symSize: 0xBD }
+  - { offsetInCU: 0x1EC, offset: 0x643EB, size: 0x8, addend: 0x0, symName: '___39+[MobilePushSDK(MPP) getFrameworksList]_block_invoke', symObjAddr: 0xBD, symBinAddr: 0x9945, symSize: 0x11E }
+  - { offsetInCU: 0x2EA, offset: 0x644E9, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK(MPP) getList]', symObjAddr: 0x1DB, symBinAddr: 0x9A63, symSize: 0xCE }
+  - { offsetInCU: 0x329, offset: 0x64528, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK(MPP) getFilteredAppFrameworkList]', symObjAddr: 0x2A9, symBinAddr: 0x9B31, symSize: 0x3C2 }
+  - { offsetInCU: 0x27, offset: 0x64CF3, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(UNUserNotifications) validateUNUserNotificationCenterMethods]', symObjAddr: 0x0, symBinAddr: 0x9EF3, symSize: 0x371 }
+  - { offsetInCU: 0xFF, offset: 0x64DCB, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool(UNUserNotifications) validateUNUserNotificationCenterMethods]', symObjAddr: 0x0, symBinAddr: 0x9EF3, symSize: 0x371 }
+  - { offsetInCU: 0x27, offset: 0x6508D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_setLocationDelegate:]', symObjAddr: 0x0, symBinAddr: 0xA264, symSize: 0x183 }
+  - { offsetInCU: 0x17C, offset: 0x651E2, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_setLocationDelegate:]', symObjAddr: 0x0, symBinAddr: 0xA264, symSize: 0x183 }
+  - { offsetInCU: 0x297, offset: 0x652FD, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_setSFMCSdkLocationDelegate:]', symObjAddr: 0x183, symBinAddr: 0xA3E7, symSize: 0x183 }
+  - { offsetInCU: 0x3B2, offset: 0x65418, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_regionFromDictionary:]', symObjAddr: 0x306, symBinAddr: 0xA56A, symSize: 0x172 }
+  - { offsetInCU: 0x4AD, offset: 0x65513, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_locationEnabled]', symObjAddr: 0x478, symBinAddr: 0xA6DC, symSize: 0x156 }
+  - { offsetInCU: 0x58C, offset: 0x655F2, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_startWatchingLocation]', symObjAddr: 0x5CE, symBinAddr: 0xA832, symSize: 0x173 }
+  - { offsetInCU: 0x68B, offset: 0x656F1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_stopWatchingLocation]', symObjAddr: 0x741, symBinAddr: 0xA9A5, symSize: 0x170 }
+  - { offsetInCU: 0x78A, offset: 0x657F0, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_watchingLocation]', symObjAddr: 0x8B1, symBinAddr: 0xAB15, symSize: 0x156 }
+  - { offsetInCU: 0x869, offset: 0x658CF, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) sfmc_lastKnownLocation]', symObjAddr: 0xA07, symBinAddr: 0xAC6B, symSize: 0x162 }
+  - { offsetInCU: 0x948, offset: 0x659AE, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK(Location) isLocationEnabled]', symObjAddr: 0xB69, symBinAddr: 0xADCD, symSize: 0x82 }
+  - { offsetInCU: 0x27, offset: 0x6635E, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder init]', symObjAddr: 0x0, symBinAddr: 0xAE4F, symSize: 0x5E }
+  - { offsetInCU: 0x2F1, offset: 0x66628, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder init]', symObjAddr: 0x0, symBinAddr: 0xAE4F, symSize: 0x5E }
+  - { offsetInCU: 0x340, offset: 0x66677, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_build]', symObjAddr: 0x5E, symBinAddr: 0xAEAD, symSize: 0x16 }
+  - { offsetInCU: 0x383, offset: 0x666BA, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setLocationEnabled:]', symObjAddr: 0x74, symBinAddr: 0xAEC3, symSize: 0x24 }
+  - { offsetInCU: 0x3D6, offset: 0x6670D, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setInboxEnabled:]', symObjAddr: 0x98, symBinAddr: 0xAEE7, symSize: 0x24 }
+  - { offsetInCU: 0x429, offset: 0x66760, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setPiAnalyticsEnabled:]', symObjAddr: 0xBC, symBinAddr: 0xAF0B, symSize: 0x24 }
+  - { offsetInCU: 0x47C, offset: 0x667B3, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setUseLegacyPIIdentifier:]', symObjAddr: 0xE0, symBinAddr: 0xAF2F, symSize: 0x24 }
+  - { offsetInCU: 0x4CF, offset: 0x66806, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setAnalyticsEnabled:]', symObjAddr: 0x104, symBinAddr: 0xAF53, symSize: 0x24 }
+  - { offsetInCU: 0x522, offset: 0x66859, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setApplicationId:]', symObjAddr: 0x128, symBinAddr: 0xAF77, symSize: 0x24 }
+  - { offsetInCU: 0x575, offset: 0x668AC, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setMid:]', symObjAddr: 0x14C, symBinAddr: 0xAF9B, symSize: 0x24 }
+  - { offsetInCU: 0x5C8, offset: 0x668FF, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setAccessToken:]', symObjAddr: 0x170, symBinAddr: 0xAFBF, symSize: 0x24 }
+  - { offsetInCU: 0x61B, offset: 0x66952, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setMarketingCloudServerUrl:]', symObjAddr: 0x194, symBinAddr: 0xAFE3, symSize: 0x24 }
+  - { offsetInCU: 0x66E, offset: 0x669A5, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setApplicationControlsBadging:]', symObjAddr: 0x1B8, symBinAddr: 0xB007, symSize: 0x24 }
+  - { offsetInCU: 0x6C1, offset: 0x669F8, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setDelayRegistrationUntilContactKeyIsSet:]', symObjAddr: 0x1DC, symBinAddr: 0xB02B, symSize: 0x24 }
+  - { offsetInCU: 0x714, offset: 0x66A4B, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder sfmc_setMarkMessageReadOnInboxNotificationOpen:]', symObjAddr: 0x200, symBinAddr: 0xB04F, symSize: 0x24 }
+  - { offsetInCU: 0x767, offset: 0x66A9E, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder configurePayload]', symObjAddr: 0x224, symBinAddr: 0xB073, symSize: 0x14 }
+  - { offsetInCU: 0x79E, offset: 0x66AD5, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder setConfigurePayload:]', symObjAddr: 0x238, symBinAddr: 0xB087, symSize: 0xF }
+  - { offsetInCU: 0x7DD, offset: 0x66B14, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfigBuilder .cxx_destruct]', symObjAddr: 0x247, symBinAddr: 0xB096, symSize: 0x10 }
+  - { offsetInCU: 0x27, offset: 0x66BD6, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool createDiagnosticReportWithCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0xB0A6, symSize: 0xB2 }
+  - { offsetInCU: 0xA5, offset: 0x66C54, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticDidRegisterForRemoteNotificationsWithDeviceToken, symObjAddr: 0x2188, symBinAddr: 0x1C9050, symSize: 0x0 }
+  - { offsetInCU: 0xBB, offset: 0x66C6A, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticDidReceiveRemoteNotification, symObjAddr: 0x2190, symBinAddr: 0x1C9058, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x66C80, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticUserNotificationCenterDidReceive, symObjAddr: 0x2198, symBinAddr: 0x1C9060, symSize: 0x0 }
+  - { offsetInCU: 0xE7, offset: 0x66C96, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticUserNotificationCenterWillPresentNotification, symObjAddr: 0x21A0, symBinAddr: 0x1C9068, symSize: 0x0 }
+  - { offsetInCU: 0xFD, offset: 0x66CAC, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticUserNotificationDelegateNotSetError, symObjAddr: 0x21A8, symBinAddr: 0x1C9070, symSize: 0x0 }
+  - { offsetInCU: 0x113, offset: 0x66CC2, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticURLHandling, symObjAddr: 0x21B0, symBinAddr: 0x1C9078, symSize: 0x0 }
+  - { offsetInCU: 0x129, offset: 0x66CD8, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticURLHandlingDelegateNotSet, symObjAddr: 0x21B8, symBinAddr: 0x1C9080, symSize: 0x0 }
+  - { offsetInCU: 0x13F, offset: 0x66CEE, size: 0x8, addend: 0x0, symName: _SFMCDiagnosticReportDelay, symObjAddr: 0x2220, symBinAddr: 0x195470, symSize: 0x0 }
+  - { offsetInCU: 0x282, offset: 0x66E31, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool createDiagnosticReportWithCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0xB0A6, symSize: 0xB2 }
+  - { offsetInCU: 0x3E2, offset: 0x66F91, size: 0x8, addend: 0x0, symName: '___79+[MarketingCloudSDKDiagnosticTool createDiagnosticReportWithCompletionHandler:]_block_invoke', symObjAddr: 0xB2, symBinAddr: 0xB158, symSize: 0xA9 }
+  - { offsetInCU: 0x46D, offset: 0x6701C, size: 0x8, addend: 0x0, symName: '___79+[MarketingCloudSDKDiagnosticTool createDiagnosticReportWithCompletionHandler:]_block_invoke_2', symObjAddr: 0x15B, symBinAddr: 0xB201, symSize: 0xA0 }
+  - { offsetInCU: 0x51D, offset: 0x670CC, size: 0x8, addend: 0x0, symName: '___79+[MarketingCloudSDKDiagnosticTool createDiagnosticReportWithCompletionHandler:]_block_invoke_3', symObjAddr: 0x1FB, symBinAddr: 0xB2A1, symSize: 0x92 }
+  - { offsetInCU: 0x5DF, offset: 0x6718E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x28D, symBinAddr: 0xB333, symSize: 0x17 }
+  - { offsetInCU: 0x608, offset: 0x671B7, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool validateMethods]', symObjAddr: 0x2B3, symBinAddr: 0xB34A, symSize: 0xDB }
+  - { offsetInCU: 0x6C3, offset: 0x67272, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool getDiagnosticDictionary]', symObjAddr: 0x38E, symBinAddr: 0xB425, symSize: 0x6E3 }
+  - { offsetInCU: 0x852, offset: 0x67401, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool getAppDelegateSelectors]', symObjAddr: 0xA71, symBinAddr: 0xBB08, symSize: 0x72 }
+  - { offsetInCU: 0x891, offset: 0x67440, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool getUserNotificationSelectors]', symObjAddr: 0xAE3, symBinAddr: 0xBB7A, symSize: 0x72 }
+  - { offsetInCU: 0x8D0, offset: 0x6747F, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool getURLHandingSelectors]', symObjAddr: 0xB55, symBinAddr: 0xBBEC, symSize: 0x67 }
+  - { offsetInCU: 0x90F, offset: 0x674BE, size: 0x8, addend: 0x0, symName: '+[MarketingCloudSDKDiagnosticTool getDiagnosticErrorForKey:]', symObjAddr: 0xBBC, symBinAddr: 0xBC53, symSize: 0xA8 }
+  - { offsetInCU: 0x27, offset: 0x6796D, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK sharedInstance]', symObjAddr: 0x0, symBinAddr: 0xBCFC, symSize: 0x30 }
+  - { offsetInCU: 0xA0, offset: 0x679E6, size: 0x8, addend: 0x0, symName: __sharedInstance, symObjAddr: 0x83EF8, symBinAddr: 0x202050, symSize: 0x0 }
+  - { offsetInCU: 0x13FB, offset: 0x68D41, size: 0x8, addend: 0x0, symName: _once_token, symObjAddr: 0x83F00, symBinAddr: 0x202058, symSize: 0x0 }
+  - { offsetInCU: 0x15B8, offset: 0x68EFE, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK sharedInstance]', symObjAddr: 0x0, symBinAddr: 0xBCFC, symSize: 0x30 }
+  - { offsetInCU: 0x1619, offset: 0x68F5F, size: 0x8, addend: 0x0, symName: '___31+[MobilePushSDK sharedInstance]_block_invoke', symObjAddr: 0x30, symBinAddr: 0xBD2C, symSize: 0x39 }
+  - { offsetInCU: 0x1658, offset: 0x68F9E, size: 0x8, addend: 0x0, symName: '+[MobilePushSDK setSharedInstance:]', symObjAddr: 0x69, symBinAddr: 0xBD65, symSize: 0x95 }
+  - { offsetInCU: 0x1705, offset: 0x6904B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK init]', symObjAddr: 0xFE, symBinAddr: 0xBDFA, symSize: 0x3A9 }
+  - { offsetInCU: 0x197E, offset: 0x692C4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_tearDown]', symObjAddr: 0x4A7, symBinAddr: 0xC1A3, symSize: 0x402 }
+  - { offsetInCU: 0x1BF1, offset: 0x69537, size: 0x8, addend: 0x0, symName: '___30-[MobilePushSDK sfmc_tearDown]_block_invoke', symObjAddr: 0x8A9, symBinAddr: 0xC5A5, symSize: 0x65 }
+  - { offsetInCU: 0x1C7C, offset: 0x695C2, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK frameworkHeavyLiftInitialization:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:weakSelf:]', symObjAddr: 0x90E, symBinAddr: 0xC60A, symSize: 0xB2B }
+  - { offsetInCU: 0x2300, offset: 0x69C46, size: 0x8, addend: 0x0, symName: ___Block_byref_object_copy_, symObjAddr: 0x1439, symBinAddr: 0xD135, symSize: 0x16 }
+  - { offsetInCU: 0x2325, offset: 0x69C6B, size: 0x8, addend: 0x0, symName: ___Block_byref_object_dispose_, symObjAddr: 0x144F, symBinAddr: 0xD14B, symSize: 0xF }
+  - { offsetInCU: 0x2350, offset: 0x69C96, size: 0x8, addend: 0x0, symName: '___132-[MobilePushSDK frameworkHeavyLiftInitialization:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:weakSelf:]_block_invoke', symObjAddr: 0x145E, symBinAddr: 0xD15A, symSize: 0xA85 }
+  - { offsetInCU: 0x2956, offset: 0x6A29C, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40r48r56w, symObjAddr: 0x1EE3, symBinAddr: 0xDBDF, symSize: 0x52 }
+  - { offsetInCU: 0x298B, offset: 0x6A2D1, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40r48r56w, symObjAddr: 0x1F35, symBinAddr: 0xDC31, symSize: 0x3E }
+  - { offsetInCU: 0x29B6, offset: 0x6A2FC, size: 0x8, addend: 0x0, symName: '___132-[MobilePushSDK frameworkHeavyLiftInitialization:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:weakSelf:]_block_invoke.251', symObjAddr: 0x1F73, symBinAddr: 0xDC6F, symSize: 0x53 }
+  - { offsetInCU: 0x2A3A, offset: 0x6A380, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK initializeFrameworks:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:]', symObjAddr: 0x1FC6, symBinAddr: 0xDCC2, symSize: 0x2FC }
+  - { offsetInCU: 0x2CB9, offset: 0x6A5FF, size: 0x8, addend: 0x0, symName: '___111-[MobilePushSDK initializeFrameworks:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:]_block_invoke', symObjAddr: 0x22C2, symBinAddr: 0xDFBE, symSize: 0x85 }
+  - { offsetInCU: 0x2D7C, offset: 0x6A6C2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64b72w, symObjAddr: 0x2347, symBinAddr: 0xE043, symSize: 0x62 }
+  - { offsetInCU: 0x2DD5, offset: 0x6A71B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s72w, symObjAddr: 0x23A9, symBinAddr: 0xE0A5, symSize: 0x43 }
+  - { offsetInCU: 0x2E30, offset: 0x6A776, size: 0x8, addend: 0x0, symName: '___111-[MobilePushSDK initializeFrameworks:completionHandler:configurationIndex:configurationInfo:defaultFrameworks:]_block_invoke.288', symObjAddr: 0x23EC, symBinAddr: 0xE0E8, symSize: 0x85 }
+  - { offsetInCU: 0x2EF3, offset: 0x6A839, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_configureWithDictionary:error:]', symObjAddr: 0x2471, symBinAddr: 0xE16D, symSize: 0x15 }
+  - { offsetInCU: 0x2F53, offset: 0x6A899, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_configureWithDictionary:error:completionHandler:]', symObjAddr: 0x2486, symBinAddr: 0xE182, symSize: 0xDC }
+  - { offsetInCU: 0x3037, offset: 0x6A97D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK configure:configurationInfo:error:jsonFileReadError:url:completionHandler:]', symObjAddr: 0x2562, symBinAddr: 0xE25E, symSize: 0x2199 }
+  - { offsetInCU: 0x41AF, offset: 0x6BAF5, size: 0x8, addend: 0x0, symName: '___91-[MobilePushSDK configure:configurationInfo:error:jsonFileReadError:url:completionHandler:]_block_invoke', symObjAddr: 0x46FB, symBinAddr: 0x103F7, symSize: 0x6 }
+  - { offsetInCU: 0x41E5, offset: 0x6BB2B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_appID]', symObjAddr: 0x4701, symBinAddr: 0x103FD, symSize: 0x50 }
+  - { offsetInCU: 0x4241, offset: 0x6BB87, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_accessToken]', symObjAddr: 0x4751, symBinAddr: 0x1044D, symSize: 0x50 }
+  - { offsetInCU: 0x429D, offset: 0x6BBE3, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_deviceIdentifier]', symObjAddr: 0x47A1, symBinAddr: 0x1049D, symSize: 0x50 }
+  - { offsetInCU: 0x42F9, offset: 0x6BC3F, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setContactKey:]', symObjAddr: 0x47F1, symBinAddr: 0x104ED, symSize: 0x1C0 }
+  - { offsetInCU: 0x443F, offset: 0x6BD85, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_contactKey]', symObjAddr: 0x49B1, symBinAddr: 0x106AD, symSize: 0x50 }
+  - { offsetInCU: 0x449B, offset: 0x6BDE1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_addTag:]', symObjAddr: 0x4A01, symBinAddr: 0x106FD, symSize: 0x1C0 }
+  - { offsetInCU: 0x45E1, offset: 0x6BF27, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_removeTag:]', symObjAddr: 0x4BC1, symBinAddr: 0x108BD, symSize: 0x1C0 }
+  - { offsetInCU: 0x4727, offset: 0x6C06D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_addTags:]', symObjAddr: 0x4D81, symBinAddr: 0x10A7D, symSize: 0x1D1 }
+  - { offsetInCU: 0x486D, offset: 0x6C1B3, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_removeTags:]', symObjAddr: 0x4F52, symBinAddr: 0x10C4E, symSize: 0x1D1 }
+  - { offsetInCU: 0x49B3, offset: 0x6C2F9, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_tags]', symObjAddr: 0x5123, symBinAddr: 0x10E1F, symSize: 0x50 }
+  - { offsetInCU: 0x4A0F, offset: 0x6C355, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setAttributeNamed:value:]', symObjAddr: 0x5173, symBinAddr: 0x10E6F, symSize: 0x1E2 }
+  - { offsetInCU: 0x4B7E, offset: 0x6C4C4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_clearAttributeNamed:]', symObjAddr: 0x5355, symBinAddr: 0x11051, symSize: 0x1C0 }
+  - { offsetInCU: 0x4CC4, offset: 0x6C60A, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_attributes]', symObjAddr: 0x5515, symBinAddr: 0x11211, symSize: 0x50 }
+  - { offsetInCU: 0x4D20, offset: 0x6C666, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setAttributes:]', symObjAddr: 0x5565, symBinAddr: 0x11261, symSize: 0x1D1 }
+  - { offsetInCU: 0x4E66, offset: 0x6C7AC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_clearAttributesNamed:]', symObjAddr: 0x5736, symBinAddr: 0x11432, symSize: 0x1D1 }
+  - { offsetInCU: 0x4FAC, offset: 0x6C8F2, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setRegistrationCallback:]', symObjAddr: 0x5907, symBinAddr: 0x11603, symSize: 0x69 }
+  - { offsetInCU: 0x502D, offset: 0x6C973, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_unsetRegistrationCallback]', symObjAddr: 0x5970, symBinAddr: 0x1166C, symSize: 0x3D }
+  - { offsetInCU: 0x5085, offset: 0x6C9CB, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setSignedString:]', symObjAddr: 0x59AD, symBinAddr: 0x116A9, symSize: 0x6E }
+  - { offsetInCU: 0x510A, offset: 0x6CA50, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_signedString]', symObjAddr: 0x5A1B, symBinAddr: 0x11717, symSize: 0x50 }
+  - { offsetInCU: 0x5166, offset: 0x6CAAC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK notificationCenter]', symObjAddr: 0x5A6B, symBinAddr: 0x11767, symSize: 0x4B }
+  - { offsetInCU: 0x51B6, offset: 0x6CAFC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setDeviceToken:]', symObjAddr: 0x5AB6, symBinAddr: 0x117B2, symSize: 0x492 }
+  - { offsetInCU: 0x547B, offset: 0x6CDC1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_deviceToken]', symObjAddr: 0x5F48, symBinAddr: 0x11C44, symSize: 0x19C }
+  - { offsetInCU: 0x558B, offset: 0x6CED1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setNotificationRequest:]', symObjAddr: 0x60E4, symBinAddr: 0x11DE0, symSize: 0x39A }
+  - { offsetInCU: 0x57BE, offset: 0x6D104, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_notificationRequest]', symObjAddr: 0x647E, symBinAddr: 0x1217A, symSize: 0x50 }
+  - { offsetInCU: 0x581A, offset: 0x6D160, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setNotificationUserInfo:]', symObjAddr: 0x64CE, symBinAddr: 0x121CA, symSize: 0x39A }
+  - { offsetInCU: 0x5A4D, offset: 0x6D393, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_notificationUserInfo]', symObjAddr: 0x6868, symBinAddr: 0x12564, symSize: 0x50 }
+  - { offsetInCU: 0x5AA9, offset: 0x6D3EF, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setPushEnabled:]', symObjAddr: 0x68B8, symBinAddr: 0x125B4, symSize: 0x20F }
+  - { offsetInCU: 0x5BDE, offset: 0x6D524, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_pushEnabled]', symObjAddr: 0x6AC7, symBinAddr: 0x127C3, symSize: 0x85 }
+  - { offsetInCU: 0x5C5E, offset: 0x6D5A4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_getSDKState]', symObjAddr: 0x6B4C, symBinAddr: 0x12848, symSize: 0x6C9 }
+  - { offsetInCU: 0x5FAC, offset: 0x6D8F2, size: 0x8, addend: 0x0, symName: '___33-[MobilePushSDK sfmc_getSDKState]_block_invoke', symObjAddr: 0x7215, symBinAddr: 0x12F11, symSize: 0x87 }
+  - { offsetInCU: 0x605D, offset: 0x6D9A3, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x729C, symBinAddr: 0x12F98, symSize: 0xF }
+  - { offsetInCU: 0x6090, offset: 0x6D9D6, size: 0x8, addend: 0x0, symName: '___33-[MobilePushSDK sfmc_getSDKState]_block_invoke.581', symObjAddr: 0x72BA, symBinAddr: 0x12FAA, symSize: 0x152 }
+  - { offsetInCU: 0x61B5, offset: 0x6DAFB, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_setDebugLoggingEnabled:]', symObjAddr: 0x740C, symBinAddr: 0x130FC, symSize: 0x7B }
+  - { offsetInCU: 0x621E, offset: 0x6DB64, size: 0x8, addend: 0x0, symName: '___45-[MobilePushSDK sfmc_setDebugLoggingEnabled:]_block_invoke', symObjAddr: 0x7487, symBinAddr: 0x13177, symSize: 0x96 }
+  - { offsetInCU: 0x62CF, offset: 0x6DC15, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_getDebugLoggingEnabled]', symObjAddr: 0x751D, symBinAddr: 0x1320D, symSize: 0xC8 }
+  - { offsetInCU: 0x6340, offset: 0x6DC86, size: 0x8, addend: 0x0, symName: '___44-[MobilePushSDK sfmc_getDebugLoggingEnabled]_block_invoke', symObjAddr: 0x75E5, symBinAddr: 0x132D5, symSize: 0x12C }
+  - { offsetInCU: 0x6466, offset: 0x6DDAC, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32r, symObjAddr: 0x7711, symBinAddr: 0x13401, symSize: 0x17 }
+  - { offsetInCU: 0x648F, offset: 0x6DDD5, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32r, symObjAddr: 0x7728, symBinAddr: 0x13418, symSize: 0x13 }
+  - { offsetInCU: 0x64AE, offset: 0x6DDF4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_refreshWithFetchCompletionHandler:]', symObjAddr: 0x773B, symBinAddr: 0x1342B, symSize: 0x215 }
+  - { offsetInCU: 0x65E5, offset: 0x6DF2B, size: 0x8, addend: 0x0, symName: '___56-[MobilePushSDK sfmc_refreshWithFetchCompletionHandler:]_block_invoke', symObjAddr: 0x7950, symBinAddr: 0x13640, symSize: 0x12C }
+  - { offsetInCU: 0x670B, offset: 0x6E051, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK activeFrameworks]', symObjAddr: 0x7A7C, symBinAddr: 0x1376C, symSize: 0xE6 }
+  - { offsetInCU: 0x67B4, offset: 0x6E0FA, size: 0x8, addend: 0x0, symName: '___33-[MobilePushSDK activeFrameworks]_block_invoke', symObjAddr: 0x7B62, symBinAddr: 0x13852, symSize: 0x6B }
+  - { offsetInCU: 0x684F, offset: 0x6E195, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK controlChannelUpdated:]', symObjAddr: 0x7BCD, symBinAddr: 0x138BD, symSize: 0xD13 }
+  - { offsetInCU: 0x6FC7, offset: 0x6E90D, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke', symObjAddr: 0x88E0, symBinAddr: 0x145D0, symSize: 0x14A }
+  - { offsetInCU: 0x70F9, offset: 0x6EA3F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0x8A2A, symBinAddr: 0x1471A, symSize: 0x25 }
+  - { offsetInCU: 0x713A, offset: 0x6EA80, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x8A4F, symBinAddr: 0x1473F, symSize: 0x25 }
+  - { offsetInCU: 0x7171, offset: 0x6EAB7, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke.641', symObjAddr: 0x8A74, symBinAddr: 0x14764, symSize: 0x105 }
+  - { offsetInCU: 0x7273, offset: 0x6EBB9, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke_2', symObjAddr: 0x8B79, symBinAddr: 0x14869, symSize: 0x134 }
+  - { offsetInCU: 0x738D, offset: 0x6ECD3, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke_3', symObjAddr: 0x8CAD, symBinAddr: 0x1499D, symSize: 0x335 }
+  - { offsetInCU: 0x7561, offset: 0x6EEA7, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke_4', symObjAddr: 0x8FE2, symBinAddr: 0x14CD2, symSize: 0x327 }
+  - { offsetInCU: 0x7781, offset: 0x6F0C7, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x9309, symBinAddr: 0x14FF9, symSize: 0x2E }
+  - { offsetInCU: 0x77B6, offset: 0x6F0FC, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x9337, symBinAddr: 0x15027, symSize: 0x22 }
+  - { offsetInCU: 0x77E1, offset: 0x6F127, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke.655', symObjAddr: 0x93C9, symBinAddr: 0x15049, symSize: 0x64 }
+  - { offsetInCU: 0x787A, offset: 0x6F1C0, size: 0x8, addend: 0x0, symName: '___39-[MobilePushSDK controlChannelUpdated:]_block_invoke_2.656', symObjAddr: 0x942D, symBinAddr: 0x150AD, symSize: 0x64 }
+  - { offsetInCU: 0x7913, offset: 0x6F259, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setRegistrationRequestTimeInterval:]', symObjAddr: 0x9491, symBinAddr: 0x15111, symSize: 0x53 }
+  - { offsetInCU: 0x7978, offset: 0x6F2BE, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setDebugPreventRegistrationRequest:]', symObjAddr: 0x94E4, symBinAddr: 0x15164, symSize: 0x95 }
+  - { offsetInCU: 0x7A05, offset: 0x6F34B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_isReady]', symObjAddr: 0x9579, symBinAddr: 0x151F9, symSize: 0x44 }
+  - { offsetInCU: 0x7A61, offset: 0x6F3A7, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_isInitializing]', symObjAddr: 0x95BD, symBinAddr: 0x1523D, symSize: 0x44 }
+  - { offsetInCU: 0x7ABD, offset: 0x6F403, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK sfmc_resetDataPolicy]', symObjAddr: 0x9601, symBinAddr: 0x15281, symSize: 0x44 }
+  - { offsetInCU: 0x7B19, offset: 0x6F45F, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK observeValueForKeyPath:ofObject:change:context:]', symObjAddr: 0x9645, symBinAddr: 0x152C5, symSize: 0x507 }
+  - { offsetInCU: 0x7DC2, offset: 0x6F708, size: 0x8, addend: 0x0, symName: '___64-[MobilePushSDK observeValueForKeyPath:ofObject:change:context:]_block_invoke', symObjAddr: 0x9B4C, symBinAddr: 0x157CC, symSize: 0x27F }
+  - { offsetInCU: 0x7F66, offset: 0x6F8AC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK featureToggleSet:]', symObjAddr: 0x9DEB, symBinAddr: 0x15A4B, symSize: 0x261 }
+  - { offsetInCU: 0x811D, offset: 0x6FA63, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK handleToggleFor:featureClass:frameworkKey:isEnabled:]', symObjAddr: 0xA04C, symBinAddr: 0x15CAC, symSize: 0x3FC }
+  - { offsetInCU: 0x842B, offset: 0x6FD71, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK logMppWarning]', symObjAddr: 0xA448, symBinAddr: 0x160A8, symSize: 0x114 }
+  - { offsetInCU: 0x84FC, offset: 0x6FE42, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK logDiagnosticReport]', symObjAddr: 0xA55C, symBinAddr: 0x161BC, symSize: 0xA8 }
+  - { offsetInCU: 0x854C, offset: 0x6FE92, size: 0x8, addend: 0x0, symName: '___36-[MobilePushSDK logDiagnosticReport]_block_invoke', symObjAddr: 0xA604, symBinAddr: 0x16264, symSize: 0x12B }
+  - { offsetInCU: 0x8637, offset: 0x6FF7D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setNotificationCenter:]', symObjAddr: 0xA72F, symBinAddr: 0x1638F, symSize: 0x11 }
+  - { offsetInCU: 0x8676, offset: 0x6FFBC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK userNotificationCenter]', symObjAddr: 0xA740, symBinAddr: 0x163A0, symSize: 0xA }
+  - { offsetInCU: 0x86AB, offset: 0x6FFF1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setUserNotificationCenter:]', symObjAddr: 0xA74A, symBinAddr: 0x163AA, symSize: 0x11 }
+  - { offsetInCU: 0x86EA, offset: 0x70030, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK configurationURL]', symObjAddr: 0xA75B, symBinAddr: 0x163BB, symSize: 0xA }
+  - { offsetInCU: 0x871F, offset: 0x70065, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setConfigurationURL:]', symObjAddr: 0xA765, symBinAddr: 0x163C5, symSize: 0x11 }
+  - { offsetInCU: 0x875E, offset: 0x700A4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK configurationInfo]', symObjAddr: 0xA776, symBinAddr: 0x163D6, symSize: 0xA }
+  - { offsetInCU: 0x8793, offset: 0x700D9, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setConfigurationInfo:]', symObjAddr: 0xA780, symBinAddr: 0x163E0, symSize: 0x11 }
+  - { offsetInCU: 0x87D2, offset: 0x70118, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK configurationIndex]', symObjAddr: 0xA791, symBinAddr: 0x163F1, symSize: 0xA }
+  - { offsetInCU: 0x8807, offset: 0x7014D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setConfigurationIndex:]', symObjAddr: 0xA79B, symBinAddr: 0x163FB, symSize: 0x11 }
+  - { offsetInCU: 0x8846, offset: 0x7018C, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK frameworks]', symObjAddr: 0xA7AC, symBinAddr: 0x1640C, symSize: 0xA }
+  - { offsetInCU: 0x887B, offset: 0x701C1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setFrameworks:]', symObjAddr: 0xA7B6, symBinAddr: 0x16416, symSize: 0x11 }
+  - { offsetInCU: 0x88BA, offset: 0x70200, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK logger]', symObjAddr: 0xA7C7, symBinAddr: 0x16427, symSize: 0xA }
+  - { offsetInCU: 0x88EF, offset: 0x70235, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setLogger:]', symObjAddr: 0xA7D1, symBinAddr: 0x16431, symSize: 0x11 }
+  - { offsetInCU: 0x892E, offset: 0x70274, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK applicationWillTerminateObserver]', symObjAddr: 0xA7E2, symBinAddr: 0x16442, symSize: 0xA }
+  - { offsetInCU: 0x8963, offset: 0x702A9, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setApplicationWillTerminateObserver:]', symObjAddr: 0xA7EC, symBinAddr: 0x1644C, symSize: 0x11 }
+  - { offsetInCU: 0x89A2, offset: 0x702E8, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK registrationRequestTimeInterval]', symObjAddr: 0xA7FD, symBinAddr: 0x1645D, symSize: 0xA }
+  - { offsetInCU: 0x89D7, offset: 0x7031D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK debugPreventRegistrationRequest]', symObjAddr: 0xA807, symBinAddr: 0x16467, symSize: 0xA }
+  - { offsetInCU: 0x8A0C, offset: 0x70352, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK configurationError]', symObjAddr: 0xA811, symBinAddr: 0x16471, symSize: 0xA }
+  - { offsetInCU: 0x8A41, offset: 0x70387, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setConfigurationError:]', symObjAddr: 0xA81B, symBinAddr: 0x1647B, symSize: 0x11 }
+  - { offsetInCU: 0x8A80, offset: 0x703C6, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK isReady]', symObjAddr: 0xA82C, symBinAddr: 0x1648C, symSize: 0x14 }
+  - { offsetInCU: 0x8AB7, offset: 0x703FD, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setIsReady:]', symObjAddr: 0xA840, symBinAddr: 0x164A0, symSize: 0xF }
+  - { offsetInCU: 0x8AF6, offset: 0x7043C, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK isInitializing]', symObjAddr: 0xA84F, symBinAddr: 0x164AF, symSize: 0x14 }
+  - { offsetInCU: 0x8B2D, offset: 0x70473, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setIsInitializing:]', symObjAddr: 0xA863, symBinAddr: 0x164C3, symSize: 0xF }
+  - { offsetInCU: 0x8B6C, offset: 0x704B2, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK deferredMethodsToCallWhenIsReady]', symObjAddr: 0xA872, symBinAddr: 0x164D2, symSize: 0xA }
+  - { offsetInCU: 0x8BA1, offset: 0x704E7, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setDeferredMethodsToCallWhenIsReady:]', symObjAddr: 0xA87C, symBinAddr: 0x164DC, symSize: 0x11 }
+  - { offsetInCU: 0x8BE0, offset: 0x70526, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK testSetupParameters]', symObjAddr: 0xA88D, symBinAddr: 0x164ED, symSize: 0xA }
+  - { offsetInCU: 0x8C15, offset: 0x7055B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setTestSetupParameters:]', symObjAddr: 0xA897, symBinAddr: 0x164F7, symSize: 0x11 }
+  - { offsetInCU: 0x8C54, offset: 0x7059A, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK intelligence]', symObjAddr: 0xA8A8, symBinAddr: 0x16508, symSize: 0x16 }
+  - { offsetInCU: 0x8C8B, offset: 0x705D1, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setIntelligence:]', symObjAddr: 0xA8BE, symBinAddr: 0x1651E, symSize: 0x11 }
+  - { offsetInCU: 0x8CCA, offset: 0x70610, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK notification]', symObjAddr: 0xA8CF, symBinAddr: 0x1652F, symSize: 0x19 }
+  - { offsetInCU: 0x8D01, offset: 0x70647, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setNotification:]', symObjAddr: 0xA8E8, symBinAddr: 0x16548, symSize: 0x14 }
+  - { offsetInCU: 0x8D40, offset: 0x70686, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK location]', symObjAddr: 0xA8FC, symBinAddr: 0x1655C, symSize: 0x19 }
+  - { offsetInCU: 0x8D77, offset: 0x706BD, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setLocation:]', symObjAddr: 0xA915, symBinAddr: 0x16575, symSize: 0x14 }
+  - { offsetInCU: 0x8DB6, offset: 0x706FC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK inboxMessageManager]', symObjAddr: 0xA929, symBinAddr: 0x16589, symSize: 0x19 }
+  - { offsetInCU: 0x8DED, offset: 0x70733, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setInboxMessageManager:]', symObjAddr: 0xA942, symBinAddr: 0x165A2, symSize: 0x14 }
+  - { offsetInCU: 0x8E2C, offset: 0x70772, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK opendirectmessage]', symObjAddr: 0xA956, symBinAddr: 0x165B6, symSize: 0x19 }
+  - { offsetInCU: 0x8E63, offset: 0x707A9, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setOpendirectmessage:]', symObjAddr: 0xA96F, symBinAddr: 0x165CF, symSize: 0x14 }
+  - { offsetInCU: 0x8EA2, offset: 0x707E8, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK cloudpagemessage]', symObjAddr: 0xA983, symBinAddr: 0x165E3, symSize: 0x19 }
+  - { offsetInCU: 0x8ED9, offset: 0x7081F, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setCloudpagemessage:]', symObjAddr: 0xA99C, symBinAddr: 0x165FC, symSize: 0x14 }
+  - { offsetInCU: 0x8F18, offset: 0x7085E, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK event]', symObjAddr: 0xA9B0, symBinAddr: 0x16610, symSize: 0x19 }
+  - { offsetInCU: 0x8F4F, offset: 0x70895, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setEvent:]', symObjAddr: 0xA9C9, symBinAddr: 0x16629, symSize: 0x14 }
+  - { offsetInCU: 0x8F8E, offset: 0x708D4, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK migration]', symObjAddr: 0xA9DD, symBinAddr: 0x1663D, symSize: 0x19 }
+  - { offsetInCU: 0x8FC5, offset: 0x7090B, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setMigration:]', symObjAddr: 0xA9F6, symBinAddr: 0x16656, symSize: 0x14 }
+  - { offsetInCU: 0x9004, offset: 0x7094A, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK coreDataMigration]', symObjAddr: 0xAA0A, symBinAddr: 0x1666A, symSize: 0x19 }
+  - { offsetInCU: 0x903B, offset: 0x70981, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setCoreDataMigration:]', symObjAddr: 0xAA23, symBinAddr: 0x16683, symSize: 0x14 }
+  - { offsetInCU: 0x907A, offset: 0x709C0, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK controlchannel]', symObjAddr: 0xAA37, symBinAddr: 0x16697, symSize: 0x19 }
+  - { offsetInCU: 0x90B1, offset: 0x709F7, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setControlchannel:]', symObjAddr: 0xAA50, symBinAddr: 0x166B0, symSize: 0x14 }
+  - { offsetInCU: 0x90F0, offset: 0x70A36, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK privacy]', symObjAddr: 0xAA64, symBinAddr: 0x166C4, symSize: 0x19 }
+  - { offsetInCU: 0x9127, offset: 0x70A6D, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setPrivacy:]', symObjAddr: 0xAA7D, symBinAddr: 0x166DD, symSize: 0x14 }
+  - { offsetInCU: 0x9166, offset: 0x70AAC, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK foundation]', symObjAddr: 0xAA91, symBinAddr: 0x166F1, symSize: 0x19 }
+  - { offsetInCU: 0x919D, offset: 0x70AE3, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setFoundation:]', symObjAddr: 0xAAAA, symBinAddr: 0x1670A, symSize: 0x14 }
+  - { offsetInCU: 0x91DC, offset: 0x70B22, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK featureToggle]', symObjAddr: 0xAABE, symBinAddr: 0x1671E, symSize: 0x19 }
+  - { offsetInCU: 0x9213, offset: 0x70B59, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK setFeatureToggle:]', symObjAddr: 0xAAD7, symBinAddr: 0x16737, symSize: 0x14 }
+  - { offsetInCU: 0x9252, offset: 0x70B98, size: 0x8, addend: 0x0, symName: '-[MobilePushSDK .cxx_destruct]', symObjAddr: 0xAAEB, symBinAddr: 0x1674B, symSize: 0x153 }
+  - { offsetInCU: 0x27, offset: 0x71B1B, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig keysForEncoding]', symObjAddr: 0x0, symBinAddr: 0x1689E, symSize: 0xE0 }
+  - { offsetInCU: 0x35D, offset: 0x71E51, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig keysForEncoding]', symObjAddr: 0x0, symBinAddr: 0x1689E, symSize: 0xE0 }
+  - { offsetInCU: 0x39C, offset: 0x71E90, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig init]', symObjAddr: 0xE0, symBinAddr: 0x1697E, symSize: 0x2F }
+  - { offsetInCU: 0x3D3, offset: 0x71EC7, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig build]', symObjAddr: 0x10F, symBinAddr: 0x169AD, symSize: 0x20F }
+  - { offsetInCU: 0x4C1, offset: 0x71FB5, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig location]', symObjAddr: 0x31E, symBinAddr: 0x16BBC, symSize: 0x14 }
+  - { offsetInCU: 0x4F8, offset: 0x71FEC, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setLocation:]', symObjAddr: 0x332, symBinAddr: 0x16BD0, symSize: 0xF }
+  - { offsetInCU: 0x537, offset: 0x7202B, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig inbox]', symObjAddr: 0x341, symBinAddr: 0x16BDF, symSize: 0x14 }
+  - { offsetInCU: 0x56E, offset: 0x72062, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setInbox:]', symObjAddr: 0x355, symBinAddr: 0x16BF3, symSize: 0xF }
+  - { offsetInCU: 0x5AD, offset: 0x720A1, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig pianalytics]', symObjAddr: 0x364, symBinAddr: 0x16C02, symSize: 0x14 }
+  - { offsetInCU: 0x5E4, offset: 0x720D8, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setPianalytics:]', symObjAddr: 0x378, symBinAddr: 0x16C16, symSize: 0xF }
+  - { offsetInCU: 0x623, offset: 0x72117, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig uselegacypiidentifier]', symObjAddr: 0x387, symBinAddr: 0x16C25, symSize: 0x14 }
+  - { offsetInCU: 0x65A, offset: 0x7214E, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setUselegacypiidentifier:]', symObjAddr: 0x39B, symBinAddr: 0x16C39, symSize: 0xF }
+  - { offsetInCU: 0x699, offset: 0x7218D, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig etanalytics]', symObjAddr: 0x3AA, symBinAddr: 0x16C48, symSize: 0x14 }
+  - { offsetInCU: 0x6D0, offset: 0x721C4, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setEtanalytics:]', symObjAddr: 0x3BE, symBinAddr: 0x16C5C, symSize: 0xF }
+  - { offsetInCU: 0x70F, offset: 0x72203, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig appid]', symObjAddr: 0x3CD, symBinAddr: 0x16C6B, symSize: 0x14 }
+  - { offsetInCU: 0x746, offset: 0x7223A, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setAppid:]', symObjAddr: 0x3E1, symBinAddr: 0x16C7F, symSize: 0xF }
+  - { offsetInCU: 0x785, offset: 0x72279, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig mid]', symObjAddr: 0x3F0, symBinAddr: 0x16C8E, symSize: 0x14 }
+  - { offsetInCU: 0x7BC, offset: 0x722B0, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setMid:]', symObjAddr: 0x404, symBinAddr: 0x16CA2, symSize: 0xF }
+  - { offsetInCU: 0x7FB, offset: 0x722EF, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig accesstoken]', symObjAddr: 0x413, symBinAddr: 0x16CB1, symSize: 0x14 }
+  - { offsetInCU: 0x832, offset: 0x72326, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setAccesstoken:]', symObjAddr: 0x427, symBinAddr: 0x16CC5, symSize: 0xF }
+  - { offsetInCU: 0x871, offset: 0x72365, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig marketing_cloud_server_url]', symObjAddr: 0x436, symBinAddr: 0x16CD4, symSize: 0x14 }
+  - { offsetInCU: 0x8A8, offset: 0x7239C, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setMarketing_cloud_server_url:]', symObjAddr: 0x44A, symBinAddr: 0x16CE8, symSize: 0xF }
+  - { offsetInCU: 0x8E7, offset: 0x723DB, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig applicationcontrolsbadging]', symObjAddr: 0x459, symBinAddr: 0x16CF7, symSize: 0x14 }
+  - { offsetInCU: 0x91E, offset: 0x72412, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setApplicationcontrolsbadging:]', symObjAddr: 0x46D, symBinAddr: 0x16D0B, symSize: 0xF }
+  - { offsetInCU: 0x95D, offset: 0x72451, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig delayregistrationuntilcontactkeyisset]', symObjAddr: 0x47C, symBinAddr: 0x16D1A, symSize: 0x14 }
+  - { offsetInCU: 0x994, offset: 0x72488, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setDelayregistrationuntilcontactkeyisset:]', symObjAddr: 0x490, symBinAddr: 0x16D2E, symSize: 0xF }
+  - { offsetInCU: 0x9D3, offset: 0x724C7, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig markMessageReadOnInboxNotificationOpen]', symObjAddr: 0x49F, symBinAddr: 0x16D3D, symSize: 0x14 }
+  - { offsetInCU: 0xA0A, offset: 0x724FE, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig setMarkMessageReadOnInboxNotificationOpen:]', symObjAddr: 0x4B3, symBinAddr: 0x16D51, symSize: 0xF }
+  - { offsetInCU: 0xA49, offset: 0x7253D, size: 0x8, addend: 0x0, symName: '-[MarketingCloudSDKConfig .cxx_destruct]', symObjAddr: 0x4C2, symBinAddr: 0x16D60, symSize: 0x96 }
+  - { offsetInCU: 0x4F, offset: 0x7263D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvpZ', symObjAddr: 0x5FC8, symBinAddr: 0x1FF170, symSize: 0x0 }
+  - { offsetInCU: 0x69, offset: 0x72657, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvpZ', symObjAddr: 0x5FE0, symBinAddr: 0x1FF188, symSize: 0x0 }
+  - { offsetInCU: 0x83, offset: 0x72671, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15_registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LLSSSgvpZ', symObjAddr: 0x5FF0, symBinAddr: 0x1FF198, symSize: 0x0 }
+  - { offsetInCU: 0x9D, offset: 0x7268B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC18registrationIdlock33_CE0DABD05609D081DA47D8C2869AA3D9LLSo6NSLockCvpZ', symObjAddr: 0x6008, symBinAddr: 0x1FF1B0, symSize: 0x0 }
+  - { offsetInCU: 0xB7, offset: 0x726A5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6logger7SFMCSDK0E6LoggerCvpZ', symObjAddr: 0x6018, symBinAddr: 0x1FF1C0, symSize: 0x0 }
+  - { offsetInCU: 0xD1, offset: 0x726BF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC9singleton33_CE0DABD05609D081DA47D8C2869AA3D9LLACSgvpZ', symObjAddr: 0x6028, symBinAddr: 0x1FF1D0, symSize: 0x0 }
+  - { offsetInCU: 0x109, offset: 0x726F7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvgTo', symObjAddr: 0x0, symBinAddr: 0x16E00, symSize: 0x40 }
+  - { offsetInCU: 0x144, offset: 0x72732, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvg', symObjAddr: 0x40, symBinAddr: 0x16E40, symSize: 0x30 }
+  - { offsetInCU: 0x18B, offset: 0x72779, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvsTo', symObjAddr: 0x70, symBinAddr: 0x16E70, symSize: 0x40 }
+  - { offsetInCU: 0x1CE, offset: 0x727BC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvs', symObjAddr: 0xB0, symBinAddr: 0x16EB0, symSize: 0x40 }
+  - { offsetInCU: 0x1F5, offset: 0x727E3, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvM', symObjAddr: 0xF0, symBinAddr: 0x16EF0, symSize: 0x40 }
+  - { offsetInCU: 0x224, offset: 0x72812, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvpZfiSSyXEfU_', symObjAddr: 0x150, symBinAddr: 0x16F50, symSize: 0x1E0 }
+  - { offsetInCU: 0x278, offset: 0x72866, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvgZ', symObjAddr: 0x330, symBinAddr: 0x17130, symSize: 0x70 }
+  - { offsetInCU: 0x2BD, offset: 0x728AB, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvgZTo', symObjAddr: 0x3A0, symBinAddr: 0x171A0, symSize: 0x80 }
+  - { offsetInCU: 0x2F4, offset: 0x728E2, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvsZ', symObjAddr: 0x420, symBinAddr: 0x17220, symSize: 0x70 }
+  - { offsetInCU: 0x34F, offset: 0x7293D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvsZTo', symObjAddr: 0x490, symBinAddr: 0x17290, symSize: 0x80 }
+  - { offsetInCU: 0x390, offset: 0x7297E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvMZ', symObjAddr: 0x510, symBinAddr: 0x17310, symSize: 0x60 }
+  - { offsetInCU: 0x3C7, offset: 0x729B5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvMZ.resume.0', symObjAddr: 0x570, symBinAddr: 0x17370, symSize: 0x10 }
+  - { offsetInCU: 0x401, offset: 0x729EF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvgZTo', symObjAddr: 0x580, symBinAddr: 0x17380, symSize: 0x50 }
+  - { offsetInCU: 0x433, offset: 0x72A21, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvgZ', symObjAddr: 0x5D0, symBinAddr: 0x173D0, symSize: 0x10 }
+  - { offsetInCU: 0x447, offset: 0x72A35, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvsZTo', symObjAddr: 0x5E0, symBinAddr: 0x173E0, symSize: 0x10 }
+  - { offsetInCU: 0x463, offset: 0x72A51, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvsZ', symObjAddr: 0x5F0, symBinAddr: 0x173F0, symSize: 0x10 }
+  - { offsetInCU: 0x49A, offset: 0x72A88, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvMZ', symObjAddr: 0x600, symBinAddr: 0x17400, symSize: 0x30 }
+  - { offsetInCU: 0x4D9, offset: 0x72AC7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvMZ.resume.0', symObjAddr: 0x630, symBinAddr: 0x17430, symSize: 0x10 }
+  - { offsetInCU: 0x504, offset: 0x72AF2, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvgZ', symObjAddr: 0x660, symBinAddr: 0x17460, symSize: 0x50 }
+  - { offsetInCU: 0x549, offset: 0x72B37, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvgZTo', symObjAddr: 0x6B0, symBinAddr: 0x174B0, symSize: 0x50 }
+  - { offsetInCU: 0x580, offset: 0x72B6E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvsZ', symObjAddr: 0x700, symBinAddr: 0x17500, symSize: 0x50 }
+  - { offsetInCU: 0x5DB, offset: 0x72BC9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvsZTo', symObjAddr: 0x750, symBinAddr: 0x17550, symSize: 0x50 }
+  - { offsetInCU: 0x612, offset: 0x72C00, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvMZ', symObjAddr: 0x7A0, symBinAddr: 0x175A0, symSize: 0x60 }
+  - { offsetInCU: 0x65A, offset: 0x72C48, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15_registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LLSSSgvgZTo', symObjAddr: 0x810, symBinAddr: 0x17610, symSize: 0x70 }
+  - { offsetInCU: 0x6AF, offset: 0x72C9D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15_registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LLSSSgvsZTo', symObjAddr: 0x880, symBinAddr: 0x17680, symSize: 0x70 }
+  - { offsetInCU: 0x715, offset: 0x72D03, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LLSSSgvgZTo', symObjAddr: 0x910, symBinAddr: 0x17710, symSize: 0xC0 }
+  - { offsetInCU: 0x7C9, offset: 0x72DB7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LLSSSgvsZTo', symObjAddr: 0x9D0, symBinAddr: 0x177D0, symSize: 0xD0 }
+  - { offsetInCU: 0x862, offset: 0x72E50, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6sharedACvgZTo', symObjAddr: 0xAA0, symBinAddr: 0x178A0, symSize: 0x20 }
+  - { offsetInCU: 0x894, offset: 0x72E82, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6sharedACvgZ', symObjAddr: 0xAC0, symBinAddr: 0x178C0, symSize: 0x10 }
+  - { offsetInCU: 0x8BD, offset: 0x72EAB, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC8metadataSDySSypGyFZ', symObjAddr: 0xC10, symBinAddr: 0x17A10, symSize: 0x10 }
+  - { offsetInCU: 0x90B, offset: 0x72EF9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC8metadataSDySSypGyFZTo', symObjAddr: 0xC20, symBinAddr: 0x17A20, symSize: 0x50 }
+  - { offsetInCU: 0x953, offset: 0x72F41, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7refresh22fetchCompletionHandlerSbySo23UIBackgroundFetchResultVcSg_tF', symObjAddr: 0xC70, symBinAddr: 0x17A70, symSize: 0x10 }
+  - { offsetInCU: 0x976, offset: 0x72F64, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7refresh22fetchCompletionHandlerSbySo23UIBackgroundFetchResultVcSg_tFTo', symObjAddr: 0xCC0, symBinAddr: 0x17AC0, symSize: 0x90 }
+  - { offsetInCU: 0x9A8, offset: 0x72F96, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7addTagsyShys11AnyHashableVGSgSayypGF', symObjAddr: 0xF20, symBinAddr: 0x17D20, symSize: 0xC0 }
+  - { offsetInCU: 0x9F7, offset: 0x72FE5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7addTagsyShys11AnyHashableVGSgSayypGFTo', symObjAddr: 0xFE0, symBinAddr: 0x17DE0, symSize: 0x120 }
+  - { offsetInCU: 0xA34, offset: 0x73022, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4tagsShys11AnyHashableVGSgyF', symObjAddr: 0x1140, symBinAddr: 0x17F40, symSize: 0x90 }
+  - { offsetInCU: 0xA6D, offset: 0x7305B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4tagsShys11AnyHashableVGSgyFTo', symObjAddr: 0x11D0, symBinAddr: 0x17FD0, symSize: 0xE0 }
+  - { offsetInCU: 0xACC, offset: 0x730BA, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14setDeviceTokenyy10Foundation4DataVFTo', symObjAddr: 0x12D0, symBinAddr: 0x180D0, symSize: 0xC0 }
+  - { offsetInCU: 0xB09, offset: 0x730F7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC23setRegistrationCallbackyyySDys11AnyHashableVypGcF', symObjAddr: 0x1530, symBinAddr: 0x18330, symSize: 0xC0 }
+  - { offsetInCU: 0xB58, offset: 0x73146, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC23setRegistrationCallbackyyySDys11AnyHashableVypGcFTo', symObjAddr: 0x1660, symBinAddr: 0x18460, symSize: 0x110 }
+  - { offsetInCU: 0xB97, offset: 0x73185, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC22setNotificationRequestyySo014UNNotificationH0CF', symObjAddr: 0x1B10, symBinAddr: 0x18910, symSize: 0x50 }
+  - { offsetInCU: 0xBE9, offset: 0x731D7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC22setNotificationRequestyySo014UNNotificationH0CFTo', symObjAddr: 0x1B60, symBinAddr: 0x18960, symSize: 0xA0 }
+  - { offsetInCU: 0xC29, offset: 0x73217, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC19notificationRequestSo014UNNotificationG0CSgyF', symObjAddr: 0x1C00, symBinAddr: 0x18A00, symSize: 0x60 }
+  - { offsetInCU: 0xC64, offset: 0x73252, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC19notificationRequestSo014UNNotificationG0CSgyFTo', symObjAddr: 0x1C60, symBinAddr: 0x18A60, symSize: 0x90 }
+  - { offsetInCU: 0xC9A, offset: 0x73288, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC20notificationUserInfoSDys11AnyHashableVypGyF', symObjAddr: 0x1D30, symBinAddr: 0x18B30, symSize: 0x90 }
+  - { offsetInCU: 0xCD5, offset: 0x732C3, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC20notificationUserInfoSDys11AnyHashableVypGyFTo', symObjAddr: 0x1DC0, symBinAddr: 0x18BC0, symSize: 0xE0 }
+  - { offsetInCU: 0xD0B, offset: 0x732F9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC11getIdentity7SFMCSDK0eG0_pSgyF', symObjAddr: 0x1EA0, symBinAddr: 0x18CA0, symSize: 0x30 }
+  - { offsetInCU: 0xD5C, offset: 0x7334A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC11getIdentity7SFMCSDK0eG0_pSgyFTo', symObjAddr: 0x1ED0, symBinAddr: 0x18CD0, symSize: 0x60 }
+  - { offsetInCU: 0xDB0, offset: 0x7339E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC9messageId10forMessageSSSgSDys11AnyHashableVypG_tF', symObjAddr: 0x1F70, symBinAddr: 0x18D70, symSize: 0xC0 }
+  - { offsetInCU: 0xE02, offset: 0x733F0, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC9messageId10forMessageSSSgSDys11AnyHashableVypG_tFTo', symObjAddr: 0x2030, symBinAddr: 0x18E30, symSize: 0x130 }
+  - { offsetInCU: 0xE6D, offset: 0x7345B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC16showInAppMessage9messageIdySS_tFTo', symObjAddr: 0x2200, symBinAddr: 0x19000, symSize: 0xB0 }
+  - { offsetInCU: 0xEAD, offset: 0x7349B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC35inboxMessagesTableViewDataSourceFor05tableI07SFMCSDK05InboxgjK0_pSgSo07UITableI0C_tF', symObjAddr: 0x2B90, symBinAddr: 0x19990, symSize: 0x60 }
+  - { offsetInCU: 0xEFF, offset: 0x734ED, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC35inboxMessagesTableViewDataSourceFor05tableI07SFMCSDK05InboxgjK0_pSgSo07UITableI0C_tFTo', symObjAddr: 0x2BF0, symBinAddr: 0x199F0, symSize: 0xB0 }
+  - { offsetInCU: 0xF3F, offset: 0x7352D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC33inboxMessagesTableViewDelegateFor05tableI010dataSource7SFMCSDK05InboxgJ0_pSgSo07UITableI0C_AG0pg4DataN0_ptF', symObjAddr: 0x2CA0, symBinAddr: 0x19AA0, symSize: 0x10 }
+  - { offsetInCU: 0xF62, offset: 0x73550, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC33inboxMessagesTableViewDelegateFor05tableI010dataSource7SFMCSDK05InboxgJ0_pSgSo07UITableI0C_AG0pg4DataN0_ptFTo', symObjAddr: 0x2CB0, symBinAddr: 0x19AB0, symSize: 0x80 }
+  - { offsetInCU: 0xF95, offset: 0x73583, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13trackPageView3url5title4item6searchySS_SSSgA2ItF', symObjAddr: 0x30A0, symBinAddr: 0x19EA0, symSize: 0x10 }
+  - { offsetInCU: 0xFB8, offset: 0x735A6, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13trackPageView3url5title4item6searchySS_SSSgA2ItFTo', symObjAddr: 0x30B0, symBinAddr: 0x19EB0, symSize: 0x110 }
+  - { offsetInCU: 0xFEB, offset: 0x735D9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC18cartItemDictionary5price8quantity4item8uniqueIdSDys11AnyHashableVypGSgSo8NSNumberC_ANS2SSgtF', symObjAddr: 0x33B0, symBinAddr: 0x1A1B0, symSize: 0x10 }
+  - { offsetInCU: 0x100E, offset: 0x735FC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC18cartItemDictionary5price8quantity4item8uniqueIdSDys11AnyHashableVypGSgSo8NSNumberC_ANS2SSgtFTo', symObjAddr: 0x33C0, symBinAddr: 0x1A1C0, symSize: 0x110 }
+  - { offsetInCU: 0x1041, offset: 0x7362F, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14cartDictionary0F4ItemSDys11AnyHashableVypGSgSayypG_tF', symObjAddr: 0x34D0, symBinAddr: 0x1A2D0, symSize: 0xC0 }
+  - { offsetInCU: 0x1093, offset: 0x73681, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14cartDictionary0F4ItemSDys11AnyHashableVypGSgSayypG_tFTo', symObjAddr: 0x3590, symBinAddr: 0x1A390, symSize: 0x130 }
+  - { offsetInCU: 0x10D3, offset: 0x736C1, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15orderDictionary0F6Number8shipping8discount4cartSDys11AnyHashableVypGSgSS_So8NSNumberCAnKtF', symObjAddr: 0x36C0, symBinAddr: 0x1A4C0, symSize: 0x110 }
+  - { offsetInCU: 0x116A, offset: 0x73758, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15orderDictionary0F6Number8shipping8discount4cartSDys11AnyHashableVypGSgSS_So8NSNumberCAnKtFTo', symObjAddr: 0x37D0, symBinAddr: 0x1A5D0, symSize: 0x1E0 }
+  - { offsetInCU: 0x11C8, offset: 0x737B6, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC10regionFrom10dictionarySo8CLRegionCSgSDys11AnyHashableVypG_tF', symObjAddr: 0x39F0, symBinAddr: 0x1A7F0, symSize: 0xA0 }
+  - { offsetInCU: 0x121A, offset: 0x73808, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC10regionFrom10dictionarySo8CLRegionCSgSDys11AnyHashableVypG_tFTo', symObjAddr: 0x3A90, symBinAddr: 0x1A890, symSize: 0xF0 }
+  - { offsetInCU: 0x1258, offset: 0x73846, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC04initE06config10components7SFMCSDK10SFMCModule_pSgAG0E6Config_p_AG17SFMCSdkComponentsCtFZ', symObjAddr: 0x4140, symBinAddr: 0x1AF40, symSize: 0x10 }
+  - { offsetInCU: 0x127B, offset: 0x73869, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC04initE06config10components7SFMCSDK10SFMCModule_pSgAG0E6Config_p_AG17SFMCSdkComponentsCtFZTo', symObjAddr: 0x4150, symBinAddr: 0x1AF50, symSize: 0x60 }
+  - { offsetInCU: 0x12AE, offset: 0x7389C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC24sendIdentityEventForTagsyyFZ', symObjAddr: 0x41B0, symBinAddr: 0x1AFB0, symSize: 0x20 }
+  - { offsetInCU: 0x12D1, offset: 0x738BF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC24sendIdentityEventForTagsyyFZTo', symObjAddr: 0x41D0, symBinAddr: 0x1AFD0, symSize: 0x20 }
+  - { offsetInCU: 0x1304, offset: 0x738F2, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForContactKeyyyFZ', symObjAddr: 0x41F0, symBinAddr: 0x1AFF0, symSize: 0x10 }
+  - { offsetInCU: 0x1327, offset: 0x73915, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForContactKeyyyFZTo', symObjAddr: 0x4200, symBinAddr: 0x1B000, symSize: 0x10 }
+  - { offsetInCU: 0x135A, offset: 0x73948, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForAttributesyyFZ', symObjAddr: 0x4210, symBinAddr: 0x1B010, symSize: 0x20 }
+  - { offsetInCU: 0x137D, offset: 0x7396B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForAttributesyyFZTo', symObjAddr: 0x4230, symBinAddr: 0x1B030, symSize: 0x20 }
+  - { offsetInCU: 0x13B0, offset: 0x7399E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7receive7messagey7SFMCSDK7MessageC_tF', symObjAddr: 0x4250, symBinAddr: 0x1B050, symSize: 0x320 }
+  - { offsetInCU: 0x164E, offset: 0x73C3C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC12messageValid33_CE0DABD05609D081DA47D8C2869AA3D9LL0F0Sb7SFMCSDK7MessageC_tF', symObjAddr: 0x4570, symBinAddr: 0x1B370, symSize: 0x340 }
+  - { offsetInCU: 0x1A09, offset: 0x73FF7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7receive7messagey7SFMCSDK7MessageC_tFTo', symObjAddr: 0x48B0, symBinAddr: 0x1B6B0, symSize: 0x50 }
+  - { offsetInCU: 0x1A25, offset: 0x74013, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13sendSfmcEvent_8categoryySo9SFMCEventC_7SFMCSDK0H8CategoryOtFZ', symObjAddr: 0x4900, symBinAddr: 0x1B700, symSize: 0x10 }
+  - { offsetInCU: 0x1A48, offset: 0x74036, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13sendSfmcEvent_8categoryySo9SFMCEventC_7SFMCSDK0H8CategoryOtFZTo', symObjAddr: 0x4910, symBinAddr: 0x1B710, symSize: 0x40 }
+  - { offsetInCU: 0x1A7B, offset: 0x74069, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleCACyc33_CE0DABD05609D081DA47D8C2869AA3D9Llfc', symObjAddr: 0x4950, symBinAddr: 0x1B750, symSize: 0x1A0 }
+  - { offsetInCU: 0x1B09, offset: 0x740F7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleCACyc33_CE0DABD05609D081DA47D8C2869AA3D9LlfcTo', symObjAddr: 0x4AF0, symBinAddr: 0x1B8F0, symSize: 0x20 }
+  - { offsetInCU: 0x1B25, offset: 0x74113, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleCfD', symObjAddr: 0x4B10, symBinAddr: 0x1B910, symSize: 0x30 }
+  - { offsetInCU: 0x1B52, offset: 0x74140, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7SFMCSDK9PublisherAadEP4nameAD0E4NameOvgTW', symObjAddr: 0x4B80, symBinAddr: 0x1B980, symSize: 0x30 }
+  - { offsetInCU: 0x1B8D, offset: 0x7417B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvgZTf4d_n', symObjAddr: 0x4C00, symBinAddr: 0x1BA00, symSize: 0x120 }
+  - { offsetInCU: 0x1C7A, offset: 0x74268, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6sharedACvgZTf4d_n', symObjAddr: 0x4D20, symBinAddr: 0x1BB20, symSize: 0xE0 }
+  - { offsetInCU: 0x1D0E, offset: 0x742FC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7refresh22fetchCompletionHandlerSbySo23UIBackgroundFetchResultVcSg_tFTf4nd_n', symObjAddr: 0x4E00, symBinAddr: 0x1BC00, symSize: 0xD0 }
+  - { offsetInCU: 0x1D3D, offset: 0x7432B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC33inboxMessagesTableViewDelegateFor05tableI010dataSource7SFMCSDK05InboxgJ0_pSgSo07UITableI0C_AG0pg4DataN0_ptFTf4nnd_n', symObjAddr: 0x4F00, symBinAddr: 0x1BD00, symSize: 0xE0 }
+  - { offsetInCU: 0x1DA5, offset: 0x74393, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13trackPageView3url5title4item6searchySS_SSSgA2ItFTf4nnnnd_n', symObjAddr: 0x4FE0, symBinAddr: 0x1BDE0, symSize: 0x110 }
+  - { offsetInCU: 0x1E09, offset: 0x743F7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC18cartItemDictionary5price8quantity4item8uniqueIdSDys11AnyHashableVypGSgSo8NSNumberC_ANS2SSgtFTf4nnnnd_n', symObjAddr: 0x50F0, symBinAddr: 0x1BEF0, symSize: 0x100 }
+  - { offsetInCU: 0x1E6D, offset: 0x7445B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC010instatiateabdC033_CE0DABD05609D081DA47D8C2869AA3D9LL10pushConfigSo06MobiledC0CSgAA0dP0C_tFZTf4nd_n', symObjAddr: 0x51F0, symBinAddr: 0x1BFF0, symSize: 0x370 }
+  - { offsetInCU: 0x1FAB, offset: 0x74599, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC04initE06config10components7SFMCSDK10SFMCModule_pSgAG0E6Config_p_AG17SFMCSdkComponentsCtFZTf4nnd_n', symObjAddr: 0x5560, symBinAddr: 0x1C360, symSize: 0x410 }
+  - { offsetInCU: 0x217C, offset: 0x7476A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForContactKeyyyFZTf4d_n', symObjAddr: 0x5970, symBinAddr: 0x1C770, symSize: 0x160 }
+  - { offsetInCU: 0x223A, offset: 0x74828, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13sendSfmcEvent_8categoryySo9SFMCEventC_7SFMCSDK0H8CategoryOtFZTf4nnd_n', symObjAddr: 0x5C10, symBinAddr: 0x1CA10, symSize: 0x170 }
+  - { offsetInCU: 0x236D, offset: 0x7495B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6config33_CE0DABD05609D081DA47D8C2869AA3D9LLAA0D6ConfigCSgvpZ', symObjAddr: 0x6038, symBinAddr: 0x1FF1E0, symSize: 0x0 }
+  - { offsetInCU: 0x2393, offset: 0x74981, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14coreComponents33_CE0DABD05609D081DA47D8C2869AA3D9LL7SFMCSDK07SFMCSdkG0CSgvpZ', symObjAddr: 0x6048, symBinAddr: 0x1FF1F0, symSize: 0x0 }
+  - { offsetInCU: 0x23AD, offset: 0x7499B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC4lock33_CE0DABD05609D081DA47D8C2869AA3D9LLSo6NSLockCvpZ', symObjAddr: 0x6058, symBinAddr: 0x1FF200, symSize: 0x0 }
+  - { offsetInCU: 0x23BB, offset: 0x749A9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC13moduleVersion_WZ', symObjAddr: 0x130, symBinAddr: 0x16F30, symSize: 0x20 }
+  - { offsetInCU: 0x23E6, offset: 0x749D4, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6status_WZ', symObjAddr: 0x640, symBinAddr: 0x17440, symSize: 0x20 }
+  - { offsetInCU: 0x2411, offset: 0x749FF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC15_registrationId33_CE0DABD05609D081DA47D8C2869AA3D9LL_WZ', symObjAddr: 0x800, symBinAddr: 0x17600, symSize: 0x10 }
+  - { offsetInCU: 0x24D1, offset: 0x74ABF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6logger_WZ', symObjAddr: 0xAD0, symBinAddr: 0x178D0, symSize: 0x70 }
+  - { offsetInCU: 0x24F9, offset: 0x74AE7, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC9singleton33_CE0DABD05609D081DA47D8C2869AA3D9LL_WZ', symObjAddr: 0xB60, symBinAddr: 0x17960, symSize: 0x20 }
+  - { offsetInCU: 0x2513, offset: 0x74B01, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC6config33_CE0DABD05609D081DA47D8C2869AA3D9LL_WZ', symObjAddr: 0xB80, symBinAddr: 0x17980, symSize: 0x20 }
+  - { offsetInCU: 0x252D, offset: 0x74B1B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC14coreComponents33_CE0DABD05609D081DA47D8C2869AA3D9LL_WZ', symObjAddr: 0xBA0, symBinAddr: 0x179A0, symSize: 0x20 }
+  - { offsetInCU: 0x255E, offset: 0x74B4C, size: 0x8, addend: 0x0, symName: '_$sSo23UIBackgroundFetchResultVIegy_ABIeyBy_TR', symObjAddr: 0xC80, symBinAddr: 0x17A80, symSize: 0x40 }
+  - { offsetInCU: 0x2576, offset: 0x74B64, size: 0x8, addend: 0x0, symName: '_$sSDys11AnyHashableVypGIegg_So12NSDictionaryCIeyBy_TR', symObjAddr: 0x15F0, symBinAddr: 0x183F0, symSize: 0x70 }
+  - { offsetInCU: 0x26DA, offset: 0x74CC8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleCfETo', symObjAddr: 0x4B40, symBinAddr: 0x1B940, symSize: 0x40 }
+  - { offsetInCU: 0x27BA, offset: 0x74DA8, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x4ED0, symBinAddr: 0x1BCD0, symSize: 0x20 }
+  - { offsetInCU: 0x27CE, offset: 0x74DBC, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x4EF0, symBinAddr: 0x1BCF0, symSize: 0x10 }
+  - { offsetInCU: 0x280E, offset: 0x74DFC, size: 0x8, addend: 0x0, symName: '_$ss29getContiguousArrayStorageType3fors01_bcD0CyxGmxm_tlFSo9SFMCEvent_p_Tg5Tf4d_n', symObjAddr: 0x5BB0, symBinAddr: 0x1C9B0, symSize: 0x20 }
+  - { offsetInCU: 0x2826, offset: 0x74E14, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledName, symObjAddr: 0x5BD0, symBinAddr: 0x1C9D0, symSize: 0x40 }
+  - { offsetInCU: 0x283A, offset: 0x74E28, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleCMa', symObjAddr: 0x5D80, symBinAddr: 0x1CB80, symSize: 0x20 }
+  - { offsetInCU: 0x2859, offset: 0x74E47, size: 0x8, addend: 0x0, symName: '_$sSo12NSDictionaryCIeyBy_SDys11AnyHashableVypGIegg_TRTA', symObjAddr: 0x5DC0, symBinAddr: 0x1CBC0, symSize: 0x50 }
+  - { offsetInCU: 0x2882, offset: 0x74E70, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOe', symObjAddr: 0x5E10, symBinAddr: 0x1CC10, symSize: 0x40 }
+  - { offsetInCU: 0x2896, offset: 0x74E84, size: 0x8, addend: 0x0, symName: '_$sSo23UIBackgroundFetchResultVIegy_SgWOe', symObjAddr: 0x5E50, symBinAddr: 0x1CC50, symSize: 0x20 }
+  - { offsetInCU: 0x28B5, offset: 0x74EA3, size: 0x8, addend: 0x0, symName: '_$sSo23UIBackgroundFetchResultVIeyBy_ABIegy_TRTA', symObjAddr: 0x5E70, symBinAddr: 0x1CC70, symSize: 0x20 }
+  - { offsetInCU: 0x28DE, offset: 0x74ECC, size: 0x8, addend: 0x0, symName: '_$sSo7NSErrorCMa', symObjAddr: 0x5E90, symBinAddr: 0x1CC90, symSize: 0x30 }
+  - { offsetInCU: 0x28F2, offset: 0x74EE0, size: 0x8, addend: 0x0, symName: '_$sypSgWOh', symObjAddr: 0x5EC0, symBinAddr: 0x1CCC0, symSize: 0x30 }
+  - { offsetInCU: 0x2906, offset: 0x74EF4, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x5EF0, symBinAddr: 0x1CCF0, symSize: 0x30 }
+  - { offsetInCU: 0x291A, offset: 0x74F08, size: 0x8, addend: 0x0, symName: '_$sSo23UIBackgroundFetchResultVMa', symObjAddr: 0x5F20, symBinAddr: 0x1CD20, symSize: 0x30 }
+  - { offsetInCU: 0x2AD9, offset: 0x750C7, size: 0x8, addend: 0x0, symName: '_$sSo20NSJSONReadingOptionsVs10SetAlgebraSCsACPxycfCTW', symObjAddr: 0x4BE0, symBinAddr: 0x1B9E0, symSize: 0x10 }
+  - { offsetInCU: 0x2BFA, offset: 0x751E8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushModuleC7SFMCSDK9PublisherAadEP4send7messageyAD5Event_p_tFTW', symObjAddr: 0x4BB0, symBinAddr: 0x1B9B0, symSize: 0x30 }
+  - { offsetInCU: 0x2D13, offset: 0x75301, size: 0x8, addend: 0x0, symName: '_$sSo20NSJSONReadingOptionsVs9OptionSetSCsACP8rawValuex03RawF0Qz_tcfCTW', symObjAddr: 0x4BF0, symBinAddr: 0x1B9F0, symSize: 0x10 }
+  - { offsetInCU: 0x2B, offset: 0x75617, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC09supportedD10Categories_WZ', symObjAddr: 0x0, symBinAddr: 0x1CDC0, symSize: 0x60 }
+  - { offsetInCU: 0x4F, offset: 0x7563B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC09supportedD10CategoriesSay7SFMCSDK0D8CategoryOGvpZ', symObjAddr: 0x6BC8, symBinAddr: 0x2029D0, symSize: 0x0 }
+  - { offsetInCU: 0x7E, offset: 0x7566A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC09supportedD10Categories_WZ', symObjAddr: 0x0, symBinAddr: 0x1CDC0, symSize: 0x60 }
+  - { offsetInCU: 0xF9, offset: 0x756E5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterCfD', symObjAddr: 0x60, symBinAddr: 0x1CE20, symSize: 0x20 }
+  - { offsetInCU: 0x126, offset: 0x75712, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC014toIdentityTagsD07SFMCSDK0D0_pSgyFZTf4d_n', symObjAddr: 0x2E0, symBinAddr: 0x1D0A0, symSize: 0x170 }
+  - { offsetInCU: 0x242, offset: 0x7582E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC027toIdentityProfileAttributesD07SFMCSDK0D0_pSgyFZTf4d_n', symObjAddr: 0x450, symBinAddr: 0x1D210, symSize: 0x130 }
+  - { offsetInCU: 0x29A, offset: 0x75886, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC19isCategorySupported8categorySbSS_tFZTf4nd_n', symObjAddr: 0x580, symBinAddr: 0x1D340, symSize: 0x150 }
+  - { offsetInCU: 0x3C8, offset: 0x759B4, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC06toPushD0ySo9SFMCEvent_pSg7SFMCSDK0D0_pFZTf4nd_n', symObjAddr: 0x6D0, symBinAddr: 0x1D490, symSize: 0x190 }
+  - { offsetInCU: 0x414, offset: 0x75A00, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterC18nameAttributesFrom33_40449321C01FD62CDF9AA5F1D1E8DC51LL5eventSSSg0F0_SDySSypGSg10attributestSo9SFMCEventC_tFZTf4nd_n', symObjAddr: 0x860, symBinAddr: 0x1D620, symSize: 0x470 }
+  - { offsetInCU: 0x634, offset: 0x75C20, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK14EventConverterCMa', symObjAddr: 0x80, symBinAddr: 0x1CE40, symSize: 0x20 }
+  - { offsetInCU: 0x669, offset: 0x75C55, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_insert2at3key5valueys10_HashTableV6BucketV_xnq_ntFSS_ypTg5', symObjAddr: 0xA0, symBinAddr: 0x1CE60, symSize: 0x60 }
+  - { offsetInCU: 0x8A8, offset: 0x75E94, size: 0x8, addend: 0x0, symName: '_$sypSgWOb', symObjAddr: 0xCD0, symBinAddr: 0x1DA90, symSize: 0x40 }
+  - { offsetInCU: 0x8BC, offset: 0x75EA8, size: 0x8, addend: 0x0, symName: '_$sSS_yptWOc', symObjAddr: 0xD80, symBinAddr: 0x1DAD0, symSize: 0x40 }
+  - { offsetInCU: 0x8D0, offset: 0x75EBC, size: 0x8, addend: 0x0, symName: '_$sypWOb', symObjAddr: 0xDC0, symBinAddr: 0x1DB10, symSize: 0x17 }
+  - { offsetInCU: 0x938, offset: 0x75F24, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_SSTg5Tf4gd_n', symObjAddr: 0x100, symBinAddr: 0x1CEC0, symSize: 0x100 }
+  - { offsetInCU: 0xA37, offset: 0x76023, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_ypTg5Tf4gd_n', symObjAddr: 0x200, symBinAddr: 0x1CFC0, symSize: 0xE0 }
+  - { offsetInCU: 0x5A, offset: 0x76435, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5appIdACSS_tcfC', symObjAddr: 0x0, symBinAddr: 0x1DB30, symSize: 0x40 }
+  - { offsetInCU: 0x8E, offset: 0x76469, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5appIdACSS_tcfc', symObjAddr: 0x40, symBinAddr: 0x1DB70, symSize: 0x30 }
+  - { offsetInCU: 0xA2, offset: 0x7647D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5appIdACSS_tcfcTo', symObjAddr: 0x70, symBinAddr: 0x1DBA0, symSize: 0x40 }
+  - { offsetInCU: 0xFE, offset: 0x764D9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC03setaB9ServerUrlyAC10Foundation3URLVF', symObjAddr: 0xF0, symBinAddr: 0x1DC20, symSize: 0xC0 }
+  - { offsetInCU: 0x176, offset: 0x76551, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC03setaB9ServerUrlyAC10Foundation3URLVFTo', symObjAddr: 0x1B0, symBinAddr: 0x1DCE0, symSize: 0x110 }
+  - { offsetInCU: 0x1FF, offset: 0x765DA, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC18setLocationEnabledyACSbF', symObjAddr: 0x390, symBinAddr: 0x1DEC0, symSize: 0x20 }
+  - { offsetInCU: 0x276, offset: 0x76651, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC18setLocationEnabledyACSbFTo', symObjAddr: 0x3B0, symBinAddr: 0x1DEE0, symSize: 0x20 }
+  - { offsetInCU: 0x309, offset: 0x766E4, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC15setInboxEnabledyACSbF', symObjAddr: 0x3D0, symBinAddr: 0x1DF00, symSize: 0x20 }
+  - { offsetInCU: 0x380, offset: 0x7675B, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC15setInboxEnabledyACSbFTo', symObjAddr: 0x3F0, symBinAddr: 0x1DF20, symSize: 0x20 }
+  - { offsetInCU: 0x413, offset: 0x767EE, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC19setAnalyticsEnabledyACSbF', symObjAddr: 0x410, symBinAddr: 0x1DF40, symSize: 0x20 }
+  - { offsetInCU: 0x48A, offset: 0x76865, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC19setAnalyticsEnabledyACSbFTo', symObjAddr: 0x430, symBinAddr: 0x1DF60, symSize: 0x20 }
+  - { offsetInCU: 0x51D, offset: 0x768F8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC21setPIAnalyticsEnabledyACSbF', symObjAddr: 0x450, symBinAddr: 0x1DF80, symSize: 0x20 }
+  - { offsetInCU: 0x594, offset: 0x7696F, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC21setPIAnalyticsEnabledyACSbFTo', symObjAddr: 0x470, symBinAddr: 0x1DFA0, symSize: 0x20 }
+  - { offsetInCU: 0x627, offset: 0x76A02, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC24setUseLegacyPIIdentifieryACSbF', symObjAddr: 0x490, symBinAddr: 0x1DFC0, symSize: 0x20 }
+  - { offsetInCU: 0x69E, offset: 0x76A79, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC24setUseLegacyPIIdentifieryACSbFTo', symObjAddr: 0x4B0, symBinAddr: 0x1DFE0, symSize: 0x20 }
+  - { offsetInCU: 0x731, offset: 0x76B0C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC29setApplicationControlsBadgingyACSbF', symObjAddr: 0x4D0, symBinAddr: 0x1E000, symSize: 0x20 }
+  - { offsetInCU: 0x7A8, offset: 0x76B83, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC29setApplicationControlsBadgingyACSbFTo', symObjAddr: 0x4F0, symBinAddr: 0x1E020, symSize: 0x20 }
+  - { offsetInCU: 0x83B, offset: 0x76C16, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC40setDelayRegistrationUntilContactKeyIsSetyACSbF', symObjAddr: 0x510, symBinAddr: 0x1E040, symSize: 0x20 }
+  - { offsetInCU: 0x8B2, offset: 0x76C8D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC40setDelayRegistrationUntilContactKeyIsSetyACSbFTo', symObjAddr: 0x530, symBinAddr: 0x1E060, symSize: 0x20 }
+  - { offsetInCU: 0x945, offset: 0x76D20, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC28setEnableScreenEntryTrackingyACSbF', symObjAddr: 0x550, symBinAddr: 0x1E080, symSize: 0x20 }
+  - { offsetInCU: 0x9BC, offset: 0x76D97, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC28setEnableScreenEntryTrackingyACSbFTo', symObjAddr: 0x570, symBinAddr: 0x1E0A0, symSize: 0x20 }
+  - { offsetInCU: 0xA4F, offset: 0x76E2A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC41setMarkMessageReadOnInboxNotificationOpenyACSbF', symObjAddr: 0x590, symBinAddr: 0x1E0C0, symSize: 0x20 }
+  - { offsetInCU: 0xAC6, offset: 0x76EA1, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC41setMarkMessageReadOnInboxNotificationOpenyACSbFTo', symObjAddr: 0x5B0, symBinAddr: 0x1E0E0, symSize: 0x20 }
+  - { offsetInCU: 0xC97, offset: 0x77072, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5buildAA0dE0CyF', symObjAddr: 0x5D0, symBinAddr: 0x1E100, symSize: 0x1D0 }
+  - { offsetInCU: 0xE49, offset: 0x77224, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5buildAA0dE0CyFTo', symObjAddr: 0x7A0, symBinAddr: 0x1E2D0, symSize: 0x40 }
+  - { offsetInCU: 0xE65, offset: 0x77240, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCACycfC', symObjAddr: 0x7E0, symBinAddr: 0x1E310, symSize: 0x20 }
+  - { offsetInCU: 0xE83, offset: 0x7725E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCACycfc', symObjAddr: 0x800, symBinAddr: 0x1E330, symSize: 0x30 }
+  - { offsetInCU: 0xEE6, offset: 0x772C1, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCACycfcTo', symObjAddr: 0x830, symBinAddr: 0x1E360, symSize: 0x30 }
+  - { offsetInCU: 0xF4D, offset: 0x77328, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCfD', symObjAddr: 0x860, symBinAddr: 0x1E390, symSize: 0x30 }
+  - { offsetInCU: 0xF7A, offset: 0x77355, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderC5appIdACSS_tcfcTf4gn_n', symObjAddr: 0x8F0, symBinAddr: 0x1E420, symSize: 0x240 }
+  - { offsetInCU: 0x10B5, offset: 0x77490, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCfETo', symObjAddr: 0x890, symBinAddr: 0x1E3C0, symSize: 0x60 }
+  - { offsetInCU: 0x1126, offset: 0x77501, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOf', symObjAddr: 0xB70, symBinAddr: 0x1E660, symSize: 0x40 }
+  - { offsetInCU: 0x113A, offset: 0x77515, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOc', symObjAddr: 0xBB0, symBinAddr: 0x1E6A0, symSize: 0x40 }
+  - { offsetInCU: 0x114E, offset: 0x77529, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCMa', symObjAddr: 0xBF0, symBinAddr: 0x1E6E0, symSize: 0x30 }
+  - { offsetInCU: 0x1162, offset: 0x7753D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCMU', symObjAddr: 0xC20, symBinAddr: 0x1E710, symSize: 0x10 }
+  - { offsetInCU: 0x1176, offset: 0x77551, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK17PushConfigBuilderCMr', symObjAddr: 0xC30, symBinAddr: 0x1E720, symSize: 0xB0 }
+  - { offsetInCU: 0x118A, offset: 0x77565, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgMa', symObjAddr: 0xEB0, symBinAddr: 0x1E9A0, symSize: 0x50 }
+  - { offsetInCU: 0x4F, offset: 0x7775F, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8MetadataCfD', symObjAddr: 0x0, symBinAddr: 0x1EA20, symSize: 0x20 }
+  - { offsetInCU: 0x7C, offset: 0x7778C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8MetadataC10sdkVersion33_3809CE3221114B8556DE540E7FADCC9CLLSSyFZTf4d_n', symObjAddr: 0xA20, symBinAddr: 0x1F440, symSize: 0x170 }
+  - { offsetInCU: 0xC5, offset: 0x777D5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8MetadataC6locale33_3809CE3221114B8556DE540E7FADCC9CLLSSSgyFZTf4d_n', symObjAddr: 0xB90, symBinAddr: 0x1F5B0, symSize: 0x130 }
+  - { offsetInCU: 0x163, offset: 0x77873, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8MetadataC12toDictionarySDySSypGyFZTf4d_n', symObjAddr: 0x1700, symBinAddr: 0x20120, symSize: 0x1180 }
+  - { offsetInCU: 0x774, offset: 0x77E84, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8MetadataCMa', symObjAddr: 0x20, symBinAddr: 0x1EA40, symSize: 0x20 }
+  - { offsetInCU: 0x7E0, offset: 0x77EF0, size: 0x8, addend: 0x0, symName: '_$sSD11removeValue6forKeyq_Sgx_tFSS_ypTg5', symObjAddr: 0x40, symBinAddr: 0x1EA60, symSize: 0xE0 }
+  - { offsetInCU: 0x930, offset: 0x78040, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationO22withUnsafeMutableBytesyxxSwKXEKlFs16IndexingIteratorVySS8UTF8ViewVG_Sit_Tg5', symObjAddr: 0x120, symBinAddr: 0x1EB40, symSize: 0x3C0 }
+  - { offsetInCU: 0xA25, offset: 0x78135, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV06InlineB0V15withUnsafeBytesyxxSWKXEKlFyt_Tgq5015$s10Foundation4B42VyACxcSTRzs5UInt8V7ElementRtzlufcySWXEfU3_ACTf1ncn_n', symObjAddr: 0x4E0, symBinAddr: 0x1EF00, symSize: 0xD0 }
+  - { offsetInCU: 0xA8F, offset: 0x7819F, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufcAC15_RepresentationOSWXEfU_', symObjAddr: 0x5B0, symBinAddr: 0x1EFD0, symSize: 0x80 }
+  - { offsetInCU: 0xB04, offset: 0x78214, size: 0x8, addend: 0x0, symName: '_$s10Foundation13__DataStorageC22withUnsafeMutableBytes2in5applyxSnySiG_xSwKXEtKlFs16IndexingIteratorVySS8UTF8ViewVG_Sit_Tg5', symObjAddr: 0x630, symBinAddr: 0x1F050, symSize: 0xA0 }
+  - { offsetInCU: 0xB7A, offset: 0x7828A, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV7_delete2atys10_HashTableV6BucketV_tFSS_ypTg5', symObjAddr: 0x6D0, symBinAddr: 0x1F0F0, symSize: 0x220 }
+  - { offsetInCU: 0xBF8, offset: 0x78308, size: 0x8, addend: 0x0, symName: '_$ss11_StringGutsV27_slowEnsureMatchingEncodingySS5IndexVAEF', symObjAddr: 0x8F0, symBinAddr: 0x1F310, symSize: 0xA0 }
+  - { offsetInCU: 0xC2D, offset: 0x7833D, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufc8IteratorQz_SitSwXEfU1_AI_SitSryAEGXEfU_SS8UTF8ViewV_TG5', symObjAddr: 0x990, symBinAddr: 0x1F3B0, symSize: 0x90 }
+  - { offsetInCU: 0xCAF, offset: 0x783BF, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV06InlineB0VyAESWcfCTf4nd_n', symObjAddr: 0xCC0, symBinAddr: 0x1F6E0, symSize: 0xC0 }
+  - { offsetInCU: 0xD25, offset: 0x78435, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV10LargeSliceVyAESWcfCTf4nd_n', symObjAddr: 0xD80, symBinAddr: 0x1F7A0, symSize: 0x80 }
+  - { offsetInCU: 0xD52, offset: 0x78462, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV11InlineSliceVyAESWcfCTf4nd_n', symObjAddr: 0xE00, symBinAddr: 0x1F820, symSize: 0x80 }
+  - { offsetInCU: 0xDA7, offset: 0x784B7, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOyAESWcfCTf4nd_n', symObjAddr: 0xE80, symBinAddr: 0x1F8A0, symSize: 0x70 }
+  - { offsetInCU: 0xDF8, offset: 0x78508, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationO5countAESi_tcfCTf4nd_n', symObjAddr: 0xEF0, symBinAddr: 0x1F910, symSize: 0xC0 }
+  - { offsetInCU: 0xF8F, offset: 0x7869F, size: 0x8, addend: 0x0, symName: '_$sypSgWOc', symObjAddr: 0x28E0, symBinAddr: 0x212A0, symSize: 0x40 }
+  - { offsetInCU: 0xFD9, offset: 0x786E9, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufc8IteratorQz_SitSwXEfU1_SS8UTF8ViewV_TG5TA', symObjAddr: 0x2990, symBinAddr: 0x21310, symSize: 0x50 }
+  - { offsetInCU: 0x102C, offset: 0x7873C, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOSgWOe', symObjAddr: 0x29E0, symBinAddr: 0x21360, symSize: 0x20 }
+  - { offsetInCU: 0x1040, offset: 0x78750, size: 0x8, addend: 0x0, symName: '_$s10Foundation15ContiguousBytes_pWOb', symObjAddr: 0x2A00, symBinAddr: 0x21380, symSize: 0x20 }
+  - { offsetInCU: 0x1054, offset: 0x78764, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_1, symObjAddr: 0x2A20, symBinAddr: 0x213A0, symSize: 0x30 }
+  - { offsetInCU: 0x1068, offset: 0x78778, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufc8IteratorQz_SitSwXEfU1_AI_SitSryAEGXEfU_SS8UTF8ViewV_TG5TA', symObjAddr: 0x2A80, symBinAddr: 0x21400, symSize: 0x10 }
+  - { offsetInCU: 0x107C, offset: 0x7878C, size: 0x8, addend: 0x0, symName: '_$sSw17withMemoryRebound2to_q_xm_q_SryxGKXEtKr0_lFs5UInt8V_s16IndexingIteratorVySS8UTF8ViewVG_SitTg5Tf4dnn_n', symObjAddr: 0x2A90, symBinAddr: 0x21410, symSize: 0x50 }
+  - { offsetInCU: 0x11BC, offset: 0x788CC, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVyACxcSTRzs5UInt8V7ElementRtzlufCSS8UTF8ViewV_Tg5Tf4nd_n', symObjAddr: 0xFB0, symBinAddr: 0x1F9D0, symSize: 0x750 }
+  - { offsetInCU: 0x3F, offset: 0x78C90, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwCP', symObjAddr: 0x0, symBinAddr: 0x21460, symSize: 0x30 }
+  - { offsetInCU: 0x53, offset: 0x78CA4, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwxx', symObjAddr: 0x30, symBinAddr: 0x21490, symSize: 0x30 }
+  - { offsetInCU: 0x67, offset: 0x78CB8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwcp', symObjAddr: 0x60, symBinAddr: 0x214C0, symSize: 0x50 }
+  - { offsetInCU: 0x7B, offset: 0x78CCC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwca', symObjAddr: 0xB0, symBinAddr: 0x21510, symSize: 0x70 }
+  - { offsetInCU: 0x8F, offset: 0x78CE0, size: 0x8, addend: 0x0, symName: ___swift_memcpy32_8, symObjAddr: 0x120, symBinAddr: 0x21580, symSize: 0x20 }
+  - { offsetInCU: 0xA3, offset: 0x78CF4, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwta', symObjAddr: 0x140, symBinAddr: 0x215A0, symSize: 0x50 }
+  - { offsetInCU: 0xB7, offset: 0x78D08, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwet', symObjAddr: 0x190, symBinAddr: 0x215F0, symSize: 0x50 }
+  - { offsetInCU: 0xCB, offset: 0x78D1C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVwst', symObjAddr: 0x1E0, symBinAddr: 0x21640, symSize: 0x50 }
+  - { offsetInCU: 0xDF, offset: 0x78D30, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVMa', symObjAddr: 0x230, symBinAddr: 0x21690, symSize: 0x10 }
+  - { offsetInCU: 0xFF, offset: 0x78D50, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV6encode2toys7Encoder_p_tKF', symObjAddr: 0x240, symBinAddr: 0x216A0, symSize: 0x1A0 }
+  - { offsetInCU: 0x154, offset: 0x78DA5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVSeAASe4fromxs7Decoder_p_tKcfCTW', symObjAddr: 0x400, symBinAddr: 0x21860, symSize: 0x30 }
+  - { offsetInCU: 0x18B, offset: 0x78DDC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVSEAASE6encode2toys7Encoder_p_tKFTW', symObjAddr: 0x430, symBinAddr: 0x21890, symSize: 0x20 }
+  - { offsetInCU: 0x1AE, offset: 0x78DFF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV4fromACs7Decoder_p_tKcfCTf4nd_n', symObjAddr: 0x6A0, symBinAddr: 0x21A90, symSize: 0x270 }
+  - { offsetInCU: 0x1EC, offset: 0x78E3D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysO11stringValueSSvg', symObjAddr: 0x3E0, symBinAddr: 0x21840, symSize: 0x20 }
+  - { offsetInCU: 0x239, offset: 0x78E8A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOSQAASQ2eeoiySbx_xtFZTW', symObjAddr: 0x560, symBinAddr: 0x21950, symSize: 0x10 }
+  - { offsetInCU: 0x2C0, offset: 0x78F11, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOSHAASH9hashValueSivgTW', symObjAddr: 0x570, symBinAddr: 0x21960, symSize: 0x40 }
+  - { offsetInCU: 0x3A4, offset: 0x78FF5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOSHAASH4hash4intoys6HasherVz_tFTW', symObjAddr: 0x5B0, symBinAddr: 0x219A0, symSize: 0x20 }
+  - { offsetInCU: 0x416, offset: 0x79067, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAsAFP11stringValueSSvgTW', symObjAddr: 0x610, symBinAddr: 0x21A00, symSize: 0x10 }
+  - { offsetInCU: 0x441, offset: 0x79092, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAsAFP11stringValuexSgSS_tcfCTW', symObjAddr: 0x620, symBinAddr: 0x21A10, symSize: 0x20 }
+  - { offsetInCU: 0x472, offset: 0x790C3, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAsAFP8intValueSiSgvgTW', symObjAddr: 0x640, symBinAddr: 0x21A30, symSize: 0x10 }
+  - { offsetInCU: 0x48E, offset: 0x790DF, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAsAFP8intValuexSgSi_tcfCTW', symObjAddr: 0x650, symBinAddr: 0x21A40, symSize: 0x10 }
+  - { offsetInCU: 0x4AA, offset: 0x790FB, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysO11stringValueAESgSS_tcfCTf4nd_n', symObjAddr: 0xC50, symBinAddr: 0x22040, symSize: 0xDD }
+  - { offsetInCU: 0x4EF, offset: 0x79140, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOAEs0G3KeyAAWl', symObjAddr: 0x4C0, symBinAddr: 0x218B0, symSize: 0x30 }
+  - { offsetInCU: 0x503, offset: 0x79154, size: 0x8, addend: 0x0, symName: '_$sSDyS2SGMa', symObjAddr: 0x4F0, symBinAddr: 0x218E0, symSize: 0x40 }
+  - { offsetInCU: 0x517, offset: 0x79168, size: 0x8, addend: 0x0, symName: '_$sSaySSGMa', symObjAddr: 0x530, symBinAddr: 0x21920, symSize: 0x30 }
+  - { offsetInCU: 0x541, offset: 0x79192, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_1, symObjAddr: 0x910, symBinAddr: 0x21D00, symSize: 0x30 }
+  - { offsetInCU: 0x555, offset: 0x791A6, size: 0x8, addend: 0x0, symName: ___swift_memcpy1_1, symObjAddr: 0x9E0, symBinAddr: 0x21DD0, symSize: 0x10 }
+  - { offsetInCU: 0x569, offset: 0x791BA, size: 0x8, addend: 0x0, symName: ___swift_noop_void_return, symObjAddr: 0x9F0, symBinAddr: 0x21DE0, symSize: 0x10 }
+  - { offsetInCU: 0x57D, offset: 0x791CE, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOwet', symObjAddr: 0xA00, symBinAddr: 0x21DF0, symSize: 0x80 }
+  - { offsetInCU: 0x591, offset: 0x791E2, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOwst', symObjAddr: 0xA80, symBinAddr: 0x21E70, symSize: 0xD0 }
+  - { offsetInCU: 0x5A5, offset: 0x791F6, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOwug', symObjAddr: 0xB50, symBinAddr: 0x21F40, symSize: 0x10 }
+  - { offsetInCU: 0x5B9, offset: 0x7920A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOwup', symObjAddr: 0xB60, symBinAddr: 0x21F50, symSize: 0x10 }
+  - { offsetInCU: 0x5CD, offset: 0x7921E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOwui', symObjAddr: 0xB70, symBinAddr: 0x21F60, symSize: 0x10 }
+  - { offsetInCU: 0x5E1, offset: 0x79232, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOMa', symObjAddr: 0xB80, symBinAddr: 0x21F70, symSize: 0x10 }
+  - { offsetInCU: 0x5F5, offset: 0x79246, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOSHAASQWb', symObjAddr: 0xB90, symBinAddr: 0x21F80, symSize: 0x10 }
+  - { offsetInCU: 0x609, offset: 0x7925A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOAESQAAWl', symObjAddr: 0xBA0, symBinAddr: 0x21F90, symSize: 0x30 }
+  - { offsetInCU: 0x61D, offset: 0x7926E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAs0E22DebugStringConvertiblePWb', symObjAddr: 0xBD0, symBinAddr: 0x21FC0, symSize: 0x10 }
+  - { offsetInCU: 0x631, offset: 0x79282, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOAEs0E22DebugStringConvertibleAAWl', symObjAddr: 0xBE0, symBinAddr: 0x21FD0, symSize: 0x30 }
+  - { offsetInCU: 0x645, offset: 0x79296, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0G3KeyAAs0E17StringConvertiblePWb', symObjAddr: 0xC10, symBinAddr: 0x22000, symSize: 0x10 }
+  - { offsetInCU: 0x659, offset: 0x792AA, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOAEs0E17StringConvertibleAAWl', symObjAddr: 0xC20, symBinAddr: 0x22010, symSize: 0x30 }
+  - { offsetInCU: 0x6E1, offset: 0x79332, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOSHAASH13_rawHashValue4seedS2i_tFTW', symObjAddr: 0x5D0, symBinAddr: 0x219C0, symSize: 0x40 }
+  - { offsetInCU: 0x784, offset: 0x793D5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0E22DebugStringConvertibleAAsAFP16debugDescriptionSSvgTW', symObjAddr: 0x660, symBinAddr: 0x21A50, symSize: 0x20 }
+  - { offsetInCU: 0x7A0, offset: 0x793F1, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesV10CodingKeysOs0E17StringConvertibleAAsAFP11descriptionSSvgTW', symObjAddr: 0x680, symBinAddr: 0x21A70, symSize: 0x20 }
+  - { offsetInCU: 0x2B, offset: 0x7958F, size: 0x8, addend: 0x0, symName: '_$ss30_dictionaryDownCastConditionalySDyq0_q1_GSgSDyxq_GSHRzSHR0_r2_lFs11AnyHashableV_ypS2STg5', symObjAddr: 0x0, symBinAddr: 0x22120, symSize: 0x430 }
+  - { offsetInCU: 0xC1, offset: 0x79625, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC13applicationIdSSvgTo', symObjAddr: 0x430, symBinAddr: 0x22550, symSize: 0x40 }
+  - { offsetInCU: 0x102, offset: 0x79666, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC9profileIdSSSgvgTo', symObjAddr: 0x470, symBinAddr: 0x22590, symSize: 0x50 }
+  - { offsetInCU: 0x13B, offset: 0x7969F, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC16customPropertiesSDySSypGSgvgTo', symObjAddr: 0x4C0, symBinAddr: 0x225E0, symSize: 0x60 }
+  - { offsetInCU: 0x17C, offset: 0x796E0, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC14installationIdSSSgvgTo', symObjAddr: 0x520, symBinAddr: 0x22640, symSize: 0x50 }
+  - { offsetInCU: 0x1B5, offset: 0x79719, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityCACycfc', symObjAddr: 0x570, symBinAddr: 0x22690, symSize: 0x160 }
+  - { offsetInCU: 0x234, offset: 0x79798, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC22customPropertiesToJsonSSSgyFTo', symObjAddr: 0x6D0, symBinAddr: 0x227F0, symSize: 0x40 }
+  - { offsetInCU: 0x284, offset: 0x797E8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityCfD', symObjAddr: 0x890, symBinAddr: 0x229B0, symSize: 0x40 }
+  - { offsetInCU: 0x338, offset: 0x7989C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC10properties33_26B67F63D2048B5903D4D5EC72DAD027LLSDySSypGyFZTf4d_n', symObjAddr: 0x1590, symBinAddr: 0x236B0, symSize: 0x3D0 }
+  - { offsetInCU: 0x519, offset: 0x79A7D, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityC22customPropertiesToJsonSSSgyFTf4d_n', symObjAddr: 0x1960, symBinAddr: 0x23A80, symSize: 0x310 }
+  - { offsetInCU: 0x6A6, offset: 0x79C0A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK12PushIdentityCMa', symObjAddr: 0x8D0, symBinAddr: 0x229F0, symSize: 0x20 }
+  - { offsetInCU: 0x6D0, offset: 0x79C34, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x8F0, symBinAddr: 0x22A10, symSize: 0x60 }
+  - { offsetInCU: 0x728, offset: 0x79C8C, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0x950, symBinAddr: 0x22A70, symSize: 0xE0 }
+  - { offsetInCU: 0x77D, offset: 0x79CE1, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV12mutatingFind_8isUniques10_HashTableV6BucketV6bucket_Sb5foundtx_SbtFSS_ypTg5', symObjAddr: 0xA30, symBinAddr: 0x22B50, symSize: 0xB0 }
+  - { offsetInCU: 0x7F4, offset: 0x79D58, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV4copyyyFSS_ypTg5', symObjAddr: 0xAE0, symBinAddr: 0x22C00, symSize: 0x260 }
+  - { offsetInCU: 0x88D, offset: 0x79DF1, size: 0x8, addend: 0x0, symName: '_$ss17_NativeDictionaryV20_copyOrMoveAndResize8capacity12moveElementsySi_SbtFSS_ypTg5', symObjAddr: 0xD40, symBinAddr: 0x22E60, symSize: 0x3C0 }
+  - { offsetInCU: 0x98E, offset: 0x79EF2, size: 0x8, addend: 0x0, symName: '_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtFSS_Tg5', symObjAddr: 0x1100, symBinAddr: 0x23220, symSize: 0x20 }
+  - { offsetInCU: 0x9FE, offset: 0x79F62, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtFSS_Tg5', symObjAddr: 0x1120, symBinAddr: 0x23240, symSize: 0xB0 }
+  - { offsetInCU: 0xB2F, offset: 0x7A093, size: 0x8, addend: 0x0, symName: '_$sSTsE21_copySequenceContents12initializing8IteratorQz_SitSry7ElementQzG_tFShys11AnyHashableVG_Tg5', symObjAddr: 0x11D0, symBinAddr: 0x232F0, symSize: 0x1F0 }
+  - { offsetInCU: 0xC14, offset: 0x7A178, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCs11AnyHashableV_Tg5Tf4nnd_n', symObjAddr: 0x13C0, symBinAddr: 0x234E0, symSize: 0x90 }
+  - { offsetInCU: 0xCF6, offset: 0x7A25A, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV19_uninitializedCount15minimumCapacityAByxGSi_SitcfCSS_Tg5Tf4nnd_n', symObjAddr: 0x1500, symBinAddr: 0x23620, symSize: 0x90 }
+  - { offsetInCU: 0xD86, offset: 0x7A2EA, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK24IdentityCustomPropertiesVACSEAAWl', symObjAddr: 0x1C70, symBinAddr: 0x23D90, symSize: 0x30 }
+  - { offsetInCU: 0xD9A, offset: 0x7A2FE, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableVWOc', symObjAddr: 0x1D20, symBinAddr: 0x23DC0, symSize: 0x30 }
+  - { offsetInCU: 0xDAE, offset: 0x7A312, size: 0x8, addend: 0x0, symName: '_$ss11AnyHashableV3key_yp5valuetWOh', symObjAddr: 0x1D80, symBinAddr: 0x23DF0, symSize: 0x30 }
+  - { offsetInCU: 0xDC2, offset: 0x7A326, size: 0x8, addend: 0x0, symName: '_$sSD8IteratorV8_VariantOyxq___GSHRzr0_lWOe', symObjAddr: 0x1DB0, symBinAddr: 0x23E20, symSize: 0x20 }
+  - { offsetInCU: 0xDD6, offset: 0x7A33A, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x1DF0, symBinAddr: 0x23E40, symSize: 0x22 }
+  - { offsetInCU: 0xE16, offset: 0x7A37A, size: 0x8, addend: 0x0, symName: '_$ss30_dictionaryDownCastConditionalySDyq0_q1_GSgSDyxq_GSHRzSHR0_r2_lFs11AnyHashableV_ypS2STg5', symObjAddr: 0x0, symBinAddr: 0x22120, symSize: 0x430 }
+  - { offsetInCU: 0xF3A, offset: 0x7A49E, size: 0x8, addend: 0x0, symName: '_$ss21_arrayConditionalCastySayq_GSgSayxGr0_lFs11AnyHashableV_SSTg5', symObjAddr: 0x710, symBinAddr: 0x22830, symSize: 0x180 }
+  - { offsetInCU: 0x10C8, offset: 0x7A62C, size: 0x8, addend: 0x0, symName: '_$sSaySayxGqd__c7ElementQyd__RszSTRd__lufCs11AnyHashableV_ShyAEGTg5Tf4gd_n', symObjAddr: 0x1450, symBinAddr: 0x23570, symSize: 0xB0 }
+  - { offsetInCU: 0x2B, offset: 0x7AA13, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityCfD', symObjAddr: 0x0, symBinAddr: 0x23E70, symSize: 0x20 }
+  - { offsetInCU: 0x4F, offset: 0x7AA37, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityCfD', symObjAddr: 0x0, symBinAddr: 0x23E70, symSize: 0x20 }
+  - { offsetInCU: 0x7C, offset: 0x7AA64, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityC16updateContactKey33_B2871893EF21F7F6DA1D4C4B82497A24LL07contactG0yyp_tFZTf4nd_n', symObjAddr: 0x40, symBinAddr: 0x23EB0, symSize: 0x1A0 }
+  - { offsetInCU: 0x14D, offset: 0x7AB35, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityC23updateProfileAttributes33_B2871893EF21F7F6DA1D4C4B82497A24LL10attributesySDyS2SG_tFZTf4nd_n', symObjAddr: 0x1E0, symBinAddr: 0x24050, symSize: 0x440 }
+  - { offsetInCU: 0x460, offset: 0x7AE48, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityC6update5eventy7SFMCSDK0D13EventProtocol_p_tFZTf4nd_n', symObjAddr: 0x620, symBinAddr: 0x24490, symSize: 0xD0 }
+  - { offsetInCU: 0x4F0, offset: 0x7AED8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK8IdentityCMa', symObjAddr: 0x20, symBinAddr: 0x23E90, symSize: 0x20 }
+  - { offsetInCU: 0x69, offset: 0x7B1E8, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvgTo', symObjAddr: 0x0, symBinAddr: 0x24560, symSize: 0x40 }
+  - { offsetInCU: 0xA4, offset: 0x7B223, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvg', symObjAddr: 0x40, symBinAddr: 0x245A0, symSize: 0x30 }
+  - { offsetInCU: 0xEB, offset: 0x7B26A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvsTo', symObjAddr: 0x70, symBinAddr: 0x245D0, symSize: 0x40 }
+  - { offsetInCU: 0x126, offset: 0x7B2A5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvs', symObjAddr: 0xB0, symBinAddr: 0x24610, symSize: 0x40 }
+  - { offsetInCU: 0x14D, offset: 0x7B2CC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvM', symObjAddr: 0xF0, symBinAddr: 0x24650, symSize: 0x40 }
+  - { offsetInCU: 0x17C, offset: 0x7B2FB, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC12trackScreensSbvM.resume.0', symObjAddr: 0x130, symBinAddr: 0x24690, symSize: 0x10 }
+  - { offsetInCU: 0x1C5, offset: 0x7B344, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC4name7SFMCSDK10ModuleNameOvgTo', symObjAddr: 0x140, symBinAddr: 0x246A0, symSize: 0x20 }
+  - { offsetInCU: 0x200, offset: 0x7B37F, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC4name7SFMCSDK10ModuleNameOvg', symObjAddr: 0x160, symBinAddr: 0x246C0, symSize: 0x20 }
+  - { offsetInCU: 0x23B, offset: 0x7B3BA, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC5appIdSSvgTo', symObjAddr: 0x180, symBinAddr: 0x246E0, symSize: 0x50 }
+  - { offsetInCU: 0x276, offset: 0x7B3F5, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC5appIdSSvg', symObjAddr: 0x1D0, symBinAddr: 0x24730, symSize: 0x30 }
+  - { offsetInCU: 0x3DD, offset: 0x7B55C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC09marketingbE0SDys11AnyHashableVypGSgyF', symObjAddr: 0x200, symBinAddr: 0x24760, symSize: 0x500 }
+  - { offsetInCU: 0x6C1, offset: 0x7B840, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCACycfC', symObjAddr: 0x700, symBinAddr: 0x24C60, symSize: 0x20 }
+  - { offsetInCU: 0x6DF, offset: 0x7B85E, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCACycfc', symObjAddr: 0x720, symBinAddr: 0x24C80, symSize: 0x30 }
+  - { offsetInCU: 0x742, offset: 0x7B8C1, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCACycfcTo', symObjAddr: 0x750, symBinAddr: 0x24CB0, symSize: 0x30 }
+  - { offsetInCU: 0x7A9, offset: 0x7B928, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCfD', symObjAddr: 0x780, symBinAddr: 0x24CE0, symSize: 0x30 }
+  - { offsetInCU: 0x7D6, offset: 0x7B955, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigC5appId11accessToken8endpoint3mid15locationEnabled05inboxM009analyticsM0011piAnalyticsM021useLegacyPIIdentifier26applicationControlsBadging37delayRegistrationUntilContactKeyIsSet25enableScreenEntryTracking38markMessageReadOnInboxNotificationOpenACSS_SSSg10Foundation3URLVSgAQSbSgA8VtcfcTf4ggngnnnnnnnnnn_n', symObjAddr: 0xB10, symBinAddr: 0x24FA0, symSize: 0x360 }
+  - { offsetInCU: 0x8E7, offset: 0x7BA66, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCMa', symObjAddr: 0x7B0, symBinAddr: 0x24D10, symSize: 0x30 }
+  - { offsetInCU: 0x8FB, offset: 0x7BA7A, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCfETo', symObjAddr: 0x860, symBinAddr: 0x24DC0, symSize: 0x60 }
+  - { offsetInCU: 0x92A, offset: 0x7BAA9, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCMU', symObjAddr: 0x8C0, symBinAddr: 0x24E20, symSize: 0x10 }
+  - { offsetInCU: 0x93E, offset: 0x7BABD, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK10PushConfigCMr', symObjAddr: 0x8D0, symBinAddr: 0x24E30, symSize: 0xC0 }
+  - { offsetInCU: 0x952, offset: 0x7BAD1, size: 0x8, addend: 0x0, symName: '_$s10Foundation3URLVSgWOh', symObjAddr: 0xAE0, symBinAddr: 0x24F70, symSize: 0x30 }
+  - { offsetInCU: 0x4B, offset: 0x7BD44, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsC31isAppDelegateImplementsSelectorySbSSFZ', symObjAddr: 0x0, symBinAddr: 0x25300, symSize: 0x30 }
+  - { offsetInCU: 0x6E, offset: 0x7BD67, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsC31isAppDelegateImplementsSelectorySbSSFZTo', symObjAddr: 0x30, symBinAddr: 0x25330, symSize: 0x50 }
+  - { offsetInCU: 0xA0, offset: 0x7BD99, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsC44isUserNotificationDelegateImplementsSelectorySbSSFZ', symObjAddr: 0x80, symBinAddr: 0x25380, symSize: 0x30 }
+  - { offsetInCU: 0xC3, offset: 0x7BDBC, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsC44isUserNotificationDelegateImplementsSelectorySbSSFZTo', symObjAddr: 0xB0, symBinAddr: 0x253B0, symSize: 0x50 }
+  - { offsetInCU: 0xF5, offset: 0x7BDEE, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsCACycfC', symObjAddr: 0x100, symBinAddr: 0x25400, symSize: 0x20 }
+  - { offsetInCU: 0x113, offset: 0x7BE0C, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsCACycfc', symObjAddr: 0x120, symBinAddr: 0x25420, symSize: 0x30 }
+  - { offsetInCU: 0x14E, offset: 0x7BE47, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsCACycfcTo', symObjAddr: 0x150, symBinAddr: 0x25450, symSize: 0x30 }
+  - { offsetInCU: 0x189, offset: 0x7BE82, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsCfD', symObjAddr: 0x180, symBinAddr: 0x25480, symSize: 0x30 }
+  - { offsetInCU: 0x1B7, offset: 0x7BEB0, size: 0x8, addend: 0x0, symName: '_$s17MarketingCloudSDK0aB16SDKSelectorUtilsCMa', symObjAddr: 0x280, symBinAddr: 0x25580, symSize: 0x14 }
+...
