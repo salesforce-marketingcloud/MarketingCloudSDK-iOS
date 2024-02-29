@@ -82,3 +82,22 @@ To prepare your application for data privacy compliance, implement the April 201
 ### iOS
 * Ensure that you implement version 5.1.0 or above of the Marketing Cloud MobilePush SDK. This version of the SDK uses the necessary underlying architecture to enable data compliance functionality.
 * Enable background refresh in your application to assure the best opportunity for silent push notification delivery for seamless mode enablement. Review the [iOS SDK documentation]({{ site.baseurl }}) for more details.
+
+## Apple Privacy Manifest
+
+Starting iOS17, Apple introduced privacy policies for apps which includes third party SDK should be aware about the data collection. 
+Apple has newly introduced privacy manifests for SDKs to help app developers better understand how third-party SDKs use data. Starting in Spring 2024, any new app or app update submission that integrates a third-party SDK must include the privacy manifest for that SDK.
+
+Apple’s privacy manifest is a file type that outlines the privacy practices of an app or its third-party SDKs. In the manifest, you declare the types of data you collect, using specific categories they provide, and the purpose for collecting the data.
+
+### Required reason API usage
+
+Apple lists the [require reason APIs](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api) that can be misused to access device signals to try to identify the device or user, also known as fingerprinting. It is mandatory for the third party SDKs to declare the APIs used and verify if it falls under expected reasons category.
+
+**MarketingCloudSDK** uses below Required Reason API that must be declared in the manifest
+
+| API type |	| Reason |	| Comments |
+| :------------------ |   | :----------------------- | | :------------------------------------- |
+| NSPrivacyAccessedAPICategoryUserDefaults | 	| CA92.1 |	| MarketingCloudSDK uses Userdefaults to
+|                                          |    |        |  | persist few SDK settings related to Data migration,| 
+|                                          |    |        |  | SDK privacy mode,  API sync retry timestamp. |	
