@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		xccBqPKn1eX+nTDYhSAfQf/h5LA=
+		</data>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
 		GJpZQRi+8tTmD7yQjZ9HJoM+x7I=
@@ -162,7 +166,7 @@
 		</data>
 		<key>MarketingCloudSDK.bundle/_CodeSignature/CodeSignature</key>
 		<data>
-		px/oPiJnB37AZfEZGgnsHs/gR40=
+		iRnNffGI3PHucKeuuv2lTnvb2RY=
 		</data>
 		<key>MarketingCloudSDK.bundle/en.lproj/MarketingCloudSDK.strings</key>
 		<dict>
@@ -188,10 +192,6 @@
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
 		+/1AcQrMFGjuRUlEPhTps9efiwg=
-		</data>
-		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		cJZ6+Zj92fXcLRaAxowTcHraRtE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -470,7 +470,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B4T7TJiwy2WxUDWITG8vygU42eRh4PyaVxBr0WspFCg=
+			HQPKLnVG5tkpf590g7Ldv5S+RxgG2CDI4mMbJMxmIro=
 			</data>
 		</dict>
 		<key>MarketingCloudSDK.bundle/en.lproj/MarketingCloudSDK.strings</key>
@@ -508,13 +508,6 @@
 			<key>hash2</key>
 			<data>
 			PBxI8xLVm+ElCi2m8nCLb8+P/CdX1uHuTTgyBtAaeAU=
-			</data>
-		</dict>
-		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			15f0NsRdAKrflEwmzPI9YW6DFjjfGFbd50xejY6Nx+E=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
