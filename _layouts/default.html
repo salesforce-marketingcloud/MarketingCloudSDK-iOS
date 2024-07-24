@@ -1,69 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width">
 
-        <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
-        <meta name="description" content="{{ site.subtitle }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
 
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/css/gist.css">
-        <script src="{{ site.baseurl }}/scripts/gists.js"></script>
+    <title>{{ site.title }}{% if page.title %} : {{ page.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.subtitle }}">
 
-        {% if site.google_analytics_id != "" %}
-            {% include google_analytics.html %}
-        {% endif %}
-    </head>
-    <body>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/gist.css">
+    <script src="{{ site.baseurl }}/scripts/gists.js"></script>
 
-        <div class="container">
-            <div class=row-fluid>
-                <div id=header class=span12>
-                    {% include header.html %}
-                </div>
-            </div>
+    {% if site.google_analytics_id != "" %}
+    {% include google_analytics.html %}
+    {% endif %}
+</head>
 
-            <div class=row-fluid>
-                {% assign post_count = site.posts|size %}
-                {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
-                    <div id=navigation class=span2>
-                        {% include navigation.html %}
-                    </div>
+<body>
+    <!-- Modal Structure -->
+    <div id="noticeModal" class="modal-notice">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>NOTICE!</h2>
+            <p>The SDK's documentation has been moved to the <a href="https://sforce.co/4cLZPS2">Salesforce Doc
+                    Site</a>.
+            </p>
+        </div>
+    </div>
 
-                    <div id=content class=span10>
-                        {{ content }}
-                    </div>
-                {% else %}
-                    <div id=content class=span12>
-                        {{ content }}
-                    </div>
-                {% endif %}
-            </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("noticeModal");
 
-            {% if page.disqus == 1 %}
-            <div class=row-fluid>
-              {% if site.navigation == 1 or post_count > 0 %}
-                <div id=navigation class=span2></div>
-                <div id=disqus class=span10>
-                    {% include disqus.html %}
-                </div>
-              {% else %}
-                <div id=disqus class=span12>
-                    {% include disqus.html %}
-                </div>
-              {% endif %}
-            </div>
-            {% endif %}
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-            <div class=row-fluid>
-                <div id=footer class=span12>
-                    {% include footer.html %}
-                </div>
+        // Display the modal when the page loads
+        window.onload = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="container">
+        <div class=row-fluid>
+            <div id=header class=span12>
+                {% include header.html %}
             </div>
         </div>
-    </body>
+
+        <div class=row-fluid>
+            {% assign post_count = site.posts|size %}
+            {% if site.navigation != 0 and site.navigation == 1 or post_count > 0 %}
+            <div id=navigation class=span2>
+                {% include navigation.html %}
+            </div>
+
+            <div id=content class=span10>
+                {{ content }}
+            </div>
+            {% else %}
+            <div id=content class=span12>
+                {{ content }}
+            </div>
+            {% endif %}
+        </div>
+
+        {% if page.disqus == 1 %}
+        <div class=row-fluid>
+            {% if site.navigation == 1 or post_count > 0 %}
+            <div id=navigation class=span2></div>
+            <div id=disqus class=span10>
+                {% include disqus.html %}
+            </div>
+            {% else %}
+            <div id=disqus class=span12>
+                {% include disqus.html %}
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <div class=row-fluid>
+            <div id=footer class=span12>
+                {% include footer.html %}
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
