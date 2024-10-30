@@ -2,7 +2,7 @@
 
 The MobilePush SDK LearningApp is offered as an example of MobilePush SDK project configuration and implementation best practices.
 
-To easily integrate the MobilePush SDK into your new or existing mobile app, use the LearningApp in conjunction with the [iOS](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/) MobilePush SDK documentation and the [iOS Appledoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/appledocs.html) references.
+To easily integrate the MobilePush SDK into your new or existing mobile app, use the LearningApp in conjunction with the [iOS](https://developer.salesforce.com/docs/marketing/mobilepush/guide/ios-sdk-integration.html) MobilePush SDK documentation and the [iOS  Marketing Cloud SDK Appledoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/MarketingCloudSdk/8.1/index.html) references.
 
 Additionally, should you face a challenge in your MobilePush SDK implementation, the LearningApp can serve as a simple, streamlined test application to validate integration and configuration outside of the complexities of a modern, fully featured mobile app.
 
@@ -21,8 +21,9 @@ The LearningApp demonstrates
 
 For further information about implementing the MobilePush SDK, see the documentation
 
-* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/
-* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/index.html
+* https://developer.salesforce.com/docs/marketing/mobilepush/guide/ios-sdk-integration.html
+* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/MarketingCloudSdk/8.1/index.html
+* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledocs/SFMCSdk/8.1/index.html
 
 **Requirements**
 
