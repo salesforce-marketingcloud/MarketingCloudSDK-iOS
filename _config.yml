@@ -66,5 +66,7 @@ markdown: kramdown
 
 currentMajorMinor: "9.0"
 
+currentMajorMinorExtensionSDK: "1.0"
+
 # Current SDK version, use for all mentions
 currentVersion: "9.0.0"

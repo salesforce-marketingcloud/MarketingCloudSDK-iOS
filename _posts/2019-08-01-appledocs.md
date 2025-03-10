@@ -27,7 +27,7 @@ published: true
 
 ### Appledocs for ExtensionSdk
 
-#### [Current Version]({{site.baseurl}}/appledocs/ExtensionSdk/{{site.currentMajorMinor}}/index.html)
+#### [Current Version]({{site.baseurl}}/appledocs/ExtensionSdk/{{site.currentMajorMinorExtensionSDK}}/index.html)
 
-* [9.x]({{site.baseurl}}/appledocs/ExtensionSdk/9.0/index.html)
+* [1.x]({{site.baseurl}}/appledocs/ExtensionSdk/1.0/index.html)
 
