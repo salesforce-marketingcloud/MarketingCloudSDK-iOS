@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Classes  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
+    <a title="Classes  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">MCExtensionSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">MCExtensionSDK Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Classes  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/SFContentExtensionConfig.html">SFContentExtensionConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMCNotificationService.html">SFMCNotificationService</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFMCNotificationViewController.html">SFMCNotificationViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/SFNotificationServiceConfig.html">SFNotificationServiceConfig</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/LogLevel.html">LogLevel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions.html#/AppKit">AppKit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Classes</h1>
+            <p>The following classes are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SFMCNotificationService"></a>
+                    <a name="//apple_ref/swift/Class/SFMCNotificationService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCNotificationService">SFMCNotificationService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The primary class for handling notification service extensions.
+<code>SFMCNotificationService</code> should be used as the base class for
+notification service extensions.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <strong>Important:</strong> Do not implement any <code>UNNotificationServiceExtension</code> methods, including:
+
+</div><ul>
+<li><code>didReceive(_:withContentHandler:)</code></li>
+<li><code>serviceExtensionTimeWillExpire()</code></li>
+</ul>
+
+<p>Implementing these methods may interfere with the expected behavior
+of <code>SFMCNotificationService</code>, potentially leading to unexpected issues.</p>
+
+                        <a href="Classes/SFMCNotificationService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SFMCNotificationService</span> <span class="p">:</span> <span class="nc">UNNotificationServiceExtension</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SFMCNotificationService</span> <span class="p">:</span> <span class="kt">UNNotificationServiceExtension</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SFMCNotificationViewController"></a>
+                    <a name="//apple_ref/swift/Class/SFMCNotificationViewController" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SFMCNotificationViewController">SFMCNotificationViewController</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The base class for notification content extensions.</p>
+
+<p>The notification content extension principal class should inherit from <code>SFMCNotificationViewController</code>.</p>
+<div class="aside aside-note">
+    <p class="aside-title">Note</p>
+    <code>SFMCNotificationViewController</code> fully manages UI rendering.
+<strong>Do not implement or override</strong> any <code>UIViewController</code> methods in the principal class
+of the content extension, as doing so may interfere with UI rendering.
+
+</div>
+
+                        <a href="Classes/SFMCNotificationViewController.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">SFMCNotificationViewController</span> <span class="p">:</span> <span class="nc">UIViewController</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SFMCNotificationViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MCExtensionSDK@objc(cs)SFMCContentExtensionConfig"></a>
+                    <a name="//apple_ref/swift/Class/SFContentExtensionConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MCExtensionSDK@objc(cs)SFMCContentExtensionConfig">SFContentExtensionConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The configuration class for content extensions.</p>
+
+<p><code>SFContentExtensionConfig</code> provides settings to control logging behavior
+and request timeouts within the content extension.</p>
+
+                        <a href="Classes/SFContentExtensionConfig.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(SFMCContentExtensionConfig)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SFContentExtensionConfig</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@MCExtensionSDK@objc(cs)SFMCNotificationServiceConfig"></a>
+                    <a name="//apple_ref/swift/Class/SFNotificationServiceConfig" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@MCExtensionSDK@objc(cs)SFMCNotificationServiceConfig">SFNotificationServiceConfig</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The configuration class for the notification service which provides configuration options for notification service extension,
+ including option for setting logging levels.</p>
+
+                        <a href="Classes/SFNotificationServiceConfig.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc(SFMCNotificationServiceConfig)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">SFNotificationServiceConfig</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2025-03-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.14.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
