@@ -1,0 +1,24 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
+
+target 'LearningApp' do
+  use_frameworks!
+
+  # Pods for LearningApp
+  pod 'MarketingCloudSDK'
+end
+
+target 'MarketingCloudServiceExtension' do
+  use_frameworks!
+
+  # Pods for MarketingCloudServiceExtension
+  pod 'MarketingCloud-MCExtensionSDK'
+end
+
+target 'MarketingCloudContentExtension' do
+  use_frameworks!
+
+  # Pods for MarketingCloudContentExtension
+  pod 'MarketingCloud-MCExtensionSDK'
+end
