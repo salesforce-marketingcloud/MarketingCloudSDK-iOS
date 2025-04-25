@@ -1,6 +1,0 @@
-framework module MarketingCloudSDK {
-  umbrella header "MarketingCloudSDK.h"
-
-  export *
-  module * { export * }
-}
