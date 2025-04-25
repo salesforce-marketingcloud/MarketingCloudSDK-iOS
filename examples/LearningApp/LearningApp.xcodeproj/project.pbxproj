@@ -1,0 +1,1333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45552D67DA164483D8278D27 /* Pods_MarketingCloudServiceExtension_Testflight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3050E3474474121A29640C45 /* Pods_MarketingCloudServiceExtension_Testflight.framework */; };
+		5FFC3562F0ED539877EFDDCB /* Pods_MarketingCloudContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C72BD7BA8F2BC24F7B72410 /* Pods_MarketingCloudContentExtension.framework */; };
+		601B51A02D6C2D8C00AD6A81 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B519F2D6C2D8C00AD6A81 /* UserNotifications.framework */; };
+		601B51A22D6C2D8C00AD6A81 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B51A12D6C2D8C00AD6A81 /* UserNotificationsUI.framework */; };
+		601B51A52D6C2D8C00AD6A81 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B51A42D6C2D8C00AD6A81 /* NotificationViewController.swift */; };
+		601B51AC2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 601B519D2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		601B51E22D6C7D8500AD6A81 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B51A42D6C2D8C00AD6A81 /* NotificationViewController.swift */; };
+		601B51E42D6C7D8500AD6A81 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B51A12D6C2D8C00AD6A81 /* UserNotificationsUI.framework */; };
+		601B51E52D6C7D8500AD6A81 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B519F2D6C2D8C00AD6A81 /* UserNotifications.framework */; };
+		69580765BC4555E6DF2C82A6 /* Pods_MarketingCloudServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51690A866E1034A98F176167 /* Pods_MarketingCloudServiceExtension.framework */; };
+		7C36F48D2203A3A27FED33C8 /* Pods_LearningApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC61D6166D684584A65A449 /* Pods_LearningApp.framework */; };
+		9BDC678322A85ABB0098A2E2 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */; };
+		9BDC679922AADED90098A2E2 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC679822AADED90098A2E2 /* NotificationService.swift */; };
+		9BDC679D22AADED90098A2E2 /* MarketingCloudServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9BDC679622AADED80098A2E2 /* MarketingCloudServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9BF1C6D722A6DD2D004E4AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C6D622A6DD2D004E4AF0 /* AppDelegate.swift */; };
+		9BF1C6D922A6DD2D004E4AF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C6D822A6DD2D004E4AF0 /* ViewController.swift */; };
+		9BF1C6DC22A6DD2D004E4AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DA22A6DD2D004E4AF0 /* Main.storyboard */; };
+		9BF1C6DE22A6DD2F004E4AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DD22A6DD2F004E4AF0 /* Assets.xcassets */; };
+		9BF1C6E122A6DD2F004E4AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DF22A6DD2F004E4AF0 /* LaunchScreen.storyboard */; };
+		9BF1C70322A8300D004E4AF0 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C70222A8300D004E4AF0 /* RegistrationViewController.swift */; };
+		A7761F6A29E6C8FB00C07043 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */; };
+		A7761F6B29E6C8FB00C07043 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C70222A8300D004E4AF0 /* RegistrationViewController.swift */; };
+		A7761F6C29E6C8FB00C07043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C6D822A6DD2D004E4AF0 /* ViewController.swift */; };
+		A7761F6D29E6C8FB00C07043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1C6D622A6DD2D004E4AF0 /* AppDelegate.swift */; };
+		A7761F7029E6C8FB00C07043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DF22A6DD2F004E4AF0 /* LaunchScreen.storyboard */; };
+		A7761F7129E6C8FB00C07043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DD22A6DD2F004E4AF0 /* Assets.xcassets */; };
+		A7761F7229E6C8FB00C07043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF1C6DA22A6DD2D004E4AF0 /* Main.storyboard */; };
+		A7761F7C29E6C93600C07043 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC679822AADED90098A2E2 /* NotificationService.swift */; };
+		A7F6ED4129ED5024007160C8 /* MarketingCloudServiceExtension-Testflight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A7761F8229E6C93600C07043 /* MarketingCloudServiceExtension-Testflight.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD92E5B55C2B397846010973 /* Pods_MarketingCloudContentExtension_Testflight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99985231756327903A6DB392 /* Pods_MarketingCloudContentExtension_Testflight.framework */; };
+		CF5E8B09E8D54AF4FFCEB874 /* Pods_LearningApp_Testflight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E823C3E33020866D1B952B10 /* Pods_LearningApp_Testflight.framework */; };
+		F564862A2D81629D00FAC8D1 /* MarketingCloudContentExtension-Testflight.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 601B51EB2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601B51AA2D6C2D8C00AD6A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BF1C6CB22A6DD2D004E4AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601B519C2D6C2D8C00AD6A81;
+			remoteInfo = MarketingCloudContentExtension;
+		};
+		9BDC679B22AADED90098A2E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BF1C6CB22A6DD2D004E4AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BDC679522AADED80098A2E2;
+			remoteInfo = MarketingCloudServiceExtension;
+		};
+		A7F6ED4229ED5024007160C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BF1C6CB22A6DD2D004E4AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7761F7A29E6C93600C07043;
+			remoteInfo = "MarketingCloudServiceExtension-Testflight";
+		};
+		F564862B2D81629D00FAC8D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BF1C6CB22A6DD2D004E4AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601B51DF2D6C7D8500AD6A81;
+			remoteInfo = "MarketingCloudContentExtension-Testflight";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9BDC67A122AADED90098A2E2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9BDC679D22AADED90098A2E2 /* MarketingCloudServiceExtension.appex in Embed App Extensions */,
+				601B51AC2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7F6ED4429ED5024007160C8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7F6ED4129ED5024007160C8 /* MarketingCloudServiceExtension-Testflight.appex in Embed Foundation Extensions */,
+				F564862A2D81629D00FAC8D1 /* MarketingCloudContentExtension-Testflight.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		001E7D5C15BDD4262D3C2DC7 /* Pods-MarketingCloudServiceExtension-Testflight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudServiceExtension-Testflight.release.xcconfig"; path = "Target Support Files/Pods-MarketingCloudServiceExtension-Testflight/Pods-MarketingCloudServiceExtension-Testflight.release.xcconfig"; sourceTree = "<group>"; };
+		285F9D720B6C510237936B0D /* Pods-MarketingCloudContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-MarketingCloudContentExtension/Pods-MarketingCloudContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3050E3474474121A29640C45 /* Pods_MarketingCloudServiceExtension_Testflight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketingCloudServiceExtension_Testflight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		489C0CF500CD5A33B316196A /* Pods-MarketingCloudServiceExtension-Testflight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudServiceExtension-Testflight.debug.xcconfig"; path = "Target Support Files/Pods-MarketingCloudServiceExtension-Testflight/Pods-MarketingCloudServiceExtension-Testflight.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC61D6166D684584A65A449 /* Pods_LearningApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51690A866E1034A98F176167 /* Pods_MarketingCloudServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketingCloudServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		601B519D2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarketingCloudContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		601B519F2D6C2D8C00AD6A81 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		601B51A12D6C2D8C00AD6A81 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		601B51A42D6C2D8C00AD6A81 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		601B51A92D6C2D8C00AD6A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601B51C42D6C4CDD00AD6A81 /* MarketingCloudServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarketingCloudServiceExtension.entitlements; sourceTree = "<group>"; };
+		601B51C52D6C4CF700AD6A81 /* MarketingCloudContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MarketingCloudContentExtension.entitlements; sourceTree = "<group>"; };
+		601B51EB2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MarketingCloudContentExtension-Testflight.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A5A561450622A3E6CF0CEC /* Pods-MarketingCloudServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-MarketingCloudServiceExtension/Pods-MarketingCloudServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		7E58A741C7DB6FE4FF74C1FF /* Pods-LearningApp-Testflight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp-Testflight.debug.xcconfig"; path = "Target Support Files/Pods-LearningApp-Testflight/Pods-LearningApp-Testflight.debug.xcconfig"; sourceTree = "<group>"; };
+		87E036D7E404B40C0C91E19E /* Pods-MarketingCloudContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudContentExtension.release.xcconfig"; path = "Target Support Files/Pods-MarketingCloudContentExtension/Pods-MarketingCloudContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		932D6247AF36CB872B83B4D9 /* Pods-MarketingCloudContentExtension-Testflight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudContentExtension-Testflight.debug.xcconfig"; path = "Target Support Files/Pods-MarketingCloudContentExtension-Testflight/Pods-MarketingCloudContentExtension-Testflight.debug.xcconfig"; sourceTree = "<group>"; };
+		99985231756327903A6DB392 /* Pods_MarketingCloudContentExtension_Testflight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketingCloudContentExtension_Testflight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B75120922B03EA20071C5CB /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxTableViewController.swift; sourceTree = "<group>"; };
+		9BDC679622AADED80098A2E2 /* MarketingCloudServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MarketingCloudServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDC679822AADED90098A2E2 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		9BDC679A22AADED90098A2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF1C6D322A6DD2D004E4AF0 /* LearningApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BF1C6D622A6DD2D004E4AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9BF1C6D822A6DD2D004E4AF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BF1C6DB22A6DD2D004E4AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BF1C6DD22A6DD2F004E4AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BF1C6E022A6DD2F004E4AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BF1C6E222A6DD2F004E4AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF1C70222A8300D004E4AF0 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		9C610D2E9AC36B4FA0CA42D7 /* Pods-MarketingCloudServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-MarketingCloudServiceExtension/Pods-MarketingCloudServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A7761F7829E6C8FB00C07043 /* LearningApp-Testflight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LearningApp-Testflight.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7761F7929E6C8FC00C07043 /* LearningApp-Testflight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LearningApp-Testflight-Info.plist"; path = "/Users/ppattabiraman/Projects/ios/new/sdk-ios/examples/LearningApp/LearningApp-Testflight-Info.plist"; sourceTree = "<absolute>"; };
+		A7761F8229E6C93600C07043 /* MarketingCloudServiceExtension-Testflight.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MarketingCloudServiceExtension-Testflight.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7761F8329E6C93700C07043 /* MarketingCloudServiceExtension-Testflight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "MarketingCloudServiceExtension-Testflight-Info.plist"; path = "/Users/ppattabiraman/Projects/ios/new/sdk-ios/examples/LearningApp/MarketingCloudServiceExtension-Testflight-Info.plist"; sourceTree = "<absolute>"; };
+		ABC701B8DFC738906DBABE16 /* Pods-LearningApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.release.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.release.xcconfig"; sourceTree = "<group>"; };
+		B8C36E4069BC30B52A627CC1 /* Pods-MarketingCloudContentExtension-Testflight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketingCloudContentExtension-Testflight.release.xcconfig"; path = "Target Support Files/Pods-MarketingCloudContentExtension-Testflight/Pods-MarketingCloudContentExtension-Testflight.release.xcconfig"; sourceTree = "<group>"; };
+		E3AC08C9F33B0ABA6B921909 /* Pods-LearningApp-Testflight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp-Testflight.release.xcconfig"; path = "Target Support Files/Pods-LearningApp-Testflight/Pods-LearningApp-Testflight.release.xcconfig"; sourceTree = "<group>"; };
+		E823C3E33020866D1B952B10 /* Pods_LearningApp_Testflight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningApp_Testflight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF17657C9BA28D971BB0D304 /* Pods-LearningApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningApp/Pods-LearningApp.debug.xcconfig"; sourceTree = "<group>"; };
+		EF74B3682360F18B00D3ECF1 /* LearningApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = LearningApp.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601B519A2D6C2D8C00AD6A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51A22D6C2D8C00AD6A81 /* UserNotificationsUI.framework in Frameworks */,
+				601B51A02D6C2D8C00AD6A81 /* UserNotifications.framework in Frameworks */,
+				5FFC3562F0ED539877EFDDCB /* Pods_MarketingCloudContentExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601B51E32D6C7D8500AD6A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51E42D6C7D8500AD6A81 /* UserNotificationsUI.framework in Frameworks */,
+				601B51E52D6C7D8500AD6A81 /* UserNotifications.framework in Frameworks */,
+				AD92E5B55C2B397846010973 /* Pods_MarketingCloudContentExtension_Testflight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDC679322AADED80098A2E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69580765BC4555E6DF2C82A6 /* Pods_MarketingCloudServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BF1C6D022A6DD2D004E4AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C36F48D2203A3A27FED33C8 /* Pods_LearningApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F6E29E6C8FB00C07043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5E8B09E8D54AF4FFCEB874 /* Pods_LearningApp_Testflight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F7D29E6C93600C07043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45552D67DA164483D8278D27 /* Pods_MarketingCloudServiceExtension_Testflight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		390F7CB3408A24B4E4BFF9F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF17657C9BA28D971BB0D304 /* Pods-LearningApp.debug.xcconfig */,
+				ABC701B8DFC738906DBABE16 /* Pods-LearningApp.release.xcconfig */,
+				7E58A741C7DB6FE4FF74C1FF /* Pods-LearningApp-Testflight.debug.xcconfig */,
+				E3AC08C9F33B0ABA6B921909 /* Pods-LearningApp-Testflight.release.xcconfig */,
+				285F9D720B6C510237936B0D /* Pods-MarketingCloudContentExtension.debug.xcconfig */,
+				87E036D7E404B40C0C91E19E /* Pods-MarketingCloudContentExtension.release.xcconfig */,
+				932D6247AF36CB872B83B4D9 /* Pods-MarketingCloudContentExtension-Testflight.debug.xcconfig */,
+				B8C36E4069BC30B52A627CC1 /* Pods-MarketingCloudContentExtension-Testflight.release.xcconfig */,
+				9C610D2E9AC36B4FA0CA42D7 /* Pods-MarketingCloudServiceExtension.debug.xcconfig */,
+				72A5A561450622A3E6CF0CEC /* Pods-MarketingCloudServiceExtension.release.xcconfig */,
+				489C0CF500CD5A33B316196A /* Pods-MarketingCloudServiceExtension-Testflight.debug.xcconfig */,
+				001E7D5C15BDD4262D3C2DC7 /* Pods-MarketingCloudServiceExtension-Testflight.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		601B519E2D6C2D8C00AD6A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601B519F2D6C2D8C00AD6A81 /* UserNotifications.framework */,
+				601B51A12D6C2D8C00AD6A81 /* UserNotificationsUI.framework */,
+				4DC61D6166D684584A65A449 /* Pods_LearningApp.framework */,
+				E823C3E33020866D1B952B10 /* Pods_LearningApp_Testflight.framework */,
+				99985231756327903A6DB392 /* Pods_MarketingCloudContentExtension_Testflight.framework */,
+				51690A866E1034A98F176167 /* Pods_MarketingCloudServiceExtension.framework */,
+				3050E3474474121A29640C45 /* Pods_MarketingCloudServiceExtension_Testflight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		601B51A32D6C2D8C00AD6A81 /* MarketingCloudContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				601B51C52D6C4CF700AD6A81 /* MarketingCloudContentExtension.entitlements */,
+				601B51A42D6C2D8C00AD6A81 /* NotificationViewController.swift */,
+				601B51A92D6C2D8C00AD6A81 /* Info.plist */,
+			);
+			path = MarketingCloudContentExtension;
+			sourceTree = "<group>";
+		};
+		9BDC679722AADED90098A2E2 /* MarketingCloudServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				601B51C42D6C4CDD00AD6A81 /* MarketingCloudServiceExtension.entitlements */,
+				9BDC679822AADED90098A2E2 /* NotificationService.swift */,
+				9BDC679A22AADED90098A2E2 /* Info.plist */,
+			);
+			path = MarketingCloudServiceExtension;
+			sourceTree = "<group>";
+		};
+		9BF1C6CA22A6DD2D004E4AF0 = {
+			isa = PBXGroup;
+			children = (
+				9B75120922B03EA20071C5CB /* ReadMe.md */,
+				9BF1C6D522A6DD2D004E4AF0 /* LearningApp */,
+				9BDC679722AADED90098A2E2 /* MarketingCloudServiceExtension */,
+				601B51A32D6C2D8C00AD6A81 /* MarketingCloudContentExtension */,
+				601B519E2D6C2D8C00AD6A81 /* Frameworks */,
+				9BF1C6D422A6DD2D004E4AF0 /* Products */,
+				A7761F7929E6C8FC00C07043 /* LearningApp-Testflight-Info.plist */,
+				A7761F8329E6C93700C07043 /* MarketingCloudServiceExtension-Testflight-Info.plist */,
+				390F7CB3408A24B4E4BFF9F7 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9BF1C6D422A6DD2D004E4AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BF1C6D322A6DD2D004E4AF0 /* LearningApp.app */,
+				9BDC679622AADED80098A2E2 /* MarketingCloudServiceExtension.appex */,
+				A7761F7829E6C8FB00C07043 /* LearningApp-Testflight.app */,
+				A7761F8229E6C93600C07043 /* MarketingCloudServiceExtension-Testflight.appex */,
+				601B519D2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex */,
+				601B51EB2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BF1C6D522A6DD2D004E4AF0 /* LearningApp */ = {
+			isa = PBXGroup;
+			children = (
+				EF74B3682360F18B00D3ECF1 /* LearningApp.entitlements */,
+				9BF1C6D622A6DD2D004E4AF0 /* AppDelegate.swift */,
+				9BF1C6D822A6DD2D004E4AF0 /* ViewController.swift */,
+				9BF1C6DA22A6DD2D004E4AF0 /* Main.storyboard */,
+				9BF1C70222A8300D004E4AF0 /* RegistrationViewController.swift */,
+				9BDC678222A85ABB0098A2E2 /* InboxTableViewController.swift */,
+				9BF1C6DD22A6DD2F004E4AF0 /* Assets.xcassets */,
+				9BF1C6DF22A6DD2F004E4AF0 /* LaunchScreen.storyboard */,
+				9BF1C6E222A6DD2F004E4AF0 /* Info.plist */,
+			);
+			path = LearningApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601B519C2D6C2D8C00AD6A81 /* MarketingCloudContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601B51AF2D6C2D8C00AD6A81 /* Build configuration list for PBXNativeTarget "MarketingCloudContentExtension" */;
+			buildPhases = (
+				F981148D18040A972181EEC7 /* [CP] Check Pods Manifest.lock */,
+				601B51992D6C2D8C00AD6A81 /* Sources */,
+				601B519A2D6C2D8C00AD6A81 /* Frameworks */,
+				601B519B2D6C2D8C00AD6A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketingCloudContentExtension;
+			productName = MarketingCloudContentExtension;
+			productReference = 601B519D2D6C2D8C00AD6A81 /* MarketingCloudContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		601B51DF2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601B51E82D6C7D8500AD6A81 /* Build configuration list for PBXNativeTarget "MarketingCloudContentExtension-Testflight" */;
+			buildPhases = (
+				601B51E02D6C7D8500AD6A81 /* [CP] Check Pods Manifest.lock */,
+				601B51E12D6C7D8500AD6A81 /* Sources */,
+				601B51E32D6C7D8500AD6A81 /* Frameworks */,
+				601B51E72D6C7D8500AD6A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MarketingCloudContentExtension-Testflight";
+			productName = MarketingCloudContentExtension;
+			productReference = 601B51EB2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9BDC679522AADED80098A2E2 /* MarketingCloudServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BDC679E22AADED90098A2E2 /* Build configuration list for PBXNativeTarget "MarketingCloudServiceExtension" */;
+			buildPhases = (
+				86738BC1C5EDBE9A03B703A7 /* [CP] Check Pods Manifest.lock */,
+				9BDC679222AADED80098A2E2 /* Sources */,
+				9BDC679322AADED80098A2E2 /* Frameworks */,
+				9BDC679422AADED80098A2E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarketingCloudServiceExtension;
+			productName = MarketingCloudServiceExtension;
+			productReference = 9BDC679622AADED80098A2E2 /* MarketingCloudServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9BF1C6D222A6DD2D004E4AF0 /* LearningApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BF1C6E522A6DD2F004E4AF0 /* Build configuration list for PBXNativeTarget "LearningApp" */;
+			buildPhases = (
+				A88B9D88E54D0E5851261184 /* [CP] Check Pods Manifest.lock */,
+				9BF1C6CF22A6DD2D004E4AF0 /* Sources */,
+				9BF1C6D022A6DD2D004E4AF0 /* Frameworks */,
+				9BF1C6D122A6DD2D004E4AF0 /* Resources */,
+				9BDC67A122AADED90098A2E2 /* Embed App Extensions */,
+				BE6616ADC16FFAB24C723506 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BDC679C22AADED90098A2E2 /* PBXTargetDependency */,
+				601B51AB2D6C2D8C00AD6A81 /* PBXTargetDependency */,
+			);
+			name = LearningApp;
+			productName = LearningApp;
+			productReference = 9BF1C6D322A6DD2D004E4AF0 /* LearningApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7761F6629E6C8FB00C07043 /* LearningApp-Testflight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7761F7529E6C8FB00C07043 /* Build configuration list for PBXNativeTarget "LearningApp-Testflight" */;
+			buildPhases = (
+				8AD68D08EDBA0CAF51C91EB3 /* [CP] Check Pods Manifest.lock */,
+				A7761F6929E6C8FB00C07043 /* Sources */,
+				A7761F6E29E6C8FB00C07043 /* Frameworks */,
+				A7761F6F29E6C8FB00C07043 /* Resources */,
+				A7F6ED4429ED5024007160C8 /* Embed Foundation Extensions */,
+				FE2F8B45CF0C733909D5EA50 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7F6ED4329ED5024007160C8 /* PBXTargetDependency */,
+				F564862C2D81629D00FAC8D1 /* PBXTargetDependency */,
+			);
+			name = "LearningApp-Testflight";
+			productName = LearningApp;
+			productReference = A7761F7829E6C8FB00C07043 /* LearningApp-Testflight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7761F7A29E6C93600C07043 /* MarketingCloudServiceExtension-Testflight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7761F7F29E6C93600C07043 /* Build configuration list for PBXNativeTarget "MarketingCloudServiceExtension-Testflight" */;
+			buildPhases = (
+				89DCE50B31FF80B5F7731083 /* [CP] Check Pods Manifest.lock */,
+				A7761F7B29E6C93600C07043 /* Sources */,
+				A7761F7D29E6C93600C07043 /* Frameworks */,
+				A7761F7E29E6C93600C07043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MarketingCloudServiceExtension-Testflight";
+			productName = MarketingCloudServiceExtension;
+			productReference = A7761F8229E6C93600C07043 /* MarketingCloudServiceExtension-Testflight.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BF1C6CB22A6DD2D004E4AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Salesforce;
+				TargetAttributes = {
+					601B519C2D6C2D8C00AD6A81 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					9BDC679522AADED80098A2E2 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					9BF1C6D222A6DD2D004E4AF0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 9BF1C6CE22A6DD2D004E4AF0 /* Build configuration list for PBXProject "LearningApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BF1C6CA22A6DD2D004E4AF0;
+			productRefGroup = 9BF1C6D422A6DD2D004E4AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BF1C6D222A6DD2D004E4AF0 /* LearningApp */,
+				9BDC679522AADED80098A2E2 /* MarketingCloudServiceExtension */,
+				601B519C2D6C2D8C00AD6A81 /* MarketingCloudContentExtension */,
+				A7761F6629E6C8FB00C07043 /* LearningApp-Testflight */,
+				A7761F7A29E6C93600C07043 /* MarketingCloudServiceExtension-Testflight */,
+				601B51DF2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601B519B2D6C2D8C00AD6A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601B51E72D6C7D8500AD6A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDC679422AADED80098A2E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BF1C6D122A6DD2D004E4AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BF1C6E122A6DD2F004E4AF0 /* LaunchScreen.storyboard in Resources */,
+				9BF1C6DE22A6DD2F004E4AF0 /* Assets.xcassets in Resources */,
+				9BF1C6DC22A6DD2D004E4AF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F6F29E6C8FB00C07043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7761F7029E6C8FB00C07043 /* LaunchScreen.storyboard in Resources */,
+				A7761F7129E6C8FB00C07043 /* Assets.xcassets in Resources */,
+				A7761F7229E6C8FB00C07043 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F7E29E6C93600C07043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		601B51E02D6C7D8500AD6A81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketingCloudContentExtension-Testflight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86738BC1C5EDBE9A03B703A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketingCloudServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89DCE50B31FF80B5F7731083 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketingCloudServiceExtension-Testflight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8AD68D08EDBA0CAF51C91EB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningApp-Testflight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88B9D88E54D0E5851261184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE6616ADC16FFAB24C723506 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningApp/Pods-LearningApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F981148D18040A972181EEC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketingCloudContentExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2F8B45CF0C733909D5EA50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp-Testflight/Pods-LearningApp-Testflight-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningApp-Testflight/Pods-LearningApp-Testflight-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningApp-Testflight/Pods-LearningApp-Testflight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601B51992D6C2D8C00AD6A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51A52D6C2D8C00AD6A81 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		601B51E12D6C7D8500AD6A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51E22D6C7D8500AD6A81 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BDC679222AADED80098A2E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDC679922AADED90098A2E2 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BF1C6CF22A6DD2D004E4AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BDC678322A85ABB0098A2E2 /* InboxTableViewController.swift in Sources */,
+				9BF1C70322A8300D004E4AF0 /* RegistrationViewController.swift in Sources */,
+				9BF1C6D922A6DD2D004E4AF0 /* ViewController.swift in Sources */,
+				9BF1C6D722A6DD2D004E4AF0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F6929E6C8FB00C07043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7761F6A29E6C8FB00C07043 /* InboxTableViewController.swift in Sources */,
+				A7761F6B29E6C8FB00C07043 /* RegistrationViewController.swift in Sources */,
+				A7761F6C29E6C8FB00C07043 /* ViewController.swift in Sources */,
+				A7761F6D29E6C8FB00C07043 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7761F7B29E6C93600C07043 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7761F7C29E6C93600C07043 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601B51AB2D6C2D8C00AD6A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601B519C2D6C2D8C00AD6A81 /* MarketingCloudContentExtension */;
+			targetProxy = 601B51AA2D6C2D8C00AD6A81 /* PBXContainerItemProxy */;
+		};
+		9BDC679C22AADED90098A2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BDC679522AADED80098A2E2 /* MarketingCloudServiceExtension */;
+			targetProxy = 9BDC679B22AADED90098A2E2 /* PBXContainerItemProxy */;
+		};
+		A7F6ED4329ED5024007160C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7761F7A29E6C93600C07043 /* MarketingCloudServiceExtension-Testflight */;
+			targetProxy = A7F6ED4229ED5024007160C8 /* PBXContainerItemProxy */;
+		};
+		F564862C2D81629D00FAC8D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601B51DF2D6C7D8500AD6A81 /* MarketingCloudContentExtension-Testflight */;
+			targetProxy = F564862B2D81629D00FAC8D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BF1C6DA22A6DD2D004E4AF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BF1C6DB22A6DD2D004E4AF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BF1C6DF22A6DD2F004E4AF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BF1C6E022A6DD2F004E4AF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601B51AD2D6C2D8C00AD6A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 285F9D720B6C510237936B0D /* Pods-MarketingCloudContentExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudContentExtension/MarketingCloudContentExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarketingCloudContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MarketingCloudContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Salesforce. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601B51AE2D6C2D8C00AD6A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87E036D7E404B40C0C91E19E /* Pods-MarketingCloudContentExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudContentExtension/MarketingCloudContentExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarketingCloudContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MarketingCloudContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Salesforce. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		601B51E92D6C7D8500AD6A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932D6247AF36CB872B83B4D9 /* Pods-MarketingCloudContentExtension-Testflight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudContentExtension/MarketingCloudContentExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarketingCloudContentExtension copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MarketingCloudContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Salesforce. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app.contentextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app.serviceextension AppStore";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601B51EA2D6C7D8500AD6A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8C36E4069BC30B52A627CC1 /* Pods-MarketingCloudContentExtension-Testflight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudContentExtension/MarketingCloudContentExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MarketingCloudContentExtension copy-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = MarketingCloudContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2025 Salesforce. All rights reserved.";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app.contentextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app.serviceextension AppStore";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BDC679F22AADED90098A2E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C610D2E9AC36B4FA0CA42D7 /* Pods-MarketingCloudServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudServiceExtension/MarketingCloudServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				INFOPLIST_FILE = MarketingCloudServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BDC67A022AADED90098A2E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A5A561450622A3E6CF0CEC /* Pods-MarketingCloudServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = MarketingCloudServiceExtension/MarketingCloudServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				INFOPLIST_FILE = MarketingCloudServiceExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.MarketingCloudServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BF1C6E322A6DD2F004E4AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9BF1C6E422A6DD2F004E4AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BF1C6E622A6DD2F004E4AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF17657C9BA28D971BB0D304 /* Pods-LearningApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearningApp/LearningApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				INFOPLIST_FILE = LearningApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9BF1C6E722A6DD2F004E4AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC701B8DFC738906DBABE16 /* Pods-LearningApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearningApp/LearningApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 9.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				INFOPLIST_FILE = LearningApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 9.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7761F7629E6C8FB00C07043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E58A741C7DB6FE4FF74C1FF /* Pods-LearningApp-Testflight.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearningApp/LearningApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 62J96EUJ9N;
+				INFOPLIST_FILE = "LearningApp-Testflight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app AppStore";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A7761F7729E6C8FB00C07043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3AC08C9F33B0ABA6B921909 /* Pods-LearningApp-Testflight.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LearningApp/LearningApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 62J96EUJ9N;
+				INFOPLIST_FILE = "LearningApp-Testflight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app AppStore";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		A7761F8029E6C93600C07043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 489C0CF500CD5A33B316196A /* Pods-MarketingCloudServiceExtension-Testflight.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 62J96EUJ9N;
+				INFOPLIST_FILE = "$(SRCROOT)/MarketingCloudServiceExtension-Testflight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app.serviceextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app.serviceextension AppStore";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		A7761F8129E6C93600C07043 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 001E7D5C15BDD4262D3C2DC7 /* Pods-MarketingCloudServiceExtension-Testflight.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 62J96EUJ9N;
+				INFOPLIST_FILE = "$(SRCROOT)/MarketingCloudServiceExtension-Testflight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.salesforce.learning.app.serviceextension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "com.salesforce.learning.app.serviceextension AppStore";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601B51AF2D6C2D8C00AD6A81 /* Build configuration list for PBXNativeTarget "MarketingCloudContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601B51AD2D6C2D8C00AD6A81 /* Debug */,
+				601B51AE2D6C2D8C00AD6A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		601B51E82D6C7D8500AD6A81 /* Build configuration list for PBXNativeTarget "MarketingCloudContentExtension-Testflight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601B51E92D6C7D8500AD6A81 /* Debug */,
+				601B51EA2D6C7D8500AD6A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BDC679E22AADED90098A2E2 /* Build configuration list for PBXNativeTarget "MarketingCloudServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BDC679F22AADED90098A2E2 /* Debug */,
+				9BDC67A022AADED90098A2E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF1C6CE22A6DD2D004E4AF0 /* Build configuration list for PBXProject "LearningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF1C6E322A6DD2F004E4AF0 /* Debug */,
+				9BF1C6E422A6DD2F004E4AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BF1C6E522A6DD2F004E4AF0 /* Build configuration list for PBXNativeTarget "LearningApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BF1C6E622A6DD2F004E4AF0 /* Debug */,
+				9BF1C6E722A6DD2F004E4AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7761F7529E6C8FB00C07043 /* Build configuration list for PBXNativeTarget "LearningApp-Testflight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7761F7629E6C8FB00C07043 /* Debug */,
+				A7761F7729E6C8FB00C07043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7761F7F29E6C93600C07043 /* Build configuration list for PBXNativeTarget "MarketingCloudServiceExtension-Testflight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7761F8029E6C93600C07043 /* Debug */,
+				A7761F8129E6C93600C07043 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BF1C6CB22A6DD2D004E4AF0 /* Project object */;
+}
