@@ -1,0 +1,4619 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "MarketingCloudSDK",
+    "printedName": "MarketingCloudSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushModule",
+        "printedName": "PushModule",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleName",
+                "printedName": "SFMCSDK.ModuleName",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(py)name",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvp",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "name",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)name",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvg",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setName:",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvs",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvM",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC4name7SFMCSDK0E4NameOvM",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "moduleVersion",
+            "printedName": "moduleVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)moduleVersion",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvpZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "objc_name": "moduleVersion",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)moduleVersion",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvgZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "objc_name": "moduleVersion",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)setModuleVersion:",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvsZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17MarketingCloudSDK10PushModuleC13moduleVersionSSvMZ",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC13moduleVersionSSvMZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "stateProperties",
+            "printedName": "stateProperties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)stateProperties",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvpZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "objc_name": "stateProperties",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)stateProperties",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC15statePropertiesSDyS2SGSgvgZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "objc_name": "stateProperties",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "status",
+            "printedName": "status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleStatus",
+                "printedName": "SFMCSDK.ModuleStatus",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleStatus"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)status",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvpZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleStatus",
+                    "printedName": "SFMCSDK.ModuleStatus",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)status",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvgZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleStatus",
+                    "printedName": "SFMCSDK.ModuleStatus",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleStatus"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)setStatus:",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvsZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvMZ",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC6status7SFMCSDK0E6StatusOvMZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushModule",
+                "printedName": "MarketingCloudSDK.PushModule",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)shared",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC6sharedACvpZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PushModule",
+                    "printedName": "MarketingCloudSDK.PushModule",
+                    "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)shared",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC6sharedACvgZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logger",
+            "printedName": "logger",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleLogger",
+                "printedName": "SFMCSDK.ModuleLogger",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkModuleLogger"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cpy)logger",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC6logger7SFMCSDK0E6LoggerCvpZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleLogger",
+                    "printedName": "SFMCSDK.ModuleLogger",
+                    "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkModuleLogger"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)logger",
+                "mangledName": "$s17MarketingCloudSDK10PushModuleC6logger7SFMCSDK0E6LoggerCvgZ",
+                "moduleName": "MarketingCloudSDK",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "metadata",
+            "printedName": "metadata()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)metadata",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC8metadataSDySSypGyFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refresh",
+            "printedName": "refresh(fetchCompletionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((UIKit.UIBackgroundFetchResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(UIKit.UIBackgroundFetchResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIBackgroundFetchResult",
+                        "printedName": "UIKit.UIBackgroundFetchResult",
+                        "usr": "c:@E@UIBackgroundFetchResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshWithFetchCompletionHandler:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC7refresh22fetchCompletionHandlerSbySo23UIBackgroundFetchResultVcSg_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "refreshWithFetchCompletionHandler:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tearDown",
+            "printedName": "tearDown()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tearDown",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC8tearDownyyF",
+            "moduleName": "MarketingCloudSDK",
+            "deprecated": true,
+            "objc_name": "tearDown",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "Available",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetDataPolicy",
+            "printedName": "resetDataPolicy()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)resetDataPolicy",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15resetDataPolicySbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "resetDataPolicy",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDebugLoggingEnabled",
+            "printedName": "setDebugLoggingEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDebugLoggingEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC22setDebugLoggingEnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setDebugLoggingEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getLogger",
+            "printedName": "getLogger()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleLogger",
+                "printedName": "SFMCSDK.ModuleLogger",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkModuleLogger"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)getLogger",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC9getLogger7SFMCSDK0eG0CyFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "contactKey",
+            "printedName": "contactKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)contactKey",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC10contactKeySSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "contactKey",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addTag",
+            "printedName": "addTag(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTag:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC6addTagySbSSF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "addTag:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addTags",
+            "printedName": "addTags(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<Swift.AnyHashable>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.AnyHashable>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)addTags:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC7addTagsyShys11AnyHashableVGSgSayypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "addTags:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeTag",
+            "printedName": "removeTag(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)removeTag:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC9removeTagySbSSF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "removeTag:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tags",
+            "printedName": "tags()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Set<Swift.AnyHashable>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<Swift.AnyHashable>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)tags",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC4tagsShys11AnyHashableVGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "tags",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDeviceToken",
+            "printedName": "setDeviceToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Data",
+                "printedName": "Foundation.Data",
+                "usr": "s:10Foundation4DataV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setDeviceToken:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC14setDeviceTokenyy10Foundation4DataVF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setDeviceToken:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceToken",
+            "printedName": "deviceToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceToken",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC11deviceTokenSSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "deviceToken",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "attributes",
+            "printedName": "attributes()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)attributes",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC10attributesSDys11AnyHashableVypGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "attributes",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "accessToken",
+            "printedName": "accessToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)accessToken",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC11accessTokenSSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "accessToken",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deviceIdentifier",
+            "printedName": "deviceIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)deviceIdentifier",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC16deviceIdentifierSSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "deviceIdentifier",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSignedString",
+            "printedName": "setSignedString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setSignedString:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15setSignedStringySbSSSgF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setSignedString:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "signedString",
+            "printedName": "signedString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)signedString",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC12signedStringSSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "signedString",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setRegistrationCallback",
+            "printedName": "setRegistrationCallback(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "([Swift.AnyHashable : Any]) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setRegistrationCallback:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC23setRegistrationCallbackyyySDys11AnyHashableVypGcF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setRegistrationCallback:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsetRegistrationCallback",
+            "printedName": "unsetRegistrationCallback()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)unsetRegistrationCallback",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC25unsetRegistrationCallbackyyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "unsetRegistrationCallback",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPushEnabled",
+            "printedName": "setPushEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPushEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC03setD7EnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setPushEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "pushEnabled",
+            "printedName": "pushEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)pushEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC11pushEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "pushEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAnalyticsEnabled",
+            "printedName": "setAnalyticsEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setAnalyticsEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC19setAnalyticsEnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setAnalyticsEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isAnalyticsEnabled",
+            "printedName": "isAnalyticsEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)isAnalyticsEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18isAnalyticsEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "isAnalyticsEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPiAnalyticsEnabled",
+            "printedName": "setPiAnalyticsEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPiAnalyticsEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC21setPiAnalyticsEnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setPiAnalyticsEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPiAnalyticsEnabled",
+            "printedName": "isPiAnalyticsEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)isPiAnalyticsEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC20isPiAnalyticsEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "isPiAnalyticsEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isLocationEnabled",
+            "printedName": "isLocationEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)isLocationEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC17isLocationEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "isLocationEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocationEnabled",
+            "printedName": "setLocationEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setLocationEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18setLocationEnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setLocationEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isInboxEnabled",
+            "printedName": "isInboxEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)isInboxEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC14isInboxEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "isInboxEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInboxEnabled",
+            "printedName": "setInboxEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setInboxEnabled:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15setInboxEnabledyySbF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setInboxEnabled:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNotificationResponse",
+            "printedName": "setNotificationResponse(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UNNotificationResponse",
+                "printedName": "UserNotifications.UNNotificationResponse",
+                "usr": "c:objc(cs)UNNotificationResponse"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationResponse:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC23setNotificationResponseyySo014UNNotificationH0CF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setNotificationResponse:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notificationResponse",
+            "printedName": "notificationResponse()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UserNotifications.UNNotificationResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UNNotificationResponse",
+                    "printedName": "UserNotifications.UNNotificationResponse",
+                    "usr": "c:objc(cs)UNNotificationResponse"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationResponse",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC20notificationResponseSo014UNNotificationG0CSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "notificationResponse",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNotificationUserInfo",
+            "printedName": "setNotificationUserInfo(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setNotificationUserInfo:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC23setNotificationUserInfoyySDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setNotificationUserInfo:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notificationUserInfo",
+            "printedName": "notificationUserInfo()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)notificationUserInfo",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC20notificationUserInfoSDys11AnyHashableVypGyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "notificationUserInfo",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getIdentity",
+            "printedName": "getIdentity()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SFMCSDK.ModuleIdentity)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleIdentity",
+                    "printedName": "any SFMCSDK.ModuleIdentity",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleIdentity"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getIdentity",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC11getIdentity7SFMCSDK0eG0_pSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getIdentity",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEventDelegate",
+            "printedName": "setEventDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SFMCSDK.InAppMessageEventDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "InAppMessageEventDelegate",
+                    "printedName": "any SFMCSDK.InAppMessageEventDelegate",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageEventDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setEventDelegate:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC16setEventDelegateyy7SFMCSDK012InAppMessagegH0_pSgF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setEventDelegate:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "messageId",
+            "printedName": "messageId(forMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)messageIdForMessage:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC9messageId10forMessageSSSgSDys11AnyHashableVypG_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "messageIdForMessage:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "showInAppMessage",
+            "printedName": "showInAppMessage(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)showInAppMessageWithMessageId:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC16showInAppMessage9messageIdySS_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "showInAppMessageWithMessageId:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInAppMessage",
+            "printedName": "setInAppMessage(fontName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setInAppMessageWithFontName:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15setInAppMessage8fontNameSbSSSg_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setInAppMessageWithFontName:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllMessages",
+            "printedName": "getAllMessages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessages",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC14getAllMessagesSayypGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getAllMessages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadMessages",
+            "printedName": "getUnreadMessages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessages",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC17getUnreadMessagesSayypGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getUnreadMessages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getReadMessages",
+            "printedName": "getReadMessages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessages",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15getReadMessagesSayypGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getReadMessages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeletedMessages",
+            "printedName": "getDeletedMessages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessages",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18getDeletedMessagesSayypGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getDeletedMessages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllMessagesCount",
+            "printedName": "getAllMessagesCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getAllMessagesCount",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC19getAllMessagesCountSuyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getAllMessagesCount",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadMessagesCount",
+            "printedName": "getUnreadMessagesCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getUnreadMessagesCount",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC22getUnreadMessagesCountSuyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getUnreadMessagesCount",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getReadMessagesCount",
+            "printedName": "getReadMessagesCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getReadMessagesCount",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC20getReadMessagesCountSuyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getReadMessagesCount",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeletedMessagesCount",
+            "printedName": "getDeletedMessagesCount()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)getDeletedMessagesCount",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC23getDeletedMessagesCountSuyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "getDeletedMessagesCount",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markMessageRead",
+            "printedName": "markMessageRead(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageRead:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15markMessageReadySbSDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markMessageRead:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markMessageDeleted",
+            "printedName": "markMessageDeleted(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageDeleted:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18markMessageDeletedySbSDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markMessageDeleted:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markMessageWithIdRead",
+            "printedName": "markMessageWithIdRead(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdReadWithMessageId:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC21markMessageWithIdRead07messageI0SbSS_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markMessageWithIdReadWithMessageId:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markMessageWithIdDeleted",
+            "printedName": "markMessageWithIdDeleted(messageId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markMessageWithIdDeletedWithMessageId:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC24markMessageWithIdDeleted07messageI0SbSS_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markMessageWithIdDeletedWithMessageId:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markAllMessagesRead",
+            "printedName": "markAllMessagesRead()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesRead",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC19markAllMessagesReadSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markAllMessagesRead",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markAllMessagesDeleted",
+            "printedName": "markAllMessagesDeleted()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)markAllMessagesDeleted",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC22markAllMessagesDeletedSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "markAllMessagesDeleted",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshMessages",
+            "printedName": "refreshMessages()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)refreshMessages",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15refreshMessagesSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "refreshMessages",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPiIdentifier",
+            "printedName": "setPiIdentifier(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setPiIdentifier:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15setPiIdentifierySbSSSgF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setPiIdentifier:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "piIdentifier",
+            "printedName": "piIdentifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)piIdentifier",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC12piIdentifierSSSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "piIdentifier",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackMessageOpened",
+            "printedName": "trackMessageOpened(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackMessageOpened:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18trackMessageOpenedyySDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "trackMessageOpened:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackPageView",
+            "printedName": "trackPageView(url:title:item:search:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackPageViewWithUrl:title:item:search:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC13trackPageView3url5title4item6searchySS_SSSgA2ItF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "trackPageViewWithUrl:title:item:search:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackCartContents",
+            "printedName": "trackCartContents(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartContents:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC17trackCartContentsyySDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "trackCartContents:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "trackCartConversion",
+            "printedName": "trackCartConversion(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)trackCartConversion:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC19trackCartConversionyySDys11AnyHashableVypGF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "trackCartConversion:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cartItemDictionary",
+            "printedName": "cartItemDictionary(price:quantity:item:uniqueId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartItemDictionaryWithPrice:quantity:item:uniqueId:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC18cartItemDictionary5price8quantity4item8uniqueIdSDys11AnyHashableVypGSgSo8NSNumberC_ANS2SSgtF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "cartItemDictionaryWithPrice:quantity:item:uniqueId:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cartDictionary",
+            "printedName": "cartDictionary(cartItem:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)cartDictionaryWithCartItem:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC14cartDictionary0F4ItemSDys11AnyHashableVypGSgSayypG_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "cartDictionaryWithCartItem:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "orderDictionary",
+            "printedName": "orderDictionary(orderNumber:shipping:discount:cart:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSNumber",
+                "printedName": "Foundation.NSNumber",
+                "usr": "c:objc(cs)NSNumber"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)orderDictionaryWithOrderNumber:shipping:discount:cart:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15orderDictionary0F6Number8shipping8discount4cartSDys11AnyHashableVypGSgSS_So8NSNumberCAnKtF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "orderDictionaryWithOrderNumber:shipping:discount:cart:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocationDelegate",
+            "printedName": "setLocationDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SFMCSDK.LocationDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LocationDelegate",
+                    "printedName": "any SFMCSDK.LocationDelegate",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkLocationDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setLocationDelegate:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC19setLocationDelegateyy7SFMCSDK0gH0_pSgF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setLocationDelegate:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "regionFrom",
+            "printedName": "regionFrom(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreLocation.CLRegion?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLRegion",
+                    "printedName": "CoreLocation.CLRegion",
+                    "usr": "c:objc(cs)CLRegion"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.AnyHashable : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyHashable",
+                    "printedName": "Swift.AnyHashable",
+                    "usr": "s:s11AnyHashableV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)regionFromDictionary:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC10regionFrom10dictionarySo8CLRegionCSgSDys11AnyHashableVypG_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "regionFromDictionary:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "locationEnabled",
+            "printedName": "locationEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)locationEnabled",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC15locationEnabledSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "locationEnabled",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startWatchingLocation",
+            "printedName": "startWatchingLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)startWatchingLocation",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC21startWatchingLocationyyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "startWatchingLocation",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopWatchingLocation",
+            "printedName": "stopWatchingLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)stopWatchingLocation",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC20stopWatchingLocationyyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "stopWatchingLocation",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "watchingLocation",
+            "printedName": "watchingLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)watchingLocation",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC16watchingLocationSbyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "watchingLocation",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lastKnownLocation",
+            "printedName": "lastKnownLocation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)lastKnownLocation",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC17lastKnownLocationSDyS2SGSgyF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "lastKnownLocation",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setURLHandlingDelegate",
+            "printedName": "setURLHandlingDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SFMCSDK.URLHandlingDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URLHandlingDelegate",
+                    "printedName": "any SFMCSDK.URLHandlingDelegate",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkURLHandlingDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)setURLHandlingDelegate:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC22setURLHandlingDelegateyy7SFMCSDK0gH0_pSgF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "setURLHandlingDelegate:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initModule",
+            "printedName": "initModule(config:components:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any SFMCSDK.SFMCModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SFMCModule",
+                    "printedName": "any SFMCSDK.SFMCModule",
+                    "usr": "c:@M@SFMCSDK@objc(pl)SFMCModule"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleConfig",
+                "printedName": "any SFMCSDK.ModuleConfig",
+                "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleConfig"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SFMCSdkComponents",
+                "printedName": "SFMCSDK.SFMCSdkComponents",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkComponents"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)initModuleWithConfig:components:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC04initE06config10components7SFMCSDK10SFMCModule_pSgAG0E6Config_p_AG17SFMCSdkComponentsCtFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "objc_name": "initModuleWithConfig:components:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendIdentityEventForTags",
+            "printedName": "sendIdentityEventForTags()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForTags",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC24sendIdentityEventForTagsyyFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendIdentityEventForContactKey",
+            "printedName": "sendIdentityEventForContactKey()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForContactKey",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForContactKeyyyFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendIdentityEventForAttributes",
+            "printedName": "sendIdentityEventForAttributes()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendIdentityEventForAttributes",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC30sendIdentityEventForAttributesyyFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "receive",
+            "printedName": "receive(message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Message",
+                "printedName": "SFMCSDK.Message",
+                "usr": "c:@M@SFMCSDK@objc(cs)SFMCSdkMessage"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(im)receiveWithMessage:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC7receive7messagey7SFMCSDK7MessageC_tF",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "receiveWithMessage:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendSfmcEvent",
+            "printedName": "sendSfmcEvent(_:category:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SFMCEvent",
+                "printedName": "MarketingCloudSDK.SFMCEvent",
+                "usr": "c:objc(cs)SFMCEvent"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "EventCategory",
+                "printedName": "SFMCSDK.EventCategory",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkEventCategory"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule(cm)sendSfmcEvent:category:",
+            "mangledName": "$s17MarketingCloudSDK10PushModuleC13sendSfmcEvent_8categoryySo9SFMCEventC_7SFMCSDK0H8CategoryOtFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MarketingCloudSDK@objc(cs)SFMCSdkPushModule",
+        "mangledName": "$s17MarketingCloudSDK10PushModuleC",
+        "moduleName": "MarketingCloudSDK",
+        "objc_name": "SFMCSdkPushModule",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "SFMCModule",
+            "printedName": "SFMCModule",
+            "usr": "c:@M@SFMCSDK@objc(pl)SFMCModule",
+            "mangledName": "$s7SFMCSDK10SFMCModuleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PushInterface",
+            "printedName": "PushInterface",
+            "usr": "c:@M@SFMCSDK@objc(pl)PushInterface",
+            "mangledName": "$s7SFMCSDK13PushInterfaceP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Subscriber",
+            "printedName": "Subscriber",
+            "usr": "c:@M@SFMCSDK@objc(pl)Subscriber",
+            "mangledName": "$s7SFMCSDK10SubscriberP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Publisher",
+            "printedName": "Publisher",
+            "usr": "s:7SFMCSDK9PublisherP",
+            "mangledName": "$s7SFMCSDK9PublisherP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushConfigBuilder",
+        "printedName": "PushConfigBuilder",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(appId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)initWithAppId:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC5appIdACSS_tcfc",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "initWithAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setAccessToken",
+            "printedName": "setAccessToken(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setAccessToken:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC14setAccessTokenyACSSF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarketingCloudServerUrl",
+            "printedName": "setMarketingCloudServerUrl(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setMarketingCloudServerUrl:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC03setaB9ServerUrlyAC10Foundation3URLVF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMid",
+            "printedName": "setMid(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setMid:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC6setMidyACSSF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setLocationEnabled",
+            "printedName": "setLocationEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setLocationEnabled:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC18setLocationEnabledyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInboxEnabled",
+            "printedName": "setInboxEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setInboxEnabled:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC15setInboxEnabledyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setAnalyticsEnabled",
+            "printedName": "setAnalyticsEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setAnalyticsEnabled:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC19setAnalyticsEnabledyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPIAnalyticsEnabled",
+            "printedName": "setPIAnalyticsEnabled(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setPIAnalyticsEnabled:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC21setPIAnalyticsEnabledyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUseLegacyPIIdentifier",
+            "printedName": "setUseLegacyPIIdentifier(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setUseLegacyPIIdentifier:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC24setUseLegacyPIIdentifieryACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setApplicationControlsBadging",
+            "printedName": "setApplicationControlsBadging(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setApplicationControlsBadging:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC29setApplicationControlsBadgingyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setDelayRegistrationUntilContactKeyIsSet",
+            "printedName": "setDelayRegistrationUntilContactKeyIsSet(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setDelayRegistrationUntilContactKeyIsSet:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC40setDelayRegistrationUntilContactKeyIsSetyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnableScreenEntryTracking",
+            "printedName": "setEnableScreenEntryTracking(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setEnableScreenEntryTracking:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC28setEnableScreenEntryTrackingyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setMarkMessageReadOnInboxNotificationOpen",
+            "printedName": "setMarkMessageReadOnInboxNotificationOpen(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)setMarkMessageReadOnInboxNotificationOpen:",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC41setMarkMessageReadOnInboxNotificationOpenyACSbF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfig",
+                "printedName": "MarketingCloudSDK.PushConfig",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)build",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC5buildAA0dE0CyF",
+            "moduleName": "MarketingCloudSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfigBuilder",
+                "printedName": "MarketingCloudSDK.PushConfigBuilder",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder(im)init",
+            "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderCACycfc",
+            "moduleName": "MarketingCloudSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfigBuilder",
+        "mangledName": "$s17MarketingCloudSDK17PushConfigBuilderC",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SFMCSDK",
+        "printedName": "SFMCSDK",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PushConfig",
+        "printedName": "PushConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "trackScreens",
+            "printedName": "trackScreens",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(py)trackScreens",
+            "mangledName": "$s17MarketingCloudSDK10PushConfigC12trackScreensSbvp",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "trackScreens",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(im)trackScreens",
+                "mangledName": "$s17MarketingCloudSDK10PushConfigC12trackScreensSbvg",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "objc_name": "trackScreens",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(im)setTrackScreens:",
+                "mangledName": "$s17MarketingCloudSDK10PushConfigC12trackScreensSbvs",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17MarketingCloudSDK10PushConfigC12trackScreensSbvM",
+                "mangledName": "$s17MarketingCloudSDK10PushConfigC12trackScreensSbvM",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ModuleName",
+                "printedName": "SFMCSDK.ModuleName",
+                "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(py)name",
+            "mangledName": "$s17MarketingCloudSDK10PushConfigC4name7SFMCSDK10ModuleNameOvp",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "name",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ModuleName",
+                    "printedName": "SFMCSDK.ModuleName",
+                    "usr": "c:@M@SFMCSDK@E@SFMCSdkModuleName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(im)name",
+                "mangledName": "$s17MarketingCloudSDK10PushConfigC4name7SFMCSDK10ModuleNameOvg",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appId",
+            "printedName": "appId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(py)appId",
+            "mangledName": "$s17MarketingCloudSDK10PushConfigC5appIdSSvp",
+            "moduleName": "MarketingCloudSDK",
+            "objc_name": "appId",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(im)appId",
+                "mangledName": "$s17MarketingCloudSDK10PushConfigC5appIdSSvg",
+                "moduleName": "MarketingCloudSDK",
+                "implicit": true,
+                "objc_name": "appId",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PushConfig",
+                "printedName": "MarketingCloudSDK.PushConfig",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig(im)init",
+            "mangledName": "$s17MarketingCloudSDK10PushConfigCACycfc",
+            "moduleName": "MarketingCloudSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MarketingCloudSDK@objc(cs)PushConfig",
+        "mangledName": "$s17MarketingCloudSDK10PushConfigC",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ModuleConfig",
+            "printedName": "ModuleConfig",
+            "usr": "c:@M@SFMCSDK@objc(pl)SFMCSdkModuleConfig",
+            "mangledName": "$s7SFMCSDK12ModuleConfigP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "ObjectiveC.runtime",
+        "printedName": "ObjectiveC.runtime",
+        "declKind": "Import",
+        "moduleName": "MarketingCloudSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MarketingCloudSDKSelectorUtils",
+        "printedName": "MarketingCloudSDKSelectorUtils",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isAppDelegateImplementsSelector",
+            "printedName": "isAppDelegateImplementsSelector(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)MarketingCloudSDKSelectorUtils(cm)isAppDelegateImplementsSelector:",
+            "mangledName": "$s17MarketingCloudSDK0aB16SDKSelectorUtilsC31isAppDelegateImplementsSelectorySbSSFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isUserNotificationDelegateImplementsSelector",
+            "printedName": "isUserNotificationDelegateImplementsSelector(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)MarketingCloudSDKSelectorUtils(cm)isUserNotificationDelegateImplementsSelector:",
+            "mangledName": "$s17MarketingCloudSDK0aB16SDKSelectorUtilsC44isUserNotificationDelegateImplementsSelectorySbSSFZ",
+            "moduleName": "MarketingCloudSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MarketingCloudSDKSelectorUtils",
+                "printedName": "MarketingCloudSDK.MarketingCloudSDKSelectorUtils",
+                "usr": "c:@M@MarketingCloudSDK@objc(cs)MarketingCloudSDKSelectorUtils"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MarketingCloudSDK@objc(cs)MarketingCloudSDKSelectorUtils(im)init",
+            "mangledName": "$s17MarketingCloudSDK0aB16SDKSelectorUtilsCACycfc",
+            "moduleName": "MarketingCloudSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MarketingCloudSDK@objc(cs)MarketingCloudSDKSelectorUtils",
+        "mangledName": "$s17MarketingCloudSDK0aB16SDKSelectorUtilsC",
+        "moduleName": "MarketingCloudSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/iosadmin\/mobeWorkspace\/MarketingCloudSDK\/MarketingCloudSDK\/PushModule.swift",
+      "kind": "StringLiteral",
+      "offset": 628,
+      "length": 34,
+      "value": "\"com.salesforce.MarketingCloudSDK\""
+    },
+    {
+      "filePath": "\/Users\/iosadmin\/mobeWorkspace\/MarketingCloudSDK\/MarketingCloudSDK\/PushModule.swift",
+      "kind": "StringLiteral",
+      "offset": 754,
+      "length": 17,
+      "value": "\"SFMCSdk_version\""
+    },
+    {
+      "filePath": "\/Users\/iosadmin\/mobeWorkspace\/MarketingCloudSDK\/MarketingCloudSDK\/PushModule.swift",
+      "kind": "StringLiteral",
+      "offset": 787,
+      "length": 24,
+      "value": "\"Failed to read version\""
+    },
+    {
+      "filePath": "\/Users\/iosadmin\/mobeWorkspace\/MarketingCloudSDK\/MarketingCloudSDK\/PushConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1364,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/iosadmin\/mobeWorkspace\/MarketingCloudSDK\/MarketingCloudSDK\/PushConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1426,
+      "length": 4,
+      "value": "true"
+    }
+  ]
+}
