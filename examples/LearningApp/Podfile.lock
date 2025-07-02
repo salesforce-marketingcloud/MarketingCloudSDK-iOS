@@ -1,0 +1,24 @@
+PODS:
+  - MarketingCloud-ExtensionSDK-Internal (1.0.0.25400007)
+  - MarketingCloud-SFMCSdk-Internal (2.0.0.25400007)
+  - MarketingCloudSDK-Internal (9.0.3):
+    - MarketingCloud-SFMCSdk-Internal (~> 2.0.0.25400007)
+
+DEPENDENCIES:
+  - MarketingCloud-ExtensionSDK-Internal (= 1.0.0.25400007)
+  - MarketingCloudSDK-Internal (= 9.0.3)
+
+SPEC REPOS:
+  "git@git.soma.salesforce.com:MarketingCloudSdk/cocoapods-internal-repo.git":
+    - MarketingCloud-ExtensionSDK-Internal
+    - MarketingCloud-SFMCSdk-Internal
+    - MarketingCloudSDK-Internal
+
+SPEC CHECKSUMS:
+  MarketingCloud-ExtensionSDK-Internal: 52163060dc2602c04a37e04f696e552fa1415796
+  MarketingCloud-SFMCSdk-Internal: 146ec75178a5494228234df895277a681132c44d
+  MarketingCloudSDK-Internal: 1f732356eee3b55da78e5847b9cb382ee357474c
+
+PODFILE CHECKSUM: d677f218151faaf1b022cf5952611a68ddb056bc
+
+COCOAPODS: 1.15.2
