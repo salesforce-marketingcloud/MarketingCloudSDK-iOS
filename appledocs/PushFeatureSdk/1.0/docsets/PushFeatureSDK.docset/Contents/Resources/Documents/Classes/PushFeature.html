@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PushFeature Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/PushFeature" class="dashAnchor"></a>
+    <a title="PushFeature Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PushFeatureSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PushFeatureSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        PushFeature Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PushFeature.html">PushFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PushFeatureConfigBuilder.html">PushFeatureConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>PushFeature</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFPushFeature</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">PushFeature</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span>
+                                <span class="kt">SFMCModule</span><span class="p">,</span>
+                                <span class="kt">Subscriber</span><span class="p">,</span>
+                                <span class="kt">Publisher</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PushFeature</span><span class="p">:</span> <span class="kt">PushFeatureApi</span></code></pre>
+
+                </div>
+              </div>
+            <p>The main API class of PushFeature module</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Request%20SDK%20Method"></a>
+                <a name="//apple_ref/swift/Section/Request SDK Method" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Request%20SDK%20Method"></a>
+                  <h3 class="section-name"><span>Request SDK Method</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PushFeatureSDK@objc(cs)SFPushFeature(cm)requestSdk:"></a>
+                    <a name="//apple_ref/swift/Method/requestSdk(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PushFeatureSDK@objc(cs)SFPushFeature(cm)requestSdk:">requestSdk(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the Push Feature Module when it&rsquo;s operational and safe to use. The provided callback will be invoked with the Push Feature Module when it&rsquo;s ready.
+All push feature module-related API calls should be made within this function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">requestSdk</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">pushFeature</span><span class="p">:</span> <span class="kt">PushFeatureApi</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback that will receive the Push Feature Module when it&rsquo;s operational/ready.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Push%20Token%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Push Token Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Push%20Token%20Methods"></a>
+                  <h3 class="section-name"><span>Push Token Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setDeviceToken:"></a>
+                    <a name="//apple_ref/swift/Method/setDeviceToken(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setDeviceToken:">setDeviceToken(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Responsible for sending the Apple device token back to all the subscribers. It marks the end of the token registration flow. If it is unable to reach Salesforce server, it will save the token and try again later.
+This method is necessary to the implementation of Salesforce Push.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setDeviceToken</span><span class="p">(</span><span class="n">_</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Device token received from the customer application.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)deviceToken"></a>
+                    <a name="//apple_ref/swift/Method/deviceToken()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)deviceToken">deviceToken()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the device token as a String.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deviceToken</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Feature%20Toggle%20Methods"></a>
+                <a name="//apple_ref/swift/Section/Feature Toggle Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Feature%20Toggle%20Methods"></a>
+                  <h3 class="section-name"><span>Feature Toggle Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setPushEnabledWithPushEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setPushEnabled(pushEnabled:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setPushEnabledWithPushEnabled:">setPushEnabled(pushEnabled:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Developer override to set the state of push enablement to true/false. If set to false, the application will not receive any push notifications once the Marketing Cloud server has been updated.
+When this value is false, it takes precedence (overrides) the user notifications settings (i.e., setting this to false will always disable push.)
+Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A false value from either source (user settings or developer interface) always wins.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setPushEnabled</span><span class="p">(</span><span class="nv">pushEnabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>pushEnabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Set to true to enable push notifications.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)isPushEnabled"></a>
+                    <a name="//apple_ref/swift/Method/isPushEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)isPushEnabled">isPushEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Combination of push enabled from user notifications settings and push enabled by sdk.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isPushEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/PushNotification%20Methods"></a>
+                <a name="//apple_ref/swift/Section/PushNotification Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/PushNotification%20Methods"></a>
+                  <h3 class="section-name"><span>PushNotification Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setNotificationResponse:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationResponse(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setNotificationResponse:">setNotificationResponse(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the module of the current notification response when user clicks a notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationResponse</span><span class="p">(</span><span class="n">_</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">UNNotificationResponse</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)notificationResponse"></a>
+                    <a name="//apple_ref/swift/Method/notificationResponse()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)notificationResponse">notificationResponse()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the last notification response delivered to the module.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationResponse</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">UNNotificationResponse</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setNotificationUserInfo:"></a>
+                    <a name="//apple_ref/swift/Method/setNotificationUserInfo(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setNotificationUserInfo:">setNotificationUserInfo(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Informs the module of the current userInfo when user clicks a notification.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setNotificationUserInfo</span><span class="p">(</span><span class="n">_</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The user info the current notification clicked to the module.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)notificationUserInfo"></a>
+                    <a name="//apple_ref/swift/Method/notificationUserInfo()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)notificationUserInfo">notificationUserInfo()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the user info of the last notification delivered to the module.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">notificationUserInfo</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/URLHandling"></a>
+                <a name="//apple_ref/swift/Section/URLHandling" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/URLHandling"></a>
+                  <h3 class="section-name"><span>URLHandling</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setURLHandlingDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setURLHandlingDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@PushFeatureSDK@objc(cs)SFPushFeature(im)setURLHandlingDelegate:">setURLHandlingDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set URLHandling delegate to handle URLs in OpenDirect URLs, CloudPage URLs, CloudPage URLs from inbox messages</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setURLHandlingDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">URLHandlingDelegate</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>set the delegate to handle URLs</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2025-11-03)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
