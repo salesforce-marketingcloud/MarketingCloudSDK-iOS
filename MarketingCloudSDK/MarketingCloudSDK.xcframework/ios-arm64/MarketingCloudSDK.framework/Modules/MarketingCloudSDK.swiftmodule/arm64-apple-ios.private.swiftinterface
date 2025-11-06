@@ -1,0 +1,208 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MarketingCloudSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import CoreLocation
+import DeveloperToolsSupport
+import Foundation
+@_exported import MarketingCloudSDK
+import ObjectiveC
+import SFMCSDK
+import Swift
+import SwiftUI
+import UIKit
+import UserNotifications
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+import ObjectiveC.runtime
+@objc public protocol MarketingCloudSdkInterface {
+  @objc func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @objc func contactKey() -> Swift.String?
+  @objc func addTag(_ tag: Swift.String) -> Swift.Bool
+  @objc func addTags(_ tags: [Any]) -> Swift.Set<Swift.AnyHashable>?
+  @objc func removeTag(_ tag: Swift.String) -> Swift.Bool
+  @objc func tags() -> Swift.Set<Swift.AnyHashable>?
+  @objc func setDebugLoggingEnabled(_ enabled: Swift.Bool)
+  @objc func attributes() -> [Swift.AnyHashable : Any]?
+  @objc func accessToken() -> Swift.String?
+  @objc func deviceIdentifier() -> Swift.String?
+  @objc func refresh(fetchCompletionHandler completionHandler: ((UIKit.UIBackgroundFetchResult) -> Swift.Void)?) -> Swift.Bool
+  @objc func setRegistrationCallback(_ registrationCallback: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Void)
+  @objc func unsetRegistrationCallback()
+  @objc func setSignedString(_ signedString: Swift.String?) -> Swift.Bool
+  @objc func signedString() -> Swift.String?
+  @objc func setEventDelegate(_ delegate: (any SFMCSDK.InAppMessageEventDelegate)?)
+  @objc func messageId(forMessage: [Swift.AnyHashable : Any]) -> Swift.String?
+  @objc func showInAppMessage(messageId: Swift.String)
+  @objc func setInAppMessage(fontName: Swift.String?) -> Swift.Bool
+  @objc func getAllMessages() -> [Any]?
+  @objc func getUnreadMessages() -> [Any]?
+  @objc func getReadMessages() -> [Any]?
+  @objc func getDeletedMessages() -> [Any]?
+  @objc func getAllMessagesCount() -> Swift.UInt
+  @objc func getUnreadMessagesCount() -> Swift.UInt
+  @objc func getReadMessagesCount() -> Swift.UInt
+  @objc func getDeletedMessagesCount() -> Swift.UInt
+  @objc func markMessageRead(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc func markMessageDeleted(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc func markMessageWithIdRead(messageId: Swift.String) -> Swift.Bool
+  @objc func markMessageWithIdDeleted(messageId: Swift.String) -> Swift.Bool
+  @objc func markAllMessagesRead() -> Swift.Bool
+  @objc func markAllMessagesDeleted() -> Swift.Bool
+  @objc func refreshMessages() -> Swift.Bool
+  @objc func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
+  @objc func piIdentifier() -> Swift.String?
+  @objc func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
+  @objc func trackPageView(url: Swift.String, title: Swift.String?, item: Swift.String?, search: Swift.String?)
+  @objc func trackCartContents(_ cartDictionary: [Swift.AnyHashable : Any])
+  @objc func trackCartConversion(_ orderDictionary: [Swift.AnyHashable : Any])
+  @objc func cartItemDictionary(price: Foundation.NSNumber, quantity: Foundation.NSNumber, item: Swift.String, uniqueId: Swift.String?) -> [Swift.AnyHashable : Any]?
+  @objc func cartDictionary(cartItem: [Any]) -> [Swift.AnyHashable : Any]?
+  @objc func orderDictionary(orderNumber: Swift.String, shipping: Foundation.NSNumber, discount: Foundation.NSNumber, cart: [Swift.AnyHashable : Any]) -> [Swift.AnyHashable : Any]?
+  @objc func setLocationDelegate(_ delegate: (any SFMCSDK.LocationDelegate)?)
+  @objc func regionFrom(dictionary: [Swift.AnyHashable : Any]) -> CoreLocation.CLRegion?
+  @objc func locationEnabled() -> Swift.Bool
+  @objc func startWatchingLocation()
+  @objc func stopWatchingLocation()
+  @objc func watchingLocation() -> Swift.Bool
+  @objc func lastKnownLocation() -> [Swift.String : Swift.String]?
+  @objc func resetDataPolicy() -> Swift.Bool
+  @objc func isAnalyticsEnabled() -> Swift.Bool
+  @objc func setAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
+  @objc func isPiAnalyticsEnabled() -> Swift.Bool
+  @objc func setPiAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
+  @objc func isLocationEnabled() -> Swift.Bool
+  @objc func setLocationEnabled(_ geoFenceEnabled: Swift.Bool)
+  @objc func setInboxEnabled(_ inboxEnabled: Swift.Bool)
+  @objc func isInboxEnabled() -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers @objc(SFMarketingCloudSdkConfig) public class MarketingCloudSdkConfig : ObjectiveC.NSObject, SFMCSDK.ModuleConfig {
+  @objc public var trackScreens: Swift.Bool
+  @objc final public let name: SFMCSDK.ModuleName
+  @objc final public let appId: Swift.String
+  @objc deinit
+}
+@objc(SFMarketingCloudSdkConfigBuilder) public class MarketingCloudSdkConfigBuilder : ObjectiveC.NSObject {
+  @objc public init(appId: Swift.String)
+  @discardableResult
+  @objc public func setAccessToken(_ accessToken: Swift.String) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setMarketingCloudServerUrl(_ endpoint: Foundation.URL) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setMid(_ mid: Swift.String) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setLocationEnabled(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setInboxEnabled(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setAnalyticsEnabled(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setPIAnalyticsEnabled(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setUseLegacyPIIdentifier(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setApplicationControlsBadging(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setDelayRegistrationUntilContactKeyIsSet(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setEnableScreenEntryTracking(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func setMarkMessageReadOnInboxNotificationOpen(_ enabled: Swift.Bool) -> MarketingCloudSDK.MarketingCloudSdkConfigBuilder
+  @discardableResult
+  @objc public func build() -> MarketingCloudSDK.MarketingCloudSdkConfig
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SFMarketingCloudSdk) final public class MarketingCloudSdk : ObjectiveC.NSObject, SFMCSDK.SFMCModule, SFMCSDK.Publisher {
+  @objc final public var name: SFMCSDK.ModuleName
+  @objc public static var moduleVersion: Swift.String
+  @objc public static var stateProperties: [Swift.String : Swift.String]? {
+    @objc get
+    @objc set
+  }
+  @objc public static let logger: SFMCSDK.ModuleLogger
+  @objc public static func initModule(config: any SFMCSDK.ModuleConfig, components: SFMCSDK.SFMCSdkComponents) -> (any SFMCSDK.SFMCModule)?
+  @objc public static func requestSdk(_ callback: @escaping (_ marketingCloudSdk: (any MarketingCloudSDK.MarketingCloudSdkInterface)?) -> Swift.Void)
+  @objc public static func _getStatus() -> SFMCSDK.ModuleStatus
+  @objc public static func sendIdentityEventForTags()
+  @objc public static func sendSfmcEvent(_ event: MarketingCloudSDK.SFMCEvent, category: SFMCSDK.EventCategory)
+  @objc deinit
+}
+extension MarketingCloudSDK.MarketingCloudSdk : SFMCSDK.Subscriber {
+  @objc final public func receive(message: SFMCSDK.Message)
+}
+extension MarketingCloudSDK.MarketingCloudSdk : MarketingCloudSDK.MarketingCloudSdkInterface {
+  @objc public static func metadata() -> [Swift.String : Any]
+  @objc final public func refresh(fetchCompletionHandler completionHandler: ((UIKit.UIBackgroundFetchResult) -> Swift.Void)?) -> Swift.Bool
+  @objc final public func resetDataPolicy() -> Swift.Bool
+  @objc final public func setDebugLoggingEnabled(_ enabled: Swift.Bool)
+  @objc public static func getLogger() -> SFMCSDK.ModuleLogger
+  @objc final public func contactKey() -> Swift.String?
+  @objc final public func addTag(_ tag: Swift.String) -> Swift.Bool
+  @objc final public func addTags(_ tags: [Any]) -> Swift.Set<Swift.AnyHashable>?
+  @objc final public func removeTag(_ tag: Swift.String) -> Swift.Bool
+  @objc final public func tags() -> Swift.Set<Swift.AnyHashable>?
+  @objc final public func attributes() -> [Swift.AnyHashable : Any]?
+  @objc final public func accessToken() -> Swift.String?
+  @objc final public func deviceIdentifier() -> Swift.String?
+  @objc final public func setSignedString(_ signedString: Swift.String?) -> Swift.Bool
+  @objc final public func signedString() -> Swift.String?
+  @objc final public func setRegistrationCallback(_ registrationCallback: @escaping (Swift.Dictionary<Swift.AnyHashable, Any>) -> Swift.Void)
+  @objc final public func unsetRegistrationCallback()
+  @objc final public func setAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
+  @objc final public func isAnalyticsEnabled() -> Swift.Bool
+  @objc final public func setPiAnalyticsEnabled(_ analyticsEnabled: Swift.Bool)
+  @objc final public func isPiAnalyticsEnabled() -> Swift.Bool
+  @objc final public func isLocationEnabled() -> Swift.Bool
+  @objc final public func setLocationEnabled(_ locationEnabled: Swift.Bool)
+  @objc final public func isInboxEnabled() -> Swift.Bool
+  @objc final public func setInboxEnabled(_ inboxEnabled: Swift.Bool)
+  @objc final public func setEventDelegate(_ delegate: (any SFMCSDK.InAppMessageEventDelegate)?)
+  @objc final public func messageId(forMessage: [Swift.AnyHashable : Any]) -> Swift.String?
+  @objc final public func showInAppMessage(messageId: Swift.String)
+  @objc final public func setInAppMessage(fontName: Swift.String?) -> Swift.Bool
+  @objc final public func getAllMessages() -> [Any]?
+  @objc final public func getUnreadMessages() -> [Any]?
+  @objc final public func getReadMessages() -> [Any]?
+  @objc final public func getDeletedMessages() -> [Any]?
+  @objc final public func getAllMessagesCount() -> Swift.UInt
+  @objc final public func getUnreadMessagesCount() -> Swift.UInt
+  @objc final public func getReadMessagesCount() -> Swift.UInt
+  @objc final public func getDeletedMessagesCount() -> Swift.UInt
+  @objc final public func markMessageRead(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc final public func markMessageDeleted(_ messageDictionary: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @objc final public func markMessageWithIdRead(messageId: Swift.String) -> Swift.Bool
+  @objc final public func markMessageWithIdDeleted(messageId: Swift.String) -> Swift.Bool
+  @objc final public func markAllMessagesRead() -> Swift.Bool
+  @objc final public func markAllMessagesDeleted() -> Swift.Bool
+  @objc final public func refreshMessages() -> Swift.Bool
+  @objc final public func setPiIdentifier(_ identifier: Swift.String?) -> Swift.Bool
+  @objc final public func piIdentifier() -> Swift.String?
+  @objc final public func trackMessageOpened(_ inboxMessage: [Swift.AnyHashable : Any])
+  @objc final public func trackPageView(url: Swift.String, title: Swift.String?, item: Swift.String?, search: Swift.String?)
+  @objc final public func trackCartContents(_ cartDictionary: [Swift.AnyHashable : Any])
+  @objc final public func trackCartConversion(_ orderDictionary: [Swift.AnyHashable : Any])
+  @objc final public func cartItemDictionary(price: Foundation.NSNumber, quantity: Foundation.NSNumber, item: Swift.String, uniqueId: Swift.String?) -> [Swift.AnyHashable : Any]?
+  @objc final public func cartDictionary(cartItem: [Any]) -> [Swift.AnyHashable : Any]?
+  @objc final public func orderDictionary(orderNumber: Swift.String, shipping: Foundation.NSNumber, discount: Foundation.NSNumber, cart: [Swift.AnyHashable : Any]) -> [Swift.AnyHashable : Any]?
+  @objc final public func setLocationDelegate(_ delegate: (any SFMCSDK.LocationDelegate)?)
+  @objc final public func regionFrom(dictionary: [Swift.AnyHashable : Any]) -> CoreLocation.CLRegion?
+  @objc final public func locationEnabled() -> Swift.Bool
+  @objc final public func startWatchingLocation()
+  @objc final public func stopWatchingLocation()
+  @objc final public func watchingLocation() -> Swift.Bool
+  @objc final public func lastKnownLocation() -> [Swift.String : Swift.String]?
+}
+extension MarketingCloudSDK.MarketingCloudSdk : SFMCSDK.MarketingCloudSdkProtocol {
+  @objc final public func getIdentity() -> (any SFMCSDK.ModuleIdentity)?
+  @_spi(PrivateTearDown) @objc final public func internalTearDown()
+}
+extension MarketingCloudSDK.MarketingCloudSdk {
+  @_spi(PrivateTearDown) @objc public static func tearDownModule()
+}
+@_inheritsConvenienceInitializers @objc public class MarketingCloudSDKSelectorUtils : ObjectiveC.NSObject {
+  @objc public static func isAppDelegateImplementsSelector(_ selector: Swift.String) -> Swift.Bool
+  @objc public static func isUserNotificationDelegateImplementsSelector(_ selector: Swift.String) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}

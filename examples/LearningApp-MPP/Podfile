@@ -1,0 +1,28 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '12.0'
+
+target 'LearningAppMPP' do
+  use_frameworks!
+
+  # Pods for LearningAppMPP
+  pod 'MarketingCloudSDK'
+  
+  #Add firebase Pod
+  
+end
+
+target 'MarketingCloudServiceExtension' do
+  use_frameworks!
+
+  # Pods for MarketingCloudServiceExtension
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+target 'MarketingCloudContentExtension' do
+  use_frameworks!
+
+  # Pods for MarketingCloudContentExtension
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
