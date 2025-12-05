@@ -199,24 +199,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSDictionary * _Nullable) sfmc_clearAttributesNamed:( NSArray * _Nonnull ) attributeNames;
 
 /**
- Responsible for sending the Apple device token back to Salesforce. It marks the end of the token registration flow. If it is unable to reach Salesforce server, it will save the token and try again later.
- 
- This method is necessary to the implementation of Salesforce Push.
- 
- @param deviceToken Token as received from Apple.
- 
- */
--(void) sfmc_setDeviceToken:(NSData * _Nonnull)deviceToken;
-
-/**
- Returns the device token as a NSString.
- 
- @return NSData A stringified version of the Apple deviceToken.
- 
- */
-- (NSString * _Nullable) sfmc_deviceToken;
-
-/**
  Returns the Salesforce application ID.
  
  @return NSString Salesforce application ID.
@@ -238,13 +220,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString * _Nullable) sfmc_deviceIdentifier;
 
 /**
- Informs the SDK of the current notification.
-
- @param response The UNNotificationResponse of the delivered notification.
- */
-- (void)sfmc_setNotificationResponse:(UNNotificationResponse *)response API_AVAILABLE(ios(10));
-
-/**
  Returns the last notification delivered to the SDK.
 
  @return UNNotificationResponse * The last delivered notification's UNNotificationResponse..
@@ -252,26 +227,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (UNNotificationResponse *)sfmc_notificationResponse API_AVAILABLE(ios(10));
 
 /**
- Informs the SDK of the current notification.
- 
- @param userInfo The user info the last notification delivered to the SDK.
- */
-- (void)sfmc_setNotificationUserInfo:(NSDictionary *)userInfo;
-
-/**
  Returns the user info of the last notification delivered to the SDK.
  
  @return NSDictionary * The user info the last notification delivered to the SDK.
  */
 - (NSDictionary *)sfmc_notificationUserInfo;
-
-/**
- Developer override to set the state of push enablement to YES/NO. If set to NO, the application will not receive any push notifications once the Marketing Cloud server has been updated. When this value is NO, it takes precedence (overrides) the user notifications settings (i.e., setting this to NO will always disable push.) Conversely, if the user has notifications settings disabled, the developer cannot enable push via this method. A NO value from either source (user settings or developer interface) always wins.
- Allows setting the state of pushEnabled to YES/NO. If set to NO, the application will not receive any push notifications. When this value is NO, it takes precedence over the user notifications settings (i.e., setting this to NO will always disable push.) If the user has notifications settings disabled that will override this setting and push will be disabled.
-
- @param pushEnabled Set to YES to enable push notifications.
- */
-- (void)sfmc_setPushEnabled:(BOOL)pushEnabled;
 
 /**
  The current state of the developer's push enablement override
@@ -364,6 +324,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)sfmc_resetDataPolicy;
 
+- (void)sfmc_handlePushFeatureEvent:(SFMCSdkPushFeatureEventBase *)pfEventBase;
 
 @end
 
