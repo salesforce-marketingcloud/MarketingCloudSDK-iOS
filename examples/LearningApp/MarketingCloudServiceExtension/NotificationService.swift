@@ -1,6 +1,12 @@
+import CoreGraphics
+import UserNotifications
 import MCExtensionSDK
+import UniformTypeIdentifiers
 
 class NotificationService: SFMCNotificationService {
+    static let mediaUrlKey = "_mediaUrl"
+    static let altTextKey = "_mediaAlt"
+    static let defaultMediaExtension = ".jpg"
     
     // Please use this method to enable logging, change logging levels etc, if required
     override func sfmcProvideConfig() -> SFNotificationServiceConfig {
@@ -10,86 +16,92 @@ class NotificationService: SFMCNotificationService {
 #endif
         return SFNotificationServiceConfig(logLevel: logLevel)
     }
-    
-    // Please use this method if and only if you need to do any custom processing e.g. image, video download, inserting custom keys in notification userInfo etc
-    // Please don't modify  `mutableContent.request.content.userInfo` directly as doing so may result in exception
-    // If you need to add any custom key in notification userInfo, then please return a dictionary in the completion handler
-    
-    
-    // Please note that like the `UNNotificationServiceExtension` method - func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) → Void),
-    // you will only get limited time from system to perform your processing operation
-    override func sfmcDidReceive(_ request: UNNotificationRequest, mutableContent: UNMutableNotificationContent, withContentHandler contentHandler: @escaping ([AnyHashable : Any]?) -> Void) {
-        // Your custom code here
-        //...
-        self.addMedia(mutableContent) {
-            // In case you need to add any custom key/value pair(s) in notifications userInfo object then
-            var customUserInfo: [AnyHashable : Any] = [:]
-            customUserInfo["MyCustomKey"] = "MyCustomValue"
-            
-            // Finally call content handler to signal end of your processing operation
-            //
-            contentHandler(customUserInfo)
+
+    override func sfmcDidReceive(_ request: UNNotificationRequest,
+                                 mutableContent: UNMutableNotificationContent,
+                                 withContentHandler contentHandler: @escaping ([AnyHashable: Any]?) -> Void) {
+        if let mediaUrlString = mutableContent.userInfo[NotificationService.mediaUrlKey] as? String {
+            self.downloadMediaAndSetAttachment(for: mediaUrlString, mutableContent: mutableContent) { [weak self] isAttachmentAddSuccess in
+                if !isAttachmentAddSuccess {
+                    self?.setAltText(for: mutableContent)
+                }
+                
+                contentHandler(nil)
+            }
+        } else {
+            // No media URL found in the payload
+            contentHandler(nil)
         }
     }
     
-    private func addMedia(_ mutableContent: UNMutableNotificationContent, completion: @escaping () -> Void) {
-        guard let mediaUrlString = mutableContent.userInfo["_mediaUrl"] as? String,
-                !mediaUrlString.isEmpty  else {
-            completion()
+    func downloadMediaAndSetAttachment(for mediaUrlValue: String, mutableContent: UNMutableNotificationContent, completionHandler: @escaping (_ isAttachSuccess: Bool) -> Void) {
+        guard let mediaUrl = URL(string: mediaUrlValue) else {
+            completionHandler(false)
             return
         }
         
-        guard let mediaUrl = URL(string: mediaUrlString) else {
-            completion()
-            return
-        }
-                
         let session = URLSession(configuration: URLSessionConfiguration.default)
-        let downloadTask = session.downloadTask(with: mediaUrl) {
-            location, response, error in
-            if let _ = error {
-                completion()
-                return
-            }
-            
-            guard let theLocation = location else {
-                completion()
-                return
-            }
-            
-            guard let theResponse = response as? HTTPURLResponse else {
-                completion()
-                return
-            }
-            
-            let statusCode = theResponse.statusCode
-            guard (statusCode >= 200 && statusCode <= 299) else {
-                completion()
-                return
-            }
-            
-            let localMediaUrl = URL.init(fileURLWithPath: theLocation.path + mediaUrl.lastPathComponent)
-            
-            // remove any existing file with the same name
-            try? FileManager.default.removeItem(at: localMediaUrl)
-                        
-            do {
-                try FileManager.default.moveItem(at: theLocation, to: localMediaUrl)
-            } catch {
-                completion()
-                return
-            }
-            
-            guard let mediaAttachment = try? UNNotificationAttachment(identifier: "SomeAttachmentId",
-                                                                      url: localMediaUrl) else {
-                completion()
-                return;
-            }
-            
-            mutableContent.attachments = [mediaAttachment]
-            completion()
+        session.downloadTask(with: mediaUrl) { [weak self] location, response, error in
+            self?.handleDownloadTaskResponse(mutableContent: mutableContent, location: location, response: response, error: error, completionHandler: completionHandler)
+        }.resume()
+    }
+    
+    func handleDownloadTaskResponse(mutableContent: UNMutableNotificationContent, location: URL?, response: URLResponse?, error: Error?, completionHandler: @escaping (_ isAttachSuccess: Bool) -> Void) {
+        guard let downloadResponse = response as? HTTPURLResponse,
+                (downloadResponse.statusCode >= 200 && downloadResponse.statusCode <= 299),
+                let validLocation = location else {
+            completionHandler(false)
+            return
         }
         
-        downloadTask.resume()
+        let bestGuessFileExension = self.fileExtension(from: downloadResponse.mimeType)
+        let localMediaUrl = URL.init(fileURLWithPath: validLocation.path + bestGuessFileExension)
+        try? FileManager.default.removeItem(at: localMediaUrl)
+        
+        guard let _ = try? FileManager.default.moveItem(at: validLocation, to: localMediaUrl) else {
+            completionHandler(false)
+            return
+        }
+        
+        guard let mediaAttachment = self.createMediaAttachment(localMediaUrl) else {
+            completionHandler(false)
+            return
+        }
+        
+        mutableContent.attachments = [mediaAttachment]
+        completionHandler(true)
+    }
+    
+    func createMediaAttachment(_ localMediaUrl: URL) -> UNNotificationAttachment? {
+        let clipRect = CGRectZero
+        let mediaAttachment = try? UNNotificationAttachment(identifier: "attachmentIdentifier",
+                                                            url: localMediaUrl,
+                                                            options: [UNNotificationAttachmentOptionsThumbnailHiddenKey: false,
+                                                                UNNotificationAttachmentOptionsThumbnailClippingRectKey: clipRect.dictionaryRepresentation])
+        return mediaAttachment
+    }
+    
+    func fileExtension(from mimeTypeValue: String?) -> String {
+        var fileExtension = NotificationService.defaultMediaExtension
+        
+        guard let mimeType = mimeTypeValue else {
+            return fileExtension
+        }
+        
+        if #available(iOS 14.0, *) {
+            guard let type = UTType(mimeType: mimeType), let ext = type.preferredFilenameExtension else {
+                return fileExtension
+            }
+            fileExtension = "." + ext
+        }
+        return fileExtension
+    }
+    
+    func setAltText(for mutableContent: UNMutableNotificationContent) {
+        guard let mediaAltText = mutableContent.userInfo[NotificationService.altTextKey] as? String, !mediaAltText.isEmpty else {
+            return
+        }
+        
+        mutableContent.body = mediaAltText
     }
 }

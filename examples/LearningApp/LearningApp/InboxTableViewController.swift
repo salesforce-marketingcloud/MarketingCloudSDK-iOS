@@ -8,51 +8,59 @@
 
 import UIKit
 import MarketingCloudSDK
-import SafariServices
 
 class InboxTableViewController: UITableViewController {
-
-    var dataSourceArray = [[String:Any]]()
-    var inboxRefreshObserver: NSObjectProtocol?
-
+    
+    private var dataSourceArray = [[String: Any]]()
+    private var inboxRefreshObserver: NSObjectProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.leftBarButtonItem = UIBarButtonItem.init(barButtonSystemItem: .done, target: self, action: #selector(done))
-        navigationItem.title = "Inbox"
-
-        refreshControl?.addTarget(self, action: #selector(refresh(_:)), for: .valueChanged)
         
-        reloadData()
+        title = "Inbox"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .done,
+            target: self,
+            action: #selector(done)
+        )
         
         navigationItem.rightBarButtonItem = editButtonItem
-    }
-
-    override func viewDidDisappear(_ animated: Bool) {
-        NotificationCenter.default.removeObserver(inboxRefreshObserver as Any)
-        inboxRefreshObserver = nil
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        if inboxRefreshObserver == nil {
-            inboxRefreshObserver = NotificationCenter.default.addObserver(forName: NSNotification.Name.SFMCInboxMessagesRefreshComplete, object: nil, queue: OperationQueue.main) {(_ note: Notification) -> Void in
-                self.refreshControl?.endRefreshing()
-                self.reloadData()
-            }
+        
+        // Setup refresh control
+        refreshControl = UIRefreshControl()
+        refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
+        
+        inboxRefreshObserver = NotificationCenter.default.addObserver(
+            forName: NSNotification.Name.SFMCInboxMessagesRefreshComplete,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.refreshControl?.endRefreshing()
+            self?.reloadData()
         }
-
+        
         reloadData()
     }
-
-    @IBAction func done(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        reloadData()
     }
-
-    // This example refresh method, used by the refresh control, will call the SDK's sfmc_refreshMessages
-    // method to fetch inbox messages from the server.
-    @objc func refresh(_ sender: Any) {
-        SFMCSdk.requestPushSdk { [weak self] mp in
-            if mp.refreshMessages() == false {
+    
+    deinit {
+        if let observer = inboxRefreshObserver {
+            NotificationCenter.default.removeObserver(observer)
+        }
+    }
+    
+    @objc private func done() {
+        dismiss(animated: true)
+    }
+    
+    @objc private func refresh() {
+        MarketingCloudSdk.requestSdk { [weak self] mp in
+            if mp?.refreshMessages() == false {
                 DispatchQueue.main.async {
                     self?.refreshControl?.endRefreshing()
                 }
@@ -60,111 +68,96 @@ class InboxTableViewController: UITableViewController {
         }
     }
     
-    // This method will fetch already-downloaded messages from the SDK, sort by the sendDateUtc value
-    // into the data source for this UITableViewController.
-    func reloadData() {
-        SFMCSdk.requestPushSdk { [weak self] mp in
-            if let inboxArray = mp.getAllMessages() as? [[String : Any]] {
+    private func reloadData() {
+        MarketingCloudSdk.requestSdk { [weak self] mp in
+            if let inboxArray = mp?.getAllMessages() as? [[String: Any]] {
                 self?.dataSourceArray = inboxArray.sorted {
-                
-                    if $0["sendDateUtc"] == nil {
+                    guard let date1 = $0["sendDateUtc"] as? Date,
+                          let date2 = $1["sendDateUtc"] as? Date else {
                         return true
                     }
-                    if $1["sendDateUtc"] == nil {
-                        return true
-                    }
-
-                    let s1 = $0["sendDateUtc"] as! Date
-                    let s2 = $1["sendDateUtc"] as! Date
-                    
-                    return s1 < s2
+                    return date1 > date2
                 }
+                
                 DispatchQueue.main.async {
                     self?.tableView.reloadData()
-                    self?.navigationItem.title = String(format: "Number of Messages: %d", self?.dataSourceArray.count ?? 0)
+                    self?.title = "Inbox (\(self?.dataSourceArray.count ?? 0))"
                 }
             }
         }
     }
-
+    
+    // MARK: - Table View Data Source
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
-            return dataSourceArray.count
-        }
-        else {
-            return 0
-        }
+        return dataSourceArray.count
     }
-
-    // This method illustrates populating a basic UITableViewCell based on the inbox message's
-    // subject, sendDateUtc value and its read state.
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "InboxCell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "InboxCell") ?? UITableViewCell(style: .subtitle, reuseIdentifier: "InboxCell")
         let inboxMessage = dataSourceArray[indexPath.row]
+        
         var messageTitle = ""
         if let subject = inboxMessage["subject"] as? String {
             messageTitle = subject
-        } else if let inboxMessage = inboxMessage["inboxMessage"] as? String {
-            messageTitle = inboxMessage
+        } else if let message = inboxMessage["inboxMessage"] as? String {
+            messageTitle = message
         } else if let title = inboxMessage["title"] as? String {
             messageTitle = title
         }
-        cell.textLabel!.text = messageTitle
         
-        if (inboxMessage["sendDateUtc"] != nil) {
-            let sendDateUtc = inboxMessage["sendDateUtc"] as! Date
-            cell.detailTextLabel!.text = sendDateUtc.description
+        cell.textLabel?.text = messageTitle
+        cell.textLabel?.numberOfLines = 2
+        cell.accessoryType = .disclosureIndicator
+        
+        // Set detail text to show send date
+        if let sendDateUtc = inboxMessage["sendDateUtc"] as? Date {
+            cell.detailTextLabel?.text = sendDateUtc.description
+        } else {
+            cell.detailTextLabel?.text = nil
         }
         
-        if (inboxMessage["read"] as! Bool == true) {
-            cell.textLabel!.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        if inboxMessage["read"] as? Bool == true {
+            cell.textLabel?.font = UIFont.systemFont(ofSize: 17)
+        } else {
+            cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 17)
         }
-        else {
-            cell.textLabel!.font = UIFont.boldSystemFont(ofSize: UIFont.systemFontSize)
-        }
-        
-        cell.accessoryType = .disclosureIndicator;
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let inboxMessage = dataSourceArray[indexPath.row]
-
-        // In a basic inbox implementation, the application should call the methods below to ensure that
-        // analytics are being tracked correctly and that the SDK and Marketing Cloud accurately reflect
-        // the read state of the message.
-        SFMCSdk.requestPushSdk { mp in
-            mp.trackMessageOpened(inboxMessage)
-            _ = mp.markMessageRead(inboxMessage)
+        
+        // Track analytics
+        MarketingCloudSdk.requestSdk { mp in
+            mp?.trackMessageOpened(inboxMessage)
+            _ = mp?.markMessageRead(inboxMessage)
         }
-
-        // If the inbox message has a URL, it would be appropriate to open the URL when the inbox item is selected.
-        // This is a simple example using SFSafariViewController.
-        let urlString = inboxMessage["url"] as! String
-        if let url = URL(string: urlString) {
-            let config = SFSafariViewController.Configuration()
-            config.entersReaderIfAvailable = false
-            let vc = SFSafariViewController(url: url, configuration: config)
-            present(vc, animated: true)
+        
+        // Open URL if available
+        if let urlString = inboxMessage["url"] as? String,
+           !urlString.isEmpty,
+           let url = URL(string: urlString) {
+            UIApplication.shared.open(url)
         }
+        
+        reloadData()
     }
-
-    // Override to support editing the table view.
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            
-            // If the inbox implementation allows for deleting messages, call the method in the SDK to reflect the deletion.
             let inboxMessage = dataSourceArray[indexPath.row]
-            SFMCSdk.requestPushSdk { [weak self] mp in
-                _ = mp.markMessageDeleted(inboxMessage)
+            
+            MarketingCloudSdk.requestSdk { [weak self] mp in
+                _ = mp?.markMessageDeleted(inboxMessage)
                 DispatchQueue.main.async {
-                    // Then, reload the data in the data source and table view.
                     self?.reloadData()
                 }
             }
