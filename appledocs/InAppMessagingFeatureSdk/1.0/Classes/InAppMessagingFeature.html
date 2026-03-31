@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InAppMessagingFeature Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/InAppMessagingFeature" class="dashAnchor"></a>
+    <a title="InAppMessagingFeature Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InAppMessagingFeatureSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InAppMessagingFeatureSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InAppMessagingFeature Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/InAppMessagingFeature.html">InAppMessagingFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppMessagingFeatureConfigBuilder.html">InAppMessagingFeatureConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/AppKit">AppKit</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InAppMessagingFeature</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFInAppMessagingFeature</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">InAppMessagingFeature</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SFMCModule</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InAppMessagingFeature</span><span class="p">:</span> <span class="kt">InAppMessagingFeatureApi</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InAppMessagingFeature</span><span class="p">:</span> <span class="kt">Subscriber</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InAppMessagingFeature</span><span class="p">:</span> <span class="kt">InAppMessagingFeatureProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>This class is a Swift Interface  for SFInAppMessagingFeature</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Request%20SDK%20Method"></a>
+                <a name="//apple_ref/swift/Section/Request SDK Method" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Request%20SDK%20Method"></a>
+                  <h3 class="section-name"><span>Request SDK Method</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(cm)requestSdk:"></a>
+                    <a name="//apple_ref/swift/Method/requestSdk(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(cm)requestSdk:">requestSdk(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the InAppMessaging Feature Module when it&rsquo;s operational and safe to use. The provided callback will be invoked with the InAppMessaging Feature Module when it&rsquo;s ready.
+All InAppMessaging feature module-related API calls should be made within this function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">requestSdk</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">inappMessagingFeature</span><span class="p">:</span> <span class="kt">InAppMessagingFeatureApi</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback that will receive the InAppMessaging Feature Module when it&rsquo;s operational/ready.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InAppMessaging%20Methods"></a>
+                <a name="//apple_ref/swift/Section/InAppMessaging Methods" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/InAppMessaging%20Methods"></a>
+                  <h3 class="section-name"><span>InAppMessaging Methods</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setEventDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setEventDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setEventDelegate:">setEventDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the delegate responsible for receiving in-app message display lifecycle and user interactions.</p>
+
+<p>Use this method to provide an <code>InAppMessageEventDelegate</code> implementation
+to observe events such as message display, dismissal, or user interaction.
+Passing <code>nil</code> removes the currently assigned delegate.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setEventDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">InAppMessageEventDelegate</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object conforming to <code>InAppMessageEventDelegate</code>,
+or <code>nil</code> to clear the existing delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)showInAppMessageWithMessageId:"></a>
+                    <a name="//apple_ref/swift/Method/showInAppMessage(messageId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)showInAppMessageWithMessageId:">showInAppMessage(messageId:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Displays a specific in-app message by its identifier.</p>
+
+<p>Use this method to manually trigger the presentation of an
+in-app message that corresponds to the provided <code>messageId</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">showInAppMessage</span><span class="p">(</span><span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messageId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique identifier of the in-app message
+to be displayed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setInAppMessageFontWithName:"></a>
+                    <a name="//apple_ref/swift/Method/setInAppMessageFont(name:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setInAppMessageFontWithName:">setInAppMessageFont(name:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the custom font used for rendering in-app messages.</p>
+
+<p>Use this method to configure a global font by name that will be applied
+to in-app message content. Passing <code>nil</code> resets the font to the default.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setInAppMessageFont</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The PostScript name of the font to use, or <code>nil</code>
+to revert to the default system font.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the font was successfully set; otherwise <code>false</code>.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setURLHandlingDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/setURLHandlingDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InAppMessagingFeatureSDK@objc(cs)SFInAppMessagingFeature(im)setURLHandlingDelegate:">setURLHandlingDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the delegate responsible for handling URL interactions triggered by in-app messages.</p>
+
+<p>Use this method to provide a custom <code>URLHandlingDelegate</code> implementation
+to control how URLs (e.g., deep links or external links) are processed
+when a user interacts with an in-app message button action.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setURLHandlingDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt">URLHandlingDelegate</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An object conforming to <code>URLHandlingDelegate</code>
+that will handle URL actions initiated from in-app messages.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-03-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

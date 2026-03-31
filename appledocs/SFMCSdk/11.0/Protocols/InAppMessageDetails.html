@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InAppMessageDetails Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/InAppMessageDetails" class="dashAnchor"></a>
+    <a title="InAppMessageDetails Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFMCSdk Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFMCSdk Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InAppMessageDetails Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../SFMCSDK.html">SFMCSDK</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CDP.html">CDP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PERSONALIZATION.html">PERSONALIZATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Identity.html">Identity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdk.html">SFMCSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigBuilder.html">ConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModuleInitStatus.html">ModuleInitStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Identity%20Protocols.html">Identity Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentityInfo.html">IdentityInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentityModifier.html">IdentityModifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Events.html">Events</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomEvent.html">CustomEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Logging.html">Logging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutputter.html">LogOutputter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enumerations.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ModuleName.html">ModuleName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationResult.html">OperationResult</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleConfig.html">ModuleConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageEventDelegate.html">InAppMessageEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLHandlingDelegate.html">URLHandlingDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../In-App%20Message%20Details.html">In-App Message Details</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageDetails.html">InAppMessageDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageAnimation.html">InAppMessageAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageBorder.html">InAppMessageBorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageButton.html">InAppMessageButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageCloseButton.html">InAppMessageCloseButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageMedia.html">InAppMessageMedia</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageShadow.html">InAppMessageShadow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageSpacing.html">InAppMessageSpacing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageTertiaryText.html">InAppMessageTertiaryText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageText.html">InAppMessageText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppMessageCloseAction.html">InAppMessageCloseAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageDismissReason.html">InAppMessageDismissReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageAlignment.html">InAppMessageAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageAnimationType.html">InAppMessageAnimationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageButtonActionType.html">InAppMessageButtonActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageButtonConfiguration.html">InAppMessageButtonConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageCloseButtonAlignment.html">InAppMessageCloseButtonAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageImageContentMode.html">InAppMessageImageContentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageImageSize.html">InAppMessageImageSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageLayoutOrder.html">InAppMessageLayoutOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageSize.html">InAppMessageSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageType.html">InAppMessageType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InAppMessageDetails</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFMCSdkInAppMessageDetails</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">InAppMessageDetails</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)id"></a>
+                    <a name="//apple_ref/swift/Property/id" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)id">id</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)type"></a>
+                    <a name="//apple_ref/swift/Property/type" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)type">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">type</span><span class="p">:</span> <span class="kt"><a href="../Enums/InAppMessageType.html">InAppMessageType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)layoutOrder"></a>
+                    <a name="//apple_ref/swift/Property/layoutOrder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)layoutOrder">layoutOrder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">layoutOrder</span><span class="p">:</span> <span class="kt"><a href="../Enums/InAppMessageLayoutOrder.html">InAppMessageLayoutOrder</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)buttonConfiguration"></a>
+                    <a name="//apple_ref/swift/Property/buttonConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)buttonConfiguration">buttonConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">buttonConfiguration</span><span class="p">:</span> <span class="kt"><a href="../Enums/InAppMessageButtonConfiguration.html">InAppMessageButtonConfiguration</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)title"></a>
+                    <a name="//apple_ref/swift/Property/title" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)title">title</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">title</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageText.html">InAppMessageText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)body"></a>
+                    <a name="//apple_ref/swift/Property/body" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)body">body</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageText.html">InAppMessageText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)tertiaryText"></a>
+                    <a name="//apple_ref/swift/Property/tertiaryText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)tertiaryText">tertiaryText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">tertiaryText</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageTertiaryText.html">InAppMessageTertiaryText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)media"></a>
+                    <a name="//apple_ref/swift/Property/media" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)media">media</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">media</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageMedia.html">InAppMessageMedia</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)buttons"></a>
+                    <a name="//apple_ref/swift/Property/buttons" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)buttons">buttons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">buttons</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/InAppMessageButton.html">InAppMessageButton</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)closeButton"></a>
+                    <a name="//apple_ref/swift/Property/closeButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)closeButton">closeButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">closeButton</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageCloseButton.html">InAppMessageCloseButton</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)backgroundColor"></a>
+                    <a name="//apple_ref/swift/Property/backgroundColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)backgroundColor">backgroundColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">backgroundColor</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)windowColor"></a>
+                    <a name="//apple_ref/swift/Property/windowColor" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)windowColor">windowColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">windowColor</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)cornerRadius"></a>
+                    <a name="//apple_ref/swift/Property/cornerRadius" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)cornerRadius">cornerRadius</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">cornerRadius</span><span class="p">:</span> <span class="kt"><a href="../Enums/InAppMessageSize.html">InAppMessageSize</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)shadow"></a>
+                    <a name="//apple_ref/swift/Property/shadow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)shadow">shadow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">shadow</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageShadow.html">InAppMessageShadow</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)additionalMargin"></a>
+                    <a name="//apple_ref/swift/Property/additionalMargin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)additionalMargin">additionalMargin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">additionalMargin</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageSpacing.html">InAppMessageSpacing</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)border"></a>
+                    <a name="//apple_ref/swift/Property/border" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)border">border</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">border</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageBorder.html">InAppMessageBorder</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)animation"></a>
+                    <a name="//apple_ref/swift/Property/animation" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)animation">animation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">animation</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InAppMessageAnimation.html">InAppMessageAnimation</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)source"></a>
+                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)source">source</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK module that originated this in-app message. See <a href="../Enums/ModuleName.html">ModuleName</a> for possible values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayCount"></a>
+                    <a name="//apple_ref/swift/Property/displayCount" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayCount">displayCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayLimit"></a>
+                    <a name="//apple_ref/swift/Property/displayLimit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayLimit">displayLimit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayLimit</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayLimitOverride"></a>
+                    <a name="//apple_ref/swift/Property/displayLimitOverride" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayLimitOverride">displayLimitOverride</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayLimitOverride</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)startDateUtc"></a>
+                    <a name="//apple_ref/swift/Property/startDateUtc" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)startDateUtc">startDateUtc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">startDateUtc</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)endDateUtc"></a>
+                    <a name="//apple_ref/swift/Property/endDateUtc" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)endDateUtc">endDateUtc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">endDateUtc</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)modifiedDateUtc"></a>
+                    <a name="//apple_ref/swift/Property/modifiedDateUtc" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)modifiedDateUtc">modifiedDateUtc</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">modifiedDateUtc</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayDuration"></a>
+                    <a name="//apple_ref/swift/Property/displayDuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displayDuration">displayDuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displayDuration</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)messageDelaySec"></a>
+                    <a name="//apple_ref/swift/Property/messageDelaySec" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)messageDelaySec">messageDelaySec</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">messageDelaySec</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)priority"></a>
+                    <a name="//apple_ref/swift/Property/priority" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)priority">priority</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displaySuppressionAction"></a>
+                    <a name="//apple_ref/swift/Property/displaySuppressionAction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInAppMessageDetails(py)displaySuppressionAction">displaySuppressionAction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">displaySuppressionAction</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-03-31)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

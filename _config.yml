@@ -64,11 +64,12 @@ exclude: ["bin", "README.md", "docker-compose.yml"]
 # Use the kramdown Markdown renderer
 markdown: kramdown
 
-currentMajorMinor: "10.0"
+currentMajorMinor: "11.0"
 
-currentMajorMinorExtensionSDK: "2.0"
-currentMajorMinorMAMSDK: "1.0"
-currentMajorMinorPushFeatureSDK: "1.0"
+currentMajorMinorExtensionSDK: "3.0"
+currentMajorMinorMAMSDK: "2.0"
+currentMajorMinorPushFeatureSDK: "2.0"
+currentMajorMinorIAMFeatureSDK: "1.0"
 
 # Current SDK version, use for all mentions
-currentVersion: "10.0.0"
+currentVersion: "11.0.0"
