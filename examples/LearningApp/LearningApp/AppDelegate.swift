@@ -11,6 +11,7 @@ import SFMCSDK
 import MarketingCloudSDK
 import PushFeatureSDK
 import MobileAppMessagingSDK
+import InAppMessagingFeatureSDK
 
 /*Note: This app demonstrates SDK integration using the traditional AppDelegate-based lifecycle. For apps using SceneDelegate, the SDK initialization should remain in AppDelegate, with scene-specific UI setup moved to SceneDelegate. */
 
@@ -109,6 +110,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configBuilder = configBuilder
             .setPushFeature(config: pushFeatureConfiguration)
         
+        // InAppMessageFeatureConfiguration
+        let iamFeatureConfiguration = InAppMessagingFeatureConfigBuilder()
+        // Use this to customize notification authorization options used by IAM.
+        // Default is `[.alert, .sound, .badge]` when not set.
+        // (for example, push-primer template that requests notification permissions).
+        // .setNotificationAuthorizationOptions([.alert, .sound, .badge])
+        
+        // Use this if you want to set IAM delegates during configuration time
+        // instead of assigning them later in setupInAppMessaging().
+        // .setEventDelegate(self)
+        // .setURLHandlingDelegate(self)
+        
+        // Use this to apply a global custom font for IAM rendering.
+        // .setInAppMessageFont(name: "HelveticaNeue")
+            .build()
+        configBuilder = configBuilder
+            .setInAppMessagingFeature(config: iamFeatureConfiguration)
+        
         // Set the completion handler to take action when module initialization is completed.
         let completionHandler: ((_ status: [ModuleInitStatus]) -> Void) = { [weak self] status in
             DispatchQueue.main.async {
@@ -140,6 +159,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     setupPushFeature()
                 case .mobileAppMessaging:
                     setupMobileAppMessaging()
+                case .inappMessagingFeature:
+                    setupInAppMessaging()
                 default:
                     break
                 }
@@ -162,14 +183,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Module Setup Methods
     
     func setupEngagement() {
-        
-        // Set the InAppMessageEventDelegate to a class adhering to the protocol.
-        // In this example, the AppDelegate class adheres to the protocol (see below)
-        // and handles In-App Message delegate methods from the MarketingCloud SDK.
-        MarketingCloudSdk.requestSdk { mp in
-            mp?.setEventDelegate(self)
-        }
-        
         // Set a registration callback to notify your application when
         // a registration event has occurred
         MarketingCloudSdk.requestSdk { mp in
@@ -355,6 +368,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
+    // InAppMessagingFeature Setup
+    func setupInAppMessaging() {
+        // Set the InAppMessageEventDelegate to a class adhering to the protocol.
+        // In this example, the AppDelegate class adheres to the protocol (see below)
+        // and handles In-App Message lifecycle delegate methods from the SDK.
+        // You can clear the event delegate by setting it to nil when needed.
+        
+        // Set the URLHandlingDelegate to handle URLs from In-App Message interactions.
+        // In this example, the AppDelegate class adheres to URLHandlingDelegate (see below).
+        InAppMessagingFeature.requestSdk { iamFeature in
+            iamFeature?.setEventDelegate(self)
+            iamFeature?.setURLHandlingDelegate(self)
+        }
+        
+        // Use the below method to set a custom font for In-App Messages.
+        // You can also clear the custom font set earlier (for example, via config builder) by passing `nil`.
+        // InAppMessagingFeature.requestSdk { iamFeature in
+        //    iamFeature?.setInAppMessageFont(name: "HelveticaNeue")
+        // }
+        
+        // Use the below method to manually show a specific In-App Message by messageId.
+        // Helpful if a message is deferred when shouldShow returns false.
+        // InAppMessagingFeature.requestSdk { iamFeature in
+        //     iamFeature?.showInAppMessage(messageId: "messageId")
+        // }
+    }
+    
     // MobilePush SDK: REQUIRED IMPLEMENTATION
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -454,7 +494,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     
 }
 
-// MarketingCloudSDK: OPTIONAL IMPLEMENTATION (if using In-App Messaging)
+// InAppMessagingFeature SDK: OPTIONAL IMPLEMENTATION (if using InAppMessaging SDK)
 extension AppDelegate: InAppMessageEventDelegate {
     
     /**
@@ -466,10 +506,10 @@ extension AppDelegate: InAppMessageEventDelegate {
      
      If `false` is returned, the application may capture the message's identifier (via messageId(forMessage:)) and attempt to show that message later via showInAppMessage(messageId:).
      
-     - Parameter message: Dictionary representing an In-App Message
+     - Parameter message: In-App Message details
      - Returns: Boolean value reflecting application's behavior
      */
-    func sfmc_shouldShow(inAppMessage message: [AnyHashable : Any]) -> Bool {
+    func shouldShow(inAppMessage message: any InAppMessageDetails) -> Bool {
         print("message should show")
         return true
     }
@@ -477,9 +517,9 @@ extension AppDelegate: InAppMessageEventDelegate {
     /**
      Method called by the SDK when an In-App Message has been shown.
      
-     - Parameter message: Dictionary representing an In-App Message
+     - Parameter message: In-App Message details
      */
-    func sfmc_didShow(inAppMessage message: [AnyHashable : Any]) {
+    func didShow(inAppMessage message: any InAppMessageDetails) {
         // message shown
         print("message was shown")
     }
@@ -487,10 +527,10 @@ extension AppDelegate: InAppMessageEventDelegate {
     /**
      Method called by the SDK when an In-App Message has been closed.
      
-     - Parameter message: Dictionary representing an In-App Message
+     - Parameter message: In-App Message details
+     - Parameter action: The close action triggered either by the user or by auto-dismissal.
      */
-    func sfmc_didClose(inAppMessage message: [AnyHashable : Any]) {
-        // message closed
+    func didClose(inAppMessage message: any InAppMessageDetails, action: InAppMessageCloseAction) {
         print("message was closed")
     }
 }

@@ -4,13 +4,9 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Assets.car</key>
-		<data>
-		STB7VLJlBHeqSRwSF4ID7QjqGRc=
-		</data>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<data>
-		cCEK88MHWuLHUWch4FRbZLmqtZE=
+		CiHwUNJzTNd3M8Js7E6KcK+nH6c=
 		</data>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
 		<data>
@@ -18,7 +14,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK+Events.h</key>
 		<data>
-		o2y9F8qsIpaSCq7lvSuSvsZ4q2Y=
+		mBWYTI3PeLJBcgQmY/u/dpjTDA8=
 		</data>
 		<key>Headers/MarketingCloudSDK+FeatureToggle.h</key>
 		<data>
@@ -38,43 +34,39 @@
 		</data>
 		<key>Headers/MarketingCloudSDK-Swift.h</key>
 		<data>
-		bdbgS+eFWHQw6Uac9tU2K3g2rJA=
+		L0ZdxRQomlv2JbH6jN0Rle0WEhE=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
-		zSufXrFMtzJOLiM7m8+Qhg6qz5I=
+		xfRQJTzXeQyANUPTxlq2EmO01+A=
 		</data>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
 		<data>
 		xaTf/nMie3fBXylEUMw/aOym5Vs=
 		</data>
-		<key>Headers/SFMCEvent.h</key>
-		<data>
-		VAXCmswsEKwWMilJOKPBJOWc7PY=
-		</data>
 		<key>Info.plist</key>
 		<data>
-		vqT91NG0jmDVYmoTMvaWiMHI1I0=
+		xTMrKhN9dWvBMc7BhHNYdvXATsw=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1Oktg8QzlEfyCpIxraO9v0nCico=
+		VtSUO2I9M9GbuVU5fUg3ekM5F7U=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		1sFKCCiuoinUU6hGiweqYK9QN2o=
+		QQKTJjouhXDSf7/Uqy9rSdH3Hj8=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		IlqKsmO4d1EhoJUHe/ck5qanFQo=
+		a7zbpszalYjIx8aYmh5ZKWewTPQ=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		9987Sckt7siHE7sdKsR8nhBlh6A=
+		iWR+C0N9HWEn0cygZLLmI+6t2WA=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wtsDuQ1Vzt9kRoUYSp/ARbL40pg=
+		kJ/gO8ejM7Ic0tvi14W71fwLAJ0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -86,59 +78,59 @@
 		</data>
 		<key>SFMCModel.momd/214.00.mom</key>
 		<data>
-		bhjFOJYiA6LTOtU4I2m6/AJXwaA=
+		W7o/iNNO1AbwFQdZdUGwC09GCGQ=
 		</data>
 		<key>SFMCModel.momd/215.00.mom</key>
 		<data>
-		rTG/DZipfR0MDJlA93TF2lhGkRo=
+		R77n6gjUAbqE1v6mEcezqhwHuSo=
 		</data>
 		<key>SFMCModel.momd/216.00.mom</key>
 		<data>
-		1jyJXpMCiZy2jHd/cRFWeIcnmoo=
+		+JYjeDgawlFc8ZPmQo2s3QL9yFg=
 		</data>
 		<key>SFMCModel.momd/216.01.mom</key>
 		<data>
-		LsPh6eGBpN/XHhcJgvrlAbqD88Y=
+		vKmx9lSx1XIrCPVTfnPn2ek7n0k=
 		</data>
 		<key>SFMCModel.momd/216.02.mom</key>
 		<data>
-		uV4TEUbGUPx0QHYr6CKkPyBChFA=
+		5SM7ojnHjC1Don7uqjZY29fitY4=
 		</data>
 		<key>SFMCModel.momd/216.03.mom</key>
 		<data>
-		uKlRGJ5PVc/bAlPJm7BxOgOMF2o=
+		mvbu1lvhgi9H1lv6P7ez/+0twew=
 		</data>
 		<key>SFMCModel.momd/219.00.mom</key>
 		<data>
-		7nPiFM6xmIv6yfajglwtt5/6gzk=
+		uWQG7M4wqRnQ88MwmrS+k0OWnSA=
 		</data>
 		<key>SFMCModel.momd/219.01.mom</key>
 		<data>
-		mdUHSXbyRQsFYSiQSPPHBZ3UWFg=
+		yqFTmO17esG2VGQH/XNrMCvb0kA=
 		</data>
 		<key>SFMCModel.momd/219.02.mom</key>
 		<data>
-		mdUHSXbyRQsFYSiQSPPHBZ3UWFg=
+		yqFTmO17esG2VGQH/XNrMCvb0kA=
 		</data>
 		<key>SFMCModel.momd/234.00.mom</key>
 		<data>
-		IunMNZkdRqshplfervzTu06+QH8=
+		k3z/wDe9A8sEyGFtfbQH0PdrCOA=
 		</data>
 		<key>SFMCModel.momd/240.00.mom</key>
 		<data>
-		jJDJcam97dmwT0apgetkcxnmFd0=
+		GNIIYmHZEov5QXUhHtWnju0sEJE=
 		</data>
 		<key>SFMCModel.momd/240.01.mom</key>
 		<data>
-		n7R3xi3Z9omadfX6nTgnIZRt09M=
+		SMaAwZ2d2iDu2cUDDWiTukLosmg=
 		</data>
 		<key>SFMCModel.momd/244.00.mom</key>
 		<data>
-		LAGgdhPGGH+vxmWE6X7WoFVWpo0=
+		u5rcW7oHvTzwhie6Alx2h6nYM0M=
 		</data>
 		<key>SFMCModel.momd/244.01.mom</key>
 		<data>
-		KrWcX4uWlJoYxNCsNXA27DWaY2M=
+		F3xoSlTolHxqDgGSHMIF+pnlI38=
 		</data>
 		<key>SFMCModel.momd/244.01.omo</key>
 		<data>
@@ -146,7 +138,7 @@
 		</data>
 		<key>SFMCModel.momd/SFMCModel.mom</key>
 		<data>
-		rdrN+NwTkb21pJ3u6Ye9iYvMwiI=
+		y8eWlvdBnIGmBpy/YJQjFBS7yWE=
 		</data>
 		<key>SFMCModel.momd/VersionInfo.plist</key>
 		<data>
@@ -164,18 +156,11 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Rg380+m9T5qIY52rTotKZWdwwbsg9l3X9lV0CBb8YnU=
-			</data>
-		</dict>
 		<key>Headers/MarketingCloudSDK+Base.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EZ3+AXdYFjjmIuEDZdZOiRMgwCb54R11SmsLGpqbzzI=
+			JdcWnBybu7W71+MXS0x5c4+AFEAgVFuCoPdrJSutnKI=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+Constants.h</key>
@@ -189,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dLq04b+B3stOuGkRih7FI3L5G1ACWJbNIyJzysKm1ak=
+			t1po/FZNzXVQPOkZz50r7URGpmH3+WcnU7WTmlmn9WU=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK+FeatureToggle.h</key>
@@ -224,14 +209,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPI81AJxLFRrQhkzX+Y9eCcfBLIcgkqXb91G6Qiozz4=
+			N4FaPSMXFMnvSV5M2ipaht6ze4XJxRa+jM9akYnXhu0=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3UjvpTjHkF6bhBacrvVk1GxeatgvO1t/MV9ChGXZGAY=
+			1yyBwgpKhErnw+Dcgx+kwE0vqZWmQMBGrNJCNXz/IOI=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDKConfigBuilder.h</key>
@@ -241,46 +226,39 @@
 			J/P/Ccvvb3VSYF4tX45YA0IH0MVbQd6s95oBcpAJ4/U=
 			</data>
 		</dict>
-		<key>Headers/SFMCEvent.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BwPNW+Cey1yYQpHsbpd4JL/qiFS7qM+jc6JwK0CPGlE=
-			</data>
-		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NOiS68WDMpuN6fymC5g3Gnt6itkq/AHk7wpGn5giybw=
+			vVAylKisgQGJL3KSs6mWOYFlgJh6lWpWFCeVvAhF/zM=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8ELmRoai/rddD/cknSV/UZ6smZo4bNphnbYDJt5utug=
+			JvyJ0ioyvHlyKmzp6y8nbRSnIVbyCrwL+Y7KRxetHwk=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V4/6wjOg+7tmMmxlbGw2XqOG+LqtVh9YkGQwa18GByQ=
+			pwJz9nEva+6aTI5CaMjBUyEMUs25pK2NyM6CzCk4O4Y=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AK257rFmoIFuC8DewPVI7RTYPEVgy5B+WZQ+ykobPC0=
+			Tnb2TEJypiflaSs/xeTdmfh0TW9wlmeUAcXNVoXCQPs=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z/DSyHkgwF/VCpWIgvYQsVcyR0a1LE73gIUVIhsBE0k=
+			cI/okIAt+Fr36NI4Qhnc70b5ShuHIVXnuNKbyHl3eiw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -301,98 +279,98 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hwEKL2yyvI7TeNx9EGKTCr4MgNEn8rSuBTrRgpPQYL8=
+			AtJtY6s9GgBGGNQnwK0K9m3cxAKCQeyg0mlnMPxvBu0=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/215.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MkifTD1yccnJ4X1U4wWH8rJ9c6Yf64SM7zP4uTdEbsQ=
+			b7GidJZ0hJHmap5PQVEj+IoN+OTT5o5nyg/6Vwe857Y=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/216.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			geUDa7eBZUTqZf7Jg5FLOGOiPuaGHMZfrQ8J+bsLpcA=
+			q4oCqUfjHH0wXkMFHb6m83z4QS7zRO1RM26iOuIC5h0=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/216.01.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lYRFTyU99c6gk7yWmCWw6bjmSdssjN6FvP8VoH+Ne+M=
+			Ulq+LYoQnyraMl58y7k3yCjSgSW45Uk0S58mmEbIW58=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/216.02.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DgGYKWLVEKIvDVM5Mwany2NtogPDyVNV1iv9sPfwBkM=
+			1D4eL8G+sS2uVYcVG52aK25cxyTxdtTjaaCdEetQy1I=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/216.03.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GMNIK0+zPmCyw9rflgpHh64Th0ADSsIU/WY3Fz6kQC4=
+			pBIiOR0fQq8kLm63TtGrVpiBx/aNlqCB6478UYi5KKU=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/219.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kuwwbtljXSf6dgJ3OmWM3yK1YiHIYlog8B1zPrYZPGc=
+			v6zV/yKzEc1Z6bBdN+pchHtyFlYXKbE0Yy1bo2qvAhs=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/219.01.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Ss09uGtJ+zeE0XRKWd/r9grbhDPuI0XX8y2XnAwmYc=
+			gyGo0ndVZx9BwY7mkX4GdqfmqGTvJzzG40JdFsOTJik=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/219.02.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Ss09uGtJ+zeE0XRKWd/r9grbhDPuI0XX8y2XnAwmYc=
+			gyGo0ndVZx9BwY7mkX4GdqfmqGTvJzzG40JdFsOTJik=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/234.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dzacFbhbm2Yb4s7NGNHgfzpo8XRJ87YseSRFpdeG9CM=
+			vJ+pR+axEh+9s8CJwP/lCaG8ZbD6e9rZNbTvLg3F+pU=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/240.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vRCNqgjPKsK163Qgez7qV0Y9eaKMmoePkjDEdLeFeYc=
+			GBaRVQUUKrhhOoMJD6dythrtPH2xUDh5Oy3Wc7FBmxA=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/240.01.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1tv1tPC2fo8CH+GxPN1Ug8/JnRPp7IwUEjRSsvq9kuQ=
+			2rMdvQcMfY6YP9SY6ubho1+h4yDWGuFl31vkAjFpVWw=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/244.00.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bhq6h1Hgyx41IezxfE7WfHr7uGCk7hlW3XYmkwDhizU=
+			Eax+Lz3IJ3R8ud+mjR4g3FMK6gjr3M3tNS+9HoOx9TI=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/244.01.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4bb9FGQXdISMgatuQvtr340IcYzbjyVGL52pWUoK7Z8=
+			fvvGD/zO69aAY98WZHnElk9mk+pOsakb3rRkXNVT0Bk=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/244.01.omo</key>
@@ -406,7 +384,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n62EbDxdWKRdAHTwLAVwsK8/Hi8c7ChPg4T/p7lxiVE=
+			eZAYxv9Y9DPH968X3dIVy/12JPDuBs0rLU3Cc/79JT8=
 			</data>
 		</dict>
 		<key>SFMCModel.momd/VersionInfo.plist</key>

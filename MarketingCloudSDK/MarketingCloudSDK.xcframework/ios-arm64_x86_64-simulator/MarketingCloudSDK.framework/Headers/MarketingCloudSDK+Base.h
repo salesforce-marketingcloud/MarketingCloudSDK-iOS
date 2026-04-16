@@ -326,6 +326,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)sfmc_handlePushFeatureEvent:(SFMCSdkPushFeatureEventBase *)pfEventBase;
 
+- (void)sfmc_handleInAppMessagingFeatureEvent:(SFMCSdkInAppMessagingAnalyticsEvent *)iamEventBase;
+
+- (void)sfmc_handleInAppMessagingDataProcessedEvent:(SFMCSdkInAppMessagingDataProcessedEvent *)dataProcessedEvent;
+
+- (void)sfmc_handleTraceEvent:(SFMCSdkTraceEvent *)traceEvent;
+
 @end
 
 NS_ASSUME_NONNULL_END

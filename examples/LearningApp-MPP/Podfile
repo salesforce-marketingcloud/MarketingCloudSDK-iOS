@@ -7,6 +7,9 @@ target 'LearningAppMPP' do
 
   # Pods for LearningAppMPP
   pod 'MarketingCloudSDK'
+  pod 'SFPushFeatureSDK'
+  pod 'SFMobileAppMessagingSDK'
+  pod 'SFInAppMessagingFeatureSDK'
   
   #Add firebase Pod
   
