@@ -34,7 +34,7 @@
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Headers/MarketingCloudSDK-Swift.h</key>
 		<data>
-		L0ZdxRQomlv2JbH6jN0Rle0WEhE=
+		RkhMTxovQ8oPNOE6sa7PEfAkJ4c=
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Headers/MarketingCloudSDK.h</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Info.plist</key>
 		<data>
-		xTMrKhN9dWvBMc7BhHNYdvXATsw=
+		uM/eoyc9or8tXK5Pn5XlAUAWbBE=
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/MarketingCloudSDK</key>
 		<data>
-		Me+4nEuJpixoqYDUdKMRDnyAI/0=
+		+caCPUwSQwO/1lpFoXdRyNccbb8=
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		a7zbpszalYjIx8aYmh5ZKWewTPQ=
+		96YmyFnI2Z1W8T5KT4LdfiCsJQ0=
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VAuPzIUVy/cEwLT52gFuKPe7YvY=
+		qllwmdpPyX3fY5tn797kFWI1ImI=
 		</data>
 		<key>ios-arm64/MarketingCloudSDK.framework/en.lproj/MarketingCloudSDK.strings</key>
 		<dict>
@@ -187,7 +187,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Headers/MarketingCloudSDK-Swift.h</key>
 		<data>
-		9xE4vAdRZRhqeK0zpjKkQabt/aA=
+		kCOeAJPSqd1bKJ/MsusZft/RFac=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Headers/MarketingCloudSDK.h</key>
 		<data>
@@ -199,11 +199,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Info.plist</key>
 		<data>
-		sjHKDd+aYvFQuVxPZPHVuCQldfg=
+		Nvl4AYkjcTOnA83mYneVVDE5/Pw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/MarketingCloudSDK</key>
 		<data>
-		vftv4IpiXko8xyR00ksm6j9x3zk=
+		GVTECE8Hssw8T1IgIA/0Gx2sEeI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -215,7 +215,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+fAJDqYnN8t9Eg+mj4ZmfeCMDFs=
+		TCjiR3MsrgD4KUJ+IY/MrgiaWpo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -231,7 +231,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		L0C9O6ZPvV8+qxJFPydod2yMlYQ=
+		avFWPJmD6RmckVSICO4hhYdiO5M=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -315,7 +315,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		aAyw0U89PuQzkGnK71NUORbV/Js=
+		82UOciIJC8twaCLgXLOBfoqg2+c=
 		</data>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/en.lproj/MarketingCloudSDK.strings</key>
 		<dict>
@@ -410,11 +410,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L0ZdxRQomlv2JbH6jN0Rle0WEhE=
+			RkhMTxovQ8oPNOE6sa7PEfAkJ4c=
 			</data>
 			<key>hash2</key>
 			<data>
-			N4FaPSMXFMnvSV5M2ipaht6ze4XJxRa+jM9akYnXhu0=
+			5xa/akBLf7y6mDTrKCHKk9yKx18DZXBJb3+CJYswWz4=
 			</data>
 		</dict>
 		<key>ios-arm64/MarketingCloudSDK.framework/Headers/MarketingCloudSDK.h</key>
@@ -443,22 +443,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xTMrKhN9dWvBMc7BhHNYdvXATsw=
+			uM/eoyc9or8tXK5Pn5XlAUAWbBE=
 			</data>
 			<key>hash2</key>
 			<data>
-			xBYy1a4J4BEb/2SCS20EdTTv67KDG3ncQTWGjweDcEM=
+			AtVcIXD/VuwShTCeagjraZKnFTYmMwP4dHGfydhtxlk=
 			</data>
 		</dict>
 		<key>ios-arm64/MarketingCloudSDK.framework/MarketingCloudSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Me+4nEuJpixoqYDUdKMRDnyAI/0=
+			+caCPUwSQwO/1lpFoXdRyNccbb8=
 			</data>
 			<key>hash2</key>
 			<data>
-			URIrTl0fZ6Suz7dy6NR9pL9bJRlMtQjpw4Usr0ugQr4=
+			1FjCwFU5DTH8TU/dIE4TQtnbKdsVrjACVfsQ3aPBfaU=
 			</data>
 		</dict>
 		<key>ios-arm64/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -487,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a7zbpszalYjIx8aYmh5ZKWewTPQ=
+			96YmyFnI2Z1W8T5KT4LdfiCsJQ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			pwJz9nEva+6aTI5CaMjBUyEMUs25pK2NyM6CzCk4O4Y=
+			EEXYwS4PTvTZot/UR3mAwTScL+c5HKK3J3Xq/S1OSkg=
 			</data>
 		</dict>
 		<key>ios-arm64/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
@@ -718,11 +718,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VAuPzIUVy/cEwLT52gFuKPe7YvY=
+			qllwmdpPyX3fY5tn797kFWI1ImI=
 			</data>
 			<key>hash2</key>
 			<data>
-			xn/ZUj+bHl4jap3DKZ3+qXIC1bMR5t3zzuZVjMR/wIg=
+			1TgWrP/oOX/e6kr+xGcMqq5ggje4dgAvFCoUIEdAhAI=
 			</data>
 		</dict>
 		<key>ios-arm64/MarketingCloudSDK.framework/en.lproj/MarketingCloudSDK.strings</key>
@@ -819,11 +819,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9xE4vAdRZRhqeK0zpjKkQabt/aA=
+			kCOeAJPSqd1bKJ/MsusZft/RFac=
 			</data>
 			<key>hash2</key>
 			<data>
-			Lli4MF3h0yLYePOH13OtELnhgJeaDB0kuRCQH4Xc8Ug=
+			2eVS/DZFKTufEWwx19FSEar3k52OMHHPGCr2L5WiVe4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Headers/MarketingCloudSDK.h</key>
@@ -852,22 +852,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sjHKDd+aYvFQuVxPZPHVuCQldfg=
+			Nvl4AYkjcTOnA83mYneVVDE5/Pw=
 			</data>
 			<key>hash2</key>
 			<data>
-			jbOkxeFvzX3sc5p7xU7j6pO6lBZn/hRKDaCGl0V0Co8=
+			cN3srPwCbUe3+Mdwxyd3FBqNgjdoftAB0xXyz89UmG4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/MarketingCloudSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vftv4IpiXko8xyR00ksm6j9x3zk=
+			GVTECE8Hssw8T1IgIA/0Gx2sEeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			XpJ+gCIKrWpTgjqVpjkgDCM5et21gwe/iLlZMzEwp4o=
+			ij+7vM94LMyo/ymaZnanqePlcfmGzTF+010W+Ffm0+4=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -896,11 +896,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+fAJDqYnN8t9Eg+mj4ZmfeCMDFs=
+			TCjiR3MsrgD4KUJ+IY/MrgiaWpo=
 			</data>
 			<key>hash2</key>
 			<data>
-			dtS1vAbxw2YiGQYQWhELxZAnwBAB91/FV+q2iUcbfBc=
+			gQWPRUWcl38QkXsIwVv5Pip9hTBVGRXeixmPWczKnlI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -940,11 +940,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L0C9O6ZPvV8+qxJFPydod2yMlYQ=
+			avFWPJmD6RmckVSICO4hhYdiO5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			QeIOjZhWLYDjqzAlsPcDKDSJ7AP85amBMazgmvgCnwQ=
+			0/rqulr/pMwlFAmZ8NBuI9v5BRgTQjUlGHNN4+um+nk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
@@ -1171,11 +1171,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aAyw0U89PuQzkGnK71NUORbV/Js=
+			82UOciIJC8twaCLgXLOBfoqg2+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			VK0jDfvJiS0AUkQ3CIlFmzoUstiteE7dNJlkSQPtDug=
+			9laWQgORuazHJeWI9Yo+5EvwUoHP0Vmq+1PmYv6GIuA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/MarketingCloudSDK.framework/en.lproj/MarketingCloudSDK.strings</key>

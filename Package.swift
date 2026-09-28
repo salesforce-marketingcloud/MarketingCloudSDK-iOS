@@ -9,7 +9,7 @@ let package = Package(
         .library(name: "MarketingCloudSDK", targets: ["MarketingCloudSDKWrapper"])
     ],
     dependencies: [
-        .package(url: "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios", from: "4.0.0"),
+        .package(url: "https://github.com/salesforce-marketingcloud/sfmc-sdk-ios", from: "4.0.1"),
         .package(url: "https://github.com/salesforce-marketingcloud/app-group-internal-sdk", from: "1.0.0"),
     ],
     targets: [

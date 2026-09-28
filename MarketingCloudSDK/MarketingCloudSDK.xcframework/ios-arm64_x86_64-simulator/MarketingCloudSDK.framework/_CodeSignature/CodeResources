@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/MarketingCloudSDK-Swift.h</key>
 		<data>
-		9xE4vAdRZRhqeK0zpjKkQabt/aA=
+		kCOeAJPSqd1bKJ/MsusZft/RFac=
 		</data>
 		<key>Headers/MarketingCloudSDK.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sjHKDd+aYvFQuVxPZPHVuCQldfg=
+		Nvl4AYkjcTOnA83mYneVVDE5/Pw=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+fAJDqYnN8t9Eg+mj4ZmfeCMDFs=
+		TCjiR3MsrgD4KUJ+IY/MrgiaWpo=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		L0C9O6ZPvV8+qxJFPydod2yMlYQ=
+		avFWPJmD6RmckVSICO4hhYdiO5M=
 		</data>
 		<key>Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
@@ -229,7 +229,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lli4MF3h0yLYePOH13OtELnhgJeaDB0kuRCQH4Xc8Ug=
+			2eVS/DZFKTufEWwx19FSEar3k52OMHHPGCr2L5WiVe4=
 			</data>
 		</dict>
 		<key>Headers/MarketingCloudSDK.h</key>
@@ -264,7 +264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtS1vAbxw2YiGQYQWhELxZAnwBAB91/FV+q2iUcbfBc=
+			gQWPRUWcl38QkXsIwVv5Pip9hTBVGRXeixmPWczKnlI=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
@@ -299,7 +299,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QeIOjZhWLYDjqzAlsPcDKDSJ7AP85amBMazgmvgCnwQ=
+			0/rqulr/pMwlFAmZ8NBuI9v5BRgTQjUlGHNN4+um+nk=
 			</data>
 		</dict>
 		<key>Modules/MarketingCloudSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>

@@ -336,7 +336,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull modu
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nullable stateProperties;)
 + (NSDictionary<NSString *, NSString *> * _Nullable)stateProperties SWIFT_WARN_UNUSED_RESULT;
 + (void)setStateProperties:(NSDictionary<NSString *, NSString *> * _Nullable)newValue;
-/// Unified Logger initialized for ‘Push’ Module
+/// Unified Logger initialized for ‘MarketingCloudSdk’ Module
 /// Usage: logger.d(category: .event, message: “Message”)
 /// Category : Enum with following values => auth, behavior, encryption, eventBus, network, module, sdk, storage, consent, coredata, database, event, identity, interface, location, session, util
 /// :nodoc:
@@ -1322,7 +1322,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSString * _Nonnull modu
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSDictionary<NSString *, NSString *> * _Nullable stateProperties;)
 + (NSDictionary<NSString *, NSString *> * _Nullable)stateProperties SWIFT_WARN_UNUSED_RESULT;
 + (void)setStateProperties:(NSDictionary<NSString *, NSString *> * _Nullable)newValue;
-/// Unified Logger initialized for ‘Push’ Module
+/// Unified Logger initialized for ‘MarketingCloudSdk’ Module
 /// Usage: logger.d(category: .event, message: “Message”)
 /// Category : Enum with following values => auth, behavior, encryption, eventBus, network, module, sdk, storage, consent, coredata, database, event, identity, interface, location, session, util
 /// :nodoc:
