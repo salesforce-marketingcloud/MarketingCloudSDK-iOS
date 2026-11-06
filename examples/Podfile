@@ -1,0 +1,90 @@
+
+source 'https://cdn.cocoapods.org/'
+source 'https://github.com/salesforce-marketingcloud/cocoapods-specs.git'
+
+platform :ios, '12.0'
+
+workspace 'LearningAppBundle.xcworkspace'
+
+# LearningApp (Full: MCE + MAM)
+
+target 'LearningApp' do
+  project 'LearningApp/LearningApp.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloudSDK'
+  pod 'SFPushFeatureSDK'
+  pod 'SFMobileAppMessagingSDK'
+  pod 'SFInAppMessagingFeatureSDK'
+  pod 'SFInboxFeatureSDK'
+end
+
+target 'LearningAppServiceExtension' do
+  project 'LearningApp/LearningApp.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+target 'LearningAppContentExtension' do
+  project 'LearningApp/LearningApp.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+# LearningAppMPP (Full: MCE + MAM + Firebase)
+
+target 'LearningAppMPP' do
+  project 'LearningApp-MPP/LearningAppMPP.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloudSDK'
+  pod 'SFPushFeatureSDK'
+  pod 'SFMobileAppMessagingSDK'
+  pod 'SFInAppMessagingFeatureSDK'
+  pod 'SFInboxFeatureSDK'
+
+  #Add firebase Pod
+
+end
+
+target 'LearningAppMPPServiceExtension' do
+  project 'LearningApp-MPP/LearningAppMPP.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+target 'LearningAppMPPContentExtension' do
+  project 'LearningApp-MPP/LearningAppMPP.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+# LearningAppMCE (MCE only, no MAM)
+
+target 'LearningAppMCE' do
+  project 'LearningAppMCE/LearningAppMCE.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloudSDK'
+  pod 'SFPushFeatureSDK'
+  pod 'SFInAppMessagingFeatureSDK'
+  pod 'SFInboxFeatureSDK'
+end
+
+target 'LearningAppMCEServiceExtension' do
+  project 'LearningAppMCE/LearningAppMCE.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end
+
+target 'LearningAppMCEContentExtension' do
+  project 'LearningAppMCE/LearningAppMCE.xcodeproj'
+  use_frameworks!
+
+  pod 'MarketingCloud-ExtensionSDK'
+end

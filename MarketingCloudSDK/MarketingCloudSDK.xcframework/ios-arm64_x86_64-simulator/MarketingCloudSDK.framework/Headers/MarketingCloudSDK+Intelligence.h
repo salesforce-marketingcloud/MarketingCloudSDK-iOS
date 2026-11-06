@@ -34,13 +34,6 @@
 
 
 /**
- When an Inbox message is opened (for instance, you implement an inbox and present the CloudPage URL in your webview) this method should be called with the Inbox message so that the MarketingCloudSDK can track the proper analytics and state of the message.
-
- @param inboxMessage a non-nil NSDictionary object representing an Inbox message
- */
--(void) sfmc_trackMessageOpened:(NSDictionary *_Nonnull) inboxMessage;
-
-/**
  Track page views within your application.
  @param url a non-nil NSString to identify the location within your app traversed by your customers.  For example: com.yourpackage.viewcontrollername
  @param title a NSString (nil if n/a) to identify the title of the location within your app traversed by your customers. For example: Screen Name

@@ -1,63 +1,78 @@
-# MobilePush SDK LearningApp Documentation
+# Marketing Cloud Engagement SDK - LearningApp Examples
 
-The MobilePush SDK LearningApp is offered as an example of MobilePush SDK project configuration and implementation best practices.
+Example apps demonstrating configuration and implementation best practices for the Salesforce Marketing Cloud Engagement (MCE) iOS SDKs.
 
-To easily integrate the MobilePush SDK into your new or existing mobile app, use the LearningApp in conjunction with the [iOS](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/) MobilePush SDK documentation and the [iOS Appledoc](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/get-started/appledocs.html) references.
+This bundle includes three app variants:
 
-Additionally, should you face a challenge in your MobilePush SDK implementation, the LearningApp can serve as a simple, streamlined test application to validate integration and configuration outside of the complexities of a modern, fully featured mobile app.
+| Variant | Scheme | Description |
+|---------|--------|-------------|
+| **LearningApp** | `LearningApp` | Full SDK integration (MCE + MAM + Push + In-App Messaging) |
+| **LearningAppMPP** | `LearningAppMPP` | Full SDK integration with Firebase Cloud Messaging |
+| **LearningAppMCE** | `LearningAppMCE` | Marketing Cloud Engagement only (no Mobile App Messaging) |
 
-The LearningApp demonstrates
+Choose the variant that matches your integration needs. If you are using both MCE and MAM, start with **LearningApp**. If you only need push and engagement features, use **LearningAppMCE**.
 
-* Configuring the SDK
+## Features Demonstrated
+
+* Configuring the SDK with SFMC credentials
 * Enabling push notifications
-* Supporting Rich Push functionality
+* Supporting Rich Push via Notification Service and Content Extensions
 * Handling Marketing Cloud push URLs
-* Enabling location messaging
+* Enabling location messaging (MCE variants)
 * Setting contact values via SDK registration
 * Logging SDK diagnostic information via sdkState
-* A fully-featured app inbox, enabling inbox messaging
-* Support for In-App Message callbacks
-* Access to the MobilePush SDK documentation
+* App inbox messaging (all variants)
+* In-App Message callbacks
+* Custom event tracking
 
-For further information about implementing the MobilePush SDK, see the documentation
+## Requirements
 
-* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/
-* https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/appledoc/index.html
+* Xcode 16+
+* iOS 12.0+
+* [CocoaPods](https://cocoapods.org/)
 
-**Requirements**
+## Setup
 
-* Xcode 15
+1. Clone or download the repository.
 
-**Setup**
+2. Navigate to the examples directory and install CocoaPods dependencies:
 
-1. Clone or download the SDK and LearningApp from the source repository.
-2. Open Terminal and enter the following information.
+        $ cd <path to>/examples
+        $ pod install
 
-        $ cd <path to>/LearningApp
-3. Open `LearningApp.xcworkspace` in Xcode.
-4. Add following package dependencies to your Xcode project (select File > Swift Packages > Add Package Dependency and enter its repository URL)
-* SFMCSDK https://github.com/salesforce-marketingcloud/sfmc-sdk-ios >= 1.0.0, Current version: 1.0.8
-* MobilePush https://github.com/salesforce-marketingcloud/MarketingCloudSDK-iOS/tree/spm >= 8.0.0, Current version: 8.0.13
+3. Open the workspace in Xcode:
 
-5. Pull in the MarketingCloudSDK/Sources/MarketingCloudSDKResources/MarketingCloudSDK.bundle manually to the project and link it with the binary in the build phase.
+        $ open LearningAppBundle.xcworkspace
 
-6. Open `AppDelegate.swift` and replace the values for `appId`, `accessToken`, `appEndpoint` and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
+4. Open `AppDelegate.swift` in the variant you want to run and replace the placeholder values for `appId`, `accessToken`, `appEndpoint`, and `mid`. Find these values on the MobilePush Administration screen in Marketing Cloud.
 
         let appID = "<your appID here>"
         let accessToken = "<your accessToken here>"
         let appEndpoint = URL(string: "<your appEndpoint here>")!
         let mid = "<your account MID here>"
 
-7. In the Xcode Project Navigator, select the LearningApp project.
-8. In the Project Editor, select the LearningApp target.
-9. On the General tab, set your unique Bundle Identifier and Signing values.
-10. Build and run the LearningApp project.
+5. Select the desired scheme in Xcode (e.g., `LearningApp`, `LearningAppMCE`, or `LearningAppMPP`).
 
-**iOS SDK Development Notes**
+6. In the Project Editor, select the app target. On the General tab, set your unique Bundle Identifier and Signing values.
 
-* If you debug in Xcode to a connected device, your push notification environment is considered Development. You must use an Apple Push Notification service SSL (Sandbox) certificate on the MobilePush Administration screen in Marketing Cloud.
-    * To create a certificate, review Apple's documentation: https://help.apple.com/developer-account/#/dev82a71386a
-* If you build and install the LearningApp as an archive or via app distribution such as TestFlight, Hockey, or Fabric, your push notification environment is considered Production. You must use an Apple Push Notification service SSL (Sandbox & Production) certificate on the MobilePush Administration screen in Marketing Cloud.
-    * To create a certificate, review Apple's documentation: https://help.apple.com/developer-account/#/dev82a71386a
-* If you build and debug in a simulator, push notifications and inbox messages are not delivered from Marketing Cloud.
-* While the LearningApp is implemented in Swift, the methods and conventions also apply directly to Objective-C.
+7. Build and run.
+
+### LearningAppMPP (Firebase variant)
+
+The LearningAppMPP variant requires a Firebase project. Before building:
+
+1. Create a Firebase project at https://console.firebase.google.com/
+2. Download `GoogleService-Info.plist` and add it to the `LearningAppMPP` target in Xcode.
+3. Add the Firebase pod to the Podfile (see the `#Add firebase Pod` comment) and run `pod install` again.
+
+## Documentation
+
+* [Marketing Cloud iOS SDK Documentation](https://developer.salesforce.com/docs/marketing/mobile-messaging-sdks/guide/mobilepush-sdk-intro.html)
+* [API Reference (Appledoc)](https://salesforce-marketingcloud.github.io/MarketingCloudSDK-iOS/docs/appledocs.html)
+
+## iOS SDK Development Notes
+
+* **Development builds** (debugging to a connected device): Use an Apple Push Notification service SSL (Sandbox) certificate on the MobilePush Administration screen in Marketing Cloud.
+* **Production builds** (TestFlight, enterprise distribution): Use an Apple Push Notification service SSL (Sandbox & Production) certificate.
+* **Simulator**: Push notifications and inbox messages are not delivered from Marketing Cloud when running in a simulator.
+* To create certificates, review Apple's documentation: https://help.apple.com/developer-account/#/dev82a71386a

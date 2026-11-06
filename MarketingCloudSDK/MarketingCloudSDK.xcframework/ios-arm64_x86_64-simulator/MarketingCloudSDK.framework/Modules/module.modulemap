@@ -7,5 +7,4 @@ framework module MarketingCloudSDK {
 
 module MarketingCloudSDK.Swift {
   header "MarketingCloudSDK-Swift.h"
-  requires objc
 }

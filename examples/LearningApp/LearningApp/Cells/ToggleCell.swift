@@ -9,6 +9,7 @@ import UIKit
 import SFMCSDK
 import MarketingCloudSDK
 import MobileAppMessagingSDK
+import InboxFeatureSDK
 
 class ToggleCell: UITableViewCell {
     
@@ -111,8 +112,8 @@ class ToggleCell: UITableViewCell {
             }
             
         case .inbox:
-            MarketingCloudSdk.requestSdk { [weak self] mp in
-                let isOn = mp?.isInboxEnabled() ?? false
+            InboxFeature.requestSdk { [weak self] inboxSdk in
+                let isOn = inboxSdk?.isInboxEnabled() ?? false
                 self?.updateToggle(isOn: isOn)
             }
             
@@ -149,8 +150,8 @@ class ToggleCell: UITableViewCell {
             )
             
         case .inbox:
-            MarketingCloudSdk.requestSdk { mp in
-                mp?.setInboxEnabled(enabled)
+            InboxFeature.requestSdk { inboxSdk in
+                inboxSdk?.setInboxEnabled(enabled)
             }
             
         case .locationWatching:

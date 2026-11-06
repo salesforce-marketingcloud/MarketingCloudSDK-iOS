@@ -12,8 +12,7 @@
 
     1. Analytics: Enables or disables Salesforce MarketingCloud Analytics services.
     2. PI (Predictive Intelligence) Analytics: Enables or disables Salesforce Predictive Intelligence Analytics services.
-    3. Inbox: Enables or disables Inbox messaging services.
-    4. Location: Enables or disables location-based push notification and messaging services.
+    3. Location: Enables or disables location-based push notification and messaging services.
 
   By utilizing the Runtime Toggles feature, you can fine-tune your application's behavior, adapt to changing requirements, and ensure compliance with GDPR regulations effortlessly
  */
@@ -58,18 +57,6 @@
  @return returns a BOOL value of the Location enablement override considering config setting .
 */
 - (BOOL)sfmc_isLocationEnabled;
-
-/**
-Developer override to set the state of Inbox enablement to YES/NO. If set to NO, Inbox feature will be disabled.
-This value takes precedence over the config setting which is passed during the SDK initialization.
- */
-- (void)sfmc_setInboxEnabled: (BOOL)inboxEnabled;
-
-/**
- The current state of the Inbox enablement override
- @return returns a BOOL value of the Inbox enablement.
- */
-- (BOOL)sfmc_isInboxEnabled;
 
 @end
 
