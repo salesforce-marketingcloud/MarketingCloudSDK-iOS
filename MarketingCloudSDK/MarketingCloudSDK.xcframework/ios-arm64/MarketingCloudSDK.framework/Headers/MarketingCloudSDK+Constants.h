@@ -18,21 +18,6 @@ FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFrameworkDidTeardownNoti
 /** successfuly sent a registration to Salesforce - userinfo contains the HTTP response */
 FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFoundationRegistrationResponseSucceededNotification;
 
-/** a UNNotification has been received - userInfo contains the UNNotificationRequest */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCFoundationUNNotificationReceivedNotification;
-
-/** the Inbox was refreshed */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCInboxMessagesRefreshCompleteNotification;
-/** the Inbox has new messages */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCInboxMessagesNewInboxMessagesNotification;
-/** the Inbox status has been updated */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCInboxMessagesUpdateStatusCompleteNotification;
-/** the Inbox handled a notification - userInfo contains the NSNotification userInfo */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCInboxMessagesNotificationHandledNotification;
-
-/** an OpenDirect message was handled - userInfo contains the NSNotification userInfo */
-FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCOpenDirectMessageNotificationHandledNotification;
-
 /** a new location has been determined - userInfo contains the latitude and longitude */
 FOUNDATION_EXPORT NSNotificationName _Nonnull const SFMCLocationDidFixLocationNotification;
 /** an iOS location update has been received - userInfo contains the CLLocation */

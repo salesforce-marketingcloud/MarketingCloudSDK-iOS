@@ -13,6 +13,7 @@ import FirebaseMessaging
 import FirebaseCore
 import UserNotifications
 import InAppMessagingFeatureSDK
+import InboxFeatureSDK
 
 // This app showcases Multi push provider implementation with MarketingCloudSDK
 // FireBase integration is considered in this example app
@@ -32,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let mid = "<your account MID here>"
     
     // Define features of MarketingCloud SDK your app will use.
-    let inbox = true
     let location = true
     let pushAnalytics = true
     let markMessageReadOnInboxNotificationOpen = true
@@ -131,14 +131,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 .setAccessToken(accessToken)
                 .setMarketingCloudServerUrl(appEndpoint)
                 .setMid(mid)
-                .setInboxEnabled(inbox)
                 .setLocationEnabled(location)
                 .setAnalyticsEnabled(pushAnalytics)
-                .setMarkMessageReadOnInboxNotificationOpen(markMessageReadOnInboxNotificationOpen)
                 .build()
-            
-            configBuilder = configBuilder
-                .setEngagement(config: engagementConfiguration)
+
+            configBuilder = configBuilder.setEngagement(config: engagementConfiguration)
         } else {
             print("❌ ERROR: Invalid or missing Engagement credentials - skipping Engagement module")
         }
@@ -161,6 +158,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             print("❌ ERROR: Invalid or missing MobileAppMessaging credentials - skipping MobileAppMessaging module")
         }
+
+        let inboxConfiguration = InboxFeatureConfigBuilder()
+            .setMarkMessageReadOnInboxNotificationOpen(markMessageReadOnInboxNotificationOpen)
+            .build()
+
+        configBuilder = configBuilder.setInboxFeature(config: inboxConfiguration)
         
         // PushFeatureConfiguration
         let pushFeatureConfiguration = PushFeatureConfigBuilder()
@@ -222,6 +225,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     setupMobileAppMessaging()
                 case .inappMessagingFeature:
                     setupInAppMessaging()
+                case .inboxFeature:
+                    setupInboxFeature()
                 default:
                     break
                 }
@@ -281,12 +286,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // }
         
         
-        //Set runtime Inbox to enabled/disabled
-        //         MarketingCloudSdk.requestSdk { mp in
-        //            mp?.setInboxEnabled(false)
-        //         }
-        
-        
         // Use the below method to see if Push Analytics is enabled/disabled
         // MarketingCloudSdk.requestSdk { mp in
         //    let isAnalyticsEnabled = mp?.isAnalyticsEnabled()
@@ -300,11 +299,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use the below method to see if Location is enabled/disabled
         // MarketingCloudSdk.requestSdk { mp in
         //    let isLocationEnabled = mp?.isLocationEnabled()
-        // }
-        
-        // Use the below method to see if Inbox is enabled/disabled
-        // MarketingCloudSdk.requestSdk { mp in
-        //    let isInboxEnabled = mp?.isInboxEnabled()
         // }
         
         // To instruct the SDK to start managing and watching location (for purposes of MarketingCloud SDK location messaging).
@@ -429,6 +423,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // }
     }
     
+    // InboxFeature setup
+    func setupInboxFeature() {
+        print("InboxFeature module initialized successfully.")
+
+        // Enable or disable Inbox at runtime.
+        // InboxFeature.requestSdk { inboxFeature in
+        //    inboxFeature?.setInboxEnabled(false)
+        // }
+
+        // Check whether Inbox is enabled.
+        // InboxFeature.requestSdk { inboxFeature in
+        //    let isInboxEnabled = inboxFeature?.isInboxEnabled() ?? false
+        //    print("Inbox enabled: \(isInboxEnabled)")
+        // }
+    }
+
     // InAppMessagingFeature Setup
     func setupInAppMessaging() {
         // Set the InAppMessageEventDelegate to a class adhering to the protocol.

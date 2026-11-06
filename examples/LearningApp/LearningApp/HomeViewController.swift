@@ -11,6 +11,7 @@ import SFMCSDK
 import CoreLocation
 import PushFeatureSDK
 import MobileAppMessagingSDK
+import InboxFeatureSDK
 
 // MARK: - Notification Names
 
@@ -242,9 +243,25 @@ class HomeViewController: UIViewController {
     }
     
     private func openInbox() {
-        let vc = InboxTableViewController()
-        let nav = UINavigationController(rootViewController: vc)
-        present(nav, animated: true)
+        InboxFeature.requestSdk { [weak self] inboxSdk in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                guard let inboxSdk else {
+                    self.showAlert(title: "Inbox Unavailable", message: "Inbox is not ready yet.")
+                    return
+                }
+                // Honor the Inbox setting exposed under Runtime Toggles.
+                guard inboxSdk.isInboxEnabled() else {
+                    self.showAlert(
+                        title: "Inbox Disabled",
+                        message: "Enable Inbox under Runtime Toggles before opening Inbox Messages."
+                    )
+                    return
+                }
+
+                self.navigationController?.pushViewController(InboxTableViewController(), animated: true)
+            }
+        }
     }
     
     private func trackCustomEvent() {

@@ -31,7 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
      MarketingCloudSDKConfigBuilder *mcsdkBuilder = [MarketingCloudSDKConfigBuilder new];
      [mcsdkBuilder sfmc_setApplicationId:@"93783629-08C7-48D3-8482-3E5BC8DBA888"];
      [mcsdkBuilder sfmc_setAccessToken:@"xyzymn5gb7y2z3wph3t4yxyz"];
-     [mcsdkBuilder sfmc_setInboxEnabled:@(YES)];
      [mcsdkBuilder sfmc_setLocationEnabled:@(YES)];
      [mcsdkBuilder sfmc_setAnalyticsEnabled:@(YES)];
      [mcsdkBuilder sfmc_setPiAnalyticsEnabled:@(YES)];
@@ -54,7 +53,6 @@ NS_ASSUME_NONNULL_BEGIN
     MarketingCloudSDKConfigBuilder *mcsdkBuilder = [MarketingCloudSDKConfigBuilder new];
     [mcsdkBuilder sfmc_setApplicationId:@"93783629-08C7-48D3-8482-3E5BC8DBA888"];
     [mcsdkBuilder sfmc_setAccessToken:@"xyzymn5gb7y2z3wph3t4yxyz"];
-    [mcsdkBuilder sfmc_setInboxEnabled:@(YES)];
     [mcsdkBuilder sfmc_setLocationEnabled:@(YES)];
     [mcsdkBuilder sfmc_setAnalyticsEnabled:@(YES)];
     [mcsdkBuilder sfmc_setPiAnalyticsEnabled:@(YES)];
@@ -329,6 +327,22 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)sfmc_handleInAppMessagingFeatureEvent:(SFMCSdkInAppMessagingAnalyticsEvent *)iamEventBase;
 
 - (void)sfmc_handleInAppMessagingDataProcessedEvent:(SFMCSdkInAppMessagingDataProcessedEvent *)dataProcessedEvent;
+
+- (void)sfmc_handleInboxStatusUpdateEvent:(SFMCSdkInboxStatusUpdateEvent *)statusUpdateEvent;
+
+- (void)sfmc_handleInboxMigrationCompleted:(SFMCSdkInboxMigrationCompleted *)inboxMigrationCompletedEvent;
+
+// W-23791524: entry point invoked by `MarketingCloudSdk.receive(message:)`
+// (Swift bridge) when `inbox-feature-module` publishes `InboxDataRequestEvent`
+// on module bring-up and every subsequent app foreground. Forwards to
+// `inboxDataHandler.handleInboxDataRequestEvent:` when the SDK is ready, or
+// defers via `deferredMethodsToCallWhenIsReady` otherwise (same shape as
+// `sfmc_handleInboxMigrationCompleted:`).
+- (void)sfmc_handleInboxDataRequestEvent:(SFMCSdkInboxDataRequestEvent *)inboxDataRequestEvent;
+
+- (void)sfmc_handleInboxDataProcessedCompletedEvent:(SFMCSdkInboxDataProcessedEvent *)inboxDataProcessedEvent;
+
+- (void)sfmc_handleInboxAnalyticsEvent:(SFMCSdkInboxAnalyticsEvent *)analyticsEvent;
 
 - (void)sfmc_handleTraceEvent:(SFMCSdkTraceEvent *)traceEvent;
 

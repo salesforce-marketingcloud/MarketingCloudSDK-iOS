@@ -8,47 +8,13 @@
 
 #import <MarketingCloudSDK/MarketingCloudSDK.h>
 
-/**
- Supporting protocol for the MobilePush SDK's support for Locations.
- 
- Implementation of this protocol is not required for the Location feature to work, although it provides addition control for an application developer.
- 
- This protocol allows for awareness into the SDK's lifecycle for Location tracking and messaging.
- */
-@protocol MarketingCloudSDKLocationDelegate <NSObject>
-
-@required
-
-/**
- Method called by the SDK when a Location message is ready to be shown. The delegate implementing this method returns YES or NO.
- 
- YES indicates to the SDK that this message is able to be shown (allowed by the application).
- 
- NO indicates that the SDK should not show this message.
- 
- @param message NSDictionary representing a MobilePush Location message
- @param region NSDictionary representing a MobilePush region (geofence or beacon), which can be converted into a CLRegion object via the method sfmc_regionFromDictionary
- 
- @return value reflecting application's behavior
- */
-- (BOOL) sfmc_shouldShowLocationMessage:(NSDictionary * _Nonnull) message forRegion:(NSDictionary * _Nonnull) region;
-
-@end
-
 /** Location */
 @interface MobilePushSDK (Location)
 
 /**
- Method to set a delegate implementing the MarketingCloudSDKLocationDelegate.
+ Method to set a delegate implementing the SFMCSdkLocationDelegate.
  
- @param delegate value A class adhering to the MarketingCloudSDKLocationDelegate and implementing the required method.
- */
-- (void) sfmc_setLocationDelegate:(id<MarketingCloudSDKLocationDelegate> _Nullable)delegate;
-
-/**
- Method to set a delegate implementing the MarketingCloudSDKLocationDelegate.
- 
- @param delegate value A class adhering to the MarketingCloudSDKLocationDelegate and implementing the required method.
+ @param delegate value A class adhering to the SFMCSdkLocationDelegate and implementing the required method.
  */
 - (void) sfmc_setSFMCSdkLocationDelegate:(id<SFMCSdkLocationDelegate> _Nullable)delegate;
 
