@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InboxFeature Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/InboxFeature" class="dashAnchor"></a>
+    <a title="InboxFeature Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InboxFeatureSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InboxFeatureSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InboxFeature Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeature.html">InboxFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeatureConfigBuilder.html">InboxFeatureConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InboxFeature</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFInboxFeature</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="kt">InboxFeature</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SFMCModule</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InboxFeature</span><span class="p">:</span> <span class="kt">Subscriber</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InboxFeature</span><span class="p">:</span> <span class="kt">Publisher</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InboxFeature</span><span class="p">:</span> <span class="kt">InboxFeatureApi</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">InboxFeature</span><span class="p">:</span> <span class="kt">InboxFeatureProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Main entry point for the Inbox feature module.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Request%20SDK"></a>
+                <a name="//apple_ref/swift/Section/Request SDK" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Request%20SDK"></a>
+                  <h3 class="section-name"><span>Request SDK</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeature(cm)requestSdk:"></a>
+                    <a name="//apple_ref/swift/Method/requestSdk(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeature(cm)requestSdk:">requestSdk(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Requests the Inbox Feature Module when it&rsquo;s operational and safe to use. The provided callback will be invoked with the Inbox Feature Module when it&rsquo;s ready.
+All Inbox feature module-related API calls should be made within this function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">requestSdk</span><span class="p">(</span><span class="n">_</span> <span class="nv">callback</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">inboxFeature</span><span class="p">:</span> <span class="kt">InboxFeatureApi</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>callback</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A callback that will receive the Inbox Feature Module when it&rsquo;s operational/ready.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Reads"></a>
+                <a name="//apple_ref/swift/Section/Reads" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Reads"></a>
+                  <h3 class="section-name"><span>Reads</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getAllMessages"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getAllMessages">getAllMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns all active Inbox messages already downloaded.</p>
+
+<p>Active messages are within their start and end dates and are not deleted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">InboxMessage</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Inbox messages, or an empty array when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getUnreadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getUnreadMessages">getUnreadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns unread active Inbox messages already downloaded.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">InboxMessage</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Unread Inbox messages, or an empty array when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getReadMessages"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getReadMessages">getReadMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns active Inbox messages marked as read.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">InboxMessage</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Read Inbox messages, or an empty array when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getDeletedMessages"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessages()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getDeletedMessages">getDeletedMessages()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns active Inbox messages marked as deleted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessages</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">InboxMessage</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Deleted Inbox messages, or an empty array when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Counts"></a>
+                <a name="//apple_ref/swift/Section/Counts" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Counts"></a>
+                  <h3 class="section-name"><span>Counts</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getAllMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getAllMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getAllMessagesCount">getAllMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the count of all active Inbox messages already downloaded.</p>
+
+<p>Useful for inbox count badges or other interface elements, without having to fetch messages directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getAllMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of messages, or <code>0</code> when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getUnreadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getUnreadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getUnreadMessagesCount">getUnreadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the count of unread active Inbox messages already downloaded.</p>
+
+<p>Useful for inbox count badges or other interface elements, without having to fetch messages directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getUnreadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of messages, or <code>0</code> when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getReadMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getReadMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getReadMessagesCount">getReadMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the count of active Inbox messages marked as read.</p>
+
+<p>Useful for inbox count badges or other interface elements, without having to fetch messages directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getReadMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of messages, or <code>0</code> when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getDeletedMessagesCount"></a>
+                    <a name="//apple_ref/swift/Method/getDeletedMessagesCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)getDeletedMessagesCount">getDeletedMessagesCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the count of active Inbox messages marked as deleted.</p>
+
+<p>Useful for inbox count badges or other interface elements, without having to fetch messages directly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getDeletedMessagesCount</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The number of messages, or <code>0</code> when the module is not operational or Inbox is disabled.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Mutations"></a>
+                <a name="//apple_ref/swift/Section/Mutations" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Mutations"></a>
+                  <h3 class="section-name"><span>Mutations</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageReadWithId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageRead(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageReadWithId:">markMessageRead(id:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks an Inbox message as read.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.
+A deleted message stays deleted. The read state is synced to the server on the next status update.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageRead</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the message was marked read. <code>false</code> if the module is not operational, Inbox is disabled, or the identifier is unknown.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageDeletedWithId:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageDeleted(id:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageDeletedWithId:">markMessageDeleted(id:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks an Inbox message as deleted.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.
+Deletion takes precedence over read when the status is synced to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageDeleted</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message identifier.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the message was marked deleted. <code>false</code> if the module is not operational, Inbox is disabled, or the identifier is unknown.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageReadWithMessage:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageRead(message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageReadWithMessage:">markMessageRead(message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks an Inbox message as read.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageRead</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">InboxMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message to mark as read.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the message was marked read. <code>false</code> if the module is not operational, Inbox is disabled, or the message is unknown.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageDeletedWithMessage:"></a>
+                    <a name="//apple_ref/swift/Method/markMessageDeleted(message:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageDeletedWithMessage:">markMessageDeleted(message:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks an Inbox message as deleted.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markMessageDeleted</span><span class="p">(</span><span class="nv">message</span><span class="p">:</span> <span class="kt">InboxMessage</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message to mark as deleted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the message was marked deleted. <code>false</code> if the module is not operational, Inbox is disabled, or the message is unknown.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markAllMessagesRead"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesRead()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markAllMessagesRead">markAllMessagesRead()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks all active Inbox messages as read.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesRead</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if messages were marked read. <code>false</code> if the module is not operational, Inbox is disabled, or there were no unread messages.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markAllMessagesDeleted"></a>
+                    <a name="//apple_ref/swift/Method/markAllMessagesDeleted()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markAllMessagesDeleted">markAllMessagesDeleted()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Marks all active Inbox messages as deleted.</p>
+
+<p>This state is persisted locally and is reset if the SDK&rsquo;s data is reset, for example after the app is deleted and reinstalled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">markAllMessagesDeleted</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if messages were marked deleted. <code>false</code> if the module is not operational, Inbox is disabled, or there were no messages to delete.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Refresh"></a>
+                <a name="//apple_ref/swift/Section/Refresh" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Refresh"></a>
+                  <h3 class="section-name"><span>Refresh</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)refreshMessages:"></a>
+                    <a name="//apple_ref/swift/Method/refreshMessages(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)refreshMessages:">refreshMessages(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reloads Inbox messages from each operational producer (Marketing Cloud Engagement, Mobile App Messaging, or both).</p>
+
+<p>Manual refresh is limited to one request per minute. A call made before that interval elapses, while Inbox is disabled, or while the module is not operational completes with <code>false</code> and <code>MessageProducer/inboxFeature</code>.</p>
+
+<p>During server-side throttling a producer may answer <code>429 - Too Many Requests</code>. That failure is delivered through <code>completion</code> and is not sent to <code><a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a></code>.</p>
+
+<p>The completion is invoked once for each expected producer. Success and failure from a producer are delivered on the main queue. A refused refresh stays on the calling thread.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">refreshMessages</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span> <span class="p">((</span><span class="kt">Bool</span><span class="p">,</span> <span class="kt">MessageProducer</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional one-shot callback. Pass <code>nil</code> to refresh without completion callbacks. Registering a completion does not replace an <code><a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)registerInboxResponseDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/registerInboxResponseDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)registerInboxResponseDelegate:">registerInboxResponseDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers for successful Inbox downloads.</p>
+
+<p>The SDK retains <code>delegate</code> until <code><a href="../Classes/InboxFeature.html#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)unregisterInboxResponseDelegate:">unregisterInboxResponseDelegate(_:)</a></code>. No-op if the module is not operational.
+Failures are not delivered here. Use the <code>refreshMessages</code> completion for refresh outcomes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">registerInboxResponseDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object to notify after a producer persists Inbox messages.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)unregisterInboxResponseDelegate:"></a>
+                    <a name="//apple_ref/swift/Method/unregisterInboxResponseDelegate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)unregisterInboxResponseDelegate:">unregisterInboxResponseDelegate(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes a previously registered response delegate.</p>
+
+<p>No-op if the module is not operational or the delegate was not registered.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">unregisterInboxResponseDelegate</span><span class="p">(</span><span class="n">_</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Analytics"></a>
+                <a name="//apple_ref/swift/Section/Analytics" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Analytics"></a>
+                  <h3 class="section-name"><span>Analytics</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)trackMessageOpenEvent:"></a>
+                    <a name="//apple_ref/swift/Method/trackMessageOpenEvent(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)trackMessageOpenEvent:">trackMessageOpenEvent(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Records that the user opened an Inbox message.</p>
+
+<p>No-op if the module is not operational or Inbox is disabled. This does not mark the message as read. Call <code><a href="../Classes/InboxFeature.html#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)markMessageReadWithMessage:">markMessageRead(message:)</a></code> to update read state.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackMessageOpenEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">InboxMessage</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message that was opened.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)trackMessageInteractionEvent:interaction:"></a>
+                    <a name="//apple_ref/swift/Method/trackMessageInteractionEvent(_:interaction:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)trackMessageInteractionEvent:interaction:">trackMessageInteractionEvent(_:<wbr>interaction:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Records a tap on an Inbox message call to action or button.</p>
+
+<p>No-op if the module is not operational or Inbox is disabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">trackMessageInteractionEvent</span><span class="p">(</span><span class="n">_</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">InboxMessage</span><span class="p">,</span> <span class="nv">interaction</span><span class="p">:</span> <span class="kt">InboxMessageInteraction</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Inbox message that was tapped.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interaction</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The tapped object. Use <code>InboxInteractionType/cta</code> for the message action and <code>InboxInteractionType/button</code> with the button identifier for a button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Feature%20Toggle"></a>
+                <a name="//apple_ref/swift/Section/Feature Toggle" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Feature%20Toggle"></a>
+                  <h3 class="section-name"><span>Feature Toggle</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)setInboxEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setInboxEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)setInboxEnabled:">setInboxEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables or disables Inbox processing for this app.</p>
+
+<p>Disabling Inbox cancels a refresh that is still waiting for producers. It does not delete messages already downloaded.
+While Inbox is disabled, reads return empty results, mutations return <code>false</code>, analytics no-op, and <code>refreshMessages</code> completes with <code>false</code>.
+No-op if the module is not operational.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setInboxEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pass <code>true</code> to enable Inbox, or <code>false</code> to disable it.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)isInboxEnabled"></a>
+                    <a name="//apple_ref/swift/Method/isInboxEnabled()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@InboxFeatureSDK@objc(cs)SFInboxFeature(im)isInboxEnabled">isInboxEnabled()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns whether Inbox processing is enabled.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isInboxEnabled</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> when Inbox is enabled. <code>false</code> when it is disabled or the module is not operational.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-11-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

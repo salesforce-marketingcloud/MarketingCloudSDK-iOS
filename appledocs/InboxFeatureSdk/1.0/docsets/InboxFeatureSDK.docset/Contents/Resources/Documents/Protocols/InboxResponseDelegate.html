@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InboxResponseDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/InboxResponseDelegate" class="dashAnchor"></a>
+    <a title="InboxResponseDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InboxFeatureSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InboxFeatureSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InboxResponseDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeature.html">InboxFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeatureConfigBuilder.html">InboxFeatureConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InboxResponseDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFInboxResponseDelegate</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">InboxResponseDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>Receives successful inbox ingest results from an operational producer (MCE or MAM).
+Failures do not invoke this protocol; use the <code>refreshMessages</code> completion for refresh outcomes.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InboxFeatureSDK@objc(pl)SFInboxResponseDelegate(im)inboxMessagesDidChange:source:"></a>
+                    <a name="//apple_ref/swift/Method/inboxMessagesDidChange(_:source:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InboxFeatureSDK@objc(pl)SFInboxResponseDelegate(im)inboxMessagesDidChange:source:">inboxMessagesDidChange(_:<wbr>source:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called on the main queue after a producer successfully returns inbox data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">inboxMessagesDidChange</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">messages</span><span class="p">:</span> <span class="p">[</span><span class="kt">InboxMessage</span><span class="p">],</span>
+    <span class="nv">source</span><span class="p">:</span> <span class="kt">MessageProducer</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>messages</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Messages persisted from this producer. MAM batches are empty when the
+event user does not match the current identity. May also be empty for a nil/empty payload.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>source</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The producer that delivered the batch.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-11-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

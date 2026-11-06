@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InboxMessage Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/InboxMessage" class="dashAnchor"></a>
+    <a title="InboxMessage Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SFMCSdk Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SFMCSdk Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InboxMessage Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../SFMCSDK.html">SFMCSDK</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CDP.html">CDP</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PERSONALIZATION.html">PERSONALIZATION</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Identity.html">Identity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SFMCSdk.html">SFMCSdk</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConfigBuilder.html">ConfigBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ModuleInitStatus.html">ModuleInitStatus</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Identity%20Protocols.html">Identity Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentityInfo.html">IdentityInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/IdentityModifier.html">IdentityModifier</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Events.html">Events</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/CustomEvent.html">CustomEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Logging.html">Logging</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/LogOutputter.html">LogOutputter</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enumerations.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ModuleName.html">ModuleName</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OperationResult.html">OperationResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLType.html">URLType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ModuleConfig.html">ModuleConfig</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageEventDelegate.html">InAppMessageEventDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/URLHandlingDelegate.html">URLHandlingDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../In-App%20Message%20Details.html">In-App Message Details</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageDetails.html">InAppMessageDetails</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageAnimation.html">InAppMessageAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageBorder.html">InAppMessageBorder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageButton.html">InAppMessageButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageCloseButton.html">InAppMessageCloseButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageMedia.html">InAppMessageMedia</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageShadow.html">InAppMessageShadow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageSpacing.html">InAppMessageSpacing</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageTertiaryText.html">InAppMessageTertiaryText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InAppMessageText.html">InAppMessageText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppMessageCloseAction.html">InAppMessageCloseAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageDismissReason.html">InAppMessageDismissReason</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageAlignment.html">InAppMessageAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageAnimationType.html">InAppMessageAnimationType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageButtonActionType.html">InAppMessageButtonActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageButtonConfiguration.html">InAppMessageButtonConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageCloseButtonAlignment.html">InAppMessageCloseButtonAlignment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageImageContentMode.html">InAppMessageImageContentMode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageImageSize.html">InAppMessageImageSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageLayoutOrder.html">InAppMessageLayoutOrder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageSize.html">InAppMessageSize</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InAppMessageType.html">InAppMessageType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Inbox%20Message%20Details.html">Inbox Message Details</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxMessage.html">InboxMessage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InboxMessageType.html">InboxMessageType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxAudienceType.html">InboxAudienceType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxAction.html">InboxAction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxActionType.html">InboxActionType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxText.html">InboxText</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxButton.html">InboxButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxMedia.html">InboxMedia</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxMediaType.html">InboxMediaType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxMessageInteraction.html">InboxMessageInteraction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/InboxInteractionType.html">InboxInteractionType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InboxMessage</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFMCSdkInboxMessage</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">InboxMessage</span></code></pre>
+
+                </div>
+              </div>
+            <p>Public protocol representing an inbox message from the Marketing Cloud.
+Consumers receive instances of this protocol via <code>InboxFeature</code> methods.
+Every property is read-only: an inbox message is an immutable snapshot of what the
+SDK received. Optional properties are <code>nil</code> when the backend did not supply a value.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Identifiers"></a>
+                <a name="//apple_ref/swift/Section/Identifiers" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Identifiers"></a>
+                  <h3 class="section-name"><span>Identifiers</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)messageId"></a>
+                    <a name="//apple_ref/swift/Property/messageId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)messageId">messageId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for the message. Maps to <code>messageId</code> from the server payload.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">messageId</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)messageType"></a>
+                    <a name="//apple_ref/swift/Property/messageType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)messageType">messageType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The kind of inbox message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">messageType</span><span class="p">:</span> <span class="kt"><a href="../Enums/InboxMessageType.html">InboxMessageType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)source"></a>
+                    <a name="//apple_ref/swift/Property/source" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)source">source</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The SDK module that originated this inbox message. See <code><a href="../Enums/ModuleName.html">ModuleName</a></code> for possible values.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">source</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)audienceType"></a>
+                    <a name="//apple_ref/swift/Property/audienceType" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)audienceType">audienceType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Audience string. Known values: <code><a href="../Classes/InboxAudienceType.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkInboxAudienceType(cpy)device">device</a></code>, <code><a href="../Classes/InboxAudienceType.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkInboxAudienceType(cpy)user">user</a></code>.
+Unknown values are surfaced as-is. Missing or empty is <code><a href="../Classes/InboxAudienceType.html#/c:@M@SFMCSDK@objc(cs)SFMCSdkInboxAudienceType(cpy)device">device</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">audienceType</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Content"></a>
+                <a name="//apple_ref/swift/Section/Content" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Content"></a>
+                  <h3 class="section-name"><span>Content</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)subject"></a>
+                    <a name="//apple_ref/swift/Property/subject" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)subject">subject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Subject line of the inbox message. Displayed as the primary title in inbox list views.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subject</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxText.html">InboxText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)subtitle"></a>
+                    <a name="//apple_ref/swift/Property/subtitle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)subtitle">subtitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display subtitle of the message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">subtitle</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxText.html">InboxText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)message"></a>
+                    <a name="//apple_ref/swift/Property/message" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)message">message</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Body text of the inbox message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">message</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxText.html">InboxText</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)action"></a>
+                    <a name="//apple_ref/swift/Property/action" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)action">action</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Message-level call to action. Track a tap with
+<code>InboxMessageInteraction(type: .cta, id: nil)</code>. <code><a href="../Protocols/InboxAction.html#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxAction(py)value">value</a></code> is the clicked text.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">action</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxAction.html">InboxAction</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)custom"></a>
+                    <a name="//apple_ref/swift/Property/custom" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)custom">custom</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom string payload attached to the message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">custom</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)customKeys"></a>
+                    <a name="//apple_ref/swift/Property/customKeys" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)customKeys">customKeys</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Custom key/value pairs attached to the message, flattened into a single dictionary.
+The backend delivers these as an array of <code>{key, value}</code> objects; the inbox module
+flattens them at parse time so consumers receive a straightforward <code>[String: Any]</code>.
+On duplicate keys the last pair wins; pairs missing a String <code>key</code> are dropped.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">customKeys</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)sound"></a>
+                    <a name="//apple_ref/swift/Property/sound" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)sound">sound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sound identifier associated with the message.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sound</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)media"></a>
+                    <a name="//apple_ref/swift/Property/media" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)media">media</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Message&rsquo;s media asset, if any.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">media</span><span class="p">:</span> <span class="kt"><a href="../Protocols/InboxMedia.html">InboxMedia</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)buttons"></a>
+                    <a name="//apple_ref/swift/Property/buttons" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)buttons">buttons</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Buttons on this message, in payload order. <code>nil</code> when the message has none.
+Track a tap with <code>InboxMessageInteraction(type: .button, id: button.id)</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">buttons</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/InboxButton.html">InboxButton</a></span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)notificationMessage"></a>
+                    <a name="//apple_ref/swift/Property/notificationMessage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)notificationMessage">notificationMessage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Raw notification payload backing the message, if delivered via push.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">notificationMessage</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Status"></a>
+                <a name="//apple_ref/swift/Section/Status" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Status"></a>
+                  <h3 class="section-name"><span>Status</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)read"></a>
+                    <a name="//apple_ref/swift/Property/read" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)read">read</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the message has been read.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">read</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)deleted"></a>
+                    <a name="//apple_ref/swift/Property/deleted" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)deleted">deleted</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether the message has been deleted.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">deleted</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)countInBadge"></a>
+                    <a name="//apple_ref/swift/Property/countInBadge" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)countInBadge">countInBadge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether this message contributes to the unread-count badge. Defaults to
+<code>true</code> when the server payload omits the flag.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">countInBadge</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Dates"></a>
+                <a name="//apple_ref/swift/Section/Dates" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Dates"></a>
+                  <h3 class="section-name"><span>Dates</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)startDate"></a>
+                    <a name="//apple_ref/swift/Property/startDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)startDate">startDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Start date (UTC) when the message becomes valid. Messages before this date are filtered out.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)endDate"></a>
+                    <a name="//apple_ref/swift/Property/endDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)endDate">endDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>End date (UTC) when the message expires. Messages past this date are filtered out.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)sendDate"></a>
+                    <a name="//apple_ref/swift/Property/sendDate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SFMCSDK@objc(pl)SFMCSdkInboxMessage(py)sendDate">sendDate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Date (UTC) when the message was sent from the Marketing Cloud server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">sendDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-11-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

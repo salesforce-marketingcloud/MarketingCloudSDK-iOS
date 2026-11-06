@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>InboxFeatureConfigBuilder Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/InboxFeatureConfigBuilder" class="dashAnchor"></a>
+    <a title="InboxFeatureConfigBuilder Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InboxFeatureSDK Docs</a> (100% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InboxFeatureSDK Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        InboxFeatureConfigBuilder Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeature.html">InboxFeature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InboxFeatureConfigBuilder.html">InboxFeatureConfigBuilder</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/InboxResponseDelegate.html">InboxResponseDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>InboxFeatureConfigBuilder</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span><span class="p">(</span><span class="kt">SFInboxFeatureConfigBuilder</span><span class="p">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">InboxFeatureConfigBuilder</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>InboxFeatureConfigBuilder class</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Setters"></a>
+                <a name="//apple_ref/swift/Section/Setters" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Setters"></a>
+                  <h3 class="section-name"><span>Setters</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)setMarkMessageReadOnInboxNotificationOpen:"></a>
+                    <a name="//apple_ref/swift/Method/setMarkMessageReadOnInboxNotificationOpen(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)setMarkMessageReadOnInboxNotificationOpen:">setMarkMessageReadOnInboxNotificationOpen(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Activates/Deactivates the automatic marking of inbox messages as read when clicking the inbox notification, provided that this configuration is enabled. The default setting for this API is true.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMarkMessageReadOnInboxNotificationOpen</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">InboxFeatureConfigBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)setUnreadMessageBadgeEnabled:"></a>
+                    <a name="//apple_ref/swift/Method/setUnreadMessageBadgeEnabled(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)setUnreadMessageBadgeEnabled:">setUnreadMessageBadgeEnabled(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Enables or disables SDK-managed badging of the unread inbox message count. When enabled the
+SDK sets the app-icon badge to the unread count; when disabled the app owns the badge and the
+SDK leaves it untouched. The default setting for this API is <code>true</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setUnreadMessageBadgeEnabled</span><span class="p">(</span><span class="n">_</span> <span class="nv">enabled</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">InboxFeatureConfigBuilder</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>enabled</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>enables (<code>true</code>) or disables (<code>false</code>) SDK-managed unread-message badging.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Build%20Method"></a>
+                <a name="//apple_ref/swift/Section/Build Method" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Build%20Method"></a>
+                  <h3 class="section-name"><span>Build Method</span>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)build"></a>
+                    <a name="//apple_ref/swift/Method/build()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InboxFeatureSDK@objc(cs)SFInboxFeatureConfigBuilder(im)build">build()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an InboxFeatureConfig containing the current builder configuration settings. This can be passed to the ConfigBuilder method(s).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">build</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">InboxFeatureConfig</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener">Marketing Cloud iOS SDK Team</a>. All rights reserved. (Last updated: 2026-11-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.15.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
