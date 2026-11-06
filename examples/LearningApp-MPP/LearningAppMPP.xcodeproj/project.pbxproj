@@ -1,0 +1,1160 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20AA1920E7EA9A265407D332 /* Pods_LearningAppMPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFB4836F54E5E45C3B1B6727 /* Pods_LearningAppMPP.framework */; };
+		601B51CD2D6C748200AD6A81 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B51CC2D6C748200AD6A81 /* UserNotifications.framework */; };
+		601B51CF2D6C748200AD6A81 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601B51CE2D6C748200AD6A81 /* UserNotificationsUI.framework */; };
+		601B51D22D6C748200AD6A81 /* ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601B51D12D6C748200AD6A81 /* ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift */; };
+		601B51D92D6C748200AD6A81 /* LearningAppMPPContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 601B51CA2D6C748200AD6A81 /* LearningAppMPPContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		89D5BE34B242E7423657936F /* Pods_LearningAppMPPContentExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5C5AD9209CEF566E63FC1F /* Pods_LearningAppMPPContentExtension.framework */; };
+		A404EC021CFBB2324DD2BF9E /* Pods_LearningAppMPPServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456DD6E436E086C455B246D /* Pods_LearningAppMPPServiceExtension.framework */; };
+		A73AE5032923B15D001F75EE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73AE5012923B15D001F75EE /* RegistrationViewController.swift */; };
+		A789C53B2922189600890C7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789C53A2922189600890C7B /* AppDelegate.swift */; };
+		A789C53F2922189600890C7B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789C53E2922189600890C7B /* HomeViewController.swift */; };
+		A789C5442922189900890C7B /* ../Shared/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A789C5432922189900890C7B /* ../Shared/Assets.xcassets */; };
+		A789C5472922189900890C7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A789C5452922189900890C7B /* LaunchScreen.storyboard */; };
+		A789C5522922189900890C7B /* LearningAppMPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789C5512922189900890C7B /* LearningAppMPPTests.swift */; };
+		A789C55C2922189900890C7B /* LearningAppMPPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789C55B2922189900890C7B /* LearningAppMPPUITests.swift */; };
+		A789C55E2922189900890C7B /* LearningAppMPPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A789C55D2922189900890C7B /* LearningAppMPPUITestsLaunchTests.swift */; };
+		A789C56C29221F1300890C7B /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = A789C56B29221F1300890C7B /* FirebaseMessaging */; };
+		A793B9352923A26A00065B56 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A793B9342923A26A00065B56 /* NotificationService.swift */; };
+		A793B9392923A26A00065B56 /* LearningAppMPPServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A793B9322923A26A00065B56 /* LearningAppMPPServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ECC5341E2EA8A9EB00DBCA49 /* ../Shared/Cells/AttributeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5341D2EA8A9EB00DBCA49 /* ../Shared/Cells/AttributeCell.swift */; };
+		ECC534222EA8A9F500DBCA49 /* ToggleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC534212EA8A9F500DBCA49 /* ToggleCell.swift */; };
+		ECC534232EA8A9F500DBCA49 /* ../Shared/Cells/SubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC5341F2EA8A9F500DBCA49 /* ../Shared/Cells/SubtitleCell.swift */; };
+		ECC534242EA8A9F500DBCA49 /* ../Shared/Cells/TextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC534202EA8A9F500DBCA49 /* ../Shared/Cells/TextFieldCell.swift */; };
+		ECC534272EA8AA0E00DBCA49 /* ../Shared/CustomEventTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC534262EA8AA0E00DBCA49 /* ../Shared/CustomEventTrackingViewController.swift */; };
+		ECC534282EA8AA0E00DBCA49 /* ../Shared/CustomEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC534252EA8AA0E00DBCA49 /* ../Shared/CustomEventViewController.swift */; };
+		ECC5342A2EA8AA1800DBCA49 /* ../Shared/DebugStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC534292EA8AA1800DBCA49 /* ../Shared/DebugStateViewController.swift */; };
+		ECDDEE13306239EF002DC029 /* InboxTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDEE12306239EF002DC029 /* InboxTableViewController.swift */; };
+		ECDDEE1B30625000002DC029 /* ../Shared/Cells/InboxMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDEE1A30625000002DC029 /* ../Shared/Cells/InboxMessageTableViewCell.swift */; };
+		ECDDEE2530627000002DC029 /* InboxMessageDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDDEE2430627000002DC029 /* InboxMessageDetailsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		601B51D72D6C748200AD6A81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A789C52F2922189600890C7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 601B51C92D6C748200AD6A81;
+			remoteInfo = LearningAppMPPContentExtension;
+		};
+		A789C54E2922189900890C7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A789C52F2922189600890C7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A789C5362922189600890C7B;
+			remoteInfo = LearningAppMPP;
+		};
+		A789C5582922189900890C7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A789C52F2922189600890C7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A789C5362922189600890C7B;
+			remoteInfo = LearningAppMPP;
+		};
+		A793B9372923A26A00065B56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A789C52F2922189600890C7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A793B9312923A26A00065B56;
+			remoteInfo = LearningAppMPPServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A793B93D2923A26A00065B56 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A793B9392923A26A00065B56 /* LearningAppMPPServiceExtension.appex in Embed App Extensions */,
+				601B51D92D6C748200AD6A81 /* LearningAppMPPContentExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0456DD6E436E086C455B246D /* Pods_LearningAppMPPServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAppMPPServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAD69C92A27D5C31C8411D3 /* Pods-LearningAppMPPServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPPServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-LearningAppMPPServiceExtension/Pods-LearningAppMPPServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		49D8D2A8758A1C19808F0470 /* Pods-LearningAppMPPContentExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPPContentExtension.release.xcconfig"; path = "Target Support Files/Pods-LearningAppMPPContentExtension/Pods-LearningAppMPPContentExtension.release.xcconfig"; sourceTree = "<group>"; };
+		601B51CA2D6C748200AD6A81 /* LearningAppMPPContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LearningAppMPPContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		601B51CC2D6C748200AD6A81 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		601B51CE2D6C748200AD6A81 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		601B51D12D6C748200AD6A81 /* ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift; sourceTree = SOURCE_ROOT; };
+		601B51D62D6C748200AD6A81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		601B51DD2D6C74B600AD6A81 /* LearningAppMPPServiceExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningAppMPPServiceExtension.entitlements; sourceTree = "<group>"; };
+		601B51DE2D6C74D000AD6A81 /* LearningAppMPPContentExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningAppMPPContentExtension.entitlements; sourceTree = "<group>"; };
+		A73AE5012923B15D001F75EE /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		A789C5372922189600890C7B /* LearningAppMPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningAppMPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A789C53A2922189600890C7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A789C53E2922189600890C7B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A789C5432922189900890C7B /* ../Shared/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ../Shared/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		A789C5462922189900890C7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ../Shared/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		A789C5482922189900890C7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A789C54D2922189900890C7B /* LearningAppMPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningAppMPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A789C5512922189900890C7B /* LearningAppMPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppMPPTests.swift; sourceTree = "<group>"; };
+		A789C5572922189900890C7B /* LearningAppMPPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearningAppMPPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A789C55B2922189900890C7B /* LearningAppMPPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppMPPUITests.swift; sourceTree = "<group>"; };
+		A789C55D2922189900890C7B /* LearningAppMPPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningAppMPPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A793B92D29236F1700065B56 /* LearningAppMPP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LearningAppMPP.entitlements; sourceTree = "<group>"; };
+		A793B9322923A26A00065B56 /* LearningAppMPPServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LearningAppMPPServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A793B9342923A26A00065B56 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A793B9362923A26A00065B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB4836F54E5E45C3B1B6727 /* Pods_LearningAppMPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAppMPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A90C2D587F7F538EA0D861 /* Pods-LearningAppMPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPP.debug.xcconfig"; path = "Target Support Files/Pods-LearningAppMPP/Pods-LearningAppMPP.debug.xcconfig"; sourceTree = "<group>"; };
+		D49E344BC6D69418DCB6DB6B /* Pods-LearningAppMPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPP.release.xcconfig"; path = "Target Support Files/Pods-LearningAppMPP/Pods-LearningAppMPP.release.xcconfig"; sourceTree = "<group>"; };
+		D83086101654AB43FBE2BDEF /* Pods-LearningAppMPPContentExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPPContentExtension.debug.xcconfig"; path = "Target Support Files/Pods-LearningAppMPPContentExtension/Pods-LearningAppMPPContentExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5C5AD9209CEF566E63FC1F /* Pods_LearningAppMPPContentExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningAppMPPContentExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC5341D2EA8A9EB00DBCA49 /* ../Shared/Cells/AttributeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/Cells/AttributeCell.swift; sourceTree = SOURCE_ROOT; };
+		ECC5341F2EA8A9F500DBCA49 /* ../Shared/Cells/SubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/Cells/SubtitleCell.swift; sourceTree = SOURCE_ROOT; };
+		ECC534202EA8A9F500DBCA49 /* ../Shared/Cells/TextFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/Cells/TextFieldCell.swift; sourceTree = SOURCE_ROOT; };
+		ECC534212EA8A9F500DBCA49 /* ToggleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleCell.swift; sourceTree = "<group>"; };
+		ECC534252EA8AA0E00DBCA49 /* ../Shared/CustomEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/CustomEventViewController.swift; sourceTree = SOURCE_ROOT; };
+		ECC534262EA8AA0E00DBCA49 /* ../Shared/CustomEventTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/CustomEventTrackingViewController.swift; sourceTree = SOURCE_ROOT; };
+		ECC534292EA8AA1800DBCA49 /* ../Shared/DebugStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/DebugStateViewController.swift; sourceTree = SOURCE_ROOT; };
+		ECDDEE12306239EF002DC029 /* InboxTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InboxTableViewController.swift; path = ../Shared/InboxTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		ECDDEE1A30625000002DC029 /* ../Shared/Cells/InboxMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ../Shared/Cells/InboxMessageTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		ECDDEE2430627000002DC029 /* InboxMessageDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InboxMessageDetailsViewController.swift; path = ../Shared/InboxMessageDetailsViewController.swift; sourceTree = SOURCE_ROOT; };
+		F7F4EBFD6354406D9B65D5D7 /* Pods-LearningAppMPPServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningAppMPPServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-LearningAppMPPServiceExtension/Pods-LearningAppMPPServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		601B51C72D6C748200AD6A81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51CF2D6C748200AD6A81 /* UserNotificationsUI.framework in Frameworks */,
+				601B51CD2D6C748200AD6A81 /* UserNotifications.framework in Frameworks */,
+				89D5BE34B242E7423657936F /* Pods_LearningAppMPPContentExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5342922189600890C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A789C56C29221F1300890C7B /* FirebaseMessaging in Frameworks */,
+				20AA1920E7EA9A265407D332 /* Pods_LearningAppMPP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C54A2922189900890C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5542922189900890C7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A793B92F2923A26A00065B56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A404EC021CFBB2324DD2BF9E /* Pods_LearningAppMPPServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E57D5AD18DB86A2423AE2C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8A90C2D587F7F538EA0D861 /* Pods-LearningAppMPP.debug.xcconfig */,
+				D49E344BC6D69418DCB6DB6B /* Pods-LearningAppMPP.release.xcconfig */,
+				D83086101654AB43FBE2BDEF /* Pods-LearningAppMPPContentExtension.debug.xcconfig */,
+				49D8D2A8758A1C19808F0470 /* Pods-LearningAppMPPContentExtension.release.xcconfig */,
+				F7F4EBFD6354406D9B65D5D7 /* Pods-LearningAppMPPServiceExtension.debug.xcconfig */,
+				0DAD69C92A27D5C31C8411D3 /* Pods-LearningAppMPPServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		601B51CB2D6C748200AD6A81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				601B51CC2D6C748200AD6A81 /* UserNotifications.framework */,
+				601B51CE2D6C748200AD6A81 /* UserNotificationsUI.framework */,
+				AFB4836F54E5E45C3B1B6727 /* Pods_LearningAppMPP.framework */,
+				DD5C5AD9209CEF566E63FC1F /* Pods_LearningAppMPPContentExtension.framework */,
+				0456DD6E436E086C455B246D /* Pods_LearningAppMPPServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		601B51D02D6C748200AD6A81 /* LearningAppMPPContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				601B51DE2D6C74D000AD6A81 /* LearningAppMPPContentExtension.entitlements */,
+				601B51D12D6C748200AD6A81 /* ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift */,
+				601B51D62D6C748200AD6A81 /* Info.plist */,
+			);
+			path = LearningAppMPPContentExtension;
+			sourceTree = "<group>";
+		};
+		A789C52E2922189600890C7B = {
+			isa = PBXGroup;
+			children = (
+				A789C5392922189600890C7B /* LearningAppMPP */,
+				A789C5502922189900890C7B /* LearningAppMPPTests */,
+				A789C55A2922189900890C7B /* LearningAppMPPUITests */,
+				A793B9332923A26A00065B56 /* LearningAppMPPServiceExtension */,
+				601B51D02D6C748200AD6A81 /* LearningAppMPPContentExtension */,
+				601B51CB2D6C748200AD6A81 /* Frameworks */,
+				A789C5382922189600890C7B /* Products */,
+				3E57D5AD18DB86A2423AE2C1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		A789C5382922189600890C7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A789C5372922189600890C7B /* LearningAppMPP.app */,
+				A789C54D2922189900890C7B /* LearningAppMPPTests.xctest */,
+				A789C5572922189900890C7B /* LearningAppMPPUITests.xctest */,
+				A793B9322923A26A00065B56 /* LearningAppMPPServiceExtension.appex */,
+				601B51CA2D6C748200AD6A81 /* LearningAppMPPContentExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A789C5392922189600890C7B /* LearningAppMPP */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5341C2EA8A9D600DBCA49 /* Cells */,
+				ECC534252EA8AA0E00DBCA49 /* ../Shared/CustomEventViewController.swift */,
+				ECC534292EA8AA1800DBCA49 /* ../Shared/DebugStateViewController.swift */,
+				ECC534262EA8AA0E00DBCA49 /* ../Shared/CustomEventTrackingViewController.swift */,
+				ECDDEE12306239EF002DC029 /* InboxTableViewController.swift */,
+				ECDDEE2430627000002DC029 /* InboxMessageDetailsViewController.swift */,
+				A73AE5012923B15D001F75EE /* RegistrationViewController.swift */,
+				A793B92D29236F1700065B56 /* LearningAppMPP.entitlements */,
+				A789C53A2922189600890C7B /* AppDelegate.swift */,
+				A789C53E2922189600890C7B /* HomeViewController.swift */,
+				A789C5432922189900890C7B /* ../Shared/Assets.xcassets */,
+				A789C5452922189900890C7B /* LaunchScreen.storyboard */,
+				A789C5482922189900890C7B /* Info.plist */,
+			);
+			path = LearningAppMPP;
+			sourceTree = "<group>";
+		};
+		A789C5502922189900890C7B /* LearningAppMPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				A789C5512922189900890C7B /* LearningAppMPPTests.swift */,
+			);
+			path = LearningAppMPPTests;
+			sourceTree = "<group>";
+		};
+		A789C55A2922189900890C7B /* LearningAppMPPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A789C55B2922189900890C7B /* LearningAppMPPUITests.swift */,
+				A789C55D2922189900890C7B /* LearningAppMPPUITestsLaunchTests.swift */,
+			);
+			path = LearningAppMPPUITests;
+			sourceTree = "<group>";
+		};
+		A793B9332923A26A00065B56 /* LearningAppMPPServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				601B51DD2D6C74B600AD6A81 /* LearningAppMPPServiceExtension.entitlements */,
+				A793B9342923A26A00065B56 /* NotificationService.swift */,
+				A793B9362923A26A00065B56 /* Info.plist */,
+			);
+			path = LearningAppMPPServiceExtension;
+			sourceTree = "<group>";
+		};
+		ECC5341C2EA8A9D600DBCA49 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				ECC5341F2EA8A9F500DBCA49 /* ../Shared/Cells/SubtitleCell.swift */,
+				ECDDEE1A30625000002DC029 /* ../Shared/Cells/InboxMessageTableViewCell.swift */,
+				ECC534202EA8A9F500DBCA49 /* ../Shared/Cells/TextFieldCell.swift */,
+				ECC534212EA8A9F500DBCA49 /* ToggleCell.swift */,
+				ECC5341D2EA8A9EB00DBCA49 /* ../Shared/Cells/AttributeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		601B51C92D6C748200AD6A81 /* LearningAppMPPContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 601B51DA2D6C748200AD6A81 /* Build configuration list for PBXNativeTarget "LearningAppMPPContentExtension" */;
+			buildPhases = (
+				F04E85031AC1357E34EEEBCB /* [CP] Check Pods Manifest.lock */,
+				601B51C62D6C748200AD6A81 /* Sources */,
+				601B51C72D6C748200AD6A81 /* Frameworks */,
+				601B51C82D6C748200AD6A81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningAppMPPContentExtension;
+			productName = LearningAppMPPContentExtension;
+			productReference = 601B51CA2D6C748200AD6A81 /* LearningAppMPPContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A789C5362922189600890C7B /* LearningAppMPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A789C5612922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPP" */;
+			buildPhases = (
+				0394EDAC94D893BB02665384 /* [CP] Check Pods Manifest.lock */,
+				A789C5332922189600890C7B /* Sources */,
+				A789C5342922189600890C7B /* Frameworks */,
+				A789C5352922189600890C7B /* Resources */,
+				A793B93D2923A26A00065B56 /* Embed App Extensions */,
+				4F1385841C88405C190665CB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A793B9382923A26A00065B56 /* PBXTargetDependency */,
+				601B51D82D6C748200AD6A81 /* PBXTargetDependency */,
+			);
+			name = LearningAppMPP;
+			packageProductDependencies = (
+				A789C56B29221F1300890C7B /* FirebaseMessaging */,
+			);
+			productName = LearningAppMPP;
+			productReference = A789C5372922189600890C7B /* LearningAppMPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A789C54C2922189900890C7B /* LearningAppMPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A789C5642922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPPTests" */;
+			buildPhases = (
+				A789C5492922189900890C7B /* Sources */,
+				A789C54A2922189900890C7B /* Frameworks */,
+				A789C54B2922189900890C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A789C54F2922189900890C7B /* PBXTargetDependency */,
+			);
+			name = LearningAppMPPTests;
+			productName = LearningAppMPPTests;
+			productReference = A789C54D2922189900890C7B /* LearningAppMPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A789C5562922189900890C7B /* LearningAppMPPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A789C5672922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPPUITests" */;
+			buildPhases = (
+				A789C5532922189900890C7B /* Sources */,
+				A789C5542922189900890C7B /* Frameworks */,
+				A789C5552922189900890C7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A789C5592922189900890C7B /* PBXTargetDependency */,
+			);
+			name = LearningAppMPPUITests;
+			productName = LearningAppMPPUITests;
+			productReference = A789C5572922189900890C7B /* LearningAppMPPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A793B9312923A26A00065B56 /* LearningAppMPPServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A793B93A2923A26A00065B56 /* Build configuration list for PBXNativeTarget "LearningAppMPPServiceExtension" */;
+			buildPhases = (
+				51215C37A9A6123E74BC3263 /* [CP] Check Pods Manifest.lock */,
+				A793B9302923A26A00065B56 /* Resources */,
+				A793B92E2923A26A00065B56 /* Sources */,
+				A793B92F2923A26A00065B56 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LearningAppMPPServiceExtension;
+			productName = LearningAppMPPServiceExtension;
+			productReference = A793B9322923A26A00065B56 /* LearningAppMPPServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A789C52F2922189600890C7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					601B51C92D6C748200AD6A81 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					A789C5362922189600890C7B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A789C54C2922189900890C7B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A789C5362922189600890C7B;
+					};
+					A789C5562922189900890C7B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A789C5362922189600890C7B;
+					};
+					A793B9312923A26A00065B56 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = A789C5322922189600890C7B /* Build configuration list for PBXProject "LearningAppMPP" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A789C52E2922189600890C7B;
+			packageReferences = (
+				A789C56A29221F1300890C7B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = A789C5382922189600890C7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A789C5362922189600890C7B /* LearningAppMPP */,
+				A789C54C2922189900890C7B /* LearningAppMPPTests */,
+				A789C5562922189900890C7B /* LearningAppMPPUITests */,
+				A793B9312923A26A00065B56 /* LearningAppMPPServiceExtension */,
+				601B51C92D6C748200AD6A81 /* LearningAppMPPContentExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		601B51C82D6C748200AD6A81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5352922189600890C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A789C5472922189900890C7B /* LaunchScreen.storyboard in Resources */,
+				A789C5442922189900890C7B /* ../Shared/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C54B2922189900890C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5552922189900890C7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A793B9302923A26A00065B56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0394EDAC94D893BB02665384 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningAppMPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1385841C88405C190665CB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningAppMPP/Pods-LearningAppMPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LearningAppMPP/Pods-LearningAppMPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LearningAppMPP/Pods-LearningAppMPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51215C37A9A6123E74BC3263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningAppMPPServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04E85031AC1357E34EEEBCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearningAppMPPContentExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601B51C62D6C748200AD6A81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				601B51D22D6C748200AD6A81 /* ../SharedExtensions/MarketingCloudContentExtension/NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5332922189600890C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECC534222EA8A9F500DBCA49 /* ToggleCell.swift in Sources */,
+				ECC534272EA8AA0E00DBCA49 /* ../Shared/CustomEventTrackingViewController.swift in Sources */,
+				ECC534282EA8AA0E00DBCA49 /* ../Shared/CustomEventViewController.swift in Sources */,
+				ECC534232EA8A9F500DBCA49 /* ../Shared/Cells/SubtitleCell.swift in Sources */,
+				ECC534242EA8A9F500DBCA49 /* ../Shared/Cells/TextFieldCell.swift in Sources */,
+				ECC5342A2EA8AA1800DBCA49 /* ../Shared/DebugStateViewController.swift in Sources */,
+				ECDDEE13306239EF002DC029 /* InboxTableViewController.swift in Sources */,
+				ECDDEE1B30625000002DC029 /* ../Shared/Cells/InboxMessageTableViewCell.swift in Sources */,
+				ECDDEE2530627000002DC029 /* InboxMessageDetailsViewController.swift in Sources */,
+				A73AE5032923B15D001F75EE /* RegistrationViewController.swift in Sources */,
+				A789C53F2922189600890C7B /* HomeViewController.swift in Sources */,
+				ECC5341E2EA8A9EB00DBCA49 /* ../Shared/Cells/AttributeCell.swift in Sources */,
+				A789C53B2922189600890C7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5492922189900890C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A789C5522922189900890C7B /* LearningAppMPPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A789C5532922189900890C7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A789C55E2922189900890C7B /* LearningAppMPPUITestsLaunchTests.swift in Sources */,
+				A789C55C2922189900890C7B /* LearningAppMPPUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A793B92E2923A26A00065B56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A793B9352923A26A00065B56 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		601B51D82D6C748200AD6A81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 601B51C92D6C748200AD6A81 /* LearningAppMPPContentExtension */;
+			targetProxy = 601B51D72D6C748200AD6A81 /* PBXContainerItemProxy */;
+		};
+		A789C54F2922189900890C7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A789C5362922189600890C7B /* LearningAppMPP */;
+			targetProxy = A789C54E2922189900890C7B /* PBXContainerItemProxy */;
+		};
+		A789C5592922189900890C7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A789C5362922189600890C7B /* LearningAppMPP */;
+			targetProxy = A789C5582922189900890C7B /* PBXContainerItemProxy */;
+		};
+		A793B9382923A26A00065B56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A793B9312923A26A00065B56 /* LearningAppMPPServiceExtension */;
+			targetProxy = A793B9372923A26A00065B56 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A789C5452922189900890C7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A789C5462922189900890C7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		601B51DB2D6C748200AD6A81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83086101654AB43FBE2BDEF /* Pods-LearningAppMPPContentExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPPContentExtension/LearningAppMPPContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPPContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LearningAppMPPContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		601B51DC2D6C748200AD6A81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49D8D2A8758A1C19808F0470 /* Pods-LearningAppMPPContentExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPPContentExtension/LearningAppMPPContentExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPPContentExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LearningAppMPPContentExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A789C55F2922189900890C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A789C5602922189900890C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A789C5622922189900890C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A90C2D587F7F538EA0D861 /* Pods-LearningAppMPP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPP/LearningAppMPP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPP/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7s;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A789C5632922189900890C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49E344BC6D69418DCB6DB6B /* Pods-LearningAppMPP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPP/LearningAppMPP.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPP/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "<enter your location permission alert text here>";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7s;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A789C5652922189900890C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningAppMPP.app/LearningAppMPP";
+			};
+			name = Debug;
+		};
+		A789C5662922189900890C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LearningAppMPP.app/LearningAppMPP";
+			};
+			name = Release;
+		};
+		A789C5682922189900890C7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearningAppMPP;
+			};
+			name = Debug;
+		};
+		A789C5692922189900890C7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LearningAppMPP;
+			};
+			name = Release;
+		};
+		A793B93B2923A26A00065B56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F4EBFD6354406D9B65D5D7 /* Pods-LearningAppMPPServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPPServiceExtension/LearningAppMPPServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPPServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LearningAppMPPServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A793B93C2923A26A00065B56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DAD69C92A27D5C31C8411D3 /* Pods-LearningAppMPPServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = LearningAppMPPServiceExtension/LearningAppMPPServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RNQ52E7G3P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LearningAppMPPServiceExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LearningAppMPPServiceExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 12.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.exacttarget.la.dev.LearningAppMPPServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		601B51DA2D6C748200AD6A81 /* Build configuration list for PBXNativeTarget "LearningAppMPPContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				601B51DB2D6C748200AD6A81 /* Debug */,
+				601B51DC2D6C748200AD6A81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A789C5322922189600890C7B /* Build configuration list for PBXProject "LearningAppMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A789C55F2922189900890C7B /* Debug */,
+				A789C5602922189900890C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A789C5612922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A789C5622922189900890C7B /* Debug */,
+				A789C5632922189900890C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A789C5642922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A789C5652922189900890C7B /* Debug */,
+				A789C5662922189900890C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A789C5672922189900890C7B /* Build configuration list for PBXNativeTarget "LearningAppMPPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A789C5682922189900890C7B /* Debug */,
+				A789C5692922189900890C7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A793B93A2923A26A00065B56 /* Build configuration list for PBXNativeTarget "LearningAppMPPServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A793B93B2923A26A00065B56 /* Debug */,
+				A793B93C2923A26A00065B56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A789C56A29221F1300890C7B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A789C56B29221F1300890C7B /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A789C56A29221F1300890C7B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A789C52F2922189600890C7B /* Project object */;
+}

@@ -1,0 +1,10 @@
+framework module MarketingCloudSDK {
+  umbrella header "MarketingCloudSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module MarketingCloudSDK.Swift {
+  header "MarketingCloudSDK-Swift.h"
+}
